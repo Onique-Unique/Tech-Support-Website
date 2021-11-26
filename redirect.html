@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Whats New</title>
+</head>
+<body>
+    <!-- Main Nav -->
+    <nav class="flex-div">
+        <div class="flex-div__nav-left">
+            <img src="images/menu.png" alt="Menu Image" class="flex-div__nav-left--menu-icon">
+            <a href="index.html"><img src="images/help_desk-logo.png" alt="Logo" class="flex-div__nav-left--logo"></a>
+        </div>
+        <div class="flex-div__nav-middle">
+            <div class="flex-div__nav-middle--search-box">
+                <input type="search" value= "" id= "search" onchange="openfile()" placeholder="Search">
+                <img src="images/search.png" class="flex-div__nav-middle--search-icon">
+            </div>
+            <svg class="flex-div__nav-middle--mic-icon" id="icon-circle-right" viewBox="0 0 32 32">
+                <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 
+                0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13z">
+                </path>
+                <path d="M11.086 22.086l2.829 2.829 8.914-8.914-8.914-8.914-2.828 2.828 6.086 6.086z"></path>>
+            </svg>
+
+            <!-- mic icon will be used for later purposes as the website progresses -->
+            <!-- <img src="images/voice-search.png" alt="Voice Mic" class="flex-div__nav-middle--mic-icon"> -->
+        </div>
+        <div class="flex-div__nav-right">
+            <a href=""><img title= "Resume Scanner" src="images/New-icons/scan.png" class="top-nav"></a>
+            <a href="explore.html"><img title= "More" src="images/more.png"></a>
+            <a href="discussion-page.html"><img title= "Discussions tab" src="images/notification.png"></a>
+            <img title= "Account" src="images/help_desk-logo2.png" class="flex-div__nav-right--user-icon">
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar hidden overflow">
+        <div class="sidebar__shortcut-links sidebar-alterations">
+            
+            <!-- linking to the Home page/ html -->
+            <a href="index.html">
+                <img src="images/home.png" alt="Home Img">
+                <p> Home</p>
+            </a>
+            <a href="explore.html">
+                <img src="images/explore.png" alt="Home Img">
+                <p> Explore</p>
+            </a>
+            <a href="whats-new.html">
+                <img src="images/New-icons/product.png" alt="Home Img">
+                <p> What's New ?</p>
+            </a>
+            <a href="whats-new.html">
+                <img src="images/New-icons/shop-bag.png" alt="Home Img">
+                <p> Shop with us</p>
+            </a>
+            <a href="tech-lounge.html">
+                <img src="images/New-icons/lounge-chair.png" alt="Home Img">
+                <p> Tech Lounge</p>
+            </a>
+
+            <!-- linking to the discussion page/ html -->
+            <a href="discussion-page.html">
+                <img src="images/New-icons/discuss.png" alt="Home Img">
+                <p> Discussions</p>
+            </a>
+            <a href="whats-new.html">
+                <img src="images/New-icons/renew.png" alt="Home Img">
+                <p> Subscription</p>
+            </a>
+            <a href="contact-page.html">
+                <img src="images/messages.png" alt="Home Img">
+                <p> Contact</p>
+            </a>
+            <a href="#">
+                <img src="images/show-more.png" alt="Home Img">
+                <p> Show More</p>
+            </a>
+            <!-- hr is used to add underline -->
+            <hr>
+        </div>
+    </div>
+
+    <!-- Main Section -->
+    <div class="main__container temp__bg--color">
+        <div class="container">
+            <div class="container__banner retry-search">
+                    <h1> Your Search Term was not found!</h1>
+                    <h3> please try again - for a more effective result, <span>please be more specific</span></h3>
+            </div>
+        </div>
+
+     
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

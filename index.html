@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Helpdesk.io for Knowledge Sharing</title>
+</head>
+<body>
+    <!-- Main Nav -->
+    <nav class="flex-div">
+        <div class="flex-div__nav-left">
+
+            <!-- title is an attribute that showcase the name of an element when it is hovered over on the webpage -->
+            <img title= "Menu" src="images/menu.png" alt="Menu Image" class="flex-div__nav-left--menu-icon">
+            <a href="index.html"><img src="images/help_desk-logo.png" alt="Logo" class="flex-div__nav-left--logo"></a>
+        </div>
+        <div class="flex-div__nav-middle">
+            <div class="flex-div__nav-middle--search-box">
+                <input type="search" value= "" id= "search" onchange="openfile()" placeholder="Search">
+
+                <!-- title is an attribute that showcase the name of an element when it is hovered over on the webpage -->
+                <img title= "search"  src="images/search.png" class="flex-div__nav-middle--search-icon">
+            </div>
+                                                                
+                                                                                                <!-- how to add the title attribute to svg elements -->
+            <svg class="flex-div__nav-middle--mic-icon" id="icon-circle-right" viewBox="0 0 32 32"><title>Go</title>
+                <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 
+                0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13z">
+                </path>
+                <path d="M11.086 22.086l2.829 2.829 8.914-8.914-8.914-8.914-2.828 2.828 6.086 6.086z"></path>>
+            </svg>
+
+            <!-- mic icon will be used for later purposes as the website progresses -->
+            <!-- <img src="images/voice-search.png" alt="Voice Mic" class="flex-div__nav-middle--mic-icon"> -->
+        </div>
+        <div class="flex-div__nav-right">
+            <a href=""><img title= "Resume Scanner" src="images/New-icons/scan.png" class="top-nav"></a>
+            <a href="explore.html"><img title= "More" src="images/more.png"></a>
+            <a href="discussion-page.html"><img title= "Discussions tab" src="images/notification.png"></a>
+            <img title= "Account" src="images/help_desk-logo2.png" class="flex-div__nav-right--user-icon">
+        </div>
+    </nav>
+    <!-- Sidebar -->
+    <div class="sidebar hidden">
+        <div class="sidebar__shortcut-links sidebar-alterations">
+            
+            <!-- linking to the Home page/ html -->
+            <a href="index.html">
+                <img src="images/home.png" alt="Home Img">
+                <p> Home</p>
+            </a>
+            <a href="explore.html">
+                <img src="images/explore.png" alt="Home Img">
+                <p> Explore</p>
+            </a>
+            <a href="whats-new.html">
+                <img src="images/New-icons/product.png" alt="Home Img">
+                <p> What's New ?</p>
+            </a>
+            <a href="whats-new.html">
+                <img src="images/New-icons/shop-bag.png" alt="Home Img">
+                <p> Shop with us</p>
+            </a>
+            <a href="tech-lounge.html">
+                <img src="images/New-icons/lounge-chair.png" alt="Home Img">
+                <p> Tech Lounge</p>
+            </a>
+
+            <!-- linking to the discussion page/ html -->
+            <a href="discussion-page.html">
+                <img src="images/New-icons/discuss.png" alt="Home Img">
+                <p> Discussions</p>
+            </a>
+            <a href="whats-new.html">
+                <img src="images/New-icons/renew.png" alt="Home Img">
+                <p> Subscription</p>
+            </a>
+            <a href="contact-page.html">
+                <img src="images/New-icons/email (1).png" alt="Home Img">
+                <p> Contact</p>
+            </a>
+            <a href="#">
+                <img src="images/show-more.png" alt="Home Img">
+                <p> Show More</p>
+            </a>
+            <!-- hr is used to add underline -->
+            <hr>
+        </div>
+        <div class= "sidebar__subscribed-list">
+            <h3> JOIN THE TEAM!</h3>
+            <a href="#">
+                <img src="images/hand-shake.png">
+                <p> Name here</p>
+            </a>
+            <a href="#">
+                <img src="images/hand-shake.png">
+                <p> Name here</p>
+            </a>
+            <a href="#">
+                <img src="images/hand-shake.png">
+                <p> Name here</p>
+            </a>
+            <a href="#">
+                <img src="images/hand-shake.png">
+                <p> Name here</p>
+            </a>
+            <a href="#">
+                <img src="images/hand-shake.png">
+                <p> Name here</p>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Main Section/ Content Section -->
+    <!-- video banner area -->
+    <div class="main__container">
+        <div class="container">
+            <div class="container__banner">
+                <video class="bg-video__content" autoplay="" muted="" loop="">
+                    <source src="images/video-banner.mp4" type="video/mp4">
+                        Your Browser does not support the video
+                </video>
+            </div>
+        </div>
+        
+        <!-- Content list area -->
+        <div class="list-container">
+            <div class="list-container__vid-list">
+                <a href="info-page9.html">
+                    <img src="images/thumbnail10.jpg" alt="thumbnail" class="list-container__vid-list--thumbnail">
+                </a>
+                <div class="list-container__vid-list--flex-div">
+                    <img src="images/field-engineer.png">
+                    <div class="list-container__vid-list--flex-div--vid-info">
+                        <a href="info-page9.html">Getting Started in help desk? quick overview...</a>
+                        <p> fieldengineer.com</p>
+
+                         <!-- &bull; used to add a dot/ fullstop -->
+                        <p>  15k clicks &bull; Nov 10 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-container__vid-list">
+                <a href="info-page.html">
+                    <img src="images/thumbnail1.jpg" alt="thumbnail" class="list-container__vid-list--thumbnail">
+                </a>
+                <div class="list-container__vid-list--flex-div">
+                    <img src="images/top-password.jpg">
+                    <div class="list-container__vid-list--flex-div--vid-info">
+                        <a href="info-page.html">How to access and setup remote assistance...</a>
+                        <p> top-password.com</p>
+                        <p> 15k clicks &bull; Nov 10 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-container__vid-list">
+                <a href="info-page2.html">
+                    <img src="images/thumbnail2.jpg" alt="thumbnail" class="list-container__vid-list--thumbnail">
+                </a>
+                <div class="list-container__vid-list--flex-div">
+                    <img src="images/ibm.png">
+                    <div class="list-container__vid-list--flex-div--vid-info">
+                        <a href="info-page2.html">How to access and setup group policy...</a>
+                        <p> ibm.com</p>
+                        <p>  15k clicks &bull; Nov 10 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-container__vid-list">
+                <a href="info-page3.html">
+                    <img src="images/thumbnail3.jpg" alt="thumbnail" class="list-container__vid-list--thumbnail">
+                </a>
+                <div class="list-container__vid-list--flex-div">
+                    <img src="images/kayako.png">
+                    <div class="list-container__vid-list--flex-div--vid-info">
+                        <a href="info-page3.html"> How to access and change shared drive permissions...</a>
+                        <p> hardsoft-support.kayako.com</p>
+                        <p>  15k clicks &bull; Nov 10 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-container__vid-list">
+                <a href="info-page4.html">
+                    <img src="images/thumbnail4.jpg" alt="thumbnail" class="list-container__vid-list--thumbnail">
+                </a>
+                <div class="list-container__vid-list--flex-div">
+                    <img src="images/microsoft.jpg">
+                    <div class="list-container__vid-list--flex-div--vid-info">
+                        <a href="info-page4.html">How to troubleshoot microsoft outlook issues...</a>
+                        <p> support.microsoft.com</p>
+                        <p>  15k clicks &bull; Nov 10 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-container__vid-list">
+                <a href="info-page5.html">
+                    <img src="images/thumbnail5.jpg" alt="thumbnail" class="list-container__vid-list--thumbnail">
+                </a>
+                <div class="list-container__vid-list--flex-div">
+                    <img src="images/ld-products.png">
+                    <div class="list-container__vid-list--flex-div--vid-info">
+                        <a href="info-page5.html" id="print">How to troubleshoot common printer issues...</a>
+                        <p> ldproducts.com</p>
+                        <p>  15k clicks &bull; Nov 10 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-container__vid-list">
+                <a href="info-page6.html">
+                    <img src="images/thumbnail6.jpg" alt="thumbnail" class="list-container__vid-list--thumbnail">
+                </a>
+                <div class="list-container__vid-list--flex-div">
+                    <img src="images/Imperva.png">
+                    <div class="list-container__vid-list--flex-div--vid-info">
+                        <a href="info-page6.html">The OSI model layers quick explained...</a>
+                        <p> imperva.com</p>
+                        <p>  15k clicks &bull; Nov 10 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-container__vid-list">
+                <a href="info-page7.html">
+                    <img src="images/thumbnail7.jpg" alt="thumbnail" class="list-container__vid-list--thumbnail">
+                </a>
+                <div class="list-container__vid-list--flex-div">
+                    <img src="images/deskalerts.png">
+                    <div class="list-container__vid-list--flex-div--vid-info">
+                        <a href="info-page7.html">Most common helpdesk issues and solutions...</a>
+                        <p> alert-software.com</p>
+                        <p>  15k clicks &bull; Nov 10 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-container__vid-list">
+                <a href="info-page8.html">
+                    <img src="images/thumbnail8.jpg" alt="thumbnail" class="list-container__vid-list--thumbnail">
+                </a>
+                <div class="list-container__vid-list--flex-div">
+                    <img src="images/ostoday.jpg">
+                    <div class="list-container__vid-list--flex-div--vid-info">
+                        <a href="info-page8.html">Rsat tools complete knowledge and quick guide...</a>
+                        <p> ostoday.org</p>
+                        <p>  15k clicks &bull; Nov 10 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-container__vid-list">
+                <a href="info-page10.html">
+                    <img src="images/thumbnail11.jpg" alt="thumbnail" class="list-container__vid-list--thumbnail">
+                </a>
+                <div class="list-container__vid-list--flex-div">
+                    <img src="images/mv-organizing.jpg">
+                    <div class="list-container__vid-list--flex-div--vid-info">
+                        <a href="info-page10.html">Complete guide & troubleshooting steps to follow...</a>
+                        <p> behtek.com</p>
+                        <p>  15k clicks &bull; Nov 10 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-container__vid-list">
+                <a href="info-page11.html">
+                    <img src="images/thumbnail12.jpg" alt="thumbnail" class="list-container__vid-list--thumbnail">
+                </a>
+                <div class="list-container__vid-list--flex-div">
+                    <img src="images/trupp.jpg">
+                    <div class="list-container__vid-list--flex-div--vid-info">
+                        <a href="info-page11.html"> Best practices & guidance for help desk staff...</a>
+                        <p> truppglobal.com</p>
+                        <p>  15k clicks &bull; Nov 10 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-container__vid-list">
+                <a href="info-page12.html">
+                    <img src="images/thumbnail13.jpg" alt="thumbnail" class="list-container__vid-list--thumbnail">
+                </a>
+                <div class="list-container__vid-list--flex-div">
+                    <img src="images/capterra.png">
+                    <div class="list-container__vid-list--flex-div--vid-info">
+                        <a href="info-page12.html">Top rated help desk softwares & tools...</a>
+                        <p> capterra.com</p>
+                        <p>  15k clicks &bull; Nov 10 2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

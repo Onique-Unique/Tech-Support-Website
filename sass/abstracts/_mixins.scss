@@ -1,0 +1,89 @@
+
+// MEDIA QUERY BREAKPOINTS
+/* 
+---Mobile, portrait---
+320px	iPhone SE
+375px	iPhone 6 to X
+414px	iPhone 8 Plus
+
+---Mobile, in between---
+580px   devices inbetween
+
+---Mobile, landscape---	
+568px	iPhone SE
+667px	iPhone 6 to 8
+736px	iPhone 8 Plus
+812px	iPhone X
+
+---Tablet, portrait---	
+768px	iPad Air, iPad Mini, iPad Pro 9″
+834px	iPad Pro 10″
+
+---Tablet, landscape---	
+1024px	iPad Air, iPad Mini, iPad Pro 9″
+1024px	iPad Pro 12″ (portrait)
+1112px	iPad Pro 10″
+
+---Laptop displays---	
+1366px	HD laptops (768p)
+1366px	iPad Pro 12″ (landscape)
+1440px	13″ MacBook Pro (2x scaling)
+
+---Desktop displays---	
+1680px	13″ MacBook Pro (1.5x scaling)
+1920px	1080p displays
+*/
+
+// writing a mixin variable (function) for media queries
+@mixin respond($breakpoint) {
+
+    // place largest size screen width to min value
+    // start with largest screen size downwards
+
+    // @content inserts the content changes from the sass files adjusted
+    // using px units are not recommended as its absolute
+    // converted px units to em units which is relative for the benefit of the users of the webpage
+    @if $breakpoint== desktop-display {
+        @media only screen and (min-width: 120em) { // 1em=16px (1920px/16) = 120em
+            @content;
+        }
+    }
+
+    @if $breakpoint== laptop-display {
+        @media only screen and (max-width: 90em) { // (1440px/16) = 90em
+            @content;
+        }
+    }
+
+    @if $breakpoint== tablet-landscape {
+        @media only screen and (max-width: 69.5em) { // (1112px/16) = 69.5em
+            @content;
+        }
+    }
+
+    @if $breakpoint== tablet-portrait {
+        @media only screen and (max-width: 52.125em) { // (834px/16) = 52.125em
+            @content;
+        }
+    }
+
+    @if $breakpoint== mobile-landscape {
+        @media only screen and (max-width: 50.75em) { // (812px/16) = 50.75em
+            @content;
+        }
+    }
+
+    @if $breakpoint== mobile-inbetween {
+        @media only screen and (max-width: 36.25em) { // (580px/16) = 36.25em
+            @content;
+        }
+    }
+
+    @if $breakpoint== mobile-portrait {
+        @media only screen and (max-width: 25.875em) { // (414px/16 = 25.875em
+            @content;
+        }
+            
+    }
+
+}

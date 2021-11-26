@@ -1,0 +1,266 @@
+// Main Nav
+
+nav {
+    padding: 1rem 1.5rem;
+    justify-content: space-between;
+    box-shadow: 0 0 1rem rgba(0,0,0, .2);
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.flex-div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &__nav-right {
+
+        &--user-icon {
+            width: 3.5rem;
+            border-radius: 50%;
+            margin-right: 0;
+        }
+
+        & img {
+            width: 2.5rem;
+            margin-right: 2.5rem;
+        }
+    }
+
+    &__nav-left {
+        display: contents;
+
+        &--menu-icon {
+            height: 1.5rem;
+            width: auto;
+            margin-right: 2.5rem;
+
+        }
+
+        &--logo {
+            width: 11.5rem;
+
+        }
+    }
+
+    &__nav-middle{
+    display: flex;
+    align-items: center;
+    border: .1rem solid rgb(255, 255, 255);
+    padding: .8rem 1.2rem;
+    border-radius: 2.5rem;
+
+        &--search-icon {
+            width: auto;
+            height: 1.5rem;
+            margin-left: 1rem;
+            margin-right: 1.5rem;
+
+            &:hover {
+                border-bottom: .15rem solid red;
+            }
+        }
+    
+        &--mic-icon {
+            width: auto;
+            height: 1.8rem;
+            padding-left: 2rem;
+            }
+
+        &--search-box {
+            border: .1rem solid #ccc;
+            padding: .8rem 1.2rem;
+            border-radius: 2.5rem;
+
+        }
+
+        & input[type="search"] {
+            margin-left: 1.5rem;
+            outline: none;
+            border: 0;
+            width: 40rem; 
+
+        }
+    }
+}
+
+// SideBar
+
+.sidebar {
+    background-color: white;
+    width: 14%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding-left: 1rem;
+    padding-top: 15rem;
+    overflow: scroll;
+    font-size: 1.2rem;
+
+    &__shortcut-links {
+
+        a {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            width: fit-content;
+            flex-wrap: wrap;
+
+            &:first-child {
+                color: red;
+            }
+
+            &:hover {
+                color: black;
+            }
+
+            img {
+                width: 2rem;
+                margin-right: 2rem;
+            }
+        }
+    }
+
+    // styling the hr underline tag from html
+    & hr {
+        border: 0;
+        height: .1rem;
+        background: #ccc;
+        width: 85%;
+        transition: width ease .8s;
+    }
+
+    &__subscribed-list {
+
+        & h3 {
+           font-size: 1.3rem;
+           margin: 2rem 0;
+           color: #5a5a5a; 
+        }
+
+        & a {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            width: fit-content;
+            flex-wrap: wrap;
+
+            & img {
+                width: 2.5rem;
+                border-radius: 50%;
+                margin-right: 2rem;
+            }
+         }
+    }
+}
+
+// Styling the javascript .small-sidebar class onclick function
+.small-sidebar {
+    width: 5%;
+
+    & a {
+
+        & p {
+            display: none;
+        }
+    }
+
+    & h3 {
+        display: none;
+    }
+
+    & hr {
+        width: 50%;
+        margin-bottom: 2.5rem;
+        transition: width ease .8s;
+    }
+}
+
+@media (max-width: 58.875em) {
+
+    .flex-div__nav-left--menu-icon {
+        display: none;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .sidebar-alterations {
+        font-size: .8rem;
+        width: 90%;
+
+        & a {
+            display: block;
+        }
+        
+    }
+
+    .flex-div__nav-right a {
+        display: none;
+    }
+
+    .flex-div__nav-right,
+    .flex-div__nav-right--user-icon {
+        display: block;
+        width: 3rem;
+    }
+
+    .flex-div__nav-middle input[type="search"] {
+        width: 40rem;
+    }
+
+    .flex-div__nav-middle--mic-icon {
+        display: none;
+    }
+
+    .flex-div__nav-left--logo {
+        width: 9rem;
+    }
+}
+
+.top-nav {
+    
+    &:hover {
+       box-shadow: 0 .04rem .08rem red;
+    }
+}
+
+@media (max-width: 41.125em) {
+    .flex-div__nav-middle input[type="search"] {
+        width: 25rem;
+    }
+}
+
+@media (max-width: 31.8125em) {
+    .flex-div__nav-middle input[type="search"] {
+        width: 15rem;
+    }
+}
+
+@media (max-width: 25.5625em) {
+    .flex-div__nav-middle input[type="search"] {
+        width: 10rem;
+    }
+}
+
+@media (max-width: 22.4375em) {
+    .flex-div__nav-middle input[type="search"] {
+        width: 5rem;
+    }
+}
+
+@media (max-width: 64em) {
+    .sidebar {
+        font-size: 1.1rem;
+        overflow: scroll;
+
+        &:-webkit-scrollbar {
+            display: none;
+            width: 0; 
+          }
+    }
+}
+
