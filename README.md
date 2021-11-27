@@ -15,14 +15,17 @@ As a tech enthusiast myself and developer it is with legitimacy that i find a pr
 Go ahead and check it out now....
 All files stored in master branch of this repository...
 
+<img width="236" alt="helpdesk1-mobile" src="https://user-images.githubusercontent.com/87822768/143723018-4634fcd9-d54f-4c04-8c7b-afab2d24ed4d.PNG">
+<img width="235" alt="helpdesk2-mobile" src="https://user-images.githubusercontent.com/87822768/143723020-4882bb31-2aac-4d2a-9805-f59a5014deaa.PNG">
+
 <img width="900" alt="helpdesk1" src="https://user-images.githubusercontent.com/87822768/143722843-0d17b99b-4258-4ca2-ba8f-4ce6ae960502.PNG">
 <br>
-<img width="236" alt="helpdesk1-mobile" src="https://user-images.githubusercontent.com/87822768/143723018-4634fcd9-d54f-4c04-8c7b-afab2d24ed4d.PNG">
+
 
 
 <img width="900" alt="helpdesk2" src="https://user-images.githubusercontent.com/87822768/143722856-4e45c2aa-c89f-4f95-ac5f-4ed92e6370a0.PNG">
 <br>
-<img width="235" alt="helpdesk2-mobile" src="https://user-images.githubusercontent.com/87822768/143723020-4882bb31-2aac-4d2a-9805-f59a5014deaa.PNG">
+
 
 
 <img width="899" alt="helpdesk3" src="https://user-images.githubusercontent.com/87822768/143722857-6a56d03c-e01e-458f-b361-5178f8ce34f2.PNG">
