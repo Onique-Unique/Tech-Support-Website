@@ -15,6 +15,11 @@ As a tech enthusiast myself and developer it is with legitimacy that i find a pr
 Go ahead and check it out now....
 All files stored in master branch of this repository...
 
+Features include: 
+  Fully Responsive design, information packed, Website navigation, Functional Search bar with no backend database, Webpage interactivity
+
+Features that will be gradually added:
+  Discussions tab, Tech Lounge, ATS - Applicant Tracking System/ Resume scanner, Contact the team mailing and much more
 
 <div class="mobile">
   <img width="236" alt="helpdesk1-mobile" src="https://user-images.githubusercontent.com/87822768/143723018-4634fcd9-d54f-4c04-8c7b-afab2d24ed4d.PNG">&nbsp; &nbsp; &nbsp;
