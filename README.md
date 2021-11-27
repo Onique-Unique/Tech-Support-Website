@@ -17,7 +17,7 @@ All files stored in master branch of this repository...
 
 
 <div style= "display:grid;" class="mobile">
-  <img width="236" alt="helpdesk1-mobile" src="https://user-images.githubusercontent.com/87822768/143723018-4634fcd9-d54f-4c04-8c7b-afab2d24ed4d.PNG">
+  <img width="236" alt="helpdesk1-mobile" src="https://user-images.githubusercontent.com/87822768/143723018-4634fcd9-d54f-4c04-8c7b-afab2d24ed4d.PNG">word
   <img width="235" alt="helpdesk2-mobile" src="https://user-images.githubusercontent.com/87822768/143723020-4882bb31-2aac-4d2a-9805-f59a5014deaa.PNG">
   <img width="235" alt="helpdesk3-mobile" src="https://user-images.githubusercontent.com/87822768/143723021-d20d7c2b-4271-4639-b976-c8314ddbbbd5.PNG">
   <img width="232" alt="helpdesk4-mobile" src="https://user-images.githubusercontent.com/87822768/143723016-b2284293-2986-4e1b-be8d-7589f254b2bb.PNG">
