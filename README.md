@@ -16,15 +16,25 @@ Go ahead and check it out now....
 All files stored in master branch of this repository...
 
 <img width="900" alt="helpdesk1" src="https://user-images.githubusercontent.com/87822768/143722843-0d17b99b-4258-4ca2-ba8f-4ce6ae960502.PNG">
-
-
-<img width="897" alt="helpdesk5" src="https://user-images.githubusercontent.com/87822768/143722855-9ac9959b-5481-44af-b964-8ec4be842dda.PNG">
+<br>
+<img width="236" alt="helpdesk1-mobile" src="https://user-images.githubusercontent.com/87822768/143723018-4634fcd9-d54f-4c04-8c7b-afab2d24ed4d.PNG">
 
 
 <img width="900" alt="helpdesk2" src="https://user-images.githubusercontent.com/87822768/143722856-4e45c2aa-c89f-4f95-ac5f-4ed92e6370a0.PNG">
+<br>
+<img width="235" alt="helpdesk2-mobile" src="https://user-images.githubusercontent.com/87822768/143723020-4882bb31-2aac-4d2a-9805-f59a5014deaa.PNG">
 
 
 <img width="899" alt="helpdesk3" src="https://user-images.githubusercontent.com/87822768/143722857-6a56d03c-e01e-458f-b361-5178f8ce34f2.PNG">
+<br>
+<img width="235" alt="helpdesk3-mobile" src="https://user-images.githubusercontent.com/87822768/143723021-d20d7c2b-4271-4639-b976-c8314ddbbbd5.PNG">
 
 
 <img width="898" alt="helpdesk4" src="https://user-images.githubusercontent.com/87822768/143722858-e7bfbc51-00ad-4153-b461-a0308b6bfd9d.PNG">
+<br>
+<img width="232" alt="helpdesk4-mobile" src="https://user-images.githubusercontent.com/87822768/143723016-b2284293-2986-4e1b-be8d-7589f254b2bb.PNG">
+
+
+<img width="897" alt="helpdesk5" src="https://user-images.githubusercontent.com/87822768/143722855-9ac9959b-5481-44af-b964-8ec4be842dda.PNG">
+<br>
+<img width="237" alt="helpdesk5-mobile" src="https://user-images.githubusercontent.com/87822768/143723017-8403317f-5daa-4a95-883b-df11395d9fc5.PNG">
