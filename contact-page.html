@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contact The Team</title>
+</head>
+<body>
+    <!-- Main Nav -->
+    <nav class="flex-div">
+        <div class="flex-div__nav-left">
+            <img src="images/menu.png" alt="Menu Image" class="flex-div__nav-left--menu-icon">
+            <a href="index.html"><img src="images/help_desk-logo.png" alt="Logo" class="flex-div__nav-left--logo"></a>
+        </div>
+        <div class="flex-div__nav-middle">
+            <div class="flex-div__nav-middle--search-box">
+                <input type="search" value= "" id= "search"  onchange="openfile()" placeholder="Search">
+                <svg class="flex-div__nav-middle--mic-icon" id="icon-circle-right" viewBox="0 0 32 32">
+                    <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 
+                    0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13z">
+                    </path>
+                    <path d="M11.086 22.086l2.829 2.829 8.914-8.914-8.914-8.914-2.828 2.828 6.086 6.086z"></path>>
+                </svg>
+    
+                <!-- mic icon will be used for later purposes as the website progresses -->
+                <!-- <img src="images/voice-search.png" alt="Voice Mic" class="flex-div__nav-middle--mic-icon"> -->
+            </div>
+            <img src="images/voice-search.png" alt="Voice Mic" class="flex-div__nav-middle--mic-icon">
+        </div>
+        <div class="flex-div__nav-right">
+            <a href=""><img title= "Resume Scanner" src="images/New-icons/scan.png" class="top-nav"></a>
+            <a href="explore.html"><img title= "More" src="images/more.png"></a>
+            <a href="discussion-page.html"><img title= "Discussions tab" src="images/notification.png"></a>
+            <img title= "Account" src="images/help_desk-logo2.png" class="flex-div__nav-right--user-icon">
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar hidden overflow">
+        <div class="sidebar__shortcut-links sidebar-alterations">
+            
+            <!-- linking to the Home page/ html -->
+            <a href="index.html">
+                <img src="images/home.png" alt="Home Img">
+                <p> Home</p>
+            </a>
+            <a href="explore.html">
+                <img src="images/explore.png" alt="Home Img">
+                <p> Explore</p>
+            </a>
+            <a href="whats-new.html">
+                <img src="images/New-icons/product.png" alt="Home Img">
+                <p> What's New ?</p>
+            </a>
+            <a href="whats-new.html">
+                <img src="images/New-icons/shop-bag.png" alt="Home Img">
+                <p> Shop with us</p>
+            </a>
+            <a href="tech-lounge.html">
+                <img src="images/New-icons/lounge-chair.png" alt="Home Img">
+                <p> Tech Lounge</p>
+            </a>
+
+            <!-- linking to the discussion page/ html -->
+            <a href="discussion-page.html">
+                <img src="images/New-icons/discuss.png" alt="Home Img">
+                <p> Discussions</p>
+            </a>
+            <a href="whats-new.html">
+                <img src="images/New-icons/renew.png" alt="Home Img">
+                <p> Subscription</p>
+            </a>
+            <a href="contact-page.html">
+                <img src="images/messages.png" alt="Home Img">
+                <p> Contact</p>
+            </a>
+            <a href="#">
+                <img src="images/show-more.png" alt="Home Img">
+                <p> Show More</p>
+            </a>
+            <!-- hr is used to add underline -->
+            <hr>
+        </div>
+    </div>
+
+    <section class="section-contact container">
+
+       <div class="contact">
+           <div class="contact__column contact__column--left">
+               <h2> 
+                   Get In Touch
+               </h2>
+               <p> fill out our contact form<br>
+                   send us a delightful message..
+               </p>
+                   
+               <!-- Address -->
+                   <div class="contact__info">
+                       <div class="contact__icon-div">
+                           <svg class="contact__icon"  viewBox="0 0 32 32">
+                               <path d="M16 0c-5.523 0-10 4.477-10 10 0 10 10 22 10 
+                               22s10-12 10-22c0-5.523-4.477-10-10-10zM16 16c-3.314 
+                               0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z">
+                               </path>
+                           </svg>
+                       </div>
+                       <div class="contact__detail-div">
+                           <p class="content__para contact__para--1">
+                               Info:
+                           </p>
+                           <p class="content__para contact__para--2">
+                               project and products...
+                           </p>
+                       </div>
+                   </div>
+
+                   <!-- Email -->
+                   <div class="contact__info">
+                       <div class="contact__icon-div">
+                           <svg class="contact__icon"  viewBox="0 0 32 32">
+                               <path d="M29 4h-26c-1.65 0-3 1.35-3 3v20c0 1.65 
+                               1.35 3 3 3h26c1.65 0 3-1.35 3-3v-20c0-1.65-1.35-3-3-3zM12.461 
+                               17.199l-8.461 6.59v-15.676l8.461 9.086zM5.512 8h20.976l-10.488 
+                               7.875-10.488-7.875zM12.79 17.553l3.21 3.447 3.21-3.447 6.58 
+                               8.447h-19.579l6.58-8.447zM19.539 17.199l8.461-9.086v15.676l-8.461-6.59z">
+                               </path>
+                           </svg>
+                       </div>
+                       <div class="contact__detail-div">
+                           <p class="content__para contact__para--1">
+                              Reach Out:
+                           </p>
+                           <p class="content__para contact__para--2">
+                              join the team?!...
+                           </p>
+                       </div>
+                   </div>
+
+                   <!-- Telephone -->
+                   <div class="contact__info">
+                       <div class="contact__icon-div">
+                           <svg class="contact__icon"  viewBox="0 0 32 32">
+                               <path d="M6 0v32h24v-32h-24zM18 8.010c2.203 0 3.99 1.786 3.99 3.99s-1.786 
+                               3.99-3.99 3.99-3.99-1.786-3.99-3.99 1.786-3.99 3.99-3.99v0zM24 24h-12v-2c0-2.209 
+                               1.791-4 4-4v0h4c2.209 0 4 1.791 4 4v2z">
+                               </path>
+                               <path d="M2 2h3v6h-3v-6z"></path>
+                               <path d="M2 10h3v6h-3v-6z"></path>
+                               <path d="M2 18h3v6h-3v-6z"></path>
+                               <path d="M2 26h3v6h-3v-6z"></path>
+                           </svg>
+                       </div>
+                       <div class="contact__detail-div">
+                           <p class="content__para contact__para--1">
+                               Lets Chat:
+                           </p>
+                           <p class="content__para contact__para--2">
+                               tech enthusiast or recruiter?..
+                           </p>
+                       </div>
+                   </div>
+               </div>
+           <div class="contact__column contact__column--right">
+               <h2>
+                    Message The Team...
+               </h2>
+               <div class="contact__form">
+                   <form class="form" target="#">
+                       <div class="form__name-email">
+                           <input type="text" id="name" class="form__input" placeholder="Full Name" required></input>
+                           <input type="email" id="email" class="form__input" placeholder="Email Address" required></input>
+                       </div>
+                       <input type="text" id="subject" class="form__input" placeholder="Subject"></input>
+                       <textarea class="form__text-area" name="message" placeholder="Your Message"></textarea>
+                       <div class="form__btn">
+                           <a class="btn" href="#"> Send Message</a>
+                       </div>
+                   </form>
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+<script src="script.js"></script>
+<script src="search.js"></script>
+</body>
+</html>

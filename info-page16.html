@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Info Page 16</title>
+</head>
+<body>
+    <!-- Main Nav -->
+    <nav class="flex-div">
+        <div class="flex-div__nav-left">
+            <img src="images/menu.png" alt="Menu Image" class="flex-div__nav-left--menu-icon">
+            <a href="index.html"><img src="images/help_desk-logo.png" alt="Logo" class="flex-div__nav-left--logo"></a>
+        </div>
+        <div class="flex-div__nav-middle">
+            <div class="flex-div__nav-middle--search-box">
+                <input type="search" value= "" id= "search" onchange="openfile()" placeholder="Search">
+                <img src="images/search.png" class="flex-div__nav-middle--search-icon">
+            </div>
+            <svg class="flex-div__nav-middle--mic-icon" id="icon-circle-right" viewBox="0 0 32 32">
+                <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 
+                0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13z">
+                </path>
+                <path d="M11.086 22.086l2.829 2.829 8.914-8.914-8.914-8.914-2.828 2.828 6.086 6.086z"></path>>
+            </svg>
+
+            <!-- mic icon will be used for later purposes as the website progresses -->
+            <!-- <img src="images/voice-search.png" alt="Voice Mic" class="flex-div__nav-middle--mic-icon"> -->
+        </div>
+        <div class="flex-div__nav-right">
+            <a href=""><img title= "Resume Scanner" src="images/New-icons/scan.png" class="top-nav"></a>
+            <a href="explore.html"><img title= "More" src="images/more.png"></a>
+            <a href="discussion-page.html"><img title= "Discussions tab" src="images/notification.png"></a>
+            <img title= "Account" src="images/help_desk-logo2.png" class="flex-div__nav-right--user-icon">
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar hidden overflow">
+        <div class="sidebar__shortcut-links sidebar-alterations">
+            
+            <!-- linking to the Home page/ html -->
+            <a href="index.html">
+                <img src="images/home.png" alt="Home Img">
+                <p> Home</p>
+            </a>
+            <a href="explore.html">
+                <img src="images/explore.png" alt="Home Img">
+                <p> Explore</p>
+            </a>
+            <a href="whats-new.html">
+                <img src="images/New-icons/product.png" alt="Home Img">
+                <p> What's New ?</p>
+            </a>
+            <a href="whats-new.html">
+                <img src="images/New-icons/shop-bag.png" alt="Home Img">
+                <p> Shop with us</p>
+            </a>
+            <a href="tech-lounge.html">
+                <img src="images/New-icons/lounge-chair.png" alt="Home Img">
+                <p> Tech Lounge</p>
+            </a>
+
+            <!-- linking to the discussion page/ html -->
+            <a href="discussion-page.html">
+                <img src="images/New-icons/discuss.png" alt="Home Img">
+                <p> Discussions</p>
+            </a>
+            <a href="whats-new.html">
+                <img src="images/New-icons/renew.png" alt="Home Img">
+                <p> Subscription</p>
+            </a>
+            <a href="contact-page.html">
+                <img src="images/messages.png" alt="Home Img">
+                <p> Contact</p>
+            </a>
+            <a href="#">
+                <img src="images/show-more.png" alt="Home Img">
+                <p> Show More</p>
+            </a>
+            <!-- hr is used to add underline -->
+            <hr>
+        </div>
+    </div>
+
+    <div class="container play-container">
+        <div class="row">
+           
+            <div class="play-container__video">
+                <h3> Helpdesk & IT support career pathway guide...</h3>
+                <div class="play-container__video--tags">
+                    <a href="#">#helpdesk</a> <a href="#">#admin</a> <a href="#">#techsupport</a> <a href="#">#setup</a>
+                </div>
+               
+                <div class= "play-container__video--info">
+                    <p>
+                        15k clicks &bull; Nov 10 2021
+                    </p>
+                    <div>
+                        <a href="#"><img src="images/like.png">125</a>
+                        <a href="#"><img src="images/dislike.png">2</a>
+                        <a href="#"><img src="images/share.png"> Share</a>
+                        <a href="#"><img src="images/save.png"> Save</a>
+                    </div>
+                </div>
+                  <!-- hr is used to add underline -->
+                  <hr>
+                <iframe class="iframe"
+                    src="https://www.microtrain.net/files/career_pathways.pdf" frameborder: = "0">
+                </iframe>
+
+                <div class="play-container__publisher">
+                    <img src="images/help_desk-logo2.png">
+                    <div>
+                        <p> microtrain.net</p>
+                        <span> 15k Clicks</span>
+                    </div>
+                    <button 
+                        type="button" onclick="location.href= `https://www.paypal.me/OniqueCampbell`"> Thanks
+                    </button>
+                </div>
+                <div class="play-container__vid-description">
+                    <p>
+                        feenixbloom - your everyday helpdesk companion...
+                    </p>
+                    <p>
+                        send thanks to our team!
+                    </p>
+                    <hr>
+                    <h4>
+                        3 comments
+                    </h4>
+
+                    <div class="add-comment">
+                        <img src="images/help_desk-logo2.png">
+                        <input type="text" placeholder="Write comments...">
+                    </div>
+
+                    <div class="old-comment">
+                        <img src="images/help_desk-logo2.png">
+                        <div>
+                            <h3>
+                                helpdesk.io <span> Nov 12 2021</span>
+                            </h3>
+                            <p>
+                                This comment section is still under construction
+                            </p>
+                            <div class="old-comment__comment-action">
+                                <img src="images/like.png">
+                                <span>1</span>
+                                <img src="images/dislike.png">
+                                <span>0</span>
+                                <span>Reply</span>
+                                <a href="#"> All replies</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="old-comment">
+                        <img src="images/help_desk-logo2.png">
+                        <div>
+                            <h3>
+                                helpdesk.io <span> Nov 12 2021</span>
+                            </h3>
+                            <p>
+                                Discussions tab will be available soon
+                            </p>
+                            <div class="old-comment__comment-action">
+                                <img src="images/like.png">
+                                <span>1</span>
+                                <img src="images/dislike.png">
+                                <span>0</span>
+                                <span>Reply</span>
+                                <a href="#"> All replies</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="old-comment">
+                        <img src="images/help_desk-logo2.png">
+                        <div>
+                            <h3>
+                                helpdesk.io <span> Nov 12 2021</span>
+                            </h3>
+                            <p>
+                                Hang in there, we'll get the discussions tab up and running soon.
+                            </p>
+                            <div class="old-comment__comment-action">
+                                <img src="images/like.png">
+                                <span>1</span>
+                                <img src="images/dislike.png">
+                                <span>0</span>
+                                <span>Reply</span>
+                                <a href="#"> All replies</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-sidebar">
+
+                <div class="side-video-list">
+
+                    <!-- added a tag to link to a video file -->
+                    <a href="#" class="side-video-list__small-thumbnail"><img src="images/thumbnail10.jpg"></a>
+                    <div class="side-video-list__vid-info">
+                        <a href="#"> Getting Started in help desk? quick overview</a>
+                        <p> fieldengineer.com</p>
+                        <p>15k clicks</p>
+                    </div>
+                </div>
+                <div class="side-video-list">
+                    <a href="#" class="side-video-list__small-thumbnail"><img src="images/thumbnail2.jpg"></a>
+                    <div class="side-video-list__vid-info">
+                        <a href="#"> How to access and setup group policy</a>
+                        <p> ibm.com</p>
+                        <p>15k clicks</p>
+                    </div>
+                </div>
+                <div class="side-video-list">
+                    <a href="#" class="side-video-list__small-thumbnail"><img src="images/thumbnail3.jpg"></a>
+                    <div class="side-video-list__vid-info">
+                        <a href="#"> How to access and change shared drive permissions</a>
+                        <p> hardsoft-support.kayako.com</p>
+                        <p>15k clicks</p>
+                    </div>
+                </div>
+                <div class="side-video-list">
+                    <a href="#" class="side-video-list__small-thumbnail"><img src="images/thumbnail4.jpg"></a>
+                    <div class="side-video-list__vid-info">
+                        <a href="#"> How to troubleshoot microsoft outlook issues</a>
+                        <p> support.microsoft.com</p>
+                        <p>15k clicks</p>
+                    </div>
+                </div>
+                <div class="side-video-list">
+                    <a href="#" class="side-video-list__small-thumbnail"><img src="images/thumbnail8.jpg"></a>
+                    <div class="side-video-list__vid-info">
+                        <a href="#"> Rsat tools complete knowledge and quick guide</a>
+                        <p> ostoday.org</p>
+                        <p>15k clicks</p>
+                    </div>
+                </div>
+                <div class="side-video-list">
+                    <a href="#" class="side-video-list__small-thumbnail"><img src="images/thumbnail7.jpg"></a>
+                    <div class="side-video-list__vid-info">
+                        <a href="#"> Most common helpdesk issues and solutions</a>
+                        <p> alert-software.com</p>
+                        <p>15k clicks</p>
+                    </div>
+                </div>
+                <div class="side-video-list">
+                    <a href="#" class="side-video-list__small-thumbnail"><img src="images/thumbnail5.jpg"></a>
+                    <div class="side-video-list__vid-info">
+                        <a href="#"> How to troubleshoot common printer issues</a>
+                        <p> ldproducts.com</p>
+                        <p>15k clicks</p>
+                    </div>
+                </div>
+                <div class="side-video-list">
+                    <a href="#" class="side-video-list__small-thumbnail"><img src="images/thumbnail6.jpg"></a>
+                    <div class="side-video-list__vid-info">
+                        <a href="#"> The OSI model layers quick explained</a>
+                        <p> imperva.com</p>
+                        <p>15k clicks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>
