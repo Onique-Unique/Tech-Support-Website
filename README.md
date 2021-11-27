@@ -15,12 +15,13 @@ As a tech enthusiast myself and developer it is with legitimacy that i find a pr
 Go ahead and check it out now....
 All files stored in master branch of this repository...
 
-Features include: 
-  Fully Responsive design, information packed, Website navigation, Functional Search bar with no backend database, Webpage interactivity
+# Features include: 
+  ## Fully Responsive design, information packed, Website navigation, Functional Search bar with no backend database, Webpage interactivity
 
-Features that will be gradually added:
-  Discussions tab, Tech Lounge, ATS - Applicant Tracking System/ Resume scanner, Contact the team mailing and much more
+# Features that will be gradually added:
+  ## Discussions tab, Tech Lounge, ATS - Applicant Tracking System/ Resume scanner, Contact the team mailing and much more
 
+# Mobile View
 <div class="mobile">
   <img width="236" alt="helpdesk1-mobile" src="https://user-images.githubusercontent.com/87822768/143723018-4634fcd9-d54f-4c04-8c7b-afab2d24ed4d.PNG">&nbsp; &nbsp; &nbsp;
   <img width="235" alt="helpdesk2-mobile" src="https://user-images.githubusercontent.com/87822768/143723020-4882bb31-2aac-4d2a-9805-f59a5014deaa.PNG">&nbsp; &nbsp; &nbsp;
@@ -29,6 +30,8 @@ Features that will be gradually added:
   &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; <img width="237" alt="helpdesk5-mobile" src="https://user-images.githubusercontent.com/87822768/143723017-8403317f-5daa-4a95-883b-df11395d9fc5.PNG">
 </div>
 
+
+# Desktop View
 <div class= "desktop"> 
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; 
 <img width="900" alt="helpdesk1" src="https://user-images.githubusercontent.com/87822768/143722843-0d17b99b-4258-4ca2-ba8f-4ce6ae960502.PNG">
