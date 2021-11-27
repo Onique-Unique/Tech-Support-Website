@@ -20,7 +20,7 @@ All files stored in master branch of this repository...
   <br>
 
 # Features that will be gradually added:
-  #### Discussions tab, Tech Lounge, ATS - Applicant Tracking System/ Resume scanner, Contact the team mailing and much more
+  #### Discussions tab, Tech Lounge,  ATS - Applicant Tracking System/ Resume scanner, Contact the team mailing and much more
   <br>
 
 # Mobile View
