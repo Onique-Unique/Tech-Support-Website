@@ -24,7 +24,7 @@ All files stored in master branch of this repository...
   &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; <img width="237" alt="helpdesk5-mobile" src="https://user-images.githubusercontent.com/87822768/143723017-8403317f-5daa-4a95-883b-df11395d9fc5.PNG">
 </div>
 
-<div class= "desktop"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; 
+<div class= "desktop"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;
 <img width="900" alt="helpdesk1" src="https://user-images.githubusercontent.com/87822768/143722843-0d17b99b-4258-4ca2-ba8f-4ce6ae960502.PNG">
 <br>
 
