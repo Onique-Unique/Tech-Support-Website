@@ -19,37 +19,37 @@ function openfile() {
 
         // closing window searched from, then open search item to be appeared as in same tab
         window.close();
-        window.open("/info-page.html",);
+        window.open("info-page.html",);
     } 
 
     else if (info.toLowerCase().includesOneof(["group", "policy"])) {
 
         window.close();
-        window.open("/info-page2.html",);
+        window.open("info-page2.html",);
     } 
 
     else if (info.toLowerCase().includesOneof(["share", "drive", "permission"])) {
 
         window.close();
-        window.open("/info-page3.html",);
+        window.open("info-page3.html",);
     } 
 
     else if (info.toLowerCase().includesOneof(["outlook"])) {
 
         window.close();
-        window.open("/info-page4.html",);
+        window.open("info-page4.html",);
     } 
 
    else if (info.toLowerCase().includesOneof(["print"])) {
 
         window.close();
-        window.open("/info-page5.html",);
+        window.open("info-page5.html",);
     } 
 
     else if (info.toLowerCase().includesOneof(["osi", "osi model", "layer"])) {
 
         window.close();
-        window.open("/info-page6.html",);
+        window.open("info-page6.html",);
     } 
 
     else if (info.toLowerCase().includesOneof(["helpdesk issue", "helpdesk solution", "helpdesk problem", 
@@ -57,20 +57,20 @@ function openfile() {
     "tech support problem", "it support issue", "it support solution", "it support problems", "common"])) {
 
         window.close();
-        window.open("/info-page7.html",);
+        window.open("info-page7.html",);
     } 
 
     else if (info.toLowerCase().includesOneof(["rsat", "r sat", "rsat tool"])) {
 
         window.close();
-        window.open("/info-page8.html",);
+        window.open("info-page8.html",);
     } 
 
     else if (info.toLowerCase().includesOneof(["start", "technician", "task", "job", "description",
     "salary", "career", "path", "quick", "overview"])) {
 
         window.close();
-        window.open("/info-page9.html",);
+        window.open("info-page9.html",);
     } 
 
     else if (info.toLowerCase().includesOneof(["guide", "troubleshooting steps", "steps", "basic", "resolve", "resolving",
@@ -78,14 +78,14 @@ function openfile() {
     "monitor", "ware", "boot", "reset", "power", "heat", "drive", "keyboard"])) {
 
         window.close();
-        window.open("/info-page10.html",);
+        window.open("info-page10.html",);
     } 
 
     else if (info.toLowerCase().includesOneof(["practice", "guidance", "omnichannel", "omni", "customer",
     "knowledge", "service", "self", "kpi", "analytic", "satisfy", "satisfaction"])) {
 
         window.close();
-        window.open("/info-page11.html",);
+        window.open("info-page11.html",);
     }
     
     else if (info.toLowerCase().includesOneof(["software", "tool", "zendesk", "zen", "solarwinds", "service desk", "solar",
@@ -93,7 +93,7 @@ function openfile() {
     "bench", "ninja", "front", "team support", "kustomer" ])) {
 
         window.close();
-        window.open("/info-page12.html",);
+        window.open("info-page12.html",);
     } 
 
     else {
