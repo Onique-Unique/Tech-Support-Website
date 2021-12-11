@@ -170,15 +170,21 @@
                     Message The Team...
                </h2>
                <div class="contact__form">
-                   <form class="form" target="#">
+                   <!--  -->
+                   <form action="https://formsubmit.co/oniquecampbell@yahoo.com" method="POST" class="form" target="#">
                        <div class="form__name-email">
                            <input type="text" id="name" class="form__input" placeholder="Full Name" required></input>
                            <input type="email" id="email" class="form__input" placeholder="Email Address" required></input>
                        </div>
+                       <!--  -->
+                       <input type="hidden" name="_subject" value="There's A New Email From FeenixBloom.com">
+                       <input type="hidden" name="_autoresponse" value="This is an Automated response. A Team Member will reach out to you shortly">
+                       <input type="hidden" name="_next" value="https://feenixbloom.com/thankyou.html">
+                       <!--  -->
                        <input type="text" id="subject" class="form__input" placeholder="Subject"></input>
                        <textarea class="form__text-area" name="message" placeholder="Your Message"></textarea>
                        <div class="form__btn">
-                           <a class="btn" href="#"> Send Message</a>
+                           <a class="btn" href="#"><button type="submit">Send Message</button></a>
                        </div>
                    </form>
                </div>
