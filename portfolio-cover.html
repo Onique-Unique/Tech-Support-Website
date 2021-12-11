@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- bootstrap icon cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        <title>Onique Campbell Portfolio</title>
+
+    <style>
+
+        img, i {
+            cursor: pointer;
+        }
+
+        .bs-img {
+            height: 6rem;
+            border-radius: 50%;
+        }
+
+        .bs-img-2 {
+            height: 5.8rem;
+        }
+
+        .container-xxl {
+            position: relative;
+        }
+
+        .bs-icon {
+            font-size: 4rem;
+        }
+
+        .git-icon, .link-icon {
+            color: black;
+        }
+
+        .git-icon:hover {
+            color: red;
+        }
+
+        .link-icon:hover {
+            color: blue;
+        }
+
+        .bg-info:hover {
+            background-color: aqua;
+        }
+
+        .overlay {
+            background-image: linear-gradient(rgba(199,184,153, 0.26),rgba(233, 223, 207, 0.726));
+        }
+
+        .overlay:hover {
+            transform:scale(1.06);
+            transition: all .3s;
+        }
+
+        .bg-warning:hover, .bg-info:hover {
+            transform:scaleX(1.02);
+            border: .1rem solid black;
+            box-shadow: -1.2rem 1rem 4rem 1rem black;
+            box-shadow: .1rem 1rem 4rem 1rem black;
+            transition: all .3s;
+        }
+
+        .custom-border:hover {
+            border: .1rem solid black;
+        }
+
+        ul:hover, .list-group-item:hover {
+            background-color: rgba(248, 248, 255, 0);
+            cursor: pointer;
+            transition: all .2s;
+        }
+
+    </style>
+</head>
+<body>
+
+    <main>
+        <div class="container-fluid">
+           
+            <!-- <i class=" icon bi bi-lock-fill"></i> -->
+            <div class="row">
+                <nav class="navbar navbar-dark bg-dark justify-content-end">
+                    <!-- Navbar content -->
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-center" href="#">Case Study-(ATS)</a></li>
+                            <li><a class="dropdown-item text-center" href="#">Performance Testing</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-center" href="#">Data Analysis</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link text-muted">Profile</a>
+                        </li>
+                      </ul>
+                  </nav>
+
+                <!-- containment of body info -->
+                <!-- using col-lg & col-sm to control how many spaces in a container 
+                    should a column take at different screen widths with the maximum at 12 
+                    lg screen widths will split in half and sm screen width will take full-->
+                    
+                <div class=" p-5 portfolio-main bg-warning bg-opacity-75 col-lg-6 col-sm-12">
+                        
+                    <div class=" mt-5 text-center py-5 col-12">
+                        <div class="overlay card py-5">
+                            <div class="card-body">
+                                <h5 class="card-title">About Me</h5>
+                                <div class="">
+                                    <img src="/images/portfolio-img/my-photo.jpg" alt="" class="bs-img">
+                                    <!-- <i class="bs-icon bi bi-person-fill"></i> -->
+                                </div>
+                                <p class="card-text">Fun Fact: <br> You are reading this right now...</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item custom-border">Technical Background</li>
+                                <li class="list-group-item custom-border">Programming Background</li>
+                                <li class="list-group-item custom-border">Customer Experience Background</li>
+                            </ul>
+                            <div class="card-body">
+                                <i><a href="https://jm.linkedin.com/in/onique-campbell-1091b576?trk=profile-badge%22" class="link-icon bi bi-linkedin"></a></i>
+                                <a href="https://jm.linkedin.com/in/onique-campbell-1091b576?trk=profile-badge%22" class="card-link">Linkedin</a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class=" p-5 portfolio-main bg-info bg-opacity-75 col-lg-6 col-sm-12">
+                    
+                    <div class=" mt-5 text-center py-5 col-12">
+                        <div class=" overlay card py-5">
+                            <div class="card-body">
+                                <h5 class="card-title">Projects</h5>
+                                <div class="">
+                                    <img src="/images/portfolio-img/technical-flowchart.png" alt="" class="bs-img-2">
+                                    <!-- <i class="bs-icon bi bi-stack"></i> -->
+                                </div>
+                                <p class="card-text">Where ideas, imaginations and thoughts become reality <br> Let me help you bring yours to life... </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item custom-border">Passion Projects</li>
+                                <li class="list-group-item custom-border">Consumer Projects</li>
+                                <li class="list-group-item custom-border">Real World Projects</li>
+                            </ul>
+                            <div class="card-body">
+                                <i><a href="https://github.com/Onique-Unique" class="git-icon bi bi-github"></a></i>
+                                <a href="https://github.com/Onique-Unique" class="card-link">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+</html>
