@@ -703,6 +703,12 @@
     }
 }
 
+#submit-btn  {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
 @media (max-width:56.25em) {
 
     .contact__column--left {
