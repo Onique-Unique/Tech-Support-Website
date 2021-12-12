@@ -644,6 +644,31 @@ nav {
   .retry-search span {
     color: red; }
 
+.section-thanks {
+  height: max-content;
+  border-bottom: .2rem solid black;
+  text-align: center;
+  padding-top: 5rem; }
+  .section-thanks .section-thanks-p {
+    text-align: left;
+    padding-bottom: 5rem;
+    font-size: 1.8rem;
+    font-weight: 400; }
+  .section-thanks .section-div {
+    background-color: white;
+    margin-bottom: 15rem;
+    padding: 2rem; }
+    .section-thanks .section-div .checkmark {
+      font-size: 12rem;
+      text-align: center;
+      color: #3fbd3f; }
+      .section-thanks .section-div .checkmark::before {
+        padding-bottom: 3rem; }
+    .section-thanks .section-div .thanks-h1 {
+      font-size: 2.4rem; }
+    .section-thanks .section-div .thanks-p {
+      font-size: 1.6rem; }
+
 /* 
 ---Mobile, portrait---
 320px	iPhone SE

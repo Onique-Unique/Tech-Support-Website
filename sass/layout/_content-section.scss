@@ -703,6 +703,7 @@
     }
 }
 
+// Contact Form
 #submit-btn  {
     border: none;
     outline: none;
@@ -765,5 +766,45 @@
 
     & span {
         color: red;
+    }
+}
+
+// Thank You Page
+
+.section-thanks {
+    height:max-content;
+    border-bottom: .2rem solid black;
+    text-align: center;
+    padding-top: 5rem;
+
+    .section-thanks-p {
+        text-align: left;
+        padding-bottom: 5rem;
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+
+    .section-div {
+        background-color: white;
+        margin-bottom: 15rem;
+        padding: 2rem;
+
+        .checkmark {
+            font-size: 12rem;
+            text-align: center;
+            color: rgb(63, 189, 63);
+        
+            &::before {
+                padding-bottom: 3rem;
+            }
+        }
+
+        .thanks-h1 {
+            font-size: 2.4rem;
+        }
+
+        .thanks-p {
+            font-size: 1.6rem;
+        }
     }
 }
