@@ -18,11 +18,11 @@ Go ahead and check it out now....
 All major files stored in master branch of this repository...
 
 # Features include: 
-  #### Fully Responsive design, information packed, Website navigation, Functional Search bar with no backend database, Webpage interactivity
+  #### Fully Responsive design, information packed, Website navigation, Functional Search bar with no backend database, Webpage interactivity, Contact the team           mailing 
   <br>
 
 # Features that will be gradually added:
-  #### Discussions tab, Tech Lounge,  ATS - Applicant Tracking System/ Resume scanner, Contact the team mailing and much more
+  #### Discussions tab, Tech Lounge,  ATS - Applicant Tracking System/ Resume scanner and much more
   <br>
 
 # Mobile View
