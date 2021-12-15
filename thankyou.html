@@ -9,6 +9,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/favicon_io/site.webmanifest">
+
+    <!-- AOS Script michalsnik Github -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,7 +52,7 @@
 
     <!-- Sidebar -->
     <div class="sidebar hidden overflow">
-        <div class="sidebar__shortcut-links sidebar-alterations">
+        <div class="sidebar__shortcut-links sidebar-alterations" data-aos="fade-down">
             
             <!-- linking to the Home page/ html -->
             <a href="index.html">
@@ -95,7 +98,7 @@
         </div>
     </div>
 
-    <section class="section-thanks container">
+    <section class="section-thanks container" data-aos="fade">
         <div class="section-thanks-p">
             <p>
                 THANK YOU...
@@ -115,7 +118,15 @@
         </div>
    </section>
 
-<script src="script.js"></script>
-<script src="search.js"></script>
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+
+    <!-- AOS script by michalsnik Github -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:600
+      });
+    </script>
 </body>
 </html>

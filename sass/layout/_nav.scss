@@ -7,7 +7,7 @@ nav {
     background-color: white;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 20;
 }
 
 .flex-div {
@@ -98,6 +98,7 @@ nav {
     padding-top: 15rem;
     overflow: scroll;
     font-size: 1.2rem;
+    z-index: 10;
 
     &__shortcut-links {
 

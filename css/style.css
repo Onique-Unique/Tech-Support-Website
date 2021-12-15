@@ -29,7 +29,7 @@ nav {
   background-color: white;
   position: sticky;
   top: 0;
-  z-index: 10; }
+  z-index: 20; }
 
 .flex-div {
   display: flex;
@@ -86,7 +86,8 @@ nav {
   padding-left: 1rem;
   padding-top: 15rem;
   overflow: scroll;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  z-index: 10; }
   .sidebar__shortcut-links a {
     display: flex;
     align-items: center;
@@ -486,9 +487,6 @@ nav {
   .tech-lounge--8 {
     background-image: url(img/bg-img-8.jpg); }
 
-.tech-sidebar {
-  z-index: 1; }
-
 @media (max-width: 34.25em) {
   .hide-text--1, .tech-lounge__img {
     display: none; }
@@ -510,7 +508,7 @@ nav {
   fill: black; }
 
 .gif {
-  padding-left: 18%; }
+  padding-left: 24%; }
 
 @media (max-width: 56.25em) {
   .gif {
