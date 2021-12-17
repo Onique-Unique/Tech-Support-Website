@@ -13,7 +13,7 @@ String.prototype.includesOneof = function(arrayOfStrings) {
 // writing a script for the search bar function logic
 // for the explore page will identify different sections searched using location.href = "#idName"
 function openfile() {
-    var info = document.getElementById("#search").value;
+    var info = document.getElementById("search").value;
 
     if (info.toLowerCase().includesOneof(["remote", "assistance"])) {
 
@@ -113,7 +113,7 @@ function openfile() {
 // Writing a function allowing the search icon to submit a request when pressed to act as the enter key
 
 // writing the input field to gather the search information
-var input = document.getElementById("#search");
+var input = document.getElementById("search");
 
 // executing the function when the user releases the key
 input.addEventListener("keyup", function(event) {
