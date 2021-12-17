@@ -6,11 +6,15 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  min-width: 26em;
+  margin: 0 auto; }
 
 body {
   font-family: 'Poppins', sans-serif;
-  font-family: 'Work Sans', sans-serif; }
+  font-family: 'Work Sans', sans-serif;
+  min-width: 26em;
+  margin: 0 auto; }
 
 a {
   text-decoration: none;
