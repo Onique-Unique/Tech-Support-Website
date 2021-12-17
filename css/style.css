@@ -708,3 +708,8 @@ nav {
   height: 55rem;
   border: none;
   margin-left: 4rem; }
+
+@media (max-width: 58.875em) {
+  .iframe {
+    width: 100%;
+    margin-left: 0; } }
