@@ -116,7 +116,7 @@ function openfile() {
 var input = document.getElementById("search");
 
 // executing the function when the user releases the key
-input.addEventListener("keyup", function(event) {
+input.document("keyup", function(event) {
 
     // Number 13 is the "Enter" key on the keyboard
     if (event.keyCode === 13) {
