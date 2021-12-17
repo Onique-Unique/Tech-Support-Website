@@ -487,6 +487,9 @@ nav {
   .tech-lounge--8 {
     background-image: url(img/bg-img-8.jpg); }
 
+.ats-tip {
+  width: 100%; }
+
 @media (max-width: 34.25em) {
   .hide-text--1, .tech-lounge__img {
     display: none; }

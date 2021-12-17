@@ -96,6 +96,13 @@ function openfile() {
         window.open("info-page12.html",);
     } 
 
+    else if (info.toLowerCase().includesOneof(["resume", "ats", "cv", "scan", "job description", "resume scanner", "keyword tool", 
+    "keyword optimize", "applicant tracking system", "jobscan", "job scan", "job research", "skills match", "match"])) {
+
+        window.close();
+        window.open("resume-scan.html",);
+    } 
+
     else {
         window.location.href ="redirect.html";
     }
