@@ -1,19 +1,12 @@
 
 /* Main Imports */
-*{
-
-    /* centering all elements with margin: 0 auto; */
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .row {
     width: 98.4%;
     padding-left: 2%;
 }
 
-html, body {
+.body-html {
     background-color: rgb(221,231,233);
     color: aliceblue;
     text-rendering: optimizeLegibility;
@@ -24,6 +17,7 @@ html, body {
     width: 100%;
     min-width: 220px;
     max-width: 1570px;
+    margin: 0 auto;
 }
 
 img {

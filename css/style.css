@@ -675,17 +675,11 @@ nav {
       font-size: 1.6rem; }
 
 /* Main Imports */
-* {
-  /* centering all elements with margin: 0 auto; */
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box; }
-
 .row {
   width: 98.4%;
   padding-left: 2%; }
 
-html, body {
+.body-html {
   background-color: #dde7e9;
   color: aliceblue;
   text-rendering: optimizeLegibility;
@@ -695,7 +689,8 @@ html, body {
   scroll-behavior: smooth;
   width: 100%;
   min-width: 220px;
-  max-width: 1570px; }
+  max-width: 1570px;
+  margin: 0 auto; }
 
 img {
   cursor: pointer; }
