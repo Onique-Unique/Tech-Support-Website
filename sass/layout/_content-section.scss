@@ -34,7 +34,7 @@
     grid-column-gap: 1.6rem;
     grid-row-gap: 3rem;
     margin-top: 1.5rem;
-    padding-left: 18rem;
+    padding-left: 15%;
     transition: padding-left .3s;
 
     &__vid-list {
@@ -78,7 +78,7 @@
 // when menu icon is selected to fill empty space
 .large__list-container {
     transition: padding-left .5s;
-    padding-left: 9rem;
+    padding-left: 7%;
 }
 
 @media (max-width: 58.875em) {

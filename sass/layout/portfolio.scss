@@ -170,14 +170,14 @@ header {
     border-radius: 5%;
 }
 
-.gif {
+.portfolio-gif {
     width: 100%;
     padding: 10%;
     margin-left: -2rem;
     transform: scale(.98);
 }
 
-.gif:hover {
+.portfolio-gif:hover {
     transform: scale(1.01);
     transition: all .2s;
 }
@@ -510,7 +510,7 @@ footer p {
 }
 
 @media(min-width: 1570px) {
-    html, body {
+    .body-html {
         margin: 0 auto;
         background-color: rgb(8, 5, 1);
     }
