@@ -562,6 +562,11 @@ footer p {
 }
 
 @media(max-width: 863px) {
+
+    .my-photo {
+        height: 25em;
+    }
+
     .technical-portfolio, .lower-para {
         display: inline-block;
     }
