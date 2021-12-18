@@ -224,8 +224,7 @@ header {
 }
 
 .portfolio-btn:link,
-.portfolio-btn:visited,
-input[type= submit] {
+.portfolio-btn:visited {
     text-decoration: none;
     padding: 1rem 3rem;
     border-radius: 20rem;
@@ -233,16 +232,14 @@ input[type= submit] {
 }
 
 .p-btn-full:link,
-.p-btn-full:visited,
-input[type= submit] {
+.p-btn-full:visited {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     display: inline-block;
 }
 
 .p-btn-full:active,
-.p-btn-full:hover,
-input[type= submit]:hover {
+.p-btn-full:hover {
     background-color: rgb(000,000,000);
     color: aliceblue;
 }
@@ -496,28 +493,6 @@ input[type= submit]:hover {
     border-radius: 20px;
 }
 
-input[type= text], input[type= email], textarea {
-    width: 100%;
-    padding: .8rem;
-    border-radius: .3rem;
-    border: .1rem solid black;
-    background-image: linear-gradient(rgba(246, 144, 0, 0.8), rgb(255,255,255)) ;
-}
-
-input[type= checkbox] {
-    margin: 0 .5rem;
-}
-
-textarea {
-    height: 10rem;
-}
-
-input[type= submit] {
-    border-bottom: .2rem solid rgb(246, 144, 0);
-    border-right: .2rem solid rgba(246, 144, 0, 0.8);
-    border-top: .2rem solid rgb(119, 111, 93);
-    border-left: .2rem solid rgb(119, 111, 93);
-}
 
 /* Footer Section */
 footer {
