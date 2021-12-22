@@ -865,18 +865,30 @@ header {
   text-shadow: 0.05rem 0.05rem 0.01rem black;
   text-align: left; }
   .header-box-text h1 span {
-    font-size: 8rem;
+    font-size: 7rem;
     font-weight: 300; }
 
 .header-box-text h2 {
   color: azure;
   font-size: 2rem;
+  margin-top: 10%;
   margin-bottom: 1rem;
   font-weight: 400;
   text-shadow: 0.05rem 0.05rem 0.01rem black;
+  text-align: center; }
+
+.text-h2__head {
   position: absolute;
   top: 75%;
   left: 40%; }
+
+.header-text__h3 {
+  color: azure;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  text-shadow: 0.05rem 0.05rem 0.01rem black;
+  text-align: center; }
 
 .header-box-text p {
   color: azure;
@@ -908,6 +920,9 @@ header {
       padding: 0;
       width: 40em;
       margin-top: 5%; }
+  .head-photo__div .photo-hidden {
+    height: 30em;
+    border-radius: 100%; }
 
 .down-arrow {
   height: 3rem;
@@ -1303,11 +1318,39 @@ footer p {
   .main-nav img {
     display: none; } }
 
+@media (min-width: 1281px) {
+  .text-h2__head {
+    left: 42.5%; } }
+
+@media (min-width: 1023px) {
+  .photo-hidden {
+    display: none; }
+  .header-text__h3 {
+    display: none; } }
+
 @media (min-width: 863px) {
   .technical-sub-para {
     font-size: 1.7rem; } }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
+  .header-box {
+    display: inline-block; }
+  .header-box-text {
+    text-align: center; }
+    .header-box-text h1 {
+      font-weight: 300;
+      font-size: 3.8rem;
+      text-align: center; }
+      .header-box-text h1 span {
+        font-size: 3.8rem; }
+    .header-box-text p {
+      text-align: center;
+      padding: 0;
+      font-weight: 300; }
+  .header-box-text h2 {
+    display: none; }
+  .my-photo {
+    display: none; }
   .span_1_of_2 {
     width: 100%; }
   .project-img {
@@ -1338,6 +1381,8 @@ footer p {
     text-align: center; } }
 
 @media (max-width: 480px) {
+  .header-text__h3 {
+    font-size: 1.5rem; }
   .span_1_of_5 {
     width: 20%; }
   .skill-logo {
@@ -1351,6 +1396,9 @@ footer p {
   .header-box-text h1, .about-heading, .section-heading, .technical-heading,
   .technical-sub-section-heading, .contact-heading {
     font-size: 2.2rem; }
+    .header-box-text h1 span, .about-heading span, .section-heading span, .technical-heading span,
+    .technical-sub-section-heading span, .contact-heading span {
+      font-size: 2.2rem; }
   .header-box-text h2, .skill-heading__para, .technical-sub-heading {
     font-size: 1.3rem; }
   .about-para, .technical-para, footer p {
