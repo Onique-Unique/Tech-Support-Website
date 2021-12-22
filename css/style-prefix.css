@@ -843,6 +843,13 @@ header {
   position: relative; }
 
 .header-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -852,29 +859,55 @@ header {
 
 .header-box-text h1 {
   color: azure;
-  font-size: 4.8rem;
+  font-size: 7.8rem;
   margin-bottom: 1rem;
   font-weight: 400;
-  text-shadow: 0.05rem 0.05rem 0.01rem black; }
+  text-shadow: 0.05rem 0.05rem 0.01rem black;
+  text-align: left; }
+  .header-box-text h1 span {
+    font-size: 8rem;
+    font-weight: 300; }
 
 .header-box-text h2 {
   color: azure;
   font-size: 2rem;
   margin-bottom: 1rem;
   font-weight: 400;
-  text-shadow: 0.05rem 0.05rem 0.01rem black; }
+  text-shadow: 0.05rem 0.05rem 0.01rem black;
+  position: absolute;
+  top: 75%;
+  left: 40%; }
 
 .header-box-text p {
   color: azure;
   font-size: 1.4rem;
   margin-bottom: 1rem;
   cursor: pointer;
-  text-shadow: 0.05rem 0.05rem 0.4rem black; }
+  text-shadow: 0.05rem 0.05rem 0.4rem black;
+  text-align: left;
+  padding: 0 3%;
+  font-weight: 400; }
 
-.my-photo {
-  height: 30em;
-  width: auto;
-  border-radius: 50%; }
+.head-photo__div {
+  padding: 1%; }
+  .head-photo__div .my-photo {
+    height: 25em;
+    width: 45em;
+    border-radius: 15px;
+    -webkit-transform: skewX(10deg);
+    transform: skewX(35deg) rotate(-5deg);
+    box-shadow: -6rem 5rem 2rem dimgrey;
+    padding: 2%;
+    margin-left: 8rem; }
+    .head-photo__div .my-photo:hover {
+      -webkit-transform: skewX(0deg);
+      transform: skewX(0deg) rotate(0deg);
+      box-shadow: 1rem 1rem 2rem dimgrey;
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+      padding: 0;
+      width: 40em;
+      margin-top: 5%; }
 
 .down-arrow {
   height: 3rem;
