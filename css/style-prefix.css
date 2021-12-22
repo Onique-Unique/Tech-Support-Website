@@ -702,7 +702,7 @@ nav {
       -ms-flex-preferred-size: 48%;
           flex-basis: 48%; }
   .form__input, .form__text-area {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     font-family: inherit;
     padding: .5rem;
     border-radius: 1rem;
@@ -740,7 +740,8 @@ nav {
 #submit-btn {
   border: none;
   outline: none;
-  background-color: transparent; }
+  background-color: transparent;
+  font-size: 1.6rem; }
 
 @media (max-width: 56.25em) {
   .contact__column--left {

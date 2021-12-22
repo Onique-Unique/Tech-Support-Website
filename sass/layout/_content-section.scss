@@ -659,7 +659,7 @@
     }
 
     &__input, &__text-area {
-        font-size: 1.9rem;
+        font-size: 1.6rem;
         font-family: inherit;
         padding: .5rem;
         border-radius: 1rem;
@@ -709,6 +709,7 @@
     border: none;
     outline: none;
     background-color: transparent;
+    font-size: 1.6rem;
 }
 
 @media (max-width:56.25em) {
