@@ -240,8 +240,9 @@
 .add-comment {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: 3rem 0;
-    padding-left: 15%;
+    padding-left: 1%;
 
     & img {
         width: 3.5rem;

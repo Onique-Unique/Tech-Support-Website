@@ -343,8 +343,9 @@ nav {
 .add-comment {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 3rem 0;
-  padding-left: 15%; }
+  padding-left: 1%; }
   .add-comment img {
     width: 3.5rem;
     border-radius: 50%;
