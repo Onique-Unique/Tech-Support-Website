@@ -10,6 +10,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/favicon_io/site.webmanifest">
 
+     <!-- Bootstrap custom icons cdn link tag -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
     <!-- AOS Script michalsnik Github -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
@@ -23,6 +26,115 @@
      crossorigin="anonymous"></script>
      
     <title>ATS Resume Scanner Page</title>
+
+    <style>
+
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form input, form button {
+            padding: 0.5rem;
+            font-size: 1.4rem;
+            border: none;
+            background-color: #d88771;
+        }
+
+        form button {
+            background-color: #f9f9f9;
+            cursor: pointer;
+            transition: all .3s ease;
+        }
+
+        form button:hover {
+            background-color: rgb(15, 187, 15);
+            color: white;
+        }
+
+        .todo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .todo-list {
+            min-width: 30%;
+            list-style: none;
+        }
+
+        .input-p {
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .p-hidden, .p-hidden2, .hidden2 {
+            display: none;
+        }
+
+        .todo {
+            margin: 1rem;
+            background-color: rgb(240, 240, 240);
+            color: black;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: .1rem solid black;
+
+            /* transition for todo items checkmark and delete click */
+            transition: all .7s ease;
+        }
+
+        .todo li {
+            /* push checkmark and delete btn next to each other */
+            flex: 1;
+        }
+
+        .trash-btn, .complete-btn {
+            background-color: rgb(15, 187, 15);
+            color: white;
+            border: none;
+            padding: 1rem;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .trash-btn {
+            background-color: #ff6f47;
+            display: none;
+        }
+
+        .todo-item {
+            padding: 0 .5rem;
+        }
+
+        .bi-check2-square, .bi-trash, .bi-arrow-clockwise {
+            /* remove conflicting button click on icon and div at the same time, by removing
+            pointer event from icon/ i tag so a btn when clicked will execute its function 
+            basically clicking through the icon and onto the btn itself*/
+            pointer-events: none;
+            font-size: 1.4rem;
+        }
+
+        .bi-arrow-clockwise {
+            background-color: black;
+            color: white;
+            padding: 0.18rem;
+        }
+
+        /* animation - to do green check mark when a item on the list is done/completed */
+        .completed {
+            opacity: 0.5;
+        }
+
+        /* animation - to do delete btn when an item on the list is deleted/ removed */
+        .fall {
+            transform: translateY(8rem) rotateZ(20deg);
+            opacity: 0;
+        }
+    </style>
 </head>
 <body>
     <!-- Main Nav -->
@@ -151,70 +263,30 @@
                     <hr>
                     <img src="https://cdn.shopify.com/s/files/1/0066/4574/3686/files/ATS-Optimization-Checklist_49b4791d-282e-4d68-ba3d-3429e1bbf6fa.png?v=1575591135" alt="Optimization tips" class="ats-tip">
                     <h4>
-                        3 comments
+                        <!-- comment counter -->
                     </h4>
 
+                    <p class="input-p">Text Limit: 80 Character</p>
+                    <p class="input-p">Admin: Please Keep Comment Section Professional, Thank you...</p>
+                    <p class="input-p p-hidden">Your Email Address will remain private - click arrow button when finished</p>
+                    <p class="input-p p-hidden2">Click Reload Button If Comment is not visible</p>
                     <div class="add-comment">
-                        <img src="images/help_desk-logo2.png">
-                        <input type="text" placeholder="Write comments...">
+                        <form name="myForm">
+                            <img src="images/help_desk-logo2.png">
+                            <input type="text" name="name" class="todo-input" id="name" placeholder="Name"  onkeyup="limitText(this, 18);" onkeypress="limitText(this, 18);" onkeydown="limitText(this, 18);" required>
+                            <input type="text" name="message" class="todo-input2" placeholder="Write Comment..."  onkeyup="limitText(this, 80);" onkeypress="limitText(this, 80);" onkeydown="limitText(this, 80);" required>
+                            <input type="email" class="todo-input3 hidden2" name="email" id="email" placeholder="Enter Email" required>
+                            
+                            <button class="todo-button" type="submit">
+                                <i class="bi bi-caret-right-square-fill"></i>
+                            </button>
+                            <button onclick="window.location.reload();" class="hidden3" type="submit">
+                                <i class="bi bi-arrow-clockwise"></i></i>
+                            </button>
+                        </form>  
                     </div>
-
-                    <div class="old-comment">
-                        <img src="images/help_desk-logo2.png">
-                        <div>
-                            <h3>
-                                helpdesk.io <span> Nov 12 2021</span>
-                            </h3>
-                            <p>
-                                This comment section is still under construction
-                            </p>
-                            <div class="old-comment__comment-action">
-                                <img src="images/like.png">
-                                <span>1</span>
-                                <img src="images/dislike.png">
-                                <span>0</span>
-                                <span>Reply</span>
-                                <a href="#"> All replies</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="old-comment">
-                        <img src="images/help_desk-logo2.png">
-                        <div>
-                            <h3>
-                                helpdesk.io <span> Nov 12 2021</span>
-                            </h3>
-                            <p>
-                                Discussions tab will be available soon
-                            </p>
-                            <div class="old-comment__comment-action">
-                                <img src="images/like.png">
-                                <span>1</span>
-                                <img src="images/dislike.png">
-                                <span>0</span>
-                                <span>Reply</span>
-                                <a href="#"> All replies</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="old-comment">
-                        <img src="images/help_desk-logo2.png">
-                        <div>
-                            <h3>
-                                helpdesk.io <span> Nov 12 2021</span>
-                            </h3>
-                            <p>
-                                Hang in there, we'll get the discussions tab up and running soon.
-                            </p>
-                            <div class="old-comment__comment-action">
-                                <img src="images/like.png">
-                                <span>1</span>
-                                <img src="images/dislike.png">
-                                <span>0</span>
-                                <span>Reply</span>
-                                <a href="#"> All replies</a>
-                            </div>
-                        </div>
+                    <div class="todo-container">
+                        <ul class="todo-list"></ul>
                     </div>
                 </div>
             </div>
@@ -292,6 +364,7 @@
     
     <script src="script.js"></script>
     <script src="search.js"></script>
+    <script src="comment.js"></script>
 
     <!-- AOS script by michalsnik Github -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
