@@ -41,7 +41,7 @@ img {
 }
 
 header {
-    background-image: url(img/portfolio-bg-img.jpg);
+    background-image: url(img/portfolio-bg-img2.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -135,7 +135,6 @@ header {
 
     .photo-hidden {
         height: 30em;
-        border-radius: 100%;
     }
 }
 
@@ -626,8 +625,29 @@ footer p {
         display: none;
     }
 
-    .my-photo {
-        display: none;
+    .head-photo__div {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+
+        .my-photo {
+            height: 100%;
+            width: 8rem;
+            border-radius: 15px;
+            box-shadow: none;
+            -webkit-transform: skewX(0deg);
+            transform: skewX(0deg) rotate(0deg);
+            margin-left: 0;
+            // display: none;
+    
+            &:hover {
+                transition: all .2s ease-in-out;
+                padding: 0;
+                width: 10rem;
+                margin-top: 5%;
+            }
+        }
     }
 
     .span_1_of_2 {
@@ -746,8 +766,15 @@ footer p {
     }
 }
 
-@media (max-width: 220px) {
+@media (max-width: 260px) {
     .main-nav img {
         display: none;
+    }
+
+    .head-photo__div {
+
+        .my-photo {
+            width: 6rem;
+        }
     }
 }
