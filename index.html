@@ -32,12 +32,22 @@
     <link rel="stylesheet" href="css/style-minify.css">
 
     <!-- Google Adsense Script -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7079047961613379"
-     crossorigin="anonymous"></script>
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7079047961613379"
+     crossorigin="anonymous"></script> -->
      
     <title>Helpdesk - Knowledge Sharing Platform: Azure, Tech Support, Network Admin, Systems Admin and much more...</title>
+
+    <script> function lazyload() {
+        var scriptTag = document.createElement('script'); 
+        scriptTag.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7079047961613379"
+        crossorigin="anonymous"; // set the src attribute
+        // scriptTag.type = 'text/javascript'; // if you have an HTML5 website you may want to comment this line out
+        scriptTag.async = true; // the HTML5 async attribute
+        var headTag = document.getElementsByTagName('head')[0];
+        headTag.appendChild(scriptTag);}
+    </script>
 </head>
-<body>
+<body onload="lazyload();">
     <!-- Main Nav -->
     <nav class="flex-div">
         <div class="flex-div__nav-left">
