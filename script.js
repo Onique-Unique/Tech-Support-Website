@@ -27,3 +27,62 @@ userIcon.onclick = function() {
     hidden.classList.toggle("hidden");
 }
 
+
+// Tech lounge Article Logic 
+
+// form submit scroll trigger
+window.onscroll = function() {articleForm()};
+
+function articleForm() {
+    if(document.body.scrollTop > 1800 || document.documentElement.scrollTop > 1800) { // number - measured in pixels away from top of page
+        const formSubmit =  gsap.timeline({defaults: {duration: 1.5, ease: "power2.out"}});
+        formSubmit.to(".tech-lounge-form", {opacity: 1});
+    }else {
+        const formSubmit =  gsap.timeline({defaults: {duration: 2, ease: "power2.out"}});
+        formSubmit.to(".tech-lounge-form", {opacity: 0});
+    }
+}
+
+// logic of form submission
+const formMessageBtn = document.querySelector("#form-btn");
+const formMessageContainer = document.querySelector(".tech-form__message");
+const formSubmitContainer = document.querySelector(".tech-form-top");
+const messageBox = document.querySelector("textarea");
+
+formMessageBtn.addEventListener("click", () => {
+    if (messageBox.value === "") {
+        alert("Please Enter Valid Text");
+    }else if (messageBox.value.length <= 9) {
+        alert("Character minimum is 10");
+    }else {
+        formMessageContainer.classList.add("article-hidden");
+        formSubmitContainer.classList.remove("article-hidden");
+    }
+});
+
+// outer focus logic grabbing nav and sidebar
+const techNav = document.querySelector(".tech-nav");
+const techSidebar = document.querySelector(".tech-sidebar");
+const techLoungeMain = document.querySelector(".tech-lounge__container");
+
+// // Crypto/ Finance Article - not ready--------------- uncomment when ready
+// const article1 = document.querySelector("#finance");
+// const articleBtn1 = document.querySelector(".article-1");
+
+// articleBtn1.addEventListener("click", () => {
+//     techLoungeMain.classList.toggle("article-hidden");
+//     article1.classList.toggle("article-hidden");
+//     techNav.classList.toggle("article-outer-blur");
+//     techSidebar.classList.toggle("article-outer-blur");
+// });
+
+// Home/ Lifestyle Article
+const article2 = document.querySelector("#lifestyle");
+const articleBtn2 = document.querySelector(".article-2");
+
+articleBtn2.addEventListener("click", () => {
+    techLoungeMain.classList.toggle("article-hidden");
+    article2.classList.toggle("article-hidden");
+    techNav.classList.toggle("article-outer-blur");
+    techSidebar.classList.toggle("article-outer-blur");
+});

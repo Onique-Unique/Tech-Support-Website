@@ -422,11 +422,20 @@
     height: 40rem;
     margin-top: 0;
     position: relative;
-
     // img
     background-size: cover;
     transform: scale(1.01);
     transition: all .3s;
+
+    // link cheat, since anchor tag cannot wrap a div to function as intended, this enables me to click and open an article
+    .span-link {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
 
     &:hover {
         transform: scale(.98);
@@ -453,6 +462,8 @@
 
     &__text {
         position: absolute;
+        background-color: rgba(0, 0, 0, 0.32);
+        padding: 5%;
 
         & a {
             color: white;
@@ -497,6 +508,495 @@
 
     &--9 {
         background-image:url(img/bg-img-12.jpg);
+    }
+}
+
+// Tech Lounge Container Info
+
+.tech-lounge-info--container {
+    width: 100%;
+    margin-top: 2%;
+
+    .info-main-nav {
+        height: 5vh;
+        width: 100%;
+
+        .info-main-nav--headers {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 4%;
+
+            & h1 {
+                font-size: 2rem;
+                background-color: #fcb565;
+                color: #fff;
+                padding: 0.4rem 1rem;
+                border-radius: 0.8rem 0 0.8rem 0;
+            }
+
+            & svg {
+                // courtesy of css filter generator - codepen.io > pjoqqp match & convert #hex color to filter
+                filter: invert(56%) sepia(95%) saturate(927%) hue-rotate(68deg) brightness(110%) contrast(83%);
+            }
+        }
+    }
+
+    .tech-lounge-info--body {
+        margin: 3%;
+        background-color: white;
+        position: relative;
+
+        .tech-lounge-info--1 {
+            box-shadow: 1px 1rem 2rem black;
+            position: relative;
+
+            & img {
+                max-height: 25rem;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .tech-lounge-info-content {
+                position: absolute;
+                top: 21%;
+                padding: 1%;
+                background-color: rgba(255, 255, 255, 0.726);
+
+                & h2 {
+                    font-size: 4.8rem;
+                    color: black;
+                    text-shadow: 1px 1px 0.02px rgb(43, 43, 43);
+                    line-height: 1.2;
+                    font-weight: 400;
+
+                    & span {
+                        color: rgb(243, 183, 53);
+                        font-weight: bold;
+                    }
+                }
+
+
+                & p {
+                    font-size: 1.6rem;
+                    color: red;
+                }
+            }
+
+            & button {
+                border: none;
+                background-color: rgb(255, 218, 98);
+                padding: 1rem 1.5rem;
+                border-radius: 5px;
+                position: absolute;
+                bottom: 5%;
+                right: 5%;
+                cursor: pointer;
+                transition: all .2s;
+
+                &:hover {
+                    border: 1px solid rgb(43, 43, 43);
+                    background-color: white;
+                }
+            }
+        }
+
+        .tech-lounge-info--2, .tech-lounge-info--3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+            grid-column-gap: 1.6rem;
+            grid-row-gap: 3rem;
+            padding: 2%;
+            margin: 2.5% 0;
+
+            .tech-article-content {
+                width: 100%;
+
+                & h3 {
+                    font-size: 3.5rem;
+
+                    & span {
+                        color: #ff3c00;
+                    }
+
+                    .span-alt {
+                        color: #fcb565;
+                    }
+                }
+
+                & p {
+                    padding: 2%;
+                    font-size: 1.6rem;
+                    line-height: 2;
+                }
+
+                .tech-author-details {
+                    display: flex;
+                    align-items: center;
+                    padding: 1%;
+
+                    & img {
+                        height: 5rem;
+                        border-radius: 100%;
+                    }
+
+                    & p {
+                        font-weight: bold;
+                        color: #00a4d6;                      
+                        transition: all .5s;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: rgb(243, 183, 53);
+                        }
+                    }
+                }
+            }
+
+            .tech-article-visuals-rel {
+                position: relative;
+
+                .tech-article-visuals-abs, .tech-article-visuals-abs-2 {
+                    position: relative; // in media query remove position absolute/ relative for mobile fluidity
+                    top: 50%;
+                    left: 0%;
+                    transform: translate(-0%, -50%);
+
+                    .tech-article-visuals {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 25rem;
+                        border: 1px solid black;
+                        border-radius: 3px;
+                        position: relative;
+
+                        .visual-grad-arrow {
+                            position: absolute;
+                            bottom: 0%;
+                            right: 4%;
+                        }
+
+                        .tech-article-visuals-inserts {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+
+                            & h1 {
+                                text-align: left;
+                                font-size: 2.6rem;
+                                border-bottom: 0.3rem solid aliceblue;
+                                width: 50%;
+                            }
+
+                            // link cheat, since anchor tag cannot wrap a div to function as intended, this enables me to click and open an article
+                            .span-link {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                top: 0;
+                                left: 0;
+                                z-index: 10;
+                            }
+                        }
+                    }
+                }
+
+                .tech-article-visuals-abs-2 { // secondary content section for visuals/ content break
+                    transform: translate(0);
+                }
+            }
+
+            .visual-grad {background-image: linear-gradient(to right, #e42a2a 0%, #ffd050  51%, #ff3c00  100%)}
+            .visual-grad {
+               padding: 2%;
+               text-align: center;
+               transition: 0.5s;
+               background-size: 200% auto;
+               color: white;            
+               box-shadow: 0 0 20px #eee;
+               filter: blur(.25px);
+             }
+   
+             .visual-grad:hover {
+               background-position: right center; /* change the direction of the change here */
+               color: #fff;
+               text-decoration: none;
+             }        
+        }
+
+        .tech-previous {
+            padding: 0.5rem 1rem;
+            position: absolute;
+            bottom: 0%;
+            left: 45%;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(40,40,40);
+            color: white;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgb(82, 77, 71);
+            }
+        }
+    }
+}
+
+.tech-lounge-info-div--relative {
+    position: relative;
+
+    .article-visit--link {
+        position: absolute;
+        right: 5%;
+        bottom: 25%;
+
+        & p {
+            font-size: 1.2rem;
+            color: rgb(243, 183, 53);
+            transition: all .2s;
+
+            &:hover {
+                color: #00a4d6;
+            }
+        }
+    }
+
+    .article-visit--link_2 {
+        position: absolute;
+        right: 5%;
+        bottom: 10%;
+
+        & p {
+            font-size: 1.2rem;
+            color: rgb(243, 183, 53);
+            transition: all .2s;
+
+            &:hover {
+                color: #00a4d6;
+            }
+        }
+    }
+
+    .article-carousel {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        grid-column-gap: 1.6rem;
+        grid-row-gap: 3rem;
+
+        & img {
+            height: 8rem;
+            width: 100%;
+            object-fit: cover;
+            padding: 0 2%;
+            transition: all .2s;
+
+            &:hover {
+                transform: scale(.9);
+            }
+        }
+
+        & p {
+            text-align: center;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.article-hidden {
+    display: none;
+}
+// blur and change outer sections when an article is in focus
+.article-outer-blur {
+    filter: blur(.65px) brightness(.8);
+    pointer-events: none;
+    animation: article-blur .5s ease-in-out;
+}
+
+// svg wave arrow animation
+#red-circle-arrows {
+    animation: red-arrow-down 8s ease-in-out infinite;
+}
+
+#green-circle-arrows {
+    animation: green-arrow-up 8s ease-in-out infinite;
+}
+
+#svg-wave {
+    animation: svg-wave 10s ease-in-out infinite;
+}
+
+@keyframes article-blur {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes red-arrow-down {
+    0% {
+        transform: translateY(0); 
+        opacity: 1;
+    }
+      25% {
+        transform: translateY(0.5rem);
+        opacity: 0; 
+    }
+      50% {
+        transform: translateY(0); 
+        opacity: 1;
+    }
+      75% {
+        transform: translateY(0.5rem);
+        opacity: 0; 
+    }
+      100% {
+        transform: translateY(0); 
+        opacity: 1;
+    }
+}
+
+@keyframes green-arrow-up {
+    0% {
+        transform: translateY(0.5rem); 
+        opacity: 0;
+    }
+      25% {
+        transform: translateY(0);
+        opacity: 1; 
+    }
+      50% {
+        transform: translateY(0.5rem); 
+        opacity: 0;
+    }
+      75% {
+        transform: translateY(0);
+        opacity: 1; 
+    }
+      100% {
+        transform: translateY(0.5rem); 
+        opacity: 0;
+    }
+}
+
+@keyframes svg-wave {
+    0% {
+        transform: scale(.9);
+        transform: scaleX(.99);
+    }
+
+    50% {
+        transform: scale(1.2);
+        transform: scaleX(1.06);
+    }
+
+    100% {
+        transform: scale(.9);
+        transform: scaleX(.99);
+    }
+}
+
+// TechLounge Form - Add to topic
+
+.tech-lounge-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+
+    & form {
+
+        .tech-form-top {
+            position: fixed;
+            right: 0%;
+            bottom: 2%;
+            margin: 4%;
+
+            .tech-form-submit {
+                
+                & input {
+                    padding: 0.5rem 1rem;
+                    border: none;
+                    border-radius: 10px;
+                    width: 50%;
+                    margin: 5%;
+                    color: white;
+                    background-image: linear-gradient(to right, #4d4d4d 0%, #ffd23e  51%, #cf2323  100%);
+                    background-size: 200% auto;
+                    cursor: pointer;
+                    transition: all .2s;
+
+                    &:hover {
+                        background-position: right center;
+                    }
+                }
+            }
+
+            .tech-form-required {
+
+                & input {
+                    border-radius: 25px;
+                    border: 4px solid #f3b735;
+                    margin: 3.5% 0;
+                    outline: none;
+                    transition: all .2s;
+                    filter: blur(0.3px);
+                    padding: 2%;
+
+                    &:focus-within {
+                        border: 4px solid #00a4d6;
+                        filter: blur(0px);
+                    }
+                }
+            }
+        }
+
+        .tech-form__message {
+            position: fixed;
+            right: 0%;
+            bottom: 2%;
+
+            & button {
+                padding: 0.5rem 1rem;
+                border: none;
+                border-radius: 10px;
+                width: 50%;
+                margin: 5%;
+                color: white;
+                background-image: linear-gradient(to right, #4d4d4d 0%, #ffd23e  51%, #cf2323  100%);
+                background-size: 200% auto;
+                cursor: pointer;
+                transition: all .2s;
+
+                &:hover {
+                    background-position: right center;
+                }
+            }
+
+            & textarea {
+                height: 10rem;
+                width: 20rem;
+                border-radius: 25px 25px 0;
+                padding: 2.2%;
+                border: 5px solid rgb(243, 183, 53);
+                outline: none;
+                transition: all .2s;
+                filter: blur(.8px);
+
+                &:focus-within {
+                    border: 5px solid #00a4d6;
+                    filter: blur(0px);
+                }
+            }
+
+            & ::placeholder {
+                text-align: center;
+            }
+        }
     }
 }
 
