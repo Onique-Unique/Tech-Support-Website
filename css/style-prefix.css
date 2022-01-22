@@ -1069,7 +1069,8 @@ nav {
   .tech-lounge-form form .tech-form__message {
     position: fixed;
     right: 0%;
-    bottom: 2%; }
+    bottom: 2%;
+    z-index: 10; }
     .tech-lounge-form form .tech-form__message button {
       padding: 0.5rem 1rem;
       border: none;
@@ -1096,13 +1097,9 @@ nav {
       outline: none;
       -webkit-transition: all .2s;
       -o-transition: all .2s;
-      transition: all .2s;
-      -webkit-filter: blur(0.8px);
-              filter: blur(0.8px); }
+      transition: all .2s; }
       .tech-lounge-form form .tech-form__message textarea:focus-within {
-        border: 5px solid #00a4d6;
-        -webkit-filter: blur(0px);
-                filter: blur(0px); }
+        border: 5px solid #00a4d6; }
     .tech-lounge-form form .tech-form__message ::-webkit-input-placeholder {
       text-align: center; }
     .tech-lounge-form form .tech-form__message ::-moz-placeholder {
@@ -1113,6 +1110,59 @@ nav {
       text-align: center; }
     .tech-lounge-form form .tech-form__message ::placeholder {
       text-align: center; }
+
+@media (max-width: 560px) {
+  .tech-lounge-info-content h2 {
+    font-size: 2.8rem !important; }
+  .tech-lounge-info-content p {
+    font-size: 1.2rem !important; }
+  .tech-lounge-info--1 button {
+    padding: .5rem 1rem !important; }
+  .tech-lounge-info--1 img {
+    max-height: 17rem !important; }
+  .tech-article-content h3 {
+    font-size: 2rem !important; }
+  .tech-author-details p {
+    font-size: 1.2rem !important; }
+  .tech-article-content p {
+    font-size: 1.1rem !important; }
+  .tech-article-content .svg-wave {
+    height: 180px !important; }
+  .tech-article-visuals {
+    height: 15rem !important; }
+    .tech-article-visuals .tech-article-visuals-inserts h1, .tech-article-visuals .tech-article-visuals-inserts svg {
+      height: 7rem !important;
+      font-size: 1.4rem !important; }
+  .article-visit--link p, .article-visit--link_2 p {
+    display: none !important; }
+  .article-carousel img {
+    height: 6rem !important; }
+  .article-carousel p {
+    font-size: .8rem !important; }
+  .tech-form__message textarea {
+    height: 8rem !important;
+    width: 10rem !important; }
+  .tech-form__message button {
+    font-size: .7rem !important; }
+  .tech-previous {
+    font-size: 1rem; } }
+
+@media (max-width: 375px) {
+  .tech-lounge-info--body {
+    margin-top: 10% !important; }
+  .tech-lounge-info-content h2 {
+    font-size: 2rem !important; }
+  .tech-lounge-info-content p {
+    font-size: 1rem !important; }
+  .tech-lounge-info--1 button {
+    font-size: 1rem !important; }
+  .tech-article-visuals {
+    height: 12rem !important; }
+    .tech-article-visuals .visual-grad-arrow {
+      height: 20px !important; }
+    .tech-article-visuals .tech-article-visuals-inserts h1, .tech-article-visuals .tech-article-visuals-inserts svg {
+      height: 5rem !important;
+      font-size: 1.2rem !important; } }
 
 .ats-tip {
   width: 100%; }
