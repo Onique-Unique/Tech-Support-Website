@@ -1059,13 +1059,9 @@ nav {
       -webkit-transition: all .2s;
       -o-transition: all .2s;
       transition: all .2s;
-      -webkit-filter: blur(0.3px);
-              filter: blur(0.3px);
       padding: 2%; }
       .tech-lounge-form form .tech-form-top .tech-form-required input:focus-within {
-        border: 4px solid #00a4d6;
-        -webkit-filter: blur(0px);
-                filter: blur(0px); }
+        border: 4px solid #00a4d6; }
   .tech-lounge-form form .tech-form__message {
     position: fixed;
     right: 0%;

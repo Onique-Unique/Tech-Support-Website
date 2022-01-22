@@ -944,12 +944,10 @@
                     margin: 3.5% 0;
                     outline: none;
                     transition: all .2s;
-                    filter: blur(0.3px);
                     padding: 2%;
 
                     &:focus-within {
                         border: 4px solid #00a4d6;
-                        filter: blur(0px);
                     }
                 }
             }
