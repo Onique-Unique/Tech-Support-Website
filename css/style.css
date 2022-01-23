@@ -921,7 +921,10 @@ nav {
     font-size: 1.5rem;
     box-shadow: 0 1.5rem 4rem black; }
     .hide-text--2 a {
-      color: #ffb700; }
+      color: #ffb700;
+      background-color: rgba(200, 182, 182, 0.1);
+      border-radius: 5px;
+      padding: 1%; }
     .hide-text--2 .lounge-para {
       margin-top: .5rem; } }
 
