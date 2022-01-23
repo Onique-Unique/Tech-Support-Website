@@ -290,7 +290,9 @@ nav {
   .container {
     padding-left: 2rem; }
   .list-container {
-    padding: 3%; } }
+    padding: 3%; }
+  .list-container__vid-list {
+    margin: 8% 0; } }
 
 @media (max-width: 34.125em) {
   .list-container__vid-list {
@@ -611,7 +613,7 @@ nav {
   .tech-lounge--7 {
     background-image: url(img/bg-img-7.jpg); }
   .tech-lounge--8 {
-    background-image: url(img/bg-img-11.jpg); }
+    background-image: url(img/bg-img-13.jpg); }
   .tech-lounge--9 {
     background-image: url(img/bg-img-12.jpg); }
 
@@ -884,6 +886,53 @@ nav {
   -webkit-animation: svg-wave 10s ease-in-out infinite;
           animation: svg-wave 10s ease-in-out infinite; }
 
+#bank-svg {
+  -webkit-animation: bounce 2s ease-in-out infinite;
+          animation: bounce 2s ease-in-out infinite; }
+
+#coin {
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: coin-insert 6s ease-in-out infinite;
+          animation: coin-insert 6s ease-in-out infinite; }
+
+@-webkit-keyframes coin-insert {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+  60% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+  70% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    opacity: 0; } }
+
+@keyframes coin-insert {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+  60% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+  70% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    opacity: 0; } }
+
 @-webkit-keyframes article-blur {
   0% {
     opacity: 0; }
@@ -1033,7 +1082,8 @@ nav {
     position: fixed;
     right: 0%;
     bottom: 2%;
-    margin: 4%; }
+    margin: 4%;
+    z-index: 1; }
     .tech-lounge-form form .tech-form-top .tech-form-submit input {
       padding: 0.5rem 1rem;
       border: none;
@@ -1065,8 +1115,7 @@ nav {
   .tech-lounge-form form .tech-form__message {
     position: fixed;
     right: 0%;
-    bottom: 2%;
-    z-index: 10; }
+    bottom: 2%; }
     .tech-lounge-form form .tech-form__message button {
       padding: 0.5rem 1rem;
       border: none;
