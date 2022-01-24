@@ -1120,13 +1120,6 @@
         }
     }
 
-    .tech-article-content {
-
-        & h3 {
-            font-size: 2rem !important;
-        }
-    }
-
     .tech-author-details {
 
         & p {
@@ -1135,10 +1128,6 @@
     }
 
     .tech-article-content {
-
-        & p {
-            font-size: 1.1rem !important;
-        }
 
         & .svg-wave {
             height: 180px !important;
@@ -1172,7 +1161,7 @@
         }
 
         & p {
-            font-size: .8rem !important;
+            font-size: 1.2rem !important;
         }
     }
 
@@ -1199,17 +1188,6 @@
         margin-top: 10% !important;
     }
 
-    .tech-lounge-info-content {
-
-        & h2 {
-            font-size: 2rem !important;
-        }
-
-        & p {
-            font-size: 1rem !important;
-        }
-    }
-
     .tech-lounge-info--1 {
         
         & button {
@@ -1230,6 +1208,25 @@
             & h1, & svg {
                 height: 5rem !important;
                 font-size: 1.2rem !important;
+            }
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .tech-lounge-info-content {
+
+        &  h2 {
+            font-size: 2.3rem !important;
+        }
+    }
+
+    .tech-article-visuals {
+
+        .tech-article-visuals-inserts {
+
+            & h1 {
+                font-size: 1.07rem !important;
             }
         }
     }
@@ -1265,7 +1262,6 @@
 
     }
 }
-
 
 @media (min-width:34.25em) {
     .hide-text--2 {
