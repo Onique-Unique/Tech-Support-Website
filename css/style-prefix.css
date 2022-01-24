@@ -603,7 +603,7 @@ nav {
   .tech-lounge--2 {
     background-image: url(img/bg-img-2.jpg); }
   .tech-lounge--3 {
-    background-image: url(img/bg-img-3.jpg); }
+    background-image: url(img/bg-img-14.jpg); }
   .tech-lounge--4 {
     background-image: url(img/bg-img-4.jpg); }
   .tech-lounge--5 {
@@ -896,6 +896,102 @@ nav {
           transform-origin: center;
   -webkit-animation: coin-insert 6s ease-in-out infinite;
           animation: coin-insert 6s ease-in-out infinite; }
+
+#google-icon {
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: google-roll 5s ease-in-out infinite;
+          animation: google-roll 5s ease-in-out infinite; }
+
+#laptop-icon {
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: laptop-grow 5s ease-in-out infinite;
+          animation: laptop-grow 5s ease-in-out infinite; }
+
+@-webkit-keyframes laptop-grow {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+  85% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+  95% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: .3; }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; } }
+
+@keyframes laptop-grow {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+  85% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+  95% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: .3; }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; } }
+
+@-webkit-keyframes google-roll {
+  0% {
+    -webkit-transform: translateX(50rem) rotate(0deg);
+            transform: translateX(50rem) rotate(0deg);
+    opacity: 0; }
+  60% {
+    opacity: .3; }
+  80% {
+    -webkit-transform: translateX(0px) rotate(360deg);
+            transform: translateX(0px) rotate(360deg);
+    opacity: 1; }
+  85% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  95% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateX(10rem) scale(1);
+            transform: translateX(10rem) scale(1);
+    opacity: 0; } }
+
+@keyframes google-roll {
+  0% {
+    -webkit-transform: translateX(50rem) rotate(0deg);
+            transform: translateX(50rem) rotate(0deg);
+    opacity: 0; }
+  60% {
+    opacity: .3; }
+  80% {
+    -webkit-transform: translateX(0px) rotate(360deg);
+            transform: translateX(0px) rotate(360deg);
+    opacity: 1; }
+  85% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  95% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateX(10rem) scale(1);
+            transform: translateX(10rem) scale(1);
+    opacity: 0; } }
 
 @-webkit-keyframes coin-insert {
   0% {

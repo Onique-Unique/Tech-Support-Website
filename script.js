@@ -67,10 +67,10 @@ function articleForm() {
 
 // logic of add to topic - form submission
 // update Arrays where needed
-const formMessageBtn = ["form-btn-1", "form-btn-2",];
-const formMessageContainer = ["message-1", "message-2"];
-const formSubmitContainer = ["top-1", "top-2"];
-const messageBox = ["form-textarea-1", "form-textarea-2"];
+const formMessageBtn = ["form-btn-1", "form-btn-2", "form-btn-3"];
+const formMessageContainer = ["message-1", "message-2", "message-3"];
+const formSubmitContainer = ["top-1", "top-2", "top-3"];
+const messageBox = ["form-textarea-1", "form-textarea-2", "form-textarea-3"];
 for(i = 0; i < formMessageBtn.length, i < formMessageContainer.length, i < formSubmitContainer.length, i < messageBox.length; i++){
    const messageFormBtn = document.getElementById(formMessageBtn[i]);
    const messageFormContainer = document.getElementById(formMessageContainer[i]);
@@ -93,7 +93,7 @@ for(i = 0; i < formMessageBtn.length, i < formMessageContainer.length, i < formS
 
 // Articles logic
 // update Arrays where needed
-const articleBtns = ["article-1", "article-2"];
+const articleBtns = ["article-1", "article-2", "article-3"];
 const articles = ["finance", "lifestyle", "gadgets", "apps", "tech", "health", "business", "luxury", "wfh"];
 
 

@@ -177,11 +177,11 @@
         </div>
 
         <!-- Must Have Gadgets -->
-        <div class="list-container__vid-list tech-lounge article-3">
+        <div class="list-container__vid-list tech-lounge" id="article-3">
             <div class="list-container__vid-list--flex-div tech-lounge tech-lounge--3">
                 <img loading="lazy" src="images/help_desk-logo.png" class="tech-lounge__img">
                 <div class="list-container__vid-list--flex-div--vid-info tech-lounge__text hide-text--1">
-                    <a href="#gadgets" aria-label="Must have gadgets">Must have gadgets...</a>
+                    <a href="#gadgets" aria-label="Must have gadgets">Google classroom...</a>
                     <p> feenixbloom.com</p>
                     <p id="currentDate-3"></p>
                 </div>
@@ -192,7 +192,7 @@
 
         <!-- hidden tech lounge text for desktop -->
         <div class="hide-text--2">
-            <a href="#gadgets" aria-label="Must have gadgets">Must have gadgets...</a>
+            <a href="#gadgets" aria-label="Must have gadgets">Google classroom...</a>
             <div class="lounge-para"> 
                 <p> feenixbloom.com</p>
                 <p id="currentDateAlt-3"></p>
@@ -200,7 +200,7 @@
         </div>
 
         <!-- Top Rated Apps -->
-        <div class="list-container__vid-list tech-lounge article-4">
+        <div class="list-container__vid-list tech-lounge" id="article-4">
             <div class="list-container__vid-list--flex-div tech-lounge tech-lounge--4">
                 <img loading="lazy" src="images/help_desk-logo.png" class="tech-lounge__img">
                 <div class="list-container__vid-list--flex-div--vid-info tech-lounge__text hide-text--1">
@@ -223,7 +223,7 @@
         </div>
 
         <!-- Tech in Style -->
-        <div class="list-container__vid-list tech-lounge article-5">
+        <div class="list-container__vid-list tech-lounge" id="article-5">
             <div class="list-container__vid-list--flex-div tech-lounge tech-lounge--5">
                 <img loading="lazy" src="images/help_desk-logo.png" class="tech-lounge__img">
                 <div class="list-container__vid-list--flex-div--vid-info tech-lounge__text hide-text--1">
@@ -246,7 +246,7 @@
         </div>
 
         <!-- Fitness & Health -->
-        <div class="list-container__vid-list tech-lounge article-6">
+        <div class="list-container__vid-list tech-lounge" id="article-6">
             <div class="list-container__vid-list--flex-div tech-lounge tech-lounge--9">
                 <img loading="lazy" src="images/help_desk-logo.png" class="tech-lounge__img">
                 <div class="list-container__vid-list--flex-div--vid-info tech-lounge__text hide-text--1">
@@ -269,7 +269,7 @@
         </div>
 
         <!-- Business Analytics -->
-        <div class="list-container__vid-list tech-lounge article-7">
+        <div class="list-container__vid-list tech-lounge" id="article-7">
             <div class="list-container__vid-list--flex-div tech-lounge tech-lounge--7">
                 <img loading="lazy" src="images/help_desk-logo.png" class="tech-lounge__img">
                 <div class="list-container__vid-list--flex-div--vid-info tech-lounge__text hide-text--1">
@@ -292,7 +292,7 @@
         </div>
 
         <!-- Software & Luxury -->
-        <div class="list-container__vid-list tech-lounge article-8">
+        <div class="list-container__vid-list tech-lounge" id="article-8">
             <div class="list-container__vid-list--flex-div tech-lounge tech-lounge--2">
                 <img loading="lazy" src="images/help_desk-logo.png" class="tech-lounge__img">
                 <div class="list-container__vid-list--flex-div--vid-info tech-lounge__text hide-text--1">
@@ -315,7 +315,7 @@
         </div>
 
         <!-- Working From Home -->
-        <div class="list-container__vid-list tech-lounge article-9">
+        <div class="list-container__vid-list tech-lounge" id="article-9">
             <div class="list-container__vid-list--flex-div tech-lounge tech-lounge--6">
                 <img loading="lazy" src="images/help_desk-logo.png" class="tech-lounge__img">
                 <div class="list-container__vid-list--flex-div--vid-info tech-lounge__text hide-text--1">
@@ -852,6 +852,241 @@
                 <a href="tech-lounge"><button class="tech-previous">&#60; Back</button></a>
             </section>        
         </article>
+
+        <!-- Must Have Gadgets Article -->
+        <article class="tech-lounge-info--container article-hidden" id="gadgets">
+            <section class="info-main-nav">
+                <div class="info-main-nav--headers">
+                    <h1>Feenixbloom</h1>
+                    <div>
+                        <p>verified</p>
+                        <svg width="35" height="25" viewBox="0 0 327 313" fill="rgb(72, 255, 0)" xmlns="http://www.w3.org/2000/svg">
+                            <g id="checkmark">
+                            <path id="outer" d="M51.0938 156.5C51.0907 137.612 56.2823 119.056 66.1467 102.697C76.0112 86.3386 90.2008 72.7538 107.289 63.3085C124.378 53.8631 143.763 48.8902 163.496 48.8894C183.229 48.8887 202.614 53.8602 219.703 63.3043C222.049 64.5809 224.827 64.9175 227.431 64.2408C230.035 63.564 232.254 61.9288 233.603 59.692C234.953 57.4551 235.323 54.7983 234.633 52.3011C233.943 49.804 232.25 47.6694 229.922 46.3631C204.597 32.3678 175.155 26.7619 146.163 30.415C117.17 34.0681 90.2467 46.7759 69.5683 66.5677C48.8899 86.3595 35.6119 112.129 31.7936 139.88C27.9752 167.631 33.8299 195.813 48.4497 220.055C63.0694 244.296 85.6372 263.243 112.653 273.957C139.669 284.671 169.623 286.552 197.87 279.31C226.117 272.068 251.079 256.107 268.883 233.903C286.687 211.698 296.34 184.491 296.344 156.5C296.344 153.906 295.267 151.418 293.351 149.584C291.434 147.749 288.835 146.719 286.125 146.719C283.415 146.719 280.816 147.749 278.899 149.584C276.983 151.418 275.906 153.906 275.906 156.5C275.906 185.036 264.064 212.403 242.983 232.58C221.903 252.758 193.312 264.094 163.5 264.094C133.688 264.094 105.097 252.758 84.0168 232.58C62.9365 212.403 51.0938 185.036 51.0938 156.5Z" fill="black"/>
+                            <path id="tick" d="M313.797 65.6126C314.747 64.7032 315.501 63.6236 316.015 62.4353C316.53 61.2471 316.794 59.9736 316.794 58.6875C316.794 57.4014 316.53 56.1279 316.015 54.9396C315.501 53.7514 314.747 52.6718 313.797 51.7624C312.847 50.8529 311.719 50.1316 310.478 49.6394C309.237 49.1472 307.906 48.8939 306.562 48.8939C305.219 48.8939 303.888 49.1472 302.647 49.6394C301.406 50.1316 300.278 50.8529 299.328 51.7624L163.5 181.794L109.422 130.012C108.472 129.103 107.344 128.382 106.103 127.889C104.862 127.397 103.531 127.144 102.188 127.144C100.844 127.144 99.5134 127.397 98.272 127.889C97.0307 128.382 95.9027 129.103 94.9526 130.012C94.0025 130.922 93.2489 132.001 92.7347 133.19C92.2205 134.378 91.9558 135.651 91.9558 136.938C91.9558 138.224 92.2205 139.497 92.7347 140.685C93.2489 141.874 94.0025 142.953 94.9526 143.863L156.265 202.55C157.214 203.461 158.342 204.184 159.583 204.677C160.825 205.17 162.156 205.424 163.5 205.424C164.844 205.424 166.175 205.17 167.417 204.677C168.658 204.184 169.786 203.461 170.735 202.55L313.797 65.6126Z" fill="black"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+            <section class="tech-lounge-info--body">
+                <header class="tech-lounge-info--1">
+                    <img loading="lazy" src="images/article-img-5.jpg" alt="Article Header Image">
+                    <div class="tech-lounge-info-content">
+                        <h2><span>Google classroom -</span> <br> can it <span> work </span> for you ?...</h2>
+                        <p>The generation of study anywhere - anytime ?...</p>
+                    </div>
+                    <button type="button" onclick="location.href= `https://www.paypal.me/OniqueCampbell`">Send Thanks</button>
+                </header>
+                <div class="tech-lounge-info-div--relative">
+                    <div class="tech-lounge-info--2">
+                        <div class="tech-article-content">
+                            <h3>Should i <span class="span-alt">use</span><span class="span-alt"></span> <span>Google classroom...</span></h3>
+                            <div class="tech-author-details">
+                                <img loading="lazy" src="images/portfolio-img/memoji-1.png" alt="Author Image">
+                                <a href="index"><p>Feenixbloom.com</p></a>
+                            </div>
+                            <p>“Google has made its dashboard and basic learning management tools free for educators. Teachers also receive some of the Google paid services for free as well, 
+                                and many of these shared resources make the Google Classroom learning platform work to its fullest potential. Some G Suite components, like extra storage, would normally cost teachers a monthly fee, too. 
+                                The company also offers premium Google Hangouts options for teachers who want to use the video platform to interact with students.
+                            </p>
+                        </div>
+                        <div class="tech-article-visuals-rel">
+                            <div class="tech-article-visuals-abs">
+                                <div class="tech-article-visuals visual-grad">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" class="bi bi-box-arrow-in-up-right visual-grad-arrow" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
+                                        <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
+                                    </svg>
+        
+                                    <div class="tech-article-visuals-inserts">
+                                        <h1>Can <span>Google Classroom</span> <br> Be an Industry Leader !</h1>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="125" height="125" fill="currentColor" class="bi bi-graph-up" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0Zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07Z"/>
+                                          </svg>
+                                          <a href="https://ditchthattextbook.com/the-google-classroom-quick-start-guide-tips-and-tricks/"><span class="span-link"></span></a>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>             
+                    </div> 
+                    <a class="article-visit--link" href="tech-lounge">
+                        <p>visit more trending topics &rarr;</p>
+                    </a>
+                    <div class="article-carousel">
+                        <div>
+                            <img loading="lazy"  src="css/img/bg-img-1.jpg" alt="Article Background Image">
+                            <p>Private Equity</p>
+                        </div>
+                        <div>
+                            <img loading="lazy"  src="css/img/bg-img-2.jpg" alt="Article Background Image">
+                            <p>Software & Luxury</p>
+                        </div>
+                        <div>
+                            <img loading="lazy"  src="css/img/bg-img-13.jpg" alt="Article Background Image">
+                            <p>Mortgage Rates</p>
+                        </div>
+                        <div>
+                            <img loading="lazy"  src="css/img/bg-img-4.jpg" alt="Article Background Image">
+                            <p>Top Rated Apps</p>
+                        </div>     
+                    </div>
+                </div>           
+
+                <!--  -->
+                <div class="tech-lounge-info-div--relative">
+                    <div class="tech-lounge-info--3">  
+                        <div class="tech-article-content">
+                            <h3>How <span>Google classroom </span> works - Can <span class="span-alt">Google classroom</span> detect cheating ?...</h3>
+                            <div class="tech-author-details">
+                                <img loading="lazy"  src="images/portfolio-img/memoji-1.png" alt="Author Image">
+                                <a href="index"><p>Feenixbloom.com</p></a>
+                            </div>
+                            <p>If you're looking to setup and use Google Classroom as an educator, it's part of the G Suite for Education services from Google. 
+                                If your school or college is using G Suite for Education, you already have access and just have to set it up.
+                            </p>
+                            <p>Behind the scenes, Google Classroom provides a lot of tools for educators to create and share lessons, to manage and organise students and run classes. 
+                                How lessons are created and run will come down to individual schools or teachers and how they plan to teach those lessons, with Google Classrooms providing plenty of flexibility in the structure those lessons.
+                            </p>
+                            <p>Due to the prominence of Google, students find Google Classroom easy to navigate since many are familiar with Google layout. Furthermore, the mobile app for Google Classroom functions well which has been praised by students. 
+                                If notifications are enabled, the mobile app for Google Classroom can provide push notifications to remind students of upcoming deadlines, a feature that has been received well by students.
+                            </p>
+                            <svg width="100%" height="198" viewBox="0 0 327 198" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="g-classroom">
+                                <rect width="100%" height="198" fill="white"/>
+                                <g id="laptop-icon">
+                                <path id="Vector" d="M192.656 64.8125C193.576 64.8125 194.459 65.178 195.109 65.8285C195.76 66.479 196.125 67.3613 196.125 68.2812V120.312H112.875V68.2812C112.875 67.3613 113.24 66.479 113.891 65.8285C114.541 65.178 115.424 64.8125 116.344 64.8125H192.656ZM116.344 57.875C113.584 57.875 110.937 58.9714 108.985 60.9229C107.034 62.8745 105.938 65.5213 105.938 68.2812V127.25H203.062V68.2812C203.062 65.5213 201.966 62.8745 200.015 60.9229C198.063 58.9714 195.416 57.875 192.656 57.875H116.344ZM99 130.719H210C210 133.479 208.904 136.126 206.952 138.077C205.001 140.029 202.354 141.125 199.594 141.125H109.406C106.646 141.125 103.999 140.029 102.048 138.077C100.096 136.126 99 133.479 99 130.719V130.719Z" fill="#FFB932"/>
+                                </g>
+                                <g id="google-icon" clip-path="url(#clip0_2_2)">
+                                <path id="Vector_2" d="M246.924 117.921C247.35 120.371 247.562 122.853 247.558 125.339C247.558 136.445 243.589 145.834 236.681 152.19H236.69C230.65 157.77 222.346 161 212.5 161C202.82 161 193.536 157.154 186.691 150.309C179.846 143.464 176 134.18 176 124.5C176 114.82 179.846 105.536 186.691 98.6906C193.536 91.8455 202.82 88 212.5 88C221.561 87.8939 230.311 91.2979 236.918 97.4991L226.498 107.92C222.731 104.329 217.704 102.363 212.5 102.445C202.978 102.445 194.889 108.869 192.005 117.519C190.476 122.052 190.476 126.961 192.005 131.494H192.019C194.916 140.131 202.992 146.555 212.514 146.555C217.432 146.555 221.657 145.296 224.933 143.069H224.919C226.821 141.809 228.448 140.177 229.702 138.27C230.956 136.364 231.811 134.224 232.215 131.978H212.5V117.925H246.924V117.921Z" fill="#FF3D3D"/>
+                                </g>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_2_2">
+                                <rect width="73" height="73" fill="white" transform="translate(176 88)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                                
+
+                            <p>Not everyone will need a computer to access Google Classroom (it depends on exactly what's needed and what classes you attend), but there are also smartphone apps. 
+                                This will give you direct access without needing to use the browser on your phone, which will make it easier. Even if you're using another platform, signing into the smartphone app will give you more options, so it's worth using.
+                            </p>
+                            <p>Google Classroom integrates several Google Applications for Education (GAPPS) such as Google Drive, Google Docs, Google Sheets, Google Slides, Google Forms, Google Sites, Gmail to help educational institutions transition to a virtual, paperless system. 
+                                Google Calendar was later added to help with assignment due dates, field trips, and class speakers. 
+                                Students can be invited to classrooms through the institution's database, through a private code that can then be added in the student's user interface or automatically imported from a school domain. 
+                                Each class created with Google Classroom creates a separate folder in the respective user's Google Drive, where the student can submit work to be graded by a teacher.
+                            </p>
+                            <p>“Among the many challenges that teachers face is whether their students are producing authentic work mainly with the various information available on the web pages.
+                                Well, Google classroom recently introduced features that ensure students provide genuine work. One of this features is originality reports.
+                            </p>
+                            <p> When teachers run the students’ assignments through google searches, the originality report compares every student’s work against all the available information online. 
+                                This includes books and a billion copies of data in web pages and databases.
+                                Originality report allows both students and teachers to counter check their work for both citations and originality.
+                            </p>
+                        </div>
+                    </div> 
+                    <div class="article-carousel">
+                        <div>
+                            <img loading="lazy"  src="css/img/bg-img-6.jpg" alt="Article Background Image">
+                            <p>Working from home</p>
+                        </div>
+                        <div>
+                            <img loading="lazy"  src="css/img/bg-img-12.jpg" alt="Article Background Image">
+                            <p>Fitness & Health</p>
+                        </div>
+                        <div>
+                            <img loading="lazy"  src="css/img/bg-img-5.jpg" alt="Article Background Image">
+                            <p>Tech in style</p>
+                        </div>
+                        <div>
+                            <img loading="lazy"  src="css/img/bg-img-7.jpg" alt="Article Background Image">
+                            <p>You and Business Analytics</p>
+                        </div>
+                    </div> 
+                    <a class="article-visit--link_2" href="tech-lounge">
+                        <p>visit more trending topics &rarr;</p>
+                    </a>
+                </div>  
+                
+                <!-- Alt Addition -->
+                <div class="tech-lounge-info-div--relative">
+                    <div class="tech-lounge-info--3">  
+                        <div class="tech-article-content">
+                            <h3> <span>Where </span> are Google classroom <span>files</span> stored and - <span class="span-alt">Are</span> Google classroom <span class="span-alt">questions</span> private ?...</h3>
+                            <div class="tech-author-details">
+                                <img loading="lazy"  src="images/portfolio-img/memoji-1.png" alt="Author Image">
+                                <a href="index"><p>Feenixbloom.com</p></a>
+                            </div>
+                            <p>The class Drive folder is located on your Google Drive and will have all of the assignments you created, any materials you uploaded, and any work turned in by students. Everything put onto your Google Classroom is automatically saved onto this Drive folder for easy access. 
+                                So where do you find this handy dandy Drive folder? There are two different ways to access this folder.  One is directly from your Google Classroom. The other is after logging into your Google Drive. 
+                            </p>
+                            <p> &bull; - To access it from Google Classroom,  go to the “Classwork” tab and it will be located in the right corner next to an icon of a file folder, and will be titled “Class Drive Folder”.  or <br>
+                                &bull; - To access it from your Google Drive, login to your Drive by going to drive.google.com.  Once it opens up, click on “My Drive” on the left-hand side. 
+                            </p>
+                            <div class="tech-article-visuals-rel">
+                                <div class="tech-article-visuals-abs-2">
+                                    <div class="tech-article-visuals visual-grad">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" class="bi bi-box-arrow-in-up-right visual-grad-arrow" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
+                                            <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
+                                        </svg>
+            
+                                        <div class="tech-article-visuals-inserts">
+                                            <h1>Can i use <span>Google Classroom</span> <br> without G Suite !</h1>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="125" height="125" fill="currentColor" class="bi bi-graph-up" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0Zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07Z"/>
+                                              </svg>
+                                              <a href="https://ditchthattextbook.com/the-google-classroom-quick-start-guide-tips-and-tricks/"><span class="span-link"></span></a>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>  
+                            <p>There are two types of comments available in Classroom. Class comments and private comments.
+                                Class comments are available in the Stream underneath every post (question, announcement, assignment) as long as students are allowed the ability to post and comment or comment to the Stream.
+                            </p>
+                            <p> Class comments can be seen by everyone in the Classroom and can be answered by anyone in the Classroom.
+                                Private comments are only seen by the teacher. Private comments are available on each assignment or each question. <br>
+                                &bull; - To access on the teacher side, go to the Student Work area and select a student.
+                            </p>
+                        </div>
+                    </div> 
+                </div> 
+                <!-- Add to topic -->
+                <div class="tech-lounge-form">
+                    <form action="https://formsubmit.co/oniquecampbell@yahoo.com" method="POST" class= "contact-form"> 
+                        <div class="tech-form-top article-hidden" id="top-3">
+                            <div class= "tech-form-submit">
+                                <div>
+                                    <input type= "submit" value= "Send it!"> &rarr;</input>
+                                </div>
+                            </div>
+                            <div class= "tech-form__name">                              
+                                <div class= "tech-form-required">
+                                    <input type= "text" name= "name" id="name" placeholder="Your Name" required></input>               
+                                </div>
+                                 <!-- form submit API -->
+                                 <input type="hidden" name="_next" value="https://feenixbloom.com/thankyou">
+                                 <input type="hidden" name="_subject" value="New message from Home & Lifestyle Article!">
+                                 <input type="hidden" name="_captcha" value="false">
+                                 <input type="hidden" name="_template" value="table">
+                            </div>
+                            <div class= "tech-form__email">
+                                <div class= "tech-form-required"><input type="email" name="email" id="email" placeholder="Your Email" required></input>
+                                </div>
+                            </div>
+                        </div>
+                        <div class= "tech-form__message" id="message-3">
+                            <button id="form-btn-3" type="button"> add to topic</button>                     
+                            <div>
+                                <textarea  name= "message" id="form-textarea-3" placeholder="Your Message"></textarea>
+                            </div>
+                        </div>
+                    </form> 
+                </div>
+                <a href="tech-lounge"><button class="tech-previous">&#60; Back</button></a>
+            </section>        
+        </article>
     </main>
 
     <!-- AOS script by michalsnik Github -->
@@ -863,13 +1098,13 @@
     </script>
 
     <!-- Gsap -->
-    <script
+    <script defer
         src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
         integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
         crossorigin="anonymous"
         referrerpolicy="no-referrer">
     </script>
 
-    <script src="script-minify.js"></script>
+    <script defer src="script-minify.js"></script>
 </body>
 </html>
