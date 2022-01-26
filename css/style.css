@@ -197,6 +197,15 @@ nav {
   transition: padding-left .2s; }
   .container__banner {
     width: 100%; }
+  .container #currentDate-index {
+    border: 1px solid black;
+    width: 100%;
+    margin: 1% 0;
+    padding: .5%;
+    background-color: #40402c;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 2px; }
 
 .bg-video__content {
   width: 100%;
