@@ -1561,9 +1561,12 @@
                     }
 
                     .enter-lounge {
+                        padding: 2% 4% !important;
+                        width: 50% !important;
+                        bottom: 7% !important;
 
                         & span {
-                            display: none;
+                            display: none !important;
                         }
                     } 
                 } 
@@ -1658,7 +1661,7 @@
                 .gamelounge-home-image {
 
                     .enter-lounge {
-                        right: 32% !important;
+                        right: 28% !important;
                     } 
                 }
             }

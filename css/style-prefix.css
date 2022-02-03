@@ -4129,8 +4129,12 @@ footer p {
       font-size: 1.4rem !important; }
   .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-image #currentDate-gamelounge-home {
     font-size: 1.2rem !important; }
-  .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-image .enter-lounge span {
-    display: none; }
+  .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-image .enter-lounge {
+    padding: 2% 4% !important;
+    width: 50% !important;
+    bottom: 7% !important; }
+    .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-image .enter-lounge span {
+      display: none !important; }
   .section-body-container .game-lounge-carousel .game-article-features .article-features-container .article-abs {
     left: 12% !important; }
   .game-feature-container {
@@ -4161,7 +4165,7 @@ footer p {
       .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-typography .gamelounge-typography #typography-inner .inner-text-secondary {
         font-size: .85rem !important; }
   .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-image .enter-lounge {
-    right: 32% !important; }
+    right: 28% !important; }
   .game-feature-container {
     height: 15rem !important; }
     .game-feature-container .banner-text {
