@@ -2378,6 +2378,7 @@ footer p {
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
   max-width: 1440px;
+  overscroll-behavior: contain;
   -ms-overflow-style: none;
   scrollbar-width: none; }
   .game-lounge-body::-webkit-scrollbar {
