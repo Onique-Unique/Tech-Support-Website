@@ -6,6 +6,7 @@ const downloadContainer = document.querySelector(".gamelounge-download-container
 const emailIcon = document.getElementById("email-icon");
 const emailExit = document.querySelector(".form-exit");
 const settingsIcon = document.getElementById("settings-icon");
+const settingsIconAlt = document.getElementById("settings-icon-min");
 const disclaimerExit = document.querySelector(".disclaimer-exit");
 const downloadIcon = document.querySelector(".download-right-arrow");
 const downloadIconSecondary = document.querySelector(".download-right-arrow-secondary");
@@ -46,6 +47,11 @@ emailExit.addEventListener("click", () => {
 
 //
 settingsIcon.addEventListener("click", () => {
+    gameloungeBodyContainer.classList.toggle("hide");
+    disclaimerContainer.classList.toggle("hide");
+});
+
+settingsIconAlt.addEventListener("click", () => {
     gameloungeBodyContainer.classList.toggle("hide");
     disclaimerContainer.classList.toggle("hide");
 });

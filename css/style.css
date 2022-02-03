@@ -3440,6 +3440,23 @@ footer p {
     .gamelounge-contact-container #gamelounge-contact fieldset textarea {
       height: 15rem !important; } }
 
+@media (min-height: 632px) {
+  #settings-icon-min {
+    display: none !important; } }
+
+@media (max-height: 632px) {
+  .game-sidebar {
+    overflow-y: scroll !important;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important; }
+    .game-sidebar::-webkit-scrollbar {
+      display: none !important; }
+    .game-sidebar .game-sidebar-display .game-sidebar-center {
+      top: 32rem !important;
+      font-size: 1.3rem !important; }
+    .game-sidebar .game-sidebar-display .game-sidebar-end {
+      display: none !important; } }
+
 /* Gamelounge End */
 /* 
 ---Mobile, portrait---
