@@ -2493,7 +2493,7 @@ footer p {
       padding: .5%; }
       .game-nav-fixed .game-nav .game-nav-display .game-nav-top {
         position: absolute;
-        left: 1%; }
+        left: 1.5%; }
         .game-nav-fixed .game-nav .game-nav-display .game-nav-top #top-icon {
           height: 4rem;
           border-radius: 100%; }
@@ -2530,7 +2530,7 @@ footer p {
     .game-sidebar .game-sidebar-display .game-sidebar-center {
       position: absolute;
       top: 45%;
-      left: 50%;
+      left: 60%;
       transform: translate(-50%, -50%);
       font-size: 2rem; }
       .game-sidebar .game-sidebar-display .game-sidebar-center .icons {
