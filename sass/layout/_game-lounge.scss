@@ -1,0 +1,1891 @@
+/* Game Lounge Style start */
+.game-lounge-body {
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); 
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    max-width: 1440px;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .game-lounge-body-container {
+        position: relative;
+
+        /* LANDING PAGE SCSS */
+        .game-lounge-landing--main {
+            position: relative;
+            min-width: 320px;
+
+            .gamelounge-home-image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                overflow: hidden;
+
+                & img {
+                    height: 100vh;
+                    object-fit: cover;
+                    width: 100%;
+                    pointer-events: none;
+                    animation: gamelounge-home-img ease 25s infinite;
+                }
+
+                .enter-lounge {
+                    position: absolute;
+                    bottom: 2.5%;
+                    right: 2%;
+                    padding: 1% 4%;
+                    border: none;
+                    outline: none;
+                    border-radius: 10px;
+                    animation: gamelounge-home-btn ease 2s infinite;
+
+                    & span {
+                        position: absolute;
+                        right: 10%;
+                    }
+                }
+
+                
+                .enter-grad {background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%)}
+                .enter-grad {
+                    text-align: center;
+                    text-transform: uppercase;
+                    transition: 0.5s;
+                    background-size: 200% auto;
+                    color: white;            
+                    box-shadow: 0 0 20px #eee;
+                    display: block;
+                }
+
+                .enter-grad:hover {
+                    background-position: right center; /* change the direction of the change here */
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+                #currentDate-gamelounge-home {
+                    position: absolute;
+                    top: 1%;
+                    right: 1%;
+                    color: white;
+                    font-size: 1.6rem;
+                    background-color: rgb(43, 43, 43);
+                    padding: .5rem 1rem;
+                    border-radius: 5px;
+                }
+        
+            }
+
+            .gamelounge-home-typography {
+                position: absolute;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+
+                .gamelounge-typography {
+                    position: relative;
+                    height: 70vh;
+                    width: 100%;
+                    background-color: rgba(0, 0, 0, 0.2);
+                    text-align: center;
+                    margin: 0 5%;
+                    border-radius: 5px;
+
+                    #typography-inner {
+                        position: absolute;
+                        bottom: 0%;
+                        left: -20%;
+                        height: 50vh;
+                        width: 100%;
+                        background-color: rgba(255, 255, 255, 0.575);
+                        border-radius: 5px;
+
+                        & img {
+                            height: 20rem;
+                        }
+
+                        .inner-text-main {
+                            position: absolute;
+                            left: 5%;
+                            padding: 1.7%;
+                            font-size: 2.1rem;
+                        }
+
+                        .inner-text-secondary {
+                            position: absolute;
+                            bottom: 0%;
+                            right: 1%;
+                        }
+                    }
+                }
+            }
+            /*LANDING PAGE END*/
+        }
+    }
+}
+
+// Nav
+.game-nav-fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+    max-width: 1500px;
+
+    .game-nav {
+        position: relative;
+        background: #0f0c29;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); 
+        background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+        border-bottom: 2px solid rgb(63, 29, 29);
+        width: 100%;
+        height: 6rem;
+
+        .game-nav-display {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .5%;
+
+            .game-nav-top {
+                position: absolute;
+                left: 1%;
+
+                #top-icon {
+                    height: 4rem;
+                    border-radius: 100%;
+                }
+            }
+
+            .game-search-bar {
+                background-color: white;
+                border-radius: 25px;
+                margin-left: 20%;
+                width: 50%;
+
+                #search-icon {
+                    font-size: 1.4rem;
+                    margin-left: 1rem;
+                }
+
+                & input {
+                    padding: 2%;
+                    border: none;
+                    outline: none;
+                    border-radius: 25px;
+
+                    &::placeholder {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+
+            .menu-icon {
+                font-size: 2.5rem;
+                padding: 0 .5%;
+                border-radius: 10px;
+
+                #menu-bars {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+// Aside-Left
+.game-sidebar {
+    position: fixed; 
+    height: 100vh;
+    width: 5%;
+    z-index: 2;
+    margin-top: 5%;
+
+    .game-sidebar-display {
+        display: block;
+
+        .game-sidebar-center {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            
+            .icons {
+                margin-bottom: 6rem;
+                padding: 5px;
+
+                & a {
+                    color: rgb(255, 255, 255);  
+                    transition: all .2s; 
+                    
+                    &:hover {
+                        color: #777;
+                    }
+                }
+
+                #up-icon {
+                    background-color: white;
+                    color: rgb(37, 34, 34);
+                    padding: 5%;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .game-sidebar-end {
+            position: absolute;
+            bottom: 12%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            border-top: 1px solid black;
+            padding: 8%;
+
+            #settings-icon {
+                color: white;
+            }
+        }
+    }
+}
+
+//Aside-Right
+
+.game-lounge-right-aside {
+    position: absolute;
+    right: 24%;
+
+    .game-community-sidebar {
+        position: fixed;
+        height: 100vh;
+        max-width: 40rem;
+    
+        .community-sidebar-display {
+            // border: 1px solid red;
+            height: 100vh;
+            position: relative;
+    
+            .community-sidebar-content {
+                padding: 2%;
+                margin-top: 30%;
+                border: 1px solid transparent;
+                background-color: rgba(39, 38, 38, 0.623);
+                border-radius: 15px;
+    
+                .download-right-arrow {
+                    float: right;
+                    font-size: 2rem;
+                    color: rgb(224, 109, 109);
+                }
+    
+                .download-prompt {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    margin-top: 10%;
+                    margin-bottom: 5%;
+    
+                    & img {
+                        height: 3rem;
+                        border-radius: 5px;
+                    }
+    
+                    & h4 {
+                        font-size: 1.2rem;
+                        color: white;
+                    }
+    
+                    .appstore {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+    
+                        .download-icon {
+                            font-size: 1.8rem;
+                            color: white;
+                            padding: 0 10%;
+                        }
+    
+                        .android {
+                            color: rgb(7, 168, 7);
+                        }
+                    }
+                }
+    
+                .game-chatroom {
+                    position: absolute;
+                    bottom: 10%;
+                    width: 100%;
+                    max-height: 30rem;
+                    overflow-y: scroll;
+                    background-color: white;
+                    background: linear-gradient(to right, #525280, #6159c0, #2e20aa);
+                    border-bottom: 2px solid rgb(63, 29, 29);
+
+                    border-radius: 10px;
+                    -ms-overflow-style: none;
+                    scrollbar-width: none; 
+    
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+                }
+    
+                .hot-topics {
+                    height: 20rem;
+                    background-color: white;
+                    border-radius: 0 0 5px 5px;
+                    overflow-y: scroll;
+                    -ms-overflow-style: none;
+                    scrollbar-width: none; 
+    
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+    
+                    #topics-notif {
+                        color: rgb(255, 224, 47);
+                    }
+    
+                    .topics {
+                        padding: 0 2%;
+    
+                        & p {
+                            font-size: 1.4rem;
+                        }
+
+                        & img {
+                            width: 100%;
+                            height: auto;
+                            object-fit: cover;
+                            -ms-overflow-style: none;
+                            scrollbar-width: none; 
+            
+                            &::-webkit-scrollbar {
+                                display: none;
+                            }
+                        }
+
+                        #topic-space-br {
+                            height: 1rem;
+                            width: 100%;
+                            background-color: rgb(43, 43, 43);                          
+                            margin-bottom: 3%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Aside Right Media Query
+
+// @media (min-width:1440px) {
+//     .game-community-sidebar {
+//         width: 15%;
+//         margin-left: 43%;
+//     }
+
+//     .game-nav-fixed {
+//         width: 1500px;
+//     }
+// }
+
+.hide {
+	display: none;
+}
+
+//Section-Body
+
+.section-body-container {
+    width: 75%;
+    padding-left: 8%;
+
+    //Section-1
+    .game-feature-section {
+        height: 30rem;
+        position: relative;
+    
+        .game-feature-container {
+            position: absolute;
+            height: 25rem;
+            border: 1px solid black;
+            width: 100%;
+            top: 30%;
+            border-radius: 30px;
+            background: #C33764;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+            .game-banner {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                .banner-text {
+                    position: absolute;
+                    top: 20%;
+                    left: 5%;
+                    color: white;
+                    z-index: 2;
+
+                    & a {
+                        color: white;
+
+                        & h4 {
+                            width: 15%;
+                            background-color: #C33764;
+                            padding: 3.5%;
+                            text-align: center;
+                            margin-bottom: 5%;
+                            transition: all .2s;
+                            height: 5rem;
+
+                            &:hover {
+                                background-color: #aa3096;
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+
+                    & h1 {
+                        font-size: 2.6rem;
+                    }
+
+                    & h3 {
+                        font-size: 1.8rem;
+                    }
+
+                    & p {
+                        font-size: 1.4rem;
+                    }
+                }
+
+                .banner-img {
+
+                    & img {
+                        height: 40rem;
+                        position: absolute;
+                        top: -15%;
+                        right: 0%;
+                    }
+
+                    #apex-character--1 {
+                        animation: apex-1 20s ease infinite;        
+                    }
+
+                    #apex-character--2 {
+                        animation: apex-2 20s ease infinite;   
+                        transform: rotateY(180deg);     
+                    }
+
+                    #apex-character--3 {
+                        animation: apex-3 20s ease infinite;        
+                    }
+
+                    #apex-character--4 {
+                        animation: apex-4 20s ease infinite;
+                    }
+
+                    #apex-character--5 {
+                        animation: apex-5 20s ease infinite;        
+                    }
+
+                    #apex-character--6 {
+                        animation: apex-6 20s ease infinite;
+                    }
+
+                    #apex-character--7 {
+                        animation: apex-7 20s ease infinite;        
+                    }
+                }
+            }
+        }
+    }
+    
+    //Section-2
+    .game-lounge-carousel {
+        margin-top: 10%;
+
+        .game-article-features {
+            height: 25rem;
+            position: relative;
+            margin-top: 4%;
+    
+            .live-circle {
+                font-size: 1rem;
+                color: red;
+            }
+    
+            & h1 {
+                color: white;
+                font-size: 1.8rem;
+                font-weight: bold;
+                margin-top: 2%;
+            }
+    
+            & p {
+                color: white;
+                font-size: 1.4rem;
+                margin-bottom: 2%;
+            }
+    
+            .article-features-container {
+                position: relative;
+                height: 20rem;
+                overflow-x: scroll;
+                -ms-overflow-style: none;
+                scrollbar-width: none; 
+    
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+    
+                .article-abs {
+                    position: absolute;
+                    left: 12%;
+    
+                    .featured-articles {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;               
+        
+                        .article {
+                            height: 10rem;
+                            width: 100%;
+                            padding: 0 2%;
+
+                            .creator-verify {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                & svg {
+                                    filter: invert(56%) sepia(95%) saturate(927%) hue-rotate(68deg) brightness(110%) contrast(83%);
+                                }
+                            }
+
+                            & iframe {
+                                border-radius: 25px;
+                                height: 15rem;
+                                width: 30rem;
+                            }
+                            
+                            & img {
+                                border-radius: 25px;
+                                height: 15rem;
+                                width: 30rem;
+                            }
+        
+                            & p {
+                                font-size: 1.4rem;
+                                color: rgb(205, 210, 214);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //Section-3 Main
+    .game-lounge-main {
+        height: auto;
+        background-color: white;
+
+    }
+}
+
+// Game Lounge Style end
+
+// gamelounge Lounge Container Info
+
+.gamelounge-info--container {
+    width: 100%;
+    margin-top: 2%;
+
+    .info-main-nav {
+        height: 5vh;
+        width: 100%;
+
+        .info-main-nav--headers {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 4%;
+
+            & h1 {
+                font-size: 2rem;
+                background-color: #fcb565;
+                color: #fff;
+                padding: 0.4rem 1rem;
+                border-radius: 0.8rem 0 0.8rem 0;
+            }
+
+            & svg {
+                // courtesy of css filter generator - codepen.io > pjoqqp match & convert #hex color to filter
+                filter: invert(56%) sepia(95%) saturate(927%) hue-rotate(68deg) brightness(110%) contrast(83%);
+            }
+        }
+    }
+
+    .gamelounge-info--body {
+        margin: 3%;
+        background-color: white;
+        position: relative;
+
+        .gamelounge-info--1 {
+            box-shadow: 1px 1rem 2rem black;
+            position: relative;
+
+            & img {
+                max-height: 25rem;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .gamelounge-info-content {
+                position: absolute;
+                top: 21%;
+                padding: 1%;
+                background-color: rgba(255, 255, 255, 0.726);
+
+                & h2 {
+                    font-size: 4.8rem;
+                    color: #24243e;
+                    text-shadow: 1px 1px 0.02px rgb(43, 43, 43);
+                    line-height: 1.2;
+                    font-weight: 400;
+
+                    & span {
+                        color: rgb(243, 183, 53);
+                        font-weight: bold;
+                    }
+                }
+
+
+                & p {
+                    font-size: 1.6rem;
+                    color: red;
+                }
+            }
+
+            & button {
+                border: none;
+                background-color: rgb(255, 218, 98);
+                padding: 1rem 1.5rem;
+                border-radius: 5px;
+                position: absolute;
+                bottom: 5%;
+                right: 5%;
+                cursor: pointer;
+                transition: all .2s;
+
+                &:hover {
+                    border: 1px solid rgb(43, 43, 43);
+                    background-color: white;
+                }
+            }
+        }
+
+        .gamelounge-info--2, .gamelounge-info--3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+            grid-column-gap: 1.6rem;
+            grid-row-gap: 3rem;
+            padding: 2%;
+            margin: 2.5% 0;
+
+            .gamelounge-article-content {
+                width: 100%;
+
+                .article-video-container {
+                    margin: 0 auto;
+                    width: 100%;
+
+                    .article-video {
+                        width: 100%;
+                    }
+                }
+
+                & h3 {
+                    font-size: 3.5rem;
+                    color: #302b63;
+
+                    & span {
+                        color: #ff3c00;
+                    }
+
+                    .span-alt {
+                        color: #fcb565;
+                    }
+                }
+
+                & p {
+                    padding: 2%;
+                    font-size: 1.6rem;
+                    line-height: 2;
+
+                    & span {
+                        color: #ff3c00;
+                    }
+                }
+
+                .gamelounge-author-details {
+                    display: flex;
+                    align-items: center;
+                    padding: 1%;
+
+                    & img {
+                        height: 5rem;
+                        border-radius: 100%;
+                    }
+
+                    & a {
+                        width: 100%;
+
+                        & p {
+                            color: #00a4d6;                      
+                            cursor: pointer;
+                            transition: all .2s;
+    
+                            &:hover {
+                                color: rgb(243, 183, 53);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .gamelounge-article-visuals-rel {
+                position: relative;
+
+                .gamelounge-article-visuals-abs, .gamelounge-article-visuals-abs-2 {
+                    position: relative; // in media query remove position absolute/ relative for mobile fluidity
+                    top: 50%;
+                    left: 0%;
+                    transform: translate(-0%, -50%);
+
+                    .gamelounge-article-visuals {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 25rem;
+                        border: 1px solid black;
+                        border-radius: 3px;
+                        position: relative;
+
+                        .visual-grad-arrow {
+                            position: absolute;
+                            bottom: 0%;
+                            right: 4%;
+                        }
+
+                        .gamelounge-article-visuals-inserts {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+
+                            & h1 {
+                                text-align: left;
+                                font-size: 2.6rem;
+                                border-bottom: 0.3rem solid aliceblue;
+                                width: 50%;
+                            }
+
+                            // link cheat, since anchor tag cannot wrap a div to function as intended, this enables me to click and open an article
+                            .span-link {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                top: 0;
+                                left: 0;
+                                z-index: 10;
+                            }
+                        }
+                    }
+                }
+
+                .gamelounge-article-visuals-abs-2 { // secondary content section for visuals/ content break
+                    transform: translate(0);
+                }
+            }
+
+            .visual-grad {background-image: linear-gradient(to right, #D1913C 0%, #ffda62  51%, #D1913C  100%)}
+            .visual-grad {
+               padding: 2%;
+               text-align: center;
+               transition: 0.5s;
+               background-size: 200% auto;
+               color: white;            
+               box-shadow: 0 0 20px #eee;
+               filter: blur(.25px);
+             }
+   
+             .visual-grad:hover {
+               background-position: right center; /* change the direction of the change here */
+               color: #fff;
+               text-decoration: none;
+             }            
+        }
+
+        .gamelounge-top {
+            padding: 0.5rem 1rem;
+            position: absolute;
+            bottom: 0%;
+            left: 45%;
+            border-radius: 5px;
+            border: none;
+            background-color: #24243e;
+            color: white;
+            cursor: pointer;
+            transition: all .2s;
+
+            &:hover {
+                background-color: rgb(82, 77, 71);
+            }
+        }
+    }
+}
+
+.gamelounge-info-div--relative {
+    position: relative;
+
+    .article-visit--link {
+        position: absolute;
+        right: 5%;
+        bottom: 25%;
+
+        & p {
+            font-size: 1.2rem;
+            color: rgb(243, 183, 53);
+            transition: all .2s;
+
+            &:hover {
+                color: #00a4d6;
+            }
+        }
+    }
+
+    .article-visit--link_2 {
+        position: absolute;
+        right: 5%;
+        bottom: 10%;
+
+        & p {
+            font-size: 1.2rem;
+            color: rgb(243, 183, 53);
+            transition: all .2s;
+
+            &:hover {
+                color: #00a4d6;
+            }
+        }
+    }
+
+    .article-carousel {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        grid-column-gap: 1.6rem;
+        grid-row-gap: 3rem;
+
+        & img {
+            height: 8rem;
+            width: 100%;
+            object-fit: cover;
+            padding: 0 2%;
+            transition: all .2s;
+
+            &:hover {
+                transform: scale(.9);
+            }
+        }
+
+        & p {
+            text-align: center;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+// Hot topics & Comments Secondary Section 
+
+.community-sidebar-display-secondary {
+    // border: 1px solid red;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3%;
+
+    .game-chatroom {
+        padding: 0 2%;
+        width: 100%;
+        max-height: 30rem;
+        overflow-y: scroll;
+        border-radius: 10px;
+        -ms-overflow-style: none;
+        scrollbar-width: none; 
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .community-sidebar-content {
+        padding: 2%;
+        border: 1px solid transparent;
+        background-color: rgba(39, 38, 38, 0.623);
+        border-radius: 15px;
+        max-width: 50%;
+
+        .download-right-arrow-secondary {
+            float: right;
+            font-size: 2rem;
+            color: rgb(224, 109, 109);
+        }
+
+        .download-prompt {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 8%;
+            margin-bottom: 5%;
+
+            & img {
+                height: 3rem;
+                border-radius: 5px;
+            }
+
+            & h4 {
+                font-size: 1.2rem;
+                color: white;
+            }
+
+            .appstore {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .download-icon {
+                    font-size: 1.8rem;
+                    color: white;
+                    padding: 0 10%;
+                }
+
+                .android {
+                    color: rgb(7, 168, 7);
+                }
+            }
+        }
+
+        .hot-topics {
+            height: 20rem;
+            background-color: white;
+            border-radius: 0 0 5px 5px;
+            overflow-y: scroll;
+            -ms-overflow-style: none;
+            scrollbar-width: none; 
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            #topics-notif {
+                color: rgb(255, 224, 47);
+            }
+
+            .topics {
+                padding: 0 2%;
+
+                & p {
+                    font-size: 1.4rem;
+                }
+
+                & img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    -ms-overflow-style: none;
+                    scrollbar-width: none; 
+    
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+                }
+
+                #topic-space-br {
+                    height: 1rem;
+                    width: 100%;
+                    background-color: rgb(43, 43, 43);                          
+                    margin-bottom: 3%;
+                }
+            }
+        }
+    }
+}
+
+// blur and change outer sections when an article is in focus
+.article-outer-blur {
+    filter: blur(.65px) brightness(.8);
+    pointer-events: none;
+    animation: article-blur .5s ease-in-out;
+}
+
+@media (max-width:560px) {
+    .gamelounge-info-content {
+
+        & h2 {
+            font-size: 2.8rem !important;
+        }
+
+        & p {
+            font-size: 1.2rem !important;
+        }
+    }
+
+    .gamelounge-info--1 {
+        
+        & button {
+            padding: .5rem 1rem !important;
+        }
+    }
+
+    .gamelounge-info--1 {
+
+        img {
+            max-height: 17rem !important;
+        }
+    }
+
+    .gamelounge-author-details {
+
+        & p {
+            font-size: 1.2rem !important;
+        }
+    }
+
+    .gamelounge-article-visuals {
+        
+        height: 15rem !important;
+
+        .gamelounge-article-visuals-inserts {
+
+            & h1, & svg {
+                height: 7rem !important;
+                font-size: 1.4rem !important;
+            }
+        }
+    }
+
+    .article-visit--link, .article-visit--link_2 {
+
+        & p {
+            display: none !important;
+        }
+    }
+
+    .article-carousel {
+
+        & img {
+            height: 6rem !important;
+        }
+
+        & p {
+            font-size: 1.2rem !important;
+        }
+    }
+
+    .gamelounge-top {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:375px) {
+
+    .gamelounge-info--body {
+        margin-top: 10% !important;
+    }
+
+    .gamelounge-info--1 {
+        
+        & button {
+            font-size: 1rem !important;
+        }
+    }
+
+    .gamelounge-article-visuals {
+        
+        height: 12rem !important;
+
+        .visual-grad-arrow {
+            height: 20px !important;
+        }
+
+        .gamelounge-article-visuals-inserts {
+
+            & h1, & svg {
+                height: 5rem !important;
+                font-size: 1.2rem !important;
+            }
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .gamelounge-info-content {
+
+        &  h2 {
+            font-size: 2.3rem !important;
+        }
+    }
+
+    .gamelounge-article-visuals {
+
+        .gamelounge-article-visuals-inserts {
+
+            & h1 {
+                font-size: 1.07rem !important;
+            }
+        }
+    }
+}
+
+// contact 
+.gamelounge-contact-container {
+    max-width: 40%;
+    margin: 0 auto;
+    position: relative;
+
+    #gamelounge-contact {
+        border-radius: 25px;
+        background: rgb(43, 43, 43);
+        padding: 25px;
+        margin: 150px 0;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+        .form-exit {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 2rem;
+            color: #C33764;
+        }
+    
+        & h3 {
+            display: block;
+            font-size: 30px;
+            font-weight: 300;
+            margin-bottom: 10px;
+            color: white;
+          }
+
+          .form-text-h4 {
+            margin: 5px 0 15px;
+
+            & h4 {
+                display: block;
+                font-size: 13px;
+                font-weight: 400;
+                color: wheat;
+              } 
+
+            & #last-h4 {
+
+                & i {
+                    color: #C33764;
+                    font-size: 1.4rem;
+                    margin-right: 1%;
+                }
+            }
+
+          } 
+    
+        & fieldset {
+            border: medium none !important;
+            margin: 0 0 10px;
+            min-width: 100%;
+            padding: 0;
+            width: 100%;
+
+            & textarea {
+                height: 20rem;
+            }
+          }
+    
+        & input[type="text"],
+          input[type="email"],
+          textarea {
+          width: 100%;
+          border: 1px solid #ccc;
+          background: #FFF;
+          margin: 0 0 5px;
+          padding: 10px;
+          transition: all .2s;
+    
+            &:hover {
+                -webkit-transition: border-color 0.3s ease-in-out;
+                -moz-transition: border-color 0.3s ease-in-out;
+                transition: border-color 0.3s ease-in-out;
+                border: 1px solid #aaa;
+            }
+        }
+    
+        & button[type="submit"] {
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            background: #4CAF50;
+            color: #FFF;
+            margin: 0 0 5px;
+            padding: 10px;
+            font-size: 15px;
+            transition: all .2s;
+    
+            &:hover {
+                background: #43A047;
+                -webkit-transition: background-color 0.3s ease-in-out;
+                -moz-transition: background-color 0.3s ease-in-out;
+                transition: background-color 0.3s ease-in-out;
+            }
+        }
+    } 
+      
+      ::-webkit-input-placeholder {
+        color: #888;
+      }
+      
+      :-moz-placeholder {
+        color: #888;
+      }
+      
+      ::-moz-placeholder {
+        color: #888;
+      }
+      
+      :-ms-input-placeholder {
+        color: #888;
+      }
+  }
+  
+ // Disclaimer Section
+ 
+ .fair-use-disclaimer--container {
+    position: relative;
+    max-width: 90%;
+    margin: 10% auto;
+
+     .disclaimer {
+        padding: 2%;
+        background-color: rgb(43, 43, 43);
+
+        .disclaimer-exit {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 2rem;
+            color: #C33764;
+        }
+        
+        #fair-use-disclaimer {
+
+            & h1, p {
+                color: white;
+            }
+
+            & h1 {
+                font-size: 2.4rem;
+                margin-bottom: 2%;
+            }
+
+            & p {
+                font-size: 1.6rem;
+            }
+        }
+     }
+ }
+
+ .gamelounge-download-container {
+    height: 100vh;
+    width: 100%;
+    margin: 15% auto;
+
+    .gamelounge-download-carousel {
+        margin: 0 auto;
+        width: 40%;
+        height: 40rem;
+        background-color: rgb(43, 43, 43);
+        padding: 2%;
+        position: relative;
+
+        & p {
+            text-align: center;
+            margin-bottom: 35%;
+            color: white;
+        }
+        
+        #download-icons {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .icon-set {
+    
+                .icon {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 3rem;
+                    color: white;
+                    text-align: center;
+                }
+
+                .fa-android {
+                    color: #07a807;
+                }
+    
+                & p {
+                    color: white;
+                    text-align: center;
+                }
+            }
+        }
+        #download-back {
+            position: absolute;
+            bottom: 5%;
+        }
+    }
+ }
+
+@media(min-width: 960px) {
+
+    .community-sidebar-display-secondary {
+        display: none !important;
+    }
+}
+
+ @media(max-width: 960px){
+    .game-lounge-body {
+
+        .game-lounge-body-container {
+
+            .game-lounge-landing--main {
+
+                .gamelounge-home-typography {
+
+                    .gamelounge-typography {
+                        height: 50vh !important;
+
+                        #typography-inner {
+                            height: 40vh !important;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+
+    .section-body-container {
+        width: 100% !important;
+    }
+
+    .game-lounge-right-aside {
+        display: none !important;
+    }
+     
+    //Section-2
+    .game-lounge-carousel {
+        margin-top: 10%;
+
+        .game-article-features {
+            margin-top: 0% !important;
+            height: 20rem !important;
+    
+            .live-circle {
+                font-size: 1rem;
+                color: red;
+            }
+    
+            & h1 {
+                margin-top: 0% !important;
+                font-size: 1.2rem !important;
+            }
+    
+            & p {
+                font-size: 1.1rem !important;
+            }
+    
+            .article-features-container {
+                position: relative;
+                height: 20rem;
+                overflow-x: scroll;
+                -ms-overflow-style: none;
+                scrollbar-width: none; 
+    
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+    
+                .article-abs {
+                    left: 8% !important;
+    
+                    .featured-articles {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;               
+        
+                        .article {
+                            height: 10rem;
+                            width: 100%;
+                            padding: 0 2%;
+
+                            .creator-verify {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                & svg {
+                                    filter: invert(56%) sepia(95%) saturate(927%) hue-rotate(68deg) brightness(110%) contrast(83%);
+                                }
+                            }
+
+                            & iframe {
+                                height: 10rem !important;
+                                width: 20rem !important;
+                            }
+                            
+                            & img {
+                                height: 10rem !important;
+                                width: 20rem !important;
+                            }
+        
+                            & p {
+                                font-size: 1.1rem !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }
+
+ @media(max-width: 768px) { /*Landing Page*/
+    .game-lounge-body {
+
+        .game-lounge-body-container {
+
+            .game-lounge-landing--main {
+
+                .gamelounge-home-typography {
+
+                    .gamelounge-typography {
+                        height: 40vh !important;
+
+                        #typography-inner {
+                            height: 36vh !important;
+
+                            .inner-text-main {
+                                font-size: 1.6rem !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }    
+ }
+
+ @media(max-width: 700px) { /*Landing Page*/
+    .game-lounge-body {
+
+        .game-lounge-body-container {
+
+            .game-lounge-landing--main {
+
+                .gamelounge-home-typography {
+
+                    .gamelounge-typography {
+
+                        #typography-inner {
+
+                            & img {
+                                height: 15rem !important;
+                            }
+
+                            .inner-text-main {
+                                font-size: 1.6rem !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
+
+ }
+
+ @media(max-width: 560px) {
+    .game-lounge-body {
+
+        .game-lounge-body-container {
+
+            .game-lounge-landing--main {
+
+                .gamelounge-home-typography {
+
+                    .gamelounge-typography {
+                        height: 50vh !important;
+
+                        #typography-inner {
+
+                            .inner-text-main {
+                                font-size: 1.4rem !important;
+                            }
+                        }
+                    }
+                }
+
+                .gamelounge-home-image {
+
+                    #currentDate-gamelounge-home {
+                        font-size: 1.2rem !important;
+                    }
+
+                    .enter-lounge {
+
+                        & span {
+                            display: none;
+                        }
+                    } 
+                } 
+            }
+        }
+    } 
+
+    .section-body-container {
+
+        .game-lounge-carousel {
+
+            .game-article-features {
+
+                .article-features-container  {
+
+                    .article-abs {
+                        left: 12% !important;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .game-feature-container {
+        height: 20rem !important;
+
+        .banner-text {
+            top: 10% !important;
+
+            & h1 {
+                font-size: 2rem !important;
+            }
+
+            & p {
+                font-size: 1.1rem !important;
+            }
+        }
+
+        .banner-img {
+
+            & img {
+                height: 30rem !important;
+            }
+        }
+    }
+
+    .gamelounge-contact-container {
+        max-width: 80% !important;
+    }
+
+    .gamelounge-download-container {
+    
+        .gamelounge-download-carousel {
+            width: 60% !important;
+            height: 40rem !important;
+        }
+    }
+ }
+
+ @media(max-width: 428px) {
+    .game-lounge-body {
+
+        .game-lounge-body-container {
+
+            .game-lounge-landing--main {
+
+                .gamelounge-home-typography {
+
+                    .gamelounge-typography {
+                        height: 35vh !important;
+
+                        #typography-inner {
+                            height: 28vh !important;
+
+                            & img {
+                                height: 8rem !important;
+                            }
+
+                            .inner-text-main {
+                                font-size: 1.15rem !important;
+                            }
+
+                            .inner-text-secondary {
+                                font-size: .85rem !important;
+                            }
+                        }
+                    }
+                }
+
+                .gamelounge-home-image {
+
+                    .enter-lounge {
+                        right: 32% !important;
+                    } 
+                }
+            }
+        }
+    }
+
+
+    .game-feature-container {
+        height: 15rem !important;
+
+        .banner-text {
+            top: 10% !important;
+
+            & h4 {
+                height: 10% !important;
+            }
+
+            & h1 {
+                font-size: 1.6rem !important;
+            }
+
+            & p {
+                font-size: .9rem !important;
+            }
+        }
+
+        .banner-img {
+
+            & img {
+                height: 20rem !important;
+            }
+        }
+    }
+
+    .community-sidebar-display-secondary {
+        display: block !important;
+
+        .community-sidebar-content {
+            max-width: 100% !important;
+            margin: 10% !important;
+        }
+    }
+
+    .game-lounge-carousel {
+        margin-top: 0% !important;
+
+        .game-article-features {
+
+            .article-features-container {
+    
+                .article-abs {
+                    left: 15% !important;
+    
+                    .featured-articles {
+    
+                        .article {
+                             
+                            & img {
+                                height: 8rem !important;
+                                width: 16rem !important;
+                                border-radius: 10px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .game-search-bar {
+        background-color: transparent !important;
+
+        #search-icon {
+            display: none !important;
+        }
+
+        & input {
+
+            &::placeholder {
+                font-size: 1.2rem !important;
+            }
+        }
+    }
+
+    .gamelounge-info--container {
+
+        .gamelounge-info--body {
+
+            .gamelounge-info--2 {
+
+                .gamelounge-article-content {
+
+                    & h3 {
+                        font-size: 2.8rem !important;
+                    }
+
+                }
+
+            }
+
+        }
+
+    } 
+    
+    .gamelounge-download-container {
+    
+        .gamelounge-download-carousel {
+            height: 30rem !important;
+        }
+    }
+ }
+
+ @media(max-width: 320px){
+    .game-lounge-body {
+
+        .game-lounge-body-container {
+
+            .game-lounge-landing--main {
+
+                .gamelounge-home-typography {
+
+                    .gamelounge-typography {
+                        height: 32vh !important;
+
+                        #typography-inner {
+                            height: 28vh !important;
+
+                            & img {
+                                height: 5rem !important;
+                            }
+
+                            .inner-text-main {
+                                font-size: 1rem !important;
+                            }
+
+                            .inner-text-secondary {
+                                font-size: .6rem !important;
+                            }
+                        }
+                    }
+                }
+
+                .gamelounge-home-image {
+
+                    #currentDate-gamelounge-home {
+                        font-size: 1rem !important;
+                    }
+                } 
+            }
+        }
+    }
+
+    .section-body-container {
+
+        .game-lounge-carousel {
+
+            .game-article-features {
+    
+                .article-features-container {
+        
+                    .article-abs {
+                        left: 18% !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .game-sidebar {
+        position: fixed; 
+        height: 100vh;
+        width: 5%;
+        z-index: 2;
+        margin-top: 5%;
+    
+        .game-sidebar-display {
+            display: block;
+    
+            .game-sidebar-center {
+                top: 50% !important;
+                font-size: 1rem !important;
+                
+                .icons {
+                    margin-bottom: 6rem;
+                    padding: 5px;
+    
+                    & a {
+                        color: rgb(255, 255, 255);  
+                        transition: all .2s; 
+                        
+                        &:hover {
+                            color: #777;
+                        }
+                    }
+    
+                    #up-icon {
+                        background-color: white;
+                        color: rgb(37, 34, 34);
+                        padding: 5%;
+                        border-radius: 5px;
+                    }
+                }
+            }
+    
+            .game-sidebar-end {
+                font-size: 1rem !important;            
+                bottom: 5% !important;
+
+    
+                #settings-icon {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .gamelounge-contact-container {
+        max-width: 80% !important;
+
+         #gamelounge-contact {
+
+            fieldset {
+
+                textarea {
+                    height: 15rem !important;
+                }
+            } 
+         } 
+    }
+}
+ /* Gamelounge End */
