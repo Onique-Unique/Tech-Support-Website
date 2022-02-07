@@ -1341,13 +1341,8 @@
 
  // Leaderboard Section
 .community-leaderboard--container {
-    overflow: hidden;
         
     .community-leaderboard {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
 
         #leaderboard-exit--top {
             display: flex;
