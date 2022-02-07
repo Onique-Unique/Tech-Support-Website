@@ -7,8 +7,6 @@
     overscroll-behavior: contain; // keeps page from pulling when scroll reaches end
     -ms-overflow-style: none;
     scrollbar-width: none; 
-    position: fixed;
-    overflow: hidden;
 
     &::-webkit-scrollbar {
         display: none;
@@ -16,8 +14,6 @@
 
     .game-lounge-body-container {
         position: relative;
-        overflow-y: scroll;
-        -webkit-overflow-scrolling: touch; /* enables “momentum” (smooth) scrolling */
 
         /* LANDING PAGE SCSS */
         .game-lounge-landing--main {
