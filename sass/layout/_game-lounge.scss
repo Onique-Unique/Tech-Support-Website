@@ -1185,7 +1185,7 @@
     }
 }
 
-// contact 
+// Contact Section
 .gamelounge-contact-container {
     max-width: 40%;
     margin: 0 auto;
@@ -1339,6 +1339,50 @@
      }
  }
 
+ // Leaderboard Section
+.community-leaderboard {
+
+    #leaderboard-exit--top {
+        display: flex;
+   
+        #colored-space {
+           position: absolute;
+           top: 0%;
+           left: 0%;
+           width: 100%;
+           height: 10rem;
+           background-color: #c33763;
+           background-image: url(/images/game-lounge-img/webp/Apex-Legends-Mobile-3.webp);
+        }
+   
+       .leaderboard-exit {
+           position: absolute;
+           top: 0%;
+           right: 1%;
+           background-color: #24243e;
+           padding: 1%;
+           border-radius: 5px;
+           font-size: 3rem;
+           color: #ffffff;
+       }
+    }
+
+    #leaderboard-mentions {
+
+        #leaderboard-exit--bottom {
+            position: absolute;
+               bottom: 0%;
+               left: 0%;
+               width: 100%;
+               height: 15rem;
+               background-color: rgb(40, 40, 40);
+               background-image: url(/images/game-lounge-img/webp/Apex-Legends-Mobile-3.webp);
+        }
+    }
+}
+ 
+
+ // Download Section
  .gamelounge-download-container {
     height: 100vh;
     width: 100%;

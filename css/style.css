@@ -3224,6 +3224,35 @@ footer p {
     .fair-use-disclaimer--container .disclaimer #fair-use-disclaimer p {
       font-size: 1.6rem; }
 
+.community-leaderboard #leaderboard-exit--top {
+  display: flex; }
+  .community-leaderboard #leaderboard-exit--top #colored-space {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 10rem;
+    background-color: #c33763;
+    background-image: url(/images/game-lounge-img/webp/Apex-Legends-Mobile-3.webp); }
+  .community-leaderboard #leaderboard-exit--top .leaderboard-exit {
+    position: absolute;
+    top: 0%;
+    right: 1%;
+    background-color: #24243e;
+    padding: 1%;
+    border-radius: 5px;
+    font-size: 3rem;
+    color: #ffffff; }
+
+.community-leaderboard #leaderboard-mentions #leaderboard-exit--bottom {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  height: 15rem;
+  background-color: #282828;
+  background-image: url(/images/game-lounge-img/webp/Apex-Legends-Mobile-3.webp); }
+
 .gamelounge-download-container {
   height: 100vh;
   width: 100%;

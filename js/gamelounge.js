@@ -3,12 +3,16 @@ const formContainer = document.querySelector(".gamelounge-contact-container");
 const disclaimerContainer = document.querySelector(".fair-use-disclaimer--container");
 const downloadContainer = document.querySelector(".gamelounge-download-container");
 const searchField = document.getElementById("gamelounge-search");
+const leaderboardContainer = document.getElementById("leaderboard");
+const leaderboardClick = document.querySelector(".apex-leaderboards");
 
 const emailIcon = document.getElementById("email-icon");
 const emailExit = document.querySelector(".form-exit");
 const settingsIcon = document.getElementById("settings-icon");
 const settingsIconAlt = document.getElementById("settings-icon-min");
 const disclaimerExit = document.querySelector(".disclaimer-exit");
+const leaderboardIcon = document.getElementById("community-icon");
+const leaderboardExit = document.querySelector(".leaderboard-exit");
 const downloadIcon = document.querySelector(".download-right-arrow");
 const downloadIconSecondary = document.querySelector(".download-right-arrow-secondary");
 const downloadExit = document.getElementById("download-back");
@@ -85,6 +89,16 @@ settingsIconAlt.addEventListener("click", () => {
 disclaimerExit.addEventListener("click", () => {
     gameloungeBodyContainer.classList.toggle("hide");
     disclaimerContainer.classList.toggle("hide");
+});
+
+leaderboardIcon.addEventListener("click", () => {
+    gameloungeBodyContainer.classList.toggle("hide");
+    leaderboardContainer.classList.toggle("hide");
+});
+
+leaderboardExit.addEventListener("click", () => {
+    gameloungeBodyContainer.classList.toggle("hide");
+    leaderboardContainer.classList.toggle("hide");
 });
 
 downloadIcon.addEventListener("click", () => {

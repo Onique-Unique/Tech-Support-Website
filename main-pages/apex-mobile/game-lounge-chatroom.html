@@ -64,7 +64,7 @@
                                   <!--"http://www.youtube.com/results"  -->
                         <form id="form-yt--search" method="get" target="_blank" >
                             <i class="fas fa-search" id="search-icon"></i>
-                            <input id="gamelounge-search" name="search_query" type="search" maxlength="128" onchange="openfile()" placeholder="Search...">
+                            <input id="gamelounge-search" name="search_query" type="search" maxlength="128" onchange="openfile()" placeholder="Search content...">
                         </form>             
                     </div>
                     <div class="menu-icon">
@@ -85,7 +85,7 @@
                         <a href="#home-article" aria-label="Apex legends mobile latest news home" title="Latest"><i class="fas fa-newspaper" id="article-icon"></i></a>
                     </div>
                     <div class="icons">
-                        <a href="#" aria-label="Apex legends mobile community" title="Community Leaderboard"><i class="fas fa-users" id="community-icon"></i></a>
+                        <a href="#leaderboard" aria-label="Apex legends mobile community" title="Community Leaderboard"><i class="fas fa-users" id="community-icon"></i></a>
                     </div>
                     <div class="icons">
                         <a href="https://www.youtube.com/channel/UCNTV2r-pJ7PfPz78AkOY8TA/recent" aria-label="Apex legends mobile latest videos" target="_blank" title="Videos"><i class="fas fa-photo-video" id="video-icon"></i></a>
@@ -590,6 +590,20 @@
                     <p><strong>EXTERNAL LINKS DISCLAIMER FOR WEBSITE</strong></p>
                     <p>The Site <span>[and our mobile application if any]</span> may contain (or you may be sent through the Site<span> [or our mobile application if any]</span> links to other websites or content belonging to or originating from third parties or links to websites and features in banners or other advertising. Such external links are/ may not be investigated, monitored, or checked for accuracy, adequacy, validity, reliability, availability or completeness by us.</p>
                     <p>We do not warrant, endorse, guarantee, or assume responsibility for the accuracy or reliability of any information offered by third-party websites linked through the site or any website or feature linked in any banner or other advertising. We will not be a party to or in any way be responsible for monitoring any transaction between you and third-party providers of products or services.</p>
+                </article>
+            </div>
+        </div>
+
+        <!-- LEADERBOARD ---------------------------------------------------------------------------------------------------------------------->
+        <div class="community-leaderboard--container hide" id="leaderboard">
+            <div class="community-leaderboard">
+                <div id="leaderboard-exit--top">
+                    <div id="colored-space"></div>
+                    <i class="far fa-times-circle leaderboard-exit"></i>
+                </div>          
+                <article id="leaderboard-mentions">
+                   <iframe class="apex-leaderboards" src="https://apex.tracker.gg/apex/insights" frameborder="0" style="height: 100vh; width: 100%;"></iframe>
+                   <div id="leaderboard-exit--bottom"></div>
                 </article>
             </div>
         </div>
