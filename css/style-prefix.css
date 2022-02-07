@@ -4014,36 +4014,42 @@ footer p {
     .fair-use-disclaimer--container .disclaimer #fair-use-disclaimer p {
       font-size: 1.6rem; }
 
-.community-leaderboard #leaderboard-exit--top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .community-leaderboard #leaderboard-exit--top #colored-space {
-    position: absolute;
-    top: 0%;
-    left: 0%;
+.community-leaderboard--container {
+  overflow: hidden; }
+  .community-leaderboard--container .community-leaderboard {
+    position: fixed;
     width: 100%;
-    height: 10rem;
-    background-color: #c33763;
-    background-image: url(/images/game-lounge-img/webp/Apex-Legends-Mobile-3.webp); }
-  .community-leaderboard #leaderboard-exit--top .leaderboard-exit {
-    position: absolute;
-    top: 0%;
-    right: 1%;
-    background-color: #24243e;
-    padding: 1%;
-    border-radius: 5px;
-    font-size: 3rem;
-    color: #ffffff; }
-
-.community-leaderboard #leaderboard-mentions #leaderboard-exit--bottom {
-  position: absolute;
-  bottom: 0%;
-  left: 0%;
-  width: 100%;
-  height: 15rem;
-  background-color: #282828;
-  background-image: url(/images/game-lounge-img/webp/Apex-Legends-Mobile-3.webp); }
+    height: 100%;
+    overflow: auto; }
+    .community-leaderboard--container .community-leaderboard #leaderboard-exit--top {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .community-leaderboard--container .community-leaderboard #leaderboard-exit--top #colored-space {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 10rem;
+        background-color: #c33763;
+        background-image: url(/images/game-lounge-img/webp/Apex-Legends-Mobile-3.webp); }
+      .community-leaderboard--container .community-leaderboard #leaderboard-exit--top .leaderboard-exit {
+        position: absolute;
+        top: 0%;
+        right: 1%;
+        background-color: #24243e;
+        padding: 1%;
+        border-radius: 5px;
+        font-size: 3rem;
+        color: #ffffff; }
+    .community-leaderboard--container .community-leaderboard #leaderboard-mentions #leaderboard-exit--bottom {
+      position: absolute;
+      bottom: 0%;
+      left: 0%;
+      width: 100%;
+      height: 15rem;
+      background-color: #282828;
+      background-image: url(/images/game-lounge-img/webp/Apex-Legends-Mobile-3.webp); }
 
 .gamelounge-download-container {
   height: 100vh;
@@ -4136,6 +4142,27 @@ footer p {
     height: 15rem !important; }
   .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-typography .gamelounge-typography #typography-inner .inner-text-main {
     font-size: 1.6rem !important; } }
+
+@media (min-height: 632px) {
+  #settings-icon-min {
+    display: none !important; } }
+
+@media (max-height: 632px) {
+  .game-sidebar {
+    overflow-y: scroll !important;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important; }
+    .game-sidebar::-webkit-scrollbar {
+      display: none !important; }
+    .game-sidebar .game-sidebar-display .game-sidebar-center {
+      top: 37rem !important;
+      font-size: 1.6rem !important; }
+    .game-sidebar .game-sidebar-display .game-sidebar-end {
+      display: none !important; }
+  #leaderboard-exit--bottom {
+    display: none !important; }
+  #leaderboard-exit--top #colored-space {
+    height: 7rem !important; } }
 
 @media (max-width: 560px) {
   .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-typography .gamelounge-typography {
@@ -4275,23 +4302,6 @@ footer p {
     max-width: 80% !important; }
     .gamelounge-contact-container #gamelounge-contact fieldset textarea {
       height: 15rem !important; } }
-
-@media (min-height: 632px) {
-  #settings-icon-min {
-    display: none !important; } }
-
-@media (max-height: 632px) {
-  .game-sidebar {
-    overflow-y: scroll !important;
-    -ms-overflow-style: none !important;
-    scrollbar-width: none !important; }
-    .game-sidebar::-webkit-scrollbar {
-      display: none !important; }
-    .game-sidebar .game-sidebar-display .game-sidebar-center {
-      top: 37rem !important;
-      font-size: 1.6rem !important; }
-    .game-sidebar .game-sidebar-display .game-sidebar-end {
-      display: none !important; } }
 
 /* Gamelounge End */
 /* 
