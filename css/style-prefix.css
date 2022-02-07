@@ -2994,11 +2994,16 @@ footer p {
   -ms-scroll-chaining: none;
       overscroll-behavior: contain;
   -ms-overflow-style: none;
-  scrollbar-width: none; }
+  scrollbar-width: none;
+  position: fixed;
+  overflow: hidden; }
   .game-lounge-body::-webkit-scrollbar {
     display: none; }
   .game-lounge-body .game-lounge-body-container {
     position: relative;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    /* enables “momentum” (smooth) scrolling */
     /* LANDING PAGE SCSS */ }
     .game-lounge-body .game-lounge-body-container .game-lounge-landing--main {
       position: relative;
