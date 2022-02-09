@@ -1,3 +1,8 @@
+// MENU BUTTON ALERT
+const menuBtn = document.getElementById("menu-bars");
+const tempContainer = document.getElementById("temp-container");
+const tempExit = document.querySelector(".temp-exit");
+
 const gameloungeBodyContainer = document.querySelector(".game-lounge-body-container");
 const formContainer = document.querySelector(".gamelounge-contact-container");
 const disclaimerContainer = document.querySelector(".fair-use-disclaimer--container");
@@ -64,6 +69,16 @@ function openfile() {
         document.getElementById("form-yt--search").action = action2;
     };
 };
+
+menuBtn.addEventListener("click", () => {
+    gameloungeBodyContainer.classList.toggle("filter-overlay");
+    tempContainer.classList.toggle("hide");
+});
+
+tempExit.addEventListener("click", () => {
+    gameloungeBodyContainer.classList.toggle("filter-overlay");
+    tempContainer.classList.toggle("hide");
+})
 
 emailIcon.addEventListener("click", () => {
     gameloungeBodyContainer.classList.toggle("hide");

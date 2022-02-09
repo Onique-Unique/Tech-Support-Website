@@ -6,7 +6,7 @@
     max-width: 1440px;
     overscroll-behavior: contain; // keeps page from pulling when scroll reaches end
     -ms-overflow-style: none;
-    scrollbar-width: none; 
+    scrollbar-width: none;
 
     &::-webkit-scrollbar {
         display: none;
@@ -414,6 +414,10 @@
 
 .hide {
 	display: none;
+}
+
+.filter-overlay {
+    filter: blur(5px);
 }
 
 //Section-Body
@@ -1384,8 +1388,42 @@
     }
 }
 
+// Publishments Section
+.publishments-container {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(43, 43, 43);
+
+    .publishments {
+        height: 100vh;
+        width: 90%;
+        padding: 0 2%;
+        background-color: white;
+        margin: 0 auto;
+
+        & p {
+            text-align: center;
+            font-size: 3rem;
+            padding-top: 10%;
+        }
+        .publishment-lists {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 auto;
+
+            .archive {
+                background-color: #c33763;
+                height: 22rem;
+                width: 50%;
+                margin: 2%;
+            }
+        }
+    }
+}
+
  // Download Section
- .gamelounge-download-container {
+.gamelounge-download-container {
     height: 100vh;
     width: 100%;
     margin: 15% auto;
@@ -1410,7 +1448,7 @@
             justify-content: space-evenly;
 
             .icon-set {
-    
+
                 .icon {
                     display: flex;
                     justify-content: center;
@@ -1422,7 +1460,7 @@
                 .fa-android {
                     color: #07a807;
                 }
-    
+
                 & p {
                     color: white;
                     text-align: center;
@@ -1434,7 +1472,58 @@
             bottom: 5%;
         }
     }
- }
+}
+
+// Temp Menu Display
+.temp-display--container {
+    width: 100%;
+    margin: 15% auto;
+
+    .temp-display {
+        margin: 0 auto;
+        width: 40%;
+        height: 40rem;
+        background-color: rgb(43, 43, 43);
+        padding: 2%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 5px;
+
+        .temp-display-inserts {
+            position: relative;
+            height: 30rem;
+
+            .temp-exit {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                font-size: 2rem;
+                color: #C33764;
+            }   
+    
+            & P {
+                text-align: center;
+                padding: 15% 0;
+                font-size: 2rem;
+                color: white;
+            }
+    
+            .temp-icon {
+                position: absolute;
+                bottom: 5%; 
+                left: 45%;
+                width: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 5rem;
+                color: white;
+                animation: temp-icon ease 1.5s infinite;
+            }
+
+        }
+    }
+}
 
 @media(min-width: 960px) {
 
@@ -1614,7 +1703,7 @@
     }
 }
 
- @media(max-width: 560px) {
+@media(max-width: 560px) {
     .game-lounge-body {
 
         .game-lounge-body-container {
@@ -1701,13 +1790,31 @@
     }
 
     .gamelounge-download-container {
-    
+
         .gamelounge-download-carousel {
             width: 60% !important;
             height: 40rem !important;
         }
     }
- }
+
+        // Temp Menu Display
+    .temp-display--container {
+
+        .temp-display {
+            width: 80% !important;
+            height: 30rem;
+
+            & p {
+                font-size: 3rem;
+            }
+
+            .temp-icon {
+                bottom: 25% !important;
+                font-size: 3.5rem !important; 
+            }
+        }
+    }
+}
 
  @media(max-width: 428px) {
     .game-lounge-body {

@@ -3322,6 +3322,10 @@ footer p {
 .hide {
   display: none; }
 
+.filter-overlay {
+  -webkit-filter: blur(5px);
+          filter: blur(5px); }
+
 .section-body-container {
   width: 75%;
   padding-left: 8%; }
@@ -4045,6 +4049,37 @@ footer p {
   background-color: #282828;
   background-image: url(/images/game-lounge-img/webp/Apex-Legends-Mobile-3.webp); }
 
+.publishments-container {
+  height: 100vh;
+  width: 100%;
+  background-color: #2b2b2b; }
+  .publishments-container .publishments {
+    height: 100vh;
+    width: 90%;
+    padding: 0 2%;
+    background-color: white;
+    margin: 0 auto; }
+    .publishments-container .publishments p {
+      text-align: center;
+      font-size: 3rem;
+      padding-top: 10%; }
+    .publishments-container .publishments .publishment-lists {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin: 0 auto; }
+      .publishments-container .publishments .publishment-lists .archive {
+        background-color: #c33763;
+        height: 22rem;
+        width: 50%;
+        margin: 2%; }
+
 .gamelounge-download-container {
   height: 100vh;
   width: 100%;
@@ -4088,6 +4123,55 @@ footer p {
     .gamelounge-download-container .gamelounge-download-carousel #download-back {
       position: absolute;
       bottom: 5%; }
+
+.temp-display--container {
+  width: 100%;
+  margin: 15% auto; }
+  .temp-display--container .temp-display {
+    margin: 0 auto;
+    width: 40%;
+    height: 40rem;
+    background-color: #2b2b2b;
+    padding: 2%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    border-radius: 5px; }
+    .temp-display--container .temp-display .temp-display-inserts {
+      position: relative;
+      height: 30rem; }
+      .temp-display--container .temp-display .temp-display-inserts .temp-exit {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        font-size: 2rem;
+        color: #C33764; }
+      .temp-display--container .temp-display .temp-display-inserts P {
+        text-align: center;
+        padding: 15% 0;
+        font-size: 2rem;
+        color: white; }
+      .temp-display--container .temp-display .temp-display-inserts .temp-icon {
+        position: absolute;
+        bottom: 5%;
+        left: 45%;
+        width: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        font-size: 5rem;
+        color: white;
+        -webkit-animation: temp-icon ease 1.5s infinite;
+                animation: temp-icon ease 1.5s infinite; }
 
 @media (min-width: 960px) {
   .community-sidebar-display-secondary {
@@ -4187,7 +4271,15 @@ footer p {
     max-width: 80% !important; }
   .gamelounge-download-container .gamelounge-download-carousel {
     width: 60% !important;
-    height: 40rem !important; } }
+    height: 40rem !important; }
+  .temp-display--container .temp-display {
+    width: 80% !important;
+    height: 30rem; }
+    .temp-display--container .temp-display p {
+      font-size: 3rem; }
+    .temp-display--container .temp-display .temp-icon {
+      bottom: 25% !important;
+      font-size: 3.5rem !important; } }
 
 @media (max-width: 428px) {
   .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-typography .gamelounge-typography {
@@ -4481,6 +4573,21 @@ footer p {
   100% {
     -webkit-transform: scale(1);
             transform: scale(1); } }
+
+@-webkit-keyframes temp-icon {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    opacity: .8;
+    color: #fcb565; }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; } }
 
 .iframe {
   width: 90%;
