@@ -4029,7 +4029,8 @@ footer p {
     width: 100%;
     height: 10rem;
     background-color: #c33763;
-    background-image: url(/images/game-lounge-img/webp/Apex-Legends-Mobile-3.webp); }
+    background-image: url(/images/game-lounge-img/webp/Apex-Legends-Mobile-3.webp);
+    z-index: 2; }
   .community-leaderboard--container .community-leaderboard #leaderboard-exit--top .leaderboard-exit {
     position: absolute;
     top: 0%;
@@ -4038,16 +4039,21 @@ footer p {
     padding: 1%;
     border-radius: 5px;
     font-size: 3rem;
-    color: #ffffff; }
+    color: #ffffff;
+    z-index: 3; }
+
+.community-leaderboard--container .community-leaderboard #leaderboard-mentions iframe {
+  position: fixed; }
 
 .community-leaderboard--container .community-leaderboard #leaderboard-mentions #leaderboard-exit--bottom {
   position: absolute;
   bottom: 0%;
   left: 0%;
   width: 100%;
-  height: 15rem;
+  height: 14.2rem;
   background-color: #282828;
-  background-image: url(/images/game-lounge-img/webp/Apex-Legends-Mobile-3.webp); }
+  background-image: url(/images/game-lounge-img/webp/Apex-Legends-Mobile-3.webp);
+  z-index: 2; }
 
 .publishments-container {
   height: 100vh;
@@ -4237,8 +4243,6 @@ footer p {
       font-size: 1.6rem !important; }
     .game-sidebar .game-sidebar-display .game-sidebar-end {
       display: none !important; }
-  #leaderboard-exit--bottom {
-    display: none !important; }
   #leaderboard-exit--top #colored-space {
     height: 7rem !important; } }
 
