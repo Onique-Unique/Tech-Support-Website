@@ -4,6 +4,7 @@ const tempContainer = document.getElementById("temp-container");
 const tempExit = document.querySelector(".temp-exit");
 
 const gameloungeBodyContainer = document.querySelector(".game-lounge-body-container");
+const playlistContainer = document.getElementById("playlist-container");
 const formContainer = document.querySelector(".gamelounge-contact-container");
 const disclaimerContainer = document.querySelector(".fair-use-disclaimer--container");
 const downloadContainer = document.querySelector(".gamelounge-download-container");
@@ -11,6 +12,8 @@ const searchField = document.getElementById("gamelounge-search");
 const leaderboardContainer = document.getElementById("leaderboard");
 const leaderboardClick = document.querySelector(".apex-leaderboards");
 
+const playlistIcon = document.getElementById("up-icon");
+const playlistExit = document.querySelector(".playlist-exit");
 const emailIcon = document.getElementById("email-icon");
 const emailExit = document.querySelector(".form-exit");
 const settingsIcon = document.getElementById("settings-icon");
@@ -73,12 +76,24 @@ function openfile() {
 menuBtn.addEventListener("click", () => {
     gameloungeBodyContainer.classList.toggle("filter-overlay");
     tempContainer.classList.toggle("hide");
+    window.scroll({top: 0, behavior: "smooth"}); // scroll back to top where container is
 });
 
 tempExit.addEventListener("click", () => {
     gameloungeBodyContainer.classList.toggle("filter-overlay");
     tempContainer.classList.toggle("hide");
-})
+});
+
+playlistIcon.addEventListener("click", () => {
+    gameloungeBodyContainer.classList.toggle("filter-overlay");
+    playlistContainer.classList.toggle("hide");
+    window.scroll({top: 0, behavior: "smooth"});
+});
+
+playlistExit.addEventListener("click", () => {
+    gameloungeBodyContainer.classList.toggle("filter-overlay");
+    playlistContainer.classList.toggle("hide");
+});
 
 emailIcon.addEventListener("click", () => {
     gameloungeBodyContainer.classList.toggle("hide");
