@@ -48,8 +48,8 @@
         crossorigin="anonymous"; // set the src attribute
         // scriptTag.type = 'text/javascript'; // if you have an HTML5 website you may want to comment this line out
         scriptTag.async = true; // the HTML5 async attribute
-        var headTag = document.getElementsByTagName('head')[0];
-        headTag.appendChild(scriptTag);}
+        var divTag = document.getElementById('gamelounge-ad-placement')[0];
+        divTag.appendChild(scriptTag);}
     </script>
     <!-- onload="lazyload();" -->
 
@@ -333,7 +333,20 @@
                 </div>
             </div>
 
-            <div onload="lazyload();" id="gamelounge-ad-placement"></div>
+            <div onload="lazyload();" id="gamelounge-ad-placement">
+                <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7079047961613379"
+                    crossorigin="anonymous"></script> -->
+                <!-- Gamelounge ad -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-7079047961613379"
+                    data-ad-slot="2601342528"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
 
             <!-- HOME ARTICLE ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
             <main class="game-lounge-main">
