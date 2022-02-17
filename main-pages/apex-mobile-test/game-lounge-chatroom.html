@@ -48,8 +48,8 @@
         crossorigin="anonymous"; // set the src attribute
         // scriptTag.type = 'text/javascript'; // if you have an HTML5 website you may want to comment this line out
         scriptTag.async = true; // the HTML5 async attribute
-        var divTag = document.getElementById('gamelounge-ad-placement')[0];
-        divTag.appendChild(scriptTag);}
+        var blockTag = document.getElementsByTagName('blockquote')[0];
+        blockTag.appendChild(scriptTag);}
     </script>
     <!-- onload="lazyload();" -->
 
@@ -67,7 +67,7 @@
         }
     </style>
 </head>
-<body class="game-lounge-body">
+<body onload="lazyload();" class="game-lounge-body">
     <div class="game-lounge-body-container">
         <div class="game-nav-fixed">
             <nav class="game-nav">
@@ -333,7 +333,7 @@
                 </div>
             </div>
 
-            <div onload="lazyload();" id="gamelounge-ad-placement">
+            <blockquote id="gamelounge-ad-placement">
                 <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7079047961613379"
                     crossorigin="anonymous"></script> -->
                 <!-- Gamelounge ad -->
@@ -346,7 +346,7 @@
                 <script>
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
-            </div>
+            </blockquote>
 
             <!-- HOME ARTICLE ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
             <main class="game-lounge-main">
