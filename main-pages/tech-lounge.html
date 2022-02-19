@@ -44,9 +44,25 @@
         crossorigin="anonymous"; // set the src attribute
         // scriptTag.type = 'text/javascript'; // if you have an HTML5 website you may want to comment this line out
         scriptTag.async = true; // the HTML5 async attribute
-        var headTag = document.getElementsByTagName('head')[0];
-        headTag.appendChild(scriptTag);}
+        var blockTag = document.getElementsByTagName('blockquote')[0];
+        blockTag.appendChild(scriptTag);}
     </script>
+    <!-- onload="lazyload();" -->
+
+    <style>
+        #gamelounge-ad-placement {
+            scrollbar-color: #40402c #ffffff00 ;
+        }
+        #gamelounge-ad-placement::-webkit-scrollbar-thumb {
+            background-color: #40402c91;
+        }
+        #gamelounge-ad-placement::-webkit-scrollbar-thumb:hover {
+            background-color: #40402c;
+        }
+        #gamelounge-ad-placement::-webkit-scrollbar-track {
+            background-color: #ffffff00;
+        }
+    </style>
 </head>
 <body onload="lazyload();">
     
