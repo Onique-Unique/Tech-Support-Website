@@ -1,0 +1,17 @@
+// Default Settings no colorization - colorization added to internal style sheet
+#gamelounge-ad-placement {
+    max-height: 15rem;
+    width: 100%;
+    background-color: transparent;
+    padding: 0 5%;
+    overflow-x: hidden !important;
+    scrollbar-width: thin !important;
+}
+
+#gamelounge-ad-placement::-webkit-scrollbar {
+    height: 1.5vh;
+    width: .8vw;
+}
+#gamelounge-ad-placement::-webkit-scrollbar-thumb {
+    border-radius: 10px
+}
