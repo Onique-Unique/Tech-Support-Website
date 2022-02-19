@@ -4384,6 +4384,8 @@ footer p {
     font-size: 4rem !important; } }
 
 @media (min-width: 960px) {
+  .mobile-view-ad {
+    display: none !important; }
   .community-sidebar-display-secondary {
     display: none !important; } }
 
