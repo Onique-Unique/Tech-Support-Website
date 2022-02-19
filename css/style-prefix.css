@@ -4878,6 +4878,3 @@ footer p {
 #gamelounge-ad-placement::-webkit-scrollbar {
   height: 1.5vh;
   width: .8vw; }
-
-#gamelounge-ad-placement::-webkit-scrollbar-thumb {
-  border-radius: 10px; }
