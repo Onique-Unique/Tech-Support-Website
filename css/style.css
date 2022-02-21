@@ -3525,31 +3525,33 @@ footer p {
 @media (max-width: 560px) {
   .publishments-container {
     min-width: 320px !important; }
-    .publishments-container .publishments .featured-publisher .publisher-search {
-      display: none !important; }
-    .publishments-container .publishments .featured-publisher .flex-publisher {
-      flex-direction: column-reverse !important;
-      padding-top: 0% !important; }
-      .publishments-container .publishments .featured-publisher .flex-publisher #left-section {
-        width: 100% !important;
-        margin-bottom: 3% !important; }
-        .publishments-container .publishments .featured-publisher .flex-publisher #left-section .verified-publisher h1 {
-          font-size: 3.2rem !important; }
-        .publishments-container .publishments .featured-publisher .flex-publisher #left-section .verified-publisher svg {
-          height: 2rem !important; }
-        .publishments-container .publishments .featured-publisher .flex-publisher #left-section .about-publisher p {
-          font-size: 1.2rem !important; }
-        .publishments-container .publishments .featured-publisher .flex-publisher #left-section .about-publisher #channel-btn {
-          padding: .5rem 4rem !important; }
-      .publishments-container .publishments .featured-publisher .flex-publisher #right-section img {
-        height: 20rem !important;
-        width: 20rem !important; }
-    .publishments-container .publishments .featured-publisher .legend-carousel h2 {
-      font-size: 1.6rem !important; }
-    .publishments-container .publishments .featured-publisher .legend-carousel #legend-inner-header h3 {
-      font-size: 2rem !important; }
-    .publishments-container .publishments .featured-publisher .legend-carousel .legend-row img {
-      height: 12rem !important; } }
+    .publishments-container .publishments {
+      padding: 0% !important; }
+      .publishments-container .publishments .featured-publisher .publisher-search {
+        display: none !important; }
+      .publishments-container .publishments .featured-publisher .flex-publisher {
+        flex-direction: column-reverse !important;
+        padding-top: 0% !important; }
+        .publishments-container .publishments .featured-publisher .flex-publisher #left-section {
+          width: 100% !important;
+          margin-bottom: 3% !important; }
+          .publishments-container .publishments .featured-publisher .flex-publisher #left-section .verified-publisher h1 {
+            font-size: 3.2rem !important; }
+          .publishments-container .publishments .featured-publisher .flex-publisher #left-section .verified-publisher svg {
+            height: 2rem !important; }
+          .publishments-container .publishments .featured-publisher .flex-publisher #left-section .about-publisher p {
+            font-size: 1.2rem !important; }
+          .publishments-container .publishments .featured-publisher .flex-publisher #left-section .about-publisher #channel-btn {
+            padding: .5rem 4rem !important; }
+        .publishments-container .publishments .featured-publisher .flex-publisher #right-section img {
+          height: 20rem !important;
+          width: 20rem !important; }
+      .publishments-container .publishments .featured-publisher .legend-carousel h2 {
+        font-size: 1.6rem !important; }
+      .publishments-container .publishments .featured-publisher .legend-carousel #legend-inner-header h3 {
+        font-size: 2rem !important; }
+      .publishments-container .publishments .featured-publisher .legend-carousel .legend-row img {
+        height: 12rem !important; } }
 
 .gamelounge-download-container {
   height: 100vh;
@@ -3859,7 +3861,7 @@ footer p {
     display: block !important; }
     .community-sidebar-display-secondary .community-sidebar-content {
       max-width: 100% !important;
-      margin: 10% !important; }
+      margin: 5% !important; }
   .section-body-container .game-lounge-carousel {
     margin-top: 0% !important; }
     .section-body-container .game-lounge-carousel .game-article-features .article-features-container .article-abs {

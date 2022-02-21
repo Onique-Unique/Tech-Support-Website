@@ -163,10 +163,16 @@
                             </div>
                         </div>
                         
-                        <!-- COMMENT BOX ------------------------------------->
+                        <!-- COMMENT BOX/ DISCORD LIVE CHAT ------------------------------------->
                         <div class="game-chatroom">
                             <!-- paste this snippet where you want your comment box to show up -->
-                            <div class="commentbox" id="sidebar"></div>                           
+                            <!-- <div class="commentbox" id="sidebar"></div> -->
+                            <widgetbot
+                                server="791303979597299782"
+                                channel="791303979597299784"
+                                width="100%"
+                                height="30rem">
+                            </widgetbot>                           
                         </div>
                     </div>
                 </div>
@@ -329,10 +335,16 @@
             </section>
 
             <div class="community-sidebar-display-secondary">
-                <!-- COMMENT BOX ------------------------------------->
+                <!-- COMMENT BOX/ DISCORD LIVE CHAT  ------------------------------------->
                 <div class="game-chatroom">
                     <!-- paste this snippet where you want your comment box to show up -->
-                    <div class="commentbox" id="article"></div>                           
+                    <!-- <div class="commentbox" id="article"></div> -->
+                    <widgetbot
+                        server="791303979597299782"
+                        channel="791303979597299784"
+                        width="100%"
+                        height="30rem">
+                    </widgetbot>
                 </div>
                 <div class="community-sidebar-content">
                     <a href="#download-box" aria-label="Apex legends mobile download"><i class="fas fa-arrow-circle-right download-right-arrow-secondary"></i></a>
@@ -894,12 +906,15 @@
         </div> 
 
     <!-- Comment Box Script -->
-    <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+    <!-- <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script> -->
     <!-- <script>commentBox('5681689971916800-proj')</script> -->
-    <script defer >window.addEventListener("load", () => {
+    <!-- <script defer >window.addEventListener("load", () => {
         commentBox('5734178129707008-proj');
     });
-    </script>
+    </script> -->
+
+    <!-- Discord Live Chat Injected -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
 
     <!-- Local Script -->
     <script src="/js-minify/gamelounge-main-min.js"></script>
