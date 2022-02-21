@@ -2722,7 +2722,8 @@ footer p {
           .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .hot-topics .topics {
             padding: 0 2%; }
             .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .hot-topics .topics p {
-              font-size: 1.4rem; }
+              font-size: 1.4rem;
+              line-height: 1.5; }
             .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .hot-topics .topics img {
               width: 100%;
               height: auto;
@@ -3377,18 +3378,117 @@ footer p {
 
 .publishments-container {
   height: 100vh;
-  width: 100%;
-  background-color: #2b2b2b; }
+  width: 100%; }
   .publishments-container .publishments {
     height: 100vh;
-    width: 90%;
+    width: 100%;
     padding: 0 2%;
-    background-color: white;
     margin: 0 auto; }
-    .publishments-container .publishments p {
+    .publishments-container .publishments .featured-publisher {
+      width: 100%;
+      background-color: #0093E9;
+      background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+      position: relative;
+      padding: 0 5% 5% 5%; }
+      .publishments-container .publishments .featured-publisher .publishment-exit {
+        position: absolute;
+        top: .5%;
+        right: 1%;
+        font-size: 2rem;
+        color: #ecebeb;
+        margin: .5% 0; }
+      .publishments-container .publishments .featured-publisher .publisher-search {
+        display: none !important;
+        position: absolute;
+        top: 4%;
+        right: 2%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; }
+        .publishments-container .publishments .featured-publisher .publisher-search #legend-search {
+          padding: .5rem 1rem;
+          border-radius: 25px;
+          border: none;
+          outline: none; }
+          .publishments-container .publishments .featured-publisher .publisher-search #legend-search::placeholder {
+            font-size: 1.1rem; }
+        .publishments-container .publishments .featured-publisher .publisher-search #search-icon {
+          font-size: 1.4rem;
+          margin-left: 1rem; }
+      .publishments-container .publishments .featured-publisher .flex-publisher {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 4%; }
+        .publishments-container .publishments .featured-publisher .flex-publisher #left-section {
+          width: 60%;
+          text-align: center;
+          background-color: #0f0c29;
+          padding: 2%;
+          border-radius: 10px; }
+          .publishments-container .publishments .featured-publisher .flex-publisher #left-section .verified-publisher {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            transition: all .2s ease; }
+            .publishments-container .publishments .featured-publisher .flex-publisher #left-section .verified-publisher:hover {
+              box-shadow: .3rem .3rem 2.5rem white;
+              margin-bottom: 2.5%; }
+            .publishments-container .publishments .featured-publisher .flex-publisher #left-section .verified-publisher h1 {
+              font-size: 10rem;
+              font-family: 'Bebas Neue', cursive;
+              color: white; }
+            .publishments-container .publishments .featured-publisher .flex-publisher #left-section .verified-publisher svg {
+              height: 4rem;
+              filter: invert(35%) sepia(92%) saturate(7453%) hue-rotate(358deg) brightness(92%) contrast(127%); }
+          .publishments-container .publishments .featured-publisher .flex-publisher #left-section .about-publisher p {
+            color: #07a807;
+            font-size: 1.6rem; }
+          .publishments-container .publishments .featured-publisher .flex-publisher #left-section .about-publisher span {
+            color: white; }
+          .publishments-container .publishments .featured-publisher .flex-publisher #left-section .about-publisher #channel-btn {
+            margin-top: 5px;
+            padding: .5rem 8rem;
+            border-radius: 15px;
+            border: none;
+            outline: none;
+            background-color: #c33763;
+            color: white; }
+        .publishments-container .publishments .featured-publisher .flex-publisher #right-section {
+          text-align: center; }
+          .publishments-container .publishments .featured-publisher .flex-publisher #right-section img {
+            height: 32rem;
+            width: 32rem; }
+      .publishments-container .publishments .featured-publisher .legend-carousel {
+        width: 100%;
+        text-align: center;
+        padding: 0 6%;
+        margin-bottom: 2.5%; }
+        .publishments-container .publishments .featured-publisher .legend-carousel h2 {
+          font-size: 2.4rem;
+          font-family: 'Bebas Neue', cursive;
+          color: white;
+          background-color: #07a807;
+          width: 100%;
+          box-shadow: .5rem .5rem 2rem white; }
+        .publishments-container .publishments .featured-publisher .legend-carousel #legend-inner-header p {
+          color: #2b2b2b; }
+        .publishments-container .publishments .featured-publisher .legend-carousel .legend-row {
+          display: inline-block; }
+          .publishments-container .publishments .featured-publisher .legend-carousel .legend-row img {
+            height: 15rem;
+            transition: all .2s ease;
+            margin: .5%;
+            border-radius: 5px;
+            box-shadow: .5rem .5rem 2rem white; }
+            .publishments-container .publishments .featured-publisher .legend-carousel .legend-row img:hover {
+              transform: scale(1.2);
+              box-shadow: .2rem .2rem 2rem #ffda62; }
+    .publishments-container .publishments h3 {
       text-align: center;
       font-size: 3rem;
-      padding-top: 10%; }
+      color: white;
+      margin-top: 4%; }
     .publishments-container .publishments .publishment-lists {
       display: flex;
       align-items: center;
@@ -3399,6 +3499,57 @@ footer p {
         height: 22rem;
         width: 50%;
         margin: 2%; }
+
+@media (max-width: 960px) {
+  .publishments-container .publishments .featured-publisher .flex-publisher #left-section .verified-publisher h1 {
+    font-size: 7.5rem !important; }
+  .publishments-container .publishments .featured-publisher .flex-publisher #left-section .about-publisher p {
+    font-size: 1.4rem !important; }
+  .publishments-container .publishments .featured-publisher .flex-publisher #left-section .about-publisher #channel-btn {
+    padding: .5rem 8rem; }
+  .publishments-container .publishments .featured-publisher .flex-publisher #right-section img {
+    height: 28rem !important;
+    width: 28rem !important; } }
+
+@media (max-width: 768px) {
+  .publishments-container .publishments .featured-publisher .flex-publisher #left-section .verified-publisher h1 {
+    font-size: 4.5rem !important; }
+  .publishments-container .publishments .featured-publisher .flex-publisher #left-section .about-publisher p {
+    font-size: 1.2rem !important; }
+  .publishments-container .publishments .featured-publisher .flex-publisher #left-section .about-publisher #channel-btn {
+    padding: .5rem 8rem; }
+  .publishments-container .publishments .featured-publisher .flex-publisher #right-section img {
+    height: 22rem !important;
+    width: 22rem !important; } }
+
+@media (max-width: 560px) {
+  .publishments-container {
+    min-width: 320px !important; }
+    .publishments-container .publishments .featured-publisher .publisher-search {
+      display: none !important; }
+    .publishments-container .publishments .featured-publisher .flex-publisher {
+      flex-direction: column-reverse !important;
+      padding-top: 0% !important; }
+      .publishments-container .publishments .featured-publisher .flex-publisher #left-section {
+        width: 100% !important;
+        margin-bottom: 3% !important; }
+        .publishments-container .publishments .featured-publisher .flex-publisher #left-section .verified-publisher h1 {
+          font-size: 3.2rem !important; }
+        .publishments-container .publishments .featured-publisher .flex-publisher #left-section .verified-publisher svg {
+          height: 2rem !important; }
+        .publishments-container .publishments .featured-publisher .flex-publisher #left-section .about-publisher p {
+          font-size: 1.2rem !important; }
+        .publishments-container .publishments .featured-publisher .flex-publisher #left-section .about-publisher #channel-btn {
+          padding: .5rem 4rem !important; }
+      .publishments-container .publishments .featured-publisher .flex-publisher #right-section img {
+        height: 20rem !important;
+        width: 20rem !important; }
+    .publishments-container .publishments .featured-publisher .legend-carousel h2 {
+      font-size: 1.6rem !important; }
+    .publishments-container .publishments .featured-publisher .legend-carousel #legend-inner-header h3 {
+      font-size: 2rem !important; }
+    .publishments-container .publishments .featured-publisher .legend-carousel .legend-row img {
+      height: 12rem !important; } }
 
 .gamelounge-download-container {
   height: 100vh;

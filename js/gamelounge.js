@@ -2,6 +2,7 @@
 const menuBtn = document.getElementById("menu-bars");
 const tempContainer = document.getElementById("temp-container");
 const tempExit = document.querySelector(".temp-exit");
+const moreLive = document.getElementById("more-live");
 
 const gameloungeBodyContainer = document.querySelector(".game-lounge-body-container");
 const playlistContainer = document.getElementById("playlist-container");
@@ -11,6 +12,7 @@ const downloadContainer = document.querySelector(".gamelounge-download-container
 const searchField = document.getElementById("gamelounge-search");
 const leaderboardContainer = document.getElementById("leaderboard");
 const leaderboardClick = document.querySelector(".apex-leaderboards");
+const publisherContainer = document.querySelector(".publishments-container");
 
 const playlistIcon = document.getElementById("up-icon");
 const playlistExit = document.querySelector(".playlist-exit");
@@ -24,6 +26,8 @@ const leaderboardExit = document.querySelector(".leaderboard-exit");
 const downloadIcon = document.querySelector(".download-right-arrow");
 const downloadIconSecondary = document.querySelector(".download-right-arrow-secondary");
 const downloadExit = document.getElementById("download-back");
+const publisherIcon = document.getElementById("publisher-icon");
+const publishExit = document.querySelector(".publishment-exit");
 
 document.cookie = "AC-C=ac-c;expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/;SameSite=None;Secure";
 
@@ -79,6 +83,12 @@ menuBtn.addEventListener("click", () => {
     window.scroll({top: 0, behavior: "smooth"}); // scroll back to top where container is
 });
 
+moreLive.addEventListener("click", () => {
+    gameloungeBodyContainer.classList.toggle("filter-overlay");
+    tempContainer.classList.toggle("hide");
+    window.scroll({top: 0, behavior: "smooth"}); // scroll back to top where container is
+});
+
 tempExit.addEventListener("click", () => {
     gameloungeBodyContainer.classList.toggle("filter-overlay");
     tempContainer.classList.toggle("hide");
@@ -93,6 +103,16 @@ playlistIcon.addEventListener("click", () => {
 playlistExit.addEventListener("click", () => {
     gameloungeBodyContainer.classList.toggle("filter-overlay");
     playlistContainer.classList.toggle("hide");
+});
+
+publisherIcon.addEventListener("click", () => {
+    gameloungeBodyContainer.classList.toggle("hide");
+    publisherContainer.classList.toggle("hide");
+});
+
+publishExit.addEventListener("click", () => {
+    gameloungeBodyContainer.classList.toggle("hide");
+    publisherContainer.classList.toggle("hide");
 });
 
 emailIcon.addEventListener("click", () => {
