@@ -1123,8 +1123,9 @@
 
     .game-chatroom {
         padding: 0 2%;
-        width: 100%;
-        max-height: 30rem;
+        margin: 5% !important;
+        max-width: 100%;
+        max-height: 40rem;
         overflow-y: scroll;
         border-radius: 10px;
         -ms-overflow-style: none;
