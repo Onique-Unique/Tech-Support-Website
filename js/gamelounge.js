@@ -32,7 +32,7 @@ const downloadExit = document.getElementById("download-back");
 const publisherIcon = document.getElementById("publisher-icon");
 const publishExit = document.querySelector(".publishment-exit");
 const videoLoungeIcon = document.getElementById("video-icon");
-const videoViewMoreIcon = document.querySelector(".view-more-vid--icon")
+const videoViewMoreIcon = document.querySelector(".view-more-vid--icon");
 const videoLoungeExit = document.querySelector(".video-lounge-exit");
 
 document.cookie = "AC-C=ac-c;expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/;SameSite=None;Secure";
