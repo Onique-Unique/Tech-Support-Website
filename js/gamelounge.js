@@ -32,6 +32,7 @@ const downloadExit = document.getElementById("download-back");
 const publisherIcon = document.getElementById("publisher-icon");
 const publishExit = document.querySelector(".publishment-exit");
 const videoLoungeIcon = document.getElementById("video-icon");
+const videoViewMoreIcon = document.querySelector(".view-more-vid--icon")
 const videoLoungeExit = document.querySelector(".video-lounge-exit");
 
 document.cookie = "AC-C=ac-c;expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/;SameSite=None;Secure";
@@ -118,6 +119,8 @@ function openfile() {
     };
 };
 
+
+// Gamelounge Button Functions
 menuBtn.addEventListener("click", () => {
     gameloungeBodyContainer.classList.toggle("filter-overlay");
     tempContainer.classList.toggle("hide");
@@ -193,6 +196,11 @@ leaderboardExit.addEventListener("click", () => {
 });
 
 videoLoungeIcon.addEventListener("click", () => {
+    gameloungeBodyContainer.classList.toggle("hide");
+    videoLoungeContainer.classList.toggle("hide");
+});
+
+videoViewMoreIcon.addEventListener("click", () => {
     gameloungeBodyContainer.classList.toggle("hide");
     videoLoungeContainer.classList.toggle("hide");
 });
