@@ -3729,10 +3729,12 @@ footer p {
         width: 6rem;
         height: 6rem;
         animation: loading-spin 2s linear infinite; }
-      .video-lounge-container .lounge-flex .video-carousel #video-embed iframe {
-        position: absolute;
-        width: 100%;
-        height: 60vh; }
+      .video-lounge-container .lounge-flex .video-carousel #video-embed {
+        width: 100%; }
+        .video-lounge-container .lounge-flex .video-carousel #video-embed iframe {
+          position: absolute;
+          width: 100%;
+          height: 60vh; }
       .video-lounge-container .lounge-flex .video-carousel .video-controls {
         position: absolute;
         bottom: -12px;

@@ -4636,6 +4636,8 @@ footer p {
         height: 6rem;
         -webkit-animation: loading-spin 2s linear infinite;
                 animation: loading-spin 2s linear infinite; }
+      .video-lounge-container .lounge-flex .video-carousel #video-embed {
+        width: 100%; }
       .video-lounge-container .lounge-flex .video-carousel #video-embed iframe {
         position: absolute;
         width: 100%;
