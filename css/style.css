@@ -3733,8 +3733,9 @@ footer p {
         width: 100%; }
         .video-lounge-container .lounge-flex .video-carousel #video-embed iframe {
           position: absolute;
-          width: 100%;
-          height: 60vh; }
+          width: 100vw;
+          height: 60vh;
+          object-fit: contain; }
       .video-lounge-container .lounge-flex .video-carousel .video-controls {
         position: absolute;
         bottom: -12px;
