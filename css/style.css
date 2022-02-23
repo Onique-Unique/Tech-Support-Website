@@ -3702,7 +3702,8 @@ footer p {
 .video-lounge-container {
   width: 100%;
   height: 100vh;
-  z-index: 2; }
+  z-index: 2;
+  overflow: hidden; }
   .video-lounge-container .lounge-flex {
     display: flex;
     justify-content: space-between;
