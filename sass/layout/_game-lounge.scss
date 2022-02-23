@@ -2187,6 +2187,26 @@
 
             #video-chat-widget {
                 height: 100vh;
+                overflow: scroll;
+                scrollbar-color:#C33764 #0f0c2900 ;
+                scrollbar-width: thin !important;
+
+                &::-webkit-scrollbar {
+                    width: 1vw;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: #c3376383;
+                    border-radius: 10px;
+
+                    &:hover {
+                        background-color: #C33764;
+                    }
+                }
+
+                &::-webkit-scrollbar-track {
+                    background-color: #0f0c29;
+                }
             }
         }
     }

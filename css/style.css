@@ -3753,7 +3753,19 @@ footer p {
     .video-lounge-container .lounge-flex .video-live-chat {
       width: 30%; }
       .video-lounge-container .lounge-flex .video-live-chat #video-chat-widget {
-        height: 100vh; }
+        height: 100vh;
+        overflow: scroll;
+        scrollbar-color: #C33764 #0f0c2900;
+        scrollbar-width: thin !important; }
+        .video-lounge-container .lounge-flex .video-live-chat #video-chat-widget::-webkit-scrollbar {
+          width: 1vw; }
+        .video-lounge-container .lounge-flex .video-live-chat #video-chat-widget::-webkit-scrollbar-thumb {
+          background-color: #c3376383;
+          border-radius: 10px; }
+          .video-lounge-container .lounge-flex .video-live-chat #video-chat-widget::-webkit-scrollbar-thumb:hover {
+            background-color: #C33764; }
+        .video-lounge-container .lounge-flex .video-live-chat #video-chat-widget::-webkit-scrollbar-track {
+          background-color: #0f0c29; }
 
 @media (max-width: 960px) {
   .video-lounge-container .lounge-flex {
