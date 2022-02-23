@@ -2127,7 +2127,6 @@
             position: relative;
             width: 70vw;
             height: 70vh;
-            display: none;
 
             .video-lounge-exit {
                 z-index: 2;
@@ -2203,7 +2202,6 @@
             .video-carousel {
                 width: 100% !important;
                 height: 40vh !important;
-                position: fixed !important;
                 z-index: 1 !important;
         
                 #video-embed {

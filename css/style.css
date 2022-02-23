@@ -3710,8 +3710,7 @@ footer p {
     .video-lounge-container .lounge-flex .video-carousel {
       position: relative;
       width: 70vw;
-      height: 70vh;
-      display: none; }
+      height: 70vh; }
       .video-lounge-container .lounge-flex .video-carousel .video-lounge-exit {
         z-index: 2;
         position: absolute;
@@ -3762,7 +3761,6 @@ footer p {
     .video-lounge-container .lounge-flex .video-carousel {
       width: 100% !important;
       height: 40vh !important;
-      position: fixed !important;
       z-index: 1 !important; }
       .video-lounge-container .lounge-flex .video-carousel #video-embed iframe {
         height: 38vh !important; }
