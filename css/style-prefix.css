@@ -4601,6 +4601,7 @@ footer p {
 
 .video-lounge-container {
   width: 100%;
+  height: 100vh;
   z-index: 2; }
   .video-lounge-container .lounge-flex {
     display: -webkit-box;
@@ -4614,7 +4615,7 @@ footer p {
             align-items: flex-start; }
     .video-lounge-container .lounge-flex .video-carousel {
       position: relative;
-      width: 70%;
+      width: 70vw;
       height: 70vh; }
       .video-lounge-container .lounge-flex .video-carousel .video-lounge-exit {
         z-index: 2;
@@ -4638,10 +4639,10 @@ footer p {
                 animation: loading-spin 2s linear infinite; }
       .video-lounge-container .lounge-flex .video-carousel #video-embed {
         width: 100%; }
-      .video-lounge-container .lounge-flex .video-carousel #video-embed iframe {
-        position: absolute;
-        width: 100%;
-        height: 60vh; }
+        .video-lounge-container .lounge-flex .video-carousel #video-embed iframe {
+          position: absolute;
+          width: 100%;
+          height: 60vh; }
       .video-lounge-container .lounge-flex .video-carousel .video-controls {
         position: absolute;
         bottom: -12px;
@@ -4681,15 +4682,7 @@ footer p {
       position: absolute !important;
       bottom: 0% !important; }
       .video-lounge-container .lounge-flex .video-live-chat #video-chat-widget {
-        height: 60vh !important; } }
-
-@media (max-height: 632px) {
-  .video-lounge-container .lounge-flex .video-carousel {
-    height: 100vh !important; }
-    .video-lounge-container .lounge-flex .video-carousel #video-embed iframe {
-      height: 95vh !important; }
-  .video-lounge-container .lounge-flex .video-live-chat {
-    display: none !important; } }
+        height: 58.4vh !important; } }
 
 @media (max-width: 560px) {
   .video-lounge-container .lounge-flex .video-carousel .video-controls {
