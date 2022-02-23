@@ -1,9 +1,10 @@
-// MENU BUTTON ALERT
+// MENU BUTTON ALERT / Temp
 const menuBtn = document.getElementById("menu-bars");
 const tempContainer = document.getElementById("temp-container");
 const tempExit = document.querySelector(".temp-exit");
 const moreLive = document.getElementById("more-live");
 
+// Section Containers
 const gameloungeBodyContainer = document.querySelector(".game-lounge-body-container");
 const playlistContainer = document.getElementById("playlist-container");
 const formContainer = document.querySelector(".gamelounge-contact-container");
@@ -14,6 +15,7 @@ const leaderboardContainer = document.getElementById("leaderboard");
 const leaderboardClick = document.querySelector(".apex-leaderboards");
 const publisherContainer = document.querySelector(".publishments-container");
 
+// Icon Enter and Exit
 const playlistIcon = document.getElementById("up-icon");
 const playlistExit = document.querySelector(".playlist-exit");
 const emailIcon = document.getElementById("email-icon");
@@ -28,6 +30,16 @@ const downloadIconSecondary = document.querySelector(".download-right-arrow-seco
 const downloadExit = document.getElementById("download-back");
 const publisherIcon = document.getElementById("publisher-icon");
 const publishExit = document.querySelector(".publishment-exit");
+
+// Playlist Switch Random
+const playlistArrayId = ["-9gEgshJUuY", "ok_-2KkKQF4", "3sp0wd8j8CQ", "aL14iT2ix0w", "7tNtU5XFwrU", "8NzYo0jmYek", "mZHTwjLznVg", "-6v0vFVp52w", "3bp1kIUlYEM", "wKwR2CRbVVo"];
+const playlistRefresh = document.querySelector(".playlist-random");
+
+playlistRefresh.addEventListener("click", () => {  
+        var id = playlistArrayId[Math.floor(Math.random()*playlistArrayId.length)];
+        document.getElementById("playlist-embed").innerHTML = `<iframe id="embed-music" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0" modestbranding="1"></iframe>`
+});
+
 
 document.cookie = "AC-C=ac-c;expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/;SameSite=None;Secure";
 

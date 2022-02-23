@@ -4550,22 +4550,44 @@ footer p {
           -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
       width: 100%; }
-    .gamelounge-chillzone .playlist-vid iframe {
+    .gamelounge-chillzone .playlist-vid .loader {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
-      border-radius: 15px; }
+      top: 45%;
+      left: 42.5%;
+      border: 1.6rem solid #f3f3f3;
+      border-top: 1.6rem solid #0093E9;
+      border-radius: 50%;
+      width: 6rem;
+      height: 6rem;
+      -webkit-animation: loading-spin 2s linear infinite;
+              animation: loading-spin 2s linear infinite; }
+    .gamelounge-chillzone .playlist-vid #playlist-embed {
+      z-index: 2; }
+      .gamelounge-chillzone .playlist-vid #playlist-embed iframe {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        border-radius: 15px; }
     .gamelounge-chillzone .playlist-vid a {
       color: #07a807; }
+    .gamelounge-chillzone .playlist-vid .playlist-random {
+      position: absolute;
+      bottom: 15%;
+      left: 50%;
+      font-size: 2rem;
+      -webkit-transform: translate(-50%, 0%);
+          -ms-transform: translate(-50%, 0%);
+              transform: translate(-50%, 0%);
+      color: white; }
     .gamelounge-chillzone .playlist-vid h5 {
       font-size: 2rem;
       color: white;
       text-align: center;
       position: absolute;
-      bottom: 10%;
+      bottom: 2.5%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
@@ -4845,7 +4867,7 @@ footer p {
     height: 28rem !important; }
     .gamelounge-chillzone .playlist-vid p, .gamelounge-chillzone .playlist-vid h5 {
       font-size: 1.6rem !important; }
-    .gamelounge-chillzone .playlist-vid iframe {
+    .gamelounge-chillzone .playlist-vid #playlist-embed iframe {
       height: 15rem !important;
       width: 20rem !important; } }
 
@@ -5048,6 +5070,14 @@ footer p {
     -webkit-transform: scale(1);
             transform: scale(1);
     opacity: 1; } }
+
+@-webkit-keyframes loading-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
 
 .iframe {
   width: 90%;
