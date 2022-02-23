@@ -2115,6 +2115,7 @@
 // Video Lounge Carousel
 .video-lounge-container {
     width: 100%;
+    height: 100vh;
     z-index: 2;
 
     .lounge-flex {
@@ -2124,7 +2125,7 @@
 
         .video-carousel {
             position: relative;
-            width: 70%;
+            width: 70vw;
             height: 70vh;
 
             .video-lounge-exit {
@@ -2155,7 +2156,7 @@
                
                 & iframe {
                     position: absolute;
-                    width: 100vw;
+                    width: 100%;
                     height: 60vh;
                 }
             }

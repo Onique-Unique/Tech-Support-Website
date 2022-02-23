@@ -3701,6 +3701,7 @@ footer p {
 
 .video-lounge-container {
   width: 100%;
+  height: 100vh;
   z-index: 2; }
   .video-lounge-container .lounge-flex {
     display: flex;
@@ -3708,7 +3709,7 @@ footer p {
     align-items: flex-start; }
     .video-lounge-container .lounge-flex .video-carousel {
       position: relative;
-      width: 70%;
+      width: 70vw;
       height: 70vh; }
       .video-lounge-container .lounge-flex .video-carousel .video-lounge-exit {
         z-index: 2;
@@ -3733,7 +3734,7 @@ footer p {
         width: 100%; }
         .video-lounge-container .lounge-flex .video-carousel #video-embed iframe {
           position: absolute;
-          width: 100vw;
+          width: 100%;
           height: 60vh; }
       .video-lounge-container .lounge-flex .video-carousel .video-controls {
         position: absolute;
