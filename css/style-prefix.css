@@ -4552,8 +4552,10 @@ footer p {
       width: 100%; }
     .gamelounge-chillzone .playlist-vid .loader {
       position: absolute;
-      top: 45%;
-      left: 42.5%;
+      top: 50%;
+      margin-top: -25px;
+      left: 50%;
+      margin-left: -25px;
       border: 1.6rem solid #f3f3f3;
       border-top: 1.6rem solid #0093E9;
       border-radius: 50%;
@@ -4581,7 +4583,10 @@ footer p {
       -webkit-transform: translate(-50%, 0%);
           -ms-transform: translate(-50%, 0%);
               transform: translate(-50%, 0%);
-      color: white; }
+      color: white;
+      background-color: #0093E9;
+      padding: 2%;
+      border-radius: 10px; }
     .gamelounge-chillzone .playlist-vid h5 {
       font-size: 2rem;
       color: white;
@@ -4593,6 +4598,100 @@ footer p {
           -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
       width: 100%; }
+
+.video-lounge-container {
+  width: 100%;
+  z-index: 2; }
+  .video-lounge-container .lounge-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .video-lounge-container .lounge-flex .video-carousel {
+      position: relative;
+      width: 70%;
+      height: 70vh; }
+      .video-lounge-container .lounge-flex .video-carousel .video-lounge-exit {
+        z-index: 2;
+        position: absolute;
+        top: 2%;
+        right: 1%;
+        font-size: 2.5rem;
+        color: white; }
+      .video-lounge-container .lounge-flex .video-carousel .loader {
+        position: absolute;
+        top: 50%;
+        margin-top: -25px;
+        left: 50%;
+        margin-left: -25px;
+        border: 1rem solid #f3f3f3;
+        border-top: .8rem solid red;
+        border-radius: 50%;
+        width: 6rem;
+        height: 6rem;
+        -webkit-animation: loading-spin 2s linear infinite;
+                animation: loading-spin 2s linear infinite; }
+      .video-lounge-container .lounge-flex .video-carousel #video-embed iframe {
+        position: absolute;
+        width: 100%;
+        height: 60vh; }
+      .video-lounge-container .lounge-flex .video-carousel .video-controls {
+        position: absolute;
+        bottom: -12px;
+        text-align: center;
+        color: white;
+        font-size: 3rem;
+        width: 100%; }
+        .video-lounge-container .lounge-flex .video-carousel .video-controls .icons {
+          background-color: #0093E9;
+          padding: .5% 1.2%;
+          border-radius: 100%;
+          margin: 0 1%; }
+        .video-lounge-container .lounge-flex .video-carousel .video-controls .video-shuffle {
+          border-radius: 10px; }
+    .video-lounge-container .lounge-flex .video-live-chat {
+      width: 30%; }
+      .video-lounge-container .lounge-flex .video-live-chat #video-chat-widget {
+        height: 100vh; }
+
+@media (max-width: 960px) {
+  .video-lounge-container .lounge-flex {
+    display: block !important; }
+    .video-lounge-container .lounge-flex .video-carousel {
+      width: 100% !important;
+      height: 40vh !important;
+      position: fixed !important;
+      z-index: 1 !important; }
+      .video-lounge-container .lounge-flex .video-carousel #video-embed iframe {
+        height: 38vh !important; }
+      .video-lounge-container .lounge-flex .video-carousel .video-controls {
+        padding: .5% 0 !important;
+        background-color: #2b2b2b !important; }
+      .video-lounge-container .lounge-flex .video-carousel .video-lounge-ad {
+        display: none !important; }
+    .video-lounge-container .lounge-flex .video-live-chat {
+      width: 100% !important;
+      position: absolute !important;
+      bottom: 0% !important; }
+      .video-lounge-container .lounge-flex .video-live-chat #video-chat-widget {
+        height: 60vh !important; } }
+
+@media (max-height: 632px) {
+  .video-lounge-container .lounge-flex .video-carousel {
+    height: 100vh !important; }
+    .video-lounge-container .lounge-flex .video-carousel #video-embed iframe {
+      height: 95vh !important; }
+  .video-lounge-container .lounge-flex .video-live-chat {
+    display: none !important; } }
+
+@media (max-width: 560px) {
+  .video-lounge-container .lounge-flex .video-carousel .video-controls {
+    font-size: 2.2rem !important; } }
 
 @media (max-width: 1000px) {
   #typography-inner--2 .inner-text-main {

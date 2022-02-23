@@ -14,6 +14,7 @@ const searchField = document.getElementById("gamelounge-search");
 const leaderboardContainer = document.getElementById("leaderboard");
 const leaderboardClick = document.querySelector(".apex-leaderboards");
 const publisherContainer = document.querySelector(".publishments-container");
+const videoLoungeContainer = document.querySelector(".video-lounge-container");
 
 // Icon Enter and Exit
 const playlistIcon = document.getElementById("up-icon");
@@ -30,16 +31,8 @@ const downloadIconSecondary = document.querySelector(".download-right-arrow-seco
 const downloadExit = document.getElementById("download-back");
 const publisherIcon = document.getElementById("publisher-icon");
 const publishExit = document.querySelector(".publishment-exit");
-
-// Playlist Switch Random
-const playlistArrayId = ["-9gEgshJUuY", "ok_-2KkKQF4", "3sp0wd8j8CQ", "aL14iT2ix0w", "7tNtU5XFwrU", "8NzYo0jmYek", "mZHTwjLznVg", "-6v0vFVp52w", "3bp1kIUlYEM", "wKwR2CRbVVo"];
-const playlistRefresh = document.querySelector(".playlist-random");
-
-playlistRefresh.addEventListener("click", () => {  
-        var id = playlistArrayId[Math.floor(Math.random()*playlistArrayId.length)];
-        document.getElementById("playlist-embed").innerHTML = `<iframe id="embed-music" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0" modestbranding="1"></iframe>`
-});
-
+const videoLoungeIcon = document.getElementById("video-icon");
+const videoLoungeExit = document.querySelector(".video-lounge-exit");
 
 document.cookie = "AC-C=ac-c;expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/;SameSite=None;Secure";
 
@@ -63,6 +56,42 @@ for(i = 0; i < dateMain.length; i++){
     // }
 };
 
+// Playlist Switch Random
+const playlistArrayId = ["-9gEgshJUuY", "ok_-2KkKQF4", "3sp0wd8j8CQ", "aL14iT2ix0w", "7tNtU5XFwrU", "8NzYo0jmYek", "mZHTwjLznVg", "-6v0vFVp52w", "3bp1kIUlYEM", "wKwR2CRbVVo"];
+const playlistRefresh = document.querySelector(".playlist-random");
+
+playlistRefresh.addEventListener("click", () => {  
+        var id = playlistArrayId[Math.floor(Math.random()*playlistArrayId.length)];
+        document.getElementById("playlist-embed").innerHTML = `<iframe id="embed-music" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0" modestbranding="1"></iframe>`
+});
+
+// Video Lounge Shuffle Random | Prev - Next
+const videoListArrayId = ["5oiqPSGt0ec", "J-eiLtQpf2E", "eSAyUxuxRdU", "uIXlZUZx0P8"];
+const videoListShuffle = document.querySelector(".video-shuffle");
+const videoListPrev = document.querySelector(".video-prev");
+const videoListNext = document.querySelector(".video-next");
+
+videoListShuffle.addEventListener("click", () => {
+    var id = videoListArrayId[Math.floor(Math.random()*playlistArrayId.length)];
+    document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0"></iframe>`
+});
+
+var i = 0;
+videoListPrev.addEventListener("click", () => {
+    if(i <= 0) i = videoListArrayId.length; {   
+        i--;
+        var id = videoListArrayId[i];
+        document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0"></iframe>`
+    };
+});
+
+videoListNext.addEventListener("click", () => {
+    if(i >= videoListArrayId.length-1) i = -1; {
+        i++;
+        var id = videoListArrayId[i];
+        document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0"></iframe>`
+    };
+});
 
 // writing a script for the search bar function logic
 // for the explore page will identify different sections searched using location.href = "#idName"
@@ -161,6 +190,16 @@ leaderboardIcon.addEventListener("click", () => {
 leaderboardExit.addEventListener("click", () => {
     gameloungeBodyContainer.classList.toggle("hide");
     leaderboardContainer.classList.toggle("hide");
+});
+
+videoLoungeIcon.addEventListener("click", () => {
+    gameloungeBodyContainer.classList.toggle("hide");
+    videoLoungeContainer.classList.toggle("hide");
+});
+
+videoLoungeExit.addEventListener("click", () => {
+    gameloungeBodyContainer.classList.toggle("hide");
+    videoLoungeContainer.classList.toggle("hide");
 });
 
 downloadIcon.addEventListener("click", () => {

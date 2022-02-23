@@ -2043,7 +2043,7 @@
             justify-content: flex-end;
             align-items: center;
             font-size: 2rem;
-            color: rgb(43, 43, 43)
+            color: rgb(43, 43, 43);
         }
         
         & p {
@@ -2059,8 +2059,10 @@
 
         .loader {
             position: absolute;
-            top: 45%;
-            left: 42.5%;
+            top: 50%;
+            margin-top: -25px;
+            left: 50%;
+            margin-left: -25px;
             border: 1.6rem solid #f3f3f3;
             border-top: 1.6rem solid #0093E9;
             border-radius: 50%;
@@ -2092,6 +2094,9 @@
             font-size: 2rem;
             transform: translate(-50%, -0%);
             color: white;
+            background-color: #0093E9;
+            padding: 2%;
+            border-radius: 10px;
         }
 
         & h5 {
@@ -2103,6 +2108,171 @@
             left: 50%;
             transform: translate(-50%, -50%);
             width: 100%;
+        }
+    }
+}
+
+// Video Lounge Carousel
+.video-lounge-container {
+    width: 100%;
+    z-index: 2;
+
+    .lounge-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .video-carousel {
+            position: relative;
+            width: 70%;
+            height: 70vh;
+
+            .video-lounge-exit {
+                z-index: 2;
+                position: absolute;
+                top: 2%;
+                right: 1%;
+                font-size: 2.5rem;
+                color: white;
+            }
+
+            .loader {
+                position: absolute;
+                top: 50%;
+                margin-top: -25px;
+                left: 50%;
+                margin-left: -25px;
+                border: 1rem solid #f3f3f3;
+                border-top: .8rem solid red;
+                border-radius: 50%;
+                width: 6rem;
+                height: 6rem;
+                animation: loading-spin 2s linear infinite;
+            }
+    
+            #video-embed {
+               
+                & iframe {
+                    position: absolute;
+                    width: 100%;
+                    height: 60vh;
+                }
+            }
+
+            .video-controls {
+                position: absolute;
+                bottom: -12px;
+                text-align: center;
+                color: white;
+                font-size: 3rem;
+                width: 100%;
+
+                .icons {
+                    background-color: #0093E9;
+                    padding: .5% 1.2%;
+                    border-radius: 100%;
+                    margin: 0 1%;
+                }
+
+                .video-shuffle {
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .video-live-chat {
+            width: 30%;
+
+            #video-chat-widget {
+                height: 100vh;
+            }
+        }
+    }
+}
+
+@media(max-width: 960px) {
+    // Video Lounge Carousel
+    .video-lounge-container {
+
+        .lounge-flex {
+            display: block !important;
+
+            .video-carousel {
+                width: 100% !important;
+                height: 40vh !important;
+                position: fixed !important;
+                z-index: 1 !important;
+        
+                #video-embed {
+        
+                    & iframe {
+                        height: 38vh !important;
+                    }
+                }
+
+                .video-controls {
+                    padding: .5% 0 !important;
+                    background-color: rgb(43, 43, 43) !important;
+                }
+
+                .video-lounge-ad {
+                    display: none !important;
+                }
+            }
+
+            .video-live-chat {
+                width: 100% !important;
+                position: absolute !important;
+                bottom: 0% !important;
+
+                #video-chat-widget {
+                    height: 60vh !important;
+                }
+            }
+        }
+    }
+}
+
+@media(max-height: 632px) {
+    // Video Lounge Carousel
+    .video-lounge-container {
+
+        .lounge-flex {
+
+            .video-carousel {
+                height: 100vh !important;
+
+                #video-embed {
+        
+                    & iframe {
+                        height: 95vh !important;
+                    }
+                }
+            }
+
+            .video-live-chat {
+                display: none !important;
+
+                #video-chat-widget {
+                
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 560px) {
+    // Video Lounge Carousel
+    .video-lounge-container {
+
+        .lounge-flex {
+
+            .video-carousel {
+
+                .video-controls {
+                    font-size: 2.2rem !important;
+                }
+            }
         }
     }
 }

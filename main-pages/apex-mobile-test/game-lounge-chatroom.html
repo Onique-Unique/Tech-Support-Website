@@ -112,7 +112,7 @@
                         <a href="#leaderboard" aria-label="Apex legends mobile community" title="Community Leaderboard"><i class="fas fa-users" id="community-icon"></i></a>
                     </div>
                     <div class="icons">
-                        <a href="https://www.youtube.com/channel/UCNTV2r-pJ7PfPz78AkOY8TA/recent" aria-label="Apex legends mobile latest videos" target="_blank" title="Videos"><i class="fas fa-photo-video" id="video-icon"></i></a>
+                        <a href="#video-lounge" aria-label="Apex legends mobile latest videos" title="Videos"><i class="fas fa-photo-video" id="video-icon"></i></a>
                     </div>
                     <div class="icons">
                         <a href="#gamelounge-contact" aria-label="Apex legends mobile contact" title="Contact"><i class="fas fa-envelope" id="email-icon"></i></a>
@@ -169,7 +169,7 @@
                             <!-- <div class="commentbox" id="sidebar"></div> -->
                             <widgetbot
                                 server="791303979597299782"
-                                channel="791303979597299784"
+                                channel="946040420113199144"
                                 width="100%"
                                 height="30rem">
                             </widgetbot>                           
@@ -879,7 +879,7 @@
                 <p>Game-lounge Playlist</p>
                 <div class="loader"></div>
                 <div id="playlist-embed">
-                    <iframe id="embed-music" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/-9gEgshJUuY" frameborder="0" modestbranding="1"></iframe><!-- | -9gEgshJUuY | ok_-2KkKQF4 | 3sp0wd8j8CQ | aL14iT2ix0w | 7tNtU5XFwrU (additional live gaming playlist)-->
+                    <iframe id="embed-music" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/-9gEgshJUuY" frameborder="0" modestbranding="1"></iframe>
                 </div>               
                 <a id="click">Play Music <i class="fa-solid fa-play"></i></a>
                 <i class="fa-solid fa-arrows-rotate playlist-random"></i>
@@ -908,6 +908,53 @@
                 </blockquote>
             </section>
         </div> 
+        
+        <!-- Video Watch Screen with Live Chat -->
+        <div class="video-lounge-container hide" id="video-lounge">
+            <div class="lounge-flex">
+                <div class="video-carousel">
+                    <i class="far fa-times-circle video-lounge-exit"></i>
+                    <div class="loader"></div>
+                    <div id="video-embed">
+                        <iframe id="embed-video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/uIXlZUZx0P8" frameborder="0"></iframe>
+                    </div>
+                    <div class="video-controls">
+                        <i class="fa-solid fa-caret-left video-prev icons"></i>
+                        <i class="fa-solid fa-shuffle video-shuffle icons"></i>
+                        <i class="fa-solid fa-caret-right video-next icons"></i>
+                    </div>
+
+                     <!-- Custom Ad spot -->
+                    <section class="ad-spot video-lounge-ad" style="margin-top: 6%;">
+                        <!-- Ad Spot text -->
+                        <p style="color: #C33764;">
+                            Featured ad spot by google
+                        </p>
+                        <!-- Ad spot block -->
+                        <blockquote id="gamelounge-ad-placement">
+                            <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7079047961613379"
+                            crossorigin="anonymous"></script> -->
+                            <!-- Gamelounge ad -->
+                            <ins class="adsbygoogle"
+                            style="display:block; height: 18rem !important; width: 100%; "
+                            data-ad-client="ca-pub-7079047961613379"
+                            data-ad-slot="2601342528"
+                            data-full-width-responsive="true"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </blockquote>
+                    </section>
+                </div>
+                <div class="video-live-chat">
+                    <widgetbot id="video-chat-widget"
+                        server="791303979597299782"
+                        channel="946039810886369310"
+                        width="100%">
+                    </widgetbot>
+                </div>
+            </div>           
+        </div>
 
     <!-- Comment Box Script -->
     <!-- <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script> -->
