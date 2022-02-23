@@ -2202,6 +2202,7 @@
             .video-carousel {
                 width: 100% !important;
                 height: 40vh !important;
+                position: fixed !important;
                 z-index: 1 !important;
         
                 #video-embed {
@@ -2234,33 +2235,33 @@
     }
 }
 
-@media(max-height: 632px) {
-    // Video Lounge Carousel
-    .video-lounge-container {
+// @media(max-height: 632px) {
+//     // Video Lounge Carousel
+//     .video-lounge-container {
 
-        .lounge-flex {
+//         .lounge-flex {
 
-            .video-carousel {
-                height: 100vh !important;
+//             .video-carousel {
+//                 height: 100vh !important;
 
-                #video-embed {
+//                 #video-embed {
         
-                    & iframe {
-                        height: 95vh !important;
-                    }
-                }
-            }
+//                     & iframe {
+//                         height: 95vh !important;
+//                     }
+//                 }
+//             }
 
-            .video-live-chat {
-                display: none !important;
+//             .video-live-chat {
+//                 display: none !important;
 
-                #video-chat-widget {
+//                 #video-chat-widget {
                 
-                }
-            }
-        }
-    }
-}
+//                 }
+//             }
+//         }
+//     }
+// }
 
 @media(max-width: 560px) {
     // Video Lounge Carousel

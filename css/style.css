@@ -3761,6 +3761,7 @@ footer p {
     .video-lounge-container .lounge-flex .video-carousel {
       width: 100% !important;
       height: 40vh !important;
+      position: fixed !important;
       z-index: 1 !important; }
       .video-lounge-container .lounge-flex .video-carousel #video-embed iframe {
         height: 38vh !important; }
@@ -3775,14 +3776,6 @@ footer p {
       bottom: 0% !important; }
       .video-lounge-container .lounge-flex .video-live-chat #video-chat-widget {
         height: 60vh !important; } }
-
-@media (max-height: 632px) {
-  .video-lounge-container .lounge-flex .video-carousel {
-    height: 100vh !important; }
-    .video-lounge-container .lounge-flex .video-carousel #video-embed iframe {
-      height: 95vh !important; }
-  .video-lounge-container .lounge-flex .video-live-chat {
-    display: none !important; } }
 
 @media (max-width: 560px) {
   .video-lounge-container .lounge-flex .video-carousel .video-controls {
