@@ -3149,7 +3149,7 @@ footer p {
         height: 3rem;
         border-radius: 5px; }
       .community-sidebar-display-secondary .community-sidebar-content .download-prompt h4 {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         color: white; }
       .community-sidebar-display-secondary .community-sidebar-content .download-prompt .appstore {
         display: flex;
@@ -3197,7 +3197,7 @@ footer p {
 
 @media (max-width: 560px) {
   .gamelounge-info-content h2 {
-    font-size: 2.8rem !important; }
+    font-size: 3rem !important; }
   .gamelounge-info-content p {
     font-size: 1.2rem !important; }
   .gamelounge-info--1 button {
@@ -3703,6 +3703,7 @@ footer p {
   width: 100%;
   height: 100vh;
   z-index: 2;
+  background: repeating-linear-gradient(45deg, black, transparent 100px);
   overflow: hidden; }
   .video-lounge-container .lounge-flex {
     display: flex;
@@ -3745,12 +3746,11 @@ footer p {
         font-size: 3rem;
         width: 100%; }
         .video-lounge-container .lounge-flex .video-carousel .video-controls .icons {
-          background-color: #0093E9;
-          padding: .5% 1.2%;
+          padding: .5% 1.5%;
           border-radius: 100%;
-          margin: 0 1%; }
+          margin: 0 2%; }
         .video-lounge-container .lounge-flex .video-carousel .video-controls .video-shuffle {
-          border-radius: 10px; }
+          color: red; }
     .video-lounge-container .lounge-flex .video-live-chat {
       width: 30%; }
       .video-lounge-container .lounge-flex .video-live-chat #video-chat-widget {
@@ -3792,7 +3792,7 @@ footer p {
 
 @media (max-width: 560px) {
   .video-lounge-container .lounge-flex .video-carousel .video-controls {
-    font-size: 2.2rem !important; } }
+    font-size: 2rem !important; } }
 
 @media (max-width: 1000px) {
   #typography-inner--2 .inner-text-main {
@@ -3818,7 +3818,7 @@ footer p {
     height: 20rem !important; }
     .game-lounge-carousel .game-article-features h1 {
       margin-top: 0% !important;
-      font-size: 1.2rem !important; }
+      font-size: 1.6rem !important; }
     .game-lounge-carousel .game-article-features p {
       font-size: 1.1rem !important; }
     .game-lounge-carousel .game-article-features .article-features-container .article-abs {
@@ -3970,8 +3970,6 @@ footer p {
       top: 10% !important; }
       .game-feature-container .banner-text h4 {
         height: 10% !important; }
-      .game-feature-container .banner-text h1 {
-        font-size: 1.6rem !important; }
       .game-feature-container .banner-text p {
         font-size: .9rem !important; }
     .game-feature-container .banner-img img {

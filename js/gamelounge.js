@@ -66,8 +66,10 @@ playlistRefresh.addEventListener("click", () => {
         document.getElementById("playlist-embed").innerHTML = `<iframe id="embed-music" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0" modestbranding="1"></iframe>`
 });
 
+var videoListings = ["LhhLaIEDXyE", "wXL_nEe-UdU", "W3wnDWN_Qt0", "d-T3hfx8pTw", "eSAyUxuxRdU", "FbWqTKEb1Ss", "5oiqPSGt0ec", "pSeAhN7I79M", "KtT57G8kT20", "QKCY_q92ALI", "L9wEy0ox5_U", "MR3ZQpoQ5YQ", "TrtV2VOMrj4", "NZaZlaMlRAM", "H0uXZgkX5lI", "xe8-DGB5oyA", "d2z9lDnsAYY", "2iLAGer1J9Q", "xgp6ACNAdnE", "fCBzFk4Zvjk", "yIH9XX6TjrM",]
+
 // Video Lounge Shuffle Random | Prev - Next
-const videoListArrayId = ["5oiqPSGt0ec", "J-eiLtQpf2E", "eSAyUxuxRdU", "uIXlZUZx0P8"];
+const videoListArrayId = videoListings;
 const videoListShuffle = document.querySelector(".video-shuffle");
 const videoListPrev = document.querySelector(".video-prev");
 const videoListNext = document.querySelector(".video-next");
