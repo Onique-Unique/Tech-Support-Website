@@ -1,5 +1,9 @@
-// MENU BUTTON ALERT / Temp
+// Menu Button Controls
 const menuBtn = document.getElementById("menu-bars");
+const leftSidebar = document.querySelector(".game-sidebar");
+const contentBody = document.querySelector(".section-body-container");
+
+// Temp Container
 const tempContainer = document.getElementById("temp-container");
 const tempExit = document.querySelector(".temp-exit");
 const moreLive = document.getElementById("more-live");
@@ -121,12 +125,10 @@ function openfile() {
     };
 };
 
-
 // Gamelounge Button Functions
 menuBtn.addEventListener("click", () => {
-    gameloungeBodyContainer.classList.toggle("filter-overlay");
-    tempContainer.classList.toggle("hide");
-    window.scroll({top: 0, behavior: "smooth"}); // scroll back to top where container is
+    leftSidebar.classList.toggle("game-sidebar-minimize");
+    contentBody.classList.toggle("section-body-container-maximize");
 });
 
 moreLive.addEventListener("click", () => {

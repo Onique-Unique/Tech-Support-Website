@@ -45,6 +45,13 @@
         html, body {
             cursor: url(/images/game-lounge-img/assets/apex-cursor.png), auto;
         }
+        .info-icon {
+            position: absolute;
+            top: 1.5%;
+            right: 1.5%;
+            font-size: 2.5rem;
+            color: white;
+        } 
     </style>
 </head>
 <body class="game-lounge-body--landing-page">
@@ -73,10 +80,30 @@
                         </div>
                     </div>
                 </div>
+                <i class="fa-solid fa-circle-info info-icon"></i>
                 <a href="/main-pages/apex-mobile/game-lounge-chatroom"><button class="enter-lounge enter-grad"><i class="fas fa-circle enter-circle"></i>ENTER LOUNGE</button></a>  
-                <p id="currentDate-gamelounge-home"></p>
+                <!-- <p id="currentDate-gamelounge-home"></p>                -->
             </div>       
         </main>
+        <div class="info-container hide" id="info-guide-container">
+            <div class="info-selection-display">
+                <div class="info-display-inserts">
+                    <i class="far fa-times-circle info-exit"></i>
+                    <h2>Game Lounge User Guide</h2>
+                    <div id="info-carousel">
+                        <img src="/images/game-lounge-img/user-guide/user-guide-1.jpeg" alt="Apex-Legends-Mobile User Guide">
+                    </div>
+                    <div class="slider-icons-abs">
+                        <div class="slider-icons">
+                            <i class="fa-solid fa-angle-left left-icon"></i>
+                            <i class="fa-solid fa-angle-right right-icon"></i>
+                        </div>
+                    </div>                   
+                    <!-- <div id="credits"><p>Credits</p></div>
+                    <div id="user-guide"><p>User Guide</p></div> -->
+                </div>
+            </div>
+        </div>
     </div>
     
     

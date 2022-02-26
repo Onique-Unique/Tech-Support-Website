@@ -156,7 +156,6 @@
                     padding: .5rem 1rem;
                     border-radius: 5px;
                 }
-        
             }
 
             .gamelounge-home-typography {
@@ -342,6 +341,7 @@
     width: 5%;
     z-index: 2;
     margin-top: 5%;
+    transition: all .2s ease;
 
     .game-sidebar-display {
         display: block;
@@ -389,6 +389,11 @@
             }
         }
     }
+}
+
+.game-sidebar-minimize {
+    width: 0%;
+    display: none;
 }
 
 //Aside-Right
@@ -553,6 +558,7 @@
 .section-body-container {
     width: 75%;
     padding-left: 8%;
+    transition: all .2s ease;
 
     //Section-1
     .game-feature-section {
@@ -796,6 +802,10 @@
         height: auto;
         background-color: white;
     }
+}
+
+.section-body-container-maximize {
+    padding-left: 2%;
 }
 
 // Game Lounge Style end
@@ -1305,6 +1315,12 @@
 }
 
 @media (max-width:375px) {
+    .gamelounge-info-content {
+
+        & h2 {
+            font-size: 2.6rem !important;
+        }
+    }
 
     .gamelounge-info--body {
         margin-top: 10% !important;
@@ -1966,6 +1982,108 @@
         #download-back {
             position: absolute;
             bottom: 5%;
+        }
+    }
+}
+
+// Landing Page Credits & User Guide
+.info-container {
+    width: 100%;
+
+    .info-selection-display {
+        margin: 0 auto;
+        width: 60%;
+        height: 65rem;
+        background: repeating-linear-gradient(45deg, black, #00a4d6 800px);
+        padding: 2%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 15px;
+        z-index: 2;
+
+        .info-display-inserts {
+            position: relative;
+            height: 100%;
+
+            .info-exit {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                font-size: 2.5rem;
+                color: #C33764;
+            }
+
+            & h2 {
+                text-align: center;
+                color: white;
+                margin: 0 0 5% 0;
+            }
+            
+            #info-carousel {
+                width: 100%;
+
+                & img {
+                    height: 50rem;
+                    position: absolute;
+                    left: 50%;
+                    transform: translate(-50%, 0%);
+                }
+            }
+
+            .slider-icons-abs {
+                position: absolute;
+                top: 50%;
+                width: 100%;
+
+                .slider-icons {
+                    font-size: 3rem;
+                    color: white;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }          
+    
+            & p {
+                text-align: center;
+                margin: 5% 0;
+                font-size: 2rem;
+                color: white;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    // Landing Page Credits & User Guide
+    .info-container {
+
+        .info-selection-display {
+            width: 80% !important;
+
+            .info-display-inserts {
+                
+                #info-carousel {
+
+                    & img {
+                        height: 85% !important;
+                        width: 80% !important;
+                    }
+                }        
+            }
+        }
+    }
+}
+
+@media(max-width: 428px) {
+    // Landing Page Credits & User Guide
+    .info-container {
+
+        .info-selection-display {
+            width: 100% !important;
+            height: 80% !important;
         }
     }
 }

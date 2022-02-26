@@ -3290,7 +3290,10 @@ footer p {
   height: 100vh;
   width: 5%;
   z-index: 2;
-  margin-top: 5%; }
+  margin-top: 5%;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease; }
   .game-sidebar .game-sidebar-display {
     display: block; }
     .game-sidebar .game-sidebar-display .game-sidebar-center {
@@ -3328,6 +3331,10 @@ footer p {
       padding: 8%; }
       .game-sidebar .game-sidebar-display .game-sidebar-end #settings-icon {
         color: white; }
+
+.game-sidebar-minimize {
+  width: 0%;
+  display: none; }
 
 .game-lounge-right-aside {
   position: absolute;
@@ -3442,7 +3449,10 @@ footer p {
 
 .section-body-container {
   width: 75%;
-  padding-left: 8%; }
+  padding-left: 8%;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease; }
   .section-body-container .game-feature-section {
     height: 30rem;
     position: relative; }
@@ -3631,6 +3641,9 @@ footer p {
   .section-body-container .game-lounge-main {
     height: auto;
     background-color: white; }
+
+.section-body-container-maximize {
+  padding-left: 2%; }
 
 .gamelounge-info--container {
   width: 100%;
@@ -4018,6 +4031,8 @@ footer p {
     font-size: 1rem; } }
 
 @media (max-width: 375px) {
+  .gamelounge-info-content h2 {
+    font-size: 2.6rem !important; }
   .gamelounge-info--body {
     margin-top: 10% !important; }
   .gamelounge-info--1 button {
@@ -4461,6 +4476,85 @@ footer p {
     .gamelounge-download-container .gamelounge-download-carousel #download-back {
       position: absolute;
       bottom: 5%; }
+
+.info-container {
+  width: 100%; }
+  .info-container .info-selection-display {
+    margin: 0 auto;
+    width: 60%;
+    height: 65rem;
+    background: -o-repeating-linear-gradient(45deg, black, #00a4d6 800px);
+    background: repeating-linear-gradient(45deg, black, #00a4d6 800px);
+    padding: 2%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    border-radius: 15px;
+    z-index: 2; }
+    .info-container .info-selection-display .info-display-inserts {
+      position: relative;
+      height: 100%; }
+      .info-container .info-selection-display .info-display-inserts .info-exit {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        font-size: 2.5rem;
+        color: #C33764; }
+      .info-container .info-selection-display .info-display-inserts h2 {
+        text-align: center;
+        color: white;
+        margin: 0 0 5% 0; }
+      .info-container .info-selection-display .info-display-inserts #info-carousel {
+        width: 100%; }
+        .info-container .info-selection-display .info-display-inserts #info-carousel img {
+          height: 50rem;
+          position: absolute;
+          left: 50%;
+          -webkit-transform: translate(-50%, 0%);
+              -ms-transform: translate(-50%, 0%);
+                  transform: translate(-50%, 0%); }
+      .info-container .info-selection-display .info-display-inserts .slider-icons-abs {
+        position: absolute;
+        top: 50%;
+        width: 100%; }
+        .info-container .info-selection-display .info-display-inserts .slider-icons-abs .slider-icons {
+          font-size: 3rem;
+          color: white;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+      .info-container .info-selection-display .info-display-inserts p {
+        text-align: center;
+        margin: 5% 0;
+        font-size: 2rem;
+        color: white; }
+
+@media (max-width: 768px) {
+  .info-container .info-selection-display {
+    width: 80% !important; }
+    .info-container .info-selection-display .info-display-inserts #info-carousel img {
+      height: 85% !important;
+      width: 80% !important; } }
+
+@media (max-width: 428px) {
+  .info-container .info-selection-display {
+    width: 100% !important;
+    height: 80% !important; } }
 
 .temp-display--container {
   width: 100%;
