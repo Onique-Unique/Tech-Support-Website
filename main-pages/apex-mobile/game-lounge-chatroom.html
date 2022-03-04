@@ -88,7 +88,22 @@
                                   <!--"http://www.youtube.com/results"  -->
                         <form id="form-yt--search" method="get" target="_blank" >
                             <i class="fas fa-search" id="search-icon"></i>
-                            <input id="gamelounge-search" name="search_query" type="search" maxlength="128" onchange="openfile()" placeholder="Search content...">
+                            <input id="gamelounge-search" name="search_query" type="text" maxlength="128" placeholder="Search content..."> <!-- onchange="openfile()"-->
+                            
+                            <p style="display: none;"><input type="number" id="maxresult-input" placeholder="Max Results" min="1" max="50" value="50" required></p>
+                            <p style="display: none;">
+                                <select id="order-input" required>
+                                    <option value="">--SELECT ORDER--</option>
+                                    <option value="date">Date</option>
+                                    <option value="rating">Rating</option>
+                                    <option value="relevance" selected>Relevance</option>
+                                    <option value="title">Title</option>
+                                    <option value="viewCount">View Count</option>
+                                </select>
+                            </p>
+                            <p style="display: none;">
+                                <input type="submit" value="Submit">
+                            </p>
                         </form>             
                     </div>
                     <div class="menu-icon">
@@ -147,9 +162,11 @@
                             <i class="fas fa-circle" id="topics-notif"></i>
                             <div class="topics">
                                 <img loading="lazy" src="/images/game-lounge-img/webp/Apex-Legends-Mobile-topics-1-min.webp" alt="apex legends mobile Hot topics image">
-                                <h1>Apex Legends Mobile Soft Launch is here..</h1>
-                                <p>Players with iOS & Android devices can now be able to register for pre-registration in certain regions within the playstore & appstore, it is with certainty that lower end mobile's are
-                                    increasingly being added to the list of supported devices. <br>
+                                <h1>Apex Legends Mobile Soft Launch DELAYED...</h1>
+                                <p>It was announced early in the last moments of the Soft Launch of Apex Legends Mobile to be released by EA - Respawned had tweeted that "Due to current world events, we made the decision to shift the limited regional launch of Apex Legends Mobile. Our intention is to now release the game to participating countries on March 7." 
+                                    Players around the globe have felt the sudden shock of news as many had anticipated the launch for months if not longer, as many other players understand the decision, this had left many others fuming and in disbelief.
+                                    However following along with iOS & Android devices in certain regions within the playstore & appstore, will still be able to participate in the Soft Launch at a later date so look forward to that "LEGENDS".
+                                    <br> <br>
                                     Reddit sources have included Apex Legends Mobile as one of the hottest upcoming games to be featured on mobile devices.
                                     Apex Legends Mobile is deemed as one of Respawns most exciting upcoming releases, the enthusiasm is high.
                                 </p> <br>
@@ -360,9 +377,11 @@
                         <i class="fas fa-circle" id="topics-notif"></i>
                         <div class="topics">
                             <img loading="lazy" src="/images/game-lounge-img/webp/Apex-Legends-Mobile-topics-1-min.webp" alt="apex legends mobile Hot topics image">
-                            <h1>Apex Legends Mobile Soft Launch is here..</h1>
-                            <p>Players with iOS & Android devices can now be able to register for pre-registration in certain regions within the playstore & appstore, it is with certainty that lower end mobile's are
-                                increasingly being added to the list of supported devices. <br>
+                            <h1>Apex Legends Mobile Soft Launch DELAYED...</h1>
+                            <p>It was announced early in the last moments of the Soft Launch of Apex Legends Mobile to be released by EA - Respawned had tweeted that "Due to current world events, we made the decision to shift the limited regional launch of Apex Legends Mobile. Our intention is to now release the game to participating countries on March 7." 
+                                Players around the globe have felt the sudden shock of news as many had anticipated the launch for months if not longer, as many other players understand the decision, this had left many others fuming and in disbelief.
+                                However following along with iOS & Android devices in certain regions within the playstore & appstore, will still be able to participate in the Soft Launch at a later date so look forward to that "LEGENDS".
+                                <br> <br>
                                 Reddit sources have included Apex Legends Mobile as one of the hottest upcoming games to be featured on mobile devices.
                                 Apex Legends Mobile is deemed as one of Respawns most exciting upcoming releases, the enthusiasm is high.
                             </p> <br>
@@ -961,6 +980,23 @@
                 </div>
             </div>           
         </div>
+
+        <!-- Search Results Container Display -->
+        <div class="search-results hide">
+            <i class="far fa-times-circle search-results-exit"></i>
+
+            <!-- <div id="left-adplace">Optional ad placement</div> -->
+             
+            <div id="videoListContainer"></div>
+
+            <!-- <div id="right-adplace">Optional ad placement</div> -->
+        </div>
+
+        <!-- Search Content Scripts -->
+        <script src="https://apis.google.com/js/api.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script> -->
+        <!-- <script src="js/custom.js"></script> -->  
 
     <!-- Comment Box Script -->
     <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>

@@ -2339,6 +2339,77 @@
     }
 }
 
+// Search Results Section
+.search-results {
+
+    .search-results-exit {
+        position: fixed;
+        top: 0;
+        right: 1%;
+        background-color: #24243e;
+        padding: 1%;
+        border-radius: 5px;
+        font-size: 3rem;
+        color: #fff;
+        z-index: 3;
+    }
+
+    #videoListContainer {
+        width: 100%;
+
+        #search-h4 {
+            background-color: brown;
+            font-size: 2rem;
+            color: white;
+            width: 100vw;
+            height: 50px;
+            position: fixed;
+            padding: 1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        & ol {
+            text-align: center;
+            padding-top: 40px;
+
+            .data-num {
+                display: inline-grid;
+
+                & li {
+                    margin: 5% 1% 0 0;
+                    max-width: 30rem;
+                    font-size: 2rem;
+                    color: white;
+                    list-style-position: inside;
+
+                    & a {
+
+                        #search-thumbnail {
+                            height: 25rem;
+                            width: 30rem;
+                        }
+                    }
+
+                    #para-search-return {
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+
+        .paginate {
+            margin-right: 5px;
+            font-size: 2rem;
+            color: white;
+            background-color: rgb(43,43,43);
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        } 
+    }
+}
+
 @media(max-width: 960px) {
     // Video Lounge Carousel
     .video-lounge-container {

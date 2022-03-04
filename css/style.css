@@ -3847,6 +3847,54 @@ footer p {
         .video-lounge-container .lounge-flex .video-live-chat #video-chat-widget::-webkit-scrollbar-track {
           background-color: #0f0c29; }
 
+.search-results .search-results-exit {
+  position: fixed;
+  top: 0;
+  right: 1%;
+  background-color: #24243e;
+  padding: 1%;
+  border-radius: 5px;
+  font-size: 3rem;
+  color: #fff;
+  z-index: 3; }
+
+.search-results #videoListContainer {
+  width: 100%; }
+  .search-results #videoListContainer #search-h4 {
+    background-color: brown;
+    font-size: 2rem;
+    color: white;
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .search-results #videoListContainer ol {
+    text-align: center;
+    padding-top: 40px; }
+    .search-results #videoListContainer ol .data-num {
+      display: inline-grid; }
+      .search-results #videoListContainer ol .data-num li {
+        margin: 5% 1% 0 0;
+        max-width: 30rem;
+        font-size: 2rem;
+        color: white;
+        list-style-position: inside; }
+        .search-results #videoListContainer ol .data-num li a #search-thumbnail {
+          height: 25rem;
+          width: 30rem; }
+        .search-results #videoListContainer ol .data-num li #para-search-return {
+          overflow: hidden; }
+  .search-results #videoListContainer .paginate {
+    margin-right: 5px;
+    font-size: 2rem;
+    color: white;
+    background-color: #2b2b2b;
+    padding: 0.5rem 1rem;
+    border-radius: 5px; }
+
 @media (max-width: 960px) {
   .video-lounge-container .lounge-flex {
     display: block !important; }

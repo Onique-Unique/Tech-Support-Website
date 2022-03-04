@@ -14,7 +14,7 @@ const playlistContainer = document.getElementById("playlist-container");
 const formContainer = document.querySelector(".gamelounge-contact-container");
 const disclaimerContainer = document.querySelector(".fair-use-disclaimer--container");
 const downloadContainer = document.querySelector(".gamelounge-download-container");
-const searchField = document.getElementById("gamelounge-search");
+const searchContainer = document.querySelector(".search-results");
 const leaderboardContainer = document.getElementById("leaderboard");
 const leaderboardClick = document.querySelector(".apex-leaderboards");
 const publisherContainer = document.querySelector(".publishments-container");
@@ -38,6 +38,7 @@ const publishExit = document.querySelector(".publishment-exit");
 const videoLoungeIcon = document.getElementById("video-icon");
 const videoViewMoreIcon = document.querySelector(".view-more-vid--icon");
 const videoLoungeExit = document.querySelector(".video-lounge-exit");
+const searchResultsExit = document.querySelector(".search-results-exit");
 
 document.cookie = "AC-C=ac-c;expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/;SameSite=None;Secure";
 
@@ -71,6 +72,7 @@ playlistRefresh.addEventListener("click", () => {
 });
 
 var videoListings = ["r9BFJCNk774", "5THFjkoOQJ8", "pFJyKUCKzko", "6xbc7WxUryM", "EhZDu7pd8kI", "yIH9XX6TjrM", "2y9KT-SxUUk", "Msrjv7S9TU0", "Ya5Z1ocmbec", "5oiqPSGt0ec", "vcYjDOt5JyY", "L9wEy0ox5_U", "KtT57G8kT20", "FbWqTKEb1Ss", "d2z9lDnsAYY", "0oM5j6EXVgw", "W3wnDWN_Qt0", "fCBzFk4Zvjk", "2iLAGer1J9Q", "xe8-DGB5oyA", "LhhLaIEDXyE", "pSeAhN7I79M", "omX-22EY2DA", "QXnUYl6RmH0", "H0uXZgkX5lI", "NZaZlaMlRAM", "d-T3hfx8pTw", "eSAyUxuxRdU", "ESrclrXg1Bo", "XMFYn1-hVPc", "GX-2wHewXVU", "nQaIsuaVmM0", "dMp236-YFvI", "1RzUQ_aSOTQ", "fv902eXOiq8", "39rsVnx_WN0", "78iMxGxKFFk", "lWihgrstcyo", "uIXlZUZx0P8", "qsrU1Dq8Q_c", "IYOOL9d8Zz0", "74vL2lziMx0",]
+var featuredListings = [];
 
 // Video Lounge Shuffle Random | Prev - Next
 const videoListArrayId = videoListings;
@@ -100,29 +102,113 @@ videoListNext.addEventListener("click", () => {
     };
 });
 
+// OLD SEARCH SCRIPT
 // writing a script for the search bar function logic
 // for the explore page will identify different sections searched using location.href = "#idName"
-function openfile() {
-    // Game Lounge Search Bar Script
-    // a script allowing search user to find an option between multiple strings/ words that may lead to the same content
-    String.prototype.includesOneof = function(arrayOfStrings) {
+// function openfile() {
+//     // Game Lounge Search Bar Script
+//     // a script allowing search user to find an option between multiple strings/ words that may lead to the same content
+//     String.prototype.includesOneof = function(arrayOfStrings) {
 
-        if (!Array.isArray(arrayOfStrings)) {
-            throw new Error("includesOneOf only accepts an array");
+//         if (!Array.isArray(arrayOfStrings)) {
+//             throw new Error("includesOneOf only accepts an array");
+//         }
+//         return arrayOfStrings.some(str => this.includes(str));
+//     };
+
+//     var info = document.getElementById("gamelounge-search").value;
+//     var action1 = "https://www.youtube.com/results";
+//     var action2 = "https://www.youtube.com/results";
+
+//     if (!info.toLowerCase().includesOneof(["apex", "legends", "alm"])) {
+//         document.getElementById("gamelounge-search").value = info + " apex legends mobile";
+//         document.getElementById("form-yt--search").action = action1; 
+//     }else {
+//         document.getElementById("form-yt--search").action = action2;
+//     };
+// };
+
+// NEW SEARCH SCRIPT UTILIZING YOUTUBE SEARCH API
+gapi.load("client", loadClient);
+  
+function loadClient() {
+    gapi.client.setApiKey("AIzaSyBtC_bpI8ogcjncnrXJlMfCGzdn2nP6CKU");
+    return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
+        .then(function() { console.log("GAPI client loaded for API"); },
+                function(err) { console.error("Error loading GAPI client for API", err); });
+};
+
+// const gameloungeBodyContainer = document.querySelector(".game-lounge-body-container");
+// const searchContainer = document.querySelector(".search-results");
+const ytForm = document.getElementById("form-yt--search");
+const keywordInput = document.getElementById("gamelounge-search");
+const maxresultInput = document.getElementById('maxresult-input');
+const orderInput = document.getElementById('order-input');
+const videoList = document.getElementById('videoListContainer');
+var pageToken = '';
+  
+ytForm.addEventListener('submit', e => {
+    e.preventDefault();
+    gameloungeBodyContainer.classList.add("hide");
+    searchContainer.classList.remove("hide");
+    execute();
+});
+  
+function paginate(e, obj) {
+    e.preventDefault();
+    pageToken = obj.getAttribute('data-id');
+    execute();
+    window.scroll({top: 0, behavior: "smooth"}); // scroll back to top where container is
+}
+  
+// Make sure the client is loaded before calling this method.
+function execute() {
+    const searchString = keywordInput.value + " Apex Legends Mobile";
+    const maxresult = maxresultInput.value;
+    const orderby = orderInput.value;
+  
+    var arr_search = {
+        "part": 'snippet',
+        "type": 'video',
+        "order": orderby,
+        "maxResults": maxresult,
+        "q": searchString
+    };
+  
+    if (pageToken != '') {
+        arr_search.pageToken = pageToken;
+    }
+  
+    return gapi.client.youtube.search.list(arr_search)
+    .then(function(response) {
+        // Handle the results here (response.result has the parsed body).
+        const listItems = response.result.items;
+        if (listItems) {
+            let output = '<h4 id= "search-h4">Search Rank Results</h4><ol>';
+  
+            listItems.forEach(item => {
+                const videoId = item.id.videoId;
+                const videoTitle = item.snippet.title;
+                output += `
+                    <div class="data-num"><li><a data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img id="search-thumbnail" src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p id="para-search-return">${videoTitle}</p></li></div>
+                `;
+            });
+            output += '</ol>';
+            
+            // Alternative Prev Next Option
+            // if (response.result.prevPageToken) {
+            //     output += `<br><a class="paginate" href="#" data-id="${response.result.prevPageToken}" onclick="paginate(event, this)">Prev</a>`;
+            // }
+  
+            // if (response.result.nextPageToken) {
+            //     output += `<a href="#" class="paginate" data-id="${response.result.nextPageToken}" onclick="paginate(event, this)">Next</a>`;
+            // }
+  
+            // Output list
+            videoList.innerHTML = output;
         }
-        return arrayOfStrings.some(str => this.includes(str));
-    };
-
-    var info = document.getElementById("gamelounge-search").value;
-    var action1 = "https://www.youtube.com/results";
-    var action2 = "https://www.youtube.com/results";
-
-    if (!info.toLowerCase().includesOneof(["apex", "legends", "alm"])) {
-        document.getElementById("gamelounge-search").value = info + " apex legends mobile";
-        document.getElementById("form-yt--search").action = action1; 
-    }else {
-        document.getElementById("form-yt--search").action = action2;
-    };
+    },
+    function(err) { console.error("Execute error", err); });
 };
 
 // Gamelounge Button Functions
@@ -212,6 +298,11 @@ videoViewMoreIcon.addEventListener("click", () => {
 videoLoungeExit.addEventListener("click", () => {
     gameloungeBodyContainer.classList.toggle("hide");
     videoLoungeContainer.classList.toggle("hide");
+});
+
+searchResultsExit.addEventListener("click", () => {
+    searchContainer.classList.add("hide");
+    gameloungeBodyContainer.classList.remove("hide");
 });
 
 downloadIcon.addEventListener("click", () => {
