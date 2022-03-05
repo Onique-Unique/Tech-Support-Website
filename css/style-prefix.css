@@ -2985,16 +2985,7 @@ footer p {
 
 /* Game Lounge Style start */
 .game-lounge-body {
-  max-width: 1440px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  max-width: 1440px; }
 
 .game-lounge-body, .game-lounge-body--landing-page {
   background: #0f0c29;
@@ -4799,8 +4790,9 @@ footer p {
   z-index: 3; }
 
 .search-results #videoListContainer {
-  width: 100vw; }
+  max-width: 1440px; }
   .search-results #videoListContainer #search-h4 {
+    max-width: 1440px;
     background-color: brown;
     font-size: 2rem;
     color: white;

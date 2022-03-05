@@ -1,9 +1,6 @@
 /* Game Lounge Style start */
 .game-lounge-body {
     max-width: 1440px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .game-lounge-body, .game-lounge-body--landing-page {
@@ -2361,9 +2358,10 @@
     }
 
     #videoListContainer {
-        width: 100vw;
+        max-width: 1440px;
 
         #search-h4 {
+            max-width: 1440px;
             background-color: brown;
             font-size: 2rem;
             color: white;
