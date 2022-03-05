@@ -4198,7 +4198,8 @@ footer p {
   .community-leaderboard--container .community-leaderboard #leaderboard-mentions iframe {
     position: fixed;
     height: 100vh;
-    width: 100vw; }
+    width: 100vw;
+    max-width: 1440px; }
   .community-leaderboard--container .community-leaderboard #leaderboard-mentions #leaderboard-exit--bottom {
     position: absolute;
     bottom: 0%;
