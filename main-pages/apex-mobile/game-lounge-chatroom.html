@@ -88,10 +88,10 @@
                                   <!--"http://www.youtube.com/results"  -->
                         <form id="form-yt--search" method="get" target="_blank" >
                             <i class="fas fa-search" id="search-icon"></i>
-                            <input id="gamelounge-search" name="search_query" type="search" maxlength="128" placeholder="Search content..."> <!-- onchange="openfile()"-->
+                            <input class="search-input" id="gamelounge-search" name="search_query" type="search" maxlength="128" placeholder="Search content..."> <!-- onchange="openfile()"-->
                             
-                            <p style="display: none;"><input type="number" id="maxresult-input" placeholder="Max Results" min="1" max="50" value="50" required></p>
-                            <p style="display: none;">
+                            <p hidden="true"><input type="number" id="maxresult-input" placeholder="Max Results" min="1" max="50" value="50" required></p>
+                            <p hidden="true">
                                 <select id="order-input" required>
                                     <option value="">--SELECT ORDER--</option>
                                     <option value="date">Date</option>

@@ -129,10 +129,11 @@ videoListNext.addEventListener("click", () => {
 // };
 
 // NEW SEARCH SCRIPT UTILIZING YOUTUBE SEARCH API
+const ytKey = "AIzaSyBtC_bpI8ogcjncnrXJlMfCGzdn2nP6CKU"
 gapi.load("client", loadClient);
   
 function loadClient() {
-    gapi.client.setApiKey("AIzaSyBtC_bpI8ogcjncnrXJlMfCGzdn2nP6CKU");
+    gapi.client.setApiKey(ytKey);
     return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
         .then(function() { console.log("GAPI client loaded for API"); },
                 function(err) { console.error("Error loading GAPI client for API", err); });
@@ -146,7 +147,15 @@ const maxresultInput = document.getElementById('maxresult-input');
 const orderInput = document.getElementById('order-input');
 const videoList = document.getElementById('videoListContainer');
 var pageToken = '';
-  
+
+var searchInput = document.querySelector(".search-input");
+searchInput.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("submit-icon").click();
+    }
+});
+
 ytForm.addEventListener('submit', e => {
     e.preventDefault();
     gameloungeBodyContainer.classList.add("hide");
