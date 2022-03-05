@@ -1531,6 +1531,7 @@
 .community-leaderboard--container {
         
     .community-leaderboard {
+        width: 100vw;
 
         #leaderboard-exit--top {
             display: flex;
@@ -1563,6 +1564,8 @@
 
             & iframe {
                 position: fixed;
+                height: 100vh;
+                width: 100vw;
             }
 
             #leaderboard-exit--bottom {

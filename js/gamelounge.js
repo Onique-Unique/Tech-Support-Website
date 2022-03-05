@@ -199,7 +199,7 @@ function execute() {
                 const videoId = item.id.videoId;
                 const videoTitle = item.snippet.title;
                 output += `
-                    <div class="data-num"><li><a data-fancybox href="https://www.youtube.com/watch?v=${videoId}"><img id="search-thumbnail" src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p id="para-search-return">${videoTitle}</p></li></div>
+                    <div class="data-num"><li><a data-fancybox href="https://www.youtube.com/watch?v=${videoId}" target="_blank"><img id="search-thumbnail" src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p id="para-search-return">${videoTitle}</p></li></div>
                 `;
             });
             output += '</ol>';
