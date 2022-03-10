@@ -40,6 +40,12 @@ const videoViewMoreIcon = document.querySelector(".view-more-vid--icon");
 const videoLoungeExit = document.querySelector(".video-lounge-exit");
 const searchResultsExit = document.querySelector(".search-results-exit");
 
+//Youtube Search Results & Popup Modal
+const infoPolicy = document.querySelector(".info-icon");
+const modalContainer = document.querySelector(".important-terms-container");
+const modalExit = document.querySelector(".important-terms-exit");
+const policyOpen = document.getElementById("policy-icon");
+
 document.cookie = "AC-C=ac-c;expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/;SameSite=None;Secure";
 
 // Index Banner Date Logic 
@@ -160,7 +166,12 @@ ytForm.addEventListener('submit', e => {
     e.preventDefault();
     gameloungeBodyContainer.classList.add("hide");
     searchContainer.classList.remove("hide");
-    execute();
+    window.scroll({top: 0, behavior: "smooth"});
+
+    if (!modalContainer.classList.contains("policy-appear")) {
+            modalContainer.classList.add("policy-appear");
+            execute();
+    };  
 });
   
 function paginate(e, obj) {
@@ -193,7 +204,7 @@ function execute() {
         // Handle the results here (response.result has the parsed body).
         const listItems = response.result.items;
         if (listItems) {
-            let output = '<h4 id= "search-h4">Search Rank Results</h4><ol>';
+            let output = '<h4 id= "search-h4">Search Results</h4><ul>';
   
             listItems.forEach(item => {
                 const videoId = item.id.videoId;
@@ -202,7 +213,7 @@ function execute() {
                     <div class="data-num"><li><a data-fancybox href="https://www.youtube.com/watch?v=${videoId}" target="_blank"><img id="search-thumbnail" src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p id="para-search-return">${videoTitle}</p></li></div>
                 `;
             });
-            output += '</ol>';
+            output += '</ul>';
             
             // Alternative Prev Next Option
             // if (response.result.prevPageToken) {
@@ -327,4 +338,22 @@ downloadIconSecondary.addEventListener("click", () => {
 downloadExit.addEventListener("click", () => {
     gameloungeBodyContainer.classList.toggle("hide");
     downloadContainer.classList.toggle("hide");
+});
+
+infoPolicy.addEventListener("click", () => {
+    // searchContainer.classList.toggle("filter-overlay");
+    modalContainer.classList.toggle("hide");
+    searchContainer.classList.add("policy-shadow");
+    modalContainer.classList.remove("policy-appear");
+});
+
+modalExit.addEventListener("click", () => {
+    // searchContainer.classList.toggle("filter-overlay");
+    modalContainer.classList.toggle("hide");
+    searchContainer.classList.remove("policy-shadow");
+});
+
+policyOpen.addEventListener("click", () => {
+    searchContainer.classList.toggle("hide");
+    disclaimerContainer.classList.toggle("hide");
 });

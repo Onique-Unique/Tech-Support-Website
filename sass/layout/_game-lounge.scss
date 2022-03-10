@@ -669,7 +669,7 @@
         .game-article-features {
             height: 25rem;
             position: relative;
-            margin-top: 4%;
+            margin-top: 8%;
 
             .content-creators--list {
                 display: flex;
@@ -702,7 +702,7 @@
     
             .article-features-container {
                 position: relative;
-                height: 22rem;
+                height: 24.5rem;
                 overflow-x: scroll;
                 scrollbar-color:#C33764 #0f0c2900 ;
                 scrollbar-width: thin !important;
@@ -769,9 +769,8 @@
                                 color: rgb(205, 210, 214);
                             }
 
-                            & iframe {
-                                height: 15rem;
-                                width: 30rem;
+                            .featured {
+                                max-height: 15rem;
                                 border-radius: 25px;
                             }
 
@@ -814,7 +813,7 @@
 
 .gamelounge-info--container {
     width: 100%;
-    margin-top: 4%;
+    margin-top: 8%;
 
     .info-main-nav {
         height: 5vh;
@@ -2344,7 +2343,18 @@
 }
 
 // Search Results Section
+// Policy Appear 
+
+.policy-appear {
+    animation: policy-appear 6s linear;
+}
+
+.policy-shadow {
+     box-shadow: inset 1rem 1rem 50rem black;
+}
+
 .search-results {
+    height: 100%;
 
     .search-results-exit {
         position: fixed;
@@ -2356,6 +2366,28 @@
         font-size: 3rem;
         color: #fff;
         z-index: 3;
+    }
+
+    .info-icon {
+        display: flex;
+        align-items: baseline;
+        position: fixed;
+        top: 0;
+        left: 1%;
+        padding: 1%;
+        font-size: 2rem;
+        color: #fff;
+        z-index: 3;
+
+        & p {
+            margin-left: 5%;
+            font-size: 1rem;
+            font-family: 'Poppins', cursive;
+
+            @media (max-width: 320px) {
+                display: none;
+            }
+        }
     }
 
     #videoListContainer {
@@ -2375,7 +2407,7 @@
             align-items: center;
         }
 
-        & ol {
+        & ul {
             text-align: center;
             padding-top: 40px;
 
@@ -2388,12 +2420,14 @@
                     font-size: 2rem;
                     color: white;
                     list-style-position: inside;
+                    list-style: none;
 
                     & a {
 
                         #search-thumbnail {
                             height: 25rem;
                             width: 30rem;
+                            padding: 2%;
                         }
                     }
 
@@ -2412,6 +2446,83 @@
             padding: 0.5rem 1rem;
             border-radius: 5px;
         } 
+    }
+
+    .important-terms-container {
+        width: 100%;
+
+        .important-terms {
+            margin: 0 auto;
+            width: 40%;
+            height: 40rem;
+            background-color: rgb(255, 255, 255);
+            padding: 2%;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 5px; 
+
+            @media(max-width: 560px) {
+                width: 80% !important;
+            }
+
+            .important-terms-exit {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                font-size: 3rem;
+                color: rgb(43, 43, 43);
+            }
+
+            .important-terms-insert--top {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                & a {
+                    margin: 10%;
+
+                    & i {
+                        font-size: 4rem;
+                    }
+                }
+
+                .fa-google {
+                    color: #00a4d6;
+                }
+
+                .fa-youtube {
+                    color: red;
+                }
+            }
+
+            .important-terms-insert--main {
+
+                & p {
+                    text-align: center;
+                    font-size: 1.3rem;
+                    margin-bottom: 3%;
+
+                    #yt-terms-link {
+                        color: red;
+                    }
+                }
+
+                #feenixbloom-policy {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    & a {
+
+                        #policy-icon {
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
