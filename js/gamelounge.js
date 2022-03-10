@@ -164,14 +164,19 @@ searchInput.addEventListener("keyup", function(event) {
 
 ytForm.addEventListener('submit', e => {
     e.preventDefault();
-    gameloungeBodyContainer.classList.add("hide");
-    searchContainer.classList.remove("hide");
-    window.scroll({top: 0, behavior: "smooth"});
-
     if (!modalContainer.classList.contains("policy-appear")) {
-            modalContainer.classList.add("policy-appear");
-            execute();
-    };  
+        gameloungeBodyContainer.classList.add("hide");
+        searchContainer.classList.remove("hide");
+        window.scroll({top: 0, behavior: "smooth"});
+        modalContainer.classList.add("policy-appear");
+        execute();
+    } else if (modalContainer.classList.contains("policy-appear")) {
+        gameloungeBodyContainer.classList.add("hide");
+        searchContainer.classList.remove("hide");
+        window.scroll({top: 0, behavior: "smooth"});
+        modalContainer.classList.remove("policy-appear");
+        execute();
+    }
 });
   
 function paginate(e, obj) {
