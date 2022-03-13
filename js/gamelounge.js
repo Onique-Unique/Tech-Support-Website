@@ -77,7 +77,7 @@ playlistRefresh.addEventListener("click", () => {
         document.getElementById("playlist-embed").innerHTML = `<iframe id="embed-music" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0" modestbranding="1"></iframe>`
 });
 
-var videoListings = ["jykI2bqKr0U", "SlUcf-0n2Pc", "g9aOqJ_Mujw", "6xbc7WxUryM", "Ya5Z1ocmbec", "fCBzFk4Zvjk", "O0XQ2vaCRdo", "KtT57G8kT20", "EhZDu7pd8kI", "yIH9XX6TjrM", "L9wEy0ox5_U", "xJzDNswsPkA", "W3wnDWN_Qt0", "r9BFJCNk774", "lMCJb1ScMwI", "QXnUYl6RmH0", "2Z0Tm1cjt4g", "w01aUT2LDrw", "pSeAhN7I79M", "0G5u0XXmcL4", "pFJyKUCKzko", "xe8-DGB5oyA", "39rsVnx_WN0", "vcYjDOt5JyY", "d-T3hfx8pTw", "GX-2wHewXVU", "qsrU1Dq8Q_c", "dMp236-YFvI", "d2z9lDnsAYY", "nQaIsuaVmM0", "Ys_CJxsaSW0", "H0uXZgkX5lI", "5THFjkoOQJ8", "qab1sZotJNY", "zytg1yNGEJk", "IYOOL9d8Zz0", "ShLd0H_uKlI", "ESrclrXg1Bo", "uzcg8diJAeI", "lWihgrstcyo", "UZq9WbGABIo",]
+var videoListings = ["Pvqm6_mplRs", "XRtv30j0pp8", "LcsOSIXc9cg", "x9RjkZuLmBw", "MKif6px7hb4", "mNLCRZsopqg", "KXRosceNwfc", "4sV94dhP518", "Ya5Z1ocmbec", "g9aOqJ_Mujw", "INTyMiA8zkc", "7_VjSAkFNKA", "YZ_HT9dRpoQ", "Lw9UUsZwrmc", "ZMuVHf3Xugo", "pFJyKUCKzko", "sv0g5vPO-N8", "JCNLzcVrS_c", "fCBzFk4Zvjk", "SlUcf-0n2Pc", "xlmuq0RcsKc", "2jEMI9U53Qs", "Rtxf-kVYF8M", "5THFjkoOQJ8", "11RZI7Tf2uI", "KtT57G8kT20", "v8ZDDbHppMQ", "yIH9XX6TjrM", "DSqp7wEbbeY", "GLojO9k5YqE", "qamxgh4vMuQ", "qsrU1Dq8Q_c", "jykI2bqKr0U", "QUhFZF6h_PA", "5mxeVyhlkL4", "vcYjDOt5JyY", "LhhLaIEDXyE", "z9YfQW5OJUU", "d2z9lDnsAYY", "wqMaedijeh4",]
 var featuredListings = [];
 
 // Video Lounge Shuffle Random | Prev - Next
@@ -107,6 +107,52 @@ videoListNext.addEventListener("click", () => {
         document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0"></iframe>`
     };
 });
+
+watchFeaturedList = ["watch-1", "watch-2", "watch-3", "watch-4"];
+watchFeaturedId = ["Pvqm6_mplRs", "IJzp51g-uxM", "LcsOSIXc9cg", "YQyb-FMD9yI",];
+
+// ---------------ORIGINAL SCRIPT------------NEEDS WORK TO COMPLETE--------------------------
+// for(i = 0; i < watchFeaturedList.length && i < watchFeaturedId.length; i++) {
+//         document.getElementById(watchFeaturedList[i]).addEventListener("click", () => {
+//             var id = watchFeaturedId[i];
+//             gameloungeBodyContainer.classList.toggle("hide");
+//             videoLoungeContainer.classList.toggle("hide");
+//             document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0"></iframe>`
+//         });
+// };
+
+// --------------------------------------------SECONDARY SCRIPT-------------------------------------------
+document.getElementById(watchFeaturedList[0]).addEventListener("click", () => {
+    var id = watchFeaturedId[0];
+    gameloungeBodyContainer.classList.toggle("hide");
+    videoLoungeContainer.classList.toggle("hide");
+    document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0"></iframe>`
+
+});
+document.getElementById(watchFeaturedList[1]).addEventListener("click", () => {
+    var id = watchFeaturedId[1];
+    gameloungeBodyContainer.classList.toggle("hide");
+    videoLoungeContainer.classList.toggle("hide");
+    document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0"></iframe>`
+
+});
+document.getElementById(watchFeaturedList[2]).addEventListener("click", () => {
+    var id = watchFeaturedId[2];
+    gameloungeBodyContainer.classList.toggle("hide");
+    videoLoungeContainer.classList.toggle("hide");
+    document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0"></iframe>`
+
+});
+document.getElementById(watchFeaturedList[3]).addEventListener("click", () => {
+    var id = watchFeaturedId[3];
+    gameloungeBodyContainer.classList.toggle("hide");
+    videoLoungeContainer.classList.toggle("hide");
+    document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0"></iframe>`
+
+});
+
+// ---------------------------------------END OF SECONDARY SCRIPT------------------------------------------------
+
 
 // OLD SEARCH SCRIPT
 // writing a script for the search bar function logic
