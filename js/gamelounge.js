@@ -111,47 +111,16 @@ videoListNext.addEventListener("click", () => {
 watchFeaturedList = ["watch-1", "watch-2", "watch-3", "watch-4"];
 watchFeaturedId = ["Pvqm6_mplRs", "IJzp51g-uxM", "LcsOSIXc9cg", "YQyb-FMD9yI",];
 
-// ---------------ORIGINAL SCRIPT------------NEEDS WORK TO COMPLETE--------------------------
-// for(i = 0; i < watchFeaturedList.length && i < watchFeaturedId.length; i++) {
-//         document.getElementById(watchFeaturedList[i]).addEventListener("click", () => {
-//             var id = watchFeaturedId[i];
-//             gameloungeBodyContainer.classList.toggle("hide");
-//             videoLoungeContainer.classList.toggle("hide");
-//             document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0"></iframe>`
-//         });
-// };
-
-// --------------------------------------------SECONDARY SCRIPT-------------------------------------------
-document.getElementById(watchFeaturedList[0]).addEventListener("click", () => {
-    var id = watchFeaturedId[0];
-    gameloungeBodyContainer.classList.toggle("hide");
-    videoLoungeContainer.classList.toggle("hide");
-    document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0"></iframe>`
-
-});
-document.getElementById(watchFeaturedList[1]).addEventListener("click", () => {
-    var id = watchFeaturedId[1];
-    gameloungeBodyContainer.classList.toggle("hide");
-    videoLoungeContainer.classList.toggle("hide");
-    document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0"></iframe>`
-
-});
-document.getElementById(watchFeaturedList[2]).addEventListener("click", () => {
-    var id = watchFeaturedId[2];
-    gameloungeBodyContainer.classList.toggle("hide");
-    videoLoungeContainer.classList.toggle("hide");
-    document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0"></iframe>`
-
-});
-document.getElementById(watchFeaturedList[3]).addEventListener("click", () => {
-    var id = watchFeaturedId[3];
-    gameloungeBodyContainer.classList.toggle("hide");
-    videoLoungeContainer.classList.toggle("hide");
-    document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0"></iframe>`
-
-});
-
-// ---------------------------------------END OF SECONDARY SCRIPT------------------------------------------------
+// ---------------LOGICAL SCRIPT FOR FEATURED MUST WATCH VIDEOS-------------------------------
+for(let i = 0; i < watchFeaturedList.length && i < watchFeaturedId.length; i++) {
+    document.getElementById(watchFeaturedList[i]).addEventListener("click", () => {
+        console.log(watchFeaturedList[i]);
+        var id = watchFeaturedId[i];
+        gameloungeBodyContainer.classList.toggle("hide");
+        videoLoungeContainer.classList.toggle("hide");
+        document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0"></iframe>`
+    });
+};
 
 
 // OLD SEARCH SCRIPT
