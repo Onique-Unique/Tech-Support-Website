@@ -167,7 +167,39 @@ const keywordInput = document.getElementById("gamelounge-search");
 const maxresultInput = document.getElementById('maxresult-input');
 const orderInput = document.getElementById('order-input');
 const videoList = document.getElementById('videoListContainer');
+const newH2 = document.getElementById("main-h2");
+const tipsH2 = document.getElementById("tips-h2");
+const gameplayH2 = document.getElementById("gameplay-h2");
+const funnyH2 = document.getElementById("funny-h2");
+
+const thumbnailList = [];
+
 var pageToken = '';
+
+// -------------SUB MENU SEARCH SELECTIONS-------------------
+newH2.addEventListener("click", () => {
+    keywordInput.value = "News";
+    document.getElementById("submit-icon").click();
+    keywordInput.value = "";
+});
+
+tipsH2.addEventListener("click", () => {
+    keywordInput.value = "tips and tricks";
+    document.getElementById("submit-icon").click();
+    keywordInput.value = "";
+});
+
+gameplayH2.addEventListener("click", () => {
+    keywordInput.value = "gameplay";
+    document.getElementById("submit-icon").click();
+    keywordInput.value = "";
+});
+
+funnyH2.addEventListener("click", () => {
+    keywordInput.value = "funny";
+    document.getElementById("submit-icon").click();
+    keywordInput.value = "";
+});
 
 var searchInput = document.querySelector(".search-input");
 searchInput.addEventListener("keyup", function(event) {
@@ -230,11 +262,15 @@ function execute() {
                 const videoId = item.id.videoId;
                 const videoTitle = item.snippet.title;
                 output += `
-                    <div class="data-num"><li><a data-fancybox href="https://www.youtube.com/watch?v=${videoId}" target="_blank"><img id="search-thumbnail" src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p id="para-search-return">${videoTitle}</p></li></div>
+                    <div class="data-num"><li><a data-fancybox href="https://www.youtube.com/watch?v=${videoId}" target="_blank"><img class="search-thumbnail" id="thumbnail-${thumbnailList[i]}" src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p id="para-search-return">${videoTitle}</p></li></div>
                 `;
             });
             output += '</ul>';
             
+            // original output insert-----------------------------------
+            // <div class="data-num"><li><a data-fancybox href="https://www.youtube.com/watch?v=${videoId}" target="_blank"><img id="search-thumbnail" src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p id="para-search-return">${videoTitle}</p></li></div>
+            // -------------------------------------------------------
+
             // Alternative Prev Next Option
             // if (response.result.prevPageToken) {
             //     output += `<br><a class="paginate" href="#" data-id="${response.result.prevPageToken}" onclick="paginate(event, this)">Prev</a>`;
@@ -253,8 +289,8 @@ function execute() {
 
 // Gamelounge Button Functions
 menuBtn.addEventListener("click", () => {
-    leftSidebar.classList.toggle("game-sidebar-minimize");
-    contentBody.classList.toggle("section-body-container-maximize");
+    leftSidebar.classList.toggle("game-sidebar-maximize");
+    contentBody.classList.toggle("section-body-container-minimize");
 });
 
 moreLive.addEventListener("click", () => {

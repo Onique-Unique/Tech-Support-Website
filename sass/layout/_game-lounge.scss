@@ -338,7 +338,8 @@
 .game-sidebar {
     position: fixed; 
     height: 100vh;
-    width: 5%;
+    width: 0%;
+    display: none;
     z-index: 2;
     margin-top: 5%;
     transition: all .2s ease;
@@ -391,9 +392,9 @@
     }
 }
 
-.game-sidebar-minimize {
-    width: 0%;
-    display: none;
+.game-sidebar-maximize {
+    width: 5%;
+    display: block;
 }
 
 //Aside-Right
@@ -557,20 +558,59 @@
 
 .section-body-container {
     width: 75%;
-    padding-left: 8%;
+    padding-left: 2%;
     transition: all .2s ease;
 
     //Section-1
     .game-feature-section {
         height: 30rem;
         position: relative;
+
+        .secondary-nav-top {
+            position: absolute;
+            top: 20%;
+            z-index: 2;
+            width: 100%;           
+            padding: 1% 2%;
+            border-radius: 0 0 10px 10px;
+
+            .secondary-nav-inner {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: white;
+
+                #main-h2 {
+                    border: 1px solid white;
+                    background-color: #525280;
+                    padding: 1%;
+                    border-radius: 5px;
+                    transition: all .2s;
+
+                    &:hover {
+                        background-color: #414166;
+                    }
+                }
+
+                & h2 {
+                    padding: .5% 1.5%;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: all .2s;
+
+                    &:hover {
+                        border-bottom: 2px solid #C33764;
+                    }
+                }
+            }
+        }
     
         .game-feature-container {
             position: absolute;
             height: 25rem;
             border: 1px solid black;
             width: 100%;
-            top: 30%;
+            top: 45%;
             border-radius: 30px;
             background: #C33764;  /* fallback for old browsers */
             background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
@@ -664,12 +704,12 @@
     
     //Section-2
     .game-lounge-carousel {
-        margin-top: 10%;
+        margin-top: 14%;
 
         .game-article-features {
             height: 25rem;
             position: relative;
-            margin-top: 8%;
+            margin-top: 10%;
 
             .content-creators--list {
                 display: flex;
@@ -699,10 +739,17 @@
                 font-size: 1.4rem;
                 margin-bottom: 2%;
             }
+
+            .article-features-container--1 {
+                height: 25.5rem;
+            }
+
+            .article-features-container--2 {
+                height: 20rem;
+            }
     
             .article-features-container {
                 position: relative;
-                height: 24.5rem;
                 overflow-x: scroll;
                 scrollbar-color:#C33764 #0f0c2900 ;
                 scrollbar-width: thin !important;
@@ -751,8 +798,10 @@
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
+                                margin-top: 10%;
 
-                                & svg {
+                                .svg {
+                                    height: 20px;
                                     filter: invert(56%) sepia(95%) saturate(927%) hue-rotate(68deg) brightness(110%) contrast(83%);
                                 }
                             }
@@ -764,6 +813,7 @@
                             }
         
                             & p {
+                                height: 2.5rem;
                                 margin-left: 2%;
                                 font-size: 1.4rem;
                                 color: rgb(205, 210, 214);
@@ -803,8 +853,8 @@
     }
 }
 
-.section-body-container-maximize {
-    padding-left: 2%;
+.section-body-container-minimize {
+    padding-left: 8%;
 }
 
 // Game Lounge Style end
@@ -813,7 +863,7 @@
 
 .gamelounge-info--container {
     width: 100%;
-    margin-top: 8%;
+    margin-top: 6%;
 
     .info-main-nav {
         height: 5vh;
@@ -2424,7 +2474,7 @@
 
                     & a {
 
-                        #search-thumbnail {
+                        .search-thumbnail {
                             height: 25rem;
                             width: 30rem;
                             padding: 2%;
@@ -2666,7 +2716,6 @@
     .game-lounge-carousel {
 
         .game-article-features {
-            margin-top: 0% !important;
             height: 20rem !important;
     
             & h1 {
@@ -2681,21 +2730,11 @@
             .article-features-container {
     
                 .article-abs {
-                    left: 10% !important;
+                    left: 15% !important;
     
                     .featured-articles {             
         
                         .article {
-
-                            & iframe {
-                                height: 10rem !important;
-                                width: 20rem !important;
-                            }
-                            
-                            & img {
-                                height: 10rem !important;
-                                width: 20rem !important;
-                            }
         
                             & p {
                                 font-size: 1.1rem !important;
@@ -2915,7 +2954,7 @@
                 .article-features-container  {
 
                     .article-abs {
-                        left: 18% !important;
+                        left: 22% !important;
 
                         .featured-articles {             
         
@@ -2946,7 +2985,7 @@
             }
 
             & p {
-                font-size: 1.1rem !important;
+                display: none !important;
             }
         }
 
@@ -3069,6 +3108,16 @@
 
     .section-body-container {
 
+        .game-feature-section {
+    
+            .secondary-nav-top {
+    
+                .secondary-nav-inner {
+                    font-size: .75rem !important;
+                }
+            }
+        }
+
         .game-lounge-carousel {
             margin-top: 0% !important;
 
@@ -3077,15 +3126,14 @@
                 .article-features-container {
         
                     .article-abs {
-                        left: 21% !important;
         
                         .featured-articles {
         
                             .article {
                                 
                                 & img {
-                                    height: 8rem !important;
-                                    width: 16rem !important;
+                                    height: 10rem !important;
+                                    width: 22rem !important;
                                     border-radius: 10px !important;
                                 }
                             }
@@ -3098,6 +3146,7 @@
 
     .game-search-bar {
         background-color: transparent !important;
+        width: 70% !important;
 
         #search-icon {
             display: none !important;
@@ -3194,7 +3243,7 @@
                 .article-features-container {
         
                     .article-abs {
-                        left: 24% !important;
+                        left: 25% !important;
                     }
                 }
             }
