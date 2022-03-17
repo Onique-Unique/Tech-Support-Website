@@ -38,14 +38,37 @@ const publishExit = document.querySelector(".publishment-exit");
 const videoLoungeIcon = document.getElementById("video-icon");
 const videoViewMoreIcon = document.querySelector(".view-more-vid--icon");
 const videoLoungeExit = document.querySelector(".video-lounge-exit");
+const videoLoungeExit2 = document.querySelector(".video-lounge-exit-2");
 const searchResultsExit = document.querySelector(".search-results-exit");
 
 //Youtube Search Results & Popup Modal
 const infoPolicy = document.querySelector(".info-icon");
-const modalContainer = document.querySelector(".important-terms-container");
-const modalExit = document.querySelector(".important-terms-exit");
+// const modalContainer = document.querySelector(".important-terms-container");
+// const modalExit = document.querySelector(".important-terms-exit");
 const policyOpen = document.getElementById("policy-icon");
 
+// Consent Privacy policy PopUp
+const cookieModal = document.querySelector(".consent-modal");
+const cancelCookieBtn = document.querySelector(".consent-btn.cancel");
+const acceptCookieBtn = document.querySelector(".consent-btn.accept");
+
+cancelCookieBtn.addEventListener("click", function (){
+    cookieModal.classList.remove("active");
+})
+acceptCookieBtn.addEventListener("click", function (){
+    cookieModal.classList.remove("active");
+    localStorage.setItem("cookieAccepted", "yes");
+})
+
+setTimeout(function (){
+    let cookieAccepted = localStorage.getItem("cookieAccepted")
+    if (cookieAccepted != "yes"){
+        cookieModal.classList.add("active")
+    }
+}, 2000)
+
+
+// Cookie Settings
 document.cookie = "AC-C=ac-c;expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/;SameSite=None;Secure";
 
 // Index Banner Date Logic 
@@ -108,6 +131,7 @@ videoListNext.addEventListener("click", () => {
     };
 });
 
+// ID/ Thumbnail identifiers for Must Watch Videos on main page
 watchFeaturedList = ["watch-1", "watch-2", "watch-3", "watch-4"];
 watchFeaturedId = ["Pvqm6_mplRs", "IJzp51g-uxM", "LcsOSIXc9cg", "YQyb-FMD9yI",];
 
@@ -172,7 +196,8 @@ const tipsH2 = document.getElementById("tips-h2");
 const gameplayH2 = document.getElementById("gameplay-h2");
 const funnyH2 = document.getElementById("funny-h2");
 
-const thumbnailList = [];
+// Expected Thumbnail to be available after a search is made - MAX 50 is populated - Used for thumbnail unique identifier
+const thumbnailList = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50];
 
 var pageToken = '';
 
@@ -211,19 +236,19 @@ searchInput.addEventListener("keyup", function(event) {
 
 ytForm.addEventListener('submit', e => {
     e.preventDefault();
-    if (!modalContainer.classList.contains("policy-appear")) {
+    // if (!modalContainer.classList.contains("policy-appear")) {
         gameloungeBodyContainer.classList.add("hide");
         searchContainer.classList.remove("hide");
         window.scroll({top: 0, behavior: "smooth"});
-        modalContainer.classList.add("policy-appear");
+        // modalContainer.classList.add("policy-appear");
         execute();
-    } else if (modalContainer.classList.contains("policy-appear")) {
-        gameloungeBodyContainer.classList.add("hide");
-        searchContainer.classList.remove("hide");
-        window.scroll({top: 0, behavior: "smooth"});
-        modalContainer.classList.remove("policy-appear");
-        execute();
-    }
+    // // } else if (modalContainer.classList.contains("policy-appear")) {
+    //     gameloungeBodyContainer.classList.add("hide");
+    //     searchContainer.classList.remove("hide");
+    //     window.scroll({top: 0, behavior: "smooth"});
+    //     modalContainer.classList.remove("policy-appear");
+    //     execute();
+    // // }
 });
   
 function paginate(e, obj) {
@@ -254,17 +279,40 @@ function execute() {
     return gapi.client.youtube.search.list(arr_search)
     .then(function(response) {
         // Handle the results here (response.result has the parsed body).
-        const listItems = response.result.items;
+        let listItems = response.result.items;
         if (listItems) {
             let output = '<h4 id= "search-h4">Search Results</h4><ul>';
-  
-            listItems.forEach(item => {
-                const videoId = item.id.videoId;
-                const videoTitle = item.snippet.title;
-                output += `
-                    <div class="data-num"><li><a data-fancybox href="https://www.youtube.com/watch?v=${videoId}" target="_blank"><img class="search-thumbnail" id="thumbnail-${thumbnailList[i]}" src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p id="para-search-return">${videoTitle}</p></li></div>
-                `;
-            });
+
+                        newVideoIdArray = [];
+
+                        newThumbnailIdArray = [];
+
+                    listItems.forEach(item => {
+                        // Applying unique thumbnail ID for each returned thumbnail up to 50 and pulling video ID and Title
+                        let newthumbnailList = thumbnailList;
+                        i++;
+                        currentThumbnail = newthumbnailList[i];
+                        console.log(currentThumbnail);
+                        videoId = item.id.videoId;
+                        console.log(videoId);
+                        videoTitle = item.snippet.title;
+
+                        // Populating / pushing videoID results to newVideoArray list
+                        newVideoIdArray.push(videoId);                    
+                        allVideoIdArray = newVideoIdArray;
+
+                         // Populating / pushing thumbnail-# results to newThumbnailIdArray list
+                        newThumbnailIdArray.push(`thumbnail-${currentThumbnail}`);                    
+                        allThumbnailIdArray = newThumbnailIdArray;
+
+                        // Collecting each output to be sent and populate innerHTML
+                        output += `
+                        <div class="data-num"><li><a><img class="search-thumbnail" id="thumbnail-${currentThumbnail}" src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p id="para-search-return">${videoTitle}</p></li></div>
+                    `;
+                    });
+                // output += `
+                //     <div class="data-num"><li><a data-fancybox href="https://www.youtube.com/watch?v=${videoId}" target="_blank"><img class="search-thumbnail" id="thumbnail-${currentThumbnail}" src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p id="para-search-return">${videoTitle}</p></li></div>
+                // `;
             output += '</ul>';
             
             // original output insert-----------------------------------
@@ -280,14 +328,39 @@ function execute() {
             //     output += `<a href="#" class="paginate" data-id="${response.result.nextPageToken}" onclick="paginate(event, this)">Next</a>`;
             // }
   
-            // Output list
+            // Output list populated
             videoList.innerHTML = output;
+
+            // Console logging completed Arrays returned
+            console.log(allVideoIdArray);
+            console.log(allThumbnailIdArray);
+
+            // ---------------LOGICAL SCRIPT FOR RETURNED SEARCH QUERY/ RESULTS VIDEOS------------------------------- 
+            // for(let i = 0; i < allThumbnailIdArray.length && i < allVideoIdArray.length; i++) {
+            //     document.getElementById(allThumbnailIdArray[i]).addEventListener("click", () => {
+            //         console.log(allThumbnailIdArray[i]);
+            //         var id = allVideoIdArray[i];
+            //         searchContainer.classList.toggle("hide");
+            //         videoLoungeContainer.classList.toggle("hide");
+            //         videoLoungeExit.classList.add("hide");
+            //         videoLoungeExit2.classList.remove("hide");
+            //         document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0"></iframe>`
+            //     });
+            // };
+
+            // Reduce The Array Back to 0 to allow unique thumbnail id count to restart when user exit search results
+            listItems.forEach(() => {
+                let newthumbnailList = thumbnailList;
+                i--;
+                currentThumbnail = newthumbnailList[i];
+                console.log(currentThumbnail);
+            });
         }
     },
     function(err) { console.error("Execute error", err); });
 };
 
-// Gamelounge Button Functions
+// Gamelounge Button/ Click Functions
 menuBtn.addEventListener("click", () => {
     leftSidebar.classList.toggle("game-sidebar-maximize");
     contentBody.classList.toggle("section-body-container-minimize");
@@ -376,6 +449,11 @@ videoLoungeExit.addEventListener("click", () => {
     videoLoungeContainer.classList.toggle("hide");
 });
 
+videoLoungeExit2.addEventListener("click", () => {
+    searchContainer.classList.toggle("hide");
+    videoLoungeContainer.classList.toggle("hide");
+});
+
 searchResultsExit.addEventListener("click", () => {
     searchContainer.classList.add("hide");
     gameloungeBodyContainer.classList.remove("hide");
@@ -398,18 +476,19 @@ downloadExit.addEventListener("click", () => {
 
 infoPolicy.addEventListener("click", () => {
     // searchContainer.classList.toggle("filter-overlay");
-    modalContainer.classList.toggle("hide");
-    searchContainer.classList.add("policy-shadow");
-    modalContainer.classList.remove("policy-appear");
+    // modalContainer.classList.toggle("hide");
+    searchContainer.classList.toggle("hide");
+    disclaimerContainer.classList.toggle("hide");
+    // modalContainer.classList.remove("policy-appear");
 });
 
-modalExit.addEventListener("click", () => {
-    // searchContainer.classList.toggle("filter-overlay");
-    modalContainer.classList.toggle("hide");
-    searchContainer.classList.remove("policy-shadow");
-});
+// modalExit.addEventListener("click", () => {
+//     // searchContainer.classList.toggle("filter-overlay");
+//     modalContainer.classList.toggle("hide");
+//     searchContainer.classList.remove("policy-shadow");
+// });
 
 policyOpen.addEventListener("click", () => {
-    searchContainer.classList.toggle("hide");
+    gameloungeBodyContainer.classList.toggle("hide");
     disclaimerContainer.classList.toggle("hide");
 });

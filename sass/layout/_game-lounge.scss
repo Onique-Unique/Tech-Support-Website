@@ -1542,6 +1542,7 @@
     position: relative;
     max-width: 90%;
     margin: 10% auto;
+    box-shadow: 1rem 2rem 50rem black;
 
      .disclaimer {
         padding: 2%;
@@ -2498,82 +2499,171 @@
         } 
     }
 
-    .important-terms-container {
-        width: 100%;
+    // IMPORTANT TERMS CONTAINER--------------------------------------
+    // .important-terms-container {
+    //     width: 100%;
 
-        .important-terms {
-            margin: 0 auto;
-            width: 40%;
-            height: 40rem;
-            background-color: rgb(255, 255, 255);
-            padding: 2%;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            border-radius: 5px; 
+    //     .important-terms {
+    //         margin: 0 auto;
+    //         width: 40%;
+    //         height: 40rem;
+    //         background-color: rgb(255, 255, 255);
+    //         padding: 2%;
+    //         position: fixed;
+    //         top: 50%;
+    //         left: 50%;
+    //         transform: translate(-50%, -50%);
+    //         border-radius: 5px; 
 
-            @media(max-width: 560px) {
-                width: 80% !important;
+    //         @media(max-width: 560px) {
+    //             width: 80% !important;
+    //         }
+
+    //         .important-terms-exit {
+    //             display: flex;
+    //             justify-content: flex-end;
+    //             align-items: center;
+    //             font-size: 3rem;
+    //             color: rgb(43, 43, 43);
+    //         }
+
+    //         .important-terms-insert--top {
+    //             display: flex;
+    //             justify-content: center;
+    //             align-items: center;
+
+    //             & a {
+    //                 margin: 10%;
+
+    //                 & i {
+    //                     font-size: 4rem;
+    //                 }
+    //             }
+
+    //             .fa-google {
+    //                 color: #00a4d6;
+    //             }
+
+    //             .fa-youtube {
+    //                 color: red;
+    //             }
+    //         }
+
+    //         .important-terms-insert--main {
+
+    //             & p {
+    //                 text-align: center;
+    //                 font-size: 1.3rem;
+    //                 margin-bottom: 3%;
+
+    //                 #yt-terms-link {
+    //                     color: red;
+    //                 }
+    //             }
+
+    //             #feenixbloom-policy {
+    //                 display: flex;
+    //                 justify-content: center;
+    //                 align-items: center;
+
+    //                 & a {
+
+    //                     #policy-icon {
+    //                         font-size: 2.5rem;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+}
+
+// CONSENT MODAL PRIVACY POLICY POP UP
+.consent-modal{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+    align-items: flex-end;
+
+    .consent-content{
+        background-color: #fff;
+        padding: .5vw 3vw;
+        border-radius: 10px 10px 0 0;
+
+        .important-terms-insert--top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & a {
+                margin: 1.5%;
+
+                & i {
+                    font-size: 2.5rem;
+                }
             }
 
-            .important-terms-exit {
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-                font-size: 3rem;
-                color: rgb(43, 43, 43);
+            .fa-google {
+                color: #00a4d6;
             }
 
-            .important-terms-insert--top {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                & a {
-                    margin: 10%;
-
-                    & i {
-                        font-size: 4rem;
-                    }
-                }
-
-                .fa-google {
-                    color: #00a4d6;
-                }
-
-                .fa-youtube {
-                    color: red;
-                }
+            .fa-youtube {
+                color: red;
             }
+        }
 
-            .important-terms-insert--main {
+        & p {
+            text-align: center;
+            font-size: 1.3rem;
+            margin-bottom: .5%;
 
-                & p {
-                    text-align: center;
-                    font-size: 1.3rem;
-                    margin-bottom: 3%;
+            #yt-terms-link {
+                color: red;
+            }
+        }
 
-                    #yt-terms-link {
-                        color: red;
-                    }
-                }
+        #feenixbloom-policy {
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-                #feenixbloom-policy {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+            & a {
 
-                    & a {
-
-                        #policy-icon {
-                            font-size: 2.5rem;
-                        }
-                    }
+                #policy-icon {
+                    font-size: 2rem;
                 }
             }
         }
+
+        .consent-btns{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 2em;
+
+            .consent-btn{
+                border: none;
+                outline: none;
+                padding: .8em 1.5em;
+                width: 100px;
+                margin-right: 1em;
+                border-radius: 3px;
+                text-transform: uppercase;
+            }
+
+            .accept{
+                background-color: rgb(0, 185, 124);
+                color: #fff;
+            }
+        }
     }
+}
+.consent-modal.active{
+    display: flex;
 }
 
 @media(max-width: 960px) {
