@@ -48,22 +48,22 @@ const infoPolicy = document.querySelector(".info-icon");
 const policyOpen = document.getElementById("policy-icon");
 
 // Consent Privacy policy PopUp
-const cookieModal = document.querySelector(".consent-modal");
-const cancelCookieBtn = document.querySelector(".consent-btn.cancel");
-const acceptCookieBtn = document.querySelector(".consent-btn.accept");
+const noticeModal = document.querySelector(".consent-modal");
+const cancelNoticeBtn = document.querySelector(".consent-btn.cancel");
+const acceptNoticeBtn = document.querySelector(".consent-btn.accept");
 
-cancelCookieBtn.addEventListener("click", function (){
-    cookieModal.classList.remove("active");
+cancelNoticeBtn.addEventListener("click", function (){
+    noticeModal.classList.remove("active");
 })
-acceptCookieBtn.addEventListener("click", function (){
-    cookieModal.classList.remove("active");
-    localStorage.setItem("cookieAccepted", "yes");
+acceptNoticeBtn.addEventListener("click", function (){
+    noticeModal.classList.remove("active");
+    localStorage.setItem("noticeAccepted", "yes");
 })
 
 setTimeout(function (){
-    let cookieAccepted = localStorage.getItem("cookieAccepted")
-    if (cookieAccepted != "yes"){
-        cookieModal.classList.add("active")
+    let noticeAccepted = localStorage.getItem("noticeAccepted")
+    if (noticeAccepted != "yes"){
+        noticeModal.classList.add("active")
     }
 }, 2000)
 
@@ -310,16 +310,16 @@ function execute() {
                         <div class="data-num"><li><a><img class="search-thumbnail" id="thumbnail-${currentThumbnail}" src="https://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p id="para-search-return">${videoTitle}</p></li></div>
                     `;
                     });
-                // output += `
+                // output += ` // Original output 1 insert-------------------------------
                 //     <div class="data-num"><li><a data-fancybox href="https://www.youtube.com/watch?v=${videoId}" target="_blank"><img class="search-thumbnail" id="thumbnail-${currentThumbnail}" src="https://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p id="para-search-return">${videoTitle}</p></li></div>
                 // `;
             output += '</ul>';
             
-            // original output insert-----------------------------------
+            // original output 2 insert-----------------------------------
             // <div class="data-num"><li><a data-fancybox href="https://www.youtube.com/watch?v=${videoId}" target="_blank"><img id="search-thumbnail" src="http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg" /></a><p id="para-search-return">${videoTitle}</p></li></div>
             // -------------------------------------------------------
 
-            // Alternative Prev Next Option
+            // Alternative Prev | Next Option---------------------------
             // if (response.result.prevPageToken) {
             //     output += `<br><a class="paginate" href="#" data-id="${response.result.prevPageToken}" onclick="paginate(event, this)">Prev</a>`;
             // }
@@ -336,17 +336,17 @@ function execute() {
             console.log(allThumbnailIdArray);
 
             // ---------------LOGICAL SCRIPT FOR RETURNED SEARCH QUERY/ RESULTS VIDEOS------------------------------- 
-            // for(let i = 0; i < allThumbnailIdArray.length && i < allVideoIdArray.length; i++) {
-            //     document.getElementById(allThumbnailIdArray[i]).addEventListener("click", () => {
-            //         console.log(allThumbnailIdArray[i]);
-            //         var id = allVideoIdArray[i];
-            //         searchContainer.classList.toggle("hide");
-            //         videoLoungeContainer.classList.toggle("hide");
-            //         videoLoungeExit.classList.add("hide");
-            //         videoLoungeExit2.classList.remove("hide");
-            //         document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0"></iframe>`
-            //     });
-            // };
+            for(let i = 0; i < allThumbnailIdArray.length && i < allVideoIdArray.length; i++) {
+                document.getElementById(allThumbnailIdArray[i]).addEventListener("click", () => {
+                    console.log(allThumbnailIdArray[i]);
+                    var id = allVideoIdArray[i];
+                    searchContainer.classList.toggle("hide");
+                    videoLoungeContainer.classList.toggle("hide");
+                    videoLoungeExit.classList.add("hide");
+                    videoLoungeExit2.classList.remove("hide");
+                    document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0"></iframe>`
+                });
+            };
 
             // Reduce The Array Back to 0 to allow unique thumbnail id count to restart when user exit search results
             listItems.forEach(() => {
