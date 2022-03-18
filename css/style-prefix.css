@@ -4923,11 +4923,18 @@ footer p {
   display: none;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: flex-end; }
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
   .consent-modal .consent-content {
     background-color: #fff;
     padding: .5vw 3vw;
-    border-radius: 10px 10px 0 0; }
+    border-radius: 10px 10px 0 0;
+    width: 35%; }
+    @media (max-width: 960px) {
+      .consent-modal .consent-content {
+        width: 100%; } }
     .consent-modal .consent-content .important-terms-insert--top {
       display: -webkit-box;
       display: -ms-flexbox;

@@ -2589,11 +2589,17 @@
     z-index: 999;
     display: none;
     align-items: flex-end;
+    justify-content: flex-end;
 
     .consent-content{
         background-color: #fff;
         padding: .5vw 3vw;
         border-radius: 10px 10px 0 0;
+        width: 35%;
+
+        @media(max-width: 960px) {
+            width: 100%;
+        }
 
         .important-terms-insert--top {
             display: flex;
