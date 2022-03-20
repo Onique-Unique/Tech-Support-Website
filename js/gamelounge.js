@@ -15,10 +15,10 @@ const formContainer = document.querySelector(".gamelounge-contact-container");
 const disclaimerContainer = document.querySelector(".fair-use-disclaimer--container");
 const downloadContainer = document.querySelector(".gamelounge-download-container");
 const searchContainer = document.querySelector(".search-results");
-const leaderboardContainer = document.getElementById("leaderboard");
-const leaderboardClick = document.querySelector(".apex-leaderboards");
+const contentModalContainer = document.getElementById("content-modal");
 const publisherContainer = document.querySelector(".publishments-container");
 const videoLoungeContainer = document.querySelector(".video-lounge-container");
+const newsListings = document.getElementById("news-listings");
 
 // Icon Enter and Exit
 const playlistIcon = document.getElementById("up-icon");
@@ -28,8 +28,8 @@ const emailExit = document.querySelector(".form-exit");
 const settingsIcon = document.getElementById("settings-icon");
 const settingsIconAlt = document.getElementById("settings-icon-min");
 const disclaimerExit = document.querySelector(".disclaimer-exit");
-const leaderboardIcon = document.getElementById("community-icon");
-const leaderboardExit = document.querySelector(".leaderboard-exit");
+const articleNewsIcon = document.getElementById("latest-news-icon");
+const articleNewsIconExit = document.querySelector(".content-modal-exit");
 const downloadIcon = document.querySelector(".download-right-arrow");
 const downloadIconSecondary = document.querySelector(".download-right-arrow-secondary");
 const downloadExit = document.getElementById("download-back");
@@ -100,7 +100,7 @@ playlistRefresh.addEventListener("click", () => {
         document.getElementById("playlist-embed").innerHTML = `<iframe id="embed-music" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0" modestbranding="1"></iframe>`
 });
 
-var videoListings = ["Pvqm6_mplRs", "XRtv30j0pp8", "LcsOSIXc9cg", "x9RjkZuLmBw", "MKif6px7hb4", "mNLCRZsopqg", "KXRosceNwfc", "4sV94dhP518", "Ya5Z1ocmbec", "g9aOqJ_Mujw", "INTyMiA8zkc", "7_VjSAkFNKA", "YZ_HT9dRpoQ", "Lw9UUsZwrmc", "ZMuVHf3Xugo", "pFJyKUCKzko", "sv0g5vPO-N8", "JCNLzcVrS_c", "fCBzFk4Zvjk", "SlUcf-0n2Pc", "xlmuq0RcsKc", "2jEMI9U53Qs", "Rtxf-kVYF8M", "5THFjkoOQJ8", "11RZI7Tf2uI", "KtT57G8kT20", "v8ZDDbHppMQ", "yIH9XX6TjrM", "DSqp7wEbbeY", "GLojO9k5YqE", "qamxgh4vMuQ", "qsrU1Dq8Q_c", "jykI2bqKr0U", "QUhFZF6h_PA", "5mxeVyhlkL4", "vcYjDOt5JyY", "LhhLaIEDXyE", "z9YfQW5OJUU", "d2z9lDnsAYY", "wqMaedijeh4",]
+var videoListings = ["p3vAeH8_WAo", "aNJEGMjkmB4", "JCNLzcVrS_c", "tgGVzsU-XqE", "t2cgKUapfag", "KZTWjGMSC-g", "ert8TjEfO6Y", "jykI2bqKr0U", "LcsOSIXc9cg", "KXRosceNwfc", "INTyMiA8zkc", "LwiZNjpyXYQ", "sv0g5vPO-N8", "g9aOqJ_Mujw", "Ya5Z1ocmbec", "Csy3a9MXhmI", "fCBzFk4Zvjk", "YQyb-FMD9yI", "ochPdvqAOtQ", "Pvqm6_mplRs", "4sV94dhP518", "DSqp7wEbbeY", "ZMuVHf3Xugo", "Rtxf-kVYF8M", "k5Dppmewwi4", "KtT57G8kT20", "YZ_HT9dRpoQ", "ndoDekUMGdc", "7_VjSAkFNKA", "XRtv30j0pp8", "qsrU1Dq8Q_c", "v8ZDDbHppMQ", "rnix_tLX4tA", "-FqKPhxXyQM", "mNLCRZsopqg", "W3wnDWN_Qt0", "U1U6-IjlhbM", "SlUcf-0n2Pc", "yu5M2A7-QIU", "wqMaedijeh4", "BJf2USdQpTk", "5mxeVyhlkL4",]
 var featuredListings = [];
 
 // Video Lounge Shuffle Random | Prev - Next
@@ -133,7 +133,7 @@ videoListNext.addEventListener("click", () => {
 
 // ID/ Thumbnail identifiers for Must Watch Videos on main page
 watchFeaturedList = ["watch-1", "watch-2", "watch-3", "watch-4"];
-watchFeaturedId = ["Pvqm6_mplRs", "IJzp51g-uxM", "LcsOSIXc9cg", "YQyb-FMD9yI",];
+watchFeaturedId = ["aNJEGMjkmB4", "t2cgKUapfag", "Csy3a9MXhmI", "ochPdvqAOtQ",];
 
 // ---------------LOGICAL SCRIPT FOR FEATURED MUST WATCH VIDEOS-------------------------------
 for(let i = 0; i < watchFeaturedList.length && i < watchFeaturedId.length; i++) {
@@ -424,14 +424,20 @@ disclaimerExit.addEventListener("click", () => {
     disclaimerContainer.classList.toggle("hide");
 });
 
-leaderboardIcon.addEventListener("click", () => {
-    gameloungeBodyContainer.classList.toggle("hide");
-    leaderboardContainer.classList.toggle("hide");
+articleNewsIcon.addEventListener("click", () => {
+    contentModalContainer.classList.toggle("hide");
+    leftSidebar.classList.toggle("game-sidebar-maximize");
+    contentBody.classList.toggle("section-body-container-minimize");
 });
 
-leaderboardExit.addEventListener("click", () => {
-    gameloungeBodyContainer.classList.toggle("hide");
-    leaderboardContainer.classList.toggle("hide");
+articleNewsIconExit.addEventListener("click", () => {
+    contentModalContainer.classList.toggle("hide");
+    leftSidebar.classList.toggle("game-sidebar-maximize");
+    contentBody.classList.toggle("section-body-container-minimize");
+});
+
+newsListings.addEventListener("click", () => {
+    contentModalContainer.classList.toggle("hide");
 });
 
 videoLoungeIcon.addEventListener("click", () => {
