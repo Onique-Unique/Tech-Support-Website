@@ -3034,6 +3034,9 @@ footer p {
           width: 100%; }
           .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .article-video-container .article-video, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .article-video-container .article-video {
             width: 100%; }
+          .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .article-video-container #article-yt-vid, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .article-video-container #article-yt-vid {
+            width: 100%;
+            max-height: 40rem; }
         .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content h3, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content h3 {
           font-size: 3.5rem;
           color: #302b63; }

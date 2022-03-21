@@ -133,8 +133,8 @@ videoListNext.addEventListener("click", () => {
 });
 
 // ID/ Thumbnail identifiers for Must Watch Videos on main page
-watchFeaturedList = ["watch-1", "watch-2", "watch-3", "watch-4"];
-watchFeaturedId = ["aNJEGMjkmB4", "t2cgKUapfag", "Csy3a9MXhmI", "ochPdvqAOtQ",];
+watchFeaturedList = ["watch-1", "watch-2", "watch-3", "watch-4", "watch-5",];
+watchFeaturedId = ["aNJEGMjkmB4", "t2cgKUapfag", "Csy3a9MXhmI", "ochPdvqAOtQ", "KZTWjGMSC-g",];
 
 // ---------------LOGICAL SCRIPT FOR FEATURED MUST WATCH VIDEOS-------------------------------
 for(let i = 0; i < watchFeaturedList.length && i < watchFeaturedId.length; i++) {
