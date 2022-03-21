@@ -18,7 +18,8 @@ const searchContainer = document.querySelector(".search-results");
 const contentModalContainer = document.getElementById("content-modal");
 const publisherContainer = document.querySelector(".publishments-container");
 const videoLoungeContainer = document.querySelector(".video-lounge-container");
-const newsListings = document.getElementById("news-listings");
+const newsFeaturedListings = document.getElementById("featured-news-listing");
+const newsOtherListings = document.getElementById("other-news-listings");
 
 // Icon Enter and Exit
 const playlistIcon = document.getElementById("up-icon");
@@ -436,7 +437,11 @@ articleNewsIconExit.addEventListener("click", () => {
     contentBody.classList.toggle("section-body-container-minimize");
 });
 
-newsListings.addEventListener("click", () => {
+newsFeaturedListings.addEventListener("click", () => {
+    contentModalContainer.classList.toggle("hide");
+});
+
+newsOtherListings.addEventListener("click", () => {
     contentModalContainer.classList.toggle("hide");
 });
 

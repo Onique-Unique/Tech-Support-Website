@@ -2667,7 +2667,9 @@ footer p {
     max-width: 40rem; }
     .game-lounge-right-aside .game-community-sidebar .community-sidebar-display {
       height: 100vh;
-      position: relative; }
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column; }
       .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content {
         padding: 2%;
         margin-top: 30%;
@@ -2700,29 +2702,28 @@ footer p {
               padding: 0 10%; }
             .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .download-prompt .appstore .android {
               color: #07a807; }
-        .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .game-chatroom {
-          position: absolute;
-          bottom: 10%;
-          width: 100%;
-          max-height: 30rem;
-          overflow-y: scroll;
-          background-color: white;
-          background: linear-gradient(to right, #525280, #6159c0, #2e20aa);
-          border-bottom: 2px solid #3f1d1d;
-          border-radius: 10px;
-          -ms-overflow-style: none;
-          scrollbar-width: none; }
-          .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .game-chatroom::-webkit-scrollbar {
-            display: none; }
         .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .hot-topics {
           height: 20rem;
           background-color: white;
           border-radius: 0 0 5px 5px;
           overflow-y: scroll;
-          -ms-overflow-style: none;
-          scrollbar-width: none; }
+          scrollbar-color: #C33764 #0f0c2900;
+          scrollbar-width: thin !important; }
           .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .hot-topics::-webkit-scrollbar {
-            display: none; }
+            width: 1vw; }
+          .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .hot-topics::-webkit-scrollbar-thumb {
+            background-color: #c3376383;
+            border-radius: 10px; }
+            .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .hot-topics::-webkit-scrollbar-thumb:hover {
+              background-color: #C33764; }
+          .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .hot-topics::-webkit-scrollbar-track {
+            background-color: #0f0c29; }
+          @media (max-width: 960px) {
+            .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .hot-topics {
+              -ms-overflow-style: none;
+              scrollbar-width: none; }
+              .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .hot-topics::-webkit-scrollbar {
+                display: none; } }
           .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .hot-topics #topics-notif {
             color: #ffe02f; }
           .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .hot-topics .topics {
@@ -2743,6 +2744,18 @@ footer p {
               width: 100%;
               background-color: #2b2b2b;
               margin-bottom: 3%; }
+      .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .game-chatroom {
+        width: 100%;
+        max-height: 30rem;
+        overflow-y: scroll;
+        background-color: white;
+        background: linear-gradient(to right, #525280, #6159c0, #2e20aa);
+        border-bottom: 2px solid #3f1d1d;
+        border-radius: 10px;
+        -ms-overflow-style: none;
+        scrollbar-width: none; }
+        .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .game-chatroom::-webkit-scrollbar {
+          display: none; }
 
 .hide {
   display: none; }
@@ -4022,8 +4035,9 @@ footer p {
   display: flex; }
 
 .content-modal {
-  height: 100vh;
+  height: 100%;
   width: 30%;
+  overflow-y: scroll;
   background-color: aliceblue;
   position: fixed;
   top: 0;
@@ -4047,11 +4061,19 @@ footer p {
         font-size: 1.6rem; } }
   .content-modal .modal-content #h1-secondary {
     margin-bottom: 10%; }
-  .content-modal .modal-content #news-listings a h2 {
+  .content-modal .modal-content #featured-news-listing h3, .content-modal .modal-content #other-news-listings h3 {
+    text-align: center;
+    font-size: 1.6rem;
+    text-transform: uppercase; }
+  .content-modal .modal-content #featured-news-listing a #featured-listing, .content-modal .modal-content #featured-news-listing a h2, .content-modal .modal-content #other-news-listings a #featured-listing, .content-modal .modal-content #other-news-listings a h2 {
     color: white;
     margin: 5% 0;
-    background: #302b63;
+    background: #c33763;
     padding: 4%; }
+    .content-modal .modal-content #featured-news-listing a #featured-listing:hover, .content-modal .modal-content #featured-news-listing a h2:hover, .content-modal .modal-content #other-news-listings a #featured-listing:hover, .content-modal .modal-content #other-news-listings a h2:hover {
+      background: #dd3f718f; }
+  .content-modal .modal-content #featured-news-listing a h2, .content-modal .modal-content #other-news-listings a h2 {
+    background: #302b63; }
 
 .content-modal-minimize {
   width: 30%;
