@@ -873,6 +873,15 @@
         height: auto;
         background-color: white;
     }
+
+    // For the solo/ stand alone pages/ articles
+    .solo-articles {
+        height: 8rem;
+
+        .nav-top-article {
+            top: 80%;
+        }
+    }
 }
 
 .section-body-container-minimize {

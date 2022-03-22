@@ -3704,6 +3704,10 @@ footer p {
   .section-body-container .game-lounge-main {
     height: auto;
     background-color: white; }
+  .section-body-container .solo-articles {
+    height: 8rem; }
+    .section-body-container .solo-articles .nav-top-article {
+      top: 80%; }
 
 .section-body-container-minimize {
   padding-left: 8%; }
