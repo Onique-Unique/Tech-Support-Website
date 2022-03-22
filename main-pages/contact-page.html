@@ -199,7 +199,7 @@
                </h2>
                <div class="contact__form">
                    <!--  -->
-                   <form action="https://formsubmit.co/oniquecampbell@yahoo.com" method="POST" class="form" target="#">
+                   <form method="POST" class="form" target="#">
                        <div class="form__name-email">
                            <input type="text" name="name" id="name" class="form__input" placeholder="Full Name" required></input>
                            <input type="email" name="email" id="email" class="form__input" placeholder="Email Address" required></input>
@@ -234,5 +234,13 @@
       });
     </script>
     <script src="/js-minify/otherpages-minify.js"></script>
+    <script>
+        const contactSend = document.getElementById("submit-btn");
+        const action = "https://formsubmit.co/oniquecampbell@yahoo.com";
+
+        contactSend.addEventListener("click", () => {
+            document.querySelector(".form").action = action;
+        });
+    </script>
 </body>
 </html>

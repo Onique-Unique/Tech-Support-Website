@@ -92,6 +92,14 @@ for(i = 0; i < dateMain.length; i++){
     // }
 };
 
+// Contact Send to avoid spam and hide email from email crawlers
+const contactSend = document.getElementById("contact-submit");
+const action = "https://formsubmit.co/oniquecampbell@yahoo.com";
+
+contactSend.addEventListener("click", () => {
+    document.getElementById("gamelounge-contact").action = action;
+});
+
 // Playlist Switch Random
 const playlistArrayId = ["-9gEgshJUuY", "ok_-2KkKQF4", "3sp0wd8j8CQ", "aL14iT2ix0w", "7tNtU5XFwrU", "8NzYo0jmYek", "mZHTwjLznVg", "-6v0vFVp52w", "FQRtxvUc8W4", "3bp1kIUlYEM", "wKwR2CRbVVo", "6Irus3d5f0E", "7NOSDKb0HlU", "tCs48OFv7xA", "GDQnA1LVCWA", "rXsZk4Mz_Ac"];
 const playlistRefresh = document.querySelector(".playlist-random");
