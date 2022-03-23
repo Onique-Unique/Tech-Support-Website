@@ -45,7 +45,7 @@
             position: relative;
             min-width: 320px;
 
-            .gamelounge-home-image, .gamelounge-watch-page {
+            .gamelounge-home-image, .gamelounge-watch-page, .gamelounge-rank-page {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -68,6 +68,71 @@
                     object-fit: cover;
                     width: 100%;
                     pointer-events: none;
+                    filter: brightness(.6);
+                }
+
+                .rank-tool-container {
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 70%;
+                    height: 100vh;
+
+                    #space-fill {
+                        height: 15rem;
+                    }
+
+                    .rank-tool-box {
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+
+                        & h1, .rank-climb-result {
+                            text-align: center;
+                            color: white;
+                            text-transform: uppercase;
+                            font-size: 4rem;
+                            padding: 5% 0;
+                            font-family: 'Bebas Neue', cursive;
+                        }
+
+                        .rank-climb-result {
+                            font-size: 3.6rem;
+                            padding: 0;
+                            margin: 6% 0;
+                        }
+                        
+                        .rank-flex {
+                            text-align: center;
+
+                            .rank-flex-inner {
+
+                                .rank-control {
+                                    margin-top: 4%;
+
+                                    .current-select, & input {
+                                        width: 100%;
+                                        height: 4rem;
+                                    }
+                                }
+                            }
+                        }
+
+                        & p {
+                            text-align: center;
+
+                            .rank-btn {
+                                width: 20vw;
+                                height: 3rem;
+                                border-radius: 25px;
+                                outline: none;
+                                border: none;
+                                margin-top: 8%;
+                            }
+                        }
+                    }
                 }
 
                 #champion-header {
