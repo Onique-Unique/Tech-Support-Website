@@ -68,7 +68,7 @@
                     object-fit: cover;
                     width: 100%;
                     pointer-events: none;
-                    filter: brightness(.6);
+                    filter: brightness(.9);
                 }
 
                 .rank-tool-container {
@@ -88,6 +88,11 @@
                         position: relative;
                         display: flex;
                         flex-direction: column;
+                        background: rgb(63,11,9);
+                        background: linear-gradient(90deg, rgba(119, 16, 13, 0.438) 0%, rgba(245, 11, 11, 0.6) 42%, rgba(214, 34, 24, 0.611) 72%);
+                        padding: 4% 10%;
+                        border-radius: 25px;
+                        box-shadow: 0.5rem 0.5rem 6rem 2rem black;
 
                         & h1, .rank-climb-result {
                             text-align: center;
@@ -116,6 +121,10 @@
                                         width: 100%;
                                         height: 4rem;
                                     }
+
+                                    .current-select {
+                                        background-color: #ffda62;
+                                    }
                                 }
                             }
                         }
@@ -139,6 +148,7 @@
                     position: absolute;
                     top: 2.5%;
                     height: 20rem;
+                    z-index: 2;
                 }
 
                 .featured-content {
