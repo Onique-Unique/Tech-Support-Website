@@ -124,6 +124,26 @@
 
                                     .current-select {
                                         background-color: #ffda62;
+
+                                        & optgroup {
+                                            color: #414166;
+                                        }
+
+                                        #bronze {
+                                            background-color: #f1a150c5;
+                                        }
+                                        #silver {
+                                            background-color: #fffffff6;
+                                        }
+                                        #gold {
+                                            background-color: #FFD700c5;
+                                        }
+                                        #platinum {
+                                            background-color: 	#f4ffffc5;
+                                        }
+                                        #diamond {
+                                            background-color: #b0edffc5;
+                                        }
                                     }
                                 }
                             }

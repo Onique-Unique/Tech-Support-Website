@@ -66,11 +66,38 @@
                                 <div class="rank-select-container rank-control">
                                     <select class="current-select" id="current-rank">
                                         <option selected>Current Rank</option>
-                                        <option value="Bronze">Bronze</option>
-                                        <option value="Silver">Silver</option>
-                                        <option value="Gold">Gold</option>
-                                        <option value="Platinum">Platinum</option>
-                                        <option value="Diamond">Diamond</option>
+                                        <div class="rank-opt-group">
+                                            <optgroup label="Bronze Tier" id="bronze">
+                                                <option value="Bronze-IV">Bronze - IV</option>
+                                                <option value="Bronze-III">Bronze - III</option>
+                                                <option value="Bronze-II">Bronze - II</option>
+                                                <option value="Bronze-I">Bronze - I</option>
+                                            </optgroup>
+                                            <optgroup label="Silver Tier" id="silver">
+                                                <option value="Silver-IV">Silver - IV</option>
+                                                <option value="Silver-III">Silver - III</option>
+                                                <option value="Silver-II">Silver - II</option>
+                                                <option value="Silver-I">Silver - I</option>
+                                            </optgroup>
+                                            <optgroup label="Gold Tier" id="gold">
+                                                <option value="Gold-IV">Gold - IV</option>
+                                                <option value="Gold-III">Gold - III</option>
+                                                <option value="Gold-II">Gold - II</option>
+                                                <option value="Gold-I">Gold - I</option>
+                                            </optgroup>
+                                            <optgroup label="Platinum Tier" id="platinum">
+                                                <option value="Platinum-IV">Platinum - IV</option>
+                                                <option value="Platinum-III">Platinum - III</option>
+                                                <option value="Platinum-II">Platinum - II</option>
+                                                <option value="Platinum-I">Platinum - I</option>
+                                            </optgroup>
+                                            <optgroup label="Diamond Tier" id="diamond">
+                                                <option value="Diamond-III">Diamond - IV</option>
+                                                <option value="Diamond-III">Diamond - III</option>
+                                                <option value="Diamond-II">Diamond - II</option>
+                                                <option value="Diamond-I">Diamond - I</option>
+                                            </optgroup>
+                                        </div>
                                     </select>
                                 </div>
                                 <div class="rank-match-per rank-control">
@@ -85,7 +112,7 @@
                         <p><button class="rank-btn" id="rank-submit">Submit</button></p>                    
                     </div>     
                 </div>
-            </div>       
+            </div>          
         </main>
     </div>
     
@@ -99,6 +126,6 @@
      </script>
 
      <!-- Local Script -->
-    <script src="/js/rank-tool.js"></script>
+    <script src="/js-minify/rank-tool-min.js"></script>
 </body>
 </html>
