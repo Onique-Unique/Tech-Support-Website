@@ -3038,6 +3038,22 @@ footer p {
   .section-body-container .game-lounge-main {
     height: auto;
     background-color: white; }
+    .section-body-container .game-lounge-main .article-socials {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .section-body-container .game-lounge-main .article-socials .article-socials-inner h2 {
+        margin: 3% 0;
+        text-transform: uppercase; }
+      .section-body-container .game-lounge-main .article-socials .article-socials-inner #active-socials {
+        display: flex; }
+        .section-body-container .game-lounge-main .article-socials .article-socials-inner #active-socials a .my-twitter, .section-body-container .game-lounge-main .article-socials .article-socials-inner #active-socials a .my-youtube {
+          font-size: 3rem;
+          padding: 0 3%; }
+        .section-body-container .game-lounge-main .article-socials .article-socials-inner #active-socials a .my-twitter {
+          color: #00a4d6; }
+        .section-body-container .game-lounge-main .article-socials .article-socials-inner #active-socials a .my-youtube {
+          color: red; }
   .section-body-container .solo-articles {
     height: 8rem; }
     .section-body-container .solo-articles .nav-top-article {

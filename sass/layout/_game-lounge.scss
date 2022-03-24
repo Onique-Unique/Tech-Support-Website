@@ -1000,6 +1000,38 @@
     .game-lounge-main {
         height: auto;
         background-color: white;
+
+        .article-socials {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .article-socials-inner {
+
+                & h2 {
+                    margin: 3% 0;
+                    text-transform: uppercase;
+                }
+
+                #active-socials {
+                    display: flex;
+
+                    & a {
+    
+                        .my-twitter, .my-youtube {
+                            font-size: 3rem;
+                            padding: 0 3%;
+                        }
+                        .my-twitter {
+                            color: #00a4d6;
+                        }
+                        .my-youtube {
+                            color: red;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     // For the solo/ stand alone pages/ articles
