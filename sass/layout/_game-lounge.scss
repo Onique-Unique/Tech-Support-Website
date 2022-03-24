@@ -71,6 +71,18 @@
                     filter: brightness(.9);
                 }
 
+                .rank-right-ad {
+                    position: absolute; 
+                    top: 0%; 
+                    right: 0%; 
+                    width: 25%; 
+                    height: 100%;
+
+                    @media(max-width: 768px) {                      
+                        display: none;
+                    }
+                }
+
                 .rank-tool-container {
                     position: absolute;
                     display: flex;
@@ -94,6 +106,23 @@
                         border-radius: 25px;
                         box-shadow: 0.5rem 0.5rem 6rem 2rem black;
 
+                        .gl-logo {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+
+                            & a {
+
+                                & img {
+                                    height: 5rem;
+                                }
+                            } 
+
+                            & p {
+                                color: white;
+                            }
+                        }
+
                         & h1, .rank-climb-result {
                             text-align: center;
                             color: white;
@@ -101,6 +130,10 @@
                             font-size: 4rem;
                             padding: 5% 0;
                             font-family: 'Bebas Neue', cursive;
+
+                            @media(max-width: 560px){
+                                font-size: 3rem;
+                            }
                         }
 
                         .rank-climb-result {

@@ -36,20 +36,53 @@
     <!-- main stylesheet -->
     <link rel="stylesheet" href="/css/style-minify.css">
 
+    <!-- Google Adsense Script -->
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7079047961613379"
+     crossorigin="anonymous"></script> -->
+
+     <script> function lazyload() {
+        var scriptTag = document.createElement('script'); 
+        scriptTag.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7079047961613379"
+        crossorigin="anonymous"; // set the src attribute
+        // scriptTag.type = 'text/javascript'; // if you have an HTML5 website you may want to comment this line out
+        scriptTag.async = true; // the HTML5 async attribute
+        var blockTag = document.getElementsByTagName('blockquote')[0];
+        blockTag.appendChild(scriptTag);}
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6M35XFDJT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-W6M35XFDJT');
+    </script>
+    <!-- onload="lazyload();" -->
+
     <style>
         html, body {
             cursor: url(/images/game-lounge-img/assets/apex-cursor.png), auto;
         }
-        .info-icon {
-            position: absolute;
-            top: 1.5%;
-            right: 1.5%;
-            font-size: 2rem;
-            color: white;
-        } 
+        #gamelounge-ad-placement {
+            scrollbar-color:#C33764 #0f0c2900 ;
+        }
+        #gamelounge-ad-placement::-webkit-scrollbar-thumb {
+            background-color: #c3376383;
+        }
+        #gamelounge-ad-placement::-webkit-scrollbar-thumb:hover {
+            background-color: #C33764;
+        }
+        #gamelounge-ad-placement::-webkit-scrollbar-track {
+            background-color: #302b6300;
+        }
+        #gamelounge-ad-placement::-webkit-scrollbar-thumb {
+            border-radius: 10px
+        }
     </style>
 </head>
-<body class="game-lounge-body--landing-page">
+<body onload="lazyload();" class="game-lounge-body--landing-page">
     <div class="game-lounge-body-container">
         <main class="game-lounge-landing--main" data-aos="fade">
             <div class="gamelounge-rank-page">
@@ -58,6 +91,10 @@
                 <div class="rank-tool-container">
                     <div id="space-fill"></div>
                     <div class="rank-tool-box">
+                        <div class="gl-logo">
+                            <a href="/main-pages/apex-mobile/game-lounge-chatroom"><img src="/images/game-lounge-img/Gamelounge-logo/GameLounge-logo-secondary-removebg-preview.png" alt="Apex-Legends-Mobile Season Home Logo"></a>
+                            <p>Home</p>
+                        </div>
                         <h1>Can You Master Rank?</h1>
                         <br>
                         <div class="rank-climb-result"></div> 
@@ -112,6 +149,29 @@
                         <p><button class="rank-btn" id="rank-submit">Submit</button></p>                    
                     </div>     
                 </div>
+                
+                <!-- Custom Ad spot Right Placement -->
+                <section class="ad-spot rank-right-ad">
+                    <!-- Ad Spot text -->
+                    <p style="color: white; text-align: right;">
+                        Featured ad spot by google
+                    </p>
+                    <!-- Ad spot block -->
+                    <blockquote id="gamelounge-ad-placement" style="max-height: 100vh;">
+                        <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7079047961613379"
+                        crossorigin="anonymous"></script> -->
+                        <!-- Gamelounge ad -->
+                        <ins class="adsbygoogle"
+                        style="display:block; height: 18rem !important; width: 100%; "
+                        data-ad-client="ca-pub-7079047961613379"
+                        data-ad-slot="2601342528"
+                        data-ad-format="auto"
+                        data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </blockquote>
+                </section> 
             </div>          
         </main>
     </div>
