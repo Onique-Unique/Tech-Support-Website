@@ -193,6 +193,10 @@
                                 outline: none;
                                 border: none;
                                 margin-top: 8%;
+
+                                @media(max-width: 560px){
+                                    width: 30vw
+                                }
                             }
 
                             .animating {
