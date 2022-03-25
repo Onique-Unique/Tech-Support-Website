@@ -4,17 +4,13 @@ const pointsInput = document.getElementById('points');
 const rankInput = document.getElementById('current-rank');
 const rankResult = document.querySelector('.rank-climb-result');
 
-const rankBtn = document.querySelector("[data-rankBtn]");
-rankBtn.addEventListener("click", () => {
-    document.querySelector(".rank-climb-result").style.opacity = 0;
-    rankBtn.classList.toggle("animating");
+rankSubmit.addEventListener("click", () => {
+    rankResult.style.opacity = 0;
+    rankSubmit.classList.add("animating");
 
     setTimeout(function(){
-        rankSubmit.classList.remove("animating");
-        document.querySelector(".rank-climb-result").style.opacity = 1;
-
+        
         // BRONZE RANK----------------------------------
-        rankSubmit.addEventListener("click", () => {
             if (rankInput.value == "Bronze-IV") {
             let multiply = matchesInput.value * pointsInput.value;
             let sum = multiply + 0;
@@ -44,10 +40,9 @@ rankBtn.addEventListener("click", () => {
                 total = Math.round(days);
                 document.querySelector(".rank-climb-result").innerHTML = total + " - Days To Hit Master" ;
             }
-        });
+       
 
         // SILVER RANK----------------------------------
-        rankSubmit.addEventListener("click", () => {
             if (rankInput.value == "Silver-IV") {
             let multiply = matchesInput.value * pointsInput.value;
             let sum = multiply + 1200;
@@ -77,10 +72,8 @@ rankBtn.addEventListener("click", () => {
                 total = Math.round(days);
                 document.querySelector(".rank-climb-result").innerHTML = total + " - Days To Hit Master" ;
             }
-        });
 
         // GOLD RANK----------------------------------
-        rankSubmit.addEventListener("click", () => {
             if (rankInput.value == "Gold-IV") {
             let multiply = matchesInput.value * pointsInput.value;
             let sum = multiply + 2800;
@@ -110,10 +103,8 @@ rankBtn.addEventListener("click", () => {
                 total = Math.round(days);
                 document.querySelector(".rank-climb-result").innerHTML = total + " - Days To Hit Master" ;
             }
-        });
 
         // PLATINUM RANK----------------------------------
-        rankSubmit.addEventListener("click", () => {
             if (rankInput.value == "Platinum-IV") {
             let multiply = matchesInput.value * pointsInput.value;
             let sum = multiply + 4800;
@@ -143,10 +134,8 @@ rankBtn.addEventListener("click", () => {
                 total = Math.round(days);
                 document.querySelector(".rank-climb-result").innerHTML = total + " - Days To Hit Master" ;
             }
-        });
 
         // DIAMOND RANK----------------------------------
-        rankSubmit.addEventListener("click", () => {
             if (rankInput.value == "Diamond-IV") {
             let multiply = matchesInput.value * pointsInput.value;
             let sum = multiply + 7200;
@@ -176,6 +165,8 @@ rankBtn.addEventListener("click", () => {
                 total = Math.round(days);
                 document.querySelector(".rank-climb-result").innerHTML = total + " - Days To Hit Master" ;
             }
-        });
+
+        rankSubmit.classList.remove("animating");
+        rankResult.style.opacity = 1;
     }, 2000);
 });
