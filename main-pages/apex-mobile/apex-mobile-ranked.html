@@ -262,7 +262,7 @@
                                     <!-- Article Video -->
                                     <h1 style="font-size: 2rem; text-align: center; color: red; padding: 5% 0;">APEX LEGENDS MOBILE RANKED SYSTEM EXPLAINED...</h1>
                                     <div class="article-video-container" id="watch-1">
-                                        <img loading="lazy" id="article-yt-vid" src="/images/game-lounge-img/article-img/rank-explained.jpeg" alt="apex legends mobile gamelounge thumbnail" frameborder="0">
+                                        <img loading="lazy" id="article-yt-vid" src="https://i3.ytimg.com/vi/GanP2hz39To/hqdefault.jpg" alt="apex legends mobile gamelounge thumbnail" frameborder="0">
                                     </div>
                                     <p><span>Click thumbnail above to watch</span></p>
                                     <p>To understand the ranking system you have to understand these factors that i'm about to explain.
@@ -815,6 +815,22 @@
 
     <!-- Local Script -->
     <script src="/js/hot-topics.js"></script>
+    <script>
+        // ID/ Thumbnail identifiers for Must Watch Videos on main page
+        watchFeaturedList = ["watch-1",];
+            watchFeaturedId = ["GanP2hz39To",];
+
+            // ---------------LOGICAL SCRIPT FOR FEATURED MUST WATCH VIDEOS-------------------------------
+            for(let i = 0; i < watchFeaturedList.length && i < watchFeaturedId.length; i++) {
+                document.getElementById(watchFeaturedList[i]).addEventListener("click", () => {
+                    console.log(watchFeaturedList[i]);
+                    var id = watchFeaturedId[i];
+                    gameloungeBodyContainer.classList.toggle("hide");
+                    videoLoungeContainer.classList.toggle("hide");
+                    document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0"></iframe>`
+                });
+            };
+    </script>
     <script src="/js-minify/solo-articles-minify.js"></script>
 </body>
 </html>
