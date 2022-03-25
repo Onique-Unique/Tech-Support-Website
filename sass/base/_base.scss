@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --squish-animation-time: 500ms;
+    --progress-animation-time: 1000ms;
+}
+
 html {
     font-size: 62.5%;
     min-width: 26em;

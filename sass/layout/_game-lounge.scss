@@ -186,12 +186,52 @@
                             text-align: center;
 
                             .rank-btn {
+                                position: relative;
                                 width: 20vw;
                                 height: 3rem;
                                 border-radius: 25px;
                                 outline: none;
                                 border: none;
                                 margin-top: 8%;
+                            }
+
+                            .animating {
+                                background-color: transparent;
+                                color: transparent;
+                                user-select: none;
+                                cursor: default;
+                                animation: remove 0ms calc(var(--squish-animation-time) + var(--progress-animation-time));
+                                animation-fill-mode: forwards;
+                            }
+
+                            .rank-btn::before {
+                                background-color: #e9e9e9;
+                                position: absolute;
+                                inset: 0;
+                                content: "";
+                                border-radius: 25px;
+                                display: none;
+                                animation: squish var(--squish-animation-time) cubic-bezier(0.26, 0.6, 0.46, 1.7);
+                                animation-fill-mode: forwards; // Ensures keyframe stays on the animation
+                            }
+
+                            .rank-btn::after {
+                                content: "";
+                                background-color: #555555;
+                                position: absolute;
+                                border-radius: 25px;
+                                display: none;
+                                left: 51%;
+                                right: 51%;
+                                top: 35%;
+                                bottom: 35%;
+                                border-radius: 30px;
+                                animation: progress var(--progress-animation-time) var(--squish-animation-time);
+                                animation-fill-mode: forwards;
+                            }
+
+                            .animating::before, .animating::after {
+                                display: block;
                             }
                         }
                     }

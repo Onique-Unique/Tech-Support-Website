@@ -4,6 +4,10 @@
   padding: 0;
   box-sizing: border-box; }
 
+:root {
+  --squish-animation-time: 500ms;
+  --progress-animation-time: 1000ms; }
+
 html {
   font-size: 62.5%;
   min-width: 26em;
@@ -2501,12 +2505,44 @@ footer p {
             .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-image .rank-tool-container .rank-tool-box p, .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-watch-page .rank-tool-container .rank-tool-box p, .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-rank-page .rank-tool-container .rank-tool-box p, .game-lounge-body--landing-page .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-image .rank-tool-container .rank-tool-box p, .game-lounge-body--landing-page .game-lounge-body-container .game-lounge-landing--main .gamelounge-watch-page .rank-tool-container .rank-tool-box p, .game-lounge-body--landing-page .game-lounge-body-container .game-lounge-landing--main .gamelounge-rank-page .rank-tool-container .rank-tool-box p {
               text-align: center; }
               .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-image .rank-tool-container .rank-tool-box p .rank-btn, .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-watch-page .rank-tool-container .rank-tool-box p .rank-btn, .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-rank-page .rank-tool-container .rank-tool-box p .rank-btn, .game-lounge-body--landing-page .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-image .rank-tool-container .rank-tool-box p .rank-btn, .game-lounge-body--landing-page .game-lounge-body-container .game-lounge-landing--main .gamelounge-watch-page .rank-tool-container .rank-tool-box p .rank-btn, .game-lounge-body--landing-page .game-lounge-body-container .game-lounge-landing--main .gamelounge-rank-page .rank-tool-container .rank-tool-box p .rank-btn {
+                position: relative;
                 width: 20vw;
                 height: 3rem;
                 border-radius: 25px;
                 outline: none;
                 border: none;
                 margin-top: 8%; }
+              .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-image .rank-tool-container .rank-tool-box p .animating, .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-watch-page .rank-tool-container .rank-tool-box p .animating, .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-rank-page .rank-tool-container .rank-tool-box p .animating, .game-lounge-body--landing-page .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-image .rank-tool-container .rank-tool-box p .animating, .game-lounge-body--landing-page .game-lounge-body-container .game-lounge-landing--main .gamelounge-watch-page .rank-tool-container .rank-tool-box p .animating, .game-lounge-body--landing-page .game-lounge-body-container .game-lounge-landing--main .gamelounge-rank-page .rank-tool-container .rank-tool-box p .animating {
+                background-color: transparent;
+                color: transparent;
+                user-select: none;
+                cursor: default;
+                animation: remove 0ms calc(var(--squish-animation-time) + var(--progress-animation-time));
+                animation-fill-mode: forwards; }
+              .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-image .rank-tool-container .rank-tool-box p .rank-btn::before, .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-watch-page .rank-tool-container .rank-tool-box p .rank-btn::before, .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-rank-page .rank-tool-container .rank-tool-box p .rank-btn::before, .game-lounge-body--landing-page .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-image .rank-tool-container .rank-tool-box p .rank-btn::before, .game-lounge-body--landing-page .game-lounge-body-container .game-lounge-landing--main .gamelounge-watch-page .rank-tool-container .rank-tool-box p .rank-btn::before, .game-lounge-body--landing-page .game-lounge-body-container .game-lounge-landing--main .gamelounge-rank-page .rank-tool-container .rank-tool-box p .rank-btn::before {
+                background-color: #e9e9e9;
+                position: absolute;
+                inset: 0;
+                content: "";
+                border-radius: 25px;
+                display: none;
+                animation: squish var(--squish-animation-time) cubic-bezier(0.26, 0.6, 0.46, 1.7);
+                animation-fill-mode: forwards; }
+              .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-image .rank-tool-container .rank-tool-box p .rank-btn::after, .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-watch-page .rank-tool-container .rank-tool-box p .rank-btn::after, .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-rank-page .rank-tool-container .rank-tool-box p .rank-btn::after, .game-lounge-body--landing-page .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-image .rank-tool-container .rank-tool-box p .rank-btn::after, .game-lounge-body--landing-page .game-lounge-body-container .game-lounge-landing--main .gamelounge-watch-page .rank-tool-container .rank-tool-box p .rank-btn::after, .game-lounge-body--landing-page .game-lounge-body-container .game-lounge-landing--main .gamelounge-rank-page .rank-tool-container .rank-tool-box p .rank-btn::after {
+                content: "";
+                background-color: #555555;
+                position: absolute;
+                border-radius: 25px;
+                display: none;
+                left: 51%;
+                right: 51%;
+                top: 35%;
+                bottom: 35%;
+                border-radius: 30px;
+                animation: progress var(--progress-animation-time) var(--squish-animation-time);
+                animation-fill-mode: forwards; }
+              .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-image .rank-tool-container .rank-tool-box p .animating::before, .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-image .rank-tool-container .rank-tool-box p .animating::after, .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-watch-page .rank-tool-container .rank-tool-box p .animating::before, .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-watch-page .rank-tool-container .rank-tool-box p .animating::after, .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-rank-page .rank-tool-container .rank-tool-box p .animating::before, .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-rank-page .rank-tool-container .rank-tool-box p .animating::after, .game-lounge-body--landing-page .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-image .rank-tool-container .rank-tool-box p .animating::before, .game-lounge-body--landing-page .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-image .rank-tool-container .rank-tool-box p .animating::after, .game-lounge-body--landing-page .game-lounge-body-container .game-lounge-landing--main .gamelounge-watch-page .rank-tool-container .rank-tool-box p .animating::before, .game-lounge-body--landing-page .game-lounge-body-container .game-lounge-landing--main .gamelounge-watch-page .rank-tool-container .rank-tool-box p .animating::after, .game-lounge-body--landing-page .game-lounge-body-container .game-lounge-landing--main .gamelounge-rank-page .rank-tool-container .rank-tool-box p .animating::before, .game-lounge-body--landing-page .game-lounge-body-container .game-lounge-landing--main .gamelounge-rank-page .rank-tool-container .rank-tool-box p .animating::after {
+                display: block; }
         .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-image #champion-header, .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-watch-page #champion-header, .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-rank-page #champion-header, .game-lounge-body--landing-page .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-image #champion-header, .game-lounge-body--landing-page .game-lounge-body-container .game-lounge-landing--main .gamelounge-watch-page #champion-header, .game-lounge-body--landing-page .game-lounge-body-container .game-lounge-landing--main .gamelounge-rank-page #champion-header {
           position: absolute;
           top: 2.5%;
@@ -4673,6 +4709,27 @@ footer p {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+@-webkit-keyframes squish {
+  100% {
+    left: -15%;
+    right: -15%;
+    top: 35%;
+    bottom: 35%;
+    border-radius: 30px; } }
+
+@-webkit-keyframes progress {
+  100% {
+    left: -15%;
+    right: -15%;
+    top: 35%; } }
+
+@-webkit-keyframes remove {
+  100% {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0; } }
 
 .iframe {
   width: 90%;
