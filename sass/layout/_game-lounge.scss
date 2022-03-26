@@ -612,7 +612,7 @@
                         border-radius: 5px;
                     }
     
-                    & h4 {
+                    & h2 {
                         font-size: 1.4rem;
                         color: white;
                     }
@@ -674,9 +674,14 @@
     
                     .topics {
                         padding: 0 2%;
+                        font-family: 'Bebas Neue', sans-serif;
+                        font-size: 1.3rem;
+
+                        & h2 {
+                            color: #d10000;
+                        }
     
                         & p {
-                            font-size: 1.4rem;
                             line-height: 1.5;
                         }
 
@@ -845,8 +850,8 @@
                         font-size: 2.6rem;
                     }
 
-                    & h3 {
-                        font-size: 1.8rem;
+                    & h2 {
+                        font-size: 2.6rem;
                     }
 
                     & p {
@@ -921,14 +926,14 @@
                 color: red;
             }
     
-            & h1 {
+            & h2 {
                 color: white;
                 font-size: 1.8rem;
                 font-weight: bold;
                 margin-top: 2%;
             }
     
-            & p {
+            & time {
                 color: white;
                 font-size: 1.4rem;
                 margin-bottom: 2%;
@@ -1044,38 +1049,6 @@
     .game-lounge-main {
         height: auto;
         background-color: white;
-
-        .article-socials {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .article-socials-inner {
-
-                & h2 {
-                    margin: 3% 0;
-                    text-transform: uppercase;
-                }
-
-                #active-socials {
-                    display: flex;
-
-                    & a {
-    
-                        .my-twitter, .my-youtube {
-                            font-size: 3rem;
-                            padding: 0 3%;
-                        }
-                        .my-twitter {
-                            color: #00a4d6;
-                        }
-                        .my-youtube {
-                            color: red;
-                        }
-                    }
-                }
-            }
-        }
     }
 
     // For the solo/ stand alone pages/ articles
@@ -1110,7 +1083,7 @@
             align-items: center;
             padding: 0 4%;
 
-            & h1 {
+            & h2 {
                 font-size: 2rem;
                 background-color: #fcb565;
                 color: #fff;
@@ -1195,6 +1168,67 @@
             .gamelounge-article-content {
                 width: 100%;
 
+                .breadcrumbs {
+                    padding: 1rem 0 0 0;
+                    font-family: 'Bebas Neue', sans-serif;
+                    font-size: 1.6rem;
+                    margin: 2.5% 0;
+
+                    @media(max-width: 560px) {
+                        font-size: 1.2rem;
+                    }
+
+                    &__item {
+                        display: inline-block;
+
+                        &:not(:last-of-type)::after {
+                            content: "/";
+                            margin: 0 .5rem;
+                            color: #fcae65;
+                        }
+
+                        .breadcrumbs__link {
+                            text-decoration: none;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+
+                            &--active {
+                                color: #2e20aa;
+                            }
+                        }
+                    }
+                }
+
+                .article-socials {
+                    padding: 0 0 1rem 1rem;
+        
+                    .article-socials-inner {
+                        max-width: 5rem;
+
+                        #active-socials {
+                            display: flex;
+                            width: 100%;
+                            justify-content: space-between;
+        
+                            & a {
+            
+                                .my-twitter, .my-youtube {
+                                    font-size: 2rem;
+                                    padding: 0 3%;
+                                }
+                                .my-twitter {
+                                    color: #00a4d6;
+                                }
+                                .my-youtube {
+                                    color: red;
+                                }
+                            }
+                        }
+                    }
+                }
+
                 .article-video-container {
                     margin: 0 auto;
                     width: 100%;
@@ -1209,7 +1243,7 @@
                     }
                 }
 
-                & h3 {
+                & h1 {
                     font-size: 3.5rem;
                     color: #302b63;
 
@@ -1218,7 +1252,7 @@
                     }
 
                     .span-alt {
-                        color: #fcb565;
+                        color: #fcae65;
                     }
                 }
 
@@ -1242,17 +1276,27 @@
                         border-radius: 100%;
                     }
 
-                    & a {
-                        width: 100%;
+                    #lounge-post {
+                        width: 20%;
 
-                        & p {
-                            color: #00a4d6;                      
-                            cursor: pointer;
-                            transition: all .2s;
+                        & a {
+                            width: 100%;
     
-                            &:hover {
-                                color: rgb(243, 183, 53);
+                            & p {
+                                color: #1e7db4;                      
+                                cursor: pointer;
+                                transition: all .2s;
+        
+                                &:hover {
+                                    color: rgb(243, 183, 53);
+                                }
                             }
+                        }
+
+                        & time {
+                            padding: 0 2%;
+                            color: #aaa;
+                            font-size: 1.4rem;
                         }
                     }
                 }
@@ -1288,7 +1332,7 @@
                             align-items: center;
                             justify-content: space-around;
 
-                            & h1 {
+                            & h2 {
                                 text-align: left;
                                 font-size: 2.6rem;
                                 border-bottom: 0.3rem solid aliceblue;
@@ -1459,7 +1503,7 @@
                 border-radius: 5px;
             }
 
-            & h4 {
+            & h2 {
                 font-size: 1.6rem;
                 color: white;
             }
@@ -1573,7 +1617,7 @@
 
         .gamelounge-article-visuals-inserts {
 
-            & h1, & svg {
+            & h2, & svg {
                 height: 7rem !important;
                 font-size: 1.4rem !important;
             }
@@ -1632,7 +1676,7 @@
 
         .gamelounge-article-visuals-inserts {
 
-            & h1, & svg {
+            & h2, & svg {
                 height: 5rem !important;
                 font-size: 1.2rem !important;
             }
@@ -1652,7 +1696,7 @@
 
         .gamelounge-article-visuals-inserts {
 
-            & h1 {
+            & h2 {
                 font-size: 1.07rem !important;
             }
         }
@@ -1798,11 +1842,11 @@
         
         #fair-use-disclaimer {
 
-            & h1, p {
+            & h2, p {
                 color: white;
             }
 
-            & h1 {
+            & h2 {
                 font-size: 2.4rem;
                 margin-bottom: 2%;
             }
@@ -1950,7 +1994,7 @@
                             margin-bottom: 2.5%;
                         }
     
-                        & h1 {
+                        & h2 {
                             font-size: 10rem;
                             font-family: 'Bebas Neue', cursive;
                             color: white;
@@ -2035,26 +2079,6 @@
                 }
             }
         }
-
-        & h3 {
-            text-align: center;
-            font-size: 3rem;
-            color: white;
-            margin-top: 4%;
-        }
-        .publishment-lists {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin: 0 auto;
-
-            .archive {
-                background-color: #c33763;
-                height: 22rem;
-                width: 50%;
-                margin: 2%;
-            }
-        }
     }
 }
 
@@ -2073,7 +2097,7 @@
         
                         .verified-publisher {
         
-                            & h1 {
+                            & h2 {
                                 font-size: 7.5rem !important;
                             }
                         }
@@ -2118,7 +2142,7 @@
         
                         .verified-publisher {
         
-                            & h1 {
+                            & h2 {
                                 font-size: 4.5rem !important;
                             }
                         }
@@ -2173,7 +2197,7 @@
         
                         .verified-publisher {
         
-                            & h1 {
+                            & h2 {
                                 font-size: 3.2rem !important;
                             }
 
@@ -2939,7 +2963,7 @@
 
     .modal-content {
 
-        & h1 {
+        & h1, & h2 {
             text-align: center;
 
             @media(max-width: 378px){
@@ -2947,7 +2971,7 @@
             }
         }
 
-        #h1-secondary {
+        #h2-secondary {
             margin-bottom: 10%;
         }
 
@@ -3127,7 +3151,7 @@
         .game-article-features {
             height: 20rem !important;
     
-            & h1 {
+            & h2 {
                 margin-top: 0% !important;
                 font-size: 1.6rem !important;
             }

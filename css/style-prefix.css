@@ -3534,7 +3534,7 @@ footer p {
           .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .download-prompt img {
             height: 3rem;
             border-radius: 5px; }
-          .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .download-prompt h4 {
+          .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .download-prompt h2 {
             font-size: 1.4rem;
             color: white; }
           .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .download-prompt .appstore {
@@ -3578,9 +3578,12 @@ footer p {
           .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .hot-topics #topics-notif {
             color: #ffe02f; }
           .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .hot-topics .topics {
-            padding: 0 2%; }
+            padding: 0 2%;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.3rem; }
+            .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .hot-topics .topics h2 {
+              color: #d10000; }
             .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .hot-topics .topics p {
-              font-size: 1.4rem;
               line-height: 1.5; }
             .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .hot-topics .topics img {
               width: 100%;
@@ -3715,8 +3718,8 @@ footer p {
                 font-size: 1.2rem; }
           .section-body-container .game-feature-section .game-feature-container .game-banner .banner-text h1 {
             font-size: 2.6rem; }
-          .section-body-container .game-feature-section .game-feature-container .game-banner .banner-text h3 {
-            font-size: 1.8rem; }
+          .section-body-container .game-feature-section .game-feature-container .game-banner .banner-text h2 {
+            font-size: 2.6rem; }
           .section-body-container .game-feature-section .game-feature-container .game-banner .banner-text p {
             font-size: 1.4rem; }
         .section-body-container .game-feature-section .game-feature-container .game-banner .banner-img img {
@@ -3769,12 +3772,12 @@ footer p {
       .section-body-container .game-lounge-carousel .game-article-features .live-circle {
         font-size: 1rem;
         color: red; }
-      .section-body-container .game-lounge-carousel .game-article-features h1 {
+      .section-body-container .game-lounge-carousel .game-article-features h2 {
         color: white;
         font-size: 1.8rem;
         font-weight: bold;
         margin-top: 2%; }
-      .section-body-container .game-lounge-carousel .game-article-features p {
+      .section-body-container .game-lounge-carousel .game-article-features time {
         color: white;
         font-size: 1.4rem;
         margin-bottom: 2%; }
@@ -3858,30 +3861,6 @@ footer p {
   .section-body-container .game-lounge-main {
     height: auto;
     background-color: white; }
-    .section-body-container .game-lounge-main .article-socials {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      .section-body-container .game-lounge-main .article-socials .article-socials-inner h2 {
-        margin: 3% 0;
-        text-transform: uppercase; }
-      .section-body-container .game-lounge-main .article-socials .article-socials-inner #active-socials {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; }
-        .section-body-container .game-lounge-main .article-socials .article-socials-inner #active-socials a .my-twitter, .section-body-container .game-lounge-main .article-socials .article-socials-inner #active-socials a .my-youtube {
-          font-size: 3rem;
-          padding: 0 3%; }
-        .section-body-container .game-lounge-main .article-socials .article-socials-inner #active-socials a .my-twitter {
-          color: #00a4d6; }
-        .section-body-container .game-lounge-main .article-socials .article-socials-inner #active-socials a .my-youtube {
-          color: red; }
   .section-body-container .solo-articles {
     height: 8rem; }
     .section-body-container .solo-articles .nav-top-article {
@@ -3907,7 +3886,7 @@ footer p {
           -ms-flex-align: center;
               align-items: center;
       padding: 0 4%; }
-      .gamelounge-info--container .info-main-nav .info-main-nav--headers h1 {
+      .gamelounge-info--container .info-main-nav .info-main-nav--headers h2 {
         font-size: 2rem;
         background-color: #fcb565;
         color: #fff;
@@ -3971,6 +3950,45 @@ footer p {
       margin: 2.5% 0; }
       .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content {
         width: 100%; }
+        .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .breadcrumbs, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .breadcrumbs {
+          padding: 1rem 0 0 0;
+          font-family: 'Bebas Neue', sans-serif;
+          font-size: 1.6rem;
+          margin: 2.5% 0; }
+          @media (max-width: 560px) {
+            .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .breadcrumbs, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .breadcrumbs {
+              font-size: 1.2rem; } }
+          .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .breadcrumbs__item, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .breadcrumbs__item {
+            display: inline-block; }
+            .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .breadcrumbs__item:not(:last-of-type)::after, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .breadcrumbs__item:not(:last-of-type)::after {
+              content: "/";
+              margin: 0 .5rem;
+              color: #fcae65; }
+            .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .breadcrumbs__item .breadcrumbs__link, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .breadcrumbs__item .breadcrumbs__link {
+              text-decoration: none; }
+              .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .breadcrumbs__item .breadcrumbs__link:hover, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .breadcrumbs__item .breadcrumbs__link:hover {
+                text-decoration: underline; }
+              .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .breadcrumbs__item .breadcrumbs__link--active, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .breadcrumbs__item .breadcrumbs__link--active {
+                color: #2e20aa; }
+        .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .article-socials, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .article-socials {
+          padding: 0 0 1rem 1rem; }
+          .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .article-socials .article-socials-inner, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .article-socials .article-socials-inner {
+            max-width: 5rem; }
+            .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .article-socials .article-socials-inner #active-socials, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .article-socials .article-socials-inner #active-socials {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              width: 100%;
+              -webkit-box-pack: justify;
+                  -ms-flex-pack: justify;
+                      justify-content: space-between; }
+              .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .article-socials .article-socials-inner #active-socials a .my-twitter, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .article-socials .article-socials-inner #active-socials a .my-youtube, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .article-socials .article-socials-inner #active-socials a .my-twitter, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .article-socials .article-socials-inner #active-socials a .my-youtube {
+                font-size: 2rem;
+                padding: 0 3%; }
+              .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .article-socials .article-socials-inner #active-socials a .my-twitter, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .article-socials .article-socials-inner #active-socials a .my-twitter {
+                color: #00a4d6; }
+              .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .article-socials .article-socials-inner #active-socials a .my-youtube, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .article-socials .article-socials-inner #active-socials a .my-youtube {
+                color: red; }
         .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .article-video-container, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .article-video-container {
           margin: 0 auto;
           width: 100%; }
@@ -3979,13 +3997,13 @@ footer p {
           .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .article-video-container #article-yt-vid, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .article-video-container #article-yt-vid {
             width: 100%;
             max-height: 40rem; }
-        .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content h3, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content h3 {
+        .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content h1, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content h1 {
           font-size: 3.5rem;
           color: #302b63; }
-          .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content h3 span, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content h3 span {
+          .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content h1 span, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content h1 span {
             color: #ff3c00; }
-          .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content h3 .span-alt, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content h3 .span-alt {
-            color: #fcb565; }
+          .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content h1 .span-alt, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content h1 .span-alt {
+            color: #fcae65; }
         .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content p, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content p {
           padding: 2%;
           font-size: 1.6rem;
@@ -4003,16 +4021,22 @@ footer p {
           .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .gamelounge-author-details img, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .gamelounge-author-details img {
             height: 5rem;
             border-radius: 100%; }
-          .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .gamelounge-author-details a, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .gamelounge-author-details a {
-            width: 100%; }
-            .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .gamelounge-author-details a p, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .gamelounge-author-details a p {
-              color: #00a4d6;
-              cursor: pointer;
-              -webkit-transition: all .2s;
-              -o-transition: all .2s;
-              transition: all .2s; }
-              .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .gamelounge-author-details a p:hover, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .gamelounge-author-details a p:hover {
-                color: #f3b735; }
+          .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .gamelounge-author-details #lounge-post, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .gamelounge-author-details #lounge-post {
+            width: 20%; }
+            .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .gamelounge-author-details #lounge-post a, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .gamelounge-author-details #lounge-post a {
+              width: 100%; }
+              .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .gamelounge-author-details #lounge-post a p, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .gamelounge-author-details #lounge-post a p {
+                color: #1e7db4;
+                cursor: pointer;
+                -webkit-transition: all .2s;
+                -o-transition: all .2s;
+                transition: all .2s; }
+                .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .gamelounge-author-details #lounge-post a p:hover, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .gamelounge-author-details #lounge-post a p:hover {
+                  color: #f3b735; }
+            .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .gamelounge-author-details #lounge-post time, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .gamelounge-author-details #lounge-post time {
+              padding: 0 2%;
+              color: #aaa;
+              font-size: 1.4rem; }
       .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-visuals-rel, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-visuals-rel {
         position: relative; }
         .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-visuals-rel .gamelounge-article-visuals-abs, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-visuals-rel .gamelounge-article-visuals-abs-2, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-visuals-rel .gamelounge-article-visuals-abs, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-visuals-rel .gamelounge-article-visuals-abs-2 {
@@ -4050,7 +4074,7 @@ footer p {
                       align-items: center;
               -ms-flex-pack: distribute;
                   justify-content: space-around; }
-              .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-visuals-rel .gamelounge-article-visuals-abs .gamelounge-article-visuals .gamelounge-article-visuals-inserts h1, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-visuals-rel .gamelounge-article-visuals-abs-2 .gamelounge-article-visuals .gamelounge-article-visuals-inserts h1, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-visuals-rel .gamelounge-article-visuals-abs .gamelounge-article-visuals .gamelounge-article-visuals-inserts h1, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-visuals-rel .gamelounge-article-visuals-abs-2 .gamelounge-article-visuals .gamelounge-article-visuals-inserts h1 {
+              .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-visuals-rel .gamelounge-article-visuals-abs .gamelounge-article-visuals .gamelounge-article-visuals-inserts h2, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-visuals-rel .gamelounge-article-visuals-abs-2 .gamelounge-article-visuals .gamelounge-article-visuals-inserts h2, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-visuals-rel .gamelounge-article-visuals-abs .gamelounge-article-visuals .gamelounge-article-visuals-inserts h2, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-visuals-rel .gamelounge-article-visuals-abs-2 .gamelounge-article-visuals .gamelounge-article-visuals-inserts h2 {
                 text-align: left;
                 font-size: 2.6rem;
                 border-bottom: 0.3rem solid aliceblue;
@@ -4197,7 +4221,7 @@ footer p {
       .community-sidebar-display-secondary .community-sidebar-content .download-prompt img {
         height: 3rem;
         border-radius: 5px; }
-      .community-sidebar-display-secondary .community-sidebar-content .download-prompt h4 {
+      .community-sidebar-display-secondary .community-sidebar-content .download-prompt h2 {
         font-size: 1.6rem;
         color: white; }
       .community-sidebar-display-secondary .community-sidebar-content .download-prompt .appstore {
@@ -4266,7 +4290,7 @@ footer p {
     font-size: 1.2rem !important; }
   .gamelounge-article-visuals {
     height: 15rem !important; }
-    .gamelounge-article-visuals .gamelounge-article-visuals-inserts h1, .gamelounge-article-visuals .gamelounge-article-visuals-inserts svg {
+    .gamelounge-article-visuals .gamelounge-article-visuals-inserts h2, .gamelounge-article-visuals .gamelounge-article-visuals-inserts svg {
       height: 7rem !important;
       font-size: 1.4rem !important; }
   .article-visit--link p, .article-visit--link_2 p {
@@ -4289,14 +4313,14 @@ footer p {
     height: 12rem !important; }
     .gamelounge-article-visuals .visual-grad-arrow {
       height: 20px !important; }
-    .gamelounge-article-visuals .gamelounge-article-visuals-inserts h1, .gamelounge-article-visuals .gamelounge-article-visuals-inserts svg {
+    .gamelounge-article-visuals .gamelounge-article-visuals-inserts h2, .gamelounge-article-visuals .gamelounge-article-visuals-inserts svg {
       height: 5rem !important;
       font-size: 1.2rem !important; } }
 
 @media (max-width: 320px) {
   .gamelounge-info-content h2 {
     font-size: 2.3rem !important; }
-  .gamelounge-article-visuals .gamelounge-article-visuals-inserts h1 {
+  .gamelounge-article-visuals .gamelounge-article-visuals-inserts h2 {
     font-size: 1.07rem !important; } }
 
 .gamelounge-contact-container {
@@ -4412,9 +4436,9 @@ footer p {
               align-items: center;
       font-size: 3rem;
       color: #C33764; }
-    .fair-use-disclaimer--container .disclaimer #fair-use-disclaimer h1, .fair-use-disclaimer--container .disclaimer #fair-use-disclaimer p {
+    .fair-use-disclaimer--container .disclaimer #fair-use-disclaimer h2, .fair-use-disclaimer--container .disclaimer #fair-use-disclaimer p {
       color: white; }
-    .fair-use-disclaimer--container .disclaimer #fair-use-disclaimer h1 {
+    .fair-use-disclaimer--container .disclaimer #fair-use-disclaimer h2 {
       font-size: 2.4rem;
       margin-bottom: 2%; }
     .fair-use-disclaimer--container .disclaimer #fair-use-disclaimer p {
@@ -4550,7 +4574,7 @@ footer p {
               -webkit-box-shadow: .3rem .3rem 2.5rem white;
                       box-shadow: .3rem .3rem 2.5rem white;
               margin-bottom: 2.5%; }
-            .publishments-container .publishments .featured-publisher .flex-publisher #left-section .verified-publisher h1 {
+            .publishments-container .publishments .featured-publisher .flex-publisher #left-section .verified-publisher h2 {
               font-size: 10rem;
               font-family: 'Bebas Neue', cursive;
               color: white; }
@@ -4608,30 +4632,9 @@ footer p {
                       transform: scale(1.2);
               -webkit-box-shadow: .2rem .2rem 2rem #ffda62;
                       box-shadow: .2rem .2rem 2rem #ffda62; }
-    .publishments-container .publishments h3 {
-      text-align: center;
-      font-size: 3rem;
-      color: white;
-      margin-top: 4%; }
-    .publishments-container .publishments .publishment-lists {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      margin: 0 auto; }
-      .publishments-container .publishments .publishment-lists .archive {
-        background-color: #c33763;
-        height: 22rem;
-        width: 50%;
-        margin: 2%; }
 
 @media (max-width: 960px) {
-  .publishments-container .publishments .featured-publisher .flex-publisher #left-section .verified-publisher h1 {
+  .publishments-container .publishments .featured-publisher .flex-publisher #left-section .verified-publisher h2 {
     font-size: 7.5rem !important; }
   .publishments-container .publishments .featured-publisher .flex-publisher #left-section .about-publisher p {
     font-size: 1.4rem !important; }
@@ -4642,7 +4645,7 @@ footer p {
     width: 28rem !important; } }
 
 @media (max-width: 768px) {
-  .publishments-container .publishments .featured-publisher .flex-publisher #left-section .verified-publisher h1 {
+  .publishments-container .publishments .featured-publisher .flex-publisher #left-section .verified-publisher h2 {
     font-size: 4.5rem !important; }
   .publishments-container .publishments .featured-publisher .flex-publisher #left-section .about-publisher p {
     font-size: 1.2rem !important; }
@@ -4668,7 +4671,7 @@ footer p {
         .publishments-container .publishments .featured-publisher .flex-publisher #left-section {
           width: 100% !important;
           margin-bottom: 3% !important; }
-          .publishments-container .publishments .featured-publisher .flex-publisher #left-section .verified-publisher h1 {
+          .publishments-container .publishments .featured-publisher .flex-publisher #left-section .verified-publisher h2 {
             font-size: 3.2rem !important; }
           .publishments-container .publishments .featured-publisher .flex-publisher #left-section .verified-publisher svg {
             height: 2rem !important; }
@@ -5227,12 +5230,12 @@ footer p {
     font-size: 2rem;
     color: #c33763;
     margin-bottom: 5%; }
-  .content-modal .modal-content h1 {
+  .content-modal .modal-content h1, .content-modal .modal-content h2 {
     text-align: center; }
     @media (max-width: 378px) {
-      .content-modal .modal-content h1 {
+      .content-modal .modal-content h1, .content-modal .modal-content h2 {
         font-size: 1.6rem; } }
-  .content-modal .modal-content #h1-secondary {
+  .content-modal .modal-content #h2-secondary {
     margin-bottom: 10%; }
   .content-modal .modal-content #featured-news-listing h3, .content-modal .modal-content #other-news-listings h3 {
     text-align: center;
@@ -5299,7 +5302,7 @@ footer p {
     display: none !important; }
   .game-lounge-carousel .game-article-features {
     height: 20rem !important; }
-    .game-lounge-carousel .game-article-features h1 {
+    .game-lounge-carousel .game-article-features h2 {
       margin-top: 0% !important;
       font-size: 1.6rem !important; }
     .game-lounge-carousel .game-article-features p {
