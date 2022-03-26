@@ -3400,9 +3400,13 @@ footer p {
       .community-sidebar-display-secondary .community-sidebar-content .hot-topics #topics-notif {
         color: #ffe02f; }
       .community-sidebar-display-secondary .community-sidebar-content .hot-topics .topics {
-        padding: 0 2%; }
+        padding: 0 2%;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 1.3rem; }
+        .community-sidebar-display-secondary .community-sidebar-content .hot-topics .topics h2 {
+          color: #d10000; }
         .community-sidebar-display-secondary .community-sidebar-content .hot-topics .topics p {
-          font-size: 1.4rem; }
+          line-height: 1.5; }
         .community-sidebar-display-secondary .community-sidebar-content .hot-topics .topics img {
           width: 100%;
           height: auto;

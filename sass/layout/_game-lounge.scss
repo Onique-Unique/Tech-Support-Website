@@ -1543,9 +1543,15 @@
 
             .topics {
                 padding: 0 2%;
+                font-family: 'Bebas Neue', sans-serif;
+                font-size: 1.3rem;
+
+                & h2 {
+                    color: #d10000;
+                }
 
                 & p {
-                    font-size: 1.4rem;
+                    line-height: 1.5;
                 }
 
                 & img {
