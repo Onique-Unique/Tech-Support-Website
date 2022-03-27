@@ -8,6 +8,7 @@ document.getElementById("content-modal").innerHTML = `<i class="fa-solid fa-chev
     </div>
     <div id="other-news-listings">
         <h3>Soft Launch Notes!</h3>
+        <a href="/main-pages/apex-mobile/best-legends-soft-launch"><h2>Apex Legends Mobile Top 6 Legends to Use Right Now!</h2></a>
         <a href="/main-pages/apex-mobile/apex-mobile-cargo-bot"><h2>Apex Legends Mobile Cargo Bot Complete Guide</h2></a>
         <a href="/main-pages/apex-mobile/best-guns-soft-launch"><h2>Apex Legends Mobile Best Guns - Soft Launch</h2></a>
         <a href="/main-pages/apex-mobile/game-lounge-chatroom#exclusive-content"><h2>Apex Legends Mobile Exclusive Content</h2></a>
