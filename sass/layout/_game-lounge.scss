@@ -1205,7 +1205,7 @@
                     padding: 0 0 1rem 1rem;
         
                     .article-socials-inner {
-                        max-width: 5rem;
+                        max-width: 9rem;
 
                         #active-socials {
                             display: flex;
@@ -1214,15 +1214,19 @@
         
                             & a {
             
-                                .my-twitter, .my-youtube {
+                                .my-twitter, .my-youtube, .my-discord {
                                     font-size: 2rem;
                                     padding: 0 3%;
+                                    margin: 0 3%;
                                 }
                                 .my-twitter {
                                     color: #00a4d6;
                                 }
                                 .my-youtube {
                                     color: red;
+                                }
+                                .my-discord {
+                                    color: #1a72a5;
                                 }
                             }
                         }

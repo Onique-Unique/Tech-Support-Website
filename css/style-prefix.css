@@ -3973,7 +3973,7 @@ footer p {
         .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .article-socials, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .article-socials {
           padding: 0 0 1rem 1rem; }
           .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .article-socials .article-socials-inner, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .article-socials .article-socials-inner {
-            max-width: 5rem; }
+            max-width: 9rem; }
             .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .article-socials .article-socials-inner #active-socials, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .article-socials .article-socials-inner #active-socials {
               display: -webkit-box;
               display: -ms-flexbox;
@@ -3982,13 +3982,16 @@ footer p {
               -webkit-box-pack: justify;
                   -ms-flex-pack: justify;
                       justify-content: space-between; }
-              .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .article-socials .article-socials-inner #active-socials a .my-twitter, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .article-socials .article-socials-inner #active-socials a .my-youtube, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .article-socials .article-socials-inner #active-socials a .my-twitter, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .article-socials .article-socials-inner #active-socials a .my-youtube {
+              .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .article-socials .article-socials-inner #active-socials a .my-twitter, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .article-socials .article-socials-inner #active-socials a .my-youtube, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .article-socials .article-socials-inner #active-socials a .my-discord, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .article-socials .article-socials-inner #active-socials a .my-twitter, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .article-socials .article-socials-inner #active-socials a .my-youtube, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .article-socials .article-socials-inner #active-socials a .my-discord {
                 font-size: 2rem;
-                padding: 0 3%; }
+                padding: 0 3%;
+                margin: 0 3%; }
               .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .article-socials .article-socials-inner #active-socials a .my-twitter, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .article-socials .article-socials-inner #active-socials a .my-twitter {
                 color: #00a4d6; }
               .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .article-socials .article-socials-inner #active-socials a .my-youtube, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .article-socials .article-socials-inner #active-socials a .my-youtube {
                 color: red; }
+              .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .article-socials .article-socials-inner #active-socials a .my-discord, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .article-socials .article-socials-inner #active-socials a .my-discord {
+                color: #1a72a5; }
         .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .article-video-container, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .article-video-container {
           margin: 0 auto;
           width: 100%; }
