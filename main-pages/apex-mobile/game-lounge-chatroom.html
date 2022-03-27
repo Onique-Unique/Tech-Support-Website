@@ -873,14 +873,23 @@
     <script async src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
 
       <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
-          const consentAccept = document.querySelector(".consent-accept");
-        consentAccept.addEventListener("click", function (){
+        const consentAccept = document.querySelector(".consent-accept");
+        let noticeAccepted = localStorage.getItem("noticeAccepted");
+        if (noticeAccepted != "yes"){
+            consentAccept.addEventListener("click", function (){
             const crate = new Crate({
             server: '791303979597299782',
             channel: '946896595172089887'
             })      
             crate.notify('Join Live Chat')
-        })      
+            }) 
+        }else if (noticeAccepted === "yes"){
+            const crate = new Crate({
+            server: '791303979597299782',
+            channel: '946896595172089887'
+            })      
+            crate.notify('Join Live Chat')
+        }
       </script>
 
     <!-- Local Script -->
