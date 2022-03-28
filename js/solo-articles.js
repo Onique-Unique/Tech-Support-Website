@@ -64,7 +64,7 @@ playlistRefresh.addEventListener("click", () => {
         document.getElementById("playlist-embed").innerHTML = `<iframe id="embed-music" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0" modestbranding="1"></iframe>`
 });
 
-var videoListings = ["p3vAeH8_WAo", "aNJEGMjkmB4", "JCNLzcVrS_c", "tgGVzsU-XqE", "t2cgKUapfag", "KZTWjGMSC-g", "ert8TjEfO6Y", "jykI2bqKr0U", "LcsOSIXc9cg", "KXRosceNwfc", "INTyMiA8zkc", "LwiZNjpyXYQ", "sv0g5vPO-N8", "g9aOqJ_Mujw", "Ya5Z1ocmbec", "Csy3a9MXhmI", "fCBzFk4Zvjk", "YQyb-FMD9yI", "ochPdvqAOtQ", "Pvqm6_mplRs", "4sV94dhP518", "DSqp7wEbbeY", "ZMuVHf3Xugo", "Rtxf-kVYF8M", "k5Dppmewwi4", "KtT57G8kT20", "YZ_HT9dRpoQ", "ndoDekUMGdc", "7_VjSAkFNKA", "XRtv30j0pp8", "qsrU1Dq8Q_c", "v8ZDDbHppMQ", "rnix_tLX4tA", "-FqKPhxXyQM", "mNLCRZsopqg", "W3wnDWN_Qt0", "U1U6-IjlhbM", "SlUcf-0n2Pc", "yu5M2A7-QIU", "wqMaedijeh4", "BJf2USdQpTk", "5mxeVyhlkL4",]
+var videoListings = ["m4z-bbYVzNE", "blyhIr6Mfh0", "p3vAeH8_WAo", "TsqNrusKb_M", "aNJEGMjkmB4", "W3wnDWN_Qt0", "fghYZb2spO4", "sv0g5vPO-N8", "jykI2bqKr0U", "YZ_HT9dRpoQ", "g9aOqJ_Mujw", "fCBzFk4Zvjk", "Ya5Z1ocmbec", "JCNLzcVrS_c", "Rtxf-kVYF8M", "rnix_tLX4tA", "YQyb-FMD9yI", "Csy3a9MXhmI", "ZMsPToERirQ", "DSqp7wEbbeY", "Pvqm6_mplRs", "KtT57G8kT20", "w01aUT2LDrw", "kViPdRsqJsQ", "t2cgKUapfag", "ndoDekUMGdc", "ZMuVHf3Xugo", "INTyMiA8zkc", "GLojO9k5YqE", "LcsOSIXc9cg", "v8ZDDbHppMQ", "CVqIK8scMHU", "4sV94dhP518", "KXRosceNwfc", "mNLCRZsopqg", "5THFjkoOQJ8", "yu5M2A7-QIU", "qsrU1Dq8Q_c", "rAzlTtRaa04", "wqMaedijeh4", "ochPdvqAOtQ",]
 var featuredListings = [];
 
 // Video Lounge Shuffle Random | Prev - Next
