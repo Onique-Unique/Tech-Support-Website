@@ -927,8 +927,6 @@ nav {
     .tech-article-visuals .tech-article-visuals-inserts h1, .tech-article-visuals .tech-article-visuals-inserts svg {
       height: 7rem !important;
       font-size: 1.4rem !important; }
-  .article-visit--link p, .article-visit--link_2 p {
-    display: none !important; }
   .article-carousel img {
     height: 6rem !important; }
   .article-carousel p {
@@ -3266,6 +3264,9 @@ footer p {
                 font-size: 2.6rem;
                 border-bottom: 0.3rem solid aliceblue;
                 width: 50%; }
+              @media (max-width: 560px) {
+                .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-visuals-rel .gamelounge-article-visuals-abs .gamelounge-article-visuals .gamelounge-article-visuals-inserts svg, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-visuals-rel .gamelounge-article-visuals-abs-2 .gamelounge-article-visuals .gamelounge-article-visuals-inserts svg, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-visuals-rel .gamelounge-article-visuals-abs .gamelounge-article-visuals .gamelounge-article-visuals-inserts svg, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-visuals-rel .gamelounge-article-visuals-abs-2 .gamelounge-article-visuals .gamelounge-article-visuals-inserts svg {
+                  opacity: 0; } }
               .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-visuals-rel .gamelounge-article-visuals-abs .gamelounge-article-visuals .gamelounge-article-visuals-inserts .span-link, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-visuals-rel .gamelounge-article-visuals-abs-2 .gamelounge-article-visuals .gamelounge-article-visuals-inserts .span-link, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-visuals-rel .gamelounge-article-visuals-abs .gamelounge-article-visuals .gamelounge-article-visuals-inserts .span-link, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-visuals-rel .gamelounge-article-visuals-abs-2 .gamelounge-article-visuals .gamelounge-article-visuals-inserts .span-link {
                 position: absolute;
                 width: 100%;
@@ -3445,8 +3446,6 @@ footer p {
     .gamelounge-article-visuals .gamelounge-article-visuals-inserts h2, .gamelounge-article-visuals .gamelounge-article-visuals-inserts svg {
       height: 7rem !important;
       font-size: 1.4rem !important; }
-  .article-visit--link p, .article-visit--link_2 p {
-    display: none !important; }
   .article-carousel img {
     height: 6rem !important; }
   .article-carousel p {

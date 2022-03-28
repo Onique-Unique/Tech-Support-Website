@@ -1343,6 +1343,12 @@
                                 width: 50%;
                             }
 
+                            @media(max-width: 560px){
+                                & svg {
+                                    opacity: 0;
+                                }
+                            }
+
                             // link cheat, since anchor tag cannot wrap a div to function as intended, this enables me to click and open an article
                             .span-link {
                                 position: absolute;
@@ -1631,13 +1637,6 @@
                 height: 7rem !important;
                 font-size: 1.4rem !important;
             }
-        }
-    }
-
-    .article-visit--link, .article-visit--link_2 {
-
-        & p {
-            display: none !important;
         }
     }
 
