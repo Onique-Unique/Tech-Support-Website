@@ -807,9 +807,7 @@ nav {
         background-size: 200% auto;
         color: white;
         -webkit-box-shadow: 0 0 20px #eee;
-                box-shadow: 0 0 20px #eee;
-        -webkit-filter: blur(0.25px);
-                filter: blur(0.25px); }
+                box-shadow: 0 0 20px #eee; }
       .tech-lounge-info--container .tech-lounge-info--body .tech-lounge-info--2 .visual-grad:hover, .tech-lounge-info--container .tech-lounge-info--body .tech-lounge-info--3 .visual-grad:hover {
         background-position: right center;
         /* change the direction of the change here */
@@ -4107,9 +4105,7 @@ footer p {
         background-size: 200% auto;
         color: white;
         -webkit-box-shadow: 0 0 20px #eee;
-                box-shadow: 0 0 20px #eee;
-        -webkit-filter: blur(0.25px);
-                filter: blur(0.25px); }
+                box-shadow: 0 0 20px #eee; }
       .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .visual-grad:hover, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .visual-grad:hover {
         background-position: right center;
         /* change the direction of the change here */
