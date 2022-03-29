@@ -8,6 +8,7 @@ document.getElementById("content-modal").innerHTML = `<i class="fa-solid fa-chev
     </div>
     <div id="other-news-listings">
         <h3>Soft Launch Notes!</h3>
+        <a href="/main-pages/apex-mobile/soft-launch-notes/wraith-infinite-void"><h2>Apex Legends Mobile Wraith Infinite Void Glitch</h2></a>
         <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-mobile-fov-settings"><h2>Apex Legends Mobile FOV Settings Guide for Beginners</h2></a>
         <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-mobile-release-date"><h2>Apex Legends Mobile Release Date</h2></a>
         <a href="/main-pages/apex-mobile/soft-launch-notes/best-legends-soft-launch"><h2>Apex Legends Mobile Top 6 Legends to Use Right Now!</h2></a>
