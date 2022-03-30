@@ -22,12 +22,12 @@ const newsFeaturedListings = document.getElementById("featured-news-listing");
 const newsOtherListings = document.getElementById("other-news-listings");
 
 // Icon Enter and Exit
-const playlistIcon = document.getElementById("up-icon");
+const playlistIcon = document.getElementById("yt-music-icon");
 const playlistExit = document.querySelector(".playlist-exit");
 const emailIcon = document.getElementById("email-icon");
 const emailExit = document.querySelector(".form-exit");
-const settingsIcon = document.getElementById("settings-icon");
-const settingsIconAlt = document.getElementById("settings-icon-min");
+const settingsIcon = document.getElementById("settings-gear");
+const settingsIconAlt = document.getElementById("settings-gear-min");
 const disclaimerExit = document.querySelector(".disclaimer-exit");
 const articleNewsIcon = document.getElementById("latest-news-icon");
 const articleNewsIconExit = document.querySelector(".content-modal-exit");
