@@ -3207,7 +3207,7 @@ footer p {
           margin: 5% 0; }
           @media (max-width: 560px) {
             .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .articles-main-crumbs, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .articles-main-crumbs {
-              --num-cols: 1; } }
+              grid-template-columns: repeat(1, 1fr); } }
           .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .articles-main-crumbs .articles-main-crumbs--inner, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .articles-main-crumbs .articles-main-crumbs--inner {
             position: relative; }
             .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .articles-main-crumbs .articles-main-crumbs--inner .main-crumbs-contain .article-crumb-direction, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .articles-main-crumbs .articles-main-crumbs--inner .main-crumbs-contain .article-crumb-direction {
