@@ -1,7 +1,13 @@
 const topics = ["topic-PC", "topic-Mobile"];
 
 for(let i = 0; i < topics.length; i++){
-    document.getElementById(topics[i]).innerHTML = `<h2>Chance to Earn Founders Badge for Apex Legends Mobile...</h2><br>
+    document.getElementById(topics[i]).innerHTML = `
+    <h2>New Banner For Apex Legends Mobile Launch...</h2><br>
+    <img loading="lazy" src="/images/game-lounge-img/hot-topics-assets/apexmobile-new-reward.png" alt="apex legends mobile gamelounge Hot topics image">                   
+    <p>Apex Legends Mobile Free Reward for Pre registered accounts before launch day. Android Devices are open for pre registration, for a chance to earn exclusive rewards.
+    </p> <br>
+    <div id="topic-space-br"></div>
+    <h2>Chance to Earn Founders Badge for Apex Legends Mobile...</h2><br>
     <img loading="lazy" src="/images/game-lounge-img/hot-topics-assets/apexmobile-founders badge.png" alt="apex legends mobile gamelounge Hot topics image">                   
     <p>Apex Legends Mobile is ready to go full force into Global Launch by hinting at Pre registrations and player rewards.
     </p> <br>
