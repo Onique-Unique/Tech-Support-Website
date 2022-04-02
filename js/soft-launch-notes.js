@@ -2,6 +2,14 @@ document.getElementById("soft-launch-crumbs").innerHTML =
 `
 <div class="articles-main-crumbs--inner">
     <div class="main-crumbs-contain">
+        <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-mobile-ios"><img loading="lazy" class="article-crumb-direction" src="https://i3.ytimg.com/vi/VlDUATF8HdQ/hqdefault.jpg" alt="apex legends mobile gamelounge thumbnail" frameborder="0"></a>
+        <h2 class="article-crumb-h2">Apex Legends Mobile iOS Pre register Update</h2>
+    </div>
+    <hr class="crumb-hr">
+</div>
+<!--  ------------------------------------------------------------------------------  -->
+<div class="articles-main-crumbs--inner">
+    <div class="main-crumbs-contain">
         <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-mobile-official-website"><img loading="lazy" class="article-crumb-direction" src="https://i3.ytimg.com/vi/e-oNqpjhG3Q/hqdefault.jpg" alt="apex legends mobile gamelounge thumbnail" frameborder="0"></a>
         <h2 class="article-crumb-h2">Apex Legends Mobile Official Website</h2>
     </div>

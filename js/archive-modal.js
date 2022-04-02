@@ -8,6 +8,7 @@ document.getElementById("content-modal").innerHTML = `<i class="fa-solid fa-chev
     </div>
     <div id="other-news-listings">
         <h3>Soft Launch Notes!</h3>
+        <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-mobile-ios"><h2>Apex Legends Mobile iOS Pre Registration</h2></a>
         <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-mobile-official-website"><h2>Apex Legends Mobile Official Website</h2></a>
         <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-characters-coming-to-mobile"><h2>Apex Legends Characters - Coming to Mobile</h2></a>
         <a href="/main-pages/apex-mobile/soft-launch-notes/wraith-infinite-void"><h2>Apex Legends Mobile Wraith Infinite Void Glitch</h2></a>
