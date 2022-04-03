@@ -109,7 +109,7 @@ playlistRefresh.addEventListener("click", () => {
         document.getElementById("playlist-embed").innerHTML = `<iframe id="embed-music" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0" modestbranding="1"></iframe>`
 });
 
-var videoListings = ["m4z-bbYVzNE", "blyhIr6Mfh0", "p3vAeH8_WAo", "TsqNrusKb_M", "aNJEGMjkmB4", "W3wnDWN_Qt0", "fghYZb2spO4", "sv0g5vPO-N8", "jykI2bqKr0U", "YZ_HT9dRpoQ", "g9aOqJ_Mujw", "fCBzFk4Zvjk", "Ya5Z1ocmbec", "JCNLzcVrS_c", "Rtxf-kVYF8M", "rnix_tLX4tA", "YQyb-FMD9yI", "Csy3a9MXhmI", "ZMsPToERirQ", "DSqp7wEbbeY", "Pvqm6_mplRs", "KtT57G8kT20", "w01aUT2LDrw", "kViPdRsqJsQ", "t2cgKUapfag", "ndoDekUMGdc", "ZMuVHf3Xugo", "INTyMiA8zkc", "GLojO9k5YqE", "LcsOSIXc9cg", "v8ZDDbHppMQ", "CVqIK8scMHU", "4sV94dhP518", "KXRosceNwfc", "mNLCRZsopqg", "5THFjkoOQJ8", "yu5M2A7-QIU", "qsrU1Dq8Q_c", "rAzlTtRaa04", "wqMaedijeh4", "ochPdvqAOtQ",]
+var videoListings = ["GE78DSM-HCw", "e2pv1MH9yjw", "KZY9o4MQakU", "g9aOqJ_Mujw", "blyhIr6Mfh0", "TsqNrusKb_M", "EWh5MUqGknU", "Csy3a9MXhmI", "m4z-bbYVzNE", "aNJEGMjkmB4", "4sV94dhP518", "DSqp7wEbbeY", "p3vAeH8_WAo", "YZ_HT9dRpoQ", "fCBzFk4Zvjk", "4TtrGAV7DrA", "U1U6-IjlhbM", "Pvqm6_mplRs", "XRtv30j0pp8", "INTyMiA8zkc", "jykI2bqKr0U", "Ya5Z1ocmbec", "ZMuVHf3Xugo", "YS-ZJT9v-go", "JCNLzcVrS_c", "sv0g5vPO-N8", "KtT57G8kT20", "YQyb-FMD9yI", "xyk9LIeJ3Vw", "LcsOSIXc9cg", "KXRosceNwfc", "t2cgKUapfag", "Rtxf-kVYF8M", "ndoDekUMGdc", "rnix_tLX4tA", "yu5M2A7-QIU", "mNLCRZsopqg", "w01aUT2LDrw", "G3CQ_u47RHs", "CVqIK8scMHU", "5THFjkoOQJ8", ]
 var featuredListings = [];
 
 // Video Lounge Shuffle Random | Prev - Next
@@ -142,7 +142,7 @@ videoListNext.addEventListener("click", () => {
 
 // ID/ Thumbnail identifiers for Must Watch Videos on main page
 watchFeaturedList = ["watch-1", "watch-2", "watch-3", "watch-4", "watch-5",];
-watchFeaturedId = ["TsqNrusKb_M", "p3vAeH8_WAo", "blyhIr6Mfh0", "m4z-bbYVzNE", "KZTWjGMSC-g",];
+watchFeaturedId = ["blyhIr6Mfh0", "KZY9o4MQakU", "e2pv1MH9yjw", "GE78DSM-HCw", "KZTWjGMSC-g",];
 
 // ---------------LOGICAL SCRIPT FOR FEATURED MUST WATCH VIDEOS-------------------------------
 for(let i = 0; i < watchFeaturedList.length && i < watchFeaturedId.length; i++) {
