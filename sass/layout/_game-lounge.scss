@@ -352,7 +352,7 @@
                             top: 50%;
                             left: 50%;
                             transform: translate(-50%, -50%);
-                            font-size: 30rem;
+                            font-size: 27rem;
                             border: 10px solid white;
                             border-radius: 100%;
                             box-shadow: 0px 0px 40px red, inset 0px 0px 40px red ;
@@ -367,13 +367,12 @@
 
                         .inner-apex-icon {
                             position: absolute;
-                            top: 48%;
+                            top: 50%;
                             left: 50%;
                             transform: translate(-50%, -50%);
 
                             & img {
-                                height: 18rem; 
-                                filter: invert(1) brightness(100);                 
+                                max-height: 30rem;                  
                             }
                         }
                     }
@@ -3278,7 +3277,7 @@
         .inner-apex-icon {
 
             & img {
-                height: 16rem !important;
+                height: 18rem !important;
             }
         }
     }
@@ -3337,7 +3336,7 @@
         .inner-apex-icon {
 
             & img {
-                height: 14rem !important;
+                height: 16rem !important;
             }
         }
     }
@@ -3400,7 +3399,7 @@
         .inner-apex-icon {
 
             & img {
-                height: 12rem !important;
+                height: 14rem !important;
             }
         }
     }
@@ -3434,10 +3433,9 @@
         }
 
         .inner-apex-icon {
-            top: 49% !important;
 
             & img {
-                height: 8rem !important;
+                height: 10rem !important;
             }
         }
     }
@@ -3567,10 +3565,9 @@
         }
 
         .inner-apex-icon {
-            top: 49% !important;
 
             & img {
-                height: 12rem !important;
+                height: 14rem !important;
             }
         }
     }
@@ -3723,7 +3720,7 @@
         .inner-apex-icon {
 
             & img {
-                height: 10rem !important;
+                height: 12rem !important;
             }
         }
     }
