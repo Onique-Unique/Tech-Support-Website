@@ -3,7 +3,7 @@ const topics = ["topic-PC", "topic-Mobile"];
 for(let i = 0; i < topics.length; i++){
     document.getElementById(topics[i]).innerHTML = `
     <h2>New Banner For Rainbow Six Mobile Launch...</h2><br>
-    <img loading="lazy" src="/images/game-lounge-img/hot-topics-assets/apexmobile-new-reward.PNG" alt="rainbow six mobile gamelounge Hot topics image">                   
+    <img loading="lazy" src="/images/game-lounge-img/r6-hot-topics-assets/apexmobile-new-reward.PNG" alt="rainbow six mobile gamelounge Hot topics image">                   
     <p>Rainbow Six Mobile Free Reward for Pre registered accounts before launch day. Android Devices are open for pre registration, for a chance to earn exclusive rewards.
     </p> <br>
     <div id="topic-space-br"></div>
