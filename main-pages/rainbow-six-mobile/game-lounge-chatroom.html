@@ -890,15 +890,31 @@
         }
       </script>
 
-    <!-- Local Script -->
+      <!-- Local Script -->
     <script src="/js/main/left-aside-menu.js"></script>
     <script src="/js/rainbow-six-mobile/hot-topics.js"></script>
+    <script>
+        // ID/ Thumbnail identifiers for Must Watch Videos on main page
+        watchFeaturedList = ["watch-1", "watch-2", "watch-3", "watch-4", "watch-5",];
+        watchFeaturedId = ["6MAx0FvuOxU", "VQOlOe6ULHA", "9Y8lfSFDhWo", "NGEc9kexJt0", "KZTWjGMSC-g",];
+
+        // ---------------LOGICAL SCRIPT FOR FEATURED MUST WATCH VIDEOS-------------------------------
+        for(let i = 0; i < watchFeaturedList.length && i < watchFeaturedId.length; i++) {
+            document.getElementById(watchFeaturedList[i]).addEventListener("click", () => {
+                console.log(watchFeaturedList[i]);
+                var id = watchFeaturedId[i];
+                gameloungeBodyContainer.classList.toggle("hide");
+                videoLoungeContainer.classList.toggle("hide");
+                document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0"></iframe>`
+            });
+        };
+    </script>
     <script src="/js/main/playlist.js"></script>
     <script src="/js/rainbow-six-mobile/video-lounge.js"></script>
     <script src="/js/rainbow-six-mobile/publisher.js"></script>
     <script src="/js/rainbow-six-mobile/archive-modal.js"></script>
     <script src="/js/main/email-form.js"></script>
     <script src="/js/main/disclaimer.js"></script>
-    <script src="/js/rainbow-six-mobile/gamelounge.js"></script>
+    <script src="/js-minify/rainbow-six-mobile/gamelounge-main-min.js"></script>
 </body>
 </html>

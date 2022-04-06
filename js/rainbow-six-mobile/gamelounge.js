@@ -140,22 +140,6 @@ videoListNext.addEventListener("click", () => {
     };
 });
 
-// ID/ Thumbnail identifiers for Must Watch Videos on main page
-watchFeaturedList = ["watch-1", "watch-2", "watch-3", "watch-4", "watch-5",];
-watchFeaturedId = ["6MAx0FvuOxU", "VQOlOe6ULHA", "9Y8lfSFDhWo", "NGEc9kexJt0", "KZTWjGMSC-g",];
-
-// ---------------LOGICAL SCRIPT FOR FEATURED MUST WATCH VIDEOS-------------------------------
-for(let i = 0; i < watchFeaturedList.length && i < watchFeaturedId.length; i++) {
-    document.getElementById(watchFeaturedList[i]).addEventListener("click", () => {
-        console.log(watchFeaturedList[i]);
-        var id = watchFeaturedId[i];
-        gameloungeBodyContainer.classList.toggle("hide");
-        videoLoungeContainer.classList.toggle("hide");
-        document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0"></iframe>`
-    });
-};
-
-
 // OLD SEARCH SCRIPT
 // writing a script for the search bar function logic
 // for the explore page will identify different sections searched using location.href = "#idName"
