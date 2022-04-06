@@ -3552,7 +3552,7 @@ footer p {
                 -ms-transform: translate(-50%, -50%);
                     transform: translate(-50%, -50%); }
             .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-typography .gamelounge-typography #typography-inner .inner-apex-icon img, .game-lounge-body--landing-page .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-typography .gamelounge-typography #typography-inner .inner-apex-icon img {
-              max-height: 30rem; }
+              max-height: 20rem; }
         .game-lounge-body .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-typography .gamelounge-typography--2, .game-lounge-body--landing-page .game-lounge-body-container .game-lounge-landing--main .gamelounge-home-typography .gamelounge-typography--2 {
           position: relative;
           height: 70vh;
@@ -5592,7 +5592,7 @@ footer p {
   #typography-inner .apex-circle {
     font-size: 24rem !important; }
   #typography-inner .inner-apex-icon img {
-    height: 18rem !important; }
+    height: 15rem !important; }
   .enter-lounge {
     font-size: 2.5rem !important; } }
 
@@ -5616,7 +5616,7 @@ footer p {
   #typography-inner .apex-circle {
     font-size: 20rem !important; }
   #typography-inner .inner-apex-icon img {
-    height: 16rem !important; }
+    height: 13rem !important; }
   .enter-lounge {
     height: 12rem !important;
     width: 30% !important; } }
@@ -5644,7 +5644,7 @@ footer p {
   #typography-inner .apex-circle {
     font-size: 16rem !important; }
   #typography-inner .inner-apex-icon img {
-    height: 14rem !important; }
+    height: 11rem !important; }
   #typography-inner--2 .inner-text-main {
     font-size: 2.2rem !important; }
   #typography-inner--2 .inner-text-secondary {
@@ -5658,7 +5658,7 @@ footer p {
   #typography-inner .apex-circle {
     font-size: 13rem !important; }
   #typography-inner .inner-apex-icon img {
-    height: 10rem !important; }
+    height: 7rem !important; }
   .enter-lounge {
     width: 40% !important;
     font-size: 2rem !important; }
@@ -5706,7 +5706,7 @@ footer p {
   #typography-inner .apex-circle {
     font-size: 16rem !important; }
   #typography-inner .inner-apex-icon img {
-    height: 14rem !important; }
+    height: 11rem !important; }
   #typography-inner--2 .inner-text-main {
     font-size: 2.6rem !important;
     background-color: transparent !important; }
@@ -5763,7 +5763,7 @@ footer p {
   #typography-inner .apex-circle {
     font-size: 14rem !important; }
   #typography-inner .inner-apex-icon img {
-    height: 12rem !important; }
+    height: 9rem !important; }
   #typography-inner--2 .inner-text-main {
     font-size: 2.2rem !important; }
   #typography-inner--2 .inner-text-secondary {
