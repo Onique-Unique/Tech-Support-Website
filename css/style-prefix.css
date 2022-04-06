@@ -3817,7 +3817,6 @@ footer p {
         width: 100%;
         max-height: 30rem;
         overflow-y: scroll;
-        background-color: white;
         border-bottom: 2px solid #3f1d1d;
         border-radius: 10px;
         -ms-overflow-style: none;
@@ -5899,4 +5898,6 @@ footer p {
   background: linear-gradient(to right, #114d11, #3763c3); }
 
 .r6-comment-box {
-  background: #fff; }
+  background: -webkit-gradient(linear, left top, right top, from(#528052), color-stop(#59c05e), to(#20aa32));
+  background: -o-linear-gradient(left, #528052, #59c05e, #20aa32);
+  background: linear-gradient(to right, #528052, #59c05e, #20aa32); }
