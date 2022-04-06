@@ -1,4 +1,38 @@
+// MAIN BG - COLORS
+$apex-lounge: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+$rainbow6-lounge: linear-gradient(to right, #122710, #114d11, #0c1f0d);
+$warzoneM-lounge: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+$valorantM-lounge: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+
+// CAROUSEL BG - COLORS
+$apex-carousel: linear-gradient(to right, #1D2671, #C33764);;
+$rainbow6-carousel: linear-gradient(to right, #114d11, #3763c3);;
+$warzoneM-carousel: linear-gradient(to right, #1D2671, #C33764);;
+$valorantM-carousel: linear-gradient(to right, #1D2671, #C33764);;
+
+// GAME LOUNGE CHAT BOX/ COMMENT
+$apex-comment-box:  linear-gradient(to right, #525280, #6159c0, #2e20aa);
+$r6-comment-box:  #fff;
+
+// SCROLL BAR COLORS
+$apex-scrollbar-color: #C33764 #0f0c2900;
+$apex-scrollbar-thumb-bg: #c3376383;
+$apex-scrollbar-thumb-hover: #C33764;
+$apex-scrollbar-track-bg: #0f0c29;
+
+$r6-scrollbar-color: #fafafa #0f0c2900;
+$r6-scrollbar-thumb-bg: #c2c2c283;
+$r6-scrollbar-thumb-hover: #ffffff;
+$r6-scrollbar-track-bg: #0c1f0d;
+
 //COLORS 
+
+//Fallback Colors
+$apex-background-main: #0f0c29; // fallback for older browsers
+$r6-background-main: #0c1f0d; // fallback for older browsers
+
+$apex-carousel-main: #C33764; // fallback for older browsers
+$r6-carousel-main: #3763c3; // fallback for older browsers
 
 $primary-light: #426d49;
 $primary-dark: #4f612a;

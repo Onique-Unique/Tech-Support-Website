@@ -32,6 +32,242 @@ img, i, button {
 svg {
   cursor: pointer; }
 
+/* 
+---Mobile, portrait---
+320px	iPhone SE
+375px	iPhone 6 to X
+414px	iPhone 8 Plus
+
+---Mobile, in between---
+580px   devices inbetween
+
+---Mobile, landscape---	
+568px	iPhone SE
+667px	iPhone 6 to 8
+736px	iPhone 8 Plus
+812px	iPhone X
+
+---Tablet, portrait---	
+768px	iPad Air, iPad Mini, iPad Pro 9″
+834px	iPad Pro 10″
+
+---Tablet, landscape---	
+1024px	iPad Air, iPad Mini, iPad Pro 9″
+1024px	iPad Pro 12″ (portrait)
+1112px	iPad Pro 10″
+
+---Laptop displays---	
+1366px	HD laptops (768p)
+1366px	iPad Pro 12″ (landscape)
+1440px	13″ MacBook Pro (2x scaling)
+
+---Desktop displays---	
+1680px	13″ MacBook Pro (1.5x scaling)
+1920px	1080p displays
+*/
+@-webkit-keyframes apex-1 {
+  0% {
+    opacity: 1; }
+  14% {
+    opacity: 0; }
+  28% {
+    opacity: 0; }
+  42% {
+    opacity: 0; }
+  56% {
+    opacity: 0; }
+  70% {
+    opacity: 0; }
+  84% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes apex-2 {
+  0% {
+    opacity: 0; }
+  14% {
+    opacity: 1; }
+  28% {
+    opacity: 0; }
+  42% {
+    opacity: 0; }
+  56% {
+    opacity: 0; }
+  70% {
+    opacity: 0; }
+  84% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes apex-3 {
+  0% {
+    opacity: 0; }
+  14% {
+    opacity: 0; }
+  28% {
+    opacity: 1; }
+  42% {
+    opacity: 0; }
+  56% {
+    opacity: 0; }
+  70% {
+    opacity: 0; }
+  84% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes apex-4 {
+  0% {
+    opacity: 0; }
+  14% {
+    opacity: 0; }
+  28% {
+    opacity: 0; }
+  42% {
+    opacity: 1; }
+  56% {
+    opacity: 0; }
+  70% {
+    opacity: 0; }
+  84% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes apex-5 {
+  0% {
+    opacity: 0; }
+  14% {
+    opacity: 0; }
+  28% {
+    opacity: 0; }
+  42% {
+    opacity: 0; }
+  56% {
+    opacity: 1; }
+  70% {
+    opacity: 0; }
+  84% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes apex-6 {
+  0% {
+    opacity: 0; }
+  14% {
+    opacity: 0; }
+  28% {
+    opacity: 0; }
+  42% {
+    opacity: 0; }
+  56% {
+    opacity: 0; }
+  70% {
+    opacity: 1; }
+  84% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes apex-7 {
+  0% {
+    opacity: 0; }
+  14% {
+    opacity: 0; }
+  28% {
+    opacity: 0; }
+  42% {
+    opacity: 0; }
+  56% {
+    opacity: 0; }
+  70% {
+    opacity: 0; }
+  84% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes gamelounge-home-btn {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    opacity: .7;
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@-webkit-keyframes gamelounge-home-img {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@-webkit-keyframes temp-icon {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    opacity: .8;
+    color: #fcb565; }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; } }
+
+@-webkit-keyframes loading-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@-webkit-keyframes policy-appear {
+  0% {
+    opacity: 0; }
+  98% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes squish {
+  100% {
+    left: -15%;
+    right: -15%;
+    top: 35%;
+    bottom: 35%;
+    border-radius: 30px; } }
+
+@-webkit-keyframes progress {
+  100% {
+    left: -15%;
+    right: -15%;
+    top: 35%; } }
+
+@-webkit-keyframes remove {
+  100% {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0; } }
+
 nav {
   padding: 1rem 1.5rem;
   -webkit-box-pack: justify;
@@ -2988,24 +3224,13 @@ footer p {
   max-width: 1440px; }
 
 .game-lounge-body, .game-lounge-body--landing-page {
-  background: #0f0c29;
-  /* fallback for old browsers */
-  background: -webkit-gradient(linear, left top, right top, from(#24243e), color-stop(#302b63), to(#0f0c29));
-  background: -o-linear-gradient(left, #24243e, #302b63, #0f0c29);
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
   -ms-scroll-chaining: none;
       overscroll-behavior: contain;
-  scrollbar-color: #C33764 #0f0c2900;
   scrollbar-width: thin !important; }
   .game-lounge-body::-webkit-scrollbar, .game-lounge-body--landing-page::-webkit-scrollbar {
     width: 1vw; }
   .game-lounge-body::-webkit-scrollbar-thumb, .game-lounge-body--landing-page::-webkit-scrollbar-thumb {
-    background-color: #c3376383;
     border-radius: 10px; }
-    .game-lounge-body::-webkit-scrollbar-thumb:hover, .game-lounge-body--landing-page::-webkit-scrollbar-thumb:hover {
-      background-color: #C33764; }
-  .game-lounge-body::-webkit-scrollbar-track, .game-lounge-body--landing-page::-webkit-scrollbar-track {
-    background-color: #0f0c29; }
   @media (max-width: 960px) {
     .game-lounge-body, .game-lounge-body--landing-page {
       -ms-overflow-style: none;
@@ -3369,11 +3594,6 @@ footer p {
   max-width: 1500px; }
   .game-nav-fixed .game-nav {
     position: relative;
-    background: #0f0c29;
-    /* fallback for old browsers */
-    background: -webkit-gradient(linear, left top, right top, from(#24243e), color-stop(#302b63), to(#0f0c29));
-    background: -o-linear-gradient(left, #24243e, #302b63, #0f0c29);
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
     border-bottom: 2px solid #3f1d1d;
     width: 100%;
     height: 6rem; }
@@ -3562,7 +3782,7 @@ footer p {
             .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .hot-topics::-webkit-scrollbar-thumb:hover {
               background-color: #C33764; }
           .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .hot-topics::-webkit-scrollbar-track {
-            background-color: #0f0c29; }
+            background-color: #303030; }
           @media (max-width: 960px) {
             .game-lounge-right-aside .game-community-sidebar .community-sidebar-display .community-sidebar-content .hot-topics {
               -ms-overflow-style: none;
@@ -3598,9 +3818,6 @@ footer p {
         max-height: 30rem;
         overflow-y: scroll;
         background-color: white;
-        background: -webkit-gradient(linear, left top, right top, from(#525280), color-stop(#6159c0), to(#2e20aa));
-        background: -o-linear-gradient(left, #525280, #6159c0, #2e20aa);
-        background: linear-gradient(to right, #525280, #6159c0, #2e20aa);
         border-bottom: 2px solid #3f1d1d;
         border-radius: 10px;
         -ms-overflow-style: none;
@@ -3671,14 +3888,7 @@ footer p {
       border: 1px solid black;
       width: 100%;
       top: 45%;
-      border-radius: 30px;
-      background: #C33764;
-      /* fallback for old browsers */
-      /* Chrome 10-25, Safari 5.1-6 */
-      background: -webkit-gradient(linear, left top, right top, from(#1D2671), to(#C33764));
-      background: -o-linear-gradient(left, #1D2671, #C33764);
-      background: linear-gradient(to right, #1D2671, #C33764);
-      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+      border-radius: 30px; }
       .section-body-container .game-feature-section .game-feature-container .game-banner {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -5093,7 +5303,7 @@ footer p {
           .video-lounge-container .lounge-flex .video-live-chat #video-chat-widget::-webkit-scrollbar-thumb:hover {
             background-color: #C33764; }
         .video-lounge-container .lounge-flex .video-live-chat #video-chat-widget::-webkit-scrollbar-track {
-          background-color: #0f0c29; }
+          background-color: transparent; }
 
 .policy-appear {
   -webkit-animation: policy-appear 6s linear;
@@ -5610,242 +5820,6 @@ footer p {
       width: 20rem !important; } }
 
 /* Gamelounge End */
-/* 
----Mobile, portrait---
-320px	iPhone SE
-375px	iPhone 6 to X
-414px	iPhone 8 Plus
-
----Mobile, in between---
-580px   devices inbetween
-
----Mobile, landscape---	
-568px	iPhone SE
-667px	iPhone 6 to 8
-736px	iPhone 8 Plus
-812px	iPhone X
-
----Tablet, portrait---	
-768px	iPad Air, iPad Mini, iPad Pro 9″
-834px	iPad Pro 10″
-
----Tablet, landscape---	
-1024px	iPad Air, iPad Mini, iPad Pro 9″
-1024px	iPad Pro 12″ (portrait)
-1112px	iPad Pro 10″
-
----Laptop displays---	
-1366px	HD laptops (768p)
-1366px	iPad Pro 12″ (landscape)
-1440px	13″ MacBook Pro (2x scaling)
-
----Desktop displays---	
-1680px	13″ MacBook Pro (1.5x scaling)
-1920px	1080p displays
-*/
-@-webkit-keyframes apex-1 {
-  0% {
-    opacity: 1; }
-  14% {
-    opacity: 0; }
-  28% {
-    opacity: 0; }
-  42% {
-    opacity: 0; }
-  56% {
-    opacity: 0; }
-  70% {
-    opacity: 0; }
-  84% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@-webkit-keyframes apex-2 {
-  0% {
-    opacity: 0; }
-  14% {
-    opacity: 1; }
-  28% {
-    opacity: 0; }
-  42% {
-    opacity: 0; }
-  56% {
-    opacity: 0; }
-  70% {
-    opacity: 0; }
-  84% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-
-@-webkit-keyframes apex-3 {
-  0% {
-    opacity: 0; }
-  14% {
-    opacity: 0; }
-  28% {
-    opacity: 1; }
-  42% {
-    opacity: 0; }
-  56% {
-    opacity: 0; }
-  70% {
-    opacity: 0; }
-  84% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-
-@-webkit-keyframes apex-4 {
-  0% {
-    opacity: 0; }
-  14% {
-    opacity: 0; }
-  28% {
-    opacity: 0; }
-  42% {
-    opacity: 1; }
-  56% {
-    opacity: 0; }
-  70% {
-    opacity: 0; }
-  84% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-
-@-webkit-keyframes apex-5 {
-  0% {
-    opacity: 0; }
-  14% {
-    opacity: 0; }
-  28% {
-    opacity: 0; }
-  42% {
-    opacity: 0; }
-  56% {
-    opacity: 1; }
-  70% {
-    opacity: 0; }
-  84% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-
-@-webkit-keyframes apex-6 {
-  0% {
-    opacity: 0; }
-  14% {
-    opacity: 0; }
-  28% {
-    opacity: 0; }
-  42% {
-    opacity: 0; }
-  56% {
-    opacity: 0; }
-  70% {
-    opacity: 1; }
-  84% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-
-@-webkit-keyframes apex-7 {
-  0% {
-    opacity: 0; }
-  14% {
-    opacity: 0; }
-  28% {
-    opacity: 0; }
-  42% {
-    opacity: 0; }
-  56% {
-    opacity: 0; }
-  70% {
-    opacity: 0; }
-  84% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-@-webkit-keyframes gamelounge-home-btn {
-  0% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1); }
-  50% {
-    opacity: .7;
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95); }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1); } }
-
-@-webkit-keyframes gamelounge-home-img {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1); }
-  50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1); }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1); } }
-
-@-webkit-keyframes temp-icon {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1; }
-  50% {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-    opacity: .8;
-    color: #fcb565; }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1; } }
-
-@-webkit-keyframes loading-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
-
-@-webkit-keyframes policy-appear {
-  0% {
-    opacity: 0; }
-  98% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@-webkit-keyframes squish {
-  100% {
-    left: -15%;
-    right: -15%;
-    top: 35%;
-    bottom: 35%;
-    border-radius: 30px; } }
-
-@-webkit-keyframes progress {
-  100% {
-    left: -15%;
-    right: -15%;
-    top: 35%; } }
-
-@-webkit-keyframes remove {
-  100% {
-    width: 0;
-    height: 0;
-    padding: 0;
-    margin: 0; } }
-
 .iframe {
   width: 90%;
   height: 55rem;
@@ -5868,3 +5842,61 @@ footer p {
 #gamelounge-ad-placement::-webkit-scrollbar {
   height: 1.5vh;
   width: .8vw; }
+
+.apex-lounge-body {
+  background: #0f0c29;
+  background: -webkit-gradient(linear, left top, right top, from(#24243e), color-stop(#302b63), to(#0f0c29));
+  background: -o-linear-gradient(left, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  scrollbar-color: #C33764 #0f0c2900; }
+  .apex-lounge-body::-webkit-scrollbar-thumb {
+    background-color: #c3376383; }
+    .apex-lounge-body::-webkit-scrollbar-thumb:hover {
+      background-color: #C33764; }
+  .apex-lounge-body::-webkit-scrollbar-track {
+    background-color: #0f0c29; }
+  .apex-lounge-body .apex-nav {
+    background: #0f0c29;
+    /* fallback for old browsers */
+    background: -webkit-gradient(linear, left top, right top, from(#24243e), color-stop(#302b63), to(#0f0c29));
+    background: -o-linear-gradient(left, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); }
+
+.apex-feature-container {
+  background: #C33764;
+  background: -webkit-gradient(linear, left top, right top, from(#1D2671), to(#C33764));
+  background: -o-linear-gradient(left, #1D2671, #C33764);
+  background: linear-gradient(to right, #1D2671, #C33764); }
+
+.apex-comment-box {
+  background: -webkit-gradient(linear, left top, right top, from(#525280), color-stop(#6159c0), to(#2e20aa));
+  background: -o-linear-gradient(left, #525280, #6159c0, #2e20aa);
+  background: linear-gradient(to right, #525280, #6159c0, #2e20aa); }
+
+.r6-lounge-body {
+  background: #0c1f0d;
+  background: -webkit-gradient(linear, left top, right top, from(#122710), color-stop(#114d11), to(#0c1f0d));
+  background: -o-linear-gradient(left, #122710, #114d11, #0c1f0d);
+  background: linear-gradient(to right, #122710, #114d11, #0c1f0d);
+  scrollbar-color: #fafafa #0f0c2900; }
+  .r6-lounge-body::-webkit-scrollbar-thumb {
+    background-color: #c2c2c283; }
+    .r6-lounge-body::-webkit-scrollbar-thumb:hover {
+      background-color: #ffffff; }
+  .r6-lounge-body::-webkit-scrollbar-track {
+    background-color: #0c1f0d; }
+  .r6-lounge-body .r6-nav {
+    background: #0c1f0d;
+    /* fallback for old browsers */
+    background: -webkit-gradient(linear, left top, right top, from(#122710), color-stop(#114d11), to(#0c1f0d));
+    background: -o-linear-gradient(left, #122710, #114d11, #0c1f0d);
+    background: linear-gradient(to right, #122710, #114d11, #0c1f0d); }
+
+.r6-feature-container {
+  background: #3763c3;
+  background: -webkit-gradient(linear, left top, right top, from(#114d11), to(#3763c3));
+  background: -o-linear-gradient(left, #114d11, #3763c3);
+  background: linear-gradient(to right, #114d11, #3763c3); }
+
+.r6-comment-box {
+  background: #fff; }

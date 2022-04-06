@@ -1,0 +1,31 @@
+.apex-lounge-body {
+    background: $apex-background-main; // Fallback Color for older browsers
+    background: $apex-lounge;
+    scrollbar-color: $apex-scrollbar-color;
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $apex-scrollbar-thumb-bg;
+
+        &:hover {
+            background-color: $apex-scrollbar-thumb-hover;
+        }
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: $apex-scrollbar-track-bg;
+    }
+
+    .apex-nav {
+        background: $apex-background-main;  /* fallback for old browsers */ 
+        background: $apex-lounge;
+    }
+}
+
+.apex-feature-container {
+    background: $apex-carousel-main; // Fallback Color for older browsers
+    background: $apex-carousel;
+}
+
+.apex-comment-box {
+    background: $apex-comment-box;
+}

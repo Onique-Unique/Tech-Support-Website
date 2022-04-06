@@ -4,11 +4,7 @@
 }
 
 .game-lounge-body, .game-lounge-body--landing-page {
-    background: #0f0c29;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); 
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
     overscroll-behavior: contain; // keeps page from pulling when scroll reaches end
-    scrollbar-color:#C33764 #0f0c2900 ;
     scrollbar-width: thin !important;
 
     &::-webkit-scrollbar {
@@ -16,16 +12,7 @@
     }
 
     &::-webkit-scrollbar-thumb {
-        background-color: #c3376383;
         border-radius: 10px;
-
-        &:hover {
-            background-color: #C33764;
-        }
-    }
-
-    &::-webkit-scrollbar-track {
-        background-color: #0f0c29;
     }
     
     @media (max-width: 960px) {
@@ -433,9 +420,6 @@
 
     .game-nav {
         position: relative;
-        background: #0f0c29;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); 
-        background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
         border-bottom: 2px solid rgb(63, 29, 29);
         width: 100%;
         height: 6rem;
@@ -655,7 +639,7 @@
                     }
 
                     &::-webkit-scrollbar-track {
-                        background-color: #0f0c29;
+                        background-color: #303030;
                     }
                     
                     @media (max-width: 960px) {
@@ -711,7 +695,6 @@
                 max-height: 30rem;
                 overflow-y: scroll;
                 background-color: white;
-                background: linear-gradient(to right, #525280, #6159c0, #2e20aa);
                 border-bottom: 2px solid rgb(63, 29, 29);
 
                 border-radius: 10px;
@@ -810,9 +793,6 @@
             width: 100%;
             top: 45%;
             border-radius: 30px;
-            background: #C33764;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
             .game-banner {
                 display: flex;
@@ -2729,7 +2709,7 @@
                 }
 
                 &::-webkit-scrollbar-track {
-                    background-color: #0f0c29;
+                    background-color: transparent;
                 }
             }
         }

@@ -1,0 +1,31 @@
+.r6-lounge-body {
+    background: $r6-background-main; // Fallback Color for older browsers
+    background: $rainbow6-lounge;
+    scrollbar-color: $r6-scrollbar-color;
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $r6-scrollbar-thumb-bg;
+
+        &:hover {
+            background-color: $r6-scrollbar-thumb-hover;
+        }
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: $r6-scrollbar-track-bg;
+    }
+
+    .r6-nav {
+        background: $r6-background-main;  /* fallback for old browsers */ 
+        background: $rainbow6-lounge;
+    }
+}
+
+.r6-feature-container {
+    background: $r6-carousel-main; // Fallback Color for older browsers
+    background: $rainbow6-carousel
+}
+
+.r6-comment-box {
+    background: $r6-comment-box;
+}
