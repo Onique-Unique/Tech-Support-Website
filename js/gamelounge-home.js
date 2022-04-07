@@ -1,6 +1,7 @@
-const homeBtn = document.querySelector(".enter-lounge");
+const homeBtn = document.getElementById("enter-lounge-list");
 const infoBtn = document.querySelector(".info-icon");
 const infoExitBtn = document.querySelector(".info-exit");
+const enterLoungeList = document.querySelector(".lounge-entry-container");
 const gameloungeBodyContainer = document.querySelector(".game-lounge-landing--main");
 const infoContainer = document.querySelector(".info-container");
 const scrollLeft = document.querySelector(".left-icon");
@@ -14,9 +15,9 @@ const scrollRight = document.querySelector(".right-icon");
 
 document.cookie = "AC-C=ac-c;expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/;SameSite=None;Secure";
 
-// homeBtn.addEventListener("click", () => {
-//     alert("Welcome To The Soft Launch For The Exclusive Apex Legends Mobile Game Lounge, Explore New Features/ Additions Inside The Game Lounge - Follow Details Mentioned In Discord And Report Feedback To The Community Developer. Click Ok/Close To Proceed...");
-// });
+homeBtn.addEventListener("click", () => {
+    enterLoungeList.classList.remove("hide");
+});
 
 infoBtn.addEventListener("click", () => {
     gameloungeBodyContainer.classList.toggle("filter-overlay");

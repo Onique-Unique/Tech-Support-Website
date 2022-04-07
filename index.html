@@ -73,7 +73,34 @@
             right: 1.5%;
             font-size: 2rem;
             color: white;
+        }
+        .lounge-entry-container {
+            position: absolute;
+            top: 0%;
+            height: 100vh;
+            width: 100vw;
+            z-index: 2;
+            background: repeating-linear-gradient(45deg,rgb(255, 5, 5),#302b63 700px);
         } 
+        .lounge-entry-list {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+        }
+        .lounge-list h2{
+            padding: 6% 2%;
+            margin: 10% 0;
+            text-align: center;
+            background-color: rgb(31, 30, 30);
+            color: white;
+            font-size: 2rem;
+        }
+        .lounge-list h2:hover{
+            background-color: white;
+            color: rgb(31, 30, 30);
+        }
     </style>
 </head>
 <body class="game-lounge-body--landing-page">
@@ -103,7 +130,7 @@
                     </div>
                 </div>
                 <i class="fa-solid fa-circle-info info-icon"></i>
-                <a href="/main-pages/apex-mobile/game-lounge-chatroom"><button class="enter-lounge enter-grad"><i class="fas fa-circle enter-circle"></i>ENTER LOUNGE</button></a>  
+                <a id="enter-lounge-list"><button class="enter-lounge enter-grad"><i class="fas fa-circle enter-circle"></i>ENTER LOUNGE</button></a>  
                 <!-- <p id="currentDate-gamelounge-home"></p>                -->
             </div>       
         </main>
@@ -123,6 +150,15 @@
                     </div>                   
                     <!-- <div id="credits"><p>Credits</p></div>
                     <div id="user-guide"><p>User Guide</p></div> -->
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="lounge-entry-container hide">
+            <div class="lounge-entry-list">
+                <div class="lounge-list">
+                    <a href="/main-pages/apex-mobile/game-lounge-chatroom"><h2>Apex Legends Mobile</h2></a>
+                    <a href="/main-pages/rainbow-six-mobile/game-lounge-chatroom"><h2>Rainbow Six Mobile</h2></a>
                 </div>
             </div>
         </div>
