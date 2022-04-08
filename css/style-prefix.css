@@ -4456,7 +4456,6 @@ footer p {
           align-items: center;
   margin-top: 3%; }
   .community-sidebar-display-secondary .game-chatroom {
-    margin: 5% !important;
     max-width: 100%;
     max-height: 40rem;
     overflow-y: scroll;
