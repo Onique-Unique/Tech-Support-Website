@@ -3312,7 +3312,9 @@ footer p {
     position: relative; }
     .gamelounge-info--container .gamelounge-info--body .gamelounge-info--1 {
       box-shadow: 1px 1rem 2rem black;
-      position: relative; }
+      position: relative;
+      height: 25rem;
+      width: 100%; }
       .gamelounge-info--container .gamelounge-info--body .gamelounge-info--1 img {
         max-height: 25rem;
         width: 100%;
@@ -3685,10 +3687,12 @@ footer p {
     font-size: 3rem !important; }
   .gamelounge-info-content p {
     font-size: 1.2rem !important; }
-  .gamelounge-info--1 button {
-    padding: .5rem 1rem !important; }
-  .gamelounge-info--1 img {
-    max-height: 17rem !important; }
+  .gamelounge-info--1 {
+    height: 17rem !important; }
+    .gamelounge-info--1 img {
+      max-height: 17rem !important; }
+    .gamelounge-info--1 button {
+      padding: .5rem 1rem !important; }
   .gamelounge-author-details p {
     font-size: 1.2rem !important; }
   .gamelounge-article-visuals {
