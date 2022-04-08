@@ -2,6 +2,16 @@ const topics = ["topic-PC", "topic-Mobile"];
 
 for(let i = 0; i < topics.length; i++){
     document.getElementById(topics[i]).innerHTML = `
+    <h2>Pre registration to open soon for iOS - Apex Legends Mobile...</h2><br>
+    <img loading="lazy" src="/images/game-lounge-img/apex-hot-topics-assets/apex-pre-reg-update.PNG" alt="apex legends mobile gamelounge Hot topics image">                   
+    <p>The Play Apex Mobile official account hinting at iOS pre registration to open soon following the footsteps of iOS Pre registrations in japan.
+    </p> <br>
+    <div id="topic-space-br"></div>
+    <h2>Updated FAQ Apex Legends Mobile...</h2><br>
+    <img loading="lazy" src="/images/game-lounge-img/apex-hot-topics-assets/apex-faq-soft-launch.PNG" alt="apex legends mobile gamelounge Hot topics image">                   
+    <p>EA has updated their FAQ page answering questions brought up by the community, regarding Game Modes, Maps and more...
+    </p> <br>
+    <div id="topic-space-br"></div>
     <h2>New Banner For Apex Legends Mobile Launch...</h2><br>
     <img loading="lazy" src="/images/game-lounge-img/apex-hot-topics-assets/apexmobile-new-reward.PNG" alt="apex legends mobile gamelounge Hot topics image">                   
     <p>Apex Legends Mobile Free Reward for Pre registered accounts before launch day. Android Devices are open for pre registration, for a chance to earn exclusive rewards.
