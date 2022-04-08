@@ -25,7 +25,7 @@ document.getElementById("publishments").innerHTML = `<div class="publishments">
             </div>                      
         </div>
         <div id="right-section">
-            <img loading="lazy" src="/images/game-lounge-img/Your-Logo-here.PNG" alt=" Logo Here">
+            <img loading="lazy" src="/images/game-lounge-img/Your-Logo-here.png" alt=" Logo Here">
         </div>
     </div>   
     <div class="legend-carousel">
