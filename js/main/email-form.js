@@ -7,7 +7,7 @@ document.getElementById("gamelounge-contact").innerHTML = `<i class="far fa-time
 <!--  -->
 <input type="hidden" name="_subject" value="There's A New Email From Gamelounge">
 <input type="hidden" name="_autoresponse" value="This is an Automated response. A Team Member will reach out to you shortly">
-<input type="hidden" name="_next" value="https://feenixbloom.com/main-pages/apex-mobile/game-lounge-thankyou">
+<input type="hidden" name="_next" value="https://www.feenixbloom.com/main-pages/apex-mobile/game-lounge-thankyou">
 
 <!--  -->
 <input type="hidden" name="_captcha" value="false">
