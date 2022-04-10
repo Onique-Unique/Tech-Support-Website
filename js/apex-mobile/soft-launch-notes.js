@@ -2,6 +2,14 @@ document.getElementById("soft-launch-crumbs").innerHTML =
 `
 <div class="articles-main-crumbs--inner">
     <div class="main-crumbs-contain">
+        <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-mobile-update-global-launch"><img loading="lazy" class="article-crumb-direction" src="https://i3.ytimg.com/vi/QfiRHwq5cZY/hqdefault.jpg" alt="apex legends mobile gamelounge thumbnail" frameborder="0"></a>
+        <h2 class="article-crumb-h2">Apex Legends Update Patch Notes Mobile - Global Launch</h2>
+    </div>
+    <hr class="crumb-hr">
+</div>
+<!--  ------------------------------------------------------------------------------  -->
+<div class="articles-main-crumbs--inner">
+    <div class="main-crumbs-contain">
         <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-mobile-unique-attachments"><img loading="lazy" class="article-crumb-direction" src="https://i3.ytimg.com/vi/n59JO2G7TVo/hqdefault.jpg" alt="apex legends mobile gamelounge thumbnail" frameborder="0"></a>
         <h2 class="article-crumb-h2">5 Attachments to use right Now! in Apex Legends Mobile</h2>
     </div>
