@@ -75,3 +75,14 @@ mod_gzip_item_exclude mime ^image/.*
 mod_gzip_item_include handler ^cgi-script$
 </ifModule>
 ## GZIP COMPRESSION ##
+
+# Permanent URL redirect - Handling Redirects
+# Canonical https/www (when using proxy)
+<IfModule mod_rewrite.c>
+	RewriteCond %{HTTP:X-Forwarded-Proto} !https
+	RewriteCond %{HTTPS} off
+	RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+	
+	RewriteCond %{HTTP_HOST} !^www\. [NC]
+	RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
