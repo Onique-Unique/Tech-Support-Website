@@ -3,8 +3,8 @@
 RewriteEngine on
 
 # Permanent URL redirect 301 - Handling Redirects
-RewriteCond %{HTTP_HOST} !^www.feenixbloom.com$
-RewriteRule ^(.*)$ https://www.feenixbloom.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^feenixbloom\.com [NC]
+RewriteRule ^(.*)$ https://www.feenixbloom.com/$1 [L,R=301]
 
 
 # does not apply to existing directories, meaning that if the folder exists on the server then don't
