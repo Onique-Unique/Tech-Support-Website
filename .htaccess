@@ -79,15 +79,7 @@ mod_gzip_item_include handler ^cgi-script$
 # Permanent URL redirect - Handling Redirects
 # Canonical https/www (when using proxy)
 <IfModule mod_rewrite.c>
-	# RewriteCond %{HTTP:X-Forwarded-Proto} !https
-	RewriteCond %{HTTPS} off
-	RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-	
-	RewriteCond %{HTTP_HOST} !^www\. [NC]
-	RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-	RewriteCond %{HTTP_HOST} !^www.feenixbloom.com$
-	RewriteRule ^(.*)$ https://www.feenixbloom.com/$1 [R=301,L]
+	RewriteCond %{HTTP_HOST} ^(.\*)$ http://feenixbloom.com/$1 [L,R=301]
 </IfModule>
 
 # Clickjacking Prevent Http Header
