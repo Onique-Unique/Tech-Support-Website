@@ -11,9 +11,6 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 RewriteCond %{REQUEST_FILENAME}\.html -f
 
-# Redirect 301 rule
-RewriteCond %{HTTP_HOST} ^(.\*)$ http://feenixbloom.com/$1 [L,R=301]
-
 # Here we actually show the page that  has the .html extension
 
 RewriteRule ^(.*)$ $1.html [NC, L]
@@ -78,6 +75,13 @@ mod_gzip_item_exclude mime ^image/.*
 mod_gzip_item_include handler ^cgi-script$
 </ifModule>
 ## GZIP COMPRESSION ##
+
+# Permanent URL redirect - Handling Redirects
+# Canonical https/www (when using proxy)
+<IfModule mod_rewrite.c>
+	RewriteCond %{HTTP_HOST} ^feenixbloom.com [NC]
+	RewriteRule ^(.*)$ http://www.feenixbloom.com/$1 [L,R=301]
+</IfModule>
 
 # Clickjacking Prevent Http Header
 <ifModule mod_headers.c>
