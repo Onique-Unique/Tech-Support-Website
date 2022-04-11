@@ -1,3 +1,16 @@
+// Content Security Header Policy  -------------------------
+
+// Optional Code --------
+// var meta = document.createElement('meta');
+// meta.httpEquiv = "Content-Security-Policy";
+// meta.content = "default-src 'self' https:; font-src 'self' https:; img-src 'self' https:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:";
+// document.getElementsByTagName("head")[-1].appendChild(meta);
+
+// Main Code -----------
+document.head.innerHTML += `<meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; font-src 'self' https:; img-src 'self' https:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:">`
+
+// Feenixbloom Privacy Policy - Terms & Conditions - Disclaimers --------------------------
+
 document.getElementById("fair-use-disclaimer").innerHTML = ` <h2>Fair Use Act Disclaimer</h2>
 <p>This site is for educational purposes only!!</p>
 <p>**FAIR USE**</p> <br>
