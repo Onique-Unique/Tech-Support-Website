@@ -3,13 +3,8 @@
 RewriteEngine on
 
 # Permanent URL redirect 301 - Handling Redirects
-# Force SSL
-RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://feenixbloom.com/$1 [R=301,L]
-
-# Redirect www to non-www
-RewriteCond %{HTTP_HOST} ^www\. [NC]
-RewriteRule ^(.*)$ https://feenixbloom.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} !^www.feenixbloom.com$
+RewriteRule ^(.*)$ https://www.feenixbloom.com/$1 [R=301,L]
 
 
 # does not apply to existing directories, meaning that if the folder exists on the server then don't
