@@ -1,10 +1,10 @@
 document.getElementById("publishments").innerHTML = `<div class="publishments">
 <div class="featured-publisher">   
     <i class="far fa-times-circle publishment-exit"></i>                 
-    <form class="publisher-search" method="get" target="_blank">
-        <input id="legend-search" type="search" placeholder="Enter a legend">
-        <i class="fas fa-search" id="search-icon"></i>
-    </form>                   
+    // <form class="publisher-search" method="get" target="_blank">
+    //     <input id="legend-search" type="search" placeholder="Enter a legend">
+    //     <i class="fas fa-search" id="search-icon"></i>
+    // </form>                   
     <div class="flex-publisher">
         <div id="left-section">
             <div class="verified-publisher">
@@ -30,7 +30,7 @@ document.getElementById("publishments").innerHTML = `<div class="publishments">
     </div>   
     <div class="legend-carousel">
         <h2>Operators Guide</h2>
-        <div id="legend-inner-header">
+        <div class="legend-inner-header">
             <h3>Soft Launch</h3>
             <p>Pre Release Notes - v1.0.0</p>
         </div>
@@ -73,7 +73,7 @@ document.getElementById("publishments").innerHTML = `<div class="publishments">
     </div>  
     <div class="legend-carousel">
         <h2>Weapons Guide</h2>
-        <div id="legend-inner-header">
+        <div class="legend-inner-header">
             <h3>Coming Soon</h3>
             <p>Pre Release Notes - v1.0.0</p>
         </div>

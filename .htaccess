@@ -86,3 +86,8 @@ mod_gzip_item_include handler ^cgi-script$
 	RewriteCond %{HTTP_HOST} !^www\. [NC]
 	RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
+
+# Clickjacking Prevent Http Header
+<ifModule mod_headers.c>
+	Header always append X-Frame-Options SAMEORIGIN
+</ifModule
