@@ -1,5 +1,5 @@
 # Tech-Support-Website--------------------------
-www.feenixbloom.com
+www.feenixbloom.com/index-tech/index
 
 #### This repository is being updated on a frequent basis.
 <hr>
