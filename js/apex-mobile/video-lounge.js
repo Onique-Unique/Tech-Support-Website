@@ -4,7 +4,7 @@ document.getElementById("video-lounge").innerHTML = `<div class="lounge-flex">
     <i class="far fa-times-circle video-lounge-exit video-lounge-exit-2 hide"></i>
     <div class="loader"></div>
     <div id="video-embed">
-        <iframe id="embed-video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/aNJEGMjkmB4" frameborder="0"></iframe>
+        <iframe id="embed-video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/p-vLAm7IEeo" frameborder="0"></iframe>
     </div>
     <div class="video-controls">
         <i title="Previous" class="fa-solid fa-caret-left video-prev icons"></i>
