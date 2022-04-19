@@ -2,6 +2,16 @@ const topics = ["topic-PC", "topic-Mobile"];
 
 for(let i = 0; i < topics.length; i++){
     document.getElementById(topics[i]).innerHTML = `
+    <h2>Awards Claim Reminder - Apex Legends Mobile...</h2><br>
+    <img loading="lazy" src="/images/game-lounge-img/apex-hot-topics-assets/apex-pre-reg-global-update.PNG" alt="apex legends mobile gamelounge Hot topics image">                   
+    <p>Apex Legends Mobile official social media account sends out reminder for pre registered users that have the game downloaded, and have logged in within 7 days of worldwide launch (more info to come), will be able to access pre-registration rewards.
+    </p> <br>
+    <div class="topic-space-br"></div>
+    <h2>Apex Legends Mobile Hit 10 Million Pre registered User for Global Launch...</h2><br>
+    <img loading="lazy" src="/images/game-lounge-img/apex-hot-topics-assets/apex-10million.PNG" alt="apex legends mobile gamelounge Hot topics image">                   
+    <p>Pre registrations have now hit 10 million preparing Apex Legends Mobile and EA for a global launch set to happen in the coming days.
+    </p> <br>
+    <div class="topic-space-br"></div>
     <h2>Pre registration to open soon for iOS - Apex Legends Mobile...</h2><br>
     <img loading="lazy" src="/images/game-lounge-img/apex-hot-topics-assets/apex-pre-reg-update.PNG" alt="apex legends mobile gamelounge Hot topics image">                   
     <p>The Play Apex Mobile official account hinting at iOS pre registration to open soon following the footsteps of iOS Pre registrations in japan.
