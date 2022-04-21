@@ -4164,7 +4164,8 @@ footer p {
             .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .breadcrumbs, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .breadcrumbs {
               font-size: 1.2rem; } }
           .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .breadcrumbs__item, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .breadcrumbs__item {
-            display: inline-block; }
+            display: inline-block; 
+            margin: 4px 0; }
             .gamelounge-info--container .gamelounge-info--body .gamelounge-info--2 .gamelounge-article-content .breadcrumbs__item:not(:last-of-type)::after, .gamelounge-info--container .gamelounge-info--body .gamelounge-info--3 .gamelounge-article-content .breadcrumbs__item:not(:last-of-type)::after {
               content: "/";
               margin: 0 .5rem;
