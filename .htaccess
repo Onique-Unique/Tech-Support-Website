@@ -89,3 +89,5 @@ mod_gzip_item_include handler ^cgi-script$
 <ifModule mod_headers.c>
 	Header always append X-Frame-Options SAMEORIGIN
 </ifModule
+
+Redirect 301 /ads.txt https://srv.adstxtmanager.com/19390/www.feenixbloom.com
