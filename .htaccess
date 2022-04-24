@@ -1,12 +1,12 @@
 # mod_rewrite starts here
 
-# Options +FollowSymLinks 
+Options +FollowSymLinks 
 
 RewriteEngine on
 
 # REDIRECT NON WWW TO WWW
-# RewriteCond %{HTTP_HOST} ^feenixbloom.com [NC] 
-# RewriteRule ^(.*)$ http://www.feenixbloom.com/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^feenixbloom.com [NC] 
+RewriteRule ^(.*)$ http://www.feenixbloom.com/$1 [L,R=301]
 
 # does not apply to existing directories, meaning that if the folder exists on the server then don't
 # change anything and don't run the Rule!
