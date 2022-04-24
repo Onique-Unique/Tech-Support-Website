@@ -76,15 +76,6 @@ mod_gzip_item_include handler ^cgi-script$
 </ifModule>
 ## GZIP COMPRESSION ##
 
-# Canonical https/www (when using proxy)
-<IfModule mod_rewrite.c>
-	RewriteEngine on
-
-	# Permanent URL redirect 301 - Handling Redirects
-	RewriteCond %{HTTP_HOST} ^feenixbloom\.com [NC]
-	RewriteRule ^(.*)$ https://www.feenixbloom.com/$1 [L,R=301]
-</IfModule>
-
 # Clickjacking Prevent Http Header
 <ifModule mod_headers.c>
 	Header always append X-Frame-Options SAMEORIGIN
