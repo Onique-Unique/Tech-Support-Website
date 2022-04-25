@@ -66,7 +66,7 @@ setTimeout(function (){
     if (noticeAccepted != "yes"){
         noticeModal.classList.add("active")
     }
-}, 2000)
+}, 1000)
 
 
 // Cookie Settings

@@ -9,9 +9,40 @@
 // Main Code -----------
 // document.head.innerHTML += `<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://cdnjs.cloudflare.com; script-src-elem 'self' 'unsafe-inline' 'unsafe-eval' http://cdnjs.cloudflare.com ">`
 
-// Feenixbloom Privacy Policy - Terms & Conditions - Disclaimers --------------------------
+//Important Consent Modal Insert JS ---------------------------------------------------------
+const bodyInsert = document.querySelector(".game-lounge-body");
+let consentInfo = document.createElement("div");
+consentInfo.innerHTML = `
+<!-- CONSENT MODAL WITH POLICY POP UP -->
+    <div class="consent-modal" id="consent-insert-id">
+        <div class="consent-content">
+            <div class="consent-btns">
+                <button class="consent-btn cancel">cancel</button>
+                <button class="consent-btn consent-accept accept">accept</button>
+            </div>
+            <h2>NOTICE!</h2>
+            <div class="important-terms-insert--top">
+                <a href="https://policies.google.com/privacy?hl=en-US" target="_blank"><i class="fa-brands fa-google"></i></a>
+                <a href="https://www.youtube.com/static?template=terms" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <p>Feenixbloom Game Lounge Uses Youtube API Services to Deliver, Distribute and or Serve Content.<br>
+                The Youtube API May or May Not Collect User Data to Deliver, Distribute and or Serve Content, It is with Feenixbloom's 
+                intention to limit and or not require these information as we are only interested in serving content.
+            </p><br>
+            <p>Read More About Youtube Terms of Services <a id="yt-terms-link" href="https://www.youtube.com/static?template=terms" target="_blank">here...</a></p>
+            <p>View Feenixbloom's Policy and Disclaimer here.</p>
+            <div id="feenixbloom-policy">
+                <a href="#disclaimer"><i class="fas fa-cog" id="policy-icon"></i></a>
+            </div>
+        </div>
+    </div>
+`
+bodyInsert.appendChild(consentInfo);
 
-document.getElementById("fair-use-disclaimer").innerHTML = ` <h2>Fair Use Act Disclaimer</h2>
+//Important Feenixbloom Privacy Policy - Terms & Conditions - Disclaimers --------------------------
+// Disclaimer Insert JS
+document.getElementById("fair-use-disclaimer").innerHTML = ` 
+<h2>Fair Use Act Disclaimer</h2>
 <p>This site is for educational purposes only!!</p>
 <p>**FAIR USE**</p> <br>
 <p>Copyright Disclaimer under section 107 of the Copyright Act 1976, allowance is made for “fair use” for purposes such as criticism, comment, news reporting, teaching, scholarship, education and research.</p>
@@ -134,4 +165,5 @@ document.getElementById("fair-use-disclaimer").innerHTML = ` <h2>Fair Use Act Di
 <br>
 <p><strong>PRIVACY POLICY UPDATES</strong></p>
 <p>We at [Feenixbloom Gamelounge and its other entities]<span> [and our mobile application if any]</span> reserve the right to update or change our Privacy Policy at any time and you should check this Privacy Policy periodically. By using our Site you agree and acknowledge any modifications and consent to abide and be bound by the modified Privacy Policy.</p>
-<p>We do not warrant, endorse, guarantee, or assume responsibility for the accuracy or reliability of any information offered by third-party websites linked through the site or any website or feature linked in any banner or other advertising. We will not be a party to or in any way be responsible for monitoring any transaction between you and third-party providers of products or services.</p>`
+<p>We do not warrant, endorse, guarantee, or assume responsibility for the accuracy or reliability of any information offered by third-party websites linked through the site or any website or feature linked in any banner or other advertising. We will not be a party to or in any way be responsible for monitoring any transaction between you and third-party providers of products or services.</p>
+`
