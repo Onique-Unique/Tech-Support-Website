@@ -9,44 +9,35 @@
 // Main Code -----------
 // document.head.innerHTML += `<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://cdnjs.cloudflare.com; script-src-elem 'self' 'unsafe-inline' 'unsafe-eval' http://cdnjs.cloudflare.com ">`
 
-// AD Check----
-var scriptTag = document.createElement('script'); 
-scriptTag.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7079047961613379"
-crossorigin="anonymous"; // set the src attribute
-// scriptTag.type = 'text/javascript'; // if you have an HTML5 website you may want to comment this line out
-scriptTag.async = true; // the HTML5 async attribute
-var blockTag = document.getElementsByTagName('blockquote')[0];
-blockTag.appendChild(scriptTag);
-
 //Important Consent Modal Insert JS ---------------------------------------------------------
-const bodyInsert = document.querySelector(".game-lounge-body");
-let consentInfo = document.createElement("div");
-consentInfo.innerHTML = `
-<!-- CONSENT MODAL WITH POLICY POP UP -->
-    <div class="consent-modal" id="consent-insert-id">
-        <div class="consent-content">
-            <div class="consent-btns">
-                <button class="consent-btn cancel">cancel</button>
-                <button class="consent-btn consent-accept accept">accept</button>
-            </div>
-            <h2>NOTICE!</h2>
-            <div class="important-terms-insert--top">
-                <a href="https://policies.google.com/privacy?hl=en-US" target="_blank"><i class="fa-brands fa-google"></i></a>
-                <a href="https://www.youtube.com/static?template=terms" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-            <p>Feenixbloom Game Lounge Uses Youtube API Services to Deliver, Distribute and or Serve Content.<br>
-                The Youtube API May or May Not Collect User Data to Deliver, Distribute and or Serve Content, It is with Feenixbloom's 
-                intention to limit and or not require these information as we are only interested in serving content.
-            </p><br>
-            <p>Read More About Youtube Terms of Services <a id="yt-terms-link" href="https://www.youtube.com/static?template=terms" target="_blank">here...</a></p>
-            <p>View Feenixbloom's Policy and Disclaimer here.</p>
-            <div id="feenixbloom-policy">
-                <a href="#disclaimer"><i class="fas fa-cog" id="policy-icon"></i></a>
-            </div>
-        </div>
-    </div>
-`
-bodyInsert.appendChild(consentInfo);
+// const bodyInsert = document.querySelector(".game-lounge-body");
+// let consentInfo = document.createElement("div");
+// consentInfo.innerHTML = `
+// <!-- CONSENT MODAL WITH POLICY POP UP -->
+//     <div class="consent-modal" id="consent-insert-id">
+//         <div class="consent-content">
+//             <div class="consent-btns">
+//                 <button class="consent-btn cancel">cancel</button>
+//                 <button class="consent-btn consent-accept accept">accept</button>
+//             </div>
+//             <h2>NOTICE!</h2>
+//             <div class="important-terms-insert--top">
+//                 <a href="https://policies.google.com/privacy?hl=en-US" target="_blank"><i class="fa-brands fa-google"></i></a>
+//                 <a href="https://www.youtube.com/static?template=terms" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+//             </div>
+//             <p>Feenixbloom Game Lounge Uses Youtube API Services to Deliver, Distribute and or Serve Content.<br>
+//                 The Youtube API May or May Not Collect User Data to Deliver, Distribute and or Serve Content, It is with Feenixbloom's 
+//                 intention to limit and or not require these information as we are only interested in serving content.
+//             </p><br>
+//             <p>Read More About Youtube Terms of Services <a id="yt-terms-link" href="https://www.youtube.com/static?template=terms" target="_blank">here...</a></p>
+//             <p>View Feenixbloom's Policy and Disclaimer here.</p>
+//             <div id="feenixbloom-policy">
+//                 <a href="#disclaimer"><i class="fas fa-cog" id="policy-icon"></i></a>
+//             </div>
+//         </div>
+//     </div>
+// `
+// bodyInsert.appendChild(consentInfo);
 
 //Important Feenixbloom Privacy Policy - Terms & Conditions - Disclaimers --------------------------
 // Disclaimer Insert JS
