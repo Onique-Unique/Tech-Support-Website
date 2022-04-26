@@ -2,6 +2,14 @@ document.getElementById("soft-launch-crumbs").innerHTML =
 `
 <div class="articles-main-crumbs--inner">
     <div class="main-crumbs-contain">
+    <a href="/main-pages/rainbow-six-mobile/soft-launch-notes/rainbow-six-mobile-crossplay-controller-support"><img loading="lazy" class="article-crumb-direction" src="https://i3.ytimg.com/vi/Ms7bveFvs5A/hqdefault.jpg" alt="rainbow six mobile gamelounge thumbnail" frameborder="0"></a>
+        <h2 class="article-crumb-h2">Rainbow Six (6) Crossplay & Controller Support for Mobile</h2>
+    </div>
+    <hr class="crumb-hr">
+</div>
+<!--  ------------------------------------------------------------------------------  -->
+<div class="articles-main-crumbs--inner">
+    <div class="main-crumbs-contain">
     <a href="/main-pages/rainbow-six-mobile/soft-launch-notes/rainbow-six-mobile-update-alpha-test"><img loading="lazy" class="article-crumb-direction" src="https://i3.ytimg.com/vi/d2Qck1nAApo/hqdefault.jpg" alt="rainbow six mobile gamelounge thumbnail" frameborder="0"></a>
         <h2 class="article-crumb-h2">Rainbow Six (6) Update Patch Notes Mobile - Alpha Test</h2>
     </div>
