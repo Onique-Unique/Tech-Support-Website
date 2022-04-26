@@ -44,24 +44,24 @@ const infoPolicy = document.querySelector(".info-icon");
 const policyOpen = document.getElementById("policy-icon");
 
 // Consent Privacy policy PopUp
-const noticeModal = document.querySelector(".consent-modal");
-const cancelNoticeBtn = document.querySelector(".consent-btn.cancel");
-const acceptNoticeBtn = document.querySelector(".consent-btn.accept");
+// const noticeModal = document.querySelector(".consent-modal");
+// const cancelNoticeBtn = document.querySelector(".consent-btn.cancel");
+// const acceptNoticeBtn = document.querySelector(".consent-btn.accept");
 
-cancelNoticeBtn.addEventListener("click", function (){
-    noticeModal.classList.remove("active");
-})
-acceptNoticeBtn.addEventListener("click", function (){
-    noticeModal.classList.remove("active");
-    localStorage.setItem("noticeAccepted", "yes");
-})
+// cancelNoticeBtn.addEventListener("click", function (){
+//     noticeModal.classList.remove("active");
+// })
+// acceptNoticeBtn.addEventListener("click", function (){
+//     noticeModal.classList.remove("active");
+//     localStorage.setItem("noticeAccepted", "yes");
+// })
 
-setTimeout(function (){
-    let noticeAccepted = localStorage.getItem("noticeAccepted")
-    if (noticeAccepted != "yes"){
-        noticeModal.classList.add("active")
-    }
-}, 1000)
+// setTimeout(function (){
+//     let noticeAccepted = localStorage.getItem("noticeAccepted")
+//     if (noticeAccepted != "yes"){
+//         noticeModal.classList.add("active")
+//     }
+// }, 1000)
 
 // Cookie Settings
 document.cookie = "AC-C=ac-c;expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/;SameSite=None;Secure";
