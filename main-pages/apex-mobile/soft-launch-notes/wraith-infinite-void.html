@@ -64,20 +64,6 @@
     <!-- main stylesheet -->
     <link rel="stylesheet" href="/css/style-minify.css">
 
-    <!-- Google Adsense Script -->
-    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7079047961613379"
-     crossorigin="anonymous"></script> -->
-
-    <script> function lazyload() {
-        var scriptTag = document.createElement('script'); 
-        scriptTag.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7079047961613379"
-        crossorigin="anonymous"; // set the src attribute
-        // scriptTag.type = 'text/javascript'; // if you have an HTML5 website you may want to comment this line out
-        scriptTag.async = true; // the HTML5 async attribute
-        var blockTag = document.getElementsByTagName('blockquote')[0];
-        blockTag.appendChild(scriptTag);}
-    </script>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6M35XFDJT"></script>
     <script>
@@ -87,7 +73,6 @@
 
         gtag('config', 'G-W6M35XFDJT');
     </script>
-    <!-- onload="lazyload();" -->
 
     <style>
         body {
@@ -112,7 +97,7 @@
         }
     </style>
 </head>
-<body onload="lazyload();" class="game-lounge-body apex-lounge-body">
+<body class="game-lounge-body apex-lounge-body">
     <div class="game-lounge-body-container">
         <div class="game-nav-fixed">
             <nav class="game-nav apex-nav">
@@ -452,28 +437,6 @@
              
             <div id="videoListContainer"></div>
 
-            <!-- Important Terms Conatiner if needed --------------------------------------------------------------------------->
-            <!-- <div class="important-terms-container">
-                <div class="important-terms">
-                    <i class="far fa-times-circle important-terms-exit"></i>
-                    <div class="important-terms-insert--top">
-                        <a href="https://policies.google.com/privacy?hl=en-US" target="_blank"><i class="fa-brands fa-google"></i></a>
-                        <a href="https://www.youtube.com/static?template=terms" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                    </div>
-                    <div class="important-terms-insert--main">
-                        <p>Feenixbloom Game Lounge Uses Youtube API Services to Deliver, Distribute and or Serve Content.<br>
-                            The Youtube API May or May Not Collect User Data to Deliver, Distribute and or Serve Content, It is with Feenixbloom's 
-                            intention to limit and or not require these information as we are only interested in serving content.
-                        </p>
-                        <p>Read More About Youtube Terms of Services <a id="yt-terms-link" href="https://www.youtube.com/static?template=terms" target="_blank">here...</a></p>
-                        <p>View Feenixbloom's Policy and Disclaimer here</p>
-                        <div id="feenixbloom-policy">
-                            <a href="#disclaimer"><i class="fas fa-cog" id="policy-icon"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
             <!-- <div id="right-adplace">Optional ad placement</div> -->
         </div>
 
@@ -493,17 +456,6 @@
         commentBox('5734178129707008-proj');
     });
     </script>
-
-    <!-- Discord Live Chat Injected -->
-    <script async src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
-
-      <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
-        const crate = new Crate({
-        server: '791303979597299782',
-        channel: '946896595172089887'
-        })      
-        crate.notify('Join Live Chat')
-      </script>
 
     <!-- Local Script -->
     <script src="/js/main/left-aside-menu.js"></script>
@@ -531,5 +483,8 @@
     <script src="/js/main/email-form.js"></script>
     <script src="/js/main/disclaimer.js"></script>
     <script src="/js-minify/apex-mobile/solo-articles-minify.js"></script>
+
+    <!-- Ads Insert after Page Load -->
+    <script src="/js/main/ads-misc-insert.js"></script>
 </body>
 </html>

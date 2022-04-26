@@ -63,20 +63,6 @@
     <!-- main stylesheet -->
     <link rel="stylesheet" href="/css/style-minify.css">
 
-    <!-- Google Adsense Script -->
-    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7079047961613379"
-     crossorigin="anonymous"></script> -->
-
-     <script> function lazyload() {
-        var scriptTag = document.createElement('script'); 
-        scriptTag.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7079047961613379"
-        crossorigin="anonymous"; // set the src attribute
-        // scriptTag.type = 'text/javascript'; // if you have an HTML5 website you may want to comment this line out
-        scriptTag.async = true; // the HTML5 async attribute
-        var blockTag = document.getElementsByTagName('blockquote')[0];
-        blockTag.appendChild(scriptTag);}
-    </script>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6M35XFDJT"></script>
     <script>
@@ -86,7 +72,6 @@
 
         gtag('config', 'G-W6M35XFDJT');
     </script>
-    <!-- onload="lazyload();" -->
 
     <style>
         html, body {
@@ -109,7 +94,7 @@
         }
     </style>
 </head>
-<body onload="lazyload();" class="game-lounge-body--landing-page">
+<body class="game-lounge-body--landing-page">
     <div class="game-lounge-body-container">
         <main class="game-lounge-landing--main" data-aos="fade">
             <div class="gamelounge-rank-page">
@@ -212,18 +197,10 @@
        });
      </script>
 
-     <!-- Discord Live Chat Injected -->
-    <script async src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
-      const crate = new Crate({
-      server: '791303979597299782',
-      channel: '946896595172089887'
-      })      
-      crate.notify('Join Live Chat')
-    </script>
-
      <!-- Local Script -->
     <script src="/js-minify/apex-mobile/rank-tool-min.js"></script>
+
+    <!-- Ads Insert after Page Load -->
+    <script src="/js/main/ranking-misc.js"></script>
 </body>
 </html>
