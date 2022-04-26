@@ -68,18 +68,6 @@
     <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7079047961613379"
      crossorigin="anonymous"></script> -->
 
-    <script>
-        window.addEventListener("load", () => {
-            var scriptTag = document.createElement('script'); 
-            scriptTag.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7079047961613379"
-            crossorigin="anonymous"; // set the src attribute
-            // scriptTag.type = 'text/javascript'; // if you have an HTML5 website you may want to comment this line out
-            scriptTag.async = true; // the HTML5 async attribute
-            var blockTag = document.getElementsByTagName('blockquote')[0];
-            blockTag.appendChild(scriptTag);
-        });
-    </script>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6M35XFDJT"></script>
     <script>
@@ -620,5 +608,8 @@
     <script src="/js/main/email-form.js"></script>
     <script src="/js/main/disclaimer.js"></script>
     <script src="/js-minify/rainbow-six-mobile/solo-articles-minify.js"></script>
+
+    <!-- Ads Insert after Page Load -->
+    <script src="/js/main/ads-insert.js"></script>
 </body>
 </html>
