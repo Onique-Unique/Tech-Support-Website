@@ -8,6 +8,7 @@ document.getElementById("content-modal").innerHTML = `<i class="fa-solid fa-chev
     </div>
     <div id="other-news-listings">
         <h3>Soft Launch Notes!</h3>
+        <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-cross-progression"><h2>Will Apex Legends Cross Progression be coming to mobile?</h2></a>
         <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-mobile-update-global-launch"><h2>Apex Legends Update Patch Notes Mobile - Global Launch</h2></a>
         <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-mobile-unique-attachments"><h2>5 Attachments to use right Now! in Apex Legends Mobile</h2></a>
         <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-mobile-apk"><h2>Apex Legends Mobile APK Download</h2></a>
