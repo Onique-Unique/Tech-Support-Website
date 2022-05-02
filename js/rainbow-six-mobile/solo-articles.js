@@ -83,7 +83,8 @@ playlistRefresh.addEventListener("click", () => {
         document.getElementById("playlist-embed").innerHTML = `<iframe id="embed-music" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0" modestbranding="1"></iframe>`
 });
 
-var videoListings = ["sTIlYH7IFfQ", "UFKRYuIUWag", "TO7Qrfp_IKE", "NGEc9kexJt0", "s3TUpINcuEc", "6MAx0FvuOxU", "d2Qck1nAApo", "81X5J_b_N0E", "MwNpkAjRMyo", "Op4ogAi30gI", "JL4WXwMJxG0", "a4xYHD0kZAk", "AF31lah2Z9U", "0yu7txs_0is", "p9evfu7JvQQ", "9kL8KMK5kd4", "9Y8lfSFDhWo", "4eHjw0c6z5A", "MVeEONdAkfk", "gV8L_4KOld8", "koSn90dJ3Jg", "50OPT3QdjRU", "9RwxV8kUTJw", "KAb60ZhhqU0", "2yNgz9KwJiA", "0s9MxjbN_IQ", "x79GxFCFVwg", "nOGD8g_8Amo", "lXPxcPaHaAM", "CX7E_6tNTIk", "2rYjCPM9S1I", "23uTOt6IBDo", "hTt-Osi8axc", "8sSKKA79v00", "e9BX4e7U5z8", "3tnlInik3RA", "3ckS-W-Xmm8", "RdryJIhM3uI", "j_NJD3NrBoU", "-QwgtkN3Vos", "9aXn5E8d640", ]
+// Videos This Week
+var videoListings = ["KXr_86ayM2c", "UFKRYuIUWag", "sTIlYH7IFfQ", "zVKt0gxCD1c", "TO7Qrfp_IKE", "cMwiiMWEUlI", "-iAggi_gIU0", "NGEc9kexJt0", "z8F6A1_ziDw", "81X5J_b_N0E", "s3TUpINcuEc", "6MAx0FvuOxU", "gp0Q4Q_0wIY", "B1ydpho1dCs", "MwNpkAjRMyo", "IDqC371FKP4", "Op4ogAi30gI", "a4xYHD0kZAk", "AF31lah2Z9U", "mnOrj9ptnZs", "9Y8lfSFDhWo", "0yu7txs_0is", "UEn6ksFbH8U", "4eHjw0c6z5A", "9kL8KMK5kd4", "38ZQRDHTEPY", "p9evfu7JvQQ", "MVeEONdAkfk", "50OPT3QdjRU", "9RwxV8kUTJw", "lnCK_kDRgNA", "hy5DARBcGXo", "nZi3ZJ5o73A", "0s9MxjbN_IQ", "2yNgz9KwJiA", "KAb60ZhhqU0", "xGMqOSMtnmQ", "lC03GODyPlU", "ygVtCPJFAKY", "3ckS-W-Xmm8", "nOGD8g_8Amo", ]
 var featuredListings = [];
 
 // Video Lounge Shuffle Random | Prev - Next
