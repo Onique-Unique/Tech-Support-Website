@@ -30,9 +30,9 @@ window.addEventListener("load", () => {
 
     //Mail Chimp Subscription-----------------------------
     var mailChimpSubTag = document.createElement('script');
-    mailChimpSubTag.id = "mailchimp-sub";
+    mailChimpSubTag.id = "mcjs";
     mailChimpSubTag.innerHTML = `
-        id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/2cd40847db1a4a5ab0a438183/dfc1926a8e7593b479f4fbcb6.js");
+        !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/2cd40847db1a4a5ab0a438183/dfc1926a8e7593b479f4fbcb6.js");
     `
     headInsert.appendChild(mailChimpSubTag)
 });
