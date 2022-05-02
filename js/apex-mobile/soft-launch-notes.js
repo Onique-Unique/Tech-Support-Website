@@ -2,6 +2,14 @@ document.getElementById("soft-launch-crumbs").innerHTML =
 `
 <div class="articles-main-crumbs--inner">
     <div class="main-crumbs-contain">
+    <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-mobile-ordnance"><img loading="lazy" class="article-crumb-direction" src="https://i3.ytimg.com/vi/fVIttRPAvcw/hqdefault.jpg" alt="apex legends mobile gamelounge thumbnail" frameborder="0"></a>
+        <h2 class="article-crumb-h2">All Ordnance - inside Apex Legends Mobile</h2>
+    </div>
+    <hr class="crumb-hr">
+</div>
+<!--  ------------------------------------------------------------------------------  -->
+<div class="articles-main-crumbs--inner">
+    <div class="main-crumbs-contain">
     <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-cross-progression"><img loading="lazy" class="article-crumb-direction" src="https://i3.ytimg.com/vi/jDXmV5LDnzI/hqdefault.jpg" alt="apex legends mobile gamelounge thumbnail" frameborder="0"></a>
         <h2 class="article-crumb-h2">Will Apex Legends Cross Progression be coming to mobile?</h2>
     </div>
