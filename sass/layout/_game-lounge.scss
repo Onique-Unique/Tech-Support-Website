@@ -723,7 +723,7 @@
 // }
 
 .hide {
-	display: none;
+	display: none !important;
 }
 
 .filter-overlay {
@@ -1147,6 +1147,51 @@
 
             .gamelounge-article-content {
                 width: 100%;
+
+                .subscription-cta {
+                    // background: repeating-linear-gradient(190deg, gold, transparent 100px);
+                    background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);
+         
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 1.5%;
+
+                    #subscription-btn-cta {
+                        width: 30%;
+                        padding: .5rem 1rem;
+                        border-radius: 5px;
+                        border: 2px solid transparent;
+                        background-color: #ffffff;
+                        color: rgb(0, 0, 0); 
+                        transition: all .2s;
+
+                        @media (max-width: 320px){
+                            font-size: 1.2rem;
+                        }
+
+                        &:hover {
+                            background-color: #303030;
+                            color: white;
+                        }
+                    }
+
+                    .subscription-cta-text {
+                        width: 70%;
+                        display: flex;
+                        justify-content: flex-end;
+                        color: white;
+
+                        @media (max-width: 320px){
+                            width: 60%;
+
+                            & p {
+                                font-size: 1.3rem;
+                            }                            
+                        }
+                    }
+                }
 
                 .breadcrumbs {
                     padding: .5rem 0 1.5rem 0;

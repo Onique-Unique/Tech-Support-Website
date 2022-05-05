@@ -335,3 +335,21 @@
         margin: 0;
     }
 }
+
+@-webkit-keyframes subscription-limited-time {
+    0% {
+        color: #7b7992;
+    }
+
+    25% {
+        color: #dd8431;
+    }
+
+    75% {
+        color: #ff0000;
+    }
+
+    100% {
+        color: #7b7992;
+    }
+}

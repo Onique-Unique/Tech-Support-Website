@@ -2,11 +2,13 @@ window.addEventListener("load", () => {
     // Discord Chat Insert Top ------------------------------
     const bodyInsert = document.querySelector(".game-lounge-body");   
     const headInsert = document.getElementsByTagName("head")[0];
+
     var discordScriptTag = document.createElement('script');
     discordScriptTag.src = "https://cdn.jsdelivr.net/npm/@widgetbot/html-embed";
     discordScriptTag.async = true;
     // End ------------------------------------------------
     var discordScriptTagMain = document.createElement('script');
+    discordScriptTagMain.id = "discordBotInsert";
     discordScriptTagMain.src = "https://cdn.jsdelivr.net/npm/@widgetbot/crate@3";
     discordScriptTagMain.async = true;
     discordScriptTagMain.innerHTML = `

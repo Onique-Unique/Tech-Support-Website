@@ -1,0 +1,217 @@
+// Subscription Modal Component
+
+.subscription-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #fd3838 74%);
+
+    .subscription-modal--container {
+        min-height: 100vh;
+        display: flex;
+
+        .subscription-campaign {
+            width: 95%;
+            position: relative;
+            max-width: 80rem;
+            min-height: 42rem;
+            margin: auto;
+            background: #fff;
+            box-shadow: 0 1.4rem 8rem rgba(34, 35, 58, 0.2);
+            padding: 1.8rem;
+            border-radius: 2.5rem;
+            transition: all .3s;
+        
+        
+            @media screen and (max-width: 992px) {
+                max-width: 68rem;
+                min-height: 45rem;
+            }
+        
+            @media screen and (max-width: 768px) {
+                min-height: 62.5rem;
+                height: auto;
+                margin: 18rem auto;
+            }
+
+            &__item {
+                display: flex;
+                align-items: center;
+                
+                @media screen and (max-width: 768px) {
+                    flex-direction: column;
+                }           
+            }
+        
+            &__img {
+                // width: 40%;
+                width: 300px;
+                flex-shrink: 0;
+                height: 300px;
+                background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+                box-shadow: .4rem 1.3rem 3rem 1px rgba(252, 56, 56, 0.2);
+                border-radius: 2rem;
+                transform: translateX(-80px);      
+                overflow: hidden;
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                    border-radius: 2rem;
+                    transition: all .3s;
+                }
+                        
+                @media screen and (max-width: 992px) {
+                    // width: 45%;
+                }
+                @media screen and (max-width: 768px) {
+                    transform: translateY(-50%);
+                    width: 90%;
+                }
+                @media screen and (max-width: 576px) {
+                    width: 95%;
+                }
+                @media screen and (max-height: 500px) and (min-width: 992px) {
+                    height: 270px;
+                }
+            }
+        
+            &__content {
+                // width: 60%;
+                padding-right: 2.5rem;
+                @media screen and (max-width: 992px) {
+                    // width: 55%;
+                }
+                @media screen and (max-width: 768px) {
+                    margin-top: -12.5rem;
+                    text-align: center;
+                    padding: 0 3rem;
+                }       
+                @media screen and (max-width: 576px) {
+                    padding: 0
+                }  
+            }
+            
+            &__time {
+                color: #7b7992;
+                margin-bottom: 1.5rem;
+                display: block;
+                font-weight: 500;
+                animation: subscription-limited-time ease 6s infinite;
+            }
+            
+            &__title {
+
+                & h2 {
+                    font-size: 2.4rem;
+                }
+
+                & p {
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    color: #0d0925;
+                    margin-bottom: 1.5rem;
+                }               
+            }
+            
+            &__text {
+
+                & p {
+                    color: #4e4a67;
+                    margin-bottom: 1.5rem;
+                    line-height: 1.5rem;
+                }
+                
+                .subscription-list {
+                    background-image: linear-gradient(147deg, #131104c0 0%, #050101b4 74%);
+                    // list-style: none;
+                    border-radius: 1.5rem;
+                    padding: 1rem;
+                    height: 17rem;
+                    font-size: 1.2rem;
+                    text-align: left;
+                    color: white;
+                    overflow-y: scroll;
+
+                    & li {
+                        margin-left: 4%;
+                    }
+
+                    #battlepass-highlight {
+                        color: greenyellow;
+                    }
+
+                    .li-additionals {
+                        color: orange;
+                    }
+                }
+            }
+
+            .subscription-btn--container {
+                position: absolute;
+                bottom: 0%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 60%;
+
+                .subscription-btn--inner {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+
+                    .subscription-btn {
+                        margin: 0 5%;
+                        padding: 1rem 1.5rem;
+                        border-radius: 5px;
+                        border: none;
+                    }
+
+                    .subscription-cancel {
+                        background-color: #fd3838;
+                        color: white;
+                        transition: all .8s;
+
+                        &:hover {
+                            background-color: #ff4848e0;                          
+                            
+                            &:before {
+                                content: "Are You Sure? ";
+                            }
+                        }                                      
+                    }
+
+                    .subscription-continue {
+                        animation: gamelounge-home-img ease 2s infinite;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.subscription-payment__container {
+    margin-top: -5rem !important;
+
+    & form {
+        text-align: center;
+    }
+
+    #payment-header {
+        font-size: 1.4rem;
+        animation: subscription-limited-time ease 6s infinite;
+    }
+
+    #payment-selection {
+        margin: 2rem 0;
+        height: 4rem;
+        border: 2px solid brown;
+        border-radius: 10px;
+    }
+
+    #subscription-payment-option {
+        margin-top: 2.5rem;
+    }
+}

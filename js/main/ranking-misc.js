@@ -1,3 +1,5 @@
+// Added Discord Bot to Ranking tool Page to interact with discord while using the tool
+
 window.addEventListener("load", () => {
     // Discord Chat Insert Top ------------------------------
     const bodyInsert = document.querySelector(".game-lounge-body--landing-page");   
