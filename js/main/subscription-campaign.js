@@ -3,15 +3,14 @@ window.addEventListener("load", () => {
     // Giveaway Banner Create Element ----------------------------------------------
     const bannerInsertArea = document.querySelector(".gamelounge-article-content");
     let giveawayBanner = document.createElement("div");
+    giveawayBanner.className = "subscription-cta";
     giveawayBanner.innerHTML = `
-    <div class="subscription-cta">
         <button id="subscription-btn-cta">
             Enter here
         </button>
         <div class="subscription-cta-text">
             <p>Win Free Battle Pass! &#127881;</p>
         </div>
-    </div>
     `
     bannerInsertArea.prepend(giveawayBanner);
     
