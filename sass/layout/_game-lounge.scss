@@ -1148,7 +1148,7 @@
             .gamelounge-article-content {
                 width: 100%;
 
-                .subscription-cta {
+                .subscription-cta, .subscription-cta--2 {
                     // background: repeating-linear-gradient(190deg, gold, transparent 100px);
                     background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);
          
@@ -1158,7 +1158,7 @@
                     align-items: center;
                     padding: 0 1.5%;
 
-                    #subscription-btn-cta {
+                    #subscription-btn-cta, #subscription-btn-cta--2 {
                         width: 30%;
                         padding: .5rem 1rem;
                         border-radius: 5px;
@@ -1177,7 +1177,7 @@
                         }
                     }
 
-                    .subscription-cta-text {
+                    .subscription-cta-text, .subscription-cta-text--2 {
                         width: 70%;
                         display: flex;
                         justify-content: flex-end;

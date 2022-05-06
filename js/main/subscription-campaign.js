@@ -2,6 +2,7 @@ window.addEventListener("load", () => {
     const bodySubscriptionInsert = document.querySelector(".game-lounge-body");
     // Giveaway Banner Create Element ----------------------------------------------
     const bannerInsertArea = document.querySelector(".gamelounge-article-content");
+    const bannerInsertArea2 = document.getElementsByClassName("article-video-container")[1];
     let giveawayBanner = document.createElement("div");
     giveawayBanner.className = "subscription-cta";
     giveawayBanner.innerHTML = `
@@ -12,7 +13,24 @@ window.addEventListener("load", () => {
             <p>Win Free Battle Pass! &#127881;</p>
         </div>
     `
-    bannerInsertArea.prepend(giveawayBanner);
+    // Giveaway Banner Placement Area 2
+    let giveawayBanner2 = document.createElement("div");
+    giveawayBanner2.className = "subscription-cta--2";
+    giveawayBanner2.innerHTML = `
+        <button id="subscription-btn-cta--2">
+            Enter here
+        </button>
+        <div class="subscription-cta-text--2">
+            <p>Win Free Battle Pass! &#127881;</p>
+        </div>
+    `
+    if (bannerInsertArea2) {
+        bannerInsertArea.prepend(giveawayBanner);
+        bannerInsertArea2.prepend(giveawayBanner2);   
+    }else {
+        bannerInsertArea.prepend(giveawayBanner);
+    };
+   
     
     // Subscription Modal Create Element ---------------------------------------------------------  
     let subscriptionInfo = document.createElement("div");
@@ -98,10 +116,16 @@ window.addEventListener("load", () => {
 
     //Giveaway Enter Button Id
     const enterGiveawayButton = document.getElementById("subscription-btn-cta");
+    const enterGiveawayButton2 = document.getElementById("subscription-btn-cta--2");
     const bodyHide = document.querySelector(".game-lounge-body-container");
     const subscriptionModal = document.getElementById("subscription-modal");
 
     enterGiveawayButton.addEventListener("click", () => {
+        bodyHide.classList.add("hide");
+        subscriptionModal.classList.remove("hide");
+    });
+
+    enterGiveawayButton2.addEventListener("click", () => {
         bodyHide.classList.add("hide");
         subscriptionModal.classList.remove("hide");
     });
