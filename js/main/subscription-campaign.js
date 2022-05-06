@@ -26,7 +26,7 @@ window.addEventListener("load", () => {
     `
     if (bannerInsertArea2) {
         bannerInsertArea.prepend(giveawayBanner);
-        bannerInsertArea2.appendChild(giveawayBanner2);   
+        bannerInsertArea2.appendChild(giveawayBanner2); 
     }else {
         bannerInsertArea.prepend(giveawayBanner);
     };
@@ -125,10 +125,12 @@ window.addEventListener("load", () => {
         subscriptionModal.classList.remove("hide");
     });
 
-    enterGiveawayButton2.addEventListener("click", () => {
-        bodyHide.classList.add("hide");
-        subscriptionModal.classList.remove("hide");
-    });
+    if (bannerInsertArea2) {
+        enterGiveawayButton2.addEventListener("click", () => {
+            bodyHide.classList.add("hide");
+            subscriptionModal.classList.remove("hide");
+        });
+    };  
     
     // Subscription Classes and Id's----------------------------------------------
     const membershipBtn = document.querySelector(".subscription-continue");
