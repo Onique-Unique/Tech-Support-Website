@@ -26,7 +26,7 @@ window.addEventListener("load", () => {
     `
     if (bannerInsertArea2) {
         bannerInsertArea.prepend(giveawayBanner);
-        bannerInsertArea2.prepend(giveawayBanner2);   
+        bannerInsertArea2.appendChild(giveawayBanner2);   
     }else {
         bannerInsertArea.prepend(giveawayBanner);
     };
