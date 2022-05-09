@@ -110,7 +110,7 @@ playlistRefresh.addEventListener("click", () => {
 });
 
 // Videos This Week
-var videoListings = ["10CvfPGE284", "ZAyVh9miJQw", "aNJEGMjkmB4", "m4z-bbYVzNE", "CxilIsTMXF8", "4sV94dhP518", "fVIttRPAvcw", "DYEHUfru6QY", "GE78DSM-HCw", "blyhIr6Mfh0", "INTyMiA8zkc", "LcsOSIXc9cg", "fCBzFk4Zvjk", "p-vLAm7IEeo", "5jsA84B110M", "KXRosceNwfc", "DSqp7wEbbeY", "Ya5Z1ocmbec", "Gc9jzY-Scsw", "Pvqm6_mplRs", "g9aOqJ_Mujw", "Csy3a9MXhmI", "ZMuVHf3Xugo", "KtT57G8kT20", "TsqNrusKb_M", "U1U6-IjlhbM", "JCNLzcVrS_c", "D6hHeDFyhqY", "V6Km3QJj26Q", "Rtxf-kVYF8M", "EU_p716Zl-U", "95ChkBHECOs", "-xzWRZiJafU", "XRtv30j0pp8", "CVqIK8scMHU", "4TtrGAV7DrA", "sv0g5vPO-N8", "YZ_HT9dRpoQ", "W3wnDWN_Qt0", "faF-G3WMemU", "i2sDshKnYrE", ]
+var videoListings = ["xHCEeeXCNAI", "wADXffcXlYE", "aNJEGMjkmB4", "09QYFIwVoPA", "LcsOSIXc9cg", "blyhIr6Mfh0", "eG7V4035dDs", "faF-G3WMemU", "g9aOqJ_Mujw", "4sV94dhP518", "Pvqm6_mplRs", "Rtxf-kVYF8M", "fCBzFk4Zvjk", "uHbJI3_xGTg", "ZAyVh9miJQw", "Fjn7qER_m-U", "DSqp7wEbbeY", "JCNLzcVrS_c", "CxilIsTMXF8", "p-vLAm7IEeo", "Go2IFsGHn4g", "Ya5Z1ocmbec", "V6Km3QJj26Q", "KtT57G8kT20", "08hXCJSPg_A", "INTyMiA8zkc", "KZY9o4MQakU", "TsqNrusKb_M", "iXqjXnE8Nno", "DYEHUfru6QY", "ndoDekUMGdc", "-xzWRZiJafU", "YZ_HT9dRpoQ", "Gc9jzY-Scsw", "XRtv30j0pp8", "15a8_DvGnx4", "CVqIK8scMHU", "rnix_tLX4tA", "ZMuVHf3Xugo", "5vmIoLgIGWA", "D6hHeDFyhqY", ]
 var featuredListings = [];
 
 // Video Lounge Shuffle Random | Prev - Next
