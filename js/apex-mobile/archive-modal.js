@@ -1,13 +1,23 @@
-document.getElementById("content-modal").innerHTML = `<i class="fa-solid fa-chevron-right content-modal-exit"></i>
+document.getElementById("content-modal").innerHTML = 
+`
+<i class="fa-solid fa-chevron-right content-modal-exit"></i>
 <div class="modal-content">
     <h1>APEX LEGENDS MOBILE</h1>
     <h2 id="h2-secondary">NEWS & UPDATES</h2>
+    <div class="all-notes-scroll">
+        <div class="notes-title">
+            <a href="#soft-launch--notes" class="notes-link notes-link--active">Soft Launch Notes!</a>
+        </div>
+        <!-- <div class="notes-title">
+            <a href="#" class="notes-link">coming soon title</a>
+        </div> -->
+    </div>
     <div id="featured-news-listing">
         <h3>featured</h3>
         <a href="/main-pages/apex-mobile/game-lounge-chatroom#aim-assist"><h2 id="featured-listing">Apex Legends Mobile Aim Assist</h2></a>
     </div>
-    <div id="other-news-listings">
-        <h3>Soft Launch Notes!</h3>
+    <div class="other-news-listings">
+        <h3 id="soft-launch--notes">Soft Launch Notes!</h3>
         <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-mobile-movement-guide"><h2>Apex Legends Mobile Movement Guide - Advanced Tips & Tricks</h2></a>
         <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-mobile-custom-lobbies"><h2>Apex Legends Mobile Custom Lobbies & Private Matches Update</h2></a>
         <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-mobile-ordnance"><h2>All Ordnance - Apex Legends Mobile</h2></a>
@@ -31,4 +41,5 @@ document.getElementById("content-modal").innerHTML = `<i class="fa-solid fa-chev
         <a href="/main-pages/apex-mobile/soft-launch-notes/how-to-wall-jump"><h2>Apex Legends Mobile How to Wall Jump/ Wall Bounce</h2></a>
         <a href="/main-pages/apex-mobile/soft-launch-notes/apex-mobile-ranked"><h2>Apex Legends Mobile Ranked System Full Explained</h2></a>
     </div>
-</div>`
+</div> 
+`

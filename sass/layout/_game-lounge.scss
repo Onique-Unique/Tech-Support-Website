@@ -3075,7 +3075,35 @@
             margin-bottom: 10%;
         }
 
-        #featured-news-listing, #other-news-listings {
+        .all-notes-scroll {
+            display: flex;
+            align-items: center;
+            overflow-x: scroll;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.6rem;
+            padding: 4% 0;
+            margin: 4% 0;
+            
+            .notes-title {
+                margin: 3% 1%;
+                min-width: 18rem;
+
+                &:not(:last-of-type)::after {
+                    content: ">";
+                    margin: 0 .5rem;
+                    color: #ff3c00;
+                }
+
+                .notes-link {
+
+                    &--active {
+                        color: #2e20aa;
+                    }
+                }            
+            }
+        }
+
+        #featured-news-listing, .other-news-listings {
 
             & h3 {
                 text-align: center;

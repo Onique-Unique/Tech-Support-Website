@@ -5565,18 +5565,39 @@ footer p {
         font-size: 1.6rem; } }
   .content-modal .modal-content #h2-secondary {
     margin-bottom: 10%; }
-  .content-modal .modal-content #featured-news-listing h3, .content-modal .modal-content #other-news-listings h3 {
+  .content-modal .modal-content .all-notes-scroll {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow-x: scroll;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.6rem;
+    padding: 4% 0;
+    margin: 4% 0; }
+    .content-modal .modal-content .all-notes-scroll .notes-title {
+      margin: 3% 1%;
+      min-width: 18rem; }
+      .content-modal .modal-content .all-notes-scroll .notes-title:not(:last-of-type)::after {
+        content: ">";
+        margin: 0 .5rem;
+        color: #ff3c00; }
+      .content-modal .modal-content .all-notes-scroll .notes-title .notes-link--active {
+        color: #2e20aa; }
+  .content-modal .modal-content #featured-news-listing h3, .content-modal .modal-content .other-news-listings h3 {
     text-align: center;
     font-size: 1.6rem;
     text-transform: uppercase; }
-  .content-modal .modal-content #featured-news-listing a #featured-listing, .content-modal .modal-content #featured-news-listing a h2, .content-modal .modal-content #other-news-listings a #featured-listing, .content-modal .modal-content #other-news-listings a h2 {
+  .content-modal .modal-content #featured-news-listing a #featured-listing, .content-modal .modal-content #featured-news-listing a h2, .content-modal .modal-content .other-news-listings a #featured-listing, .content-modal .modal-content .other-news-listings a h2 {
     color: white;
     margin: 5% 0;
     background: #c33763;
     padding: 4%; }
-    .content-modal .modal-content #featured-news-listing a #featured-listing:hover, .content-modal .modal-content #featured-news-listing a h2:hover, .content-modal .modal-content #other-news-listings a #featured-listing:hover, .content-modal .modal-content #other-news-listings a h2:hover {
+    .content-modal .modal-content #featured-news-listing a #featured-listing:hover, .content-modal .modal-content #featured-news-listing a h2:hover, .content-modal .modal-content .other-news-listings a #featured-listing:hover, .content-modal .modal-content .other-news-listings a h2:hover {
       background: #dd3f718f; }
-  .content-modal .modal-content #featured-news-listing a h2, .content-modal .modal-content #other-news-listings a h2 {
+  .content-modal .modal-content #featured-news-listing a h2, .content-modal .modal-content .other-news-listings a h2 {
     background: #302b63; }
 
 .content-modal-minimize {
