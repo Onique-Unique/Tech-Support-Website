@@ -123,12 +123,14 @@ window.addEventListener("load", () => {
     enterGiveawayButton.addEventListener("click", () => {
         bodyHide.classList.add("hide");
         subscriptionModal.classList.remove("hide");
+        window.scroll({top: 0, behavior: "smooth"});
     });
 
     if (bannerInsertArea2) {
         enterGiveawayButton2.addEventListener("click", () => {
             bodyHide.classList.add("hide");
             subscriptionModal.classList.remove("hide");
+            window.scroll({top: 0, behavior: "smooth"});
         });
     };  
     
