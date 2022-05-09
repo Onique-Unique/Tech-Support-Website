@@ -14,7 +14,7 @@ const contentModalContainer = document.getElementById("content-modal");
 const publisherContainer = document.querySelector(".publishments-container");
 const videoLoungeContainer = document.querySelector(".video-lounge-container");
 const newsFeaturedListings = document.getElementById("featured-news-listing");
-const newsOtherListings = document.getElementById("other-news-listings");
+const newsOtherListings = document.querySelector(".other-news-listings");
 
 // Icon Enter and Exit
 const playlistIcon = document.getElementById("yt-music-icon");
