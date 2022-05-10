@@ -100,36 +100,7 @@
 <body class="game-lounge-body apex-lounge-body">
     <div class="game-lounge-body-container">
         <div class="game-nav-fixed">
-            <nav class="game-nav apex-nav">
-                <div class="game-nav-display">
-                    <div class="game-nav-top">
-                        <a href="/main-pages/apex-mobile/game-lounge-chatroom" title="Game-lounge"><img loading="lazy" id="top-icon" src="/images/game-lounge-img/Gamelounge-logo/GameLounge-logo-secondary-removebg-preview.png" alt="apex legends mobile gamelounge sidebar top image"></a>
-                    </div>
-                    <div class="game-search-bar"> 
-                                  <!--"http://www.youtube.com/results"  -->
-                        <form id="form-yt--search" method="get" target="_blank" >
-                            <i class="fas fa-search" id="search-icon"></i>
-                            <input class="search-input" id="gamelounge-search" name="search_query" type="search" maxlength="128" placeholder="Search content..."> <!-- onchange="openfile()"-->
-                            
-                            <p hidden="true"><input type="number" id="maxresult-input" placeholder="Max Results" min="1" max="50" value="50" required></p>
-                            <p hidden="true">
-                                <select id="order-input" required>
-                                    <option value="">--SELECT ORDER--</option>
-                                    <option value="date">Date</option>
-                                    <option value="rating">Rating</option>
-                                    <option value="relevance" selected>Relevance</option>
-                                    <option value="title">Title</option>
-                                    <option value="viewCount">View Count</option>
-                                </select>
-                            </p>
-                                <input style="display: none;" id="submit-icon" type="submit">
-                        </form>             
-                    </div>
-                    <div class="menu-icon">
-                        <i class="fas fa-bars" id="menu-bars" title="Menu"></i>
-                    </div>
-                </div>
-            </nav>
+            <nav class="game-nav apex-nav"></nav>
         </div>
         
         <!-- LEFT ASIDE ------------------------------------------------------------------------------------------------------------------------------------->
@@ -166,16 +137,7 @@
 
         <!-- SECTION BANNER HEADER -------------------------------------------------------------------------------------------------------------------------------------->
         <div class="section-body-container" id="game-lounge-top">
-            <section class="game-feature-section solo-articles">
-                <section class="secondary-nav-top nav-top-article">
-                    <div class="secondary-nav-inner">
-                        <h2 id="main-h2">NEWS</h2>
-                        <h2 id="tips-h2">Tips and Tricks</h2>
-                        <h2 id="gameplay-h2">Gameplay</h2>
-                        <h2 id="funny-h2">Funny/ EXE</h2>
-                    </div>
-                </section>
-            </section>            
+            <section class="game-feature-section solo-articles"></section>            
 
             <!-- HOME ARTICLE ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
             <main class="game-lounge-main">
@@ -458,7 +420,7 @@
     </script>
 
     <!-- Local Script -->
-    <script src="/js/main/left-aside-menu.js"></script>
+    <script src="/js/main/main-components.js"></script>
     <script src="/js/apex-mobile/hot-topics.js"></script>
     <script>
         // ID/ Thumbnail identifiers for Must Watch Videos on main page
