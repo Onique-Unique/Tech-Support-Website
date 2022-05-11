@@ -18,6 +18,7 @@ document.getElementById("content-modal").innerHTML =
     </div>
     <div class="other-news-listings">
         <h3 id="soft-launch--notes">Soft Launch Notes!</h3>
+        <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-mobile-solo-mode"><h2>Apex Legends Mobile Solo Mode/ Solo Queue</h2></a>
         <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-mobile-movement-guide"><h2>Apex Legends Mobile Movement Guide - Advanced Tips & Tricks</h2></a>
         <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-mobile-custom-lobbies"><h2>Apex Legends Mobile Custom Lobbies & Private Matches Update</h2></a>
         <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-mobile-ordnance"><h2>All Ordnance - Apex Legends Mobile</h2></a>
