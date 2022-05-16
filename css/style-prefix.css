@@ -5579,7 +5579,7 @@ footer p {
     margin: 4% 0; }
     .content-modal .modal-content .all-notes-scroll .notes-title {
       margin: 3% 1%;
-      min-width: 18rem; }
+      min-width: 14rem; }
       .content-modal .modal-content .all-notes-scroll .notes-title:not(:last-of-type)::after {
         content: ">";
         margin: 0 .5rem;

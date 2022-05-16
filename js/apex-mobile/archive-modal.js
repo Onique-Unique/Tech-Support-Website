@@ -6,17 +6,20 @@ document.getElementById("content-modal").innerHTML =
     <h2 id="h2-secondary">NEWS & UPDATES</h2>
     <div class="all-notes-scroll">
         <div class="notes-title">
-            <a href="#soft-launch--notes" class="notes-link notes-link--active">Soft Launch Notes!</a>
+            <a href="#season-1--notes" class="notes-link notes-link--active">Season One (1) Notes!</a>
         </div>
-        <!-- <div class="notes-title">
-            <a href="#" class="notes-link">coming soon title</a>
-        </div> -->
+        <div class="notes-title">
+            <a href="#soft-launch--notes" class="notes-link">Soft Launch Notes!</a>
+        </div>
     </div>
     <div id="featured-news-listing">
         <h3>featured</h3>
         <a href="/main-pages/apex-mobile/game-lounge-chatroom#aim-assist"><h2 id="featured-listing">Apex Legends Mobile Aim Assist</h2></a>
     </div>
     <div class="other-news-listings">
+        <h3 id="season-1--notes">Season One (1) Notes!</h3>
+        <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-mobile-solo-mode"><h2>Apex Legends Mobile Solo Mode/ Solo Queue</h2></a>
+        <!--  ------------------------------------------------------------------------------  -->
         <h3 id="soft-launch--notes">Soft Launch Notes!</h3>
         <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-mobile-solo-mode"><h2>Apex Legends Mobile Solo Mode/ Solo Queue</h2></a>
         <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-mobile-movement-guide"><h2>Apex Legends Mobile Movement Guide - Advanced Tips & Tricks</h2></a>
