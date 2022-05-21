@@ -18,7 +18,7 @@ document.getElementById("content-modal").innerHTML =
     </div>
     <div class="other-news-listings">
         <h3 id="season-1--notes">Season One (1) Notes!</h3>
-        <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-mobile-solo-mode"><h2>Apex Legends Mobile Solo Mode/ Solo Queue</h2></a>
+        <a href="/main-pages/apex-mobile/soft-launch-notes/apex-mobile-ranked"><h2>Apex Legends Mobile Season One (1) Rank System</h2></a>
         <!--  ------------------------------------------------------------------------------  -->
         <h3 id="soft-launch--notes">Soft Launch Notes!</h3>
         <a href="/main-pages/apex-mobile/soft-launch-notes/apex-legends-mobile-solo-mode"><h2>Apex Legends Mobile Solo Mode/ Solo Queue</h2></a>
