@@ -4823,10 +4823,8 @@ footer p {
         bottom: 5% !important; }
         .game-sidebar .game-sidebar-display .game-sidebar-end #settings-icon {
           color: white; }
-  .gamelounge-contact-container {
-    max-width: 80% !important; }
-    .gamelounge-contact-container #gamelounge-contact fieldset textarea {
-      height: 15rem !important; }
+  .gamelounge-contact-container #gamelounge-contact fieldset textarea {
+    height: 15rem !important; }
   .gamelounge-chillzone .playlist-vid {
     width: 80% !important;
     height: 28rem !important; }
