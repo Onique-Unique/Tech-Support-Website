@@ -304,6 +304,10 @@ h1, h2, h3, h4{
     margin: 0;
 }
 
+.fas .fa-rss {
+    margin-right: 1%;
+}
+
 article{
     margin: 2rem 0;
 }
