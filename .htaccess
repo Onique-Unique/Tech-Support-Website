@@ -89,4 +89,4 @@ mod_gzip_item_include handler ^cgi-script$
 
 Redirect 301 /ads.txt https://srv.adstxtmanager.com/19390/feenixbloom.com
 
-Header add "Cache-Control" "no-cache"
+Header set Cache-Control "max-age=0, private, no-cache, no-store, must-revalidate"
