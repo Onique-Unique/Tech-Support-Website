@@ -11,6 +11,9 @@ const privacyClick = document.getElementById('footer-privacy');
 const contactClick = document.getElementById('footer-contact');
 const contactFormExit = document.querySelector('.form-exit');
 const disclaimerExit = document.querySelector('.disclaimer-exit');
+const navScrollBehavior = document.getElementById("news-title").offsetHeight; // Get height of news title div
+
+document.documentElement.style.setProperty("--scroll-padding", navScrollBehavior + "px"); // setting/ updating new property to html element styling
 
 navItemDropDownList.forEach((navItem) => {
     navItem.addEventListener('click', () => {

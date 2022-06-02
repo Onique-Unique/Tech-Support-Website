@@ -2,9 +2,6 @@
 
 /* variables */
 :root{
-    --archivo: 'Archivo', sans-serif;
-    --audiowide: 'Audiowide', cursive;
-    --oswald: 'Oswald', sans-serif;
     --dark-color: #151515;
     --green-color: #5fad05;
     --dark-green-color: #559b04;
@@ -23,6 +20,8 @@
 
 html{
     font-size: 10px; /* 1rem becomes equal to 10px */
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--scroll-padding, 100px);
 }
 body{
     font-size: 1.6rem;
@@ -171,7 +170,7 @@ input:-webkit-autofill:active{
 .navbar-nav{
     margin-top: 5rem;
 }
-.nav-item, .nav-item-home{
+.nav-item, .nav-item-home, .nav-item-news{
     margin: 2.4rem 0;
     text-align: left;
     font-family: 'Work Sans', sans-serif;
@@ -664,7 +663,7 @@ article{
             -ms-flex-pack: end;
                 justify-content: flex-end;
     }
-    .nav-item, .nav-item-home{
+    .nav-item, .nav-item-home, .nav-item-news{
         position: relative;
         margin: 0 1%;
     }
