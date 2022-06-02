@@ -1,3 +1,5 @@
+Header set Cache-Control "max-age=0, private, no-cache, no-store, must-revalidate"
+
 # mod_rewrite starts here
 
 Options +FollowSymLinks 
@@ -88,5 +90,3 @@ mod_gzip_item_include handler ^cgi-script$
 </ifModule
 
 Redirect 301 /ads.txt https://srv.adstxtmanager.com/19390/feenixbloom.com
-
-Header set Cache-Control "max-age=0, private, no-cache, no-store, must-revalidate"
