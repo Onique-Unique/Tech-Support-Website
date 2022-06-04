@@ -5455,7 +5455,7 @@ footer p {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 9999999;
   display: none;
   -webkit-box-align: end;
       -ms-flex-align: end;
