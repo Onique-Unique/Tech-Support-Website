@@ -434,10 +434,13 @@ article{
     margin-left: auto;
     font-size: 1.8rem;
 }
-#promo .btn-groups{
+#promo .btn-groups, .btn-groups-2{
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-top: 2rem;
+}
+#promo .btn-groups-2{
+    margin-top: 1rem;
 }
 #promo .btn-groups a{
     margin: 1rem;
@@ -451,10 +454,29 @@ article{
     -o-transition: var(--trans);
     transition: var(--trans);
 }
+#promo .btn-groups-2 a{
+    margin: 1rem;
+    background-color: #fff;
+    box-shadow: 1px 0 10px white;
+    border-radius: 2rem;
+    color: var(--dark-color);
+    padding: 1.4rem 2rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    -webkit-transition: var(--trans);
+    -o-transition: var(--trans);
+    transition: var(--trans);
+}
 #promo .btn-groups a:hover{
     background-color: #0084e6;
 }
 
+#promo .btn-groups-2 a:hover{
+    background-color: var(--dark-color);
+    color: white;
+    border: 1px solid white;
+    transform: scale(.96);
+}
 /* footer */
 #footer{
     background-color: #000;
