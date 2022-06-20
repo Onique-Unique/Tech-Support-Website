@@ -31,6 +31,9 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
 }
+body {
+    overflow-x: hidden;
+}
 
 body::-webkit-scrollbar {
     width: 1vw;
@@ -67,6 +70,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .header {
+    z-index: 999999;
     position: fixed;
     top: 0;
     left: 0;
