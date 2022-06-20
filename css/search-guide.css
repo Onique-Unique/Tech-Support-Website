@@ -371,6 +371,17 @@ body::-webkit-scrollbar-thumb:hover {
 .suggested-top h4 span {
    color: red;
 }
+
+.suggested-not-grid {
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.suggested-not-grid .item-box .suggested-item {
+    width: 100%;
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
