@@ -25,6 +25,12 @@
     font-weight: lighter;
 }
 
+/* Ezoic Unwanted AI ad placement */
+
+.ezoic-ad.medrectangle-4340 {
+    display: none !important;
+}
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -75,7 +81,6 @@ body::-webkit-scrollbar-thumb:hover {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
     background: #1d3577;
     box-shadow: var(--box-shadow);
     display: flex;
