@@ -472,7 +472,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin: 10px auto;
     color: white;
     box-shadow: 1px 0 8px white;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .container .posts-container .post {
@@ -828,6 +828,11 @@ details[open] .faq__summary:after {
 .footer .follow a:hover {
     background: var(--orange);
 }
+
+.footer .h2-page-tags {
+    display: none;
+}
+
 /* media queries  */
 
 @media (max-width:991px) {
