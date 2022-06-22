@@ -60,6 +60,13 @@ body::-webkit-scrollbar-thumb:hover {
     background: #30303092;
 }
 
+button {
+    cursor: pointer;
+}
+
+hr {
+    height: 1rem;
+}
 .btn {
     margin-top: 1rem;
     display: inline-block;
@@ -372,6 +379,25 @@ body::-webkit-scrollbar-thumb:hover {
    color: red;
 }
 
+.mini-banner {
+    position: relative;
+    background-color: red;
+    height: 40px;
+    width: 100%;
+}
+
+.mini-banner-btn {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translate(0%, -50%);
+    padding: 4px 5px;
+    border-radius: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .suggested-not-grid {
     display: flex;
     max-width: 400px;
@@ -427,6 +453,12 @@ body::-webkit-scrollbar-thumb:hover {
     border-radius: .5rem;
 }
 
+.wrapper .item-box .suggested-heading {
+    font-size: 28px;
+    text-align: center;
+    margin: 35px 0;
+}
+
 .item-box  .suggested-text-item {
     text-align: center;
     padding: 5% 0;
@@ -459,6 +491,37 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: #2fcbff;
     width: 80px;
     margin-top: 5px;
+}
+
+.item-box .list-items-alt {
+    text-align: center;
+}
+
+.additional-list-container {
+    background-color: #eee;
+}
+
+.additional-list-container .additional-list {
+    list-style-type: none;
+    font-size: 16px;
+    position: relative;
+    color: var(--light-color);
+    line-height: 1.7;
+    justify-content: space-between;
+}
+
+.additional-list-container .additional-list .additional-list-inner {
+    list-style-type: none;
+    background-color: #1d3577;
+    padding: 5px;
+    color: white;
+}
+
+.additional-list-container-alt .additional-list .additional-list-inner {
+    list-style-type: none;
+    background-color: #20640b;
+    padding: 5px;
+    color: white;
 }
 
 .item-box  .suggest-link {
@@ -528,6 +591,16 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .container .posts-container .post .text span {
+    color: blue;
+}
+
+.container .posts-container .post .text b {
+    color: var(--black);
+    font-size: 22px;
+    font-weight: 600;
+}
+.container .posts-container .post .title-secondary {
+    font-size: 26px;
     color: blue;
 }
 
