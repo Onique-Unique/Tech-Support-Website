@@ -9,9 +9,6 @@
     --blue-dark: hsl(238, 29%, 16%);
     --grey-light: hsl(237, 12%, 33%);
     --blue-mid: hsl(240, 6%, 50%);
-
-    /* fonts */
-    --base-font-size: 1.2rem;
 }
 
 * {
@@ -365,13 +362,13 @@ hr {
 .suggested-top h5 {
     width: 100px;
     padding: 5px 1%;
-    font-size: 14px;
+    font-size: 1.4rem;
     text-align: center;
     border-radius: 3px;
 }
 
 .suggested-top h4 {
-    font-size: 14px;
+    font-size: 1.4rem;
     margin-top: 5px;
 }
 
@@ -428,7 +425,7 @@ hr {
     margin-bottom: 10px;
     background-color: #1d3577;
     color: white;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .item-box  .best-suggest {
@@ -454,7 +451,7 @@ hr {
 }
 
 .wrapper .item-box .suggested-heading {
-    font-size: 28px;
+    font-size: 2.8rem;
     text-align: center;
     margin: 35px 0;
 }
@@ -462,13 +459,13 @@ hr {
 .item-box  .suggested-text-item {
     text-align: center;
     padding: 5% 0;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .item-box .item-box-list-items {
     margin-left: 10px;
     list-style-type: none;
-    font-size: 14px;
+    font-size: 1.4rem;
     position: relative;
 }
 
@@ -503,7 +500,7 @@ hr {
 
 .additional-list-container .additional-list {
     list-style-type: none;
-    font-size: 16px;
+    font-size: 1.6rem;
     position: relative;
     color: var(--light-color);
     line-height: 1.7;
@@ -535,7 +532,7 @@ hr {
     margin: 10px auto;
     color: white;
     box-shadow: 1px 0 8px white;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .container .posts-container .post {
@@ -596,7 +593,7 @@ hr {
 
 .container .posts-container .post .text b {
     color: var(--black);
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: 600;
 }
 .container .posts-container .post .title-secondary {
@@ -605,7 +602,7 @@ hr {
 }
 
 .container .posts-container .post .post-list-items, .posts-accordion .post-list-items  {
-    font-size: 16px;
+    font-size: 1.6rem;
     margin-left: 15px;
     color: var(--light-color);
 }
@@ -614,7 +611,7 @@ hr {
     color: var(--sandy-brown);
     display: flex;
     align-items: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     margin-bottom: 15px;
 }
 
@@ -706,7 +703,7 @@ hr {
   }
   
 .posts-accordion .accordion h2 { 
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 .active, .accordion:hover {
@@ -834,7 +831,7 @@ details[open] .faq__summary:after {
 
 .faq__text {
     color: var(--blue-mid);
-    font-size: var(--base-font-size);
+    font-size: 1.6rem;
     line-height: 1.6;
     margin: 10px 0 0 0;
 }
@@ -849,16 +846,16 @@ details[open] .faq__summary:after {
     padding: 45px;
 }
 .disclosure strong {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 600;
 }
 .disclosure p {
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .disclosure p span {
     color: var(--orange);
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 .disclosure p a{
@@ -909,10 +906,6 @@ details[open] .faq__summary:after {
 /* media queries  */
 
 @media (max-width:991px) {
-
-    html {
-        font-size: 55%;
-    }
 
     .header {
         padding: 1.5rem;
@@ -983,11 +976,6 @@ details[open] .faq__summary:after {
 }
 
 @media (max-width:450px) {
-
-    html {
-        font-size: 50%;
-    }
-
     .item-box {
         text-align: center;
     }
