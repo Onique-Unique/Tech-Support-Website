@@ -59,3 +59,35 @@ for(i = 0; i < altAttr.length; i++) {
     altAttr[i].alt = "Amazon Affiliate Link";
   }
 }
+
+// Link Checker On WebPage - Gather All Links On Webpage In Console to See & Find Missing/ Broken Links
+var links = document.querySelectorAll("a");
+var linkReport = [];
+var linksChecked=0;
+links.forEach(function(link){
+    
+    var reportLine = {url: link.getAttribute('href'), status:0, message : "", element : link};
+    linkReport.push(reportLine);
+
+    fetch(reportLine.url, {
+      method: 'HEAD'
+    })
+    .then(function(response) {
+        linksChecked++;
+        reportLine.status=response.status;
+        reportLine.message= response.statusText + " | " + response.type + " | " + 
+                            (response.message || "") + " | " + (response.redirected ? "redirected | " : "") +
+                            JSON.stringify(response.headers) ;
+        console.table(response);
+        }
+    )
+    .catch(function(error){
+        reportLine.message = error;
+        console.table(error);
+        linksChecked++;
+    });
+
+});
+var finishReport = setInterval(
+                        function(){if(linksChecked>=linkReport.length){console.table(linkReport);
+                        clearInterval(finishReport)}}, 3000);
