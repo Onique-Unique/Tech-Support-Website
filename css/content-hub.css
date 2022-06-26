@@ -118,9 +118,9 @@ body::-webkit-scrollbar-thumb:hover {
     border-radius: 8px;
     border: none;
     transition: 260ms;
-    width: 50px;
+    width: 40px;
     text-align: center;
-    height: 45px;
+    height: 35px;
 }
 
 #button:hover {
