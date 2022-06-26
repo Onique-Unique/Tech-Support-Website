@@ -175,7 +175,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 #load-more {
     position: absolute;
-    bottom: 65px;
+    bottom: 35px;
     left: 50%;
     transform: translate(-50%, 0);
     padding: 10px 25px;
@@ -922,13 +922,4 @@ body::-webkit-scrollbar-thumb:hover {
 
 .fair-use-disclaimer--container .disclaimer #fair-use-disclaimer p {
     font-size: 16px;
-}
-
-.ezoic-ad-spot {
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    max-width: 1500px;
-    height: 105px;
-    bottom: 0%;
 }
