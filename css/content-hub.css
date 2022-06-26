@@ -175,10 +175,13 @@ body::-webkit-scrollbar-thumb:hover {
 
 #load-more {
     position: absolute;
-    bottom: 35px;
+    bottom: 65px;
     left: 50%;
     transform: translate(-50%, 0);
     padding: 10px 25px;
+    background-color: white;
+    border: none;
+    outline: none;
 }
 
 .game-search-bar {
@@ -919,4 +922,13 @@ body::-webkit-scrollbar-thumb:hover {
 
 .fair-use-disclaimer--container .disclaimer #fair-use-disclaimer p {
     font-size: 16px;
+}
+
+.ezoic-ad-spot {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    max-width: 1500px;
+    height: 65px;
+    bottom: 0%;
 }
