@@ -89,6 +89,7 @@ body::-webkit-scrollbar-thumb:hover {
 .content-hub-nav-fixed {
     background: black;
     position: fixed;
+    top: -3px;
     width: 100%;
     z-index: 4;
     max-width: 1500px;
@@ -319,7 +320,7 @@ body::-webkit-scrollbar-thumb:hover {
     overscroll-behavior: contain;
     visibility: hidden;
     transition: 0.5s ease;
-    z-index: 20;
+    z-index: 99999999;
 }
 
 .sidebar.active {
