@@ -59,14 +59,18 @@ body {
     color: white;
 }
 
+.page-tags {
+    display: none;
+}
+
 /**
    * scrollbar style
    */
 
-   body::-webkit-scrollbar {
-    width: 1vw;
-    overscroll-behavior: contain;
-    scrollbar-width: thin !important;
+body::-webkit-scrollbar {
+width: 1vw;
+overscroll-behavior: contain;
+scrollbar-width: thin !important;
 }
 
 body::-webkit-scrollbar-track {
@@ -106,6 +110,7 @@ body::-webkit-scrollbar-thumb:hover {
     -ms-flex-align: center;
     align-items: center;
     padding: 5px;
+    margin-top: 10px;
 }
 
 .content-hub-heading {
