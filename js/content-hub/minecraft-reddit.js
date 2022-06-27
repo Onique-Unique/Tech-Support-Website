@@ -67,6 +67,7 @@ function fetchMemes() {
             const memeBtn = document.getElementById("load-more");
             memeBtn.addEventListener("click", () => {
             fetchMemes();
+            window.scroll({top: 0, behavior: "smooth"});
         })
     })
     .catch((e) => {
