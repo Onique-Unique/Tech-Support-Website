@@ -222,6 +222,7 @@ body::-webkit-scrollbar-thumb:hover {
     outline: none;
     border-radius: 25px;
     width: 85%;
+    background-color: transparent;
 }
 
 .game-search-bar form input::placeholder {
