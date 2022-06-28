@@ -47,6 +47,12 @@ img{
 i {
     cursor: pointer;
 }
+
+/* ezoic mobile ad remove homepage */
+#google-center-div {
+    display: none !important;
+}
+
 .container{
     max-width: 1440px;
     margin: 0 auto;
