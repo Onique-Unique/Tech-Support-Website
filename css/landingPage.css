@@ -160,7 +160,7 @@ input:-webkit-autofill:active{
     -webkit-transition: var(--trans);
     -o-transition: var(--trans);
     transition: var(--trans);
-    overflow: hidden !important;
+    overflow-x: hidden !important;
 }
 .navbar-toggler-close{
     position: absolute;
