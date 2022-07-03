@@ -419,6 +419,12 @@ hr {
     border-radius: 10px;
 }
 
+.post-item-link {
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+}
+
 .item-box  .suggested-text-best {
     text-align: center;
     padding: 5% 8%;
@@ -535,6 +541,18 @@ hr {
     font-size: 1.4rem;
 }
 
+.post-item-link .suggest-link{
+    background-color: #303030;
+    width: 40%;
+    transition: all .2s;
+}
+
+.post-item-link .suggest-link:hover {
+    background-color: #ffe500;
+    color: black;
+    width: 40%;
+}
+
 .container .posts-container .post {
     width: 100%;
     padding: 3.5rem;
@@ -605,6 +623,67 @@ hr {
     font-size: 1.6rem;
     margin-left: 15px;
     color: var(--light-color);
+}
+
+.container .posts-container .post .post-list-items .li-red, .posts-accordion .post-list-items .li-red  {
+    color: red;
+    background-color: #333;
+    max-width: 450px;
+    margin: 3px 0;
+}
+
+.dot-bounce {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: red;
+    display: inline-block;
+    margin: .5rem;
+    animation: dot-scaling 2.5s ease-in-out infinite;
+}
+
+/* Creating wave delay effect */
+.dot-bounce:nth-child(0) {
+    animation-delay: 0s;
+}
+
+.dot-bounce:nth-child(1) {
+    animation-delay: .2s;
+}
+
+.dot-bounce:nth-child(2) {
+    animation-delay: .4s;
+}
+
+.dot-bounce:nth-child(3) {
+    animation-delay: .6s;
+}
+
+.dot-bounce:nth-child(4) {
+    animation-delay: .8s;
+}
+
+.dot-bounce:nth-child(5) {
+    animation-delay: 1s;
+}
+
+@keyframes dot-scaling {
+    0%, 100% {
+        transform: scale(0.2);
+        background-color: #30ffb7;
+    }
+
+    /* Keep same level between 40 - 50 % */
+    40% {
+        transform: scale(1);
+        background-color: #07deff;
+    }
+
+    50% {
+        transform: scale(1);
+        background-color: #0761ff;
+    }
+
 }
 
 .container .posts-container .post .showcase-rating, .posts-accordion .panel .showcase-rating {
