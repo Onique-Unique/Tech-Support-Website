@@ -190,6 +190,10 @@ body::-webkit-scrollbar-thumb:hover {
     outline: none;
 }
 
+.thirst-h1-hidden {
+    display: none;
+}
+
 .lower-meta-content {
     height: auto;
     background-color: var(--sandy-brown);
