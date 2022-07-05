@@ -165,7 +165,7 @@ disclaimerExit.addEventListener("click", () => {
     disclaimerForm.classList.toggle("hide");
 });
 
-if(window.canRunAds === undefined) {
+if(window.catchMeIfYouCan === undefined) {
     const detect = document.querySelector("#detect");
     wrapper = document.querySelector(".wrapper");
     button = wrapper.querySelector(".ad-ok-btn");
