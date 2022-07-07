@@ -165,6 +165,12 @@ disclaimerExit.addEventListener("click", () => {
     disclaimerForm.classList.toggle("hide");
 });
 
+document.getElementById("adblock-info-insert").innerHTML = `
+    <h3>Adblock Detected!</h3>
+    <p>Our Website is made possible by dispaying ads to our visitors. Please show support by whitelisting our Website.</p>
+    <button class="ad-ok-btn">Okay, i'll whitelist</button>
+`;
+
 if(window.catchMeIfYouCan === undefined) {
     const detect = document.querySelector("#detect");
     wrapper = document.querySelector(".wrapper");
