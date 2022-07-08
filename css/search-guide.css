@@ -576,11 +576,62 @@ hr {
     margin-bottom: 2.5rem;
 }
 
+.container .posts-container .post-top .h1-blog .title .h1-strong-highight {
+    color: #20640b;
+    background-color: transparent;
+    margin: 0%;
+    padding: 0%;
+    font-weight: 700;
+} 
+
+.container .posts-container .post .h1-blog-img-scroller {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    padding-bottom: 10px;
+    margin: 2% 0;
+}
+
+.container .posts-container .post .h1-blog-img-scroller::-webkit-scrollbar {
+    height: 1.5vh;
+    overscroll-behavior: contain;
+    scrollbar-width: thin !important;
+}
+
+.container .posts-container .post .h1-blog-img-scroller::-webkit-scrollbar-track {
+    background-color: #b3b3b300;
+}
+
+.container .posts-container .post .h1-blog-img-scroller::-webkit-scrollbar-thumb {
+    background-color: #303030;
+    border-radius: 10px;
+}
+
+.container .posts-container .post .h1-blog-img-scroller::-webkit-scrollbar-thumb:hover {
+    background: #30303092;
+}
+
+.container .posts-container .post .h1-blog-img-scroller .image{
+    height: 15rem;
+    width: 15rem;
+    object-fit: cover;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.container .posts-container .post .h1-blog-img-scroller .image:hover{
+    transform: scale(.9);
+}
 .container .posts-container .post .image, .posts-accordion .panel .image  {
     height: 40rem;
     width: 100%;
     border-radius: .8rem;
     object-fit: contain;
+}
+
+.container .posts-container .post .image-alt, .posts-accordion .panel .image-alt  {
+    object-fit: fill;
 }
 
 .container .posts-container .post .date {
