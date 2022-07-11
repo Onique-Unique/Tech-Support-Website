@@ -53,12 +53,16 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// var altAttr = document.getElementsByTagName("img");
-// for(i = 0; i < altAttr.length; i++) {
-//   if (altAttr.src = "http://ws-na.amazon-adsystem.com") {
-//     altAttr[i].alt = "Amazon Affiliate Link";
-//   }
-// }
+var altAttr = document.getElementsByTagName("img");
+var affiliateLinks = ["//ws-na.amazon-adsystem.com", "https://ir-na.amazon-adsystem.com"];
+for(let i = 0; i < altAttr.length; i++) {
+
+  var item = altAttr.item(i);
+  if (item.alt == "" || altAttr.src == affiliateLinks){
+    altAttr[i].alt = "Amazon Affiliate Link";
+    console.log(altAttr.src);
+  }
+}
 
 // Link Checker On WebPage - Gather All Links On Webpage In Console to See & Find Missing/ Broken Links
 // var links = document.querySelectorAll("a");
