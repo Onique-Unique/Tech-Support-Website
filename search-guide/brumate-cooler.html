@@ -32,31 +32,6 @@
                     "@type": "SpeakableSpecification",
                     "xpath": ["/html/head/title", "/html/head/meta[@name='description']/@content"]
                 },
-                "BreadcrumbList":
-                    "@id":"https://www.feenixbloom.com/search-guide/brumate-cooler#breadcrumb",
-                    "itemListElement":[
-                    {"@type":"ListItem",
-                        "position":1,
-                        "item":
-                            {"@id": "https://www.feenixbloom.com/",
-                            "name":"Home"
-                            }
-                    },
-                    {"@type":"ListItem",
-                        "position":2,
-                        "item":
-                            {"@id": "https://www.feenixbloom.com/search-guide/brumate",
-                            "name":"17+ of the Best Available Brumate Products"
-                            }
-                    },
-                    {"@type":"ListItem",
-                        "position":3,
-                        "item":
-                            {"@id": "https://www.feenixbloom.com/search-guide/brumate-cooler",
-                            "name":"3 in 1 Multi-purpose Brumate Cooler you should have!"
-                            }
-                    }
-                ]},
                 "datePublished": "2022-07-12",
                 "dateModified": "2022-07-12",
                 "author": [{
@@ -223,16 +198,18 @@
                         <div class="date">
                             <i class="far fa-clock"></i> Onique Campbell &bull; <span><time datetime="2022-07-12">Jul 12, 2022</time></span>
                         </div>
-                            <div class="breadcrumbs-container">
-                                <ul class="breadcrumbs" aria-label="Breadcrumbs">
-                                    <li class="breadcrumbs__item">
-                                        <a href="/search-guide/brumate" class="breadcrumbs__link">17+ Brumate Products Best For You!</a>
-                                    </li>
-                                    <li class="breadcrumbs__item">
-                                        <a href="/search-guide/brumate-cooler" class="breadcrumbs__link breadcrumbs__link--active" aria-current="page"> 3 in 1 Multi-purpose Brumate Cooler you should have!</a>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div class="breadcrumbs-container" itemscope itemtype="https://schema.org/BreadcrumbList">
+                            <ul class="breadcrumbs" aria-label="Breadcrumbs">
+                                <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                    <a href="/search-guide/brumate" class="breadcrumbs__link" itemprop="item"><span itemprop="name">17+ Brumate Products Best For You!</span></a>
+                                    <meta itemprop="position" content="1" />
+                                </li>
+                                <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                    <a href="/search-guide/brumate-cooler" class="breadcrumbs__link breadcrumbs__link--active" aria-current="page" itemprop="item"><span itemprop="name">3 in 1 Multi-purpose Brumate Cooler you should have!</span></a>
+                                    <meta itemprop="position" content="2" />
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="h1-blog-img-scroller">                  
                         <a href="#my-top-picks">
