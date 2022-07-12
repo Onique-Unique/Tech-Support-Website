@@ -623,6 +623,33 @@ hr {
 .container .posts-container .post .h1-blog-img-scroller .image:hover{
     transform: scale(.9);
 }
+
+.breadcrumbs-container .breadcrumbs {
+    padding: .5rem 0 1.5rem 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.6rem;
+    margin: 2.5% 0; 
+}
+.breadcrumbs-container .breadcrumbs .breadcrumbs__item {
+    display: inline-block;
+    margin: 0 0 3% 0;
+    padding: .5% 0; 
+}
+.breadcrumbs-container .breadcrumbs .breadcrumbs__item:not(:last-of-type)::after {
+    content: "/";
+    margin: 0 .5rem;
+    color: #fcae65; 
+}
+.breadcrumbs-container .breadcrumbs .breadcrumbs__item .breadcrumbs__link {
+    text-decoration: none; 
+}
+.breadcrumbs-container .breadcrumbs .breadcrumbs__item .breadcrumbs__link:hover {
+    text-decoration: underline; 
+}
+.breadcrumbs-container .breadcrumbs .breadcrumbs__item .breadcrumbs__link--active {
+    color: #2e20aa; 
+}
+
 .container .posts-container .post .image, .posts-accordion .panel .image  {
     height: 40rem;
     width: 100%;
@@ -750,6 +777,12 @@ hr {
     font-size: 1.6rem;
     line-height: 1.7;
     padding: 1rem 0;
+}
+
+#text-highight {
+    color: #20640b; 
+    font-size: 2rem; 
+    font-weight: bold;
 }
 
 .container .posts-container .top-picks {
