@@ -1,0 +1,298 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  transition: all 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+::selection{
+  color: #f2f2f2;
+  background: #41f6ae;
+}
+body::before,
+body::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+body::before{
+  clip-path: circle(30% at left 20%);
+  opacity: 0.4;
+  background-image: linear-gradient( 135deg, #41f662 10%, #ff9a9e 100%);
+}
+body::after{
+  opacity: 0.4;
+  clip-path: circle(25% at right 80%);
+  background-image: linear-gradient( 135deg, #F6416C 10%, #9affae 100%);
+}
+header{
+  height: 85vh;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 12;
+  border-radius: 25px;
+  margin: auto;
+  position: relative;
+  filter: brightness(95%);
+}
+header .navbar{
+  margin: auto;
+  width: 100%;
+  padding: 35px 50px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .menu{
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #f2f2f2;
+  box-shadow: 0px 4px 0px #c3eec6;
+}
+.navbar .logo a{
+  text-decoration: none;
+  font-size: 26px;
+  color: #7276e1;
+  font-weight: 500;
+}
+.navbar .menu li{
+  list-style: none;
+  margin: 0 6px;
+}
+.navbar .menu a{
+  color: #7276e1;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+}
+.navbar .menu a:hover{
+  color: rgba(0, 0, 0, 0.527);
+  background: transparent;
+}
+.navbar .buttons input{
+  outline: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 12px;
+  padding: 6px 15px;
+  border: none;
+  margin: 0 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-image: linear-gradient( 135deg, #41f662c6  10%, #41f6ae 100%);
+}
+.navbar .buttons input:hover{
+  transform: scale(0.97);
+}
+ header .text-content{
+   width: 40%;
+   margin: 100px 0 0 50px;
+ }
+
+ .heading-span-h2 {
+    color: orange;
+ }
+  
+ .blob { 
+    width: 50%;
+    height: 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;utf8, %3Csvg width=%22100%25%22 height=%22100%25%22 viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 %3E %3Cdefs%3E %3Cfilter id=%22grain%22 x=%22-50vw%22 y=%22-50vh%22 width=%22100vw%22 height=%22100vh%22%3E %3CfeFlood flood-color=%22%23ffffff%22 result=%22neutral-gray%22 %2F%3E %3CfeTurbulence in=%22neutral-gray%22 type=%22fractalNoise%22 baseFrequency=%222.5%22 numOctaves=%22100%22 stitchTiles=%22stitch%22 result=%22noise%22 %2F%3E %3CfeColorMatrix in=%22noise%22 type=%22saturate%22 values=%220%22 result=%22destaturatedNoise%22 %3E%3C%2FfeColorMatrix%3E %3CfeComponentTransfer in=%22desaturatedNoise%22 result=%22theNoise%22%3E %3CfeFuncA type=%22table%22 tableValues=%220 0 0.15 0%22%3E%3C%2FfeFuncA%3E %3C%2FfeComponentTransfer%3E %3CfeBlend in=%22SourceGraphic%22 in2=%22theNoise%22 mode=%22soft-light%22 result=%22noisy-image%22 %2F%3E %3C%2Ffilter%3E %3CclipPath id=%22shape%22%3E %3Cpath fill=%22currentColor%22 d=%22M782.5%2C590.5Q748%2C681%2C648.5%2C666Q549%2C651%2C464%2C761.5Q379%2C872%2C354%2C748Q329%2C624%2C209.5%2C562Q90%2C500%2C150.5%2C395Q211%2C290%2C320%2C286.5Q429%2C283%2C522%2C214Q615%2C145%2C659%2C248.5Q703%2C352%2C760%2C426Q817%2C500%2C782.5%2C590.5Z%22%3E%3C%2Fpath%3E %3C%2FclipPath%3E %3C%2Fdefs%3E %3Cg filter=%22url(%23grain)%22 clip-path=%22url(%23shape)%22%3E %3Cpath fill=%22%2341f662%22 d=%22M782.5%2C590.5Q748%2C681%2C648.5%2C666Q549%2C651%2C464%2C761.5Q379%2C872%2C354%2C748Q329%2C624%2C209.5%2C562Q90%2C500%2C150.5%2C395Q211%2C290%2C320%2C286.5Q429%2C283%2C522%2C214Q615%2C145%2C659%2C248.5Q703%2C352%2C760%2C426Q817%2C500%2C782.5%2C590.5Z%22 %2F%3E %3C%2Fg%3E %3C%2Fsvg%3E");
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    z-index: -1;
+    opacity: .5;
+}
+    
+.blob-2 { 
+    background-image: url("data:image/svg+xml;utf8, %3Csvg width=%22100%25%22 height=%22100%25%22 viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 %3E %3Cdefs%3E %3Cfilter id=%22grain%22 x=%22-50vw%22 y=%22-50vh%22 width=%22100vw%22 height=%22100vh%22%3E %3CfeFlood flood-color=%22%23ffffff%22 result=%22neutral-gray%22 %2F%3E %3CfeTurbulence in=%22neutral-gray%22 type=%22fractalNoise%22 baseFrequency=%222.5%22 numOctaves=%22100%22 stitchTiles=%22stitch%22 result=%22noise%22 %2F%3E %3CfeColorMatrix in=%22noise%22 type=%22saturate%22 values=%220%22 result=%22destaturatedNoise%22 %3E%3C%2FfeColorMatrix%3E %3CfeComponentTransfer in=%22desaturatedNoise%22 result=%22theNoise%22%3E %3CfeFuncA type=%22table%22 tableValues=%220 0 0.15 0%22%3E%3C%2FfeFuncA%3E %3C%2FfeComponentTransfer%3E %3CfeBlend in=%22SourceGraphic%22 in2=%22theNoise%22 mode=%22soft-light%22 result=%22noisy-image%22 %2F%3E %3C%2Ffilter%3E %3Cpattern id=%22pattern%22 patternUnits=%22userSpaceOnUse%22 width=%2225%22 height=%2225%22 viewBox=%220 0 100 100%22 fill=%22%237e7e7e%22 %3E %3Ccircle cx=%2250%22 cy=%2250%22 r=%2212.5%22 %2F%3E %3C%2Fpattern%3E %3CclipPath id=%22shape%22%3E %3Cpath fill=%22currentColor%22 d=%22M782.5%2C590.5Q748%2C681%2C648.5%2C666Q549%2C651%2C464%2C761.5Q379%2C872%2C354%2C748Q329%2C624%2C209.5%2C562Q90%2C500%2C150.5%2C395Q211%2C290%2C320%2C286.5Q429%2C283%2C522%2C214Q615%2C145%2C659%2C248.5Q703%2C352%2C760%2C426Q817%2C500%2C782.5%2C590.5Z%22%3E%3C%2Fpath%3E %3C%2FclipPath%3E %3C%2Fdefs%3E %3Cg filter=%22url(%23grain)%22 clip-path=%22url(%23shape)%22%3E %3Cpath fill=%22url(%23pattern)%22 d=%22M782.5%2C590.5Q748%2C681%2C648.5%2C666Q549%2C651%2C464%2C761.5Q379%2C872%2C354%2C748Q329%2C624%2C209.5%2C562Q90%2C500%2C150.5%2C395Q211%2C290%2C320%2C286.5Q429%2C283%2C522%2C214Q615%2C145%2C659%2C248.5Q703%2C352%2C760%2C426Q817%2C500%2C782.5%2C590.5Z%22 %2F%3E %3C%2Fg%3E %3C%2Fsvg%3E");
+  }
+  
+
+.text-content h2{
+  font-size: 27px;
+  font-weight: 600;
+}
+.text-content h2 i {
+    color: #7276e1;
+    -webkit-text-stroke: .2px black;
+    animation: arrow-bounce 3s infinite;
+  }
+
+  @-webkit-keyframes arrow-bounce {
+    0% {
+        margin-left: 0%;
+        opacity: 1;
+    }
+
+    75% {
+        margin-left: 3%;
+        opacity: .6;
+    }
+
+    100% {
+        margin-left: 0%;
+        opacity: .9;
+    }
+}
+
+.text-content p{
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.text-content p span{
+    font-size: 22px;
+    margin-top: 10px;
+    color: #7276e1;
+    border-radius: 2px;
+    font-weight: bold;
+    -webkit-text-stroke: .2px black;
+  }
+
+header .play-button{
+  position: absolute;
+  right: 50px;
+  bottom: 40px;
+}
+.play-button .play{
+  font-size: 18px;
+  font-weight: 500;
+}
+ .play-button .play::before{
+   content: '';
+   position: absolute;
+   height: 3px;
+   width: 50px;
+   top: 50%;
+   transform: translateY(-50%);
+   left: -58px;
+   background: #000;
+ }
+
+ .play-button a {
+    text-decoration: none;
+    color: #7276e1;
+ }
+.play-button a i{
+    height: 40px;
+    width: 40px;
+    border: 2px solid #000;
+    line-height: 38px;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+@media (max-width:960px) {
+    header {
+        padding: 40px 0;
+    }
+    header .navbar{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 5px;
+        margin-top: 30px;
+    }
+    .navbar .menu {
+        margin: 30px 0 40px 0;
+        position: absolute;
+        bottom: 0px;
+    }
+    header .text-content{
+        margin: 40px 0 0 20px;
+        width: 85%;
+    }
+    header .text-content h2{
+        font-size: 20px;
+    }
+
+    header .play-button {
+        position: absolute;
+        right: 50px;
+        bottom: 130px;
+    }
+    .navbar .menu a{
+        color: black;
+    }
+    .buttons {
+        position: absolute;
+        top: 8px;
+        right: 0;
+    }
+}
+@media (max-width:768px) { 
+
+    header .text-content  {
+        margin: 20px 0 0 20px;
+    }
+
+    header .play-button {
+        bottom: 90px;
+    }
+}
+@media (max-width:410px) {
+    header{
+        min-height: 100vh;
+        width: 100%;
+        border-radius: 0px;
+    }
+    header .navbar{
+        padding: 15px 10px;
+    }
+}
+@media (max-width: 320px) {
+    .navbar .buttons input {
+        font-size:  12px;
+    }
+    header .navbar {
+        padding: 0;
+    }
+    header .text-content {
+        margin: 0px 0 0 20px;
+        width: 90%;
+    }
+    header .text-content h2 {
+       margin-top: 15px;
+       font-size: 16px;
+    }
+    header .play-button {
+        right: 2px;
+        bottom: 40px;
+    }
+    .navbar .menu {
+        margin: 10px 0;
+    }
+    .navbar .menu a {
+        font-size: 14px;
+    }
+    .text-content p {
+        font-size: 14px;
+    }
+}

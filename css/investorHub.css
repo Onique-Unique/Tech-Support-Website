@@ -47,16 +47,45 @@ html {
 }
 
 body {
+    min-height: 100vh;
     max-width: 1500px;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
     font-family: "Poppins", sans-serif;
     width: 100vw;
     height: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
-    background: black;
 }
+
+::selection{
+    color: #f2f2f2;
+    background: #41f6ae;
+  }
+  body::before,
+  body::after,
+  .sidebar::before,
+  .sidebar::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+  body::before,
+  .sidebar::before{
+    clip-path: circle(30% at left 20%);
+    opacity: 0.4;
+    background-image: linear-gradient( 135deg, #41f662 10%, #ff9a9e 100%);
+  }
+  body::after,
+  .sidebar::after{
+    opacity: 0.4;
+    clip-path: circle(25% at right 80%);
+    background-image: linear-gradient( 135deg, #F6416C 10%, #9affae 100%);
+  }
 
 .page-tags {
     display: none;
@@ -85,12 +114,16 @@ body::-webkit-scrollbar-thumb:hover {
     background: #b3b3b392;
 }
 
+button {
+    cursor: pointer;
+}
+
 .hide {
     display: none;
 }
 
 .content-hub-nav-fixed {
-    background: black;
+    background-color: teal;
     position: fixed;
     top: -3px;
     width: 100%;
@@ -117,6 +150,11 @@ body::-webkit-scrollbar-thumb:hover {
     color: white;
 }
 
+#investHub-currentDate {
+    color: white;
+    font-size: 12px;
+}
+
 #button {
     padding: 5px;
     cursor: pointer;
@@ -135,27 +173,44 @@ body::-webkit-scrollbar-thumb:hover {
 #memes-container {
     position: relative;
     overflow-y: scroll;
-    height: 100%;
+    height: auto;
     padding: 0 0 150px 0;
-    background-color: black;
     z-index: 2;
 }
 
 #memes {
+    height: auto;
+    min-height: 80vh;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 60px 10px;
-    margin-top: 90px;
+    gap: 60px 10px;
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.525);
+    box-shadow: rgb(0 0 0 / 15%) 0px 20px 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px) !important;
+    border-radius: 25px;
+    position: relative;
+    filter: brightness(95%);
+    padding: 55px 0;
 }
 
 #memes-inner {
-    background-color: aliceblue;
+    background-color: #41f6ae;
     padding: 10px;
     margin: 0 auto;
     max-height: 550px;
     border-radius: 10px;
     width: 350px;
     font-size: 14px;
+}
+
+@media(max-width: 320px){
+    #memes-inner {
+        width: 280px;
+        margin-left: 20px;
+    }
 }
 
 #memes-inner img {
@@ -181,11 +236,12 @@ body::-webkit-scrollbar-thumb:hover {
 
 #load-more {
     position: absolute;
-    bottom: 35px;
+    bottom: 45px;
     left: 50%;
     transform: translate(-50%, 0);
     padding: 10px 25px;
-    background-color: white;
+    color: white;
+    background-color: teal;
     border: none;
     outline: none;
 }
@@ -406,7 +462,7 @@ body::-webkit-scrollbar-thumb:hover {
   \*-----------------------------------*/
 
   .sidebar {
-    background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
+    background-color: white;
     position: fixed;
     top: 0;
     left: -100%;
@@ -477,7 +533,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .sidebar-top span {
-    background-color: var(--green-color);
+    cursor: pointer;
+    background-color: #24243e;
     color: var(--cultured);
     padding: 1rem;
 }
@@ -492,7 +549,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .sidebar-close-btn {
     background: transparent;
-    color: white;
+    color: #f6a355;
     border: none;
     font-size: 28px;
     font-weight: var(--weight-600);
@@ -520,7 +577,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .sidebar .menu-title {
     font-size: var(--fs-5);
-    color: var(--cultured);
+    color: var(--eerie-black);
     font-weight: var(--weight-500);
 }
 
@@ -575,7 +632,7 @@ body::-webkit-scrollbar-thumb:hover {
     justify-content: space-around;
     align-items: center;
     margin-top: 50px;
-    color: white;
+    color: #24243e;
 }
 
 .showcase-wrapper .showcase-other i {
@@ -601,11 +658,15 @@ body::-webkit-scrollbar-thumb:hover {
     text-decoration: none;
 }
 
+.sidebar .showcase-contact {
+    cursor: pointer;
+}
+
 .sidebar .showcase-title {
     display: flex;
     justify-content: center;
-    background-color: white;
-    color: var(--eerie-black);
+    background-color: #24243e;
+    color: var(--cultured);
     padding: 5px;
     font-size: var(--fs-7);
     font-weight: var(--weight-400);
@@ -622,7 +683,6 @@ body::-webkit-scrollbar-thumb:hover {
     width: 100%;
     height: 100vh;
     z-index: 2;
-    background: repeating-linear-gradient(45deg, black, transparent 100px);
     overflow: hidden;
 }
 
@@ -630,6 +690,7 @@ body::-webkit-scrollbar-thumb:hover {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    background-color: #43a0482b;
 }
 
 .video-lounge-container .lounge-flex .video-carousel {
@@ -642,7 +703,7 @@ body::-webkit-scrollbar-thumb:hover {
     position: absolute;
     top: 0;
     right: 1%;
-    background-color: #c3376399;
+    background-color: #43a048b8;
     padding: 1%;
     border-radius: 5px;
     font-size: 30px;
@@ -812,7 +873,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .search-results #videoListContainer #search-h4 {
     max-width: 1440px;
-    background-color: brown;
+    background-color: teal;
     font-size: 20px;
     color: white;
     width: 100vw;
@@ -827,6 +888,7 @@ body::-webkit-scrollbar-thumb:hover {
 .search-results #videoListContainer ul {
     text-align: center;
     padding-top: 40px;
+    background-color: #43a04892;
 }
 
 .search-results #videoListContainer ul .data-num {
@@ -846,10 +908,14 @@ body::-webkit-scrollbar-thumb:hover {
     height: 250px;
     width: 300px;
     padding: 2%;
+    background-color: aliceblue;
+    padding: 8px;
+    border-radius: 5px;
 }
 
 .search-results #videoListContainer ul .data-num li #para-search-return {
     overflow: hidden;
+    color: black;
 }
 
 .search-results #videoListContainer .paginate {
@@ -967,7 +1033,7 @@ body::-webkit-scrollbar-thumb:hover {
     border-radius: 25px;
     background: #2b2b2b;
     padding: 25px;
-    margin: 150px 0;
+    margin: 100px 0 0 0;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 

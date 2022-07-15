@@ -630,6 +630,10 @@ hr {
     font-size: 1.6rem;
     margin: 2.5% 0; 
 }
+.breadcrumbs-container .breadcrumbs-alt {
+    padding: .5rem 0 0 0;
+    margin:0; 
+}
 .breadcrumbs-container .breadcrumbs .breadcrumbs__item {
     display: inline-block;
     margin: 0 0 3% 0;
@@ -666,6 +670,10 @@ hr {
     margin-bottom: 2rem;
     font-size: 1.5rem;
     color: var(--black);
+}
+
+.container .posts-container .post .date a{
+    color: #1d3577;
 }
 
 .container .posts-container .post .title, .posts-accordion .panel .title {
