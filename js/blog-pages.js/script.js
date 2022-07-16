@@ -64,6 +64,16 @@ for(let i = 0; i < altAttr.length; i++) {
   }
 }
 
+// Advisory Notice For Affiliate
+const advisoryNotice = document.getElementById("advisory");
+const advisoryText = document.getElementById("advisory-text");
+
+if(advisoryNotice){
+  advisoryNotice.addEventListener("click", () => {
+    advisoryText.classList.toggle("hide");
+  });
+};
+
 // Link Checker On WebPage - Gather All Links On Webpage In Console to See & Find Missing/ Broken Links
 // var links = document.querySelectorAll("a");
 // var linkReport = [];
