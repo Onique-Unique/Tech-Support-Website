@@ -703,7 +703,7 @@ button {
     position: absolute;
     top: 0;
     right: 1%;
-    background-color: #43a048b8;
+    background-color: #24243e;
     padding: 1%;
     border-radius: 5px;
     font-size: 30px;
@@ -879,6 +879,7 @@ button {
     width: 100vw;
     height: 50px;
     position: fixed;
+    top: 0;
     padding: 1%;
     display: flex;
     justify-content: center;
