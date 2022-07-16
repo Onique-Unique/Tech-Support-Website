@@ -246,7 +246,7 @@ hr {
 }
 
 .sidebar .box .about p {
-    color: var(--light-color);
+    color: var(--black);
     font-size: 1.5rem;
     line-height: 1.5;
     padding: 1rem;
@@ -336,7 +336,7 @@ hr {
 }
 
 .sidebar .box .p-post a span {
-    color: var(--light-color);
+    color: var(--black);
     font-size: 1.5rem;
 }
 
@@ -532,7 +532,7 @@ hr {
     list-style-type: none;
     font-size: 1.6rem;
     position: relative;
-    color: var(--light-color);
+    color: var(--black);
     line-height: 1.7;
     justify-content: space-between;
 }
@@ -744,7 +744,7 @@ hr {
 .container .posts-container .post .post-list-items, .posts-accordion .post-list-items  {
     font-size: 1.6rem;
     margin-left: 15px;
-    color: var(--light-color);
+    color: var(--black);
 }
 
 .container .posts-container .post .post-list-items .li-red, .posts-accordion .post-list-items .li-red  {
@@ -817,7 +817,7 @@ hr {
 }
 
 .container .posts-container .post .text, .posts-accordion .panel .text, .posts-accordion .text{
-    color: var(--light-color);
+    color: var(--black);
     font-size: 1.6rem;
     line-height: 1.7;
     padding: 1rem 0;
@@ -870,7 +870,7 @@ hr {
 
 .container .posts-container .post .links a, .posts-accordion .panel .links a {
     font-size: 1.5rem;
-    color: var(--light-color);
+    color: var(--black);
 }
 
 .container .posts-container .post .links a i, .posts-accordion .panel .links a i {
@@ -938,7 +938,7 @@ hr {
 }
 
 .posts-accordion .panel p {
-    color: var(--light-color);
+    color: var(--black);
     font-size: 1.6rem;
     line-height: 1.7;
     padding: 1rem 0;
@@ -1037,7 +1037,7 @@ details[open] .faq__summary:after {
 }
 
 .faq__text {
-    color: var(--blue-mid);
+    color: var(--black);
     font-size: 1.6rem;
     line-height: 1.6;
     margin: 10px 0 0 0;
