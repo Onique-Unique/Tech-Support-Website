@@ -187,9 +187,10 @@ button {
     margin-top: 50px;
     background: rgba(255, 255, 255, 0.525);
     box-shadow: rgb(0 0 0 / 15%) 0px 20px 50px;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid #ffffff80;
+    border-left: 1px solid #ffffff80;
     backdrop-filter: blur(15px) !important;
+    -webkit-backdrop-filter: blur(15px) !important;
     border-radius: 25px;
     position: relative;
     filter: brightness(95%);
