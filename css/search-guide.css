@@ -69,6 +69,10 @@ hr {
     display: none;
 }
 
+.mobile-swipe-show {
+    display: none;
+}
+
 #advisory {
     cursor: pointer;
     color: #20640b;
@@ -1172,6 +1176,7 @@ table tr:nth-child(even) {
 @media (max-width: 560px) {
     .table-container, .div-container {
         padding: 10px;
+        overflow-x: scroll;
     }
     .mobile-remove {
         display: none;
@@ -1300,6 +1305,11 @@ table tr:nth-child(even) {
 
     .sidebar {
         display: none;
+    }
+
+    .mobile-swipe-show {
+        display: flex;
+        justify-content: flex-end;
     }
 
     .container {
