@@ -845,13 +845,19 @@ hr {
    padding: 5px;
 }
 
-.container .posts-container .top-picks .top-picks-list {
+.container .posts-container .top-picks .top-picks-list, .container .posts-container .top-picks .related-link-list{
     padding: 0 2rem; 
     background-color: #eee;
 }
 
-.container .posts-container .top-picks .top-picks-list li a {
+.container .posts-container .top-picks .top-picks-list li a, .container .posts-container .top-picks .related-link-list li a  {
     font-size: 1.45rem;
+}
+
+.related-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .container .posts-container .post .links, .posts-accordion .panel .links {

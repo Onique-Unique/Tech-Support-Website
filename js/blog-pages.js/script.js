@@ -74,6 +74,16 @@ if(advisoryNotice){
   });
 };
 
+// Related Links
+const relatedContainer = document.getElementById("related-link-list");
+const relatedLinks = document.getElementById("related-links");
+
+if(relatedLinks){
+  relatedLinks.addEventListener("click", () => {
+    relatedContainer.classList.toggle("hide");
+  });
+};
+
 // Link Checker On WebPage - Gather All Links On Webpage In Console to See & Find Missing/ Broken Links
 // var links = document.querySelectorAll("a");
 // var linkReport = [];
