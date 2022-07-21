@@ -281,22 +281,22 @@ hr {
     overflow-y: scroll;
 }
 
-.sidebar .box .category::-webkit-scrollbar {
+.sidebar .box .category::-webkit-scrollbar, .sidebar .box .p-post::-webkit-scrollbar {
     width: .5vw;
     overscroll-behavior: contain;
     scrollbar-width: thin !important;
 }
 
-.sidebar .box .category::-webkit-scrollbar-track {
+.sidebar .box .category::-webkit-scrollbar-track, .sidebar .box .p-post::-webkit-scrollbar-track {
     background-color: #30303000;
 }
 
-.sidebar .box .category::-webkit-scrollbar-thumb {
+.sidebar .box .category::-webkit-scrollbar-thumb, .sidebar .box .p-post::-webkit-scrollbar-thumb {
     background-color: #b3b3b3;
     border-radius: 10px;
 }
 
-.sidebar .box .category::-webkit-scrollbar-thumb:hover {
+.sidebar .box .category::-webkit-scrollbar-thumb:hover, .sidebar .box .p-post::-webkit-scrollbar-thumb:hover {
     background: #b3b3b392;
 }
 
@@ -326,6 +326,8 @@ hr {
 
 .sidebar .box .p-post {
     padding: 1rem 2rem;
+    max-height: 40rem;
+    overflow-y: scroll;
 }
 
 .sidebar .box .p-post a {
@@ -1185,6 +1187,12 @@ table tr:nth-child(even) {
         overflow-x: scroll;
     }
     .mobile-remove {
+        display: none;
+    }
+}
+
+@media (min-width: 560px) {
+    .mobile-show {
         display: none;
     }
 }
