@@ -15,3 +15,28 @@ if(dateMain){
     // }
   };
 };
+
+// Change Year Range Here -----------------------------------------------------------------------
+// Article Year Range Targeting
+const articleYear = "(2022 - 2023) "; // Update Year Range - for Blogpost here ----------------------
+const metaChange = document.querySelectorAll(".metaPageTitle");
+const metaContent = document.querySelector(".metaPageTitle").getAttribute("content");
+const onPageYear = document.querySelectorAll(".yearInsert");
+
+// Title Year Change
+document.title = articleYear + document.title;
+
+// Meta with specified class Year Change
+if(metaChange){
+  for(let i = 0; i < metaChange.length; i++){
+    metaChange[i].getAttribute("content");
+    metaChange[i].setAttribute("content", articleYear + metaContent);
+  }
+}
+
+// In Article Page Year Change
+if(onPageYear){
+  for(let i = 0; i < onPageYear.length; i++){
+    onPageYear[i].textContent = articleYear;
+  }
+}
