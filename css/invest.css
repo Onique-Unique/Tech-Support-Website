@@ -211,7 +211,7 @@ header .play-button{
 }
 @media (max-width:960px) {
     header {
-        padding: 40px 0;
+        padding: 60px 0;
     }
     header .navbar{
         flex-direction: column;
@@ -259,7 +259,7 @@ header .play-button{
 }
 @media (max-width:410px) {
     header{
-        min-height: 100vh;
+        min-height: 110vh;
         width: 100%;
         border-radius: 0px;
     }
