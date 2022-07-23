@@ -1,8 +1,10 @@
 // Related Links
 window.onload = function () {
     // Array of links and anchor link name to be related by category by order
-    var relatedLinks = ["/fee/binance-eth-withdrawal-fee", "/fee/binance-bitcoin-withdrawal-fee", "/fee/crypto-fee-comparison" , "/fee/low-transaction-fee-crypto" , "/fee/webull-stock-transfer-fee"];
-    var aLinkName = ["Binance ETH Withdrawal Fee", "Binance Bitcoin Withdrawal Fee", "Crypto Fee Comparison", "Low Transaction Fee Crypto", "Webull Stock Transfer Fee"];
+    var relatedLinks = ["/fee/binance-eth-withdrawal-fee", "/fee/binance-bitcoin-withdrawal-fee", "/fee/crypto-fee-comparison" , "/fee/low-transaction-fee-crypto" , "/fee/webull-stock-transfer-fee",
+                        "/fee/crypto-transaction-fee"];
+    var aLinkName = ["Binance ETH Withdrawal Fee", "Binance Bitcoin Withdrawal Fee", "Crypto Fee Comparison", "Low Transaction Fee Crypto", "Webull Stock Transfer Fee",
+                    "Crypto Transaction Fee"];
     
     // store url pathname as string into current variable 
     const currentUrl = window.location.pathname.toString();
@@ -80,6 +82,10 @@ document.getElementById("popular-posts-box").innerHTML =
     <a href="/fee/low-transaction-fee-crypto">
         <h3>05. Low Transaction Fee Crypto</h3>
         <span><i class="far fa-clock"></i>&nbsp; <time datetime="2022-07-21">Jul 21, 2022 &bull; 9 min read</time></span>              
+    </a>
+    <a href="/fee/crypto-transaction-fee">
+        <h3>06. Crypto Transaction Fee</h3>
+        <span><i class="far fa-clock"></i>&nbsp; <time datetime="2022-07-23">Jul 23, 2022 &bull; 13 min read</time></span>              
     </a>
 </div>
 `;
