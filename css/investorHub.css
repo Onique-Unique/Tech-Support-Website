@@ -954,7 +954,6 @@ button {
     left: 50%;
     opacity: 0;
     pointer-events: none;
-    transform: translate(-50%, -50%);
     max-width: 480px;
     width: 100%;
     background-color: white;
@@ -966,7 +965,7 @@ button {
 .wrapper.show {
     opacity: 1;
     pointer-events: auto;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%,-100%)scale(1);
 }
 
 .ad-detect .wrapper .content, .content .warn-icon, .warn-icon span {
@@ -1020,7 +1019,7 @@ button {
     outline: none;
     color: white;
     cursor: pointer;
-    background: linear-gradient(135deg, #9b27ca 0%, #9927cf 0%, #d33639 100%, #f92121 100%);;
+    background: linear-gradient(135deg, #9b27ca 0%, #9927cf 0%, #d33639 100%, #f92121 100%);
 }
 
 /* Contact */
