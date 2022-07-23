@@ -170,7 +170,7 @@ button {
     transform: scale(1.2);
 }
 
-#memes-container {
+#news-container {
     position: relative;
     overflow-y: scroll;
     height: auto;
@@ -178,7 +178,7 @@ button {
     z-index: 2;
 }
 
-#memes {
+#news {
     height: auto;
     min-height: 80vh;
     display: grid;
@@ -197,7 +197,7 @@ button {
     padding: 55px 0;
 }
 
-#memes-inner {
+#news-inner {
     background-color: #41f6ae;
     padding: 10px;
     margin: 0 auto;
@@ -208,25 +208,25 @@ button {
 }
 
 @media(max-width: 320px){
-    #memes-inner {
+    #news-inner {
         width: 280px;
         margin-left: 20px;
     }
 }
 
-#memes-inner img {
+#news-inner img {
     width: 100%;
     height: 40vh;
     border-radius: .5rem;
     transition: 200ms;
 }
 
-#memes-inner img:hover {
+#news-inner img:hover {
     border-radius: 0px;
     transform: scale(1.25);
 }
 
-#memes div h4 {
+#news div h4 {
     padding: 5px;
     text-align: center;
     background: none;

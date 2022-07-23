@@ -37,8 +37,8 @@ function shuffle(array) {
 function fetchMemes() {
   color();
 
-  if (document.getElementById("memes-container")) {
-    document.getElementById("memes-container").remove();
+  if (document.getElementById("news-container")) {
+    document.getElementById("news-container").remove();
   }
   var newIndex = [];
   var id = 0;
@@ -46,8 +46,8 @@ function fetchMemes() {
     let parentdiv = document.createElement("div");
     let secondarydiv = document.createElement("div");
     let loadMoreBtn = document.createElement("button");
-    parentdiv.id = "memes-container";
-    secondarydiv.id = "memes";
+    parentdiv.id = "news-container";
+    secondarydiv.id = "news";
     loadMoreBtn.id = "load-more";
   fetch(`https://www.reddit.com/r/Superstonk.json?after=${after}`)
     .then((response) => response.json())
@@ -72,7 +72,7 @@ function fetchMemes() {
               image.src = body.data.children[elem].data.url_overridden_by_dest;
               h4.textContent = body.data.children[elem].data.title;
               loadMoreBtn.innerHTML = "Load More";
-              div.id = "memes-inner";
+              div.id = "news-inner";
               div.appendChild(h4);
               div.appendChild(image);
               secondarydiv.appendChild(div);
@@ -81,8 +81,8 @@ function fetchMemes() {
               document.body.appendChild(parentdiv);
             })
             document.querySelector(".content-wrap").appendChild(parentdiv);
-            const memeBtn = document.getElementById("load-more");
-            memeBtn.addEventListener("click", () => {
+            const newsMoreBtn = document.getElementById("load-more");
+            newsMoreBtn.addEventListener("click", () => {
             fetchMemes();
             window.scroll({top: 0, behavior: "smooth"});
             document.getElementById("investHub-currentDate").classList.add("hide");
