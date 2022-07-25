@@ -1,8 +1,8 @@
 // Related Links
 window.onload = function () {
     // Array of links and anchor link name to be related by category by order
-    var relatedLinks = ["/fee/airline/best-no-fee-airline-miles-credit-card"];
-    var aLinkName = ["Best No Fee Airline Miles Credit Card"];
+    var relatedLinks = ["/fee/airline/best-no-fee-airline-miles-credit-card", "/fee/airline/what-airline-has-the-best-extra-luggage-fee"];
+    var aLinkName = ["Best No Fee Airline Miles Credit Card", "What Airline Has The Best Extra Luggage Fee"];
     
     // store url pathname as string into current variable 
     const currentUrl = window.location.pathname.toString();
@@ -63,7 +63,11 @@ document.getElementById("popular-posts-box").innerHTML =
 <div class="p-post">
     <a href="/fee/airline/best-no-fee-airline-miles-credit-card">
         <h3>01. Best No Fee Airline Miles Credit Card</h3>
-        <span><i class="far fa-clock"></i>&nbsp; <time datetime="2022-07-24">Jul 25, 2022 &bull; 8 min read</time></span>              
+        <span><i class="far fa-clock"></i>&nbsp; <time datetime="2022-07-25">Jul 25, 2022 &bull; 8 min read</time></span>              
+    </a>
+    <a href="/fee/airline/what-airline-has-the-best-extra-luggage-fee">
+        <h3>02. What Airline Has The Best Extra Luggage Fee</h3>
+        <span><i class="far fa-clock"></i>&nbsp; <time datetime="2022-07-25">Jul 25, 2022 &bull; 6 min read</time></span>              
     </a>
 </div>
 `;
