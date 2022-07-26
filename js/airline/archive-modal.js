@@ -1,8 +1,8 @@
 // Related Links
 window.onload = function () {
     // Array of links and anchor link name to be related by category by order
-    var relatedLinks = ["/fee/airline/best-no-fee-airline-miles-credit-card", "/fee/airline/what-airline-has-the-best-extra-luggage-fee"];
-    var aLinkName = ["Best No Fee Airline Miles Credit Card", "What Airline Has The Best Extra Luggage Fee"];
+    var relatedLinks = ["/fee/airline/best-no-fee-airline-miles-credit-card", "/fee/airline/what-airline-has-the-best-extra-luggage-fee", "/fee/airline/best-airline-credit-card-with-no-foreign-transaction-fee"];
+    var aLinkName = ["Best No Fee Airline Miles Credit Card", "What Airline Has The Best Extra Luggage Fee", "Best Airline Credit Card with no Foreign Transaction Fee"];
     
     // store url pathname as string into current variable 
     const currentUrl = window.location.pathname.toString();
@@ -68,6 +68,10 @@ document.getElementById("popular-posts-box").innerHTML =
     <a href="/fee/airline/what-airline-has-the-best-extra-luggage-fee">
         <h3>02. What Airline Has The Best Extra Luggage Fee</h3>
         <span><i class="far fa-clock"></i>&nbsp; <time datetime="2022-07-25">Jul 25, 2022 &bull; 6 min read</time></span>              
+    </a>
+    <a href="/fee/airline/best-airline-credit-card-with-no-foreign-transaction-fee">
+        <h3>03. Best Airline Credit Card with no Foreign Transaction Fee</h3>
+        <span><i class="far fa-clock"></i>&nbsp; <time datetime="2022-07-26">Jul 26, 2022 &bull; 4 min read</time></span>              
     </a>
 </div>
 `;
