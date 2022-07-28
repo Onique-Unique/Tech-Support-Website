@@ -77,10 +77,17 @@ if(advisoryNotice){
 // Related Links
 const relatedContainer = document.getElementById("related-link-list");
 const relatedLinks = document.getElementById("related-links");
-
+const relatedLinksAlt = document.getElementById("related-links-alt");
+const relatedContainerAlt = document.getElementById("top-picks-list");
 if(relatedLinks){
   relatedLinks.addEventListener("click", () => {
     relatedContainer.classList.toggle("hide");
+  });
+};
+
+if(relatedLinksAlt){
+  relatedLinksAlt.addEventListener("click", () => {
+    relatedContainerAlt.classList.toggle("hide");
   });
 };
 
