@@ -307,7 +307,7 @@ hr {
 
 .sidebar .box .category a {
     padding: .4rem 0;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     color: var(--black);
     display: flex;
     align-items: center;
@@ -682,7 +682,7 @@ hr {
 .breadcrumbs-container .breadcrumbs {
     padding: .5rem 0 1.5rem 0;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin: 2.5% 0; 
 }
 .breadcrumbs-container .breadcrumbs-alt {
@@ -747,10 +747,10 @@ hr {
 }
 
 .container .posts-container .post .title, .posts-accordion .panel .title {
-    padding-top: 1.5rem;
-    font-size: 2.5rem;
+    padding: 1.5rem 0;
+    font-size: 2.8rem;
     color: #1d3577;
-    line-height: 1.5;
+    line-height: 1.8;
 }
 
 .container .posts-container .post .title span:not(:last-child) {
@@ -781,8 +781,8 @@ hr {
 }
 
 .container .posts-container .post .h2-highlight {
-    color: var(--black);
-    font-size: 2.2rem;
+    /* color: var(--black); */
+    font-size: 2.8rem;
     font-weight: 600;
 }
 
@@ -863,8 +863,8 @@ hr {
 
 .container .posts-container .post .text, .posts-accordion .panel .text, .posts-accordion .text{
     color: var(--black);
-    font-size: 1.6rem;
-    line-height: 1.7;
+    font-size: 2rem;
+    line-height: 2.2;
     padding: 1rem 0;
 }
 
@@ -892,7 +892,7 @@ hr {
 }
 
 .container .posts-container .top-picks .top-picks-list li a, .container .posts-container .top-picks .related-link-list li a  {
-    font-size: 1.45rem;
+    font-size: 1.8rem;
 }
 
 .related-links {
