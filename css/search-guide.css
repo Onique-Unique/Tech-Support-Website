@@ -887,8 +887,14 @@ hr {
 }
 
 .container .posts-container .top-picks .top-picks-list, .container .posts-container .top-picks .related-link-list{
+    max-height: 35rem;
+    overflow-y: scroll;
     padding: 0 2rem; 
     background-color: #eee;
+}
+
+.container .posts-container .top-picks .top-picks-list h4, .container .posts-container .top-picks .related-link-list h4{
+    color: #303030;
 }
 
 .container .posts-container .top-picks .top-picks-list li a, .container .posts-container .top-picks .related-link-list li a  {
