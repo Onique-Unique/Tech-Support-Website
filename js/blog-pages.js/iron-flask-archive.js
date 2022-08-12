@@ -2,10 +2,11 @@
 window.onload = function () {
     // Array of links and anchor link name to be related by category by order
     var relatedLinks = ["/search-guide/iron-flask/how-to-use-your-iron-flask", "/search-guide/iron-flask/iron-flask-dishwasher-safe", "/search-guide/iron-flask/iron-flask-hot-drink-water-liquid", "/search-guide/iron-flask/iron-flask-in-freezer",
-"/search-guide/iron-flask/iron-flask-made-usa", "/search-guide/iron-flask/iron-flask-sold-store", "/search-guide/iron-flask/iron-flask-worth-it-pros-cons",];
+"/search-guide/iron-flask/iron-flask-made-usa", "/search-guide/iron-flask/iron-flask-sold-store", "/search-guide/iron-flask/iron-flask-worth-it-pros-cons", "/search-guide/iron-flask/how-does-iron-flask-work",];
 
 
-    var aLinkName = ["How to use your Iron Flask?", "Iron Flask Dishwasher Safe?", "Iron Flask for anything Hot!", "Can i put Iron Flask in the Freezer?", "Iron Flask - Where is it made?", "Iron Flask - Sold in Stores: All Details", "Iron Flask Worth it - Pros and Cons?"];
+    var aLinkName = ["How to use your Iron Flask?", "Iron Flask Dishwasher Safe?", "Iron Flask for anything Hot!", "Can i put Iron Flask in the Freezer?", "Iron Flask - Where is it made?", "Iron Flask - Sold in Stores: All Details", "Iron Flask Worth it - Pros and Cons?", 
+"How does Iron Flask Work?",];
     
     // store url pathname as string into current variable 
     const currentUrl = window.location.pathname.toString();

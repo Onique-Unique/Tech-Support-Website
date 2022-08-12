@@ -2,10 +2,11 @@
 window.onload = function () {
     // Array of links and anchor link name to be related by category by order
     var relatedLinks = ["/search-guide/corkcicle/how-to-use-your-corkcicle", "/search-guide/corkcicle/corkcicle-dishwasher-safe", "/search-guide/corkcicle/corkcicle-hot-drink-water-liquid", "/search-guide/corkcicle/corkcicle-in-freezer",
-"/search-guide/corkcicle/corkcicle-made-usa", "/search-guide/corkcicle/corkcicle-sold-store", "/search-guide/corkcicle/corkcicle-worth-it-pros-cons",];
+"/search-guide/corkcicle/corkcicle-made-usa", "/search-guide/corkcicle/corkcicle-sold-store", "/search-guide/corkcicle/corkcicle-worth-it-pros-cons", "/search-guide/corkcicle/how-does-corkcicle-work",];
 
 
-    var aLinkName = ["How to use your Corkcicle?", "Corkcicle Dishwasher Safe?", "Corkcicle for anything Hot!", "Can i put Corkcicle in the Freezer?", "Corkcicle - Where is it made?", "Corkcicle - Sold in Stores: All Details", "Corkcicle Worth it - Pros and Cons?"];
+    var aLinkName = ["How to use your Corkcicle?", "Corkcicle Dishwasher Safe?", "Corkcicle for anything Hot!", "Can i put Corkcicle in the Freezer?", "Corkcicle - Where is it made?", "Corkcicle - Sold in Stores: All Details", "Corkcicle Worth it - Pros and Cons?", 
+"How does Corkcicle Work?"];
     
     // store url pathname as string into current variable 
     const currentUrl = window.location.pathname.toString();

@@ -2,10 +2,11 @@
 window.onload = function () {
     // Array of links and anchor link name to be related by category by order
     var relatedLinks = ["/search-guide/hydro-flask/how-to-use-your-hydro-flask", "/search-guide/hydro-flask/hydro-flask-dishwasher-safe", "/search-guide/hydro-flask/hydro-flask-hot-drink-water-liquid", "/search-guide/hydro-flask/hydro-flask-in-freezer",
-"/search-guide/hydro-flask/hydro-flask-made-usa", "/search-guide/hydro-flask/hydro-flask-sold-store", "/search-guide/hydro-flask/hydro-flask-worth-it-pros-cons",];
+"/search-guide/hydro-flask/hydro-flask-made-usa", "/search-guide/hydro-flask/hydro-flask-sold-store", "/search-guide/hydro-flask/hydro-flask-worth-it-pros-cons", "/search-guide/hydro-flask/how-does-hydro-flask-work",];
 
 
-    var aLinkName = ["How to use your Hydro Flask?", "Hydro Flask Dishwasher Safe?", "Hydro Flask for anything Hot!", "Can i put Hydro Flask in the Freezer?", "Hydro Flask - Where is it made?", "Hydro Flask - Sold in Stores: All Details", "Hydro Flask Worth it - Pros and Cons?"];
+    var aLinkName = ["How to use your Hydro Flask?", "Hydro Flask Dishwasher Safe?", "Hydro Flask for anything Hot!", "Can i put Hydro Flask in the Freezer?", "Hydro Flask - Where is it made?", "Hydro Flask - Sold in Stores: All Details", "Hydro Flask Worth it - Pros and Cons?",
+"How does Hydro Flask Work?",];
     
     // store url pathname as string into current variable 
     const currentUrl = window.location.pathname.toString();
