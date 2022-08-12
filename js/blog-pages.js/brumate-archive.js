@@ -2,11 +2,11 @@
 window.onload = function () {
     // Array of links and anchor link name to be related by category by order
     var relatedLinks = ["/search-guide/brumate/how-to-use-your-brumate", "/search-guide/brumate/brumate-dishwasher-safe", "/search-guide/brumate/brumate-hot-drink-water-liquid", "/search-guide/brumate/brumate-in-freezer",
-"/search-guide/brumate/brumate-made-usa", "/search-guide/brumate/brumate-sold-store", "/search-guide/brumate/brumate-worth-it-pros-cons", "/search-guide/brumate/how-does-brumate-work",];
+"/search-guide/brumate/brumate-made-usa", "/search-guide/brumate/brumate-sold-store", "/search-guide/brumate/brumate-worth-it-pros-cons", "/search-guide/brumate/how-does-brumate-work", "/search-guide/brumate/brumate-engraving",];
 
 
     var aLinkName = ["How to use your Brumate?", "Brumate Dishwasher Safe?", "Brumate for anything Hot!", "Can i put Brumate in the Freezer?", "Brumate - Where is it made?", "Brumate - Sold in Stores: All Details", "Brumate Worth it - Pros and Cons?", 
-"How does Brumate Work?",];
+"How does Brumate Work?", "Brumate Engraving",];
     
     // store url pathname as string into current variable 
     const currentUrl = window.location.pathname.toString();
