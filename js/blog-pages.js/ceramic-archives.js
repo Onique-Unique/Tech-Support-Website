@@ -9,7 +9,7 @@ window.onload = function () {
 "/search-guide/ceramic-coating/fiberglass-boat-ceramic-coating", "/search-guide/ceramic-coating/how-long-does-ceramic-coating-last-tesla", "/search-guide/ceramic-coating/how-to-clean-ceramic-coated-exhaust", "/search-guide/ceramic-coating/malibu-boat-ceramic-coating",
 "/search-guide/ceramic-coating/pontoon-boat-ceramic-coating", "/search-guide/ceramic-coating/tesla-ceramic-coating-good-or-bad", "/search-guide/ceramic-coating/tesla-ceramic-coating-interior-+-seats", "/search-guide/ceramic-coating/tesla-ceramic-coating-should-i-get-it", 
 "/search-guide/ceramic-coating/tesla-ceramic-coating-vs-ppf", "/search-guide/ceramic-coating/what-does-ceramic-coating-do-for-a-boat", "/search-guide/ceramic-coating/yacht-ceramic-coating", "/search-guide/ceramic-coating/ceramic-coating-vs-exhaust-wrap", 
-"/search-guide/ceramic-coating/ceramic-coating-exhaust-temperature-reduction",];
+"/search-guide/ceramic-coating/ceramic-coating-exhaust-temperature-reduction", "search-guide/ceramic-coating/are-ceramic-coatings-toxic", "/search-guide/ceramic-coating/are-ceramic-coatings-safe", "/search-guide/ceramic-coating/are-ceramic-coatings-any-good",];
 
 
     var aLinkName = ["How Long Does Ceramic Coating Last", "Ceramic Coating Cost", "Tesla Ceramic Coating", "Boat Ceramic Coating", "Disadvantages of Ceramic Coating", "Ceramic Coating vs PPF",
@@ -17,7 +17,7 @@ window.onload = function () {
 "Bass Boat Ceramic Coating", "Benefits Of Black Ceramic Coating Exhaust", "Boat Ceramic Coating Vs Wax", "Ceramic Coated Motorcycle Exhaust", "Ceramic Coating Cure Time", "Ceramic Coating What Why", 
 "DIY Boat Ceramic Coating", "Fiberglass Boat Ceramic Coating", "How Long Does Ceramic Coating Last Tesla", "How To Clean Ceramic Coated Exhaust", "Malibu Boat Ceramic Coating", "Pontoon Boat Ceramic Coating",
 "Tesla Ceramic Coating Good Or Bad", "Tesla Ceramic Coating Interior Seats", "Tesla Ceramic Coating Should I Get It", "Tesla Ceramic Coating Vs PPF", "What Does Ceramic Coating Do For A Boat", "Yacht Ceramic Coating",
-"Ceramic Coating Vs Exhaust Wrap", "Ceramic Coating Exhaust Temperature Reduction"];
+"Ceramic Coating Vs Exhaust Wrap", "Ceramic Coating Exhaust Temperature Reduction", "Are Ceramic Coatings Toxic?", "Are Ceramic Coatings Safe?", "Are Ceramic Coatings Any Good",];
     
     // store url pathname as string into current variable 
     const currentUrl = window.location.pathname.toString();
