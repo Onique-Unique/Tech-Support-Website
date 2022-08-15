@@ -753,6 +753,14 @@ hr {
     line-height: 1.8;
 }
 
+.container .posts-container .post .title span:not(:last-child) {
+    padding: .5rem 1.5rem;
+    border-radius: 5px;
+    background-color: #1d3577;
+    font-size: 3.5rem;
+    color: white;
+}
+
 .container .posts-container .post .text span {
     color: blue;
 }
