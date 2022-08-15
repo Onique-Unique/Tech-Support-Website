@@ -95,8 +95,6 @@
             crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <!-- - google font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"rel="stylesheet">
     <!-- - custom css link -->
     <link rel="stylesheet" href="/css/investorHub.css">
@@ -304,22 +302,21 @@
         </div>
 
         <!-- Search Content Scripts -->
-        <script src="https://apis.google.com/js/api.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script defer src="https://apis.google.com/js/api.js"></script>
 
         <!-- - custom js -->
         <script src="/js/main/email-form.js"></script>
         <script src="/js/landing-page/policy-disclaimer.js"></script>
         <script src="/js/store/video-lounge.js"></script>
-        <script src="/js/investment/investment-main.js"></script>
-        <script src="/js/investment/search-script.js"></script>
+        <script defer src="/js/investment/investment-main.js"></script>
+        <script defer src="/js/investment/search-script.js"></script>
         <script src="/js/colors.js"></script>
         
 
         <!-- Comment Box Script -->
-        <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+        <script defer src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
         <!-- <script>commentBox('5681689971916800-proj')</script> -->
-        <script defer >window.addEventListener("load", () => {
+        <script>window.addEventListener("load", () => {
             commentBox('5734178129707008-proj');
         });
         </script>
