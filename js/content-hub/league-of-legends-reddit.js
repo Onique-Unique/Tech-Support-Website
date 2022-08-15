@@ -52,6 +52,7 @@ function fetchMemes() {
               let div = document.createElement("div");
               let h4 = document.createElement("h4");
               let image = document.createElement("img");
+              image.loading = "lazy";
               image.src = body.data.children[elem].data.url_overridden_by_dest;
               h4.textContent = body.data.children[elem].data.title;
               loadMoreBtn.innerHTML = "Load More";

@@ -52,6 +52,7 @@ function fetchMemes() {
               let div = document.createElement("div");
               let h4 = document.createElement("h4");
               let image = document.createElement("img");
+              image.loading = "lazy";
               image.src = body.data.children[elem].data.url_overridden_by_dest;
               h4.textContent = body.data.children[elem].data.title;
               loadMoreBtn.innerHTML = "Load More";
@@ -173,8 +174,8 @@ document.getElementById("adblock-info-insert").innerHTML = `
 
 if(window.catchMeIfYouCan === undefined) {
     const detect = document.querySelector("#detect");
-    wrapper = document.querySelector(".wrapper");
-    button = wrapper.querySelector(".ad-ok-btn");
+    let wrapper = document.querySelector(".wrapper");
+    let button = wrapper.querySelector(".ad-ok-btn");
 
     // possible classes that adblocker avoid to render
     let adClasses = ["ad", "ads", "adsbox", "ad-placement", "doubleclick", "ad-placeholder", "ad-badge"];
