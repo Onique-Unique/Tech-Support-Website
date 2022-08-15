@@ -1048,7 +1048,7 @@ hr {
     
 .faq__summary:after {
     display: inline-block;
-    content: url("https://bobmatyas.github.io/fm-faq-accordion/images/icon-arrow-down.svg");
+    content: url("/images/SVG/icon-arrow-down.svg");
     background-repeat: no-repeat;
     background-position: right center;
     text-align: right;
@@ -1060,7 +1060,7 @@ details[open] .faq__summary:after {
     width: 18px;
     height: 10px;
     content: "";
-    background-image: url("https://bobmatyas.github.io/fm-faq-accordion/images/icon-arrow-down.svg");
+    background-image: url("/images/SVG/icon-arrow-down.svg");
     background-repeat: no-repeat;
     background-position: center right;
     transform:scaleY(-1);
