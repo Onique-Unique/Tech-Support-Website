@@ -91,6 +91,16 @@ if(relatedLinksAlt){
   });
 };
 
+// Fixing LCP for Core Web Vitals by delaying the request sent to fetch painted first content
+document.addEventListener("DOMContentLoaded", () => {
+  var LCPTitle = document.querySelector(".container .posts-container .post .title span:not(:last-child)");
+  LCPTitle.style.backgroundColor = "#1d3577";
+  LCPTitle.style.color = "white";
+  LCPTitle.style.padding = ".5rem 1.5rem";
+  LCPTitle.style.borderRadius = "5px";
+  LCPTitle.style.fontSize = "3.5rem";
+});
+
 // Link Checker On WebPage - Gather All Links On Webpage In Console to See & Find Missing/ Broken Links
 // var links = document.querySelectorAll("a");
 // var linkReport = [];
