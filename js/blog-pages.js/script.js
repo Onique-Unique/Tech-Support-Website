@@ -51,11 +51,10 @@ document.addEventListener("DOMContentLoaded", function () {
       aTag[i].target = "_blank"; 
     }
   }
-});
 
-var altAttr = document.getElementsByTagName("img");
-var affiliateLinks = ["//ws-na.amazon-adsystem.com", "https://ir-na.amazon-adsystem.com"];
-for(let i = 0; i < altAttr.length; i++) {
+  var altAttr = document.getElementsByTagName("img");
+  var affiliateLinks = ["//ws-na.amazon-adsystem.com", "https://ir-na.amazon-adsystem.com"];
+  for(let i = 0; i < altAttr.length; i++) {
 
   var item = altAttr.item(i);
   if (item.alt == "" || altAttr.src == affiliateLinks){
@@ -63,6 +62,7 @@ for(let i = 0; i < altAttr.length; i++) {
     console.log(altAttr.src);
   }
 }
+});
 
 // Advisory Notice For Affiliate
 const advisoryNotice = document.getElementById("advisory");
