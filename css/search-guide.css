@@ -1522,6 +1522,18 @@ table tr:nth-child(even) {
         width: 100%;
     }
 
+    .container .posts-container .post .title, .posts-accordion .panel .title {
+        font-size: 2.3rem;
+    }
+
+    .container .posts-container .post .title span:not(:last-child) {
+        font-size: 3rem;
+    }
+
+    .container .posts-container .post .text, .posts-accordion .panel .text, .posts-accordion .text {
+        font-size: 1.8rem;
+    }
+
     .container .posts-container .post .image {
         height: 30rem;
         ;
