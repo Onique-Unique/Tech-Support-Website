@@ -2,11 +2,12 @@
 window.onload = function () {
     // Array of links and anchor link name to be related by category by order
     var relatedLinks = ["/search-guide/owala/how-to-use-your-owala", "/search-guide/owala/owala-dishwasher-safe", "/search-guide/owala/owala-hot-drink-water-liquid", "/search-guide/owala/owala-in-freezer",
-"/search-guide/owala/owala-made-usa", "/search-guide/owala/owala-sold-store", "/search-guide/owala/owala-worth-it-pros-cons", "/search-guide/owala/how-does-owala-work", "/search-guide/owala/owala-engraving",];
+"/search-guide/owala/owala-made-usa", "/search-guide/owala/owala-sold-store", "/search-guide/owala/owala-worth-it-pros-cons", "/search-guide/owala/how-does-owala-work", "/search-guide/owala/owala-engraving",
+"/search-guide/owala/can-you-put-hot-beverages-in-owala", "/search-guide/owala/is-owala-a-good-brand",];
 
 
     var aLinkName = ["How to use your Owala?", "Owala Dishwasher Safe?", "Owala for anything Hot!", "Can i put Owala in the Freezer?", "Owala - Where is it made?", "Owala - Sold in Stores: All Details", "Owala Worth it - Pros and Cons?", 
-"How does Owala Work?", "Owala Engraving",];
+"How does Owala Work?", "Owala Engraving", "Can You Put Hot Beverages In Owala", "Is Owala A Good Brand",];
     
     // store url pathname as string into current variable 
     const currentUrl = window.location.pathname.toString();

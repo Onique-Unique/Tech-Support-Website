@@ -2,11 +2,12 @@
 window.onload = function () {
     // Array of links and anchor link name to be related by category by order
     var relatedLinks = ["/search-guide/brumate/how-to-use-your-brumate", "/search-guide/brumate/brumate-dishwasher-safe", "/search-guide/brumate/brumate-hot-drink-water-liquid", "/search-guide/brumate/brumate-in-freezer",
-"/search-guide/brumate/brumate-made-usa", "/search-guide/brumate/brumate-sold-store", "/search-guide/brumate/brumate-worth-it-pros-cons", "/search-guide/brumate/how-does-brumate-work", "/search-guide/brumate/brumate-engraving",];
+"/search-guide/brumate/brumate-made-usa", "/search-guide/brumate/brumate-sold-store", "/search-guide/brumate/brumate-worth-it-pros-cons", "/search-guide/brumate/how-does-brumate-work", "/search-guide/brumate/brumate-engraving",
+"/search-guide/brumate/can-you-put-hot-beverages-in-brumate", "/search-guide/brumate/is-brumate-a-good-brand",];
 
 
     var aLinkName = ["How to use your Brumate?", "Brumate Dishwasher Safe?", "Brumate for anything Hot!", "Can i put Brumate in the Freezer?", "Brumate - Where is it made?", "Brumate - Sold in Stores: All Details", "Brumate Worth it - Pros and Cons?", 
-"How does Brumate Work?", "Brumate Engraving",];
+"How does Brumate Work?", "Brumate Engraving", "Can You Put Hot Beverages In Brumate", "Is Brumate A Good Brand"];
     
     // store url pathname as string into current variable 
     const currentUrl = window.location.pathname.toString();
