@@ -90,6 +90,7 @@ i {
     width: 100%;
     z-index: 999;
     border-bottom: 5px solid white;
+    max-height: 150px;
 }
 .game-nav-display {
     margin: 1.5%;
