@@ -154,7 +154,7 @@ window.addEventListener('resize', () => {
 });
 
 // Discord Live Chat added
-window.addEventListener("load", () => {
+document.addEventListener("DOMContentLoaded", () => {
     // Discord Chat Insert Top ------------------------------
     const bodyInsert = document.querySelector(".landing-page-body");   
 
