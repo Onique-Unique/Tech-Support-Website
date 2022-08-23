@@ -72,6 +72,77 @@ disclaimerExit.addEventListener("click", () => {
     disclaimerForm.classList.toggle("hide");
 });
 
+// Open Blogs and Links
+const waterFlasks = document.querySelector("#water-flask-blogs");
+const waterFlaskLinks = document.querySelector("#water-bottles");
+const waterFlaskExit = document.querySelector("#water-flask-exit");
+
+const showerNiche = document.querySelector("#shower-niche-pages");
+const showerNicheLinks = document.querySelector("#shower-niche-blogs");
+const showerNicheExit = document.querySelector("#shower-niche-exit");
+
+const flodesk = document.querySelector("#flodesk-pages");
+const flodeskLinks = document.querySelector("#flodesk-blogs");
+const flodeskExit = document.querySelector("#flodesk-exit");
+
+const ceramicCoating = document.querySelector("#ceramic-coating-pages");
+const ceramicCoatingLinks = document.querySelector("#ceramic-coating-blogs");
+const ceramicCoatingExit = document.querySelector("#ceramic-coating-exit");
+
+const fortinac = document.querySelector("#fortinac-pages");
+const fortinacLinks = document.querySelector("#fortinac-blogs");
+const fortinacExit = document.querySelector("#fortinac-exit");
+
+waterFlasks.addEventListener("click", () => {
+    landingPageVisible.classList.add("hide");
+    waterFlaskLinks.classList.toggle("hide");
+});
+
+waterFlaskExit.addEventListener("click", () => {
+    landingPageVisible.classList.remove("hide");
+    waterFlaskLinks.classList.toggle("hide");
+});
+
+showerNiche.addEventListener("click", () => {
+    landingPageVisible.classList.add("hide");
+    showerNicheLinks.classList.toggle("hide");
+});
+
+showerNicheExit.addEventListener("click", () => {
+    landingPageVisible.classList.remove("hide");
+    showerNicheLinks.classList.toggle("hide");
+});
+
+flodesk.addEventListener("click", () => {
+    landingPageVisible.classList.add("hide");
+    flodeskLinks.classList.toggle("hide");
+});
+
+flodeskExit.addEventListener("click", () => {
+    landingPageVisible.classList.remove("hide");
+    flodeskLinks.classList.toggle("hide");
+});
+
+ceramicCoating.addEventListener("click", () => {
+    landingPageVisible.classList.add("hide");
+    ceramicCoatingLinks.classList.toggle("hide");
+});
+
+ceramicCoatingExit.addEventListener("click", () => {
+    landingPageVisible.classList.remove("hide");
+    ceramicCoatingLinks.classList.toggle("hide");
+});
+
+fortinac.addEventListener("click", () => {
+    landingPageVisible.classList.add("hide");
+    fortinacLinks.classList.toggle("hide");
+});
+
+fortinacExit.addEventListener("click", () => {
+    landingPageVisible.classList.remove("hide");
+    fortinacLinks.classList.toggle("hide");
+});
+
 // animation and transition stopper
 let resizeTimer;
 window.addEventListener('resize', () => {

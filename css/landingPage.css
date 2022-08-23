@@ -3,6 +3,8 @@
     --dark-color: #151515;
     --green-color: #5fad05;
     --dark-green-color: #559b04;
+    --new-green-color: #273;
+    --shaded-green-color: #3b413c;
     --red-color: #e60012;
     --trans: all 0.3s ease-in-out;
 }
@@ -25,7 +27,7 @@ body{
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
     font-family: 'Work Sans', sans-serif;
-    background-color: var(--dark-color);
+    background-color: var(--shaded-green-color);
     color: #fff;
     overscroll-behavior: contain;
     scrollbar-width: thin !important;
@@ -46,6 +48,14 @@ img{
 }
 i {
     cursor: pointer;
+}
+
+.exit-page {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 3rem;
+    color: var(--new-green-color); 
 }
 
 .container{
@@ -70,7 +80,7 @@ i {
 }
 
 .navbar{
-    background-color: var(--dark-color);
+    background-color: var(--new-green-color);
     color: #fff;
     text-align: center;
     padding: 2rem 0;
@@ -79,7 +89,7 @@ i {
     left: 0;
     width: 100%;
     z-index: 999;
-    border-bottom: 5px solid var(--green-color);
+    border-bottom: 5px solid white;
 }
 .game-nav-display {
     margin: 1.5%;
@@ -153,7 +163,7 @@ input:-webkit-autofill:active{
     right: -345px;
     top: 0;
     width: 345px;
-    background-color: var(--green-color);
+    background-color: var(--new-green-color);
     height: 100%;
     padding: 2rem 2rem 2rem 3rem;
     z-index: 999;
@@ -234,7 +244,7 @@ input:-webkit-autofill:active{
 /* header section */
 #header{
     min-height: 100vh;
-    margin-top: 85px;
+    /* margin-top: 85px; */
     padding: 2rem 0;
 }
 .header-item{
@@ -262,6 +272,13 @@ h1, h2, h3, h4{
     margin: 1.6rem 0;
     line-height: 1.3;
     letter-spacing: 1px;
+}
+
+.main-h1 {
+    font-size: 3.2rem;
+}
+.span-minimise {
+    font-size: 1.8rem;
 }
 .text{
     margin: 1.6rem 0;
@@ -293,6 +310,9 @@ h1, h2, h3, h4{
 }
 
 /* news */
+.news-top {
+    margin-top: 85px;
+}
 .title{
     background-color: var(--red-color);
     padding: 1rem 0;
@@ -306,8 +326,28 @@ h1, h2, h3, h4{
     margin-right: 1%;
 }
 
+.news-latest {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.news-latest::-webkit-scrollbar {
+    width: 1vw;
+}
+.news-latest::-webkit-scrollbar-thumb {
+    background-color: #1a1a1a51;
+}
+
+.article-function {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+}
+
 article{
-    margin: 2rem 0;
+    margin: 2rem 2rem 2rem 0;
+    min-width: 100%;
 }
 .item-img{
     position: relative;
@@ -318,7 +358,11 @@ article{
 .item-img img{
     -o-object-fit: cover;
        object-fit: cover;
-    height: 100%;
+    height: 300px;
+}
+.item-img .article-top-img {
+    height: 300px;
+    object-fit: fill;
 }
 .item-img span{
     position: absolute;
@@ -404,10 +448,24 @@ article{
 }
 
 /* promo */
+#promo-top {
+    background-color: #00214d;
+    min-height: 100vh;
+    margin-bottom: 2rem;
+    width: 100%;
+    border-top: 2px solid var(--new-green-color);
+    border-bottom: 2px solid var(--new-green-color);
+    padding: 6rem 0;
+}
+
 #promo{
     min-height: 80vh;
     margin-bottom: 2rem;
     text-align: center;
+}
+
+.promo-2 {
+    min-height: 0 !important;
 }
 
 #promo span{
@@ -468,6 +526,10 @@ article{
     -o-transition: var(--trans);
     transition: var(--trans);
 }
+#promo .btn-groups-2-alt a{
+    background-color: transparent !important;
+    color: white !important;
+}
 #promo .btn-groups a:hover{
     background-color: #0084e6;
 }
@@ -480,9 +542,10 @@ article{
 }
 /* footer */
 #footer{
-    background-color: #000;
+    background-color: var(--dark-color);
     padding: 4rem 0;
     text-align: center;
+    margin-top: 15px;
 }
 #footer a{
     color: #fff;
@@ -649,6 +712,28 @@ article{
     font-size: 1.6rem; 
 }
 
+.sitemap-pages {
+    padding: 2rem;
+}
+
+.sitemap-pages h3 {
+    background-color: #15151543;
+}
+
+.sitemap-links {
+    color: white;
+}
+.sitemap-links:not(:last-of-type)::after {
+    content: "/";
+    margin: 0 .5rem;
+    color: var(--new-green-color); 
+}
+.sitemap-content-snippet {
+    background-color: #00214d;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 1rem;
+}
 /* media queries */
 
 @media(min-width: 768px){
@@ -693,7 +778,7 @@ article{
         top: 100%;
         right: 0;
         z-index: 9999999;
-        background-color: var(--green-color);
+        background-color: var(--new-green-color);
         border-radius: .3rem;
     }
     .nav-item-dropdown-content li a{
@@ -763,6 +848,12 @@ article{
     transition: none!important;
 }
 
+@media(max-width: 991px){
+    .navbar-collapse {
+        overflow-y: scroll;
+    }
+}
+
 @media(max-width: 767px){
     .item-img{
         width: 100%;
@@ -776,6 +867,9 @@ article{
 @media(max-width: 560px){
     .gamelounge-contact-container {
         max-width: 80% !important; 
+    }
+    .mobile-text-hide{
+        display: none;
     }
 }
 

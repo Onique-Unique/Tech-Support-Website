@@ -72,6 +72,7 @@
     </script>
 </head>
 <body class="landing-page-body"> 
+    <div id="back-to-top"></div> <!-- Back to top id div-->
     <div class="landing-page-visible">
         <!-- navbar -->
         <nav class = "navbar">
@@ -87,19 +88,30 @@
                             <a href ="/index" class = "nav-link">home</a>
                         </li>
                         <li class = "nav-item-news" id="news-click">
-                            <a href ="#news" class = "nav-link">Featured</a>
+                            <a href ="/investment.html" class = "nav-link">Featured</a>
                         </li>
                         <li class = "nav-item">
-                            <a class = "nav-link">meme lounges</a>
+                            <a class = "nav-link">Entertainment lounges</a>
                             <span class = "nav-item-dropdown">
                                 <i class = "fas fa-chevron-down"></i>
                             </span>
                             <ul id="dropdown-gamelounges" class = "nav-item-dropdown-content">
+                                <h3>Gaming Content &darr;</h3>
                                 <li><a href = "/main-pages/content-hub/apex-mobile-meme">Apex Legends Mobile</a></li>
+                                <li><a href = "/main-pages/content-hub/cod-mobile-meme">Call of Duty Mobile</a></li>
                                 <li><a href = "/main-pages/content-hub/r6-mobile-meme">Rainbow Six (6) Mobile</a></li>
+                                <li><a href = "/main-pages/content-hub/minecraft-meme">Minecraft</a></li>
                                 <li><a href = "/main-pages/content-hub/t3-arena-meme">T3 Arena</a></li>
                                 <li><a href = "/main-pages/content-hub/warzone-mobile-meme">Warzone Mobile</a></li>
                                 <li><a href = "/main-pages/content-hub/valorant-mobile-meme">Valorant Mobile</a></li>
+                                <li><a href = "/main-pages/content-hub/pubg-meme">PUBG</a></li>
+                                <li><a href = "/main-pages/content-hub/diablo-immortal-meme">Diablo Immortal</a></li>
+                                <li><a href = "/main-pages/content-hub/fortnite-meme">Fortnite</a></li>
+                                <li><a href = "/main-pages/content-hub/league-of-legends-meme">League of Legends</a></li>
+                                <li><a href = "/main-pages/content-hub/mobile-legends-meme">Mobile Legends</a></li>
+                                <li><a href = "/main-pages/content-hub/roblox-meme">Roblox</a></li>
+                                <h3>Mature Content &darr;</h3>
+                                <li><a href = "/thirst/baddiehub">Baddiehub</a></li>
                             </ul>
                         </li>
                         <li class = "nav-item">
@@ -136,42 +148,173 @@
         </nav>
         <!-- end of navbar -->
 
+        <!-- news section -->
+        <section class="news-top" id = "news">
+                <div class = "container">
+                    <!-- news latest -->
+                    <div class="article-function">
+                        <h3>Featured!</h3>
+                        <div class="mobile-swipe-show">
+                            <p class="text">Swipe List &nbsp;<i class="fa-solid fa-circle-chevron-right"></i></p>
+                        </div>
+                    </div>
+                    <div class = "news-latest">
+                        <article>
+                            <a href="/investment.html" class = "item-img">
+                                <img loading="lazy" class="article-top-img" src = "/images/invest-file-assets/investment-page-home.PNG">
+                                <span>
+                                    <i class = "fas fa-comment"></i>
+                                </span>
+                            </a>
+                            <div class = "item-text">
+                                <a href = "/investment.html" class = "h1">
+                                    <span class = "category">Trading</span>Investment Opportunities!
+                                </a>
+                                <p class = "text">If you're looking for a way to grow your money, you may want to consider investing it. Investing can be a great way to make your money work for you. "Finding Easy Investment Opportunities" through insider knowledge is the fastest way you can make wealth! Find out more...</p>
+                                <p class="release-date">Available</p>
+                                <div class = "news-notes-link">
+                                    <a href="/investment.html">Visit Page</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article id="water-flask-blogs">
+                            <a href="#water-bottles" class = "item-img">
+                                <img loading="lazy" class="article-top-img" src = "/images/invest-file-assets/brumate-water-bottle-flask-2.png">
+                                <span>
+                                    <i class = "fas fa-comment"></i>
+                                </span>
+                            </a>
+                            <div class = "item-text">
+                                <a href ="#water-bottles" class = "h1">
+                                    <span class = "category">Blog</span>Water Bottles/ Flasks
+                                </a>
+                                <p class = "text">Personal water bottles/ flasks are popular ways that encourage hydration. These products also are beneficial to the environment as it reduces the use of plastics and keeps your beverages colder and hotter for longer periods up to 24hrs in a day- Find out more...</p>
+                                <p class="release-date">Knowledge Base</p>
+                                <div class = "news-notes-link">
+                                    <a href="#water-bottles">Open Blog</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article id="shower-niche-pages">
+                            <a href="#shower-niche-blogs" class = "item-img">
+                                <img loading="lazy" class="article-top-img" src = "/images/shower-niche/shower-niche-main.png">
+                                <span>
+                                    <i class = "fas fa-comment"></i>
+                                </span>
+                            </a>
+                            <div class = "item-text">
+                                <a href = "#shower-niche-blogs" class = "h1">
+                                    <span class = "category">Blog</span>Shower Niche
+                                </a>
+                                <p class = "text">Shower niches are a great way to add extra storage and decorative design to your shower. There are a variety of different shower niches in sizes and styles that suits your needs, available on the market. We cover all this and more in detail that you can learn about here..</p>
+                                <p class="release-date">Knowledge Base</p>
+                                <div class = "news-notes-link">
+                                    <a href="#shower-niche-blogs">Open Blog</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article id="flodesk-pages">
+                            <a href="#flodesk-blogs" class = "item-img">
+                                <img loading="lazy" class="article-top-img" src = "/images/email-strategy.png">
+                                <span>
+                                    <i class = "fas fa-comment"></i>
+                                </span>
+                            </a>
+                            <div class = "item-text">
+                                <a href = "#flodesk-blogs" class = "h1">
+                                    <span class = "category">Blog</span>Flodesk - Email Marketing Tool
+                                </a>
+                                <p class = "text">Flodesk email marketing tool makes it easy to create and send beautifully designed newsletters, email campaigns, and more to your clients/ customers. Flodesk's powerful automation features let you create and send these personalized emails easily. Click to learn more here..</p>
+                                <p class="release-date">Knowledge Base</p>
+                                <div class = "news-notes-link">
+                                    <a href="#flodesk-blogs">Open Blog</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article id="ceramic-coating-pages">
+                            <a href="#ceramic-coating-blogs" class = "item-img">
+                                <img loading="lazy" class="article-top-img" src = "/images/invest-file-assets/ceramic-coating.png">
+                                <span>
+                                    <i class = "fas fa-comment"></i>
+                                </span>
+                            </a>
+                            <div class = "item-text">
+                                <a href = "#ceramic-coating-blogs" class = "h1">
+                                    <span class = "category">Blog</span>Ceramic Coating
+                                </a>
+                                <p class = "text">Ceramic coatings is a durable long lasting substance that protect vehicle paint jobs, cookware and tool surfaces. It can be applied in a variety of ways to provide a significant amount of protection against chips, scratches, and fading. Find out all the details here about ceramic coating..</p>
+                                <p class="release-date">Knowledge Base</p>
+                                <div class = "news-notes-link">
+                                    <a href="#ceramic-coating-blogs">Open Blog</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article id="fortinac-pages">
+                            <a href="#fortinac-blogs" class = "item-img">
+                                <img loading="lazy" class="article-top-img" src = "/images/Fortinet-fortinac.webp">
+                                <span>
+                                    <i class = "fas fa-comment"></i>
+                                </span>
+                            </a>
+                            <div class = "item-text">
+                                <a href = "#fortinac-blogs" class = "h1">
+                                    <span class = "category">Blog</span>Fortinet - Fortinac
+                                </a>
+                                <p class = "text">Fortinet FortiNAC is a network access control (NAC) system that provides a comprehensive solution for automated network security policy enforcement. FortiNAC can help you protect your network by automatically assessing and enforcing security policies on all digital enabled devices and servers. Learn more here..</p>
+                                <p class="release-date">Knowledge Base</p>
+                                <div class = "news-notes-link">
+                                    <a href="#fortinac-blogs">Open Blog</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- end of news latest -->
+                </div>
+        </section>
+        <!-- end of news section -->
+
         <!-- header -->
         <header id = "header">
             <div class = "landing-container">
                 <div class = "header-content">
                     <div class = "header-item">
-                        <img src = "/images/game-lounge-img/mobile-game-img.jpg">
+                        <img loading="lazy" src = "/images/invest-file-assets/investment-growth-img.jpg">
                         <div class = "header-item-text">
-                            <h2>EXCLUSIVE ONLINE MEME LOUNGES AVAILABLE NOW!</h2>
-                            <p class = "text">Never be bored again!!! - Experience all the latest funny memes available for any game, any time | share with friends easily and be the funniest in your group, see all the latest trends and stay ahead of everyone else..</p>
+                            <h2>EXCLUSIVE ONLINE INVESTORS NETWORK!</h2>
+                            <p class = "text">Are you looking for a way to make some extra money? Have you been thinking about investing and earning fast returns, but not sure how to get started? If so, you may be interested in learning from other investor's trading techniques by seeing what they do and are trading in real time. </p>
+                            <p class = "text mobile-text-hide">This method of investing involves using information that is not available to the general public and coming straight from seasoned profitable investors - the tool is totally FREE!, This information can be obtained through a variety of sources, including corporate traders, lawyers, accountants, and even consultants. By using this information, investors can make a fortune in a short period of time.</p>
                             <div>
                                 <small>Featured!</small>
-                                <a href = "/main-pages/content-hub/content-hub-main">Visit Lounge</a>
+                                <a href = "/investment.html">Visit Page</a>
                             </div>
                         </div>
                     </div>
 
                     <div class = "header-item">
-                        <img src = "/images/game-lounge-img/apex-article-img/apex-game-highlight.webp">
+                        <img loading="lazy" src = "/images/invest-file-assets/helpful-content.png">
                         <div class = "header-item-text">
-                            <h2>Apex Legends Mobile: <br> +100000 Funniest Memes </h2>
-                            <p class = "text">Find the funniest latest memes and stories about Apex Legends Mobile, share with friends and laugh out loud.. </p>
+                            <h2>Informational Guides!</h2>
+                            <p class = "text">Feenixbloom knowledge base blog content that is aimed to be helpful to users looking for information regarding products, tools and more.</p>
                             <div>
-                                <small>Game Highlight!</small>
-                                <a href = "/main-pages/content-hub/apex-mobile-meme">Open Meme Lounge</a>
+                                <small>Knowledge Base!</small>
+                                <a href = "#back-to-top">Blog Posts</a>
                             </div>
                         </div>
                     </div>
 
                     <div class = "header-item">
-                        <img src = "/images/game-lounge-img/r6-article-img/r6-mobile-game-highlight.webp">
+                        <img loading="lazy" src = "/images/game-lounge-img/mobile-gaming-1.jpg">
                         <div class = "header-item-text">
-                            <h2>Rainbow Six (6) Mobile: <br> Unlimited Memes Now! </h2>
-                            <p class = "text">Your boredom ends here, access all the memes for Rainbow Six (6) Mobile and share with friends..</p>
+                            <h2>Entertainment Lounges + <br> Unlimited Memes! </h2>
+                            <p class = "text">Your boredom ends here, access entertaining content + memes to share with your friends plus an Exclusive Mobile Gamers Discord for chatting and sharing interests..</p>
                             <div>
-                                <small>Game Highlight!</small>
-                                <a href = "/main-pages/content-hub/r6-mobile-meme">Open Meme Lounge</a>
+                                <small>Entertainment Highlight!</small>
+                                <a href = "/main-pages/content-hub/content-hub-main">Open Entertainment Lounge</a>
                             </div>
                         </div>
                     </div>
@@ -183,6 +326,55 @@
         <!-- main -->
         <main>
             <!-- promo section -->
+            <section id = "promo-top">
+                <div class = "container">
+                    <h2>What We Cover?</h2>
+                    <h1 class="main-h1">Informational Guides &bull; Product Reviews &bull; Investment Trading &bull; Media & Entertainment + More...</h1>
+                    <br>
+                    <h2>Informational Guides!</h2>
+                    <p class = "text">Informational content is often what we use to educate or inform our visitors about a topic. This might be in the form of an article, blog post, or even a video.</p>
+                    <p class = "text">Our goal is to provide our visitors with accurate, up-to-date information so that they can make proper informed decisions and gain the necessary knowledge of information that they came for.</p>
+                    <p class = "text">When we create our informational content, we find it important to be clear and concise. Through our content we want to make sure that the visitor understands the information we are providing, and that it is relevant to them.</p>
+                    <br>
+                    <h2>Product Reviews!</h2>
+                    <p class = "text">Our product reviews are done to be very concise as it can be a very important factor of the purchasing process for a visitor to our website. We help you determine whether a product is worth your money, and give you an in-depth idea of what to expect from a particular product, tool or software.</p>
+                    <p class = "text">When reading our product reviews,  we ensure to keep the following in mind:</p>
+                    <br>
+                    <ul>
+                        <li class = "text">The visitor's experience with the product.</li>
+                        <li class = "text">The context delivered in which the product was reviewed.</li>
+                        <li class = "text">The visitor's purpose of researching the product.</li>
+                        <li class = "text">The quality of the review and so on.</li>
+                    </ul>
+                    <br>
+                    <p class = "text">Products are not always perfect, and a bad review can be just as helpful as a good one. We pay attention to these points and envision to see if they can align with your own expectations.</p>
+                    <p class = "text">Product reviews are a valuable resource for consumers when making purchasing decisions. These reviews can provide information on the quality and features of a product, as well as users' experiences with the product.</p>
+                    <br><br>
+                    <h2>Investment Trading!</h2>
+                    <p class = "text">The clear cut purpose of investment trading is to make money and grow substantial wealth. This may seem like an obvious statement, but it is important to understand the concept in order to be successful.</p>
+                    <p class = "text">Investment trading can be used to achieve a variety of financial goals, from building long-term wealth to generating short-term income.</p>
+                    <p class = "text">No matter what your purpose is, it is important to have a strategy in place. There are a variety of different approaches that can be used, and it is important to find one that fits your individual needs and risk tolerance.</p>
+                    <p class = "text">This is why, we here at Feenixbloom have created a very useful Investors Network - to help you reach these goals by learning and seeing in real time of how other seasoned investors make profits and use this knowledge to make informed decisions for your wealth building journey.</p>
+                    <p class = "text">Plus it's 100% Free to use! &larr;</p>
+                    <div id="promo" class="flex promo-2">
+                        <div class="container">
+                            <div class = "btn-groups-2 btn-groups-2-alt flex">
+                                <a href="/investment.html" target="_blank">
+                                     Investors Network!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <h2>Media & Entertainment!</h2>
+                    <p class = "text">We are always looking for ways to improve our user's experience on our website. One way we do this is by providing a variety of media and entertainment options ranging from meme related content, gaming and informational guides.</p>
+                    <p class = "text">Our users can get entertainment through our built in purposeful application made for enjoyment from watching videos, engaging in an exclusive community, share memes and more on our website.</p>
+                    <p class = "text">We also offer a variety of other options that you can experience right on our website, such as news, finance, gaming, informational guides and so on. We strive to keep providing our users with the best possible experience, and we will continue to update our website with new and interesting content.</p>
+                </div>
+            </section>
+            <!-- end of promo section -->
+
+            <!-- promo section -->
             <section id = "promo" class = "flex">
                 <div class = "container">
                     <span>join the battle</span>
@@ -190,7 +382,8 @@
                         <a href="https://discord.gg/mNwJnWZfue" target="_blank"><i class="fa-brands fa-discord my-discord"></i></a>
                     </div>
                     <h2>Mobile Gamers Discord</h2>
-                    <p class = "text">Recently Launched 🚀 - the mobile gamers discord is an exclusive space focused on growing and building interactions within the mobile gaming community with unlimited freedom to participate and share interests while enjoying the games we truly love.</p>
+                    <h3>Feenixbloom</h3>
+                    <p class = "text">Recently Launched 🚀 - The Feenixbloom mobile gamers discord is an exclusive space focused on growing and building interactions within the mobile gaming community with unlimited freedom to participate and share interests while enjoying the games we truly love.</p>
                     <div class = "btn-groups flex">
                         <a href="https://discord.gg/mNwJnWZfue" target="_blank">
                             <i class = "fas fa-gamepad"></i> Join free now
@@ -210,18 +403,22 @@
                 <div class = "title">
                     <div class = "container">
                         <h2 id="news-title">
-                            <i class = "fas fa-rss"></i> Featured
+                            <i class = "fas fa-rss"></i> Featured - <span class="span-minimise">Gamers Discord</span>
                         </h2>
                     </div>
                 </div>
-
                     <div class = "container">
                         <!-- news latest -->
-                        <div class = "news-latest">
+                        <div class="article-function">
                             <h3>Latest</h3>
+                            <div class="mobile-swipe-show">
+                                <p class="text">Swipe List &nbsp;<i class="fa-solid fa-circle-chevron-right"></i></p>
+                            </div>
+                        </div>
+                        <div class = "news-latest">
                             <article>
                                 <a href="/main-pages/content-hub/apex-mobile-meme" class = "item-img">
-                                    <img src = "/images/game-lounge-img/webp/Apex-Legends-Mobile-3.webp">
+                                    <img loading="lazy" src = "/images/game-lounge-img/webp/Apex-Legends-Mobile-3.webp">
                                     <span>
                                         <i class = "fas fa-comment"></i>
                                     </span>
@@ -240,7 +437,7 @@
 
                             <article>
                                 <a href="/main-pages/content-hub/r6-mobile-meme" class = "item-img">
-                                    <img src = "/images/game-lounge-img/webp/r6-apocalypse.webp">
+                                    <img loading="lazy" src = "/images/game-lounge-img/webp/r6-apocalypse.webp">
                                     <span>
                                         <i class = "fas fa-comment"></i>
                                     </span>
@@ -259,7 +456,7 @@
 
                             <article>
                                 <a href="/main-pages/content-hub/t3-arena-meme" class = "item-img">
-                                    <img src = "/images/game-lounge-img/webp/t3-arena.webp">
+                                    <img loading="lazy" src = "/images/game-lounge-img/webp/t3-arena.webp">
                                     <span>
                                         <i class = "fas fa-comment"></i>
                                     </span>
@@ -278,7 +475,7 @@
 
                             <article>
                                 <a href="/main-pages/content-hub/warzone-mobile-meme" class = "item-img">
-                                    <img src = "/images/game-lounge-img/webp/call-of-duty-warzone.webp">
+                                    <img loading="lazy" src = "/images/game-lounge-img/webp/call-of-duty-warzone.webp">
                                     <span>
                                         <i class = "fas fa-comment"></i>
                                     </span>
@@ -297,7 +494,7 @@
 
                             <article>
                                 <a href="/main-pages/content-hub/valorant-mobile-meme" class = "item-img">
-                                    <img src = "/images/game-lounge-img/webp/Valorant.webp">
+                                    <img loading="lazy" src = "/images/game-lounge-img/webp/Valorant.webp">
                                     <span>
                                         <i class = "fas fa-comment"></i>
                                     </span>
@@ -375,185 +572,360 @@
     </div>
 
     <!-- Temporary Sitemap link -->
-    <div style="display: none;">
+    <div>
          <!-- to gamelounges sitemap -->
-         <a href="/main-pages/apex-mobile/game-lounge-chatroom">Apex Legends Mobile Game Lounge</a>
-         <a href="/main-pages/rainbow-six-mobile/game-lounge-chatroom">Rainbow Six Mobile Game Lounge</a>
+         <div class="hide sitemap-pages" id="mobile-gamelounges">
+            <i class="far fa-times-circle exit-page" id="mobile-gamelounges-exit"></i>
+            <div class="sitemap-content-snippet">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum delectus porro dignissimos consequatur ipsam esse atque perferendis, architecto quidem dicta et explicabo, aut accusamus.</p>
+            </div>
+            <span>Select a link below!</span>
+            <h3>&bull; Mobile Gamelounges</h3>
+            <a class="sitemap-links" href="/main-pages/apex-mobile/game-lounge-chatroom">Apex Legends Mobile Game Lounge</a>
+            <a class="sitemap-links" href="/main-pages/rainbow-six-mobile/game-lounge-chatroom">Rainbow Six Mobile Game Lounge</a>
+         </div>
 
          <!-- search guide -->
-        <a href="/main-pages/search-guide/microphone-for-iphone">Microphone For Iphone</a>
-        <a href="/main-pages/search-guide/imac-pro-refurbished">Imac Pro Refurbished</a>
-        <a href="/main-pages/search-guide/ubiquiti-uap-ac-pro-refurbished">Ubiquiti Uap AC Pro Refurbished</a>
-        <a href="/main-pages/search-guide/best-hosting-for-wordpress-convesio">Best Hosting For Wordpress Convesio</a>
-        <a href="/main-pages/search-guide/super-affiliate-bizleads-automation-summit">Super Affiliate Bizleads Automation Summit</a>
-        <a href="/main-pages/search-guide/astro-a40-tr-headset-+-mixamp-pro-2017">Astro A40 Tr Headset + Mixamp Pro 2017</a>
-        <a href="/main-pages/search-guide/lyte-gaming-pc">Lyte Gaming PC</a>
-        <a href="/search-guide/brumate">Brumate</a>
-        <a href="/search-guide/brumate-cooler">Brumate Cooler</a>
+         <div class="hide sitemap-pages" id="misc-guides">
+            <i class="far fa-times-circle exit-page" id="misc-guides-exit"></i>
+            <div class="sitemap-content-snippet">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum delectus porro dignissimos consequatur ipsam esse atque perferendis, architecto quidem dicta et explicabo, aut accusamus.</p>
+            </div>
+            <span>Select a link below!</span>
+            <h3>&bull; Miscellaenous Search Guides</h3>
+            <a class="sitemap-links" href="/main-pages/search-guide/microphone-for-iphone">Microphone For Iphone</a>
+            <a class="sitemap-links" href="/main-pages/search-guide/imac-pro-refurbished">Imac Pro Refurbished</a>
+            <a class="sitemap-links" href="/main-pages/search-guide/ubiquiti-uap-ac-pro-refurbished">Ubiquiti Uap AC Pro Refurbished</a>
+            <a class="sitemap-links" href="/main-pages/search-guide/best-hosting-for-wordpress-convesio">Best Hosting For Wordpress Convesio</a>
+            <a class="sitemap-links" href="/main-pages/search-guide/super-affiliate-bizleads-automation-summit">Super Affiliate Bizleads Automation Summit</a>
+            <a class="sitemap-links" href="/main-pages/search-guide/astro-a40-tr-headset-+-mixamp-pro-2017">Astro A40 Tr Headset + Mixamp Pro 2017</a>
+            <a class="sitemap-links" href="/main-pages/search-guide/lyte-gaming-pc">Lyte Gaming PC</a>
+            <a class="sitemap-links" href="/search-guide/brumate">Brumate</a>
+            <a class="sitemap-links" href="/search-guide/brumate-cooler">Brumate Cooler</a>
+         </div>
         
         <!-- Thirst Pages -->
-        <a href="/thirst/baddiehub"></a>
+        <div class="hide sitemap-pages" id="mature-content">
+            <i class="far fa-times-circle exit-page" id="mature-content-exit"></i>
+            <div class="sitemap-content-snippet">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum delectus porro dignissimos consequatur ipsam esse atque perferendis, architecto quidem dicta et explicabo, aut accusamus.</p>
+            </div>
+            <span>Select a link below!</span>
+            <h3>&bull; Mature Entertainment</h3>
+            <a class="sitemap-links" href="/thirst/baddiehub">Baddiehub</a>
+        </div>
 
         <!-- Finance Home Page -->
-        <a href="/investment.html">Investment Trading Homepage</a>
+        <div class="hide sitemap-pages" id="finance-homepage">
+            <i class="far fa-times-circle exit-page" id="finance-home-exit"></i>
+            <div class="sitemap-content-snippet">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum delectus porro dignissimos consequatur ipsam esse atque perferendis, architecto quidem dicta et explicabo, aut accusamus.</p>
+            </div>
+            <span>Select a link below!</span>
+            <h3>&bull; Finance Home Page</h3>
+            <a class="sitemap-links" href="/investment.html">Investment Trading Homepage</a>
+        </div>
 
         <!-- Finance/ Fee Blogs -->
-        <a href="/fee/binance-bitcoin-withdrawal-fee">Binance Bitcoin Withdrawal Fee</a>
-        <a href="/fee/binance-eth-withdrawal-fee">Binance ETH Withdrawal Fee</a>
-        <a href="/fee/crypto-fee-comparison">Crypto Fee Comparison</a>
-        <a href="/fee/webull-stock-transfer-fee">Webull Stock Transfer Fee</a>
-        <a href="/fee/low-transaction-fee-crypto">Low Transaction Fee Crypto</a>
-        <a href="/fee/crypto-transaction-fee">Crypto Transaction Fee</a>
+        <div class="hide sitemap-pages" id="finance-fee">
+            <i class="far fa-times-circle exit-page" id="finance-fee-exit"></i>
+            <div class="sitemap-content-snippet">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum delectus porro dignissimos consequatur ipsam esse atque perferendis, architecto quidem dicta et explicabo, aut accusamus.</p>
+            </div>
+            <span>Select a link below!</span>
+            <h3>&bull; Finance Fee Related Blogs</h3>
+            <a class="sitemap-links" href="/fee/binance-bitcoin-withdrawal-fee">Binance Bitcoin Withdrawal Fee</a>
+            <a class="sitemap-links" href="/fee/binance-eth-withdrawal-fee">Binance ETH Withdrawal Fee</a>
+            <a class="sitemap-links" href="/fee/crypto-fee-comparison">Crypto Fee Comparison</a>
+            <a class="sitemap-links" href="/fee/webull-stock-transfer-fee">Webull Stock Transfer Fee</a>
+            <a class="sitemap-links" href="/fee/low-transaction-fee-crypto">Low Transaction Fee Crypto</a>
+            <a class="sitemap-links" href="/fee/crypto-transaction-fee">Crypto Transaction Fee</a>
+        </div>
 
         <!-- Airline Fee Blogs -->
-        <a href="/fee/airline/best-no-fee-airline-miles-credit-card">Best No Fee Airline Miles Credit Card</a>
-        <a href="/fee/airline/what-airline-has-the-best-extra-luggage-fee">What Airline Has The Best Extra Luggage Fee</a>
-        <a href="/fee/airline/best-airline-credit-card-with-no-foreign-transaction-fee">Best Airline Credit Card with no Foreign Transaction Fee</a>
-        <a href="/fee/airline/best-airline-credit-card-no-annual-fee">Best Airline Credit Card no Annual Fee</a>
+        <div class="hide sitemap-pages" id="airline-fee">
+            <i class="far fa-times-circle exit-page" id="airline-fee-exit"></i>
+            <div class="sitemap-content-snippet">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum delectus porro dignissimos consequatur ipsam esse atque perferendis, architecto quidem dicta et explicabo, aut accusamus.</p>
+            </div>
+            <span>Select a link below!</span>
+            <h3>&bull; Airine Fee Related Blogs</h3>
+            <a class="sitemap-links" href="/fee/airline/best-no-fee-airline-miles-credit-card">Best No Fee Airline Miles Credit Card</a>
+            <a class="sitemap-links" href="/fee/airline/what-airline-has-the-best-extra-luggage-fee">What Airline Has The Best Extra Luggage Fee</a>
+            <a class="sitemap-links" href="/fee/airline/best-airline-credit-card-with-no-foreign-transaction-fee">Best Airline Credit Card with no Foreign Transaction Fee</a>
+            <a class="sitemap-links" href="/fee/airline/best-airline-credit-card-no-annual-fee">Best Airline Credit Card no Annual Fee</a>
+        </div>
 
         <!-- Ceramic Coating -->
-            <a href="/search-guide/ceramic-coating/how-long-does-ceramic-coating-last">How Long Does Ceramic Coating Last</a>
-            <a href="/search-guide/ceramic-coating/ceramic-coating-cost">Ceramic Coating Cost</a>
-            <a href="/search-guide/ceramic-coating/tesla-ceramic-coating">Tesla Ceramic Coating</a>
-            <a href="/search-guide/ceramic-coating/boat-ceramic-coating">Boat Ceramic Coating</a>
-            <a href="/search-guide/ceramic-coating/disadvantages-of-ceramic-coating">Disadvantages of Ceramic Coating</a>
-            <a href="/search-guide/ceramic-coating/ceramic-coating-vs-ppf">Ceramic Coating vs PPF</a>
-            <a href="/search-guide/ceramic-coating/how-to-remove-ceramic-coating">How to Remove Ceramic Coating</a>
-            <a href="/search-guide/ceramic-coating/interior-ceramic-coating">Interior Ceramic Coating</a>
-            <a href="/search-guide/ceramic-coating/benefits-of-ceramic-coating">Benefits Of Ceramic Coating</a>
-            <a href="/search-guide/ceramic-coating/what-is-aeternum-ceramic-coating">What is Aeternum Ceramic Coating</a>
-            <a href="/search-guide/ceramic-coating/is-ceramic-coating-good-for-your-car">Is Ceramic Coating Good For Your Car?</a>
-            <a href="/search-guide/ceramic-coating/aluminum-boat-ceramic-coating">Aluminum Boat Ceramic Coating</a>
-            <a href="/search-guide/ceramic-coating/bass-boat-ceramic-coating">Bass Boat Ceramic Coating</a>
-            <a href="/search-guide/ceramic-coating/benefits-of-black-ceramic-coating-exhaust">Benefits Of Black Ceramic Coating Exhaust</a>
-            <a href="/search-guide/ceramic-coating/boat-ceramic-coating-vs-wax">Boat Ceramic Coating Vs Wax</a>
-            <a href="/search-guide/ceramic-coating/ceramic-coated-motorcycle-exhausts">Ceramic Coated Motorcycle Exhaust</a>
-            <a href="/search-guide/ceramic-coating/ceramic-coating-cure-time">Ceramic Coating Cure Time</a>
-            <a href="/search-guide/ceramic-coating/ceramic-coating-what-why">Ceramic Coating What Why</a>
-            <a href="/search-guide/ceramic-coating/diy-boat-ceramic-coating">DIY Boat Ceramic Coating</a>
-            <a href="/search-guide/ceramic-coating/fiberglass-boat-ceramic-coating">Fiberglass Boat Ceramic Coating</a>
-            <a href="/search-guide/ceramic-coating/how-long-does-ceramic-coating-last-tesla">How Long Does Ceramic Coating Last Tesla</a>
-            <a href="/search-guide/ceramic-coating/how-to-clean-ceramic-coated-exhaust">How To Clean Ceramic Coated Exhaust</a>
-            <a href="/search-guide/ceramic-coating/malibu-boat-ceramic-coating">Malibu Boat Ceramic Coating</a>
-            <a href="/search-guide/ceramic-coating/pontoon-boat-ceramic-coating">Pontoon Boat Ceramic Coating</a>
-            <a href="/search-guide/ceramic-coating/tesla-ceramic-coating-good-or-bad">Tesla Ceramic Coating Good Or Bad</a>
-            <a href="/search-guide/ceramic-coating/tesla-ceramic-coating-interior-+-seats">Tesla Ceramic Coating Interior Seats</a>
-            <a href="/search-guide/ceramic-coating/tesla-ceramic-coating-should-i-get-it">Tesla Ceramic Coating Should I Get It</a>
-            <a href="/search-guide/ceramic-coating/tesla-ceramic-coating-vs-ppf">Tesla Ceramic Coating Vs PPF</a>
-            <a href="/search-guide/ceramic-coating/what-does-ceramic-coating-do-for-a-boat">What Does Ceramic Coating Do For A Boat</a>
-            <a href="/search-guide/ceramic-coating/yacht-ceramic-coating">Yacht Ceramic Coating</a>
-            <a href="/search-guide/ceramic-coating/ceramic-coating-vs-exhaust-wrap">Ceramic Coating Vs Exhaust Wrap</a>
-            <a href="/search-guide/ceramic-coating/ceramic-coating-exhaust-temperature-reduction">Ceramic Coating Exhaust Temperature Reduction</a>
-            <a href="/search-guide/ceramic-coating/are-ceramic-coatings-toxic">Are Ceramic Coatings Toxic</a>
-            <a href="/search-guide/ceramic-coating/are-ceramic-coatings-safe">Are Ceramic Coatings Safe</a>
-            <a href="/search-guide/ceramic-coating/are-ceramic-coatings-any-good">Are Ceramic Coatings Any Good</a>
-            <a href="/search-guide/ceramic-coating/is-permaplate-a-ceramic-coating">Is Permaplate A Ceramic Coating?</a>
-            <a href="/search-guide/ceramic-coating/is-hot-water-bad-for-ceramic-coating">Is Hot Water Bad For Ceramic Coating</a>
-            <a href="/search-guide/ceramic-coating/is-salt-bad-for-ceramic-coating">Is Salt Bad For Ceramic Coating</a>
-            <a href="/search-guide/ceramic-coating/how-to-tell-if-ceramic-coating-is-still-good">How to Tell if Ceramic Coating is Still Good</a>
+        <div class="hide sitemap-pages" id="ceramic-coating-blogs">
+            <i class="far fa-times-circle exit-page" id="ceramic-coating-exit"></i>
+            <div class="sitemap-content-snippet">
+                <p>Ceramic coating is a process where a liquid is applied to a surface and then cured to create a hard, durable layer. This layer can protect the surface from scratches, fading, and other damage.</p>
+                <p>Ceramic coatings are often used on cars and or cookware, but can also be used on other surfaces, such as furniture, countertops, and more.</p>
+                <br>
+                <p>When it comes to car care, a ceramic coating is one of the most important things you can do to protect and maintain your vehicle. A good ceramic coating will protect your car from paint chips, fading, and other damage. It will also make it easier to clean, as the coating will help to repel dirt and dust.</p>
+                <br>
+                <p>If you're thinking about getting a ceramic coating for your car or any other type of surface, there are a few things you should know:</p>
+                <br>
+                <ol>
+                    <li>First, not all coatings are created equal. There are a lot of cheap coatings on the market, but these coatings often don't offer the same level of protection as more expensive coatings. </li>
+                    <li>Second, not all surfaces are the same. Not all coatings will work well on all surfaces. You need to make sure the coating you choose is compatible with your paint type, area/ surface and finish.</li>
+                    <li>Finally, If you're thinking about getting a ceramic coating for your car, do your research and find a reputable professional detailer. The benefits of a ceramic coating are worth the investment, and your car will thank you for it.</li>
+                </ol>
+                <br>
+                <p>Ceramic coatings are the new age of surface and vehicle paint and finish protection, want to know how to apply it yourself, where and all the other details, Click on a Blog post link below..</p>
+            </div>
+            <span>Select a link below!</span>
+            <h3>&bull; Ceramic Coating Blogs</h3>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/how-long-does-ceramic-coating-last">How Long Does Ceramic Coating Last</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/ceramic-coating-cost">Ceramic Coating Cost</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/tesla-ceramic-coating">Tesla Ceramic Coating</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/boat-ceramic-coating">Boat Ceramic Coating</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/disadvantages-of-ceramic-coating">Disadvantages of Ceramic Coating</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/ceramic-coating-vs-ppf">Ceramic Coating vs PPF</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/how-to-remove-ceramic-coating">How to Remove Ceramic Coating</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/interior-ceramic-coating">Interior Ceramic Coating</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/benefits-of-ceramic-coating">Benefits Of Ceramic Coating</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/what-is-aeternum-ceramic-coating">What is Aeternum Ceramic Coating</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/is-ceramic-coating-good-for-your-car">Is Ceramic Coating Good For Your Car?</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/aluminum-boat-ceramic-coating">Aluminum Boat Ceramic Coating</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/bass-boat-ceramic-coating">Bass Boat Ceramic Coating</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/benefits-of-black-ceramic-coating-exhaust">Benefits Of Black Ceramic Coating Exhaust</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/boat-ceramic-coating-vs-wax">Boat Ceramic Coating Vs Wax</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/ceramic-coated-motorcycle-exhausts">Ceramic Coated Motorcycle Exhaust</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/ceramic-coating-cure-time">Ceramic Coating Cure Time</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/ceramic-coating-what-why">Ceramic Coating What Why</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/diy-boat-ceramic-coating">DIY Boat Ceramic Coating</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/fiberglass-boat-ceramic-coating">Fiberglass Boat Ceramic Coating</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/how-long-does-ceramic-coating-last-tesla">How Long Does Ceramic Coating Last Tesla</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/how-to-clean-ceramic-coated-exhaust">How To Clean Ceramic Coated Exhaust</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/malibu-boat-ceramic-coating">Malibu Boat Ceramic Coating</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/pontoon-boat-ceramic-coating">Pontoon Boat Ceramic Coating</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/tesla-ceramic-coating-good-or-bad">Tesla Ceramic Coating Good Or Bad</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/tesla-ceramic-coating-interior-+-seats">Tesla Ceramic Coating Interior Seats</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/tesla-ceramic-coating-should-i-get-it">Tesla Ceramic Coating Should I Get It</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/tesla-ceramic-coating-vs-ppf">Tesla Ceramic Coating Vs PPF</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/what-does-ceramic-coating-do-for-a-boat">What Does Ceramic Coating Do For A Boat</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/yacht-ceramic-coating">Yacht Ceramic Coating</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/ceramic-coating-vs-exhaust-wrap">Ceramic Coating Vs Exhaust Wrap</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/ceramic-coating-exhaust-temperature-reduction">Ceramic Coating Exhaust Temperature Reduction</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/are-ceramic-coatings-toxic">Are Ceramic Coatings Toxic</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/are-ceramic-coatings-safe">Are Ceramic Coatings Safe</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/are-ceramic-coatings-any-good">Are Ceramic Coatings Any Good</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/is-permaplate-a-ceramic-coating">Is Permaplate A Ceramic Coating?</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/is-hot-water-bad-for-ceramic-coating">Is Hot Water Bad For Ceramic Coating</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/is-salt-bad-for-ceramic-coating">Is Salt Bad For Ceramic Coating</a>
+            <a class="sitemap-links" href="/search-guide/ceramic-coating/how-to-tell-if-ceramic-coating-is-still-good">How to Tell if Ceramic Coating is Still Good</a>
+        </div>
 
-            <!-- Tesla Informational -->
-            <a href="/search-guide/tesla/does-tesla-have-non-stick-paint">Does Tesla Have Non Stick Paint</a>
+        <!-- Tesla Informational -->
+        <div class="hide sitemap-pages" id="tesla-info">
+            <i class="far fa-times-circle exit-page" id="tesla-info-exit"></i>
+            <div class="sitemap-content-snippet">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum delectus porro dignissimos consequatur ipsam esse atque perferendis, architecto quidem dicta et explicabo, aut accusamus.</p>
+            </div>
+            <span>Select a link below!</span>
+            <h3>&bull; Tesla Informational</h3>
+            <a class="sitemap-links" href="/search-guide/tesla/does-tesla-have-non-stick-paint">Does Tesla Have Non Stick Paint</a>
+        </div>
 
+        <!-- Water Bottles/ Flasks -->
+        <div class="hide sitemap-pages" id="water-bottles">
+            <i class="far fa-times-circle exit-page" id="water-flask-exit"></i>
+            <div class="sitemap-content-snippet">
+                <p>No matter what you do, it is a common goal to stay hydrated throughout the day and what best way to stay and enjoy being hydrated is to have a Personal Water Bottle/ Flask. Water Bottles/ Flasks such as Brumate, Owala or even Hydro Flasks come in a variety of shapes and sizes, and there is definitely a Water Bottle/ Flask out there that will fit your needs. I like water flasks because they are lightweight and sturdy, and they keep my beverages hot or cold for hours.</p>
+                <br>
+                <p>If you are in the market for a water flask, here are some things to consider:</p>
+                <br>
+                <ol>
+                    <li> Capacity: How much water do you want to be able to carry with you?</li>
+                    <li>Temperature: Do you want a water flask that keeps your water cold, or is temperature irrelevant to you?</li>
+                    <li>Material: Do you want a water flask made of stainless steel, aluminum, or durable plastic?</li>
+                    <li>Design: Do you want a water flask with a straw, a wide mouth, or a narrow mouth?</li>
+                </ol>
+                <br>
+                <p>If you're looking for a way to stay hydrated on the go, you should consider using a water bottle/ flask. These are great for keeping you hydrated, and they come in a variety of sizes and colors so that you can find one that's perfect for you. Plus, they're easy to transport, so you can take them with you wherever you go. Visit any of our blog links below to learn more.</p>
+            </div>
+            <span>Select a link below!</span>
             <!-- Brumate Informational-->
-            <a href="/search-guide/brumate/brumate-dishwasher-safe">Brumate Dishwasher Safe?</a>
-            <a href="/search-guide/brumate/brumate-hot-drink-water-liquid">Brumate for anything Hot!</a>
-            <a href="/search-guide/brumate/brumate-in-freezer">Can i put Brumate in the Freezer?</a>
-            <a href="/search-guide/brumate/brumate-made-usa">Brumate - Where is it made?</a>
-            <a href="/search-guide/brumate/brumate-sold-store">Brumate - Sold in Stores: All Details</a>
-            <a href="/search-guide/brumate/brumate-worth-it-pros-cons">Brumate Worth it - Pros and Cons?</a>
-            <a href="/search-guide/brumate/how-to-use-your-brumate">How to use your Brumate?</a>
-            <a href="/search-guide/brumate/how-does-brumate-work">How does Brumate Work?</a>
-            <a href="/search-guide/brumate/brumate-engraving">Brumate Engraving</a>
-            <a href="/search-guide/brumate/can-you-put-hot-beverages-in-brumate">Can You Put Hot Beverages In Brumate</a>
-            <a href="/search-guide/brumate/is-brumate-a-good-brand">Is Brumate A Good Brand</a>
+            <div>
+                <h3>&bull; Brumate Bottle/ Flasks Informational Guide</h3>
+                <a class="sitemap-links" href="/search-guide/brumate/brumate-dishwasher-safe">Brumate Dishwasher Safe?</a>
+                <a class="sitemap-links" href="/search-guide/brumate/brumate-hot-drink-water-liquid">Brumate for anything Hot!</a>
+                <a class="sitemap-links" href="/search-guide/brumate/brumate-in-freezer">Can i put Brumate in the Freezer?</a>
+                <a class="sitemap-links" href="/search-guide/brumate/brumate-made-usa">Brumate - Where is it made?</a>
+                <a class="sitemap-links" href="/search-guide/brumate/brumate-sold-store">Brumate - Sold in Stores: All Details</a>
+                <a class="sitemap-links" href="/search-guide/brumate/brumate-worth-it-pros-cons">Brumate Worth it - Pros and Cons?</a>
+                <a class="sitemap-links" href="/search-guide/brumate/how-to-use-your-brumate">How to use your Brumate?</a>
+                <a class="sitemap-links" href="/search-guide/brumate/how-does-brumate-work">How does Brumate Work?</a>
+                <a class="sitemap-links" href="/search-guide/brumate/brumate-engraving">Brumate Engraving</a>
+                <a class="sitemap-links" href="/search-guide/brumate/can-you-put-hot-beverages-in-brumate">Can You Put Hot Beverages In Brumate</a>
+                <a class="sitemap-links" href="/search-guide/brumate/is-brumate-a-good-brand">Is Brumate A Good Brand</a>
+            </div>
 
             <!-- Corkcicle Informational-->
-            <a href="/search-guide/corkcicle/corkcicle-dishwasher-safe">Corkcicle Dishwasher Safe?</a>
-            <a href="/search-guide/corkcicle/corkcicle-hot-drink-water-liquid">Corkcicle for anything Hot!</a>
-            <a href="/search-guide/corkcicle/corkcicle-in-freezer">Can i put Corkcicle in the Freezer?</a>
-            <a href="/search-guide/corkcicle/corkcicle-made-usa">Corkcicle - Where is it made?</a>
-            <a href="/search-guide/corkcicle/corkcicle-sold-store">Corkcicle - Sold in Stores: All Details</a>
-            <a href="/search-guide/corkcicle/corkcicle-worth-it-pros-cons">Corkcicle Worth it - Pros and Cons?</a>
-            <a href="/search-guide/corkcicle/how-to-use-your-corkcicle">How to use your Corkcicle?</a>
-            <a href="/search-guide/corkcicle/how-does-corkcicle-work">How does Corkcicle Work?</a>
-            <a href="/search-guide/corkcicle/corkcicle-engraving">Corkcicle Engraving</a>
-            <a href="/search-guide/corkcicle/can-you-put-hot-beverages-in-corkcicle">Can You Put Hot Beverages In Corkcicle</a>
-            <a href="/search-guide/corkcicle/is-corkcicle-a-good-brand">Is Corkcicle A Good Brand</a>
+            <div>
+                <h3>&bull; Corkcicle Bottle/ Flasks Informational Guide</h3>
+                <a class="sitemap-links" href="/search-guide/corkcicle/corkcicle-dishwasher-safe">Corkcicle Dishwasher Safe?</a>
+                <a class="sitemap-links" href="/search-guide/corkcicle/corkcicle-hot-drink-water-liquid">Corkcicle for anything Hot!</a>
+                <a class="sitemap-links" href="/search-guide/corkcicle/corkcicle-in-freezer">Can i put Corkcicle in the Freezer?</a>
+                <a class="sitemap-links" href="/search-guide/corkcicle/corkcicle-made-usa">Corkcicle - Where is it made?</a>
+                <a class="sitemap-links" href="/search-guide/corkcicle/corkcicle-sold-store">Corkcicle - Sold in Stores: All Details</a>
+                <a class="sitemap-links" href="/search-guide/corkcicle/corkcicle-worth-it-pros-cons">Corkcicle Worth it - Pros and Cons?</a>
+                <a class="sitemap-links" href="/search-guide/corkcicle/how-to-use-your-corkcicle">How to use your Corkcicle?</a>
+                <a class="sitemap-links" href="/search-guide/corkcicle/how-does-corkcicle-work">How does Corkcicle Work?</a>
+                <a class="sitemap-links" href="/search-guide/corkcicle/corkcicle-engraving">Corkcicle Engraving</a>
+                <a class="sitemap-links" href="/search-guide/corkcicle/can-you-put-hot-beverages-in-corkcicle">Can You Put Hot Beverages In Corkcicle</a>
+                <a class="sitemap-links" href="/search-guide/corkcicle/is-corkcicle-a-good-brand">Is Corkcicle A Good Brand</a>
+            </div>
 
             <!-- Hydro Flask Informational-->
-            <a href="/search-guide/hydro-flask/hydro-flask-dishwasher-safe">Hydro Flask Dishwasher Safe?</a>
-            <a href="/search-guide/hydro-flask/hydro-flask-hot-drink-water-liquid">Hydro Flask for anything Hot!</a>
-            <a href="/search-guide/hydro-flask/hydro-flask-in-freezer">Can i put Hydro Flask in the Freezer?</a>
-            <a href="/search-guide/hydro-flask/hydro-flask-made-usa">Hydro Flask - Where is it made?</a>
-            <a href="/search-guide/hydro-flask/hydro-flask-sold-store">Hydro Flask - Sold in Stores: All Details</a>
-            <a href="/search-guide/hydro-flask/hydro-flask-worth-it-pros-cons">Hydro Flask Worth it - Pros and Cons?</a>
-            <a href="/search-guide/hydro-flask/how-to-use-your-hydro-flask">How to use your Hydro Flask?</a>
-            <a href="/search-guide/hydro-flask/how-does-hydro-flask-work">How does Hydro Flask Work?</a>
-            <a href="/search-guide/hydro-flask/hydro-flask-engraving">Hydro Flask Engraving</a>
-            <a href="/search-guide/hydro-flask/can-you-put-hot-beverages-in-hydro-flask">Can You Put Hot Beverages In Hydro Flask</a>
-            <a href="/search-guide/hydro-flask/is-hydro-flask-a-good-brand">Is Hydro Flask A Good Brand</a>
+            <div>
+                <h3>&bull;  Hydro Flasks Informational Guide</h3>
+                <a class="sitemap-links" href="/search-guide/hydro-flask/hydro-flask-dishwasher-safe">Hydro Flask Dishwasher Safe?</a>
+                <a class="sitemap-links" href="/search-guide/hydro-flask/hydro-flask-hot-drink-water-liquid">Hydro Flask for anything Hot!</a>
+                <a class="sitemap-links" href="/search-guide/hydro-flask/hydro-flask-in-freezer">Can i put Hydro Flask in the Freezer?</a>
+                <a class="sitemap-links" href="/search-guide/hydro-flask/hydro-flask-made-usa">Hydro Flask - Where is it made?</a>
+                <a class="sitemap-links" href="/search-guide/hydro-flask/hydro-flask-sold-store">Hydro Flask - Sold in Stores: All Details</a>
+                <a class="sitemap-links" href="/search-guide/hydro-flask/hydro-flask-worth-it-pros-cons">Hydro Flask Worth it - Pros and Cons?</a>
+                <a class="sitemap-links" href="/search-guide/hydro-flask/how-to-use-your-hydro-flask">How to use your Hydro Flask?</a>
+                <a class="sitemap-links" href="/search-guide/hydro-flask/how-does-hydro-flask-work">How does Hydro Flask Work?</a>
+                <a class="sitemap-links" href="/search-guide/hydro-flask/hydro-flask-engraving">Hydro Flask Engraving</a>
+                <a class="sitemap-links" href="/search-guide/hydro-flask/can-you-put-hot-beverages-in-hydro-flask">Can You Put Hot Beverages In Hydro Flask</a>
+                <a class="sitemap-links" href="/search-guide/hydro-flask/is-hydro-flask-a-good-brand">Is Hydro Flask A Good Brand</a>
+            </div>
 
             <!-- Hydromate Informational-->
-            <a href="/search-guide/hydromate/hydromate-dishwasher-safe">Hydromate Dishwasher Safe?</a>
-            <a href="/search-guide/hydromate/hydromate-hot-drink-water-liquid">Hydromate for anything Hot!</a>
-            <a href="/search-guide/hydromate/hydromate-in-freezer">Can i put Hydromate in the Freezer?</a>
-            <a href="/search-guide/hydromate/hydromate-made-usa">Hydromate - Where is it made?</a>
-            <a href="/search-guide/hydromate/hydromate-sold-store">Hydromate - Sold in Stores: All Details</a>
-            <a href="/search-guide/hydromate/hydromate-worth-it-pros-cons">Hydromate Worth it - Pros and Cons?</a>
-            <a href="/search-guide/hydromate/how-to-use-your-hydromate">How to use your Hydromate?</a>
-            <a href="/search-guide/hydromate/how-does-hydromate-work">How does Hydromate Work?</a>
-            <a href="/search-guide/hydromate/hydromate-engraving">Hydromate Engraving</a>
-            <a href="/search-guide/hydromate/can-you-put-hot-beverages-in-hydromate">Can You Put Hot Beverages In Hydromate</a>
-            <a href="/search-guide/hydromate/is-hydromate-a-good-brand">Is Hydromate A Good Brand</a>
+            <div>
+                <h3>&bull; Hydromate Bottle/ Flasks Informational Guide</h3>
+                <a class="sitemap-links" href="/search-guide/hydromate/hydromate-dishwasher-safe">Hydromate Dishwasher Safe?</a>
+                <a class="sitemap-links" href="/search-guide/hydromate/hydromate-hot-drink-water-liquid">Hydromate for anything Hot!</a>
+                <a class="sitemap-links" href="/search-guide/hydromate/hydromate-in-freezer">Can i put Hydromate in the Freezer?</a>
+                <a class="sitemap-links" href="/search-guide/hydromate/hydromate-made-usa">Hydromate - Where is it made?</a>
+                <a class="sitemap-links" href="/search-guide/hydromate/hydromate-sold-store">Hydromate - Sold in Stores: All Details</a>
+                <a class="sitemap-links" href="/search-guide/hydromate/hydromate-worth-it-pros-cons">Hydromate Worth it - Pros and Cons?</a>
+                <a class="sitemap-links" href="/search-guide/hydromate/how-to-use-your-hydromate">How to use your Hydromate?</a>
+                <a class="sitemap-links" href="/search-guide/hydromate/how-does-hydromate-work">How does Hydromate Work?</a>
+                <a class="sitemap-links" href="/search-guide/hydromate/hydromate-engraving">Hydromate Engraving</a>
+                <a class="sitemap-links" href="/search-guide/hydromate/can-you-put-hot-beverages-in-hydromate">Can You Put Hot Beverages In Hydromate</a>
+                <a class="sitemap-links" href="/search-guide/hydromate/is-hydromate-a-good-brand">Is Hydromate A Good Brand</a>
+            </div>
 
             <!-- Iron Flask Informational-->
-            <a href="/search-guide/iron-flask/iron-flask-dishwasher-safe">Iron Flask Dishwasher Safe?</a>
-            <a href="/search-guide/iron-flask/iron-flask-hot-drink-water-liquid">Iron Flask for anything Hot!</a>
-            <a href="/search-guide/iron-flask/iron-flask-in-freezer">Can i put Iron Flask in the Freezer?</a>
-            <a href="/search-guide/iron-flask/iron-flask-made-usa">Iron Flask - Where is it made?</a>
-            <a href="/search-guide/iron-flask/iron-flask-sold-store">Iron Flask - Sold in Stores: All Details</a>
-            <a href="/search-guide/iron-flask/iron-flask-worth-it-pros-cons">Iron Flask Worth it - Pros and Cons?</a>
-            <a href="/search-guide/iron-flask/how-to-use-your-iron-flask">How to use your Iron Flask?</a>
-            <a href="/search-guide/iron-flask/how-does-iron-flask-work">How does Iron Flask Work?</a>
-            <a href="/search-guide/iron-flask/iron-flask-engraving">Iron Flask Engraving</a>
-            <a href="/search-guide/iron-flask/can-you-put-hot-beverages-in-iron-flask">Can You Put Hot Beverages In Iron Flask</a>
-            <a href="/search-guide/iron-flask/is-iron-flask-a-good-brand">Is Iron Flask A Good Brand</a>
+            <div>
+                <h3>&bull; Iron Flasks Informational Guide</h3>
+                <a class="sitemap-links" href="/search-guide/iron-flask/iron-flask-dishwasher-safe">Iron Flask Dishwasher Safe?</a>
+                <a class="sitemap-links" href="/search-guide/iron-flask/iron-flask-hot-drink-water-liquid">Iron Flask for anything Hot!</a>
+                <a class="sitemap-links" href="/search-guide/iron-flask/iron-flask-in-freezer">Can i put Iron Flask in the Freezer?</a>
+                <a class="sitemap-links" href="/search-guide/iron-flask/iron-flask-made-usa">Iron Flask - Where is it made?</a>
+                <a class="sitemap-links" href="/search-guide/iron-flask/iron-flask-sold-store">Iron Flask - Sold in Stores: All Details</a>
+                <a class="sitemap-links" href="/search-guide/iron-flask/iron-flask-worth-it-pros-cons">Iron Flask Worth it - Pros and Cons?</a>
+                <a class="sitemap-links" href="/search-guide/iron-flask/how-to-use-your-iron-flask">How to use your Iron Flask?</a>
+                <a class="sitemap-links" href="/search-guide/iron-flask/how-does-iron-flask-work">How does Iron Flask Work?</a>
+                <a class="sitemap-links" href="/search-guide/iron-flask/iron-flask-engraving">Iron Flask Engraving</a>
+                <a class="sitemap-links" href="/search-guide/iron-flask/can-you-put-hot-beverages-in-iron-flask">Can You Put Hot Beverages In Iron Flask</a>
+                <a class="sitemap-links" href="/search-guide/iron-flask/is-iron-flask-a-good-brand">Is Iron Flask A Good Brand</a>
+            </div>
 
             <!-- Owala Informational-->
-            <a href="/search-guide/owala/owala-dishwasher-safe">Owala Dishwasher Safe?</a>
-            <a href="/search-guide/owala/owala-hot-drink-water-liquid">Owala for anything Hot!</a>
-            <a href="/search-guide/owala/owala-in-freezer">Can i put Owala in the Freezer?</a>
-            <a href="/search-guide/owala/owala-made-usa">Owala - Where is it made?</a>
-            <a href="/search-guide/owala/owala-sold-store">Owala - Sold in Stores: All Details</a>
-            <a href="/search-guide/owala/owala-worth-it-pros-cons">Owala Worth it - Pros and Cons?</a>
-            <a href="/search-guide/owala/how-to-use-your-owala">How to use your Owala?</a>
-            <a href="/search-guide/owala/how-does-owala-work">How does Owala Work?</a>
-            <a href="/search-guide/owala/owala-engraving">Owala Engraving</a>
-            <a href="/search-guide/owala/can-you-put-hot-beverages-in-owala">Can You Put Hot Beverages In Owala</a>
-            <a href="/search-guide/owala/is-owala-a-good-brand">Is Owala A Good Brand</a>
+            <div>
+                <h3>&bull; Owala Bottle/ Flasks Informational Guide</h3>
+                <a class="sitemap-links" href="/search-guide/owala/owala-dishwasher-safe">Owala Dishwasher Safe?</a>
+                <a class="sitemap-links" href="/search-guide/owala/owala-hot-drink-water-liquid">Owala for anything Hot!</a>
+                <a class="sitemap-links" href="/search-guide/owala/owala-in-freezer">Can i put Owala in the Freezer?</a>
+                <a class="sitemap-links" href="/search-guide/owala/owala-made-usa">Owala - Where is it made?</a>
+                <a class="sitemap-links" href="/search-guide/owala/owala-sold-store">Owala - Sold in Stores: All Details</a>
+                <a class="sitemap-links" href="/search-guide/owala/owala-worth-it-pros-cons">Owala Worth it - Pros and Cons?</a>
+                <a class="sitemap-links" href="/search-guide/owala/how-to-use-your-owala">How to use your Owala?</a>
+                <a class="sitemap-links" href="/search-guide/owala/how-does-owala-work">How does Owala Work?</a>
+                <a class="sitemap-links" href="/search-guide/owala/owala-engraving">Owala Engraving</a>
+                <a class="sitemap-links" href="/search-guide/owala/can-you-put-hot-beverages-in-owala">Can You Put Hot Beverages In Owala</a>
+                <a class="sitemap-links" href="/search-guide/owala/is-owala-a-good-brand">Is Owala A Good Brand</a>
+            </div>
+        </div>
+        
+        <!-- Fortinet-Fortinac Informational -->
+        <div class="hide sitemap-pages" id="fortinac-blogs">
+            <i class="far fa-times-circle exit-page" id="fortinac-exit"></i>
+            <div class="sitemap-content-snippet">
+                <p>Fortinet FortiNAC is a comprehensive, next-generation network access control (NAC) solution that provides visibility and security enforcement for wired, wireless, and remote users.</p>
+                <p>FortiNAC helps organizations reduce the risk of infection and data loss by identifying and addressing security issues with devices before they are allowed access to the network.</p>
+                <br>
+                <p>With Fortinet FortiNAC, you can:</p>
+                <br>
+                <ol>
+                    <li>Detect and remediate malware infections on devices before they are allowed access to the network.</li>
+                    <li>Prevent data loss by identifying and addressing security issues with devices before they are allowed access to the network.</li>
+                    <li>Ensure compliance with corporate security policies by identifying and addressing security issues with devices before they are allowed access to the network.</li>
+                    <li>Reduce the risk of infection and data loss by identifying and addressing security issues with devices before they are allowed access to the network.</li>
+                </ol>
+                <br>
+                <p>Follow along by learning more about Fortinet - Fortinac by clicking a Blog Post link below..</p>
+            </div>
+            <span>Select a link below!</span>
+            <h3>&bull; Fortinet - Fortinac Blogs</h3>
+            <a class="sitemap-links" href="/search-guide/fortinet/fortinet-vs-nps">Fortinet Vs Network Policy Server (NPS)</a>
+            <a class="sitemap-links" href="/search-guide/fortinet/what-is-fortinac-persistent-agent">What Is Fortinac Persistent Agent</a>
+        </div>
 
-            <!-- Fortinet-Fortinac Informational -->
-            <a href="/search-guide/fortinet/fortinet-vs-nps">Fortinet Vs Network Policy Server (NPS)</a>
-            <a href="/search-guide/fortinet/what-is-fortinac-persistent-agent">What Is Fortinac Persistent Agent</a>
+        <!-- Flodesk Informational -->
+        <div class="hide sitemap-pages" id="flodesk-blogs">
+            <i class="far fa-times-circle exit-page" id="flodesk-exit"></i>
+            <div class="sitemap-content-snippet">
+                <p>Flodesk Email marketing tool is one of the most effective ways to connect with your clients/ customers and keep them up to date on your business. It can also be a great way to increase sales and grow your customer base.</p>
+                <br>
+                <p>There are a few things to keep in mind for creating effective email marketing campaigns using Flodesk:</p>
+                <br>
+                <ol>
+                    <li>Keep your emails short and to the point.</li>
+                    <li>Make sure your email is easy to read, with a clear headline and easy-to-follow links.</li>
+                    <li>Use images and graphics to break up the text and make your email more visually appealing.</li>
+                    <li>Make sure your offers are clear and easy to understand.</li>
+                    <li>Test your email marketing campaign before sending it to your entire list.</li>
+                    <li>Use a reliable email service provider to help ensure your email reaches your subscribers.</li>
+                </ol>
+                <br>
+                <p>Flodesk is a great tool for email marketing. It makes it easy to create beautiful emails that look great on any device. You can also easily create sign-up forms to collect subscribers, and track the results of your email campaigns.</p>
+                <p>Flodesk also offers a great selection of templates to get you started, or you can create your own custom templates. You can also add your own custom fonts, graphics, and images.</p>
+                <br>
+                <p>If you're looking for a tool to help you create effective email marketing campaigns, Flodesk is a great choice. learn how to do all these things and become a Flodesk Pro, click a link below to continue..</p>
+            </div>
+            <span>Select a link below!</span>
+            <h3>&bull; Flodesk Blogs</h3>
+            <a class="sitemap-links" href="/search-guide/flodesk/does-flodesk-work-with-shopify">Does Flodesk Work With Shopify</a>
+            <a class="sitemap-links" href="/search-guide/flodesk/flodesk-workflow-not-working">Flowdesk Workflow Not Working</a>
+            <a class="sitemap-links" href="/search-guide/flodesk/how-to-integrate-flodesk-with-wix">How to Integrate Flodesk With Wix</a>
+            <a class="sitemap-links" href="/search-guide/flodesk/is-flodesk-free">Is Flodesk Free</a>
+        </div>
 
-            <!-- Flodesk Informational -->
-            <a href="/search-guide/flodesk/does-flodesk-work-with-shopify">Does Flodesk Work With Shopify</a>
-            <a href="/search-guide/flodesk/flodesk-workflow-not-working">Flowdesk Workflow Not Working</a>
-            <a href="/search-guide/flodesk/how-to-integrate-flodesk-with-wix">How to Integrate Flodesk With Wix</a>
-            <a href="/search-guide/flodesk/is-flodesk-free">Is Flodesk Free</a>
-
-            <!-- Shower Niche Informational -->
-            <a href="/search-guide/shower-niche/how-deep-is-a-shower-niche">How Deep Is A Shower Niche</a>
-            <a href="/search-guide/shower-niche/how-to-tile-shower-niche-without-bullnose">How To Tile Shower Niche Without Bullnose</a>
-            <a href="/search-guide/shower-niche/how-to-waterproof-a-shower-niche">How To Waterproof A Shower Niche</a>
-            <a href="/search-guide/shower-niche/where-to-place-shower-niche">Where To Place Shower Niche</a>
-            <a href="/search-guide/shower-niche/how-to-tile-a-shower-niche-without-trim">How To Tile A Shower Niche Without Trim</a>
-            <a href="/search-guide/shower-niche/can-you-add-a-niche-to-an-existing-shower">Can You Add A Niche To An Existing Shower</a>
-            <a href="/search-guide/shower-niche/how-to-build-a-shower-niche-with-cement-board">How To Build A Shower Niche With Cement Board</a>
+        <!-- Shower Niche Informational -->
+        <div class="hide sitemap-pages" id="shower-niche-blogs">
+            <i class="far fa-times-circle exit-page" id="shower-niche-exit"></i>
+            <div class="sitemap-content-snippet">
+                <p>A shower niche is a great way to add extra storage to your shower. They are typically made out of tile, and can be customized to fit your needs. They are a great place to store shampoo, conditioner, soap, and other shower supplies.</p>
+                <br>
+                <p>If you are considering adding a shower niche to your shower, there are a few things you should keep in mind:</p>
+                <br>
+                <ol>
+                    <li>First, be sure to measure the space you have to work with. </li>
+                    <li>You will also need to decide on the size and shape of the niche.</li>
+                    <li>Once you have decided on the size and shape of the niche, you will need to choose the tile. Be sure to select a tile that is water resistant and can withstand the humidity in a shower.</li>
+                </ol>
+                <br>
+                <p>Find out about shower niches today by clicking a link below, Tips on how you can do this yourself, Tools and much more...</p>
+            </div>
+            <span>Select a link below!</span>
+            <h3>&bull; Shower Niche Blogs</h3>
+            <a class="sitemap-links" href="/search-guide/shower-niche/how-deep-is-a-shower-niche">How Deep Is A Shower Niche</a>
+            <a class="sitemap-links" href="/search-guide/shower-niche/how-to-tile-shower-niche-without-bullnose">How To Tile Shower Niche Without Bullnose</a>
+            <a class="sitemap-links" href="/search-guide/shower-niche/how-to-waterproof-a-shower-niche">How To Waterproof A Shower Niche</a>
+            <a class="sitemap-links" href="/search-guide/shower-niche/where-to-place-shower-niche">Where To Place Shower Niche</a>
+            <a class="sitemap-links" href="/search-guide/shower-niche/how-to-tile-a-shower-niche-without-trim">How To Tile A Shower Niche Without Trim</a>
+            <a class="sitemap-links" href="/search-guide/shower-niche/can-you-add-a-niche-to-an-existing-shower">Can You Add A Niche To An Existing Shower</a>
+            <a class="sitemap-links" href="/search-guide/shower-niche/how-to-build-a-shower-niche-with-cement-board">How To Build A Shower Niche With Cement Board</a>
+        </div>
 
         <!-- External Backlinks Exchange-->
-        <a id="href2" target="_blank" href="http://www.2findlocal.com/b/14453761" rel="nofollow"><img class="anchorImage" alt="feenixbloom" src="http://www.2findlocal.com/Set/Icons/2.png"></a><a target="_blank" rel="nofollow" href="http://taxihowmuch.com"><img alt="taxi how much" src="http://www.2findlocal.com/Set/Icons/u.png"></a><a id="href3" target="_blank" rel="nofollow" href="https://updownradar.com"><img alt="updown" src="http://www.2findlocal.com/Set/Icons/f.png"></a>
         
     </div>
 
