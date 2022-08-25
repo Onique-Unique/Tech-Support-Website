@@ -2,10 +2,11 @@
 window.onload = function () {
     // Array of links and anchor link name to be related by category by order
     var relatedLinks = ["/search-guide/shower-niche/how-deep-is-a-shower-niche","/search-guide/shower-niche/how-to-tile-shower-niche-without-bullnose","/search-guide/shower-niche/how-to-waterproof-a-shower-niche","/search-guide/shower-niche/where-to-place-shower-niche",
-    "/search-guide/shower-niche/how-to-tile-a-shower-niche-without-trim","/search-guide/shower-niche/can-you-add-a-niche-to-an-existing-shower","/search-guide/shower-niche/how-to-build-a-shower-niche-with-cement-board",];
+    "/search-guide/shower-niche/how-to-tile-a-shower-niche-without-trim","/search-guide/shower-niche/can-you-add-a-niche-to-an-existing-shower","/search-guide/shower-niche/how-to-build-a-shower-niche-with-cement-board","/search-guide/shower-niche/what-to-use-for-shower-niche-shelf",];
 
 
-    var aLinkName = ["How Deep Is A Shower Niche?", "How To Tile Shower Niche Without Bullnose?", "How To Waterproof A Shower Niche?", "Where To Place Shower Niche?", "How To Tile A Shower Niche Without Trim?","Can You Add A Niche To An Existing Shower","How To Build A Shower Niche With Cement Board",];
+    var aLinkName = ["How Deep Is A Shower Niche?", "How To Tile Shower Niche Without Bullnose?", "How To Waterproof A Shower Niche?", "Where To Place Shower Niche?", "How To Tile A Shower Niche Without Trim?","Can You Add A Niche To An Existing Shower","How To Build A Shower Niche With Cement Board",
+    "What To Use For Shower Niche Shelf",];
     
     // store url pathname as string into current variable 
     const currentUrl = window.location.pathname.toString();
