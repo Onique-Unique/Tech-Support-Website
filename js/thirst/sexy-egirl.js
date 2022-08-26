@@ -32,7 +32,7 @@ function fetchMemes() {
     parentdiv.id = "memes-container";
     secondarydiv.id = "memes";
     loadMoreBtn.id = "load-more";
-  fetch(`https://www.reddit.com/r/IRLgirls.json?after=${after}`)
+  fetch(`https://www.reddit.com/r/sexygirls.json?after=${after}`)
     .then((response) => response.json())
     .then((body) => {
       after = body.data.after;
@@ -53,8 +53,8 @@ function fetchMemes() {
               let h4 = document.createElement("h4");
               let image = document.createElement("img");
               image.loading = "lazy";
-              image.title = "Baddiehub";
-              image.alt = "Baddiehub";
+              image.title = "sexy egirl";
+              image.alt = "sexy egirl";
               image.src = body.data.children[elem].data.url_overridden_by_dest;
               h4.textContent = body.data.children[elem].data.title;
               loadMoreBtn.innerHTML = "Load More";
