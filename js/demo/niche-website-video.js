@@ -16,7 +16,7 @@ setTimeout(function() {
     <!-- - google font link -->
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
     <!-- - custom css link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Onique-Unique/Niche-Site-Video-Lounge/lounge-style/style@2.1.min.css">`
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Onique-Unique/Niche-Site-Video-Lounge/lounge-style/style@2.2.min.css">`
 },0);
 
 setTimeout(function() {  
@@ -195,7 +195,7 @@ setTimeout(function() {
     document.body.appendChild(videoPlayerScript);
     document.body.appendChild(commentBoxSRCScript);
     document.body.appendChild(commentBoxProjectIDScript);
-}, 50)
+}, 10)
 
 // Initiate Search Script Functions
 setTimeout(function() { 
@@ -452,7 +452,7 @@ setTimeout(function() {
     shareBtn.addEventListener("click", () => {
         shareList();
     });
-},100);
+},50);
 
 function videoPlayerExit(){
     const searchContainer = document.querySelector(".search-results");
