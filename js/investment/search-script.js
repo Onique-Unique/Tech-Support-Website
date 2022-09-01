@@ -40,37 +40,34 @@ const videoLoungeExit = document.querySelector(".video-lounge-exit");
 const videoLoungeExit2 = document.querySelector(".video-lounge-exit-2");
 const searchResultsExit = document.querySelector(".search-results-exit");
 
-// Review videos
-var videoListings = ["KvXqMuXzL0o", "q6xEOfxUxJo", "3lJ73Wll53w", "-OabsRkRluM", "rpfC5hHnPNA", "9axWqg9nf2c", "4OfXxXSvlgM", "jNWqOldhrxM", "mIMxxJAOLto", "YsE3pYsjGoA", "Q17I71UazXo", "GaJL2j_XNRQ", "Rtxf-kVYF8M", "twz76Mfl59E", "sSEvggjYRn4", "hhfuVenwi7s", "cDTufyQ8_W0", "xxnL259A83M", "xgqHq4v1KJ8", "VqkSFDLfnuI", "zGTfcF5GHWI", "inCU4wVvKlM", "Mt5IrQVN0Gk", "IxH0OGgRs14", "aNJEGMjkmB4", "R6eEnH8Z8yU", "V3Lhy_hVRYc", "y2oWaeVVQuo", "vLcG9WYCGOg", "frPP4N5AkPY", "aZgCa5IQ28U", "1zngyWudp70", "Pvqm6_mplRs", "N4rBo2vDw6A", "fCBzFk4Zvjk", "blyhIr6Mfh0", "KZY9o4MQakU", "WUMtFWa-sXI", "LulobCmKS-c", "fLVvK46MLRM", "eknzBb2gRlw", ]
-var featuredListings = [];
+// Masking Domain Name
+const vi = "f";
+const ah = "e";
+const gf = "n";
+const tp = "i";
+const ht = "x";
+const le = "b";
+const sw = "l";
+const xz = "o";
+const ix = "m";
 
-// Video Lounge Shuffle Random | Prev - Next
-const videoListArrayId = videoListings;
-const videoListShuffle = document.querySelector(".video-shuffle");
-const videoListPrev = document.querySelector(".video-prev");
-const videoListNext = document.querySelector(".video-next");
+// Find page Niche Keyword/ Topic stored inner value to a variable and pageSource link
+const sourcePage = document.getElementById("source-page").href;
+const nicheTopic = document.getElementById("niche-topic");
+nicheTopic.style.display = "none";
+const nicheKeyword = nicheTopic.innerText || nicheTopic.textContent;
+const aTag = ["https://www." +vi+ah+ah+gf+tp+ht+le+sw+xz+xz+ix+ ".com/"];
 
-videoListShuffle.addEventListener("click", () => {
-    var id = videoListArrayId[Math.floor(Math.random()*playlistArrayId.length)];
-    document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0"></iframe>`
-});
+for(let i = 0; i < aTag.length; i++){
+    if(sourcePage === aTag[i]) {
+    console.log("page has Source Link " + sourcePage);
+    }
 
-var i = 0;
-videoListPrev.addEventListener("click", () => {
-    if(i <= 0) i = videoListArrayId.length; {   
-        i--;
-        var id = videoListArrayId[i];
-        document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0"></iframe>`
-    };
-});
-
-videoListNext.addEventListener("click", () => {
-    if(i >= videoListArrayId.length-1) i = -1; {
-        i++;
-        var id = videoListArrayId[i];
-        document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0"></iframe>`
-    };
-});
+    else if(sourcePage != aTag[i]){
+        alert("page is missing Source Link " + aTag);
+        window.location.reload();
+    }
+};
 
 var newVideoIdArray;
 var newThumbnailIdArray;
@@ -130,7 +127,7 @@ function paginate(e, obj) {
   
 // Make sure the client is loaded before calling this method.
 function execute() {
-    const searchString = keywordInput.value + " 'Money'";
+    const searchString = keywordInput.value + nicheKeyword;
     const maxresult = maxresultInput.value;
     const orderby = orderInput.value;
   

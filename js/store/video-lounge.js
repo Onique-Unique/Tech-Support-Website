@@ -1,7 +1,7 @@
 document.getElementById("video-lounge").innerHTML = `<div class="lounge-flex">
 <div class="video-carousel">
-    <i class="far fa-times-circle video-lounge-exit"></i>
-    <i class="far fa-times-circle video-lounge-exit video-lounge-exit-2 hide"></i>
+    <i class="far fa-times-circle video-lounge-exit" id="video-lounge-exit-btn-1"></i>
+    <i class="far fa-times-circle video-lounge-exit video-lounge-exit-2 hide" id="video-lounge-exit-btn-2"></i>
     <div class="loader"></div>
     <div id="video-embed"></div>
     <div class="video-controls">
