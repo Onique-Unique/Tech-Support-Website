@@ -16,7 +16,7 @@ setTimeout(function() {
     <!-- - google font link -->
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
     <!-- - custom css link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Onique-Unique/Niche-Site-Video-Lounge/lounge-style/style@2.2.min.css">`
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Onique-Unique/Niche-Site-Video-Lounge/lounge-style/style@2.3.min.css">`
 },0);
 
 setTimeout(function() {  
@@ -80,15 +80,10 @@ setTimeout(function() {
     mainTagOverlay.setAttribute("data-overlay", "");
 
     // ezoic ad spot check and functions to complete if found null
-    if(document.getElementById("ad-ID") == null){
-        ezoicDiv.id = "ad-ID";
+    if(ezoicDiv.id === null){
         ezoicDiv.innerText = "Removed";
         document.body.appendChild(ezoicDiv);
-    } else if(document.getElementById("ad-ID") != null){
-        ezoicNewID = document.getElementById("ad-ID").innerText;
-        document.getElementById("ad-ID").id = ezoicNewID;
-        document.getElementById(ezoicNewID).innerText = "";    
-    };
+    }
 
     // Nav + Search Bar
     contentHubNavFixed.classList.add("content-hub-nav-fixed");

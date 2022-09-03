@@ -115,7 +115,7 @@ button {
     cursor: pointer;
 }
 
-.hide, #ad-ID{
+.hide{
     display: none;
 }
 
