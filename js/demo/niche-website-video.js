@@ -80,10 +80,14 @@ setTimeout(function() {
     mainTagOverlay.setAttribute("data-overlay", "");
 
     // ezoic ad spot check and functions to complete if found null
-    if(ezoicDiv.id === null){
-        ezoicDiv.innerText = "Removed";
+    if(document.querySelector(".ad-ID") == null){
+        ezoicDiv.innerText = "No Ezoic Ads Inner";
         document.body.appendChild(ezoicDiv);
-    }
+    } else if(document.querySelector(".ad-ID") != null){
+        ezoicNewID = document.querySelector(".ad-ID").innerText;
+        ezoicDiv.id = ezoicNewID;
+        document.body.appendChild(ezoicDiv);    
+    };
 
     // Nav + Search Bar
     contentHubNavFixed.classList.add("content-hub-nav-fixed");
@@ -184,10 +188,8 @@ setTimeout(function() {
     sidebarDiv.appendChild(sidebarinnerLower);
     sidebarDiv.classList.remove("hide");
     
-
-
     // DATA API VIDEO INSERTION DIV
-    document.body.appendChild(dataVideoDiv);
+    mainTagDiv.appendChild(dataVideoDiv);
 
     // Script Tags
     document.body.appendChild(googleApiScript);
