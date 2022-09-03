@@ -85,10 +85,9 @@ setTimeout(function() {
         ezoicDiv.innerText = "Removed";
         document.body.appendChild(ezoicDiv);
     } else if(document.getElementById("ad-ID") != null){
-        setTimeout(function() {
-            ezoicDiv.innerText = ezoicDiv.innerText;
-            document.getElementById("ad-ID").style.display = "block";
-        },5000);
+        ezoicNewID = document.getElementById("ad-ID").innerText;
+        document.getElementById("ad-ID").id = ezoicNewID;
+        document.getElementById(ezoicNewID).innerText = "";    
     };
 
     // Nav + Search Bar
@@ -227,7 +226,7 @@ setTimeout(function() {
                 .then(function() {dataContent(); bodyMainTag.style.display = "block"; console.log("GAPI client loaded for API"); },
                         function(err) { window.location.reload(); console.error("Error loading GAPI client for API", err); });
         };
-    },2800);
+    },3500);
 
     // Index Banner Date Logic 
     // Get Current Date JS Logic
