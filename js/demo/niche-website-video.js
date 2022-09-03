@@ -68,6 +68,13 @@ setTimeout(function() {
 
 
     // Add Attributes - top down approach ********************************* -------------------------
+    // Loader Animation
+    loaderAnimationContainer.classList.add("loader-container");
+    loaderAnimationContainer.innerHTML = `<div class="loader">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    </div>`;
+    
     mainTagDiv.classList.add("landing-page-visible");
     mainTagOverlay.classList.add("overlay");
     mainTagOverlay.setAttribute("data-overlay", "");
@@ -77,6 +84,11 @@ setTimeout(function() {
         ezoicDiv.id = "ad-ID";
         ezoicDiv.innerText = "Removed";
         document.body.appendChild(ezoicDiv);
+    } else if(document.getElementById("ad-ID") != null){
+        setTimeout(function() {
+            ezoicDiv.innerText = ezoicDiv.innerText;
+            document.getElementById("ad-ID").style.display = "block";
+        },5000);
     };
 
     // Nav + Search Bar
@@ -106,13 +118,6 @@ setTimeout(function() {
     menuIcon.setAttribute("data-mobile-menu-open-btn", "");
     menuIcon.innerHTML = `<i class="fa-solid fa-house" id="menu-bars" title="Menu"></i>`;
     currentDate.id = "location-currentDate";
-
-    // Loader Animation
-    loaderAnimationContainer.classList.add("loader-container");
-    loaderAnimationContainer.innerHTML = `<div class="loader">
-    <div class="circle"></div>
-    <div class="circle"></div>
-    </div>`;
 
     // Sidebar
     sidebarDiv.className = "sidebar  has-scrollbar hide";
@@ -157,7 +162,10 @@ setTimeout(function() {
     commentBoxProjectIDScript.src = "https://cdn.jsdelivr.net/gh/Onique-Unique/Niche-Site-Video-Lounge/comment-box/fetch.min.js";
 
     // Append Elements ************************************ --------------------------------
-    document.body.prepend(bodyMainTag);
+    // Loader Animation
+    document.body.prepend(loaderAnimationContainer);
+
+    document.body.appendChild(bodyMainTag);
     bodyMainTag.appendChild(mainTagDiv); 
     mainTagDiv.appendChild(mainTagOverlay); 
     mainTagDiv.appendChild(ezoicDiv); 
@@ -171,9 +179,6 @@ setTimeout(function() {
     dataSearchBar.appendChild(dataSearchBarInnerForm);
     nav.appendChild(menuIcon);
     contentHubNavFixed.appendChild(currentDate);
-
-    // Loader Animation
-    mainTagDiv.appendChild(loaderAnimationContainer);
 
     // Sidebar
     mainTagDiv.appendChild(sidebarDiv);
@@ -222,7 +227,7 @@ setTimeout(function() {
                 .then(function() {dataContent(); bodyMainTag.style.display = "block"; console.log("GAPI client loaded for API"); },
                         function(err) { window.location.reload(); console.error("Error loading GAPI client for API", err); });
         };
-    },3000);
+    },2800);
 
     // Index Banner Date Logic 
     // Get Current Date JS Logic
