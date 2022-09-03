@@ -422,7 +422,8 @@ setTimeout(function() {
                         searchContainer.classList.toggle("hide");
                         videoLoungeContainer.classList.toggle("hide");
                         navSearchBar.classList.add("hide");
-                        document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0"></iframe>`
+                        document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://yewtu.be/embed/${id}?t=5" frameborder="0"></iframe>`
+                        // document.getElementById("video-embed").innerHTML = `<iframe id="embed-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" src="https://www.youtube.com/embed/${id}" frameborder="0"></iframe>` [This doesn't allow restricted videos, Using alternative above the regular Youtube embed method to bypass restricted videos]
                     });
                 };
 
