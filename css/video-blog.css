@@ -239,46 +239,7 @@ table tr:nth-child(even) {
 #search-icon{
     display: none;
 }
-.header .search-form {
-    position: absolute;
-    background: #fff;
-    border-radius: .5rem;
-    display: flex;
-    align-items: center;
-    box-shadow: var(--box-shadow);
-    top: 110%;
-    right: 7%;
-    height: 6rem;
-    width: 50rem;
-    padding: 1rem;
-    display: none;
-}
 
-.header .search-form.active {
-    display: flex;
-}
-
-.header .search-form #search-box {
-    width: 100%;
-    border: var(--border);
-    border-radius: .5rem;
-    padding: 1rem;
-    font-size: 1.7rem;
-    color: var(--black);
-    height: 100%;
-}
-
-.header .search-form label {
-    font-size: 2rem;
-    padding-left: 1rem;
-    padding-right: .5rem;
-    cursor: pointer;
-    color: var(--black);
-}
-
-.header .search-form label:hover {
-    color: var(--orange);
-}
 
 #menu-bars {
     display: none;
@@ -1122,6 +1083,7 @@ details[open] .faq__summary:after {
         border-bottom: var(--border);
         background: #fff;
         display: none;
+        z-index: 99999;
     }
 
     .header .navbar.active {
