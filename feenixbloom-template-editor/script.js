@@ -188,7 +188,17 @@ createParas = () => {
             case 9: htmlCode_first = htmlCode_first.replace(/{ .ninth-h2 }/g,val[0]);
                     break;
             case 10: htmlCode_first = htmlCode_first.replace(/{ .tenth-h2 }/g,val[0]);
-                    break;                                                                           
+                    break;   
+            case 11: htmlCode_first = htmlCode_first.replace(/{ .eleventh-h2 }/g,val[0]);
+                    break;   
+            case 12: htmlCode_first = htmlCode_first.replace(/{ .twelfth-h2 }/g,val[0]);
+                    break; 
+            case 13: htmlCode_first = htmlCode_first.replace(/{ .thirteenth-h2 }/g,val[0]);
+                    break; 
+            case 14: htmlCode_first = htmlCode_first.replace(/{ .fourteenth-h2 }/g,val[0]);
+                    break; 
+            case 15: htmlCode_first = htmlCode_first.replace(/{ .fifteenth-h2 }/g,val[0]);
+                    break; 
         }
         if(index == 0) {
             

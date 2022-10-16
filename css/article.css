@@ -787,7 +787,7 @@ button {
     display: none
 }
 
-.div-container-main {
+.div-container-main, .container .posts-container .post .text-alt {
     background: #3d95fa2d;
     padding: 25px;
     border-radius: 15px
@@ -1090,7 +1090,7 @@ table tr:nth-child(even) {
         height: 200px;
         z-index: 1;
         color: #000;
-        background: linear-gradient(rgba(241, 221, 1, 0.9), rgba(229, 241, 1, 0.9)), url(/nova-tech-asset-pack/assets/images/nova-tech-office-hero-3.png) no-repeat 90%;
+        background: linear-gradient(rgba(241, 221, 1, 0.9), rgba(229, 241, 1, 0.9)), url(/images/nova-tech-office-hero-3.png) no-repeat 90%;
     }
     .promo-box-container .promo-title {
         font-size: 22px;
@@ -1108,7 +1108,7 @@ table tr:nth-child(even) {
     }
     .promo-box-container .right-triangle {
         width: 39%;
-        background: linear-gradient(rgba(128, 0, 128, 0.6), rgba(128, 0, 128, 0.6)), url(/nova-tech-asset-pack/assets/images/nova-tech-office-hero-3.png) no-repeat 90%;
+        background: linear-gradient(rgba(128, 0, 128, 0.6), rgba(128, 0, 128, 0.6)), url(/images/nova-tech-office-hero-3.png) no-repeat 90%;
     }
 }
 
