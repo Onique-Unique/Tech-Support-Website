@@ -32,7 +32,7 @@ function fetchMemes() {
     parentdiv.id = "memes-container";
     secondarydiv.id = "memes";
     loadMoreBtn.id = "load-more";
-  fetch(`https://www.reddit.com/r/Warzone.json?after=${after}`)
+  fetch(`https://www.reddit.com/r/WarzoneMobile.json?after=${after}`)
     .then((response) => response.json())
     .then((body) => {
       after = body.data.after;
