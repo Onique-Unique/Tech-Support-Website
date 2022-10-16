@@ -214,7 +214,7 @@ createParas = () => {
                     <a href="/coming-soon-page" target="_blank">
                     <span class="linkspanner"></span>
                     </a>
-                <p class="promo-title"><a href="novatechoffice.com/coming-soon-page" target="_blank">Unlock Your Earning Potential. <br> <span class="lighter">Track your Investment, Growth and Digital Assets - Get Your Portfolio Today. <i class="fa-solid fa-cloud-arrow-down"></i></span></a></p>
+                <p class="promo-title"><a href="novatechoffice.com/coming-soon-page" target="_blank">Interested in Earning More This Year? <br> <span class="lighter">Lead your Investment, Growth and Digital Assets - Get Your Portfolio Today. <i class="fa-solid fa-cloud-arrow-down"></i></span></a></p>
                 <p><a class="cta-button" href="novatechoffice.com/coming-soon-page" target="_blank">Generate Investment Portfolio <i class="fa-solid fa-download"></i></a></p>
                 <div class="right-triangle"> </div>
                 </div>
