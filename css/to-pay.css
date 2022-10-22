@@ -52,3 +52,10 @@
     margin-right: 10px;
     background-color: greenyellow;
 }
+
+@media (max-width: 768px){
+    .image-click-container .image-click {
+        width: 90%;
+        top: 25%;
+    }
+}
