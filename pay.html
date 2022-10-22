@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Select</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            position: relative;
+            height: 100vh;
+        }
+
+        #smart-button-container {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            width: 50%;
+        }
+
+        #item-options {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="smart-button-container">
+        <div style="text-align: center;">
+            <div style="margin-bottom: 1.25rem;">
+                <p>Choose A Payment Option Below!</p>
+                <select id="item-options">
+                    <option value="Free" price="1.99">Free - 1.99 USD</option>
+                    <option value="Support" price="8.99">Support - 8.99 USD</option>
+                    <option value="Wow" price="15.99">Wow - 15.99 USD</option>
+                    <option value="Super" price="25">Super - 25 USD</option>
+                </select>
+                <select style="visibility: hidden" id="quantitySelect"></select>
+            </div>
+            <div id="paypal-button-container"></div>
+        </div>
+    </div>
+    <script src="https://www.paypal.com/sdk/js?client-id=AW5Yq2bG8Abyue79t4Jvg1lZubvpQCDCNBoEK78nqNqSWRUrrIMooAlVuKiINs3x2hPGqwkVZF-TRAjq&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+    <script defer src="/js/pay-script.js"></script>
+</body>
+
+</html>

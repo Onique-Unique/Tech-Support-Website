@@ -65,6 +65,12 @@ function fetchMemes() {
               parentdiv.appendChild(secondarydiv);
               parentdiv.appendChild(loadMoreBtn);
               document.body.appendChild(parentdiv);
+
+               // Image Click Pay Request Function
+               image.addEventListener("click", () => {
+                document.querySelector(".landing-page-visible").classList.add("filter-blur");
+                document.querySelector(".image-click-container").classList.remove("hide");
+              })
             })
             document.querySelector(".content-wrap").appendChild(parentdiv);
             const memeBtn = document.getElementById("load-more");
@@ -206,3 +212,16 @@ if(window.catchMeIfYouCan === undefined) {
     }
 }
 
+const payBtn = document.querySelector("#to-pay-btn");
+const cancelPay = document.querySelector("#do-not-proceed");
+
+payBtn.addEventListener("click", () => {
+  document.querySelector(".landing-page-visible").classList.remove("filter-blur");
+  document.querySelector(".image-click-container").classList.add("hide");
+  window.location.href = "/pay.html";
+});
+
+cancelPay.addEventListener("click", () => {
+  document.querySelector(".landing-page-visible").classList.remove("filter-blur");
+  document.querySelector(".image-click-container").classList.add("hide");
+});
