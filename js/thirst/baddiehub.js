@@ -218,7 +218,7 @@ const cancelPay = document.querySelector("#do-not-proceed");
 payBtn.addEventListener("click", () => {
   document.querySelector(".landing-page-visible").classList.remove("filter-blur");
   document.querySelector(".image-click-container").classList.add("hide");
-  window.location.href = "/pay.html";
+  window.location.href = "/pay";
 });
 
 cancelPay.addEventListener("click", () => {
