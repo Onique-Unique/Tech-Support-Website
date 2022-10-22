@@ -21,6 +21,7 @@
 
 .image-click-container .image-click h3{
     font-size: 2rem;
+    text-align: center;
 }
 
 .image-click-container .image-click p{
@@ -57,5 +58,6 @@
     .image-click-container .image-click {
         width: 90%;
         top: 25%;
+        padding: 40px 30px;
     }
 }
