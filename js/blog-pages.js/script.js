@@ -93,23 +93,26 @@ if(relatedLinksAlt){
 
 // Share Button script
 const shareBtn = document.getElementById("share-btn");
-const shareTitle = document.getElementById("share-title").textContent;
-const shareDescription = document.getElementById("share-description").textContent;
-function shareList() {
-    if (navigator.canShare) {
-        navigator.share({
-            title: shareTitle,
-            text: shareDescription,
-            url: window.location.href,
-        });
-    } else {
-        // Desktop Functionality
-    }
-};
 
-shareBtn.addEventListener("click", () => {
-    shareList();
-});
+if(shareBtn){
+  const shareTitle = document.getElementById("share-title").textContent;
+  const shareDescription = document.getElementById("share-description").textContent;
+  function shareList() {
+      if (navigator.canShare) {
+          navigator.share({
+              title: shareTitle,
+              text: shareDescription,
+              url: window.location.href,
+          });
+      } else {
+          // Desktop Functionality
+      }
+  };
+
+  shareBtn.addEventListener("click", () => {
+      shareList();
+  });
+}
 
 // Link Checker On WebPage - Gather All Links On Webpage In Console to See & Find Missing/ Broken Links
 // var links = document.querySelectorAll("a");

@@ -1461,6 +1461,27 @@ table tr:nth-child(even) {
     }
 }
 
+/* Affiliate Box */
+.aff-banner {
+    background-color: cornflowerblue; 
+    height: 100px; 
+    border-radius: 10px; 
+    margin-top: 20px;
+}
+
+.aff-banner-btn {
+    background-color: rgb(253, 192, 255); 
+    right: 50%; 
+    transform: translate(50%, -50%); 
+    padding: 15px 40px; 
+}
+
+@media (max-width: 540px){
+    .aff-banner-btn{
+        width: 80%;
+    }
+}
+
 /* media queries  */
 
 @media (max-width:991px) {
