@@ -1,0 +1,61 @@
+body {
+    position: fixed;
+    overflow: hidden;
+}
+.fof-wrapper {
+    text-align: center;
+    min-height: 100vh;
+}
+
+.bad-page-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.bad-page-wrapper h4 {
+    font-size: 3rem;
+    margin-top: 20px;
+    color: aliceblue;
+}
+.bad-page-wrapper .message {
+    font-size: 1.5rem;
+    padding: 20px;
+    width: 60%;
+    text-align: center;
+    color: aliceblue;
+}
+.bad-page-wrapper .btn {
+    background: rgb(0,195,154);
+    padding: 20px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+}
+.bad-page-wrapper .btn:hover {background: rgb(0,231,201);}
+
+@media(max-width:960px){
+    .fof-wrapper {
+        margin: 22% 0;
+    }
+    .fof-wrapper img{
+        width: 100%;
+    }
+
+    .bad-page-wrapper .message { 
+        width: 90%;
+    }
+}
+
+@media(max-width:320px){
+    .fof-wrapper {
+        margin: -20px 0;
+        transform: scale(.8);
+    }
+}
+
+@media(max-width:200px){
+    body {
+        position: relative;
+        overflow: scroll;
+    }
+}
