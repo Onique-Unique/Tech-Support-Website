@@ -1,0 +1,114 @@
+  .sidebar {
+    background: #212121;
+  }
+  .card-wrapper {
+    margin: 90px auto;
+  }
+  .card-container {
+    width: 350px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  #card {
+      position: relative;
+      width: 100%;
+      padding: 30px 20px;
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+  }
+
+  #card img {
+      display: block;
+      width: 180px;
+      max-height: 200px;
+      position: relative;
+      margin: 20px auto;
+  }
+
+  .hp {
+      width: 80px;
+      background-color: #ffffff;
+      text-align: center;
+      padding: 8px 0;
+      border-radius: 30px;
+      margin-left: auto;
+      font-weight: 400;
+      font-size: 1.3rem;
+  }
+
+  .poke-name {
+      text-align: center;
+      font-weight: 600;
+  }
+
+  .types {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0 40px 0;
+  }
+
+  .hp span,
+  .types span {
+      font-size: 12px;
+      letter-spacing: 0.4px;
+      font-weight: 600;
+  }
+
+  .types span {
+      padding: 5px 20px;
+      border-radius: 20px;
+      color: #ffffff;
+  }
+
+  .stats {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      font-size: 1.6rem;
+  }
+
+  .stats p {
+      color: #404060;
+  }
+
+  #btn {
+      display: block;
+      padding: 15px 60px;
+      font-size: 18px;
+      background-color: #eff3ff;
+      color: #101010;
+      position: relative;
+      margin: 30px auto;
+      border: none;
+      border-radius: 5px;
+  }
+
+  @media(max-width: 560px){
+    .card-container {
+        transform:translate(-50%, 0) scale(.9);
+    }
+    #card {
+        height: 450px;
+    }
+    .stats {
+        font-size: 1.6rem;
+    }
+    .types {
+        margin: 15px 0 20px 0;
+    }
+    .hp {
+        font-size: 1.3rem;
+    }
+  }
+
+  @media(max-width: 320px){
+    .card-wrapper {
+        margin: 10px auto;
+      }
+    .card-container {
+        transform:translate(-50%, 0) scale(.65);
+    }
+  }
