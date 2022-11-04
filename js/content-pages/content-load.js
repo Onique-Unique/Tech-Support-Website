@@ -373,7 +373,7 @@ setTimeout((function() {
                 // ---------------LOGICAL SCRIPT FOR RETURNED SEARCH QUERY/ RESULTS VIDEOS------------------------------- 
                 for(let i = 0; i < allThumbnailIdArray.length && i < allVideoIdArray.length; i++) {
                     document.getElementById(allThumbnailIdArray[i]).addEventListener("click", () => {
-                        
+                        document.querySelector(".lower-meta-content").style.display = "none";
                         var id = allVideoIdArray[i];
                         window.scroll({top: 0, behavior: "smooth"});
                         searchContainer.classList.toggle("hide");
@@ -421,5 +421,6 @@ function videoPlayerExit(){
     searchContainer.classList.toggle("hide");
     videoLoungeContainer.classList.toggle("hide");
     navSearchBar.classList.remove("hide");
-}
 
+    document.querySelector(".lower-meta-content").style.display = "block";
+}
