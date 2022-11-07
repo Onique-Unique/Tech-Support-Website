@@ -110,6 +110,7 @@ let htmlCode_first = `<!DOCTYPE html>
     <meta itemprop="name" class="metaPageTitle" content="{ .title }">
     <meta itemprop="description" content="{ .description }">
     <meta name="description" content="{ .description }">
+    <link rel="canonical" href="https://www.feenixbloom.com/search-guide/article/{ .current-page-link }">
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/images/game-lounge-img/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/game-lounge-img/favicon_io/favicon-32x32.png">
