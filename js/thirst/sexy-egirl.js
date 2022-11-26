@@ -57,8 +57,9 @@ function fetchMemes() {
               image.alt = "sexy egirl";
               image.src = body.data.children[elem].data.url_overridden_by_dest;
               h4.textContent = body.data.children[elem].data.title;
-              loadMoreBtn.innerHTML = "Load More";
+              loadMoreBtn.innerHTML = "Content Has Been Moved Here: &rarr;";
               div.id = "memes-inner";
+              div.style.display = "none";
               div.appendChild(h4);
               div.appendChild(image);
               secondarydiv.appendChild(div);
@@ -76,8 +77,9 @@ function fetchMemes() {
             document.querySelector(".content-wrap").appendChild(parentdiv);
             const memeBtn = document.getElementById("load-more");
             memeBtn.addEventListener("click", () => {
-            fetchMemes();
-            window.scroll({top: 0, behavior: "smooth"});
+            // fetchMemes();
+            // window.scroll({top: 0, behavior: "smooth"});
+            document.location.href = "https://redditnsfws.com/nsfw-pages/sexy-egirl";
         })
     })
     .catch((e) => {

@@ -1,10 +1,11 @@
-body {
+/* body {
     position: fixed;
     overflow: hidden;
-}
+} */
 .fof-wrapper {
     text-align: center;
     min-height: 100vh;
+    display: none;
 }
 
 .bad-page-wrapper {
