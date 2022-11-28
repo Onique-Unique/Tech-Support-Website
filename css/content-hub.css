@@ -191,6 +191,7 @@ body::-webkit-scrollbar-thumb:hover {
     border-radius: 5px;
     background: green;
     color: aliceblue;
+    width: 30%;
 }
 
 .thirst-meta-hidden {
