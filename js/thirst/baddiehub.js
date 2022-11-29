@@ -57,7 +57,7 @@ function fetchMemes() {
               image.alt = "Baddiehub";
               image.src = body.data.children[elem].data.url_overridden_by_dest;
               h4.textContent = body.data.children[elem].data.title;
-              loadMoreBtn.innerHTML = `Proceed Only If You are 18+ &nbsp; <i class='fa-solid fa-circle-chevron-right'></i>`;
+              loadMoreBtn.innerHTML = `Click Here <br><br> Proceed Only If You are 18+ &nbsp; <i class='fa-solid fa-circle-chevron-right'></i>`;
               div.id = "memes-inner";
               div.style.display = "none";
               div.appendChild(h4);
