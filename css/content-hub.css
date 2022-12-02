@@ -1136,7 +1136,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .popup-content {
     position: absolute;
-    top: 50%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
@@ -1179,6 +1179,14 @@ body::-webkit-scrollbar-thumb:hover {
     color: #3e9231;
     font-style: italic;
 }
+.coupon-text {
+    font-weight: bold;
+}
+#coupon-code {
+    background: #38491d;
+    padding: 1px 10px;
+    color: white;
+}
 .popup-btn {
     padding: 0.5rem 1.5rem;
     border-radius: 1.5rem;
@@ -1206,7 +1214,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media (max-width:450px) {
     .popup-content {
-        min-height: 300px;
+        min-height: 420px;
     }
 }
 
