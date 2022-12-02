@@ -209,7 +209,7 @@ function resolveNext() {
                                         console.error("Error loading GAPI client for API", err);
                                     }));
                         };
-                    }, 2000);
+                    }, 500);
                 });
             }
 

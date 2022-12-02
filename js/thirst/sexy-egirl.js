@@ -139,6 +139,80 @@ for (let i = 0; i < mobileMenuOpenBtn.length; i++) {
 // Cookie Settings
 document.cookie = "AC-C=ac-c;expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/;SameSite=None;Secure";
 
+// Onpage Popup 
+const userSearch = document.querySelector(".content-hub-heading b").innerText;
+let popup = document.createElement('div');
+popup.className = 'popup';
+
+let popupContent = document.createElement('div');
+popupContent.className = 'popup-content';
+
+let popupInnerContent = document.createElement('div');
+popupInnerContent.className = 'popup-inner-content';
+
+let h3 = document.createElement('h3');
+let h3Text = document.createTextNode('Hurry!!');
+h3.appendChild(h3Text);
+
+let h4Main = document.createElement('h4');
+h4Main.id = "popup-main-h4";
+h4Main.innerHTML = `Interested In ${userSearch}?`;
+
+let h4Secondary = document.createElement('h4');
+h4Secondary.innerHTML = `<span id="span-head">Amazon</span> is showcasing special deals right now on the products you want to buy`;
+
+let p = document.createElement('p');
+let pText = document.createTextNode('Go quick and save your items to cart to lock in these deals for the holidays..');
+p.appendChild(pText);
+
+let popupURLBtn = document.createElement('button');
+popupURLBtn.className = "popup-btn";
+let btnText = document.createTextNode('Take Me There');
+popupURLBtn.appendChild(btnText);
+popupURLBtn.onclick = gotoURL;
+
+let exitPopup = document.createElement("div");
+exitPopup.className = "exit-popup";
+exitPopup.innerHTML = `<i class="fa-regular fa-circle-xmark"></i>`;
+popupContent.appendChild(exitPopup);
+exitPopup.onclick = closePopup;
+
+popupInnerContent.appendChild(h3);
+popupInnerContent.appendChild(h4Main);
+popupInnerContent.appendChild(h4Secondary);
+popupInnerContent.appendChild(p);
+popupInnerContent.appendChild(popupURLBtn);
+
+popupContent.appendChild(popupInnerContent);
+popup.appendChild(popupContent);
+
+document.body.appendChild(popup);
+let showPopup = true;
+
+function closePopup() {
+  document.getElementsByClassName('popup')[0].style.display = 'none';
+  showPopup = false;
+  document.querySelector(".landing-page-visible").style.webkitFilter = "blur(0px)";
+}
+
+function gotoURL() {
+  document.location.href = 'https://www.amazon.com?&linkCode=ll2&tag=oniquecampbel-20&linkId=9e1e91f2e3d89d93e1684445475d82ee&language=en_US&ref_=as_li_ss_tl';
+}
+
+document.onscroll = function () {
+  if (window.scrollY > (window.innerHeight * 2) && showPopup) {
+    document.getElementsByClassName('popup')[0].style.display = 'block';
+    document.querySelector(".landing-page-visible").style.webkitFilter = "blur(3px)";
+  }
+};
+
+let timer = setInterval(function () {
+  if (showPopup == false) {
+    showPopup = true;
+    document.getElementsByClassName('popup')[0].style.display = 'block';
+  }
+}, 40000);
+
 // Contact Send to avoid spam and hide email from email crawlers
 const contactSend = document.getElementById("contact-submit");
 const action = "https://formsubmit.co/oniquecampbell@yahoo.com";
