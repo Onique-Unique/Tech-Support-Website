@@ -1206,7 +1206,7 @@ table tr:nth-child(even) {
 
 .popup {
     display: none;
-    z-index: 2;
+    z-index: 999999999;
     position: fixed;
     top: 0;
     bottom: 0;
