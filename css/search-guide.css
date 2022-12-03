@@ -1640,12 +1640,16 @@ table tr:nth-child(even) {
     margin-bottom: 5px;
 }
 #span-head {
-    font-size: 1.6rem;
+    font-size: 2.1rem;
     color: #3e9231;
     font-style: italic;
+    text-decoration: underline;
 }
 .coupon-text {
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    margin-top: 1.2rem;
 }
 #coupon-code {
     background: #38491d;
