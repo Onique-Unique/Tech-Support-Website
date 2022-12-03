@@ -263,7 +263,7 @@ let timer = setInterval(function () {
     showPopup = true;
     document.getElementsByClassName('popup')[0].style.display = 'block';
   }
-}, 40000);
+}, 25000);
 
 // Contact Send to avoid spam and hide email from email crawlers
 const contactSend = document.getElementById("contact-submit");

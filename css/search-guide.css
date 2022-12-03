@@ -74,6 +74,10 @@ hr {
     display: none;
 }
 
+.popup-blur {
+    filter: blur(3px);
+}
+
 .mobile-swipe-show {
     display: none;
 }

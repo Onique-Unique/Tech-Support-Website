@@ -65,6 +65,10 @@ button {
     display: none
 }
 
+.popup-blur {
+    filter: blur(3px);
+}
+
 #advisory {
     cursor: pointer;
     color: #20640b

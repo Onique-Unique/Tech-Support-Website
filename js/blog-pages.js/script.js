@@ -254,7 +254,7 @@ let showPopup = true;
 function closePopup() {
   document.getElementsByClassName('popup')[0].style.display = 'none';
   showPopup = false;
-  document.querySelector(".main-section").style.webkitFilter = "blur(0px)";
+  document.querySelector(".main-section").classList.remove("popup-blur");
 }
 
 function gotoURL() {
@@ -264,7 +264,7 @@ function gotoURL() {
 document.onscroll = function () {
   if (window.scrollY > (window.innerHeight * 2) && showPopup) {
     document.getElementsByClassName('popup')[0].style.display = 'block';
-    document.querySelector(".main-section").style.webkitFilter = "blur(3px)";
+    document.querySelector(".main-section").classList.add("popup-blur");
   }
 };
 
@@ -273,4 +273,4 @@ let timer = setInterval(function () {
     showPopup = true;
     document.getElementsByClassName('popup')[0].style.display = 'block';
   }
-}, 40000);
+}, 25000);
