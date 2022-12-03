@@ -1136,11 +1136,11 @@ body::-webkit-scrollbar-thumb:hover {
 
 .popup-content {
     position: absolute;
-    top: 57%;
+    top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
-    min-height: 250px;
+    min-height: 350px;
     background-color: #fff;
     text-align: center;
     border-radius: 8px;
@@ -1175,12 +1175,16 @@ body::-webkit-scrollbar-thumb:hover {
     margin-bottom: 5px;
 }
 #span-head {
-    font-size: 1.6rem;
+    font-size: 2.1rem;
     color: #3e9231;
     font-style: italic;
+    text-decoration: underline;
 }
 .coupon-text {
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    margin-top: 1.2rem;
 }
 #coupon-code {
     background: #38491d;
@@ -1214,7 +1218,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media (max-width:450px) {
     .popup-content {
-        min-height: 420px;
+        min-height: 450px;
     }
 }
 

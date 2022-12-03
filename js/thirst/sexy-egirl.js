@@ -210,7 +210,7 @@ p.appendChild(pText);
 
 let pCoupon = document.createElement('p');
 pCoupon.className = "coupon-text";
-pCoupon.innerHTML = `Missed Your Chance To Use Coupon? Try One Now: <span id="coupon-code">${couponCode.code}</span>`;
+pCoupon.innerHTML = `Missed Your Chance To Use Coupon? Try One Now: <br><br><span id="coupon-code">${couponCode.code}</span>`;
 
 let pCouponText = document.createElement('p');
 pCouponText.className = "coupon-text";
