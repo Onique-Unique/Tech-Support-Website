@@ -1221,7 +1221,7 @@ table tr:nth-child(even) {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
-    min-height: 250px;
+    min-height: 350px;
     background-color: #fff;
     text-align: center;
     border-radius: 8px;
@@ -1299,7 +1299,7 @@ table tr:nth-child(even) {
 
 @media (max-width:450px) {
     .popup-content {
-        min-height: 420px;
+        min-height: 450px;
     }
 }
 
