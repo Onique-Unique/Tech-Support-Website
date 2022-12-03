@@ -273,4 +273,4 @@ let timer = setInterval(function () {
     showPopup = true;
     document.getElementsByClassName('popup')[0].style.display = 'block';
   }
-}, 25000);
+}, 35000);
