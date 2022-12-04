@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /detroitchicago/
+Disallow: /porpoiseant/
+Disallow: /beardeddragon/
+Disallow: /tardisrocinante/
+Disallow: /ezoic/
+Disallow: /cheetah/
+Disallow: /sag.go/
+Disallow: /samo.go/
+Disallow: /safa.go/
+Disallow: /package.json/

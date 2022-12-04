@@ -147,6 +147,8 @@ if (shareBtn) {
 //                         function(){if(linksChecked>=linkReport.length){console.table(linkReport);
 //                         clearInterval(finishReport)}}, 3000);
 
+// Affiliate Link stored in variable
+const goToAffiliateLink = "https://www.amazon.com?&linkCode=ll2&tag=oniquecampbel-20&linkId=9e1e91f2e3d89d93e1684445475d82ee&language=en_US&ref_=as_li_ss_tl";
 
 // Coupon Select/ Display for Popup
 let springCoupons = [ { code: "SUMMERFUN20", discount: "20% off" }, { code: "NEWYEAR30", discount: "30% off" }, { code: "SUPERSALE20", discount: "20% off" }, { code: "SUMMERFUN30", discount: "30% off" }, { code: "SPRINGFREE50", discount: "Free shipping over $50" }, { code: "SPRING20OFF", discount: "20% off" }, { code: "MARCH20OFF", discount: "20% off" }, { code: "SPRINGSALE10", discount: "10% off" }, { code: "APRIL15OFF", discount: "15% off" }, { code: "SPRING50OFF", discount: "50% off" } ];
@@ -258,7 +260,7 @@ function closePopup() {
 }
 
 function gotoURL() {
-  document.location.href = 'https://www.amazon.com?&linkCode=ll2&tag=oniquecampbel-20&linkId=9e1e91f2e3d89d93e1684445475d82ee&language=en_US&ref_=as_li_ss_tl';
+  document.location.href = `${goToAffiliateLink}`;
 }
 
 document.onscroll = function () {
@@ -274,3 +276,90 @@ let timer = setInterval(function () {
     document.getElementsByClassName('popup')[0].style.display = 'block';
   }
 }, 30000);
+
+// Affiliate Onpage Promo Banner
+
+// Get all h2 elements on the page
+let h2Elements = document.querySelectorAll('h2');
+   
+// Loop through all h2 elements
+h2Elements.forEach((h2Element, index) => {
+// Skip the first and last h2 elements
+        if (index === 0 || index === h2Elements.length - 1) {
+            return;
+        }
+
+    // Generate a random number between 0 and 1
+    let randomNumber = Math.random();
+
+    // Create the mini-banner div element
+    let miniBannerDiv = document.createElement('div');
+    miniBannerDiv.className = 'mini-banner aff-banner';
+    miniBannerDiv.style.transform = 'scale(.8)';
+    miniBannerDiv.style.transition = 'transform 0.5s ease';
+
+    // Create the link element
+    let link = document.createElement('a');
+    link.href = `${goToAffiliateLink}`;
+    link.target = '_blank';
+    link.rel = 'nofollow';
+
+    // Create the button element
+    let button = document.createElement('button');
+    button.className = 'mini-banner-btn aff-banner-btn';
+
+    // Create the text element
+    let text = document.createElement('p');
+    text.className = 'mini-banner-text';
+    text.innerText = 'View On Amazon + Cheapest!';
+
+    // Create the icon element
+    let icon = document.createElement('i');
+    icon.className = 'fa-solid fa-circle-chevron-right';
+
+    // Append the text and icon to the button
+    button.appendChild(text);
+    button.appendChild(icon);
+
+    // Append the button to the link
+    link.appendChild(button);
+
+    // Append the link to the mini-banner div
+    miniBannerDiv.appendChild(link);
+
+    // If the index of the h2 element is 1 (second h2)
+    // and the h2 element does not have an id of 'main-post-3'
+    // then place the div above the h2
+    if (index === 1 && h2Element.id !== 'main-post-3') {
+        h2Element.parentNode.insertBefore(miniBannerDiv, h2Element);
+    } 
+
+    // If the index of the h2 element is greater than 1
+    // and the h2 element does not have an id of 'main-post-3'
+    // and the random number is greater than 0.5
+    // then place the div below the h2
+    if (index > 1 && h2Element.id !== 'main-post-3' && randomNumber > 0.5) {
+        h2Element.parentNode.insertBefore(miniBannerDiv, h2Element.nextSibling);
+    }
+
+    // Add an event listener for when the mini-banner div comes into view
+    // When the div comes into view, scale it up to 1.2
+    window.addEventListener('scroll', () => {
+        if (isInViewport(miniBannerDiv)) {
+            miniBannerDiv.style.transform = 'scale(1)';
+        } else {
+            miniBannerDiv.style.transform = 'scale(.8)';
+        }
+    });
+});
+
+// Function to check if an element is in the viewport
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
