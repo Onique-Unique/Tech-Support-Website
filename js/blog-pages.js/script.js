@@ -363,3 +363,45 @@ function isInViewport(element) {
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
+
+// Exit Intent Modal Detect
+
+ // Get the current mouse position
+ let mouseX;
+ let mouseY;
+ 
+ // Create the exit intent modal
+ let exitIntentModal = document.createElement('div');
+ exitIntentModal.classList.add('exit-intent-modal');
+ document.body.appendChild(exitIntentModal);
+ 
+ // Add the modal content
+     let modalContent = `
+     <div class="modal-div-container">
+         <h2>Wait! Before You Go...</h2>
+         <p>We know you're about to leave, but before you go, take a look at this special offer just for you!</p>
+         <div class="special-offer">
+             <h3>${couponCode.discount}</h3>
+             <p>Try code: <strong>${couponCode.code}</strong> using any of our links on page to get ${couponCode.discount} your next purchase.</p>
+         </div>
+         <button class="close-modal-btn">Close</button>
+     </div>`
+     exitIntentModal.innerHTML = modalContent;
+ 
+ // Listen for mouse movement
+ document.addEventListener('mousemove', (e) => {
+   mouseX = e.clientX;
+   mouseY = e.clientY;
+   // Check if the mouse is near the header element
+   if (mouseY < document.querySelector('header').offsetHeight) {
+     // Trigger custom action
+     exitIntentModal.style.display = 'block';
+   } else {
+     exitIntentModal.style.display = 'none';
+   }
+ });
+ 
+ // Listen for close modal button click
+ document.querySelector('.close-modal-btn').addEventListener('click', () => {
+ exitIntentModal.remove();
+ });
