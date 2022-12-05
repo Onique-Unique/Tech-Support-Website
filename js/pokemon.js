@@ -347,3 +347,30 @@ if(window.catchMeIfYouCan === undefined) {
         };
     }
 }
+
+//  Highlght text when in view onpage
+ // Get all elements with text content
+ const elementsWithTextContent = document.querySelectorAll('h2, li, p');
+
+ // Add event listener to window
+ window.addEventListener('scroll', function() {
+   // Loop through each element
+   elementsWithTextContent.forEach(element => {
+     // Get element's position relative to the viewport
+     const elementPosition = element.getBoundingClientRect();
+ 
+     // When element is out of view
+     if (elementPosition.top < 0 || elementPosition.bottom > window.innerHeight) {
+       const initialOpacity = 0.4;
+       element.style.transition = 'opacity 0.5s';
+       element.style.opacity = initialOpacity;
+     }
+ 
+     // When element is in view
+     else if (elementPosition.top > 0 && elementPosition.bottom < window.innerHeight) {
+       const fullOpacity = 1;
+       element.style.transition = 'opacity 0.5s';
+       element.style.opacity = fullOpacity;
+     }
+   });
+ });
