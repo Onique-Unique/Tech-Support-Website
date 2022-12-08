@@ -6,6 +6,7 @@ const input1 = document.querySelector('#input1');
 const input2 = document.querySelector('#input2');
 const winnerPopup = document.querySelector('#popup');
 const winner = document.querySelector('#winner');
+const percentage = document.querySelector('#percentage');
 const closeBtn = document.querySelector('#closeBtn');
 const alertPopup = document.querySelector('#alertPopup');
 const alertBtn = document.querySelector('#alertBtn');
@@ -39,10 +40,14 @@ const inputField1 = document.getElementById("pickNumber1").innerText;
 const inputField2 = document.getElementById("pickNumber2").innerText;
 const select1 = document.getElementById("input1").value = inputField1;
 const select2 = document.getElementById("input2").value = inputField2;
+winnerDataContainer.classList.add("hide");
 // --------------------------------------------------------------------
 
-let btnClick = 0;
+// Winning percentages to display on selection of winner
+let winningPercentages = [58.2, 73.9, 64.4, 85.3, 65.7, 82.1, 56.1, 94.6, 57.9, 72.8, 84.2, 66.5, 51.7, 80.3, 79.4, 91.8, 60.3, 77.0, 63.6, 71.4, 78.9, 92.2, 83.7, 93.8, 55.8]; 
+let winningPercentage = winningPercentages[Math.floor(Math.random()*winningPercentages.length)]; 
 
+let btnClick = 0;
 btn.addEventListener('click', function () {
 
     // Remove This Section For Custom Entries vvvvvvvvvvvvvvvvvv
@@ -62,6 +67,7 @@ btn.addEventListener('click', function () {
     } else {
         const randomNo = Math.floor(Math.random() * allInputs.length);
         winner.innerHTML = "🎉" + allInputs[randomNo].value;
+        percentage.innerHTML = winningPercentage + "% Chance";
         if (!(allInputs[randomNo].value in winnerData)) {
             winnerData[allInputs[randomNo].value] = 1;
         } else {
@@ -114,7 +120,7 @@ function shareList() {
     if (navigator.canShare) {
         navigator.share({
             // Will ${input1.value} or ${input2.value}?? Find Out here - Place This for Title For Custom Inputs
-            title: `Will ${select1} or ${select2}?? Find Out here`,
+            title: `Who Will Win ${select1} or ${select2} Predictor/ Generator, Find Out here`,
             text: "Predict a winner, Decide a pick and more all for free...",
             url: window.location.href,
         });

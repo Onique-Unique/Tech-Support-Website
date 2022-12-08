@@ -243,6 +243,11 @@ input::placeholder {
     border-radius: 20px;
 }
 
+#percentage {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
 #closeBtn {
     background-color: #8F8F8F;
     color: white;
