@@ -48,9 +48,7 @@ const select2 = document.getElementById("input2").value = inputField2;
 btn.addEventListener('click', function () {
 
     // Remove This Section For Custom Entries vvvvvvvvvvvvvvvvvv
-    document.body.style.position = "fixed";   
-    document.body.style.left = "50%";
-    document.body.style.transform = "translate(-50%, 0)";
+    document.body.classList.add("body-fixed"); 
     // ---------------------------------------------------------
 
     const allInputs = document.querySelectorAll('#inputFields input');
