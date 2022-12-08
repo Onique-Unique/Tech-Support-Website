@@ -1,3 +1,49 @@
+// Loading Function then remove when page is loaded completely
+//Create loading screen
+document.body.classList.add("body-fixed"); 
+var loadingScreen = document.createElement("div");
+loadingScreen.id = "loading-screen";
+loadingScreen.style.position = "fixed";
+loadingScreen.style.top = "0";
+loadingScreen.style.bottom = "0";
+loadingScreen.style.left = "0";
+loadingScreen.style.right = "0";
+loadingScreen.style.backgroundColor = "#000000d6";
+document.body.appendChild(loadingScreen);
+
+//Create loading animation
+var loader = document.createElement("div");
+loader.id = "loader";
+loader.style.position = "absolute";
+loader.style.top = "50%";
+loader.style.left = "50%";
+loader.style.transform = "translate(-50%, -50%)";
+loadingScreen.appendChild(loader);
+
+//Create loading animation circles
+var circles = [
+    document.createElement("div"),
+    document.createElement("div"),
+    document.createElement("div")
+];
+
+circles.forEach(function(circle, index) {
+    circle.className = "circle";
+    circle.style.background = "#FFFFFF";
+    circle.style.height = "10px";
+    circle.style.width = "10px";
+    circle.style.borderRadius = "50%";
+    circle.style.margin = "5px";
+    circle.style.animationDelay = index * 0.5 + "s";
+    loader.appendChild(circle);
+});
+
+//Detect when page is loaded
+window.onload = function() {
+    loadingScreen.parentNode.removeChild(loadingScreen);
+    document.body.classList.remove("body-fixed"); 
+};
+
 // Page Content Insert
 document.getElementById("page-content").innerHTML = `
 <br>
