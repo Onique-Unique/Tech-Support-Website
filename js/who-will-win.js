@@ -12,10 +12,6 @@ const alertBtn = document.querySelector('#alertBtn');
 const inputFields = document.querySelector('#inputFields');
 const winnerDataContainer = document.querySelector('#winnerData');
 
-// Remove display none for custom entries vvvvvvvvvv
-plusBtn.style.display = "none";
-// -------------------------------------------------
-
 plusBtn.addEventListener('click', function () {
     let counter = 2;
     let allInput = document.querySelectorAll("input");

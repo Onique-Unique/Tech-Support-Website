@@ -12,6 +12,10 @@ const alertBtn = document.querySelector('#alertBtn');
 const inputFields = document.querySelector('#inputFields');
 const winnerDataContainer = document.querySelector('#winnerData');
 
+// For custom entry pages vvvvvvvvvvvvvvvvvvvv
+plusBtn.style.display = "block";
+// -------------------------------------------
+
 plusBtn.addEventListener('click', function () {
     let counter = 2;
     let allInput = document.querySelectorAll("input");
