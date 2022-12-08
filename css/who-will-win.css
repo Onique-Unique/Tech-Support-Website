@@ -45,9 +45,7 @@ body {
 }
 
 .body-fixed {
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%, 0);
+    overflow: hidden;
 }
 
 .page-tags {
@@ -261,7 +259,6 @@ input::placeholder {
     position: fixed;
     z-index: 1;
     padding-top: 100px;
-    left: 0;
     top: 50%;
     width: 100%;
     height: 100%;
