@@ -41,6 +41,8 @@ const select1 = document.getElementById("input1").value = inputField1;
 const select2 = document.getElementById("input2").value = inputField2;
 // --------------------------------------------------------------------
 
+let btnClick = 0;
+
 btn.addEventListener('click', function () {
 
     // Remove This Section For Custom Entries vvvvvvvvvvvvvvvvvv
@@ -54,6 +56,7 @@ btn.addEventListener('click', function () {
             emptyInputs++;
         }
     });
+    // For Custom Inputs to check if empty vvvv
     if (emptyInputs > 0) {
         alertPopup.style.display = 'block';
     } else {
@@ -63,6 +66,15 @@ btn.addEventListener('click', function () {
             winnerData[allInputs[randomNo].value] = 1;
         } else {
             winnerData[allInputs[randomNo].value] += 1;
+        }
+        if(btnClick < 1) {
+            // If Who Will Win btn is selected once then display promo popup
+            setTimeout(() => {
+                document.getElementsByClassName('popup')[0].style.display = 'block';
+                document.querySelector(".landing-page-visible").classList.add("popup-blur");
+                document.body.classList.add("page-body-popup-adjust");
+                btnClick++;
+            }, 10000);
         }
         let winnerDataText = '';
         for (let key in winnerData) {
@@ -373,7 +385,7 @@ document.onscroll = function () {
     }
 };
 
-let timer = setInterval(function () {
+setInterval(function () {
     if (showPopup == false) {
         showPopup = true;
         document.getElementsByClassName('popup')[0].style.display = 'block';
@@ -381,6 +393,7 @@ let timer = setInterval(function () {
     }
 }, 25000);
 
+// AdBlock Detector
 document.getElementById("adblock-info-insert").innerHTML = `
     <h3>Adblock Detected!</h3>
     <p>Our Website is made possible by dispaying ads to our visitors. Please show support by whitelisting our Website.</p>

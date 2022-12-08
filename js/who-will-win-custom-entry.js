@@ -40,6 +40,8 @@ plusBtn.addEventListener('click', function () {
     }
 });
 
+let btnClick = 0;
+
 btn.addEventListener('click', function () {
 
     const allInputs = document.querySelectorAll('#inputFields input');
@@ -52,6 +54,15 @@ btn.addEventListener('click', function () {
     if (emptyInputs > 0) {
         alertPopup.style.display = 'block';
         document.body.classList.add("body-fixed"); 
+        if(btnClick < 1) {
+            // If Who Will Win btn is selected once then display promo popup
+            setTimeout(() => {
+                document.getElementsByClassName('popup')[0].style.display = 'block';
+                document.querySelector(".landing-page-visible").classList.add("popup-blur");
+                document.body.classList.add("page-body-popup-adjust");
+                btnClick++;
+            }, 15000);
+        }
     } else {
         const randomNo = Math.floor(Math.random() * allInputs.length);
         winner.innerHTML = "🎉" + allInputs[randomNo].value;
@@ -59,6 +70,15 @@ btn.addEventListener('click', function () {
             winnerData[allInputs[randomNo].value] = 1;
         } else {
             winnerData[allInputs[randomNo].value] += 1;
+        }
+        if(btnClick < 1) {
+            // If Who Will Win btn is selected once then display promo popup
+            setTimeout(() => {
+                document.getElementsByClassName('popup')[0].style.display = 'block';
+                document.querySelector(".landing-page-visible").classList.add("popup-blur");
+                document.body.classList.add("page-body-popup-adjust");
+                btnClick++;
+            }, 10000);
         }
         let winnerDataText = '';
         for (let key in winnerData) {
@@ -363,7 +383,7 @@ document.onscroll = function () {
     }
 };
 
-let timer = setInterval(function () {
+setInterval(function timePopup() {
     if (showPopup == false) {
         showPopup = true;
         document.getElementsByClassName('popup')[0].style.display = 'block';
@@ -371,6 +391,7 @@ let timer = setInterval(function () {
     }
 }, 25000);
 
+// AdBlock Detector
 document.getElementById("adblock-info-insert").innerHTML = `
     <h3>Adblock Detected!</h3>
     <p>Our Website is made possible by dispaying ads to our visitors. Please show support by whitelisting our Website.</p>
