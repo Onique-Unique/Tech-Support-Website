@@ -13,7 +13,7 @@ const inputFields = document.querySelector('#inputFields');
 const winnerDataContainer = document.querySelector('#winnerData');
 
 // For custom entry pages vvvvvvvvvvvvvvvvvvvv
-plusBtn.style.display = "block !important";
+plusBtn.classList.remove("hide");
 // -------------------------------------------
 
 plusBtn.addEventListener('click', function () {
