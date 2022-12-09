@@ -24,7 +24,7 @@
     border: none;
     text-decoration: none;
     font-family: Poppins, sans-serif;
-    font-weight: lighter
+    font-weight: 400;
 }
 
 html {
@@ -829,7 +829,8 @@ table tbody {
 }
 
 table td {
-    padding: 1rem 2rem
+    padding: 1rem 2rem;
+    min-width: 100px;
 }
 
 table a {
@@ -842,6 +843,11 @@ table .status {
     background-color: red;
     padding: .2rem 1rem;
     text-align: center
+}
+
+table .status-mid {
+    background-color: #fff0c2;
+    color: #a68b00;
 }
 
 table .status-low {
