@@ -518,7 +518,7 @@ let timer = setInterval(function () {
     document.getElementsByClassName('popup')[0].style.display = 'block';
     document.body.classList.add("page-body-popup-adjust");
   }
-}, 25000);
+}, 20000);
 
 // Contact Send to avoid spam and hide email from email crawlers
 const contactSend = document.getElementById("contact-submit");

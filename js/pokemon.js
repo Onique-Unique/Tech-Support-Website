@@ -95,8 +95,21 @@ const typeColor = {
       typeColor.style.backgroundColor = color;
     });
   };
+
+  let btnClick = 0;
   
-  btn.addEventListener("click", getPokeData);
+  btn.addEventListener("click", () => {
+    getPokeData();
+    if(btnClick < 1) {
+      // If Who Will Win btn is selected once then display promo popup
+      setTimeout(() => {
+          document.getElementsByClassName('popup')[0].style.display = 'block';
+          document.querySelector(".landing-page-visible").classList.add("popup-blur");
+          document.body.classList.add("page-body-popup-adjust");
+          btnClick++;
+      }, 10000);
+  }
+  });
   window.addEventListener("load", getPokeData);
 
   const shareBtn = document.getElementById("button");
@@ -270,7 +283,7 @@ let timer = setInterval(function () {
     document.getElementsByClassName('popup')[0].style.display = 'block';
     document.body.classList.add("page-body-popup-adjust");
   }
-}, 25000);
+}, 20000);
 
 // Contact Send to avoid spam and hide email from email crawlers
 const contactSend = document.getElementById("contact-submit");
