@@ -1,29 +1,4 @@
-Header set Cache-Control "max-age=0, private, no-cache, no-store, must-revalidate"
-
-# mod_rewrite starts here
-
-Options +FollowSymLinks 
-
-RewriteEngine on
-
-# REDIRECT NON WWW TO WWW
-RewriteCond %{HTTP_HOST} ^feenixbloom.com [NC] 
-RewriteRule ^(.*)$ http://www.feenixbloom.com/$1 [L,R=301]
-
-# does not apply to existing directories, meaning that if the folder exists on the server then don't
-# change anything and don't run the Rule!
-
-RewriteCond %{REQUEST_FILENAME} !-d
-
-# Check for file in the directory with .html extemsion
-
-RewriteCond %{REQUEST_FILENAME}\.html -f
-
-# Here we actually show the page that  has the .html extension
-
-RewriteRule ^(.*)$ $1.html [NC, L]
-
-
+# mod_expires, mod_headers, mod_deflate and mod_gzip starts here
 ## EXPIRES CACHING ##
 <IfModule mod_expires.c>
 ExpiresActive On
@@ -39,6 +14,11 @@ ExpiresByType image/x-icon "access plus 1 year"
 ExpiresDefault "access plus 2 days"
 </IfModule>
 ## EXPIRES CACHING ##
+
+# Clickjacking Prevent Http Header
+<IfModule mod_headers.c>
+	Header always append X-Frame-Options SAMEORIGIN
+</IfModule>
 
 ## DEFLATE COMPRESSION ##
 <IfModule mod_deflate.c>
@@ -70,7 +50,6 @@ BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 </IfModule>
 ## DEFLATE COMPRESSION ##
 
-
 ## GZIP COMPRESSION ##
 <ifModule mod_gzip.c>
 mod_gzip_on Yes
@@ -84,9 +63,30 @@ mod_gzip_item_include handler ^cgi-script$
 </ifModule>
 ## GZIP COMPRESSION ##
 
-# Clickjacking Prevent Http Header
-<ifModule mod_headers.c>
-	Header always append X-Frame-Options SAMEORIGIN
-</ifModule
+# Cache-Control
+Header set Cache-Control "max-age=0, private, no-cache, no-store, must-revalidate"
+
+# mod_rewrite starts here
+
+Options +FollowSymLinks 
+
+RewriteEngine on
+
+# REDIRECT NON WWW TO WWW
+RewriteCond %{HTTP_HOST} ^feenixbloom.com [NC] 
+RewriteRule ^(.*)$ http://www.feenixbloom.com/$1 [L,R=301]
+
+# does not apply to existing directories, meaning that if the folder exists on the server then don't
+# change anything and don't run the Rule!
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Check for file in the directory with .html extemsion
+
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+# Here we actually show the page that  has the .html extension
+
+RewriteRule ^(.*)$ $1.html [NC, L]
 
 Redirect 301 /ads.txt https://srv.adstxtmanager.com/19390/feenixbloom.com
