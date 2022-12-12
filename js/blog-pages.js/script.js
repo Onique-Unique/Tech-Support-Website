@@ -454,6 +454,7 @@ setTimeout( () => {
   shoppingCartContainer.style.position = 'fixed';
   shoppingCartContainer.style.bottom = '20px';
   shoppingCartContainer.style.cursor = 'pointer';
+  shoppingCartContainer.style.zIndex = '99999999';
 
   // Design and create the shopping cart element and style
   let shoppingCart = document.createElement('div');
@@ -468,7 +469,6 @@ setTimeout( () => {
   shoppingCart.style.padding = '20px';
   shoppingCart.style.background = '#fff';
   shoppingCart.style.fontSize = '16px';
-  shoppingCart.style.zIndex = '99999999';
 
   // When shopping cart is clicked go to link
   shoppingCart.addEventListener("click", () => {
