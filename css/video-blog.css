@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-weight: 400;
 }
 
 :root {
@@ -54,6 +55,10 @@ svg {
 
 .hide {
     display: none;
+}
+
+.popup-blur {
+    filter: blur(3px);
 }
 
 .search-bar {
@@ -1254,5 +1259,327 @@ details[open] .faq__summary:after {
 @media (max-width: 560px) {
     .svg-wave {
         height: 180px !important; 
+    }
+}
+
+/* Affiliate Box */
+.aff-banner {
+    background-color: cornflowerblue; 
+    height: 130px; 
+    border-radius: 10px; 
+    margin: 20px 0;
+}
+
+.aff-discount {
+    text-align: center;
+    font-size: 1.6rem;
+    color: aliceblue;
+}
+
+.aff-code {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: aliceblue;
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.aff-banner-btn {
+    background-color: rgb(248 255 192); 
+    right: 50%; 
+    transform: translate(50%, -50%); 
+    padding: 15px 40px; 
+}
+
+@media (max-width: 540px){
+    .aff-banner-btn{
+        width: 80%;
+    }
+}
+
+/* media queries  */
+
+@media (max-width:991px) {
+
+    .header {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width:768px) {
+
+    #menu-bars {
+        display: inline-block;
+    }
+
+    .header .search-form {
+        top: 100%;
+        left: 0;
+        right: 0;
+        border-top: var(--border);
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border-top: var(--border);
+        border-bottom: var(--border);
+        background: #fff;
+        display: none;
+    }
+
+    .header .navbar.active {
+        display: block;
+    }
+
+    .header .navbar a {
+        display: block;
+        background: #1d3577;
+        padding: 1.5rem;
+        margin: 1.5rem;
+        border-radius: .5rem;
+        border: var(--border);
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .mobile-swipe-show {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .container .posts-container .post .title, .posts-accordion .panel .title {
+        font-size: 2.3rem;
+    }
+
+    .container .posts-container .post .title span:not(:last-child) {
+        font-size: 3rem;
+    }
+
+    .container .posts-container .post .text, .posts-accordion .panel .text, .posts-accordion .text {
+        font-size: 1.8rem;
+    }
+
+    .container .posts-container .post .image {
+        height: 30rem;
+        ;
+    }
+
+    .posts-accordion .panel {
+        padding: 2rem;
+    }
+
+    .footer {
+        flex-flow: column;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:450px) {
+    .item-box {
+        text-align: center;
+    }
+
+    .wrapper .item-box .suggested-item {
+        width: 70%;
+        height: 17rem;
+    }
+}
+
+/* Popup Box */
+
+.popup {
+    display: none;
+    z-index: 999999999;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.popup-content {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    min-height: 350px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    line-height: 2.2;
+}
+
+.exit-popup {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    font-size: large;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.popup-inner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+.popup-inner-content h3 {
+    font-size: 2rem;
+    color: red;
+    font-weight: bold;
+}
+#popup-main-h4 {
+    font-size: 1.6rem;
+    line-height: 1;
+    color: crimson;
+    margin-bottom: 5px;
+}
+#span-head {
+    font-size: 2.1rem;
+    color: #3e9231;
+    font-style: italic;
+    text-decoration: underline;
+}
+.coupon-text {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    margin-top: 1.2rem;
+}
+#coupon-code {
+    background: #38491d;
+    padding: 1px 10px;
+    color: white;
+}
+.popup-btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 1.5rem;
+    background-color: #ffe500;
+    margin-top: 20px;
+    animation: popup-blink 3s ease-in-out infinite;
+}
+
+@keyframes popup-blink {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: .6;
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width:450px) {
+    .popup-content {
+        min-height: 450px;
+    }
+}
+
+@media (max-width:960px) {
+    .popup-content {
+        width: 70%;
+    }
+}
+
+/* Exit Intent Detect Modal */
+.exit-intent-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    z-index: 999;
+    text-align: center;
+    padding: 30px;
+    display: none;
+}
+
+.modal-div-container {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+.exit-intent-modal h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.exit-intent-modal p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.special-offer {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.special-offer h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.special-offer p {
+    font-size: 14px;
+}
+
+.close-modal-btn {
+    margin-top: 20px;
+    background-color: cornflowerblue;
+    padding: 1rem 4rem;
+    border-radius: 20px;
+    color: white;
+}
+
+/* Shopping Cart Wiggle Animation */
+.wiggle {
+    animation: wiggle 0.3s ease-in-out 0s both;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: translateX(-2px);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(2px);
+        opacity: .8;
+    }
+    100% {
+        transform: translateX(-2px);
+        opacity: 1;
     }
 }

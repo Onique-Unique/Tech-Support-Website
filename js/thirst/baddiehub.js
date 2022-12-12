@@ -384,3 +384,89 @@ cancelPay.addEventListener("click", () => {
      }
    });
  });
+
+// Affiliate Shopping Chat Notification Bot
+setTimeout( () => {
+  // Create shopping container div to be positioned at end of page
+  let shoppingCartContainer = document.createElement('div');
+  shoppingCartContainer.className = 'shopping-cart-container';
+  shoppingCartContainer.style.width = "100%";
+  shoppingCartContainer.style.position = 'fixed';
+  shoppingCartContainer.style.bottom = '20px';
+  shoppingCartContainer.style.cursor = 'pointer';
+
+  // Design and create the shopping cart element and style
+  let shoppingCart = document.createElement('div');
+  shoppingCart.className = 'shopping-cart';
+  shoppingCart.style.position = "absolute";
+  shoppingCart.style.right = '10px';
+  shoppingCart.style.bottom = '50px';
+  shoppingCart.style.width = '60px';
+  shoppingCart.style.height = '60px';
+  shoppingCart.style.borderRadius = '100%';
+  shoppingCart.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.3)';
+  shoppingCart.style.padding = '20px';
+  shoppingCart.style.background = '#fff';
+  shoppingCart.style.fontSize = '16px';
+  shoppingCart.style.zIndex = '99999999';
+
+  // When shopping cart is clicked go to link
+  shoppingCart.addEventListener("click", () => {
+    document.location.href = `${goToAffiliateLink}`;
+  });
+
+  // Adding the shopping icon with style
+  let shoppingCartIcon = document.createElement('div');
+  shoppingCartIcon.innerHTML = `<i class="fa-brands fa-amazon"></i>`;
+  shoppingCartIcon.style.fontSize = "4rem";
+  shoppingCartIcon.style.position = "absolute";
+  shoppingCartIcon.style.top = "50%";
+  shoppingCartIcon.style.left = "50%";
+  shoppingCartIcon.style.transform = "translate(-50%, -50%)";
+  shoppingCartIcon.style.color = "rebeccapurple";
+
+  // Appending the elements
+  shoppingCart.appendChild(shoppingCartIcon);
+  shoppingCartContainer.appendChild(shoppingCart);
+
+  // Create the notification display elements and design
+  let notification = document.createElement('div');
+  notification.className = 'shopping-cart__notification';
+  notification.style.position = 'absolute';
+  notification.style.bottom = '115px';
+  notification.style.right = '20px';
+  notification.style.padding = '1px 5px';
+  notification.style.fontSize = '11px';
+  notification.style.borderRadius = '0 5px 0 0';
+  notification.style.color = '#fff';
+  notification.style.background = '#3F51B5';
+  notification.style.textAlign = 'center';
+  notification.style.zIndex = '99999999';
+
+  // Create notification text area to display
+  let notificationText = document.createElement('span');
+  notificationText.innerHTML = 'New deals available every single day!';
+
+  // Append elements
+  notification.appendChild(notificationText);
+  shoppingCartContainer.appendChild(notification);
+  document.body.appendChild(shoppingCartContainer);
+
+  // Start the timer
+  setInterval(function() {
+      // Create random notification message
+      let messages = [ 'Purchases get free shipping!', 'Shop exclusive collections and save big!', 'Unlock savings today!', 'Shop top picks and save!', 'Get exclusive deals and discounts!', 'Claim personalized discounts!', 'New deals available!', 'Buy now and enjoy the benefits!', 'Don\'t wait, buy now!', 'Get the best deals now!', 'Click and shop for deals!', 'Don\'t miss out, buy now!', 'Get yours now and save!', 'Try it now and save big!', 'Save big on your purchase!', 'Don\'t delay, shop now!', 'Enjoy big savings now!', 'Take advantage now and save!', 'Get yours now and enjoy the savings!', 'Act now and get yours today!', 'Hurry, before limited time offers end!', 'Buy now and save more!', 'Get yours before they\'re gone!', 'Check out these new offers!', 'Don\'t miss out, act now!', 'Grab these deals now!', 'Shop now and save big!' ];
+      let randomMessage = messages[Math.floor(Math.random() * messages.length)];
+      // Update the notification text
+      document.querySelector('.shopping-cart__notification span').innerHTML = randomMessage;
+  }, 10000);
+
+  // Shopping cart animation to correspond with text change timing
+  shoppingCartContainer.addEventListener('animationend', () => {
+    shoppingCartContainer.classList.remove('wiggle');
+  });
+
+  setInterval(function() {
+    shoppingCartContainer.classList.add('wiggle');
+  }, 10000);
+}, 1500);

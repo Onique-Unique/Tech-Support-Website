@@ -1110,3 +1110,23 @@
         width: 70%;
     }
 }
+
+/* Shopping Cart Wiggle Animation */
+.wiggle {
+    animation: wiggle 0.3s ease-in-out 0s both;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: translateX(-2px);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(2px);
+        opacity: .8;
+    }
+    100% {
+        transform: translateX(-2px);
+        opacity: 1;
+    }
+}
