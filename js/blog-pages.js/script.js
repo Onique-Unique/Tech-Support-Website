@@ -565,6 +565,7 @@ for (let i = 0; i < textElements.length; i++) {
 	textElements[i].addEventListener("mousedown", function(event) {
 		if (event.target.tagName != "a") {
 			event.preventDefault();
+      textElements[i].style.userSelect = "none";
 		}
 	});
 }
