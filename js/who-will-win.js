@@ -592,3 +592,52 @@ setTimeout( () => {
       shoppingCartContainer.classList.add('wiggle');
     }, 10000);
   }, 1500);
+
+  // Protect Page from unwanted content stealing, plagiarism etc such as copying content or inspect element...
+// Create error message box and design
+let errorMessage = document.createElement('div');
+errorMessage.className = 'error-message';
+errorMessage.style.background = 'ghostwhite';
+errorMessage.style.color = 'red';
+errorMessage.style.padding = '10px';
+errorMessage.style.position = 'fixed';
+errorMessage.style.top = '50%';
+errorMessage.style.left = '50%';
+errorMessage.style.transform = 'translate(-50%, -50%)';
+errorMessage.style.borderRadius = '5px';
+errorMessage.style.zIndex = '2';
+errorMessage.style.fontSize = '1.2rem';
+errorMessage.style.display = 'none';
+errorMessage.innerText = 'Not Allowed: This page is protected!';
+document.body.appendChild(errorMessage);
+
+// Listen for right click on page then display error message
+document.addEventListener("contextmenu", function(event) {
+	errorMessage.style.display = 'block';
+  setTimeout(function(){
+    errorMessage.style.display = 'none';
+  }, 1000);
+	event.preventDefault();
+});
+
+// Find all text elements on page excluding anchor tags, images etc, listen for mousedown/ long press then display error message
+let textElements = document.querySelectorAll('p, span, h1, h2, h3, h4, h5, h6');
+
+for (let i = 0; i < textElements.length; i++) {
+	textElements[i].addEventListener("mousedown", function(event) {
+		if (event.target.tagName != "a") {
+			event.preventDefault();
+		}
+	});
+}
+
+// Listen for keyboard control A or control C or control shift J on page then display error message
+document.addEventListener("keydown", function(event) {
+	if (event.ctrlKey && event.keyCode == 65 || event.ctrlKey && event.keyCode == 67 || event.ctrlKey && event.shiftKey && event.keyCode == 74) {
+		errorMessage.style.display = 'block';
+    setTimeout(function(){
+      errorMessage.style.display = 'none';
+    }, 1000);
+		event.preventDefault();
+	}
+});
