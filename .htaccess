@@ -25,6 +25,11 @@ ExpiresDefault "access plus 2 days"
 	Header set Referrer-Policy "same-origin"
 </IfModule>
 
+# Prevent clickjacking attempts using content security policy http header
+<IfModule mod_headers.c>
+	Header set Content-Security-Policy "frame-ancestors 'none'"
+</IfModule>
+
 ## DEFLATE COMPRESSION ##
 <IfModule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/html
