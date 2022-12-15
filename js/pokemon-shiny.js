@@ -725,6 +725,10 @@ errorMessage.style.zIndex = '2';
 errorMessage.style.fontSize = '1.2rem';
 errorMessage.style.display = 'none';
 errorMessage.innerText = 'Not Allowed: This page is protected!';
+document.body.style.userSelect = "none";
+document.body.style.WebkitUserSelect = "none";
+document.body.style.msUserSelect = "none";
+document.body.style.oUserSelect = "none";
 document.body.appendChild(errorMessage);
 
 // Listen for right click on page then display error message
@@ -741,10 +745,6 @@ let textElements = document.querySelectorAll('p, span, h1, h2, h3, h4, h5, h6');
 
 for (let i = 0; i < textElements.length; i++) {
 	textElements[i].addEventListener("mousedown", function(event) {
-    textElements[i].style.userSelect = "none";
-    textElements[i].style.WebkitUserSelect = "none";
-    textElements[i].style.msUserSelect = "none";
-    textElements[i].style.oUserSelect = "none";
 		if (event.target.tagName != "a") {
 			event.preventDefault();
 		}
