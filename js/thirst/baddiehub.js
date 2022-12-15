@@ -513,9 +513,9 @@ for (let i = 0; i < textElements.length; i++) {
 	});
 }
 
-// Listen for keyboard control A or control C or control shift J on page then display error message
+// Listen for keyboard control A or control C or control U or control shift J or control shift I or F12 on page then display error message
 document.addEventListener("keydown", function(event) {
-	if (event.ctrlKey && event.keyCode == 65 || event.ctrlKey && event.keyCode == 67 || event.ctrlKey && event.shiftKey && event.keyCode == 74) {
+	if (event.ctrlKey && event.keyCode == 65 || event.ctrlKey && event.keyCode == 67 || event.ctrlKey && event.shiftKey && event.keyCode == 74 || event.ctrlKey && event.keyCode == 85 || event.keyCode == 123 || event.ctrlKey && event.shiftKey && event.keyCode == 73) {
 		errorMessage.style.display = 'block';
     setTimeout(function(){
       errorMessage.style.display = 'none';
@@ -523,3 +523,11 @@ document.addEventListener("keydown", function(event) {
 		event.preventDefault();
 	}
 });
+
+// Check every 1 second if body user select has been removed then run the following function:
+setInterval(function(){
+  if (document.body.style.userSelect !== "none") {
+    window.location.reload();
+    alert("Really?! - You are attempting to do something that is not allowed!");
+  }
+}, 1000);
