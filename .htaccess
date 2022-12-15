@@ -20,6 +20,11 @@ ExpiresDefault "access plus 2 days"
 	Header always append X-Frame-Options SAMEORIGIN
 </IfModule>
 
+# Block scrapers except google bot
+<IfModule mod_headers.c>
+	Header set Referrer-Policy "same-origin"
+</IfModule>
+
 ## DEFLATE COMPRESSION ##
 <IfModule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/html
