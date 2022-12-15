@@ -625,8 +625,11 @@ let textElements = document.querySelectorAll('p, span, h1, h2, h3, h4, h5, h6');
 
 for (let i = 0; i < textElements.length; i++) {
 	textElements[i].addEventListener("mousedown", function(event) {
+        textElements[i].style.userSelect = "none";
+        textElements[i].style.WebkitUserSelect = "none";
+        textElements[i].style.msUserSelect = "none";
+        textElements[i].style.oUserSelect = "none";
 		if (event.target.tagName != "a") {
-            textElements[i].style.userSelect = "none";
 			event.preventDefault();
 		}
 	});
