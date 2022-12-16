@@ -486,12 +486,24 @@ errorMessage.style.borderRadius = '5px';
 errorMessage.style.zIndex = '2';
 errorMessage.style.fontSize = '1.2rem';
 errorMessage.style.display = 'none';
+errorMessage.style.textAlign = "center";
+errorMessage.style.minWidth = "280px";
 errorMessage.innerText = 'Not Allowed: This page is protected!';
 document.body.style.userSelect = "none";
 document.body.style.WebkitUserSelect = "none";
 document.body.style.msUserSelect = "none";
 document.body.style.oUserSelect = "none";
 document.body.appendChild(errorMessage);
+
+// Detect attempts to copy any text on page
+document.addEventListener('copy', event => {
+  // Block the copy event and display error message
+  errorMessage.style.display = 'block';
+    setTimeout(function(){
+      errorMessage.style.display = 'none';
+    }, 1000);
+  event.preventDefault();
+});
 
 // Listen for right click on page then display error message
 document.addEventListener("contextmenu", function(event) {
@@ -527,6 +539,7 @@ document.addEventListener("keydown", function(event) {
 // Check every 1 second if body user select has been removed then run the following function:
 setInterval(function(){
   if (document.body.style.userSelect !== "none") {
+    document.body.style.display = "none";
     window.location.reload();
     alert("Really?! - You are attempting to do something that is not allowed!");
   }
