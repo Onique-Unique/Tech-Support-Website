@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap Page</title>
+</head>
+<body>
+    <script>
+         // Check if current page is sitemap page and display sitemap data if it is
+        if (window.location.pathname === '/view-sitemap.html') {
+        var preElement = document.createElement('pre');
+        preElement.innerText = localStorage.getItem('sitemapGen');
+        document.body.appendChild(preElement);
+        }
+    </script>
+</body>
+</html>
