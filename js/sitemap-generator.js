@@ -26,10 +26,18 @@ if (link.hostname == domain && !link.href.includes('#')) {
 }
 }
 
+// Sitemap Links Found Counter
+var linkCount = linkHrefs.length + 1;
+var counterElement = document.createElement('div');
+counterElement = `<!--Current Sitemap links: ${linkCount}-->`;
+
 sitemapGen += '</urlset>';
 
 // Store sitemap data in local storage
 localStorage.setItem('sitemapGen', sitemapGen);
+
+// Store counted links data in local storage
+localStorage.setItem('linkCount', counterElement);
 
 // Create a link for the sitemap - Uncomment If Needed
 // var linkElement = document.createElement('a');

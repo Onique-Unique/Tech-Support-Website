@@ -1,10 +1,11 @@
 // Related Links
 window.onload = function () {
     // Array of links and anchor link name to be related by category by order
-    var relatedLinks = ["/search-guide/article/what-is-a-youth-size-medium","/search-guide/article/what-is-a-youth-xs-size","/search-guide/article/what-is-a-youth-size-large",];
+    var relatedLinks = ["/search-guide/article/what-is-a-youth-size-medium","/search-guide/article/what-is-a-youth-xs-size","/search-guide/article/what-is-a-youth-size-large","/search-guide/article/what-size-is-youth-small",
+    "/search-guide/article/what-are-youth-sizes-in-clothes","/search-guide/article/what-are-youth-shoe-sizes",];
 
 
-    var aLinkName = ["What is Youth Size Medium?","What is Youth XS Size?","What is Youth Size Large?",];
+    var aLinkName = ["What is Youth Size Medium?","What is Youth XS Size?","What is Youth Size Large?","What Size is Youth Small","What Are Youth Sizes In Clothes","What Are Youth Shoe Sizes",];
     
     // store url pathname as string into current variable 
     const currentUrl = window.location.pathname.toString();

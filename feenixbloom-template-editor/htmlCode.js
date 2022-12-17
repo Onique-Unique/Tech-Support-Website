@@ -31,8 +31,8 @@ let htmlCode_first = `<!DOCTYPE html>
                     "@type": "SpeakableSpecification",
                     "xpath": ["/html/head/title", "/html/head/meta[@name='description']/@content"]
                 },
-                "datePublished": "2022-12-13",
-                "dateModified": "2022-12-13",
+                "datePublished": "2022-12-18",
+                "dateModified": "2022-12-18",
                 "author": [{
                     "@type": "Person",
                     "name": "Onique Campbell",
@@ -203,7 +203,7 @@ let htmlCode_first = `<!DOCTYPE html>
                     <div class="h1-blog">
                         <h1 class="title"><span>Here it is:</span><b id="share-title"> { .title } </b><span class="yearInsert"></span>! </h1>
                         <div class="date">
-                            <i class="far fa-clock"></i><a href="#">&nbsp; Onique Campbell</a> &bull; <span><time datetime="2022-12-13">Dec 13, 2022</time></span>
+                            <i class="far fa-clock"></i><a href="#">&nbsp; Onique Campbell</a> &bull; <span><time datetime="2022-12-18">Dec 18, 2022</time></span>
                         </div>
                         <div class="breadcrumbs-container" itemscope itemtype="https://schema.org/BreadcrumbList">
                             <ul class="breadcrumbs breadcrumbs-alt" aria-label="Breadcrumbs">

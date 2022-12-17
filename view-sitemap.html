@@ -12,7 +12,7 @@
          // Check if current page is sitemap page and display sitemap data if it is
         if (window.location.pathname === '/view-sitemap.html') {
         var preElement = document.createElement('pre');
-        preElement.innerText = localStorage.getItem('sitemapGen');
+        preElement.innerText = localStorage.getItem('linkCount') + "\n" + localStorage.getItem('sitemapGen');
         document.body.appendChild(preElement);
         }
     </script>
