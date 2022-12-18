@@ -7,7 +7,23 @@ var domainXML = `
 <lastmod>${new Date().toISOString()}</lastmod>
 <priority>1.00</priority>
 </url>`;
-var sitemapGen = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" \n xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" \n xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 \n http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">\n ${domainXML} \n`;
+
+// Count all unique links/ anchor tags related to hostname, to be displayed: amount in Sitemap
+var anchors = document.querySelectorAll('a[href]');
+var hostname = window.location.hostname;
+var anchorsWithHostname = [];
+
+for (var i = 0; i < anchors.length; i++) {
+  var anchor = anchors[i];
+  var link = anchor.href;
+  if (link.includes(hostname) && !link.includes('#')) {
+    if (anchorsWithHostname.indexOf(link) === -1) {
+      anchorsWithHostname.push(link);
+    }
+  }
+}
+
+var sitemapGen = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" \n xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" \n xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 \n http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"> \n\n <!--Current Sitemap links: ${anchorsWithHostname.length + 1} --> \n ${domainXML} \n`;
 var linkHrefs = [];
 
 for (let link of links) {
@@ -25,11 +41,6 @@ if (link.hostname == domain && !link.href.includes('#')) {
     }
 }
 }
-
-// Sitemap Links Found Counter
-var linkCount = linkHrefs.length + 1;
-var counterElement = document.createElement('div');
-counterElement = `<!--Current Sitemap links: ${linkCount}-->`;
 
 sitemapGen += '</urlset>';
 
