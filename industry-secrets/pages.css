@@ -90,6 +90,24 @@ li {
     cursor: pointer;
     text-align: center;
     line-height: 50px;
+    animation: blink-fade 3s ease-in-out infinite;
+}
+
+@keyframes blink-fade {
+    0% {
+        opacity: .8;
+        transform:translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform:translate(-50%, -50%)scale(1.1);
+    }
+
+    100% {
+        opacity: .8;
+        transform:translate(-50%, -50%) scale(1);
+    }
 }
 
 .popup-content,
