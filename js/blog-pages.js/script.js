@@ -148,50 +148,56 @@ if (shareBtn) {
 //                         clearInterval(finishReport)}}, 3000);
 
 // Affiliate Link stored in variable
-const goToAffiliateLink = "https://www.amazon.com?&linkCode=ll2&tag=oniquecampbel-20&linkId=9e1e91f2e3d89d93e1684445475d82ee&language=en_US&ref_=as_li_ss_tl";
+// Amazon Version ------------------------------------
+// const goToAffiliateLink = "https://www.amazon.com?&linkCode=ll2&tag=oniquecampbel-20&linkId=9e1e91f2e3d89d93e1684445475d82ee&language=en_US&ref_=as_li_ss_tl";
+
+// Personal Product
+const goToAffiliateLink = "https://www.feenixbloom.com/industry-secrets/celebrity-beauty";
 
 // Coupon Select/ Display for Popup
-let springCoupons = [ { code: "SUMMERFUN20", discount: "20% off" }, { code: "NEWYEAR30", discount: "30% off" }, { code: "SUPERSALE20", discount: "20% off" }, { code: "SUMMERFUN30", discount: "30% off" }, { code: "SPRINGFREE50", discount: "Free shipping over $50" }, { code: "SPRING20OFF", discount: "20% off" }, { code: "MARCH20OFF", discount: "20% off" }, { code: "SPRINGSALE10", discount: "10% off" }, { code: "APRIL15OFF", discount: "15% off" }, { code: "SPRING50OFF", discount: "50% off" }, { code: "SPRING15", discount: "15% Off Your Purchase" }, { code: "BREEZE25", discount: "25% off" }, { code: "HOLIDAY40", discount: "40% Off Your Purchase" }, { code: "EASTER20", discount: "20% Off Easter Baskets and Decor" }, { code: "MEMDAY10", discount: "10% Off Memorial Day" } ];
+// Amazon Version -------------------------------------------------------------------------------------------------
+// let springCoupons = [ { code: "SUMMERFUN20", discount: "20% off" }, { code: "NEWYEAR30", discount: "30% off" }, { code: "SUPERSALE20", discount: "20% off" }, { code: "SUMMERFUN30", discount: "30% off" }, { code: "SPRINGFREE50", discount: "Free shipping over $50" }, { code: "SPRING20OFF", discount: "20% off" }, { code: "MARCH20OFF", discount: "20% off" }, { code: "SPRINGSALE10", discount: "10% off" }, { code: "APRIL15OFF", discount: "15% off" }, { code: "SPRING50OFF", discount: "50% off" }, { code: "SPRING15", discount: "15% Off Your Purchase" }, { code: "BREEZE25", discount: "25% off" }, { code: "HOLIDAY40", discount: "40% Off Your Purchase" }, { code: "EASTER20", discount: "20% Off Easter Baskets and Decor" }, { code: "MEMDAY10", discount: "10% Off Memorial Day" } ];
 
-let summerCoupons = [ { code: "SALE25OFF", discount: "25% off" }, { code: "FREESHIPPING50", discount: "Free shipping over $50" }, { code: "SUPERSALE20", discount: "20% off" }, { code: "FREESHIPJUNE50", discount: "Free shipping over $50" }, { code: "SUMMER20OFF", discount: "20% off" }, { code: "JULY10OFF", discount: "10% off" }, { code: "JULY30OFF", discount: "30% off" }, { code: "AUGUST15OFF", discount: "15% off" }, { code: "SUMMER50OFF", discount: "50% off" }, { code: "SUMMERSHIP20", discount: "Free shipping over $20" }, { code: "HOLIDAY40", discount: "40% Off Your Purchase" }, { code: "BTS10", discount: "10% Off Back To School Supplies" }, { code: "FOURTH20", discount: "20% Off Fourth of July" } ];
+// let summerCoupons = [ { code: "SALE25OFF", discount: "25% off" }, { code: "FREESHIPPING50", discount: "Free shipping over $50" }, { code: "SUPERSALE20", discount: "20% off" }, { code: "FREESHIPJUNE50", discount: "Free shipping over $50" }, { code: "SUMMER20OFF", discount: "20% off" }, { code: "JULY10OFF", discount: "10% off" }, { code: "JULY30OFF", discount: "30% off" }, { code: "AUGUST15OFF", discount: "15% off" }, { code: "SUMMER50OFF", discount: "50% off" }, { code: "SUMMERSHIP20", discount: "Free shipping over $20" }, { code: "HOLIDAY40", discount: "40% Off Your Purchase" }, { code: "BTS10", discount: "10% Off Back To School Supplies" }, { code: "FOURTH20", discount: "20% Off Fourth of July" } ];
 
-let fallCoupons = [ { code: "BLACKFRIDAY50", discount: "50% off" }, { code: "HALLOWEEN30", discount: "30% off" }, { code: "CYBERMONDAY30", discount: "30% off" }, { code: "LABORDAY25", discount: "25% off" }, { code: "OCTOBERSALE20", discount: "20% off" }, { code: "FALL20OFF", discount: "20% off" }, { code: "SEPT10OFF", discount: "10% off" }, { code: "OCTOBER30OFF", discount: "30% off" }, { code: "NOVEMBER15OFF", discount: "15% off" }, { code: "FALL50OFF", discount: "50% off" }, { code: "FALLSHIP20", discount: "Free shipping over $20" }, { code: "AUTUMN30 ", discount: "30% off" }, { code: "HOLIDAY40", discount: "40% Off Your Purchase" }, { code: "FALLSALE", discount: "15% Off Fall Apparel" } ];
+// let fallCoupons = [ { code: "BLACKFRIDAY50", discount: "50% off" }, { code: "HALLOWEEN30", discount: "30% off" }, { code: "CYBERMONDAY30", discount: "30% off" }, { code: "LABORDAY25", discount: "25% off" }, { code: "OCTOBERSALE20", discount: "20% off" }, { code: "FALL20OFF", discount: "20% off" }, { code: "SEPT10OFF", discount: "10% off" }, { code: "OCTOBER30OFF", discount: "30% off" }, { code: "NOVEMBER15OFF", discount: "15% off" }, { code: "FALL50OFF", discount: "50% off" }, { code: "FALLSHIP20", discount: "Free shipping over $20" }, { code: "AUTUMN30 ", discount: "30% off" }, { code: "HOLIDAY40", discount: "40% Off Your Purchase" }, { code: "FALLSALE", discount: "15% Off Fall Apparel" } ];
 
-let winterCoupons = [ { code: "THANKS35", discount: "35% Off" }, { code: "FREESHIPPINGNOV50", discount: "Free shipping over $50" }, { code: "THANKSGIVING30", discount: "30% off" }, { code: "BLACKFRIDAY50", discount: "50% off" }, { code: "CYBERMONDAY35", discount: "35% off" }, { code: "CHRISTMAS20", discount: "20% off" }, { code: "WINTER20OFF", discount: "20% off" }, { code: "DECEMBER10OFF", discount: "10% off" }, { code: "JANUARY30OFF", discount: "30% off" }, { code: "FEBRUARY15OFF", discount: "15% off" }, { code: "WINTER50OFF", discount: "50% off" }, { code: "WINTERSHIP20", discount: "Free shipping over $20" }, { code: "WINTER35", discount: "35% off" }, { code: "HOLIDAY40", discount: "40% Off Your Purchase" }, { code: "XMAS50", discount: "50% off" }, { code: "NEWYEAR60", discount: "60% off" }, { code: "WINTERBLUE", discount: "20% off" }, { code: "SNOW20", discount: "20% Off" } ];
+// let winterCoupons = [ { code: "THANKS35", discount: "35% Off" }, { code: "FREESHIPPINGNOV50", discount: "Free shipping over $50" }, { code: "THANKSGIVING30", discount: "30% off" }, { code: "BLACKFRIDAY50", discount: "50% off" }, { code: "CYBERMONDAY35", discount: "35% off" }, { code: "CHRISTMAS20", discount: "20% off" }, { code: "WINTER20OFF", discount: "20% off" }, { code: "DECEMBER10OFF", discount: "10% off" }, { code: "JANUARY30OFF", discount: "30% off" }, { code: "FEBRUARY15OFF", discount: "15% off" }, { code: "WINTER50OFF", discount: "50% off" }, { code: "WINTERSHIP20", discount: "Free shipping over $20" }, { code: "WINTER35", discount: "35% off" }, { code: "HOLIDAY40", discount: "40% Off Your Purchase" }, { code: "XMAS50", discount: "50% off" }, { code: "NEWYEAR60", discount: "60% off" }, { code: "WINTERBLUE", discount: "20% off" }, { code: "SNOW20", discount: "20% Off" } ];
 
-// add function that checks current date, if the date is season relative then select a random coupon code from that list
+// // add function that checks current date, if the date is season relative then select a random coupon code from that list
 
-function getCouponCodeBySeason() {
-  let currentDate = new Date();
-  let month = currentDate.getMonth() + 1;
-  let coupons;
+// function getCouponCodeBySeason() {
+//   let currentDate = new Date();
+//   let month = currentDate.getMonth() + 1;
+//   let coupons;
 
-  if (month >= 3 && month <= 5) {
-    coupons = springCoupons;
-  } else if (month >= 6 && month <= 8) {
-    coupons = summerCoupons;
-  } else if (month >= 9 && month <= 11) {
-    coupons = fallCoupons;
-  } else if (month === 0 || month === 1 || month === 2 || month === 12) {
-    coupons = winterCoupons;
-  }
+//   if (month >= 3 && month <= 5) {
+//     coupons = springCoupons;
+//   } else if (month >= 6 && month <= 8) {
+//     coupons = summerCoupons;
+//   } else if (month >= 9 && month <= 11) {
+//     coupons = fallCoupons;
+//   } else if (month === 0 || month === 1 || month === 2 || month === 12) {
+//     coupons = winterCoupons;
+//   }
 
-  // exclude all codes that have a month name that is not equal to current month
-  let filteredCoupons = coupons.filter(coupon => {
-    let code = coupon.code;
-    let monthName = code.substring(0, 3).toUpperCase();
-    let months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
-    let currentMonth = months[month -1];
-    return currentMonth !== monthName;
-  });
+//   // exclude all codes that have a month name that is not equal to current month
+//   let filteredCoupons = coupons.filter(coupon => {
+//     let code = coupon.code;
+//     let monthName = code.substring(0, 3).toUpperCase();
+//     let months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+//     let currentMonth = months[month -1];
+//     return currentMonth !== monthName;
+//   });
 
-  let randomIndex = Math.floor(Math.random() * filteredCoupons.length);
-  let selectedCoupon = filteredCoupons[randomIndex];
-  return selectedCoupon;
-}
+//   let randomIndex = Math.floor(Math.random() * filteredCoupons.length);
+//   let selectedCoupon = filteredCoupons[randomIndex];
+//   return selectedCoupon;
+// }
 
-let couponCode = getCouponCodeBySeason();
-console.log(couponCode);
+// let couponCode = getCouponCodeBySeason();
+// console.log(couponCode);
+// -------------------------------------------------------------------------------------------------------------------------
 
 // Onpage Popup 
 const userSearch = document.getElementById("main-post-1").innerText;
@@ -205,27 +211,47 @@ let popupInnerContent = document.createElement('div');
 popupInnerContent.className = 'popup-inner-content';
 
 let h3 = document.createElement('h3');
-let h3Text = document.createTextNode('Hurry!!');
+
+// Heading Change here
+let h3Text = document.createTextNode('Celebrity Skin');
 h3.appendChild(h3Text);
 
 let h4Main = document.createElement('h4');
 h4Main.id = "popup-main-h4";
-h4Main.innerHTML = `Interested In ${userSearch}?`;
+
+// Amazon Version ---------------------------------------
+// h4Main.innerHTML = `Interested In ${userSearch}?`;
 
 let h4Secondary = document.createElement('h4');
-h4Secondary.innerHTML = `<span id="span-head">Amazon</span> is showcasing special deals right now on the products you want to buy`;
+h4Secondary.style.fontSize = "1.6rem";
+// Amazon Version --------------------------------------------
+// h4Secondary.innerHTML = `<span id="span-head">Amazon</span> is showcasing special deals right now on the products you want to buy`;
+
+// Personal Product
+h4Secondary.innerHTML = `<span id="span-head">Hey there! </span> Did you know that celebrities are using this very simple trick to earn beautiful skin?`;
 
 let p = document.createElement('p');
-let pText = document.createTextNode('Go quick and save your items to cart to lock in these deals for the holidays..');
+// Amazon Version -----------------------------------------------
+// let pText = document.createTextNode('Go quick and save your items to cart to lock in these deals for the holidays..');
+
+// Personal Product
+let pText = document.createTextNode('Our downloadable guide is packed with simple, yet effective tips and tricks that have been proven to work.');
 p.appendChild(pText);
 
 let pCoupon = document.createElement('p');
 pCoupon.className = "coupon-text";
-pCoupon.innerHTML = `Missed Your Chance To Use Coupon? Try One Now:<br><br> <span id="coupon-code">${couponCode.code}</span>`;
+
+// Amazon Version -----------------------------------------------
+// pCoupon.innerHTML = `Missed Your Chance To Use Coupon? Try One Now:<br><br> <span id="coupon-code">${couponCode.code}</span>`;
+
+// Personal Product
+pCoupon.innerHTML = `We shared it here all just for you!`;
 
 let pCouponText = document.createElement('p');
 pCouponText.className = "coupon-text";
-pCouponText.innerHTML = `${couponCode.discount}`;
+
+// Amazon Version -----------------------------------------------
+// pCouponText.innerHTML = `${couponCode.discount}`;
 
 let popupURLBtn = document.createElement('button');
 popupURLBtn.className = "popup-btn";
@@ -264,7 +290,7 @@ function gotoURL() {
 }
 
 document.onscroll = function () {
-  if (window.scrollY > (window.innerHeight * 2) && showPopup) {
+  if (window.scrollY > (window.innerHeight * 1.8) && showPopup) {
     document.getElementsByClassName('popup')[0].style.display = 'block';
     document.querySelector(".main-section").classList.add("popup-blur");
   }
@@ -307,12 +333,22 @@ h2Elements.forEach((h2Element, index) => {
     // Create Discount Text
     let affDiscount = document.createElement('p');
     affDiscount.className = 'aff-discount';
-    affDiscount.innerText = `${couponCode.discount}`;
+
+    // Amazon Version -------------------------------------
+    // affDiscount.innerText = `${couponCode.discount}`;
+
+    // Personal Product
+    affDiscount.innerText = "Celebrity Skincare Tricks!";
 
     // Create Coupon Text
     let affCode = document.createElement('p');
     affCode.className = 'aff-code';
-    affCode.innerHTML = `Try Coupon: <span class="aff-code-span">${couponCode.code}</span> Using Link`;
+
+    // Amazon Version -------------------------------------
+    // affCode.innerHTML = `Try Coupon: <span class="aff-code-span">${couponCode.code}</span> Using Link`;
+
+    // Personal Product
+    affCode.innerHTML = `<span class="aff-code-span">Keep It Secret</span> Use The Link`;
 
     // Create the button element
     let button = document.createElement('button');
@@ -321,7 +357,12 @@ h2Elements.forEach((h2Element, index) => {
     // Create the text element
     let text = document.createElement('p');
     text.className = 'mini-banner-text';
-    text.innerText = 'View On Amazon + Cheapest!';
+
+    // Amazon Version ------------------------------------
+    // text.innerText = 'View On Amazon + Cheapest!';
+
+    // Personal Product
+    text.innerHTML = `Don't Skip, Get It Now! &nbsp`;
 
     // Create the icon element
     let icon = document.createElement('i');
@@ -388,16 +429,29 @@ function isInViewport(element) {
  document.body.appendChild(exitIntentModal);
  
  // Add the modal content
-     let modalContent = `
+//  Amazon Version ------------------------------------------
+    //  let modalContent = `
+    //  <div class="modal-div-container">
+    //      <h2>Wait! Before You Go...</h2>
+    //      <p>We know you're about to leave, but before you go, take a look at this special offer just for you!</p>
+    //      <div class="special-offer">
+    //          <h3>${couponCode.discount}</h3>
+    //          <p>Try code: <strong>${couponCode.code}</strong> using any of our links on page to get ${couponCode.discount} your next purchase.</p>
+    //      </div>
+    //      <button class="close-modal-btn">Close</button>
+    //  </div>`
+
+    //  Personal Product
+    let modalContent = `
      <div class="modal-div-container">
          <h2>Wait! Before You Go...</h2>
-         <p>We know you're about to leave, but before you go, take a look at this special offer just for you!</p>
+         <p>We know you're about to leave, but before you go! </p>
          <div class="special-offer">
-             <h3>${couponCode.discount}</h3>
-             <p>Try code: <strong>${couponCode.code}</strong> using any of our links on page to get ${couponCode.discount} your next purchase.</p>
+             <p><strong>Ensure to check the links on page for special offers just for you!</p>
          </div>
          <button class="close-modal-btn">Close</button>
      </div>`
+
      exitIntentModal.innerHTML = modalContent;
  
  // Listen for mouse movement
@@ -477,13 +531,24 @@ setTimeout( () => {
 
   // Adding the shopping icon with style
   let shoppingCartIcon = document.createElement('div');
-  shoppingCartIcon.innerHTML = `<i class="fa-brands fa-amazon"></i>`;
+
+  // Amazon Version ---------------------------------------------
+  // shoppingCartIcon.innerHTML = `<i class="fa-brands fa-amazon"></i>`;
+  
+  // Personal Product 
+  shoppingCartIcon.innerHTML = `<i class="fa-solid fa-file-lines"></i>`;
+
   shoppingCartIcon.style.fontSize = "4rem";
   shoppingCartIcon.style.position = "absolute";
   shoppingCartIcon.style.top = "50%";
   shoppingCartIcon.style.left = "50%";
   shoppingCartIcon.style.transform = "translate(-50%, -50%)";
-  shoppingCartIcon.style.color = "rebeccapurple";
+  
+  // Amazon Version --------------------------------------------
+  // shoppingCartIcon.style.color = "rebeccapurple";
+
+  // Personal Product
+  shoppingCartIcon.style.color = "#0c70e4";
 
   // Appending the elements
   shoppingCart.appendChild(shoppingCartIcon);
@@ -499,13 +564,24 @@ setTimeout( () => {
   notification.style.fontSize = '11px';
   notification.style.borderRadius = '0 5px 0 0';
   notification.style.color = '#fff';
-  notification.style.background = '#3F51B5';
+
+  // Amazon Version -----------------------------------------
+  // notification.style.background = '#3F51B5';
+
+  // Personal Product
+  notification.style.background = '#3fb598';
+
   notification.style.textAlign = 'center';
   notification.style.zIndex = '99999999';
 
   // Create notification text area to display
   let notificationText = document.createElement('span');
-  notificationText.innerHTML = 'New deals available every single day!';
+
+  // Amazon Version -------------------------------------------
+  // notificationText.innerHTML = 'New deals available every single day!';
+
+  // Personal Product
+  notificationText.innerHTML = 'Must-have list by professionals - download now!';
 
   // Append elements
   notification.appendChild(notificationText);
@@ -515,7 +591,13 @@ setTimeout( () => {
   // Start the timer
   setInterval(function() {
       // Create random notification message
-      let messages = [ 'Purchases get free shipping!', 'Shop exclusive collections and save big!', 'Unlock savings today!', 'Shop top picks and save!', 'Get exclusive deals and discounts!', 'Claim personalized discounts!', 'New deals available!', 'Buy now and enjoy the benefits!', 'Don\'t wait, buy now!', 'Get the best deals now!', 'Click and shop for deals!', 'Don\'t miss out, buy now!', 'Get yours now and save!', 'Try it now and save big!', 'Save big on your purchase!', 'Don\'t delay, shop now!', 'Enjoy big savings now!', 'Take advantage now and save!', 'Get yours now and enjoy the savings!', 'Act now and get yours today!', 'Hurry, before limited time offers end!', 'Buy now and save more!', 'Get yours before they\'re gone!', 'Check out these new offers!', 'Don\'t miss out, act now!', 'Grab these deals now!', 'Shop now and save big!' ];
+
+      // Amazon Version ----------------------------------------
+      // let messages = [ 'Purchases get free shipping!', 'Shop exclusive collections and save big!', 'Unlock savings today!', 'Shop top picks and save!', 'Get exclusive deals and discounts!', 'Claim personalized discounts!', 'New deals available!', 'Buy now and enjoy the benefits!', 'Don\'t wait, buy now!', 'Get the best deals now!', 'Click and shop for deals!', 'Don\'t miss out, buy now!', 'Get yours now and save!', 'Try it now and save big!', 'Save big on your purchase!', 'Don\'t delay, shop now!', 'Enjoy big savings now!', 'Take advantage now and save!', 'Get yours now and enjoy the savings!', 'Act now and get yours today!', 'Hurry, before limited time offers end!', 'Buy now and save more!', 'Get yours before they\'re gone!', 'Check out these new offers!', 'Don\'t miss out, act now!', 'Grab these deals now!', 'Shop now and save big!' ];
+      
+      // Personal Product
+      let messages = [ 'Get the ultimate list - download now!', 'Stay on top with our vetted list - act now!', 'Get the industry-curated list - act now!', 'Get the complete list - don\'t miss out!', 'Ultimate list, must-see - download now!', 'Get the must-have list you need - download now!', 'Professionally vetted must-see list - don\'t wait!', 'Stay organized with our comprehensive list- click here!', 'Get the ultimate must-have list - act now!', 'Industry-curated must-see list - download now!', 'Get the complete list, must-see - don\'t miss out!', 'Stay on top and never miss out - get the list now!', 'Get professionally vetted must-have list - download now!', 'Must-see list you have to get - download now!', 'Get industry-curated must-see list - don\'t miss out!', 'Stay on top and never miss out - act now!', 'Unlimited benefits, must-have exclusive list - download now!', 'Get personalized recommendations - download now!', 'Take advantage for a limited time - download now!', 'Get the pros list use - download now!', 'It\'s that time...  get it now!', 'For a friend, partner or loved one - click here!' ];
+       
       let randomMessage = messages[Math.floor(Math.random() * messages.length)];
       // Update the notification text
       document.querySelector('.shopping-cart__notification span').innerHTML = randomMessage;

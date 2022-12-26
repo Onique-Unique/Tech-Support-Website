@@ -1490,6 +1490,13 @@ table tr:nth-child(even) {
     text-align: center;
 }
 
+.aff-code-span {
+    background-color: rgb(248 255 192);
+    padding: 0 5px;
+    color: black;
+    border-radius: 20px;
+}
+
 .aff-banner-btn {
     background-color: rgb(248 255 192); 
     right: 50%; 
@@ -1499,7 +1506,7 @@ table tr:nth-child(even) {
 
 @media (max-width: 540px){
     .aff-banner-btn{
-        width: 80%;
+        width: 85%;
     }
 }
 
@@ -1629,6 +1636,17 @@ table tr:nth-child(even) {
     line-height: 2.2;
 }
 
+.popup-content::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(circle at top, transparent 77%, rgb(81, 83, 17) 20%, rgb(14, 39, 8) 80%);
+    z-index: -1;
+}
+
 .exit-popup {
     display: flex;
     justify-content: flex-end;
@@ -1698,15 +1716,20 @@ table tr:nth-child(even) {
     }
 }
 
-@media (max-width:450px) {
-    .popup-content {
-        min-height: 450px;
-    }
-}
-
 @media (max-width:960px) {
     .popup-content {
         width: 70%;
+    }
+}
+
+@media (max-width:480px) {
+    .popup-content {
+        min-height: 450px;
+        width: 85%;
+    }
+
+    .popup-content::after {
+        background: radial-gradient(circle at top, transparent 82.5%, rgb(81, 83, 17) 20%, rgb(14, 39, 8) 80%);
     }
 }
 

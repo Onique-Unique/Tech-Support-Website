@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PDF List View & Download</title>
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="stylesheet" href="/industry-secrets-sale/curated.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6M35XFDJT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-W6M35XFDJT');
+    </script>
+</head>
+
+<body>
+    <button id="download-button" onclick="run()">Download PDF &nbsp; <i class="fa-solid fa-file-arrow-down"></i></button>
+    <div class="pdf-download"></div>
+    <div class="loading">
+        <div class="loading-spinner"></div>
+        <div class="loading-messages">
+            <p>Loading assets...</p>
+            <p>This may take a few seconds</p>
+        </div>
+    </div>
+
+    <script src="/industry-secrets-sale/html2pdf.bundle.js"></script>
+    <script>
+        window.onload = function () {
+            // Fetch assets and display them on the page
+            // ...
+            // Get the div element with the class "pdf-download"
+            const pdfDownloadDiv = document.querySelector('.pdf-download');
+
+            // Get the stored inner HTML from local storage
+            const storedPdfDownloadDivInnerHTML = localStorage.getItem('pdfDownloadDivInnerHTML');
+
+            // Set the inner HTML of the div to the stored inner HTML
+            pdfDownloadDiv.innerHTML = storedPdfDownloadDivInnerHTML;
+
+            // Remove the blur effect
+            removeBlurEffect();
+
+            // Remove the "filter: blur" style from all li elements
+            function removeBlurEffect() {
+                // Get all li elements
+                const liElements = document.querySelectorAll('li');
+
+                // Remove the "filter: blur" style from all li elements
+                liElements.forEach(li => li.style.filter = '');
+            }
+
+            // Hide the loading animation once the assets have been fetched and displayed
+            document.querySelector('.loading').style.display = 'none';
+        }
+
+        // PDF Creator/ Downloader
+        function run() {
+            // Get the element.
+            var element = document.querySelector('.save-to-pdf');
+
+            // Choose pagebreak options based on mode.
+            var mode = "Congrats! Secrets Unlocked";
+            var pagebreak = (mode === 'specify') ? {
+                mode: '',
+                before: '.before',
+                after: '.after',
+                avoid: '.avoid'
+            } : {
+                mode: mode
+            };
+
+            // Generate the PDF.
+            html2pdf().from(element).set({
+
+                html2canvas: {
+                    scale: 1,
+                    scrollY: 1
+                },
+                filename: mode + '.pdf',
+                pagebreak: pagebreak,
+                margin: [0, 0],
+                jsPDF: {
+                    orientation: 'portrait',
+                    unit: 'in',
+                    format: 'Tabloid',
+                    compressPDF: true
+                }
+            }).save();
+        }
+    </script>
+</body>
+
+</html>

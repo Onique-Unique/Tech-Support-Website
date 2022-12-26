@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    border: none;
+    text-decoration: none;
+    font-family: Poppins, sans-serif;
+    font-weight: lighter;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+body {
+    height: 100vh;
+    overflow: clip;
+    position: relative;
+}
+
+.content-wrap {
+    height: 100%;
+}
+
+.pdf-download {
+    border: 10px solid lightgreen;
+    max-width: 750px;
+    margin: 0px auto;
+    width: 100%;
+}
+
+.top-heading {
+    background-color: lightgreen;
+    padding: 20px;
+    border-radius: 0 40px 0 0;
+}
+
+/* Set the font and size for the heading */
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+#header-para {
+    color: red;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+/* Set the font and size for the list items */
+li {
+    font-family: Arial, sans-serif;
+    font-size: 2.4rem;
+    color: darkgreen;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+}
+
+.dimmed-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.unlock-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: #00b3e3;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+}
+
+.popup-content,
+.popup-content-2 {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    min-height: 380px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    line-height: 2.2;
+}
+
+.exit-popup,
+.exit-popup-2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    font-size: 3rem;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.popup-inner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.popup-inner-content h3 {
+    font-size: 2rem;
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#popup-main-h4 {
+    font-size: 1.6rem;
+    line-height: 1;
+    color: crimson;
+    margin-bottom: 5px;
+}
+
+#span-head {
+    font-size: 2.1rem;
+    color: #3e9231;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.popup-btn {
+    font-size: 2rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1.5rem;
+    background-color: #ffe500;
+    margin-top: 20px;
+    animation: popup-blink 3s ease-in-out infinite;
+}
+
+.was-price {
+    position: absolute;
+    top: 5%;
+    left: 0%;
+}
+
+.price {
+    position: relative;
+    color: red;
+    font-size: 6rem;
+}
+
+.price::before {
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 80%;
+    height: 8px;
+    top: 50%;
+    left: 22%;
+    transform: rotate(154deg);
+}
+
+.new-price {
+    color: green;
+    font-size: 3rem;
+}
+
+@keyframes popup-blink {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: .6;
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width:960px) {
+    .popup-content,
+    .popup-content-2 {
+        width: 80%;
+        min-height: 490px;
+    }
+}
+
+@media (max-width:428px) {
+    .was-price {
+        left: -5%;
+    }
+}
+
+@media (max-width:320px) {
+    .popup-content, .popup-content-2 {
+        transform: translate(-50%, -50%) scale(.7);
+        min-height: 520px;
+        width: 100%;
+    }
+}
+
+#popup-2 {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Set the font and size for the disclaimer */
+.disclaimer {
+    color: black;
+    background-color: #11c2161f;
+    margin: 20px 10px 0 10px;
+    padding: 20px;
+    font-weight: 800;
+}
+
+@media (min-width: 960px) {
+    .pdf-download {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, .5%);
+    }
+
+    .popup-content {
+        width: 50%;
+    }
+
+    .was-price {
+        position: absolute;
+        top: 6%;
+        left: 20%;
+    }
+}
