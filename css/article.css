@@ -1272,7 +1272,7 @@ table tr:nth-child(even) {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
-    min-height: 350px;
+    min-height: 450px;
     background-color: #fff;
     text-align: center;
     border-radius: 8px;
@@ -1367,12 +1367,13 @@ table tr:nth-child(even) {
 
 @media (max-width:480px) {
     .popup-content {
-        min-height: 450px;
-        width: 85%;
+        transform: translate(-50%, -50%) scale(.9);
+        min-height: 550px;
+        width: 100%;
     }
 
     .popup-content::after {
-        background: radial-gradient(circle at top, transparent 82.5%, rgb(81, 83, 17) 20%, rgb(14, 39, 8) 80%);
+        background: radial-gradient(circle at top, transparent 83%, rgb(81, 83, 17) 20%, rgb(14, 39, 8) 80%);
     }
 }
 

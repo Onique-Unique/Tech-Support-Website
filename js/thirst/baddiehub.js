@@ -141,6 +141,9 @@ document.cookie = "AC-C=ac-c;expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/;SameSi
 // Affiliate Link stored in variable
 const goToAffiliateLink = "https://www.amazon.com?&linkCode=ll2&tag=oniquecampbel-20&linkId=9e1e91f2e3d89d93e1684445475d82ee&language=en_US&ref_=as_li_ss_tl";
 
+// always remove extra <img> at the end of the amazon affiliate image link
+// const affiliateImage = '<a href="https://www.amazon.com/dp/B07W22LYQK?psc=1&pd_rd_i=B07W22LYQK&pd_rd_w=8OtKx&content-id=amzn1.sym.bff6e147-54ad-4be3-b4ea-ec19ea6167f7&pf_rd_p=bff6e147-54ad-4be3-b4ea-ec19ea6167f7&pf_rd_r=QRVWA386EHZ4NDX4SG30&pd_rd_wg=y837k&pd_rd_r=ee737b51-3245-41e0-8f8a-79e415f4342a&s=furniture&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWwy&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzUlQ2T1BSM0s0SUFLJmVuY3J5cHRlZElkPUEwMDMzMjk3M0I1UUJGRjBCTFZQSyZlbmNyeXB0ZWRBZElkPUEwNTg4MjEwMU5IWEhLRTFaRlNHQyZ3aWRnZXROYW1lPXNwX2RldGFpbDImYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl&linkCode=li1&tag=oniquecampbel-20&linkId=543b85e5bce37362dafecb1de3f10780&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07W22LYQK&Format=_SL110_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=oniquecampbel-20&language=en_US" ></a>';
+
 // Coupon Select/ Display for Popup
 let springCoupons = [ { code: "SUMMERFUN20", discount: "20% off" }, { code: "NEWYEAR30", discount: "30% off" }, { code: "SUPERSALE20", discount: "20% off" }, { code: "SUMMERFUN30", discount: "30% off" }, { code: "SPRINGFREE50", discount: "Free shipping over $50" }, { code: "SPRING20OFF", discount: "20% off" }, { code: "MARCH20OFF", discount: "20% off" }, { code: "SPRINGSALE10", discount: "10% off" }, { code: "APRIL15OFF", discount: "15% off" }, { code: "SPRING50OFF", discount: "50% off" }, { code: "SPRING15", discount: "15% Off Your Purchase" }, { code: "BREEZE25", discount: "25% off" }, { code: "HOLIDAY40", discount: "40% Off Your Purchase" }, { code: "EASTER20", discount: "20% Off Easter Baskets and Decor" }, { code: "MEMDAY10", discount: "10% Off Memorial Day" } ];
 
@@ -196,6 +199,13 @@ let popupInnerContent = document.createElement('div');
 popupInnerContent.className = 'popup-inner-content';
 
 let h3 = document.createElement('h3');
+
+// Amazon Version popup image -----------------------------------------------
+// let popupImage = document.createElement('div');
+// popupImage.style.fontSize = "1.4rem";
+// popupImage.style.color = "mediumvioletred";
+// popupImage.innerHTML = `${affiliateImage} <br> Neck + Back Massager!`;
+
 let h3Text = document.createTextNode('Hurry!!');
 h3.appendChild(h3Text);
 
@@ -231,6 +241,8 @@ popupContent.appendChild(exitPopup);
 exitPopup.onclick = closePopup;
 
 popupInnerContent.appendChild(h3);
+// Amazon Only - Aff Image Insert
+// popupInnerContent.appendChild(popupImage);
 popupInnerContent.appendChild(h4Main);
 popupInnerContent.appendChild(h4Secondary);
 popupInnerContent.appendChild(p);
