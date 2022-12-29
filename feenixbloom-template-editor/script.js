@@ -94,7 +94,7 @@ listEl.addEventListener('click',(e) => {
     topics.insertAdjacentHTML('beforeend',formCode);
 });
 
-/* On Submitting the form */ 
+/* On Submitting the form */
 submit.addEventListener('click', (e) => {
     e.preventDefault();
     //reset Html topics so the changes are replaced 
@@ -157,51 +157,66 @@ createParas = () => {
 
         //Replace the misc h2's and secondary-paras first with a switch statement
         switch(index + 1) {
-            case 1: htmlCode_first = htmlCode_first.replace(/{ .first-h2 }/g,val[0]);
-                    break;
-            case 2: htmlCode_first = htmlCode_first.replace(/{ .second-h2 }/g,val[0]);
-                    //find the first non-empty paragraph 
-                    for(let i=1; i<val.length; i++) {
-                        if(val[i] != '') {
-                            htmlCode_first = htmlCode_first.replace(/{ .second-h2-paragraph }/,val[i]);
-                        }
+            case 1:
+                htmlCode_first = htmlCode_first.replace(/{ .first-h2 }/g, val[0]);
+                break;
+            case 2:
+                htmlCode_first = htmlCode_first.replace(/{ .second-h2 }/g, val[0]);
+                //find the first non-empty paragraph 
+                for (let i = 1; i < val.length; i++) {
+                    if (val[i] != '') {
+                        htmlCode_first = htmlCode_first.replace(/{ .second-h2-paragraph }/, val[i]);
                     }
-                    break;
-            case 3: htmlCode_first = htmlCode_first.replace(/{ .third-h2 }/g,val[0]);
-                    break;
-            case 4: htmlCode_first = htmlCode_first.replace(/{ .fourth-h2 }/g,val[0]);
-                    //find the first non-empty paragraph 
-                    for(let i=1; i<val.length; i++) {
-                        if(val[i] != '') {
-                            htmlCode_first = htmlCode_first.replace(/{ .fourth-h2-paragraph }/,val[i]);
-                        }
+                }
+                break;
+            case 3:
+                htmlCode_first = htmlCode_first.replace(/{ .third-h2 }/g, val[0]);
+                break;
+            case 4:
+                htmlCode_first = htmlCode_first.replace(/{ .fourth-h2 }/g, val[0]);
+                //find the first non-empty paragraph 
+                for (let i = 1; i < val.length; i++) {
+                    if (val[i] != '') {
+                        htmlCode_first = htmlCode_first.replace(/{ .fourth-h2-paragraph }/, val[i]);
                     }
-                    break;
-            case 5: htmlCode_first = htmlCode_first.replace(/{ .fifth-h2 }/g,val[0]);
-                    break;
-            case 6: htmlCode_first = htmlCode_first.replace(/{ .sixth-h2 }/g,val[0]);
-                    break;
-            case 7: htmlCode_first = htmlCode_first.replace(/{ .seventh-h2 }/g,val[0]);
-                    break;
-            case 8: htmlCode_first = htmlCode_first.replace(/{ .eight-h2 }/g,val[0]);
-                    break;
-            case 9: htmlCode_first = htmlCode_first.replace(/{ .ninth-h2 }/g,val[0]);
-                    break;
-            case 10: htmlCode_first = htmlCode_first.replace(/{ .tenth-h2 }/g,val[0]);
-                    break;   
-            case 11: htmlCode_first = htmlCode_first.replace(/{ .eleventh-h2 }/g,val[0]);
-                    break;   
-            case 12: htmlCode_first = htmlCode_first.replace(/{ .twelfth-h2 }/g,val[0]);
-                    break; 
-            case 13: htmlCode_first = htmlCode_first.replace(/{ .thirteenth-h2 }/g,val[0]);
-                    break; 
-            case 14: htmlCode_first = htmlCode_first.replace(/{ .fourteenth-h2 }/g,val[0]);
-                    break; 
-            case 15: htmlCode_first = htmlCode_first.replace(/{ .fifteenth-h2 }/g,val[0]);
-                    break; 
+                }
+                break;
+            case 5:
+                htmlCode_first = htmlCode_first.replace(/{ .fifth-h2 }/g, val[0]);
+                break;
+            case 6:
+                htmlCode_first = htmlCode_first.replace(/{ .sixth-h2 }/g, val[0]);
+                break;
+            case 7:
+                htmlCode_first = htmlCode_first.replace(/{ .seventh-h2 }/g, val[0]);
+                break;
+            case 8:
+                htmlCode_first = htmlCode_first.replace(/{ .eight-h2 }/g, val[0]);
+                break;
+            case 9:
+                htmlCode_first = htmlCode_first.replace(/{ .ninth-h2 }/g, val[0]);
+                break;
+            case 10:
+                htmlCode_first = htmlCode_first.replace(/{ .tenth-h2 }/g, val[0]);
+                break;
+            case 11:
+                htmlCode_first = htmlCode_first.replace(/{ .eleventh-h2 }/g, val[0]);
+                break;
+            case 12:
+                htmlCode_first = htmlCode_first.replace(/{ .twelfth-h2 }/g, val[0]);
+                break;
+            case 13:
+                htmlCode_first = htmlCode_first.replace(/{ .thirteenth-h2 }/g, val[0]);
+                break;
+            case 14:
+                htmlCode_first = htmlCode_first.replace(/{ .fourteenth-h2 }/g, val[0]);
+                break;
+            case 15:
+                htmlCode_first = htmlCode_first.replace(/{ .fifteenth-h2 }/g, val[0]);
+                break;
         }
-        if(index == 0) {
-            
+        if (index == 0) {
+
             htmlCode_second = `
             <h2 class="title-secondary h2-highlight" id="review-1">${val[0]}</h2>
             <p class="text">${val[1]}</p> 
@@ -232,9 +247,8 @@ createParas = () => {
             <!-- Generate Portfolio Promo Card/ Box End -->
             <br><br>
             `
-        }
-        else {
-            if(classN == 'para') {
+        } else {
+            if (classN == 'para') {
                 htmlCode_topics += `
                 <h2 class="title-secondary h2-highlight" id="review-${index+1}">${val[0]}</h2>
                 <p class="text">${val[1]}</p> 
@@ -253,7 +267,7 @@ createParas = () => {
                 <br><br>
                 `
             }
-            if(classN == 'list') {
+            if (classN == 'list') {
                 htmlCode_topics += `
                 <h2 class="title-secondary h2-highlight" id="review-${index+1}">${val[0]}</h2>
                 <p class="text">${val[1]}</p> 
@@ -285,10 +299,31 @@ createParas = () => {
 
     htmlCode = htmlCode_first + htmlCode_second + htmlCode_topics + htmlCode_last; //create the entire html code
 
+    // Get date time
+    const now = new Date();
+
+    // Get the current year, month, and day
+    const year = now.getFullYear();
+    const month = now.getMonth() + 1; // Months are 0-indexed
+    const day = now.getDate();
+
+    // Format the date in the YYYY-MM-DD format
+    const isoDate = `${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
+
+    // Get the month names
+    const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+    // Get the current month name
+    const monthName = monthNames[month - 1];
+
+    //   Replace instances with latest date
+    htmlCode = htmlCode.replace(/{ .date-schema }/g, isoDate);
+    htmlCode = htmlCode.replace(/{ .dateMM }/g, `${monthName} ${day}, ${year}`);
+
     //Remove the h2 and p elements with no content (if the inputs have spaces, it'll stay)
-    htmlCode = htmlCode.replace(/<p class="text">(\s)*<\/p>/gi,'\n');
-    htmlCode = htmlCode.replace(/<p class="text text-alt">(\s)*<\/p>/gi,'\n');
-    htmlCode = htmlCode.replace(/<li class="text">(\s)*<\/li>/gi,'\n');
+    htmlCode = htmlCode.replace(/<p class="text">(\s)*<\/p>/gi, '\n');
+    htmlCode = htmlCode.replace(/<p class="text text-alt">(\s)*<\/p>/gi, '\n');
+    htmlCode = htmlCode.replace(/<li class="text">(\s)*<\/li>/gi, '\n');
 
 
     //remove the extra lines that come up
@@ -298,10 +333,10 @@ createParas = () => {
 }
 
 replaceCode = () => {
-    let o = htmlCode; 
-    for(const key in input) {
+    let o = htmlCode;
+    for (const key in input) {
         let reg = new RegExp("{ ." + key + " }", 'g');
-        o = o.replace(reg,input[key]);
+        o = o.replace(reg, input[key]);
     }
 
     //o has the final html code, but htmlCode still has the original 
@@ -309,7 +344,7 @@ replaceCode = () => {
 };
 
 
-/* Copy generated HTML code */ 
+/* Copy generated HTML code */
 copy.addEventListener('click', event => {
     event.preventDefault();
     let r = document.createRange();
