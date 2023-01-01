@@ -320,7 +320,8 @@ createParas = () => {
     htmlCode = htmlCode.replace(/{ .date-schema }/g, isoDate);
     htmlCode = htmlCode.replace(/{ .dateMM }/g, `${monthName} ${day}, ${year}`);
 
-    //Remove the h2, p and li elements with no content (if the inputs have spaces, it'll stay)
+    //Remove the h2, p, div, ul, li elements with no content (if the inputs have spaces, it'll stay)
+    htmlCode = htmlCode.replace(/<(ul|h2|li)[^>]*>\s*<\/\1>|<li><a[^>]*>\s*<\/a><\/li>|<div class="div-container">\s*<\/div>/gi, '');
     htmlCode = htmlCode.replace(/<p class="text">(\s)*<\/p>/gi, '\n');
     htmlCode = htmlCode.replace(/<p class="text text-alt">(\s)*<\/p>/gi, '\n');
     htmlCode = htmlCode.replace(/<li class="text">(\s)*<\/li>/gi, '\n');
