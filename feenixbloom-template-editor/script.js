@@ -48,50 +48,66 @@ paraEl.addEventListener('click', (e) => {
     topics.insertAdjacentHTML('beforeend',formCode);
 });
 
+// Define numListItems as a global variable
+let numListItems;
+
 listEl.addEventListener('click',(e) => {
     e.preventDefault();
     tCount++;
-    formCode = `
-    <h4>Topic ${tCount}</h4>
-    <div class="form-group list" id="review${tCount}">
-        <label>Topic title</label>
-        <input type="text" class="form-control" id="review-${tCount}"/>
-        <label>Direct para 1</label>
-        <textarea class='form-control' rows="2" cols="30"></textarea>
-        <label>Direct para 2</label>
-        <textarea class='form-control' rows="2" cols="30"></textarea>
-        <label>Direct para 3</label>
-        <textarea class='form-control' rows="2" cols="30"></textarea>
-        <label>Topic list item 1</label>
-        <input type="text" class="form-control" />
-        <label>Topic list item 2</label>
-        <input type="text" class="form-control" />
-        <label>Topic list item 3</label>
-        <input type="text" class="form-control">
-        <label>Topic list item 4</label>
-        <input type="text" class="form-control" />
-        <label>Topic list item 5</label>
-        <input type="text" class="form-control" />
-        <label>Topic list item 6</label>
-        <input type="text" class="form-control">
-        <label>Topic list item 7</label>
-        <input type="text" class="form-control">
-        <label>Topic list item 8</label>
-        <input type="text" class="form-control">
-        <label>Topic list item 9</label>
-        <input type="text" class="form-control">
-        <label>Topic list item 10</label>
-        <input type="text" class="form-control" />
-        <label>Indirect para 1</label>
-        <textarea class='form-control' rows="2" cols="30"></textarea>
-        <label>Indirect para 2</label>
-        <textarea class='form-control' rows="2" cols="30"></textarea>
-        <label>Indirect para 3</label>
-        <textarea class='form-control' rows="2" cols="30"></textarea>
-    </div>
-    <br/>
-    `;
-    topics.insertAdjacentHTML('beforeend',formCode);
+     // Create the popup box
+     const popup = document.createElement('div');
+     popup.style.position = 'fixed';
+     popup.style.top = '50%';
+     popup.style.left = '50%';
+     popup.style.transform = 'translate(-50%, -50%)';
+     popup.style.backgroundColor = '#3a6034';
+     popup.style.padding = '20px';
+     popup.style.boxShadow = '0 0 10px rgba(0,0,0,0.5)';
+     popup.innerHTML = `<p>Enter the number of topic list items:</p><input type="text" id="num-list-items" /><button id="submit-num-list-items">Submit</button>`;
+     document.body.appendChild(popup);
+     
+     // Add a click event listener to the submit button
+     const submitBtn = document.querySelector('#submit-num-list-items');
+     submitBtn.addEventListener('click', () => {
+
+        formCode = `
+        <h2 class="title-secondary h2-highlight" id="review-${tCount}">Topic ${tCount}</h2>
+        <div class="form-group list" id="review${tCount}">
+            <label>Topic title</label>
+            <input type="text" class="form-control" id="review-${tCount}"/>
+            <label>Direct para 1</label>
+            <textarea class='form-control' rows="2" cols="30"></textarea>
+            <label>Direct para 2</label>
+            <textarea class='form-control' rows="2" cols="30"></textarea>
+            <label>Direct para 3</label>
+            <textarea class='form-control' rows="2" cols="30"></textarea>
+        `;
+        
+        numListItems = document.querySelector('#num-list-items').value;
+        
+        // Ensure that numListItems is a number, create list areas based on user amount specified
+        while (isNaN(numListItems)) {
+            alert('Please enter a valid number');
+            return;
+        }
+        
+        for (let i = 1; i <= parseInt(numListItems); i++) {
+            formCode += `<label>Topic list item ${i}</label><input type="text" class="form-control" />`;
+        }
+        
+        formCode += `
+            <label>Indirect para 1</label>
+            <textarea class='form-control' rows="2" cols="30"></textarea>
+            <label>Indirect para 2</label>
+            <textarea class='form-control' rows="2" cols="30"></textarea>
+            <label>Indirect para 3</label>
+            <textarea class='form-control' rows="2" cols="30"></textarea>
+        </div>
+        <br/>
+        `;
+        topics.insertAdjacentHTML('beforeend',formCode);
+         popup.remove();
+     });
 });
 
 /* On Submitting the form */
@@ -215,7 +231,8 @@ createParas = () => {
                 htmlCode_first = htmlCode_first.replace(/{ .fifteenth-h2 }/g, val[0]);
                 break;
         }
-        if (index == 0) {
+        // if first para is at index 0 then do this or move to next if statement
+        if (index == 0 && classN == 'para') {
 
             htmlCode_second = `
             <h2 class="title-secondary h2-highlight" id="review-1">${val[0]}</h2>
@@ -233,6 +250,44 @@ createParas = () => {
             <p class="text">${val[9]}</p> 
             <p class="text">${val[10]}</p> 
             <br><br>
+            <!-- Generate Portfolio Promo Card/ Box Start -->
+            <blockquote>
+                <div class="promo-box-container">
+                    <a href="https://novatechoffice.com/statement-generate/index" target="_blank">
+                    <span class="linkspanner"></span>
+                    </a>
+                <p class="promo-title"><a href="https://novatechoffice.com/statement-generate/index" target="_blank">Interested in Earning More This Year? <br> <span class="lighter">Lead your Investment, Growth and Digital Assets - Get Your Portfolio Today. <i class="fa-solid fa-cloud-arrow-down"></i></span></a></p>
+                <p><a class="cta-button" href="https://novatechoffice.com/statement-generate/index" target="_blank">Generate Investment Portfolio <i class="fa-solid fa-download"></i></a></p>
+                <div class="right-triangle"> </div>
+                </div>
+            </blockquote>
+            <!-- Generate Portfolio Promo Card/ Box End -->
+            <br><br>
+            `
+        } if (index == 0 && classN == 'list') {
+
+            htmlCode_second = `
+            <h2 class="title-secondary h2-highlight" id="review-${index+1}">${val[0]}</h2>
+            <p class="text">${val[1]}</p> 
+            <p class="text">${val[2]}</p> 
+            <p class="text">${val[3]}</p> 
+            <div class="div-container"> 
+                <ul>
+            `;
+            // generate the amount of list areas based on user input stored in variable numListItems
+            for (let i = 4; i < 4 + parseInt(numListItems); i++) {
+                htmlCode_topics += `<li class="text">${val[i]}</li>`;
+            }  
+                            
+            htmlCode_topics += `</ul></div>`;
+
+            let startIndex = 4 + parseInt(numListItems);
+            htmlCode_topics += `
+                <br>
+                <p class="text">${val[startIndex]}</p> 
+                <p class="text">${val[startIndex + 1]}</p> 
+                <p class="text">${val[startIndex + 2]}</p> 
+                <br><br>
             <!-- Generate Portfolio Promo Card/ Box Start -->
             <blockquote>
                 <div class="promo-box-container">
@@ -275,25 +330,23 @@ createParas = () => {
                 <p class="text">${val[3]}</p> 
                 <div class="div-container"> 
                    <ul>
-                        <li class="text">${val[4]}</li> 
-                        <li class="text">${val[5]}</li>
-                        <li class="text">${val[6]}</li> 
-                        <li class="text">${val[7]}</li> 
-                        <li class="text">${val[8]}</li>
-                        <li class="text">${val[9]}</li> 
-                        <li class="text">${val[10]}</li> 
-                        <li class="text">${val[11]}</li>
-                        <li class="text">${val[12]}</li> 
-                        <li class="text">${val[13]}</li>
-                   </ul>
-                </div>
-                <br>
-                <p class="text">${val[14]}</p> 
-                <p class="text">${val[15]}</p> 
-                <p class="text">${val[16]}</p> 
-                <br><br>
-                `
-            }
+                `;
+            
+                for (let i = 4; i < 4 + parseInt(numListItems); i++) {
+                    htmlCode_topics += `<li class="text">${val[i]}</li>`;
+                }  
+                              
+                htmlCode_topics += `</ul></div>`;
+
+                let startIndex = 4 + parseInt(numListItems);
+                htmlCode_topics += `
+                    <br>
+                    <p class="text">${val[startIndex]}</p> 
+                    <p class="text">${val[startIndex + 1]}</p> 
+                    <p class="text">${val[startIndex + 2]}</p> 
+                    <br><br>
+                `;
+            }        
         }
     });
 
@@ -324,7 +377,7 @@ createParas = () => {
     htmlCode = htmlCode.replace(/<(ul|h2|li)[^>]*>\s*<\/\1>|<li><a[^>]*>\s*<\/a><\/li>|<div class="div-container">\s*<\/div>/gi, '');
     htmlCode = htmlCode.replace(/<p class="text">(\s)*<\/p>/gi, '\n');
     htmlCode = htmlCode.replace(/<p class="text text-alt">(\s)*<\/p>/gi, '\n');
-    htmlCode = htmlCode.replace(/<li class="text">(\s)*<\/li>/gi, '\n');
+    htmlCode = htmlCode.replace(/<li class="text">(null|undefined|\s)*<\/li>/gi, '\n');
     htmlCode = htmlCode.replace(/<li><a[^>]*>.*?{.*?}.*?<\/a><\/li>/gi, '');
 
 
@@ -344,7 +397,6 @@ replaceCode = () => {
     //o has the final html code, but htmlCode still has the original 
     output.innerText = o;
 };
-
 
 /* Copy generated HTML code */
 copy.addEventListener('click', event => {
@@ -370,9 +422,7 @@ for(let i=0; i<plusP.length; i++) {
     });
 }
 
-
 createParaBox = (addEl) => {
-
     let parent = addEl.parentElement;
 
     let t = document.createElement('textarea');
@@ -380,6 +430,4 @@ createParaBox = (addEl) => {
     t.rows = 2;
     t.className = 'form-control secondary-para';
     parent.appendChild(t);
-
-
 };*/
