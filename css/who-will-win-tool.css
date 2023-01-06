@@ -1,0 +1,213 @@
+#button {
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    transition: 260ms;
+    width: 40px;
+    text-align: center;
+    height: 35px
+}
+
+#button:hover {
+    transform: scale(1.2)
+}
+
+#landingPage {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 1280px;
+    margin: 0 auto
+}
+
+#inputFields::-webkit-scrollbar {
+    width: 1vw;
+    overscroll-behavior: contain;
+    scrollbar-width: thin !important
+}
+
+#inputFields::-webkit-scrollbar-track {
+    background-color: #b3b3b300
+}
+
+#inputFields::-webkit-scrollbar-thumb {
+    background-color: #8f8f8f;
+    border-radius: 10px
+}
+
+#inputFields::-webkit-scrollbar-thumb:hover {
+    background: #8f8F8F92
+}
+
+#inputFields {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    overflow-x: scroll;
+    padding-bottom: 30px
+}
+
+#input1,
+#input2 {
+    background-color: #333232;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    border: none;
+    outline: 0
+}
+
+input::placeholder {
+    font-weight: 700;
+    opacity: .7;
+    color: #fff
+}
+
+.orText {
+    color: #fff;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium
+}
+
+#plusBtn {
+    background-color: #8f8f8f;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    margin: 10px auto;
+    font-size: 1.6rem
+}
+
+#btn {
+    background-color: #8f8f8f;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    margin: 10px auto
+}
+
+#popup-predictor {
+    display: none;
+    max-width: 1500px;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 25%;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    opacity: .9;
+    transform: translate(0, -20%)
+}
+
+#popupContent {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10% auto;
+    font-size: 2rem;
+    font-weight: bolder
+}
+
+#winner {
+    color: #9acd32;
+    background: #000;
+    padding: .5rem 2rem;
+    border-radius: 20px
+}
+
+#closeBtn {
+    background-color: #8f8f8f;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer
+}
+
+#alertPopup {
+    display: none;
+    max-width: 1500px;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    opacity: .9;
+    transform: translate(0, -20%);
+    font-size: 1.6rem
+}
+
+#alertPopupContent {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10% auto
+}
+
+#alertBtn {
+    background-color: #8f8f8f;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer
+}
+
+@media only screen and (max-width:600px) {
+    #landingPage {
+        padding: 10px
+    }
+
+    #inputFields {
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center
+    }
+
+    .text-align {
+        text-align: center
+    }
+
+    .orText {
+        margin: 10px 0
+    }
+}
+
+#btn {
+    display: block;
+    padding: 15px 60px;
+    font-size: 18px;
+    background-color: #eff3ff;
+    color: #101010;
+    position: relative;
+    margin: 30px auto;
+    border: none;
+    border-radius: 5px
+}
+
+.popup-btn {
+    padding: .5rem 1.5rem;
+    border-radius: 1.5rem;
+    background-color: #ffe500;
+    margin-top: 20px;
+    animation: popup-blink 3s ease-in-out infinite
+}
