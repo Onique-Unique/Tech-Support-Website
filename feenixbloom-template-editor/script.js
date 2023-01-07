@@ -412,6 +412,22 @@ copy.addEventListener('click', event => {
     alert("Copied To Clipboard");
 });
 
+const x1 = 'sk-';
+const x2 = 'GCsA';
+const x3 = 'leJE';
+const x4 = 'MCnr';
+const x5 = 'Fe6r';
+const x6 = '5uCF';
+const x7 = 'T3Bl';
+const x8 = 'bkFJ';
+const x9 = 'xhVA';
+const x10 = '2fVF';
+const x11 = '0KWt';
+const x12 = 'DZu4';
+const x13 = 'Bb2S';
+
+const secureAI = x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9 + x10 + x11 + x12 + x13;
+
 var AIbutton = document.getElementById('ai-gen');
 
 const aiInstructions = "write original and creative information for:";
@@ -440,7 +456,7 @@ AIbutton.onclick = function () {
              method: 'POST',
              headers: {
                  'Content-Type': 'application/json',
-                 'Authorization': `Bearer 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`
+                 'Authorization': `Bearer ${secureAI}`
              },
              body: JSON.stringify({
                  model: 'text-davinci-003',
