@@ -2,19 +2,24 @@ body {
     background-color: #091407ec;
     color: aliceblue;
 }
+
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
 }
+
 ::-webkit-scrollbar-track {
     background-color: #0c0c0d;
 }
+
 ::-webkit-scrollbar-thumb {
     background-color: #303235;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background-color: #484b50;
 }
+
 .app-container {
     width: 100%;
 }
@@ -38,7 +43,7 @@ body {
 }
 
 #input {
-    border-right: 2px solid black;  
+    border-right: 2px solid black;
 }
 
 #form {
@@ -48,7 +53,9 @@ body {
 i {
     cursor: pointer;
 }
-input[type=text]:focus, textarea.form-control:focus {
+
+input[type=text]:focus,
+textarea.form-control:focus {
     outline: 2px solid #fff;
     border: 3px solid red;
 }
@@ -57,22 +64,89 @@ textarea.form-control {
     min-height: calc(5em + 0.75rem + 2px);
 }
 
-@media(max-width: 768px){
+@media(max-width: 768px) {
     #app {
         flex-direction: column-reverse;
     }
-    #input, #output {
+
+    #input,
+    #output {
         width: 100%;
     }
+
     #input {
         height: 65%;
     }
+
     #output {
         height: 35%;
     }
 }
-@media(max-width: 321.5px){
+
+@media(max-width: 321.5px) {
     #paraEl {
         margin-bottom: 10px;
+    }
+}
+
+/* Ai Gen */
+#ai-gen {
+    background-color: red;
+}
+
+.ask-ai {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid gray;
+    padding: 20px;
+    text-align: center;
+}
+
+.ask-ai textarea {
+    width: 100%;
+    border: 2px green solid;
+}
+
+.loading {
+    display: none;
+    z-index: 10;
+}
+
+.loading-messages {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: white;
+    animation: dip-in-out 3s linear infinite;
+}
+
+.loading-messages p {
+    margin: 0;
+    padding: 0;
+}
+
+.loading-messages p:nth-of-type(2) {
+    margin-top: 10px;
+}
+
+@keyframes dip-in-out {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }

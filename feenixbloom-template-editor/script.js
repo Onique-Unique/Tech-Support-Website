@@ -45,30 +45,30 @@ paraEl.addEventListener('click', (e) => {
         <textarea class='form-control' rows="2" cols="30"></textarea>
     </div>
     <br/>`;
-    topics.insertAdjacentHTML('beforeend',formCode);
+    topics.insertAdjacentHTML('beforeend', formCode);
 });
 
 // Define numListItems as a global variable
 let numListItems;
 
-listEl.addEventListener('click',(e) => {
+listEl.addEventListener('click', (e) => {
     e.preventDefault();
     tCount++;
-     // Create the popup box
-     const popup = document.createElement('div');
-     popup.style.position = 'fixed';
-     popup.style.top = '50%';
-     popup.style.left = '50%';
-     popup.style.transform = 'translate(-50%, -50%)';
-     popup.style.backgroundColor = '#3a6034';
-     popup.style.padding = '20px';
-     popup.style.boxShadow = '0 0 10px rgba(0,0,0,0.5)';
-     popup.innerHTML = `<p>Enter the number of topic list items:</p><input type="text" id="num-list-items" /><button id="submit-num-list-items">Submit</button>`;
-     document.body.appendChild(popup);
-     
-     // Add a click event listener to the submit button
-     const submitBtn = document.querySelector('#submit-num-list-items');
-     submitBtn.addEventListener('click', () => {
+    // Create the popup box
+    const popup = document.createElement('div');
+    popup.style.position = 'fixed';
+    popup.style.top = '50%';
+    popup.style.left = '50%';
+    popup.style.transform = 'translate(-50%, -50%)';
+    popup.style.backgroundColor = '#3a6034';
+    popup.style.padding = '20px';
+    popup.style.boxShadow = '0 0 10px rgba(0,0,0,0.5)';
+    popup.innerHTML = `<p>Enter the number of topic list items:</p><input type="text" id="num-list-items" /><button id="submit-num-list-items">Submit</button>`;
+    document.body.appendChild(popup);
+
+    // Add a click event listener to the submit button
+    const submitBtn = document.querySelector('#submit-num-list-items');
+    submitBtn.addEventListener('click', () => {
 
         formCode = `
         <h2 class="title-secondary h2-highlight" id="review-${tCount}">Topic ${tCount}</h2>
@@ -82,19 +82,19 @@ listEl.addEventListener('click',(e) => {
             <label>Direct para 3</label>
             <textarea class='form-control' rows="2" cols="30"></textarea>
         `;
-        
+
         numListItems = document.querySelector('#num-list-items').value;
-        
+
         // Ensure that numListItems is a number, create list areas based on user amount specified
         while (isNaN(numListItems)) {
             alert('Please enter a valid number');
             return;
         }
-        
+
         for (let i = 1; i <= parseInt(numListItems); i++) {
             formCode += `<label>Topic list item ${i}</label><input type="text" class="form-control" />`;
         }
-        
+
         formCode += `
             <label>Indirect para 1</label>
             <textarea class='form-control' rows="2" cols="30"></textarea>
@@ -105,9 +105,9 @@ listEl.addEventListener('click',(e) => {
         </div>
         <br/>
         `;
-        topics.insertAdjacentHTML('beforeend',formCode);
-         popup.remove();
-     });
+        topics.insertAdjacentHTML('beforeend', formCode);
+        popup.remove();
+    });
 });
 
 /* On Submitting the form */
@@ -152,14 +152,14 @@ createParas = () => {
     reviews = topics.children;
     reviews = Array.from(reviews);
     reviews = reviews.filter(r => r.tagName === 'DIV'); //filtered out only the 'review' div elements that we need inputs from
-    reviews.forEach((review,index) => {
+    reviews.forEach((review, index) => {
         classN = review.className.replace('form-group ', '');
         //reset val
         val = [];
         children = review.children;
         children = Array.from(children);
         children.forEach((item) => {
-            if(item.tagName === 'TEXTAREA' || item.tagName === 'INPUT') {
+            if (item.tagName === 'TEXTAREA' || item.tagName === 'INPUT') {
                 /*if(item.id === `review-${index+1}` && item.value == '') {
                     alert('Please enter a title for your topics');
                     stat = 0;
@@ -172,7 +172,7 @@ createParas = () => {
         });
 
         //Replace the misc h2's and secondary-paras first with a switch statement
-        switch(index + 1) {
+        switch (index + 1) {
             case 1:
                 htmlCode_first = htmlCode_first.replace(/{ .first-h2 }/g, val[0]);
                 break;
@@ -264,7 +264,8 @@ createParas = () => {
             <!-- Generate Portfolio Promo Card/ Box End -->
             <br><br>
             `
-        } if (index == 0 && classN == 'list') {
+        }
+        if (index == 0 && classN == 'list') {
 
             htmlCode_second = `
             <h2 class="title-secondary h2-highlight" id="review-${index+1}">${val[0]}</h2>
@@ -277,8 +278,8 @@ createParas = () => {
             // generate the amount of list areas based on user input stored in variable numListItems
             for (let i = 4; i < 4 + parseInt(numListItems); i++) {
                 htmlCode_topics += `<li class="text">${val[i]}</li>`;
-            }  
-                            
+            }
+
             htmlCode_topics += `</ul></div>`;
 
             let startIndex = 4 + parseInt(numListItems);
@@ -331,11 +332,11 @@ createParas = () => {
                 <div class="div-container"> 
                    <ul>
                 `;
-            
+
                 for (let i = 4; i < 4 + parseInt(numListItems); i++) {
                     htmlCode_topics += `<li class="text">${val[i]}</li>`;
-                }  
-                              
+                }
+
                 htmlCode_topics += `</ul></div>`;
 
                 let startIndex = 4 + parseInt(numListItems);
@@ -346,7 +347,7 @@ createParas = () => {
                     <p class="text">${val[startIndex + 2]}</p> 
                     <br><br>
                 `;
-            }        
+            }
         }
     });
 
@@ -378,6 +379,7 @@ createParas = () => {
     htmlCode = htmlCode.replace(/<p class="text">(\s)*<\/p>/gi, '\n');
     htmlCode = htmlCode.replace(/<p class="text text-alt">(\s)*<\/p>/gi, '\n');
     htmlCode = htmlCode.replace(/<li class="text">(null|undefined|\s)*<\/li>/gi, '\n');
+    htmlCode = htmlCode.replace(/<p class="text">(null|undefined|\s)*<\/p>/gi, '\n');
     htmlCode = htmlCode.replace(/<li><a[^>]*>.*?{.*?}.*?<\/a><\/li>/gi, '');
 
 
@@ -410,6 +412,90 @@ copy.addEventListener('click', event => {
     alert("Copied To Clipboard");
 });
 
+var AIbutton = document.getElementById('ai-gen');
+
+const aiInstructions = "write original and creative information for:";
+
+AIbutton.onclick = function () {
+    event.preventDefault();
+    // Create the popup container
+    var askAI = document.createElement('div');
+    askAI.classList.add('ask-ai');
+
+     // Create the input field
+     var inputAI = document.createElement('textarea');
+     inputAI.type = 'text';
+     inputAI.placeholder = 'Enter something';
+ 
+     // Create the generate button
+     var aigenerateButton = document.createElement('button');
+     aigenerateButton.innerHTML = 'Generate';
+     aigenerateButton.onclick = async function () {
+         // Show the loading element and blur background
+         document.querySelector('.app-container').style.filter = 'blur(2px) brightness(0.5)';
+         document.querySelector('.loading').style.display = 'block';
+ 
+         // Call the OpenAI API to generate content
+         const response = await fetch(`https://api.openai.com/v1/completions`, {
+             method: 'POST',
+             headers: {
+                 'Content-Type': 'application/json',
+                 'Authorization': `Bearer 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`
+             },
+             body: JSON.stringify({
+                 model: 'text-davinci-003',
+                 prompt: aiInstructions + inputAI.value + "?",
+                 max_tokens: 500,
+             }),
+         });
+ 
+         // Check if the request was successful
+         if (!response.ok) {
+             // Hide the loading element
+             document.querySelector('.loading').style.display = 'none';
+ 
+             // Display the error message
+             console.error(`Error: ${response.status} ${response.statusText}`);
+             return;
+         }
+ 
+         // Parse the response as JSON
+         const data = await response.json();
+ 
+         // Check if the data object has a choices property
+         if (!data.choices) {
+             // Hide the loading element
+             document.querySelector('.loading').style.display = 'none';
+ 
+             // Display the error message
+             console.error(`Error: The data object does not have a 'choices' property.`);
+             return;
+         }
+ 
+         // Hide the loading element and remove background blur
+         document.querySelector('.loading').style.display = 'none';
+         document.querySelector('.app-container').style.filter = 'none';
+ 
+         // Display the generated content in the page
+         var output = document.getElementById("output");
+         output.innerText = data.choices[0].text;
+     }
+
+    // Create the close button
+    var aicloseButton = document.createElement('button');
+    aicloseButton.innerHTML = 'Close';
+    aicloseButton.onclick = function () {
+        document.body.removeChild(askAI);
+    }
+
+    // Add the input field, buttons, and close button to the popup container
+    askAI.appendChild(inputAI);
+    askAI.appendChild(aigenerateButton);
+    askAI.appendChild(aicloseButton);
+
+    // Add the popup container to the body of the page
+    document.body.appendChild(askAI);
+}
 
 /*//get all the para icons - plus buttons 
 let plusP = document.getElementsByClassName('plusP');
