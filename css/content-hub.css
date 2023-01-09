@@ -1140,7 +1140,7 @@ body::-webkit-scrollbar-thumb:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
-    min-height: 490px;
+    min-height: 410px;
     background-color: #fff;
     text-align: center;
     border-radius: 8px;
@@ -1236,7 +1236,7 @@ body::-webkit-scrollbar-thumb:hover {
 @media (max-width:480px) {
     .popup-content {
         transform: translate(-50%, -50%) scale(.80);
-        min-height: 640px;
+        min-height: 520px;
         width: 100%;
     }
 
