@@ -56,13 +56,7 @@ listEl.addEventListener('click', (e) => {
     tCount++;
     // Create the popup box
     const popup = document.createElement('div');
-    popup.style.position = 'fixed';
-    popup.style.top = '50%';
-    popup.style.left = '50%';
-    popup.style.transform = 'translate(-50%, -50%)';
-    popup.style.backgroundColor = '#3a6034';
-    popup.style.padding = '20px';
-    popup.style.boxShadow = '0 0 10px rgba(0,0,0,0.5)';
+    popup.id = "listBox";
     popup.innerHTML = `<p>Enter the number of topic list items:</p><input type="text" id="num-list-items" /><button id="submit-num-list-items">Submit</button>`;
     document.body.appendChild(popup);
 
@@ -232,7 +226,7 @@ createParas = () => {
                 break;
         }
         // if first para is at index 0 then do this or move to next if statement
-        if (index == 0 && classN == 'para') {
+        if (index === 0 && classN === 'para') {
 
             htmlCode_second = `
             <h2 class="title-secondary h2-highlight" id="review-1">${val[0]}</h2>
@@ -265,7 +259,7 @@ createParas = () => {
             <br><br>
             `
         }
-        if (index == 0 && classN == 'list') {
+        if (index === 0 && classN === 'list') {
 
             htmlCode_second = `
             <h2 class="title-secondary h2-highlight" id="review-${index+1}">${val[0]}</h2>
@@ -304,7 +298,7 @@ createParas = () => {
             <br><br>
             `
         } else {
-            if (classN == 'para') {
+            if (classN === 'para' && index != 0) {
                 htmlCode_topics += `
                 <h2 class="title-secondary h2-highlight" id="review-${index+1}">${val[0]}</h2>
                 <p class="text">${val[1]}</p> 
@@ -323,7 +317,7 @@ createParas = () => {
                 <br><br>
                 `
             }
-            if (classN == 'list') {
+            if (classN == 'list' && index != 0) {
                 htmlCode_topics += `
                 <h2 class="title-secondary h2-highlight" id="review-${index+1}">${val[0]}</h2>
                 <p class="text">${val[1]}</p> 
@@ -446,6 +440,7 @@ AIbutton.onclick = function () {
      // Create the generate button
      var aigenerateButton = document.createElement('button');
      aigenerateButton.innerHTML = 'Generate';
+     aigenerateButton.id = "aiGenerateText";
      aigenerateButton.onclick = async function () {
          // Show the loading element and blur background
          document.querySelector('.app-container').style.filter = 'blur(2px) brightness(0.5)';
@@ -500,6 +495,7 @@ AIbutton.onclick = function () {
     // Create the close button
     var aicloseButton = document.createElement('button');
     aicloseButton.innerHTML = 'Close';
+    aicloseButton.id = "closeAiGenerate";
     aicloseButton.onclick = function () {
         document.body.removeChild(askAI);
     }
