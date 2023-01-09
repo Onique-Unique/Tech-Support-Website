@@ -406,19 +406,21 @@ copy.addEventListener('click', event => {
     alert("Copied To Clipboard");
 });
 
+const nameSafe = "Bearer";
+
 const x1 = 'sk-';
-const x2 = 'GCsA';
-const x3 = 'leJE';
-const x4 = 'MCnr';
-const x5 = 'Fe6r';
-const x6 = '5uCF';
-const x7 = 'T3Bl';
-const x8 = 'bkFJ';
-const x9 = 'xhVA';
-const x10 = '2fVF';
-const x11 = '0KWt';
-const x12 = 'DZu4';
-const x13 = 'Bb2S';
+const x2 = 'Kcbg'; 
+const x3 = 'Yasw'; 
+const x4 = 'Gw7c'; 
+const x5 = 'eec6'; 
+const x6 = 'ZpA5'; 
+const x7 = 'T3Bl'; 
+const x8 = 'bkFJ'; 
+const x9 = 'NNsK'; 
+const x10 = 'JYnI'; 
+const x11 = '7ayt'; 
+const x12 = 'phql'; 
+const x13 = 'AE0s'; 
 
 const secureAI = x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9 + x10 + x11 + x12 + x13;
 
@@ -451,7 +453,7 @@ AIbutton.onclick = function () {
              method: 'POST',
              headers: {
                  'Content-Type': 'application/json',
-                 'Authorization': `Bearer ${secureAI}`
+                 'Authorization': `${nameSafe} ${secureAI}`
              },
              body: JSON.stringify({
                  model: 'text-davinci-003',

@@ -106,11 +106,17 @@ textarea.form-control {
     z-index: 2;
 }
 
+#listBox input {
+    border-radius: 5px;
+    border: none;
+}
+
 #submit-num-list-items {
     background: #4289f2;
-    border: 1px solid;
+    border: 1.5px solid yellow;
     margin-left: 10px;
     color: white;
+    border-radius: 5px;
 }
 
 /* Ai Gen */
