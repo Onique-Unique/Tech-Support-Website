@@ -35,6 +35,7 @@ body {
 #output {
     background-color: #16142857;
     color: ghostwhite;
+    padding: 0 10px;
 }
 
 #input,
@@ -153,9 +154,9 @@ textarea.form-control {
 }
 
 #closeAiGenerate {
-    border: none;
+    border: 1.5px solid #004891;
     background-color: red;
-    border-radius: 2.5px px;
+    border-radius: 4px;
 }
 
 #TopicInsert {
