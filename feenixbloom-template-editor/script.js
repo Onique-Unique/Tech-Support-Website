@@ -2,7 +2,8 @@ const submit = document.getElementById('submit');
 const output = document.getElementById('output');
 const copy = document.getElementById('copy');
 let paraEl = document.getElementById('paraEl');
-let listEl = document.getElementById('listEl');
+let listMain = document.getElementById('listMain');
+let listCustom = document.getElementById('listCustom');
 let topics = document.getElementById('topics');
 let title, description, link, secondary_title, secondary_para_1, secondary_para_2, current_image_link;
 let input = {}, val = [];
@@ -19,7 +20,7 @@ paraEl.addEventListener('click', (e) => {
     e.preventDefault();
     tCount++;
     formCode = `                        
-    <h4>Topic ${tCount}</h4>
+    <h2 class="title-secondary h2-highlight">Topic ${tCount}</h2>
     <div class="form-group para" id="review${tCount}">
         <label>Topic title</label>
         <input type="text" class="form-control" id="review-${tCount}">
@@ -48,25 +49,78 @@ paraEl.addEventListener('click', (e) => {
     topics.insertAdjacentHTML('beforeend', formCode);
 });
 
+// Regular List Elements Generate
+listMain.addEventListener('click',(e) => {
+    e.preventDefault();
+    tCount++;
+    formCode = `
+    <h2 class="title-secondary h2-highlight">Topic ${tCount}</h2>
+    <div class="form-group listMain" id="review${tCount}">
+        <label>Topic title</label>
+        <input type="text" class="form-control" id="review-${tCount}"/>
+        <label>Direct para 1</label>
+        <textarea class='form-control' rows="2" cols="30"></textarea>
+        <label>Direct para 2</label>
+        <textarea class='form-control' rows="2" cols="30"></textarea>
+        <label>Direct para 3</label>
+        <textarea class='form-control' rows="2" cols="30"></textarea>
+        <label>Topic list item 1</label>
+        <input type="text" class="form-control" />
+        <label>Topic list item 2</label>
+        <input type="text" class="form-control" />
+        <label>Topic list item 3</label>
+        <input type="text" class="form-control">
+        <label>Topic list item 4</label>
+        <input type="text" class="form-control" />
+        <label>Topic list item 5</label>
+        <input type="text" class="form-control" />
+        <label>Topic list item 6</label>
+        <input type="text" class="form-control">
+        <label>Topic list item 7</label>
+        <input type="text" class="form-control">
+        <label>Topic list item 8</label>
+        <input type="text" class="form-control">
+        <label>Topic list item 9</label>
+        <input type="text" class="form-control">
+        <label>Topic list item 10</label>
+        <input type="text" class="form-control" />
+        <label>Indirect para 1</label>
+        <textarea class='form-control' rows="2" cols="30"></textarea>
+        <label>Indirect para 2</label>
+        <textarea class='form-control' rows="2" cols="30"></textarea>
+        <label>Indirect para 3</label>
+        <textarea class='form-control' rows="2" cols="30"></textarea>
+    </div>
+    <br/>
+    `;
+    topics.insertAdjacentHTML('beforeend',formCode);
+});
+
+// For Custom List Input Amount
 // Define numListItems as a global variable
 let numListItems;
 
-listEl.addEventListener('click', (e) => {
+listCustom.addEventListener('click', (e) => {
     e.preventDefault();
-    tCount++;
     // Create the popup box
     const popup = document.createElement('div');
     popup.id = "listBox";
-    popup.innerHTML = `<p>Enter the number of topic list items:</p><input type="text" id="num-list-items" /><button id="submit-num-list-items">Submit</button>`;
+    popup.innerHTML = `<i class="fa-solid fa-rectangle-xmark" id="close-custom-list"></i><p>Enter the number of topic list items:</p><input type="text" id="num-list-items" /><button id="submit-num-list-items">Submit</button>`;
     document.body.appendChild(popup);
+
+    let customListClose = document.getElementById("close-custom-list");
+    customListClose.onclick = function () {
+        document.body.removeChild(popup);
+    }
 
     // Add a click event listener to the submit button
     const submitBtn = document.querySelector('#submit-num-list-items');
     submitBtn.addEventListener('click', () => {
+        tCount++;
 
         formCode = `
-        <h2 class="title-secondary h2-highlight" id="review-${tCount}">Topic ${tCount}</h2>
-        <div class="form-group list" id="review${tCount}">
+        <h2 class="title-secondary h2-highlight">Topic ${tCount}</h2>
+        <div class="form-group listCustom" id="review${tCount}">
             <label>Topic title</label>
             <input type="text" class="form-control" id="review-${tCount}"/>
             <label>Direct para 1</label>
@@ -259,7 +313,34 @@ createParas = () => {
             <br><br>
             `
         }
-        if (index === 0 && classN === 'list') {
+        if(index === 0 && classN === 'listMain') {
+            htmlCode_topics += `
+            <h2 class="title-secondary h2-highlight" id="review-${index+1}">${val[0]}</h2>
+            <p class="text">${val[1]}</p> 
+            <p class="text">${val[2]}</p> 
+            <p class="text">${val[3]}</p> 
+            <div class="div-container"> 
+               <ul>
+                    <li class="text">${val[4]}</li> 
+                    <li class="text">${val[5]}</li>
+                    <li class="text">${val[6]}</li> 
+                    <li class="text">${val[7]}</li> 
+                    <li class="text">${val[8]}</li>
+                    <li class="text">${val[9]}</li> 
+                    <li class="text">${val[10]}</li> 
+                    <li class="text">${val[11]}</li>
+                    <li class="text">${val[12]}</li> 
+                    <li class="text">${val[13]}</li>
+               </ul>
+            </div>
+            <br>
+            <p class="text">${val[14]}</p> 
+            <p class="text">${val[15]}</p> 
+            <p class="text">${val[16]}</p> 
+            <br><br>
+            `
+        }
+        if (index === 0 && classN === 'listCustom') {
 
             htmlCode_second = `
             <h2 class="title-secondary h2-highlight" id="review-${index+1}">${val[0]}</h2>
@@ -317,7 +398,34 @@ createParas = () => {
                 <br><br>
                 `
             }
-            if (classN == 'list' && index != 0) {
+            if(classN === 'listMain' && index != 0) {
+                htmlCode_topics += `
+                <h2 class="title-secondary h2-highlight" id="review-${index+1}">${val[0]}</h2>
+                <p class="text">${val[1]}</p> 
+                <p class="text">${val[2]}</p> 
+                <p class="text">${val[3]}</p> 
+                <div class="div-container"> 
+                   <ul>
+                        <li class="text">${val[4]}</li> 
+                        <li class="text">${val[5]}</li>
+                        <li class="text">${val[6]}</li> 
+                        <li class="text">${val[7]}</li> 
+                        <li class="text">${val[8]}</li>
+                        <li class="text">${val[9]}</li> 
+                        <li class="text">${val[10]}</li> 
+                        <li class="text">${val[11]}</li>
+                        <li class="text">${val[12]}</li> 
+                        <li class="text">${val[13]}</li>
+                   </ul>
+                </div>
+                <br>
+                <p class="text">${val[14]}</p> 
+                <p class="text">${val[15]}</p> 
+                <p class="text">${val[16]}</p> 
+                <br><br>
+                `
+            }
+            if (classN == 'listCustom' && index != 0) {
                 htmlCode_topics += `
                 <h2 class="title-secondary h2-highlight" id="review-${index+1}">${val[0]}</h2>
                 <p class="text">${val[1]}</p> 

@@ -120,6 +120,16 @@ textarea.form-control {
     border-radius: 5px;
 }
 
+#listCustom {
+    border-radius: 100%;
+    background-color: yellowgreen;
+}
+
+#close-custom-list {
+    font-size: 1.3rem;
+    float: right;
+}
+
 /* Ai Gen */
 #ai-gen {
     background-color: red;
