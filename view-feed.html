@@ -10,7 +10,7 @@
 <body>
     <script>
          // Check if current page is sitemap page and display sitemap data if it is
-        if (window.location.pathname === '/view-feed.html' || window.location.pathname === '/view-feed') {
+        if (window.location.pathname === '/view-feed.html') {
         var preElement = document.createElement('pre');
         preElement.innerText = localStorage.getItem('rssGen') + "\n";
         document.body.appendChild(preElement);
