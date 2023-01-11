@@ -14,6 +14,7 @@ var rssGen = `<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
     xmlns:georss="http://www.georss.org/georss"
     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
     >
+  <!--Current RSS Feed links: ${anchorsWithHostname.length + 1} -->
   <channel>
     <title>Feenixbloom Website</title>
     <atom:link href="https://${OgDomain}/feed" rel="self" type="application/rss+xml" />
