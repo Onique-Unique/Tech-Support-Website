@@ -48,7 +48,7 @@ sitemapGen += '</urlset>';
 localStorage.setItem('sitemapGen', sitemapGen);
 
 // Store counted links data in local storage
-localStorage.setItem('linkCount', counterElement);
+// localStorage.setItem('linkCount', counterElement);
 
 // Create a link for the sitemap - Uncomment If Needed
 // var linkElement = document.createElement('a');

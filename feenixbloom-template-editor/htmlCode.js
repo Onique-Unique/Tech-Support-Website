@@ -98,6 +98,9 @@ let htmlCode_first = `<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noarchive,noodp,max-image-preview:large">
+    <meta property="article:published_time" content="{ .date-schema }">
+    <meta property="article:modified_time" content="{ .date-schema }">
     <meta name="theme-color" content="#151515">
     <meta name="twitter:card" class="metaPageTitle" content="{ .title }">
     <meta name="twitter:site" content="@oniquedaily">
@@ -111,6 +114,7 @@ let htmlCode_first = `<!DOCTYPE html>
     <meta itemprop="description" content="{ .description }">
     <meta name="description" content="{ .description }">
     <link rel="canonical" href="https://www.feenixbloom.com/search-guide/article/{ .current-page-link }">
+    <link rel="alternate" title="Feenixbloom » Feed" type="application/rss+xml" href="https://www.feenixbloom.com/feed">
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/images/game-lounge-img/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/game-lounge-img/favicon_io/favicon-32x32.png">
