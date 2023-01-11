@@ -1052,13 +1052,13 @@
 
 .popup-inner-content {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
 }
 .popup-inner-content h3 {
-    font-size: 2rem;
+    font-size: 2.4rem;
     color: red;
     font-weight: bold;
 }
@@ -1086,6 +1086,7 @@
     color: white;
 }
 .popup-btn {
+    font-size: 1.7rem;
     padding: 0.5rem 1.5rem;
     border-radius: 1.5rem;
     background-color: #ffe500;
