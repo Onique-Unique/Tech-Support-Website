@@ -35,7 +35,7 @@ body {
 #output {
     background-color: #16142857;
     color: ghostwhite;
-    padding: 0 10px;
+    padding: 0 10px 5px 10px;
 }
 
 #input,
