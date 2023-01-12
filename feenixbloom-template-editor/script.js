@@ -50,7 +50,7 @@ paraEl.addEventListener('click', (e) => {
 });
 
 // Regular List Elements Generate
-listMain.addEventListener('click',(e) => {
+listMain.addEventListener('click', (e) => {
     e.preventDefault();
     tCount++;
     formCode = `
@@ -93,7 +93,7 @@ listMain.addEventListener('click',(e) => {
     </div>
     <br/>
     `;
-    topics.insertAdjacentHTML('beforeend',formCode);
+    topics.insertAdjacentHTML('beforeend', formCode);
 });
 
 // For Custom List Input Amount
@@ -313,7 +313,7 @@ createParas = () => {
             <br><br>
             `
         }
-        if(index === 0 && classN === 'listMain') {
+        if (index === 0 && classN === 'listMain') {
             htmlCode_topics += `
             <h2 class="title-secondary h2-highlight" id="review-${index+1}">${val[0]}</h2>
             <p class="text">${val[1]}</p> 
@@ -398,7 +398,7 @@ createParas = () => {
                 <br><br>
                 `
             }
-            if(classN === 'listMain' && index != 0) {
+            if (classN === 'listMain' && index != 0) {
                 htmlCode_topics += `
                 <h2 class="title-secondary h2-highlight" id="review-${index+1}">${val[0]}</h2>
                 <p class="text">${val[1]}</p> 
@@ -517,18 +517,18 @@ copy.addEventListener('click', event => {
 const nameSafe = "Bearer";
 
 const x1 = 'sk-';
-const x2 = 'Kcbg'; 
-const x3 = 'Yasw'; 
-const x4 = 'Gw7c'; 
-const x5 = 'eec6'; 
-const x6 = 'ZpA5'; 
-const x7 = 'T3Bl'; 
-const x8 = 'bkFJ'; 
-const x9 = 'NNsK'; 
-const x10 = 'JYnI'; 
-const x11 = '7ayt'; 
-const x12 = 'phql'; 
-const x13 = 'AE0s'; 
+const x2 = 'Kcbg';
+const x3 = 'Yasw';
+const x4 = 'Gw7c';
+const x5 = 'eec6';
+const x6 = 'ZpA5';
+const x7 = 'T3Bl';
+const x8 = 'bkFJ';
+const x9 = 'NNsK';
+const x10 = 'JYnI';
+const x11 = '7ayt';
+const x12 = 'phql';
+const x13 = 'AE0s';
 
 const secureAI = x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9 + x10 + x11 + x12 + x13;
 
@@ -536,71 +536,94 @@ var AIbutton = document.getElementById('ai-gen');
 
 const aiInstructions = "write original and creative information for:";
 
-AIbutton.onclick = function () {
+AIbutton.onclick = async function () {
     event.preventDefault();
     // Create the popup container
     var askAI = document.createElement('div');
     askAI.classList.add('ask-ai');
 
-     // Create the input field
-     var inputAI = document.createElement('textarea');
-     inputAI.type = 'text';
-     inputAI.placeholder = 'Enter something';
- 
-     // Create the generate button
-     var aigenerateButton = document.createElement('button');
-     aigenerateButton.innerHTML = 'Generate';
-     aigenerateButton.id = "aiGenerateText";
-     aigenerateButton.onclick = async function () {
-         // Show the loading element and blur background
-         document.querySelector('.app-container').style.filter = 'blur(2px) brightness(0.5)';
-         document.querySelector('.loading').style.display = 'block';
- 
-         // Call the OpenAI API to generate content
-         const response = await fetch(`https://api.openai.com/v1/completions`, {
-             method: 'POST',
-             headers: {
-                 'Content-Type': 'application/json',
-                 'Authorization': `${nameSafe} ${secureAI}`
-             },
-             body: JSON.stringify({
-                 model: 'text-davinci-003',
-                 prompt: aiInstructions + inputAI.value + "?",
-                 max_tokens: 500,
-             }),
-         });
- 
-         // Check if the request was successful
-         if (!response.ok) {
-             // Hide the loading element
-             document.querySelector('.loading').style.display = 'none';
- 
-             // Display the error message
-             console.error(`Error: ${response.status} ${response.statusText}`);
-             return;
-         }
- 
-         // Parse the response as JSON
-         const data = await response.json();
- 
-         // Check if the data object has a choices property
-         if (!data.choices) {
-             // Hide the loading element
-             document.querySelector('.loading').style.display = 'none';
- 
-             // Display the error message
-             console.error(`Error: The data object does not have a 'choices' property.`);
-             return;
-         }
- 
-         // Hide the loading element and remove background blur
-         document.querySelector('.loading').style.display = 'none';
-         document.querySelector('.app-container').style.filter = 'none';
- 
-         // Display the generated content in the page
-         var output = document.getElementById("output");
-         output.innerText = data.choices[0].text;
-     }
+    // Create the input field
+    var inputAI = document.createElement('textarea');
+    inputAI.type = 'text';
+    inputAI.placeholder = 'Enter something';
+
+    // Create the generate button
+    var aigenerateButton = document.createElement('button');
+    aigenerateButton.innerHTML = 'Generate';
+    aigenerateButton.id = "aiGenerateText";
+    aigenerateButton.onclick = async function () {
+
+        // Check if the input value is empty before executing rest of code
+        if (inputAI.value === "") {
+            alert("Please enter a value");
+            return;
+        }
+
+        const replacedAIValue = inputAI.value;
+        const topicInsert = document.getElementById("TopicInsert").value;
+
+        // match the text within brackets
+        var matchFind = topicInsert.match(/\[(.*?)\]/);
+
+        // check if input1 has brackets
+        if (matchFind) {
+            // Replace instances of "[blank]" in input2 with text inside the bracket
+            const newAIValue = replacedAIValue.replace(/\[blank\]/g, matchFind[1]);
+
+            // Show the loading element and blur background
+            document.querySelector('.app-container').style.filter = 'blur(2px) brightness(0.5)';
+            document.querySelector('.loading').style.display = 'block';
+
+            // Call the OpenAI API to generate content
+            const response = await fetch(`https://api.openai.com/v1/completions`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `${nameSafe} ${secureAI}`
+                },
+                body: JSON.stringify({
+                    model: 'text-davinci-003',
+                    prompt: aiInstructions + newAIValue + "?",
+                    max_tokens: 500,
+                }),
+            });
+
+            // Check if the request was successful
+            if (!response.ok) {
+                // Hide the loading element
+                document.querySelector('.loading').style.display = 'none';
+
+                // Display the error message
+                console.error(`Error: ${response.status} ${response.statusText}`);
+                return;
+            }
+
+            // Parse the response as JSON
+            const data = await response.json();
+
+            // Check if the data object has a choices property
+            if (!data.choices) {
+                // Hide the loading element
+                document.querySelector('.loading').style.display = 'none';
+
+                // Display the error message
+                console.error(`Error: The data object does not have a 'choices' property.`);
+                return;
+            }
+
+            // Hide the loading element and remove background blur
+            document.querySelector('.loading').style.display = 'none';
+            document.querySelector('.app-container').style.filter = 'none';
+            
+            // Update Text Area with new values
+            inputAI.value = newAIValue;
+
+            // Display the generated content in the page
+            var output = document.getElementById("output");
+            output.innerText = data.choices[0].text;
+
+        }
+    }
 
     // Create the close button
     var aicloseButton = document.createElement('button');
