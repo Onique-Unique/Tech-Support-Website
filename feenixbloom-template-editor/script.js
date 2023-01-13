@@ -517,18 +517,18 @@ copy.addEventListener('click', event => {
 const nameSafe = "Bearer";
 
 const x1 = 'sk-';
-const x2 = 'Kcbg';
-const x3 = 'Yasw';
-const x4 = 'Gw7c';
-const x5 = 'eec6';
-const x6 = 'ZpA5';
+const x2 = 'I56b';
+const x3 = 'Fw7A';
+const x4 = 'eeDo';
+const x5 = '7hXE';
+const x6 = 'xmIY';
 const x7 = 'T3Bl';
 const x8 = 'bkFJ';
-const x9 = 'NNsK';
-const x10 = 'JYnI';
-const x11 = '7ayt';
-const x12 = 'phql';
-const x13 = 'AE0s';
+const x9 = 'dzxf';
+const x10 = 'WXAO';
+const x11 = 'rfRz';
+const x12 = 'A8m4';
+const x13 = 'nmG1';
 
 const secureAI = x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9 + x10 + x11 + x12 + x13;
 
@@ -641,6 +641,33 @@ AIbutton.onclick = async function () {
     // Add the popup container to the body of the page
     document.body.appendChild(askAI);
 }
+
+// Linkify any selected text in the output area of the workspace
+document.addEventListener('contextmenu', function(event) {
+    // Check if the user has highlighted text and if the click event is inside the output div
+    var outputDiv = event.target.closest("#output");
+    if(outputDiv) {
+        var selection = window.getSelection();
+        if (selection.toString().length > 0) {
+          event.preventDefault();
+          // Ask the user for the link URL
+          var linkURL = prompt("Enter the link URL:");
+          // Check if the user entered a URL
+          if (linkURL) {
+            // Create a new link element
+            var link = document.createElement('a');
+            link.href = linkURL;
+            link.innerText = selection;
+
+            // Replace the highlighted text with the link as html version
+            selection.deleteFromDocument();
+            var html = link.outerHTML;
+            var textNode = document.createTextNode(html);
+            selection.getRangeAt(0).insertNode(textNode);
+          }
+        }
+    }
+});
 
 /*//get all the para icons - plus buttons 
 let plusP = document.getElementsByClassName('plusP');
