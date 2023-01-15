@@ -642,6 +642,31 @@ AIbutton.onclick = async function () {
     document.body.appendChild(askAI);
 }
 
+// Toggle Icon To Hide Topic Insert
+// Get references to the input field and the icon
+const inputField = document.getElementById("TopicInsert");
+const icon = document.getElementById("toggle-icon");
+const toggleButton = document.getElementById("toggleButton");
+
+// Add a click event listener to the toggle button
+toggleButton.addEventListener("click", function() {
+  // Toggle the visibility of the input field
+  if (inputField.style.display === "none") {
+    inputField.style.display = "block";
+    // Change the icon to the up arrow
+    icon.classList.remove("fa-circle-chevron-down");
+    icon.classList.add("fa-circle-chevron-up");
+    toggleButton.classList.remove("toggle-btn-top");
+  } else {
+    inputField.style.display = "none";
+    // Change the icon to the down arrow
+    icon.classList.remove("fa-circle-chevron-up");
+    icon.classList.add("fa-circle-chevron-down");
+    toggleButton.classList.add("toggle-btn-top");
+  }
+});
+
+
 // Linkify any selected text in the output area of the workspace
 document.addEventListener('contextmenu', function(event) {
     // Check if the user has highlighted text and if the click event is inside the output div
