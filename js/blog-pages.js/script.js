@@ -698,3 +698,99 @@ setInterval(function(){
     alert("Really?! - You are attempting to do something that is not allowed!");
   }
 }, 1000);
+
+// Rain Effect Script Only For Pages That Have Rain Mentioned In Title:
+// A script that shows rain effects on page when it is present in title
+window.addEventListener("load", () => {
+  var title = document.title;
+  var rainWords = /rain|rains|raining|wet/gi;
+  var snowWords = /snow|snowing|snowfall|ski|skiing/gi;
+  if (title.match(rainWords)) {
+      var canvas = document.createElement("canvas");
+      canvas.setAttribute("style", "width: 100%; height: 100%; position: fixed; top:0; left:0; z-index: 2;");
+      canvas.setAttribute("id", "rain");
+      document.body.appendChild(canvas);
+
+      var canvas = document.getElementById("rain");
+      var ctx = canvas.getContext("2d");
+      var rainSpeed = 2.5;
+
+      function Raindrop() {
+          this.x = Math.random() * canvas.width;
+          this.y = 0;
+          this.speed = (Math.random() * rainSpeed) + rainSpeed;
+      }
+
+      Raindrop.prototype.draw = function () {
+          ctx.beginPath();
+          ctx.fillStyle = "#32c8fa";
+          ctx.arc(this.x, this.y, 2, 0, 2 * Math.PI);
+          ctx.fill();
+      }
+
+      Raindrop.prototype.move = function () {
+          this.y += this.speed;
+      }
+
+      var raindrops = [];
+      for (var i = 0; i < 100; i++) {
+          raindrops.push(new Raindrop());
+      }
+
+      function animate() {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          for (var i = 0; i < raindrops.length; i++) {
+              raindrops[i].move();
+              raindrops[i].draw();
+          }
+      }
+
+      setInterval(animate, 1000 / 60); // Runs the animation 60 times per second
+      setInterval(function () {
+          raindrops.push(new Raindrop());
+      }, 100); // Add a new raindrop every 100ms
+  } else if (title.match(snowWords)) {
+    var canvas = document.createElement("canvas");
+    canvas.setAttribute("style", "width: 100%; height: 100%; position: fixed; top:0; left:0; z-index: 2;");
+    canvas.setAttribute("id", "rain");
+    document.body.appendChild(canvas);
+    var canvas = document.getElementById("rain");
+    var ctx = canvas.getContext("2d");
+    var rainSpeed = 1.5; // change rain speed for snow effect
+  
+    function Raindrop() {
+        this.x = Math.random() * canvas.width;
+        this.y = 0;
+        this.speed = (Math.random() * rainSpeed) + rainSpeed;
+    }
+  
+    Raindrop.prototype.draw = function () {
+        ctx.beginPath();
+        ctx.fillStyle = "#e6f5fa"; // change fill style for snow effect
+        ctx.arc(this.x, this.y, 2, 0, 2 * Math.PI);
+        ctx.fill();
+    }
+  
+    Raindrop.prototype.move = function () {
+        this.y += this.speed;
+    }
+  
+    var raindrops = [];
+    for (var i = 0; i < 100; i++) {
+        raindrops.push(new Raindrop());
+    }
+  
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        for (var i = 0; i < raindrops.length; i++) {
+            raindrops[i].move();
+            raindrops[i].draw();
+        }
+    }
+  
+    setInterval(animate, 1000 / 60); // Runs the animation 60 times per second
+    setInterval(function () {
+        raindrops.push(new Raindrop());
+    }, 100); // Add a new raindrop every 100ms
+  }   
+});
