@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title> Feenixbloom Investor Trading Activity </title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" 
-            onload="this.onload=null;this.rel='stylesheet'"/>
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" onload="this.onload=null;this.rel='stylesheet'" />
 
-        <!-- - google font link -->
-        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <!-- - google font link -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 
-        <link rel="stylesheet" href="/css/invest.css">
-   </head>
-    <body>
-        <header>
-            <nav class="navbar">
+    <link rel="stylesheet" href="/css/invest.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6M35XFDJT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-W6M35XFDJT');
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
             <div class="logo"><a href="/investment">Feenixbloom></a></div>
             <ul class="menu">
                 <li><a href="/investment">Home</a></li>
@@ -30,26 +41,27 @@
                 <!-- <input type="button" value="Login"> -->
                 <input id="donate-link" type="button" value="Donate">
             </div>
-            </nav>
-            <div class="text-content">
-                <h2>Insider Trading, &nbsp;<i class="fa-solid fa-left-long"></i><br><span class="heading-span-h2">Find Investment Opportunities!</span></h2>
-                <p>Real investors are trading Non-stop to reach profits in no time using this completely <span>FREE to use!</span> investor network. </p>
-                <p>No &rarr; Signups/ Logins required!- Advance your insider tips by finding out what other investors are sharing and trading in real time!</p>
-            </div>
-            <div class="blob"></div>
-            <div class="blob blob-2"></div>
-            <div class="play-button">
-                <a href="/investment/investors-network">
-                    <span class="play">Get Insider Trades!</span>
-                    <i class="fas fa-play"></i>
-                </a>
-            </div>
-        </header>
-        <script>
-            const openDonateLink = document.getElementById("donate-link");
-            openDonateLink.addEventListener("click", () => {
-                window.open("https://paypal.me/oniquedaily?country.x=JM&locale.x=en_US", "_blank");
-            });
-        </script>
-    </body>
+        </nav>
+        <div class="text-content">
+            <h2>Insider Trading, &nbsp;<i class="fa-solid fa-left-long"></i><br><span class="heading-span-h2">Find Investment Opportunities!</span></h2>
+            <p>Real investors are trading Non-stop to reach profits in no time using this completely <span>FREE to use!</span> investor network. </p>
+            <p>No &rarr; Signups/ Logins required!- Advance your insider tips by finding out what other investors are sharing and trading in real time!</p>
+        </div>
+        <div class="blob"></div>
+        <div class="blob blob-2"></div>
+        <div class="play-button">
+            <a href="/investment/investors-network">
+                <span class="play">Get Insider Trades!</span>
+                <i class="fas fa-play"></i>
+            </a>
+        </div>
+    </header>
+    <script>
+        const openDonateLink = document.getElementById("donate-link");
+        openDonateLink.addEventListener("click", () => {
+            window.open("https://paypal.me/oniquedaily?country.x=JM&locale.x=en_US", "_blank");
+        });
+    </script>
+</body>
+
 </html>
