@@ -514,23 +514,56 @@ copy.addEventListener('click', event => {
     alert("Copied To Clipboard");
 });
 
+// Api key stored to local storage to avoid being stolen, can update api key when necessary
+var keyAccessBtn = document.getElementById("key-access");
+keyAccessBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+  // Create a new div element to hold the input and buttons
+  var apiKeyDiv = document.createElement("div");
+  apiKeyDiv.classList.add('ask-ai');
+  
+  // Create the input element
+  var apiKeyInput = document.createElement("input");
+  apiKeyInput.type = "text";
+  apiKeyInput.placeholder = "Enter API Key";
+  apiKeyInput.style.marginBottom = "5px";
+  
+  // Create the close button
+  var apiCloseBtn = document.createElement("button");
+  apiCloseBtn.innerHTML = "Close";
+  apiCloseBtn.id = "closeAiGenerate";
+  apiCloseBtn.addEventListener("click", function() {
+    document.body.removeChild(apiKeyDiv);
+  });
+  
+  // Create the submit button
+  var apiSubmitBtn = document.createElement("button");
+  apiSubmitBtn.innerHTML = "Submit";
+  apiSubmitBtn.id = "aiGenerateText";
+  apiSubmitBtn.addEventListener("click", function() {
+    if(apiKeyInput.value == ""){
+      alert("API key field is empty");
+    } else {
+    // Save the key to local storage
+    localStorage.setItem("secureAI", apiKeyInput.value);
+    document.body.removeChild(apiKeyDiv);
+    }
+  });
+  
+  // Add the input, close button, and submit button to the div
+  apiKeyDiv.appendChild(apiKeyInput);
+  apiKeyDiv.appendChild(document.createElement("br"));
+  apiKeyDiv.appendChild(apiSubmitBtn);
+  apiKeyDiv.appendChild(apiCloseBtn);
+  
+  // Add the div to the page
+  document.body.appendChild(apiKeyDiv);
+});
+
+// Retrieve the key from local storage
+var secureAI = localStorage.getItem("secureAI");
+
 const nameSafe = "Bearer";
-
-const x1 = 'sk-';
-const x2 = 'I56b';
-const x3 = 'Fw7A';
-const x4 = 'eeDo';
-const x5 = '7hXE';
-const x6 = 'xmIY';
-const x7 = 'T3Bl';
-const x8 = 'bkFJ';
-const x9 = 'dzxf';
-const x10 = 'WXAO';
-const x11 = 'rfRz';
-const x12 = 'A8m4';
-const x13 = 'nmG1';
-
-const secureAI = x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9 + x10 + x11 + x12 + x13;
 
 var AIbutton = document.getElementById('ai-gen');
 

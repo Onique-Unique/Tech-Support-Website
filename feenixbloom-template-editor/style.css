@@ -135,6 +135,11 @@ textarea.form-control {
     background-color: red;
 }
 
+#key-access {
+    background-color: rgba(23, 23, 23, 0.322);
+    color: white;
+}
+
 .ask-ai {
     position: absolute;
     left: 50%;
