@@ -278,6 +278,36 @@ createParas = () => {
             case 15:
                 htmlCode_first = htmlCode_first.replace(/{ .fifteenth-h2 }/g, val[0]);
                 break;
+            case 16:
+                htmlCode_first = htmlCode_first.replace(/{ .sixteenth-h2 }/g, val[0]);
+                break;
+            case 17:
+                htmlCode_first = htmlCode_first.replace(/{ .seventeenth-h2 }/g, val[0]);
+                break;
+            case 18:
+                htmlCode_first = htmlCode_first.replace(/{ .eighteenth-h2 }/g, val[0]);
+                break;
+            case 19:
+                htmlCode_first = htmlCode_first.replace(/{ .nineteenth-h2 }/g, val[0]);
+                break;
+            case 20:
+                htmlCode_first = htmlCode_first.replace(/{ .twentieth-h2 }/g, val[0]);
+                break;
+            case 21:
+                htmlCode_first = htmlCode_first.replace(/{ .twenty-one-h2 }/g, val[0]);
+                break;
+            case 22:
+                htmlCode_first = htmlCode_first.replace(/{ .twenty-two-h2 }/g, val[0]);
+                break;
+            case 23:
+                htmlCode_first = htmlCode_first.replace(/{ .twenty-three-h2 }/g, val[0]);
+                break;
+            case 24:
+                htmlCode_first = htmlCode_first.replace(/{ .twenty-four-h2 }/g, val[0]);
+                break;
+            case 25:
+                htmlCode_first = htmlCode_first.replace(/{ .twenty-five-h2 }/g, val[0]);
+                break;
         }
         // if first para is at index 0 then do this or move to next if statement
         if (index === 0 && classN === 'para') {
