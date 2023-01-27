@@ -139,13 +139,14 @@ if (shareBtn) {
  roadmapModalContent.appendChild(roadmapModalSubtitle);
 
  // Create modal button element
+ var roadmapAnchor = document.createElement("a");
+ roadmapAnchor.style.textDecoration = "none";
+ roadmapAnchor.href = "/passive-earning-main/landing-page/passive-income-roadmap";
  var roadmapModalButton = document.createElement("button");
  roadmapModalButton.classList.add("modal-button");
  roadmapModalButton.innerHTML = "Get Roadmap <i class='fa-solid fa-right-to-bracket'></i> <i class='fa-solid fa-route'></i>";
- roadmapModalButton.addEventListener("click", function() {
-   location.href = 'https://www.feenixbloom.com/passive-earning-main/landing-page/passive-income-roadmap';
- });
- roadmapModalContent.appendChild(roadmapModalButton);
+ roadmapAnchor.appendChild(roadmapModalButton);
+ roadmapModalContent.appendChild(roadmapAnchor);
 
  // Add modal content to modal element
  roadmapModal.appendChild(roadmapModalContent);
