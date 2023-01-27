@@ -791,7 +791,8 @@ button {
     display: none
 }
 
-.div-container-main, .container .posts-container .post .text-alt {
+.div-container-main,
+.container .posts-container .post .text-alt {
     background: #3d95fa2d;
     padding: 25px;
     border-radius: 15px
@@ -1013,6 +1014,7 @@ table tr:nth-child(even) {
         opacity: 0
     }
 }
+
 .promo-box-container {
     position: relative;
     margin: auto;
@@ -1028,6 +1030,7 @@ table tr:nth-child(even) {
     -moz-box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.2);
 }
+
 .promo-box-container .right-triangle {
     position: absolute;
     bottom: 0;
@@ -1038,6 +1041,7 @@ table tr:nth-child(even) {
     -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
     clip-path: polygon(100% 0, 0 100%, 100% 100%);
 }
+
 .promo-box-container .linkspanner {
     position: absolute;
     width: 100%;
@@ -1046,6 +1050,7 @@ table tr:nth-child(even) {
     left: 0;
     z-index: 1;
 }
+
 .promo-box-container .promo-title {
     font-family: Roboto, sans-serif;
     font-size: 26px;
@@ -1059,14 +1064,17 @@ table tr:nth-child(even) {
     transform: translate(-50%, -50%);
     z-index: 99;
 }
+
 .promo-box-container .promo-title a {
     text-decoration: none;
     color: #000;
 }
+
 .promo-box-container .promo-title span.lighter {
     font-weight: 300;
     font-size: 20px;
 }
+
 .promo-box-container .cta-button {
     background: #f1ed01;
     position: absolute;
@@ -1086,10 +1094,12 @@ table tr:nth-child(even) {
     -webkit-transition: color 0.5s, background-color 0.5s;
     transition: color 0.5s, background-color 0.5s;
 }
+
 .promo-box-container .cta-button:hover {
     color: #000;
     background-color: #c5f32f;
 }
+
 @media all and (max-width: 600px) {
     .promo-box-container {
         position: relative;
@@ -1102,20 +1112,24 @@ table tr:nth-child(even) {
         color: #000;
         background: linear-gradient(rgba(241, 221, 1, 0.9), rgba(229, 241, 1, 0.9)), url(/images/nova-tech-office-hero-3.png) no-repeat 90%;
     }
+
     .promo-box-container .promo-title {
         font-size: 22px;
         line-height: 28px;
     }
+
     .promo-box-container .promo-title span.lighter {
         font-size: 16px;
         display: block;
         line-height: 24px;
         margin-top: 10px;
     }
+
     .promo-box-container .cta-button {
         font-size: 14px;
         top: auto;
     }
+
     .promo-box-container .right-triangle {
         width: 39%;
         background: linear-gradient(rgba(128, 0, 128, 0.6), rgba(128, 0, 128, 0.6)), url(/images/nova-tech-office-hero-3.png) no-repeat 90%;
@@ -1210,10 +1224,10 @@ table tr:nth-child(even) {
 
 /* Affiliate Box */
 .aff-banner {
-    background-color: cornflowerblue; 
-    height: 130px; 
-    border-radius: 10px; 
-    margin: 20px 0; 
+    background-color: cornflowerblue;
+    height: 130px;
+    border-radius: 10px;
+    margin: 20px 0;
 }
 
 .aff-discount {
@@ -1241,14 +1255,14 @@ table tr:nth-child(even) {
 }
 
 .aff-banner-btn {
-    background-color: rgb(248 255 192); 
-    right: 50%; 
-    transform: translate(50%, -50%); 
-    padding: 15px 40px; 
+    background-color: rgb(248 255 192);
+    right: 50%;
+    transform: translate(50%, -50%);
+    padding: 15px 40px;
 }
 
-@media (max-width: 540px){
-    .aff-banner-btn{
+@media (max-width: 540px) {
+    .aff-banner-btn {
         width: 85%;
     }
 }
@@ -1263,7 +1277,7 @@ table tr:nth-child(even) {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .popup-content {
@@ -1306,34 +1320,40 @@ table tr:nth-child(even) {
     transform: translate(-50%, -50%);
     width: 80%;
 }
+
 .popup-inner-content h3 {
     font-size: 2.4rem;
     color: red;
     font-weight: bold;
 }
+
 #popup-main-h4 {
     font-size: 1.6rem;
     line-height: 1;
     color: crimson;
     margin-bottom: 5px;
 }
+
 #span-head {
     font-size: 2.1rem;
     color: #3e9231;
     font-style: italic;
     text-decoration: underline;
 }
+
 .coupon-text {
     font-weight: 700;
     font-size: 1.4rem;
     line-height: 1.2;
     margin-top: 1.2rem;
 }
+
 #coupon-code {
     background: #38491d;
     padding: 1px 10px;
     color: white;
 }
+
 .popup-btn {
     font-size: 1.7rem;
     padding: 0.5rem 1.5rem;
@@ -1378,6 +1398,54 @@ table tr:nth-child(even) {
     }
 }
 
+/* Masterclass/ Roadmap Modals */
+.modal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.modal-content {
+    padding: 25px 0;
+    width: 90%;
+}
+
+.modal-title {
+    font-size: 3.6rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.modal-subtitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.modal-button {
+    background: #00bfff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.modal-button:hover {
+    background: #0095d9;
+}
+.fa-right-to-bracket {
+    color: rgb(241, 241, 241);
+}
+.fa-route {
+    color: rgb(255, 255, 43);
+}
+
 /* Exit Intent Detect Modal */
 .exit-intent-modal {
     position: fixed;
@@ -1397,6 +1465,7 @@ table tr:nth-child(even) {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -60%);
+    width: 70%;
 }
 
 .exit-intent-modal h2 {
@@ -1445,10 +1514,12 @@ table tr:nth-child(even) {
         transform: translateX(-2px);
         opacity: 1;
     }
+
     50% {
         transform: translateX(2px);
         opacity: .8;
     }
+
     100% {
         transform: translateX(-2px);
         opacity: 1;

@@ -117,6 +117,47 @@ if (shareBtn) {
   });
 }
 
+// Roadmap Modal Promote on page
+ var roadmapModal = document.createElement("div");
+ roadmapModal.classList.add("modal");
+ roadmapModal.id = "roadmapModal";
+
+ // Create modal content element
+ var roadmapModalContent = document.createElement("div");
+ roadmapModalContent.classList.add("modal-content");
+
+ // Create modal title element
+ var roadmapModalTitle = document.createElement("h3");
+ roadmapModalTitle.classList.add("modal-title");
+ roadmapModalTitle.innerHTML = "Change Your <br> Life";
+ roadmapModalContent.appendChild(roadmapModalTitle);
+
+ // Create modal subtitle element
+ var roadmapModalSubtitle = document.createElement("p");
+ roadmapModalSubtitle.classList.add("modal-subtitle");
+ roadmapModalSubtitle.innerHTML = "I Make $8000+ monthly revenue from your visit to this website. <br><br> Here's how you can too!";
+ roadmapModalContent.appendChild(roadmapModalSubtitle);
+
+ // Create modal button element
+ var roadmapModalButton = document.createElement("button");
+ roadmapModalButton.classList.add("modal-button");
+ roadmapModalButton.innerHTML = "Get Roadmap <i class='fa-solid fa-right-to-bracket'></i> <i class='fa-solid fa-route'></i>";
+ roadmapModalButton.addEventListener("click", function() {
+   location.href = '/passive-earning-main/landing-page/passive-income-roadmap';
+ });
+ roadmapModalContent.appendChild(roadmapModalButton);
+
+ // Add modal content to modal element
+ roadmapModal.appendChild(roadmapModalContent);
+
+ var roadmapNodes = ["advisory","review-4", "review-7", "review-9", "review-15", "review-21", "review-24"];
+ for (var i = 0; i < roadmapNodes.length; i++) {
+   var roadmapNode = document.getElementById(roadmapNodes[i]);
+   if (roadmapNode) {
+    roadmapNode.parentNode.insertBefore(roadmapModal.cloneNode(true), roadmapNode);
+   }
+ }
+
 // Link Checker On WebPage - Gather All Links On Webpage In Console to See & Find Missing/ Broken Links
 // var links = document.querySelectorAll("a");
 // var linkReport = [];

@@ -1532,6 +1532,55 @@ details[open] .faq__summary:after {
     }
 }
 
+/* Masterclass/ Roadmap Modals */
+.modal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.modal-content {
+    padding: 25px 0;
+    width: 90%;
+}
+
+.modal-title {
+    font-size: 3.6rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.modal-subtitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.modal-button {
+    background: #00bfff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.modal-button:hover {
+    background: #0095d9;
+}
+
+.fa-right-to-bracket {
+    color: rgb(241, 241, 241);
+}
+.fa-route {
+    color: rgb(255, 255, 43);
+}
+
 /* Exit Intent Detect Modal */
 .exit-intent-modal {
     position: fixed;
@@ -1551,6 +1600,7 @@ details[open] .faq__summary:after {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -60%);
+    width: 70%;
 }
 
 .exit-intent-modal h2 {
