@@ -151,7 +151,7 @@ if (shareBtn) {
  // Add modal content to modal element
  roadmapModal.appendChild(roadmapModalContent);
 
- var roadmapNodes = ["advisory","review-4", "review-7", "review-9", "review-15", "review-21", "review-24"];
+ var roadmapNodes = ["main-post-2", "review-2", "review-5", "review-7", "review-9", "review-12", "review-15", "review-19", "review-21", "review-24"];
  for (var i = 0; i < roadmapNodes.length; i++) {
    var roadmapNode = document.getElementById(roadmapNodes[i]);
    if (roadmapNode) {
