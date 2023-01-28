@@ -190,7 +190,7 @@ getPreInputs = () => {
         'secondary-title': secondary_title.value,
         'secondary-title-paragraph': secondary_para_1.value,
         'secondary-title-paragraph-2': secondary_para_2.value,
-        'current-image-link': current_image_link.value
+        'current-image-link': current_image_link.value.replace("C:\\fakepath\\", "")
     };
 };
 
