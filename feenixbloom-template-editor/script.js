@@ -597,7 +597,7 @@ const nameSafe = "Bearer";
 
 var AIbutton = document.getElementById('ai-gen');
 
-const aiInstructions = "write original and creative information for:";
+const aiInstructions = "in a conversational and approachable tone that is easy to understand for the reader, write original and creative information for:";
 
 AIbutton.onclick = async function () {
     event.preventDefault();
