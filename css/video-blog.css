@@ -1541,6 +1541,10 @@ details[open] .faq__summary:after {
     justify-content: center;
     text-align: center;
     background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #46afff;
+    border-radius: 10px;
+    box-shadow: 1px -1px 17px 6px #26e09b;
+    margin: 30px 0;
 }
 
 .modal-content {
