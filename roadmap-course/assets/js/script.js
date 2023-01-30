@@ -53,14 +53,14 @@ if (window.location.hostname === "feenixbloom.com") {
     alert("You Do Not Have Access To This Page!");
 }
 // Check if the "access-key" is present in local storage
-if (!localStorage.getItem("access-key")) {
+if (!localStorage.getItem("access-key") && !localStorage.getItem("continueRoadmap")) {
     // Make the body of the current page blank
     document.body.innerHTML = "";
     setInterval(function() {
     // Display an alert message
-    alert("Access key for this page is missing - ensure you are authorised access.");
+    alert("Access key for this page is missing - ensure you are authorised access, Please email featuremyclip@gmail.com");
     // Keep listening every 1 second
-        if (localStorage.getItem("access-key")) {
+        if (localStorage.getItem("access-key") && localStorage.getItem("continueRoadmap")) {
             location.reload();
         }
     }, 1000);

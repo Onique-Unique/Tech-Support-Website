@@ -121,6 +121,10 @@ for(i = 0; i < roadmapOpenBtns.length; i++){
       <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
       </form>      
       `;
+
+      continueRoadmapBtn.addEventListener("click", function() {
+        localStorage.setItem("continueRoadmap", "Yes");
+      });      
     
       // Append the message and pay button to the popup container
       serverPopup.appendChild(serverMessage);

@@ -2,7 +2,7 @@
 var accessKey = Math.random().toString(36).slice(2);
 
 // Check the current page URL
-if (window.location.href === "https://www.feenixbloom.com/roadmap-course/access-key") {
+if (window.location.href === "https://www.feenixbloom.com/roadmap-course/access-key" && localStorage.getItem("continueRoadmap")) {
     // Create h1 message 
     var h1Message = document.createElement("h1");
     h1Message.className = "access-h1";
@@ -16,7 +16,7 @@ if (window.location.href === "https://www.feenixbloom.com/roadmap-course/access-
     // Create h1 message 
     var paraMessage = document.createElement("h1");
     paraMessage.className = "access-para";
-    paraMessage.innerText = "Save/ Bookmark This Page To Keep Access Key!";
+    paraMessage.innerText = "Save/ Bookmark This Page To Keep Access Key! - Clearing Browser Data May Cause You To Lose Access Key";
 
     // Add the access key to the popup element
     popup.innerHTML = `<i class="fa-solid fa-unlock-keyhole"></i> &nbsp;Access Key: ` + accessKey;
@@ -33,6 +33,13 @@ if (window.location.href === "https://www.feenixbloom.com/roadmap-course/access-
 
     // Store the access key in the local storage when the page loads
     localStorage.setItem("access-key", accessKey);
+}
+
+if(window.location.href != "https://www.feenixbloom.com/roadmap-course/access-key" && !localStorage.getItem("continueRoadmap")){
+  setInterval(function() {     
+    // Display an alert message
+    alert("You Do Not Have Access To This Page! - If you should have authorization to this page please email: featuremyclip@gmail.com");
+  }, 1000);
 }
 
 // Protect Page from unwanted content stealing, plagiarism etc such as copying content or inspect element...
