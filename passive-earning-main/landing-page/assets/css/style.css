@@ -124,13 +124,12 @@ body {
     margin-top: 10px;
 }
 
-.header .header_text {
+.header .header_text, .banner .header_text {
     font-size: 20px;
     color: #fff;
     text-align: center;
     font-weight: bold;
     padding-top: 10px;
-
 }
 
 /* .....................BANNER............................. */
