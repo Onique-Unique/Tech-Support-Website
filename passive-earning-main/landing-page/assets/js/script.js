@@ -1,3 +1,36 @@
+document.getElementById("passive-contact").innerHTML = `
+  <h3> Want To Earn More?</h3>
+  <div class="form-text-h4">
+      <h4>Leave Us Your Email.</h4>
+      <h4 id="last-h4"><i class="fas fa-clipboard-check"></i><i class="fas fa-gifts"></i> It's time for you to gain your financial freedom..</h4>
+  </div>
+  <!--  -->
+  <input type="hidden" name="_subject" value="Passive Income Roadmap Interest!">
+  <input type="hidden" name="_autoresponse" value="This is an Automated response. A Team Member will reach out to you shortly">
+  <input type="hidden" name="_next" value="https://www.feenixbloom.com/main-pages/apex-mobile/game-lounge-thankyou">
+
+  <!--  -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+  <fieldset>
+      <input name="name" placeholder="Your Name..." type="text" tabindex="1" required autofocus>
+  </fieldset>
+  <fieldset>
+      <input name="email" placeholder="Your Email Address..." type="email" tabindex="2" required>
+  </fieldset>
+  <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+  </fieldset>
+`
+
+// Contact Send to avoid spam and hide email from email crawlers
+const contactSend = document.getElementById("contact-submit");
+const action = "https://formsubmit.co/oniquecampbell@yahoo.com";
+
+contactSend.addEventListener("click", () => {
+    document.getElementById("passive-contact").action = action;
+});
+
 // Onpage Popup 
 let popup = document.createElement('div');
 popup.className = 'popup';
@@ -59,38 +92,38 @@ const detailsBtn = document.querySelector(".details_button");
 
 const roadmapOpenBtns = [initiateRoadmapBtn, detailsBtn];
 
-for(i = 0; i < roadmapOpenBtns.length; i++){
+for (i = 0; i < roadmapOpenBtns.length; i++) {
   roadmapOpenBtns[i].addEventListener("click", () => {
     let popupDiv = document.createElement('div');
     popupDiv.className = 'popup-div';
-  
+
     // Create the popup container
     const roadmapPopup = document.createElement("div");
     roadmapPopup.classList.add("roadmap-popup");
-  
+
     const roadmapClose = document.createElement("i");
     roadmapClose.classList.add("to-roadmap-close");
     roadmapClose.innerHTML = '<i class="fa-solid fa-circle-xmark"></i>';
-  
+
     // Create the message
     const roadmapMessage = document.createElement("p");
     roadmapMessage.innerHTML = "<span id='roadmap-span'>Wait!!</span> <br> <span>Limited Access Only</span>  - Please Do Not Click <span style='color: yellow; font-size: 1rem;'>Continue</span> If You Are Not Ready! <br> <span style='color: #f93535; font-size: 12px; text-shadow: 0px 0px 2px #065fd4;'>9+ hours Learning.</span>";
-    
+
     // Create the continue button
     const continueRoadmapBtn = document.createElement("button");
     continueRoadmapBtn.classList.add("roadmap-btn");
     continueRoadmapBtn.innerText = "Continue";
-  
+
     // Append the message and continue button to the popup container
     roadmapPopup.appendChild(roadmapClose);
     roadmapPopup.appendChild(roadmapMessage);
     roadmapPopup.appendChild(continueRoadmapBtn);
-  
+
     // Append the popup container to the body
     popupDiv.appendChild(roadmapPopup);
     document.body.appendChild(popupDiv);
     document.querySelector(".main-section").classList.add("popup-blur");
-  
+
     // Close roadmap click 
     roadmapClose.addEventListener("click", () => {
       popupDiv.style.display = 'none';
@@ -102,15 +135,15 @@ for(i = 0; i < roadmapOpenBtns.length; i++){
 
       let serverPopupDiv = document.createElement('div');
       serverPopupDiv.className = 'server-popup-div';
-    
+
       // Create the popup container
       const serverPopup = document.createElement("div");
       serverPopup.classList.add("roadmap-popup");
-    
+
       // Create the message
       const serverMessage = document.createElement("p");
       serverMessage.innerHTML = "Due to Server Load of users - there is a low charge of <span id='roadmap-price'>$8.99</span> to gain access to the program and full access to the Passive Income Roadmap! <br> <span id='pay-guarantee'>After One (1) Year - You do not reach your goal, I'll Give You $20 - Guaranteed!</span>";
-    
+
       // Create the continue button
       const continueRoadmapBtn = document.createElement("button");
       continueRoadmapBtn.classList.add("server-pay-btn");
@@ -122,20 +155,20 @@ for(i = 0; i < roadmapOpenBtns.length; i++){
       </form>      
       `;
 
-      continueRoadmapBtn.addEventListener("click", function() {
+      continueRoadmapBtn.addEventListener("click", function () {
         localStorage.setItem("continueRoadmap", "Yes");
-      });      
-    
+      });
+
       // Append the message and pay button to the popup container
       serverPopup.appendChild(serverMessage);
       serverPopup.appendChild(continueRoadmapBtn);
-    
+
       // Append the popup container to the body
       serverPopupDiv.appendChild(serverPopup);
       document.body.appendChild(serverPopupDiv);
       document.querySelector(".main-section").classList.add("popup-blur");
       roadmapClose.style.opacity = "0";
-      roadmapClose.style.pointerEvents = "none";    
+      roadmapClose.style.pointerEvents = "none";
     });
   });
 }
@@ -144,8 +177,7 @@ const questionaireButton = document.querySelector(".questionaire_button");
 const questionsHere = document.querySelector(".questions-here");
 let currentQuestion = 0;
 
-const questions = [
-  {
+const questions = [{
     question: "Are you Already Earning $8000+ In Monthly Passive Income?",
     options: ["Yes", "No"]
   },
@@ -175,8 +207,8 @@ questionaireButton.addEventListener("click", () => {
 function addQuestion() {
   if (currentQuestion >= questions.length) {
     if (currentQuestion === questions.length) {
-      if(questionsHere.innerHTML !== "Sorry Your Journey Ends Here..")
-      questionsHere.innerHTML = '<img id="question-img" src="assets/images/details-arrow.png" alt="details image" srcset=""> <br> Welcome! - Scroll Down To Get Roadmap.';
+      if (questionsHere.innerHTML !== "Sorry Your Journey Ends Here..")
+        questionsHere.innerHTML = '<img id="question-img" src="assets/images/details-arrow.png" alt="details image" srcset=""> <br> Welcome! - Scroll Down To Get Roadmap.';
     }
     return;
   }
