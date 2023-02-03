@@ -31,7 +31,9 @@ const contactSend = document.getElementById("contact-submit");
 const action = "https://formsubmit.co/oniquecampbell@yahoo.com";
 
 contactSend.addEventListener("click", () => {
-    document.getElementById("passive-contact").action = action;
+  document.querySelectorAll(".passive-contact").forEach(elClick => {
+    elClick.action = action;
+  });  
 });
 
 // Onpage Popup 
