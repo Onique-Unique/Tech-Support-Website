@@ -32,6 +32,26 @@ body {
     flex-direction: row;
 }
 
+h2, h4 {
+    font-weight: 300;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    font-weight: 600;
+}
+
+.pre-start {
+    color: #ffdf00;
+}
+
+.inner-fill {
+    color: #e7fff5;
+}
+
 #output {
     background-color: #16142857;
     color: ghostwhite;

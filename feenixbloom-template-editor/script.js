@@ -22,7 +22,7 @@ paraEl.addEventListener('click', (e) => {
     formCode = `                        
     <h2 class="title-secondary h2-highlight">Topic ${tCount}</h2>
     <div class="form-group para" id="review${tCount}">
-        <label>Topic title</label>
+        <label class="pre-start">Topic title</label>
         <input type="text" class="form-control" id="review-${tCount}">
         <label>Direct para 1</label>
         <textarea class='form-control' rows="2" cols="30"></textarea>
@@ -30,13 +30,13 @@ paraEl.addEventListener('click', (e) => {
         <textarea class='form-control' rows="2" cols="30"></textarea>
         <label>Direct para 3</label>
         <textarea class='form-control' rows="2" cols="30"></textarea>
-        <label>Inner para 1</label>
+        <label class="inner-fill">Inner para 1</label>
         <textarea class='form-control' rows="2" cols="30"></textarea>
-        <label>Inner para 2</label>
+        <label class="inner-fill">Inner para 2</label>
         <textarea class='form-control' rows="2" cols="30"></textarea>
         <label>Alternate Inner para</label>
         <textarea class='form-control' rows="2" cols="30"></textarea>
-        <label>Inner para 4</label>
+        <label class="inner-fill">Inner para 4</label>
         <textarea class='form-control' rows="2" cols="30"></textarea>
         <label>Indirect para 1</label>
         <textarea class='form-control' rows="2" cols="30"></textarea>
@@ -56,7 +56,7 @@ listMain.addEventListener('click', (e) => {
     formCode = `
     <h2 class="title-secondary h2-highlight">Topic ${tCount}</h2>
     <div class="form-group listMain" id="review${tCount}">
-        <label>Topic title</label>
+        <label class="pre-start">Topic title</label>
         <input type="text" class="form-control" id="review-${tCount}"/>
         <label>Direct para 1</label>
         <textarea class='form-control' rows="2" cols="30"></textarea>
@@ -64,25 +64,25 @@ listMain.addEventListener('click', (e) => {
         <textarea class='form-control' rows="2" cols="30"></textarea>
         <label>Direct para 3</label>
         <textarea class='form-control' rows="2" cols="30"></textarea>
-        <label>Topic list item 1</label>
+        <label class="inner-fill">Topic list item 1</label>
         <input type="text" class="form-control" />
-        <label>Topic list item 2</label>
+        <label class="inner-fill">Topic list item 2</label>
         <input type="text" class="form-control" />
-        <label>Topic list item 3</label>
+        <label class="inner-fill">Topic list item 3</label>
         <input type="text" class="form-control">
-        <label>Topic list item 4</label>
+        <label class="inner-fill">Topic list item 4</label>
         <input type="text" class="form-control" />
-        <label>Topic list item 5</label>
+        <label class="inner-fill">Topic list item 5</label>
         <input type="text" class="form-control" />
-        <label>Topic list item 6</label>
+        <label class="inner-fill">Topic list item 6</label>
         <input type="text" class="form-control">
-        <label>Topic list item 7</label>
+        <label class="inner-fill">Topic list item 7</label>
         <input type="text" class="form-control">
-        <label>Topic list item 8</label>
+        <label class="inner-fill">Topic list item 8</label>
         <input type="text" class="form-control">
-        <label>Topic list item 9</label>
+        <label class="inner-fill">Topic list item 9</label>
         <input type="text" class="form-control">
-        <label>Topic list item 10</label>
+        <label class="inner-fill">Topic list item 10</label>
         <input type="text" class="form-control" />
         <label>Indirect para 1</label>
         <textarea class='form-control' rows="2" cols="30"></textarea>
@@ -121,7 +121,7 @@ listCustom.addEventListener('click', (e) => {
         formCode = `
         <h2 class="title-secondary h2-highlight">Topic ${tCount}</h2>
         <div class="form-group listCustom" id="review${tCount}">
-            <label>Topic title</label>
+            <label class="pre-start">Topic title</label>
             <input type="text" class="form-control" id="review-${tCount}"/>
             <label>Direct para 1</label>
             <textarea class='form-control' rows="2" cols="30"></textarea>
@@ -140,7 +140,7 @@ listCustom.addEventListener('click', (e) => {
         }
 
         for (let i = 1; i <= parseInt(numListItems); i++) {
-            formCode += `<label>Topic list item ${i}</label><input type="text" class="form-control" />`;
+            formCode += `<label class="inner-fill">Topic list item ${i}</label><input type="text" class="form-control" />`;
         }
 
         formCode += `
