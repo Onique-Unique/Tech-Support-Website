@@ -21,18 +21,20 @@ document.querySelectorAll(".passive-contact").forEach(el => {
         <input name="email" placeholder="Your Email Address..." type="email" tabindex="2" required>
     </fieldset>
     <fieldset>
-        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        <button name="submit" type="submit" class="contact-submit" data-submit="...Sending">Submit</button>
     </fieldset>
   `;
 });
 
 // Contact Send to avoid spam and hide email from email crawlers
-const contactSend = document.getElementById("contact-submit");
+const contactSends = document.querySelectorAll(".contact-submit");
 const action = "https://formsubmit.co/oniquecampbell@yahoo.com";
 
-contactSend.addEventListener("click", function() {
-  document.querySelectorAll(".passive-contact").forEach(el => {
-    el.action = action;
+contactSends.forEach(contactSend => {
+  contactSend.addEventListener("click", function() {
+    document.querySelectorAll(".passive-contact").forEach(el => {
+      el.action = action;
+    });
   });
 });
 
