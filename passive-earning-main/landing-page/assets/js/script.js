@@ -30,10 +30,10 @@ document.querySelectorAll(".passive-contact").forEach(el => {
 const contactSend = document.getElementById("contact-submit");
 const action = "https://formsubmit.co/oniquecampbell@yahoo.com";
 
-contactSend.addEventListener("click", () => {
-  document.querySelectorAll(".passive-contact").forEach(elClick => {
-    elClick.action = action;
-  });  
+contactSend.addEventListener("click", function() {
+  document.querySelectorAll(".passive-contact").forEach(el => {
+    el.action = action;
+  });
 });
 
 // Onpage Popup 
