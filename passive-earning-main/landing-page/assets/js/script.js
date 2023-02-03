@@ -1,27 +1,30 @@
-document.getElementById("passive-contact").innerHTML = `
-  <h3> Want To Earn More?</h3>
-  <div class="form-text-h4">
-      <h4>Leave Us Your Email.</h4>
-      <h4 id="last-h4"><i class="fas fa-clipboard-check"></i><i class="fas fa-gifts"></i> It's time for you to gain your financial freedom..</h4>
-  </div>
-  <!--  -->
-  <input type="hidden" name="_subject" value="Passive Income Roadmap Interest!">
-  <input type="hidden" name="_autoresponse" value="This is an Automated response. A Team Member will reach out to you shortly">
-  <input type="hidden" name="_next" value="https://www.feenixbloom.com/main-pages/apex-mobile/game-lounge-thankyou">
+document.querySelectorAll(".passive-contact").forEach(el => {
+  el.innerHTML = `
+    <h3> Want To Earn More?</h3>
+    <h4>Get The Complete Roadmap.</h4>
+    <div class="form-text-h4">
+        <h4>Leave Us Your Email.</h4>
+        <h4 id="last-h4"><i class="fas fa-clipboard-check"></i><i class="fas fa-gifts"></i> It's time for you to gain your financial freedom..</h4>
+    </div>
+    <!--  -->
+    <input type="hidden" name="_subject" value="Passive Income Roadmap Interest!">
+    <input type="hidden" name="_autoresponse" value="This is an Automated response. A Team Member will reach out to you shortly">
+    <input type="hidden" name="_next" value="https://www.feenixbloom.com/main-pages/apex-mobile/game-lounge-thankyou">
 
-  <!--  -->
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_template" value="table">
-  <fieldset>
-      <input name="name" placeholder="Your Name..." type="text" tabindex="1" required autofocus>
-  </fieldset>
-  <fieldset>
-      <input name="email" placeholder="Your Email Address..." type="email" tabindex="2" required>
-  </fieldset>
-  <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-  </fieldset>
-`
+    <!--  -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <fieldset>
+        <input name="name" placeholder="Your Name..." type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+        <input name="email" placeholder="Your Email Address..." type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  `;
+});
 
 // Contact Send to avoid spam and hide email from email crawlers
 const contactSend = document.getElementById("contact-submit");

@@ -335,13 +335,13 @@ body {
     position: relative;
 }
 
-.passive-contact-container #passive-contact {
+.passive-contact-container .passive-contact {
     border-radius: 25px;
     padding: 25px;
     box-shadow: 3px -6px 20px 0px rgb(222 222 222 / 20%), 0 5px 5px 0 rgb(224 219 219 / 24%);
 }
 
-.passive-contact-container #passive-contact .form-exit {
+.passive-contact-container .passive-contact .form-exit {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -349,7 +349,7 @@ body {
     color: #C33764;
 }
 
-.passive-contact-container #passive-contact h3 {
+.passive-contact-container .passive-contact h3 {
     display: block;
     font-size: 30px;
     font-weight: 300;
@@ -357,24 +357,28 @@ body {
     color: aliceblue;
 }
 
-.passive-contact-container #passive-contact .form-text-h4 {
+.passive-contact-container .passive-contact h4 {
+    color: aliceblue;
+}
+
+.passive-contact-container .passive-contact .form-text-h4 {
     margin: 5px 0 15px;
 }
 
-.passive-contact-container #passive-contact .form-text-h4 h4 {
+.passive-contact-container .passive-contact .form-text-h4 h4 {
     display: block;
     font-size: 13px;
     font-weight: 600;
     color: #72A276;
 }
 
-.passive-contact-container #passive-contact .form-text-h4 #last-h4 i {
+.passive-contact-container .passive-contact .form-text-h4 #last-h4 i {
     color: aliceblue;
     font-size: 1.4rem;
     margin-right: 1%;
 }
 
-.passive-contact-container #passive-contact fieldset {
+.passive-contact-container .passive-contact fieldset {
     border: medium none !important;
     margin: 0 0 10px;
     min-width: 100%;
@@ -382,13 +386,13 @@ body {
     width: 100%;
 }
 
-.passive-contact-container #passive-contact fieldset textarea {
+.passive-contact-container .passive-contact fieldset textarea {
     height: 20rem;
 }
 
-.passive-contact-container #passive-contact input[type="text"],
-.passive-contact-container #passive-contact input[type="email"],
-.passive-contact-container #passive-contact textarea {
+.passive-contact-container .passive-contact input[type="text"],
+.passive-contact-container .passive-contact input[type="email"],
+.passive-contact-container .passive-contact textarea {
     width: 100%;
     border: none;
     outline: none;
@@ -398,16 +402,16 @@ body {
     transition: all .2s;
 }
 
-.passive-contact-container #passive-contact input[type="text"]:hover,
-.passive-contact-container #passive-contact input[type="email"]:hover,
-.passive-contact-container #passive-contact textarea:hover {
+.passive-contact-container .passive-contact input[type="text"]:hover,
+.passive-contact-container .passive-contact input[type="email"]:hover,
+.passive-contact-container .passive-contact textarea:hover {
     -webkit-transition: border-color 0.3s ease-in-out;
     -moz-transition: border-color 0.3s ease-in-out;
     transition: border-color 0.3s ease-in-out;
     border: 1px solid #aaa;
 }
 
-.passive-contact-container #passive-contact button[type="submit"] {
+.passive-contact-container .passive-contact button[type="submit"] {
     cursor: pointer;
     width: 100%;
     border: none;
@@ -419,7 +423,7 @@ body {
     transition: all .2s;
 }
 
-.passive-contact-container #passive-contact button[type="submit"]:hover {
+.passive-contact-container .passive-contact button[type="submit"]:hover {
     background: #43A047;
     -webkit-transition: background-color 0.3s ease-in-out;
     -moz-transition: background-color 0.3s ease-in-out;

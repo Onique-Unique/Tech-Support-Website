@@ -22,7 +22,7 @@ paraEl.addEventListener('click', (e) => {
     formCode = `                        
     <h2 class="title-secondary h2-highlight">Topic ${tCount}</h2>
     <div class="form-group para" id="review${tCount}">
-        <label class="pre-start">Topic title</label>
+        <label class="pre-start" for="review-${tCount}">Topic title</label>
         <input type="text" class="form-control" id="review-${tCount}">
         <label>Direct para 1</label>
         <textarea class='form-control' rows="2" cols="30"></textarea>
@@ -56,7 +56,7 @@ listMain.addEventListener('click', (e) => {
     formCode = `
     <h2 class="title-secondary h2-highlight">Topic ${tCount}</h2>
     <div class="form-group listMain" id="review${tCount}">
-        <label class="pre-start">Topic title</label>
+        <label class="pre-start" for="review-${tCount}">Topic title</label>
         <input type="text" class="form-control" id="review-${tCount}"/>
         <label>Direct para 1</label>
         <textarea class='form-control' rows="2" cols="30"></textarea>
@@ -121,7 +121,7 @@ listCustom.addEventListener('click', (e) => {
         formCode = `
         <h2 class="title-secondary h2-highlight">Topic ${tCount}</h2>
         <div class="form-group listCustom" id="review${tCount}">
-            <label class="pre-start">Topic title</label>
+            <label class="pre-start" for="review-${tCount}">Topic title</label>
             <input type="text" class="form-control" id="review-${tCount}"/>
             <label>Direct para 1</label>
             <textarea class='form-control' rows="2" cols="30"></textarea>
@@ -483,7 +483,7 @@ createParas = () => {
         }
     });
 
-    htmlCode = htmlCode_first + htmlCode_second + htmlCode_topics + htmlCode_last; //create the entire html code
+    htmlCode = htmlCode_first + htmlCode_second + htmlCode_topics + htmlCode_last; //create the entire html code     
 
     // Get date time
     const now = new Date();
@@ -546,48 +546,48 @@ copy.addEventListener('click', event => {
 
 // Api key stored to local storage to avoid being stolen, can update api key when necessary
 var keyAccessBtn = document.getElementById("key-access");
-keyAccessBtn.addEventListener("click", function(event) {
+keyAccessBtn.addEventListener("click", function (event) {
     event.preventDefault();
-  // Create a new div element to hold the input and buttons
-  var apiKeyDiv = document.createElement("div");
-  apiKeyDiv.classList.add('ask-ai');
-  
-  // Create the input element
-  var apiKeyInput = document.createElement("input");
-  apiKeyInput.type = "text";
-  apiKeyInput.placeholder = "Enter API Key";
-  apiKeyInput.style.marginBottom = "5px";
-  
-  // Create the close button
-  var apiCloseBtn = document.createElement("button");
-  apiCloseBtn.innerHTML = "Close";
-  apiCloseBtn.id = "closeAiGenerate";
-  apiCloseBtn.addEventListener("click", function() {
-    document.body.removeChild(apiKeyDiv);
-  });
-  
-  // Create the submit button
-  var apiSubmitBtn = document.createElement("button");
-  apiSubmitBtn.innerHTML = "Submit";
-  apiSubmitBtn.id = "aiGenerateText";
-  apiSubmitBtn.addEventListener("click", function() {
-    if(apiKeyInput.value == ""){
-      alert("API key field is empty");
-    } else {
-    // Save the key to local storage
-    localStorage.setItem("secureAI", apiKeyInput.value);
-    document.body.removeChild(apiKeyDiv);
-    }
-  });
-  
-  // Add the input, close button, and submit button to the div
-  apiKeyDiv.appendChild(apiKeyInput);
-  apiKeyDiv.appendChild(document.createElement("br"));
-  apiKeyDiv.appendChild(apiSubmitBtn);
-  apiKeyDiv.appendChild(apiCloseBtn);
-  
-  // Add the div to the page
-  document.body.appendChild(apiKeyDiv);
+    // Create a new div element to hold the input and buttons
+    var apiKeyDiv = document.createElement("div");
+    apiKeyDiv.classList.add('ask-ai');
+
+    // Create the input element
+    var apiKeyInput = document.createElement("input");
+    apiKeyInput.type = "text";
+    apiKeyInput.placeholder = "Enter API Key";
+    apiKeyInput.style.marginBottom = "5px";
+
+    // Create the close button
+    var apiCloseBtn = document.createElement("button");
+    apiCloseBtn.innerHTML = "Close";
+    apiCloseBtn.id = "closeAiGenerate";
+    apiCloseBtn.addEventListener("click", function () {
+        document.body.removeChild(apiKeyDiv);
+    });
+
+    // Create the submit button
+    var apiSubmitBtn = document.createElement("button");
+    apiSubmitBtn.innerHTML = "Submit";
+    apiSubmitBtn.id = "aiGenerateText";
+    apiSubmitBtn.addEventListener("click", function () {
+        if (apiKeyInput.value == "") {
+            alert("API key field is empty");
+        } else {
+            // Save the key to local storage
+            localStorage.setItem("secureAI", apiKeyInput.value);
+            document.body.removeChild(apiKeyDiv);
+        }
+    });
+
+    // Add the input, close button, and submit button to the div
+    apiKeyDiv.appendChild(apiKeyInput);
+    apiKeyDiv.appendChild(document.createElement("br"));
+    apiKeyDiv.appendChild(apiSubmitBtn);
+    apiKeyDiv.appendChild(apiCloseBtn);
+
+    // Add the div to the page
+    document.body.appendChild(apiKeyDiv);
 });
 
 // Retrieve the key from local storage
@@ -677,7 +677,7 @@ AIbutton.onclick = async function () {
             // Hide the loading element and remove background blur
             document.querySelector('.loading').style.display = 'none';
             document.querySelector('.app-container').style.filter = 'none';
-            
+
             // Update Text Area with new values
             inputAI.value = newAIValue;
 
@@ -712,50 +712,63 @@ const icon = document.getElementById("toggle-icon");
 const toggleButton = document.getElementById("toggleButton");
 
 // Add a click event listener to the toggle button
-toggleButton.addEventListener("click", function() {
-  // Toggle the visibility of the input field
-  if (inputField.style.display === "none") {
-    inputField.style.display = "block";
-    // Change the icon to the up arrow
-    icon.classList.remove("fa-circle-chevron-down");
-    icon.classList.add("fa-circle-chevron-up");
-    toggleButton.classList.remove("toggle-btn-top");
-  } else {
-    inputField.style.display = "none";
-    // Change the icon to the down arrow
-    icon.classList.remove("fa-circle-chevron-up");
-    icon.classList.add("fa-circle-chevron-down");
-    toggleButton.classList.add("toggle-btn-top");
-  }
+toggleButton.addEventListener("click", function () {
+    // Toggle the visibility of the input field
+    if (inputField.style.display === "none") {
+        inputField.style.display = "block";
+        // Change the icon to the up arrow
+        icon.classList.remove("fa-circle-chevron-down");
+        icon.classList.add("fa-circle-chevron-up");
+        toggleButton.classList.remove("toggle-btn-top");
+    } else {
+        inputField.style.display = "none";
+        // Change the icon to the down arrow
+        icon.classList.remove("fa-circle-chevron-up");
+        icon.classList.add("fa-circle-chevron-down");
+        toggleButton.classList.add("toggle-btn-top");
+    }
 });
 
 
 // Linkify any selected text in the output area of the workspace
-document.addEventListener('contextmenu', function(event) {
+document.addEventListener('contextmenu', function (event) {
     // Check if the user has highlighted text and if the click event is inside the output div
     var outputDiv = event.target.closest("#output");
-    if(outputDiv) {
+    if (outputDiv) {
         var selection = window.getSelection();
         if (selection.toString().length > 0) {
-          event.preventDefault();
-          // Ask the user for the link URL
-          var linkURL = prompt("Enter the link URL:");
-          // Check if the user entered a URL
-          if (linkURL) {
-            // Create a new link element
-            var link = document.createElement('a');
-            link.href = linkURL;
-            link.innerText = selection;
+            event.preventDefault();
+            // Ask the user for the link URL
+            var linkURL = prompt("Enter the link URL:");
+            // Check if the user entered a URL
+            if (linkURL) {
+                // Create a new link element
+                var link = document.createElement('a');
+                link.href = linkURL;
+                link.innerText = selection;
 
-            // Replace the highlighted text with the link as html version
-            selection.deleteFromDocument();
-            var html = link.outerHTML;
-            var textNode = document.createTextNode(html);
-            selection.getRangeAt(0).insertNode(textNode);
-          }
+                // Replace the highlighted text with the link as html version
+                selection.deleteFromDocument();
+                var html = link.outerHTML;
+                var textNode = document.createTextNode(html);
+                selection.getRangeAt(0).insertNode(textNode);
+            }
         }
     }
 });
+
+// Pre/ Page Inputs Label Color Code if left empty vs filled
+document.querySelector('body').addEventListener('input', function(event) {
+    const target = event.target;
+    if (target.matches('input, textarea')) {
+      const label = document.querySelector(`label[for=${target.id}]`);
+      if (target.value.trim() !== "") {
+        label.style.color = "#86CD82";
+      } else {
+        label.style.color = "";
+      }
+    }
+  });  
 
 /*//get all the para icons - plus buttons 
 let plusP = document.getElementsByClassName('plusP');

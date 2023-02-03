@@ -217,7 +217,7 @@ textarea.form-control {
 #toggleButton {
     position: absolute;
     top: 36px;
-    left: 50%;
+    left: 48%;
     transform: translate(-50%, 20%);
     padding: 2px 10px;
     border-radius: 5px;
