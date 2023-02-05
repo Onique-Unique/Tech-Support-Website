@@ -174,6 +174,7 @@ submit.addEventListener('click', (e) => {
 });
 
 //Get the preliminary inputs - title, description, link, secondary title details
+const titleConjunction = " - Expert Opinion [UPDATED]";
 getPreInputs = () => {
     title = document.getElementById('title');
     description = document.getElementById('description');
@@ -184,7 +185,7 @@ getPreInputs = () => {
     current_image_link = document.getElementById("image-link");
 
     input = {
-        title: title.value,
+        title: title.value + titleConjunction,
         description: description.value,
         'current-page-link': link.value,
         'secondary-title': secondary_title.value,
