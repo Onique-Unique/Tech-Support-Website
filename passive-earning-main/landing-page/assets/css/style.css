@@ -419,8 +419,9 @@ body {
     color: #FFF;
     margin: 0 0 5px;
     padding: 10px;
-    font-size: 15px;
+    font-size: 20px;
     transition: all .2s;
+    font-weight: 600;
 }
 
 .passive-contact-container .passive-contact button[type="submit"]:hover {
