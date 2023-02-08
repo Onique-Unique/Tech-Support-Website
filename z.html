@@ -1,0 +1,63 @@
+<html>
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <h1>Image Generator</h1>
+  <input type="text" id="topic-input" placeholder="Enter Topic...">
+  <input type="text" id="describe-img" placeholder="Image Description:">
+  <div id="tweet-text"></div>
+  <img id="generated-image" src="" style="display: none;">
+  <button id="generate-button">Generate Image</button>
+  <script>
+    const generateButton = document.getElementById("generate-button");
+    const generatedImage = document.getElementById("generated-image");
+    const userInput = document.getElementById("topic-input");
+    const imgDescription = document.getElementById("describe-img");
+    generateButton.addEventListener("click", async () => {
+      const apiKey = "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";
+
+      async function generateFunnyTweet() {
+        const response = await fetch(`https://api.openai.com/v1/completions`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${apiKey}`
+          },
+          body: JSON.stringify({
+            model: 'text-curie-001',
+            prompt: `A funny tweet about ${userInput.value} that make people laugh and be amazed enough to want to share, no more than 20 words.`,
+            max_tokens: 50,
+          }),
+        });
+        const data = await response.json();
+        document.getElementById('tweet-text').innerText = data.choices[0].text;
+      }
+      await generateFunnyTweet();
+      const prompt = document.getElementById("tweet-text").innerText;
+
+      try {
+        const response = await axios.post("https://api.openai.com/v1/images/generations", {
+          // model: "image-alpha-001",
+          n: 1,
+          size: "256x256",
+          prompt: `${imgDescription.value}, attractive, precise, camera quality photorealism picture, high resolution, hyper realistic, f/3.5, Canon EOS 1000D, clear focus, Ultra-HD, 8K, denoise, photoshoot`
+        }, {
+          headers: {
+            "Authorization": `Bearer ${apiKey}`
+          }
+        });
+
+        const imageUrl = response.data.data[0].url;
+        generatedImage.src = imageUrl;
+        generatedImage.style.display = "block";
+      } catch (error) {
+        console.error(error);
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -19,6 +19,16 @@
     <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" onload="this.onload=null;this.rel='stylesheet'" />
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11030417165"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-11030417165');
+    </script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6M35XFDJT"></script>
     <script>
@@ -443,5 +453,17 @@
         </footer>
     </div>
     <script src="assets/js/script.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            if (document.location.href.includes('/game-lounge-thankyou')) {
+            gtag('event', 'conversion', {'send_to': 'AW-11030417165/KaARCKS_y4oYEI2e24sp'});
+            }
+        });
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('[action="https://www.paypal.com/cgi-bin/webscr"]')) {
+            gtag('event', 'conversion', {'send_to': 'AW-11030417165/iExTCK66zYoYEI2e24sp'});
+            }
+        })
+  </script>
 </body>
 </html>
