@@ -328,7 +328,9 @@ createParas = () => {
             <p class="text">${val[8]}</p> 
             <p class="text">${val[9]}</p> 
             <p class="text">${val[10]}</p> 
-            <br><br>
+            <br>
+            <iframe src="{ .current-embed-video-link }" class="image"></iframe>
+            <br>
             <!-- Generate Portfolio Promo Card/ Box Start -->
             <blockquote>
                 <div class="promo-box-container">
@@ -368,6 +370,21 @@ createParas = () => {
             <p class="text">${val[14]}</p> 
             <p class="text">${val[15]}</p> 
             <p class="text">${val[16]}</p> 
+            <br>
+            <iframe src="{ .current-embed-video-link }" class="image"></iframe>
+            <br>
+            <!-- Generate Portfolio Promo Card/ Box Start -->
+            <blockquote>
+                <div class="promo-box-container">
+                    <a href="https://novatechoffice.com/statement-generate/index" target="_blank">
+                    <span class="linkspanner"></span>
+                    </a>
+                <p class="promo-title"><a href="https://novatechoffice.com/statement-generate/index" target="_blank">Interested in Earning More This Year? <br> <span class="lighter">Lead your Investment, Growth and Digital Assets - Get Your Portfolio Today. <i class="fa-solid fa-cloud-arrow-down"></i></span></a></p>
+                <p><a class="cta-button" href="https://novatechoffice.com/statement-generate/index" target="_blank">Generate Investment Portfolio <i class="fa-solid fa-download"></i></a></p>
+                <div class="right-triangle"> </div>
+                </div>
+            </blockquote>
+            <!-- Generate Portfolio Promo Card/ Box End -->
             <br><br>
             `
         }
@@ -394,7 +411,9 @@ createParas = () => {
                 <p class="text">${val[startIndex]}</p> 
                 <p class="text">${val[startIndex + 1]}</p> 
                 <p class="text">${val[startIndex + 2]}</p> 
-                <br><br>
+                <br>
+                <iframe src="{ .current-embed-video-link }" class="image"></iframe>
+                <br>
             <!-- Generate Portfolio Promo Card/ Box Start -->
             <blockquote>
                 <div class="promo-box-container">
@@ -507,8 +526,13 @@ createParas = () => {
     htmlCode = htmlCode.replace(/{ .date-schema }/g, isoDate);
     htmlCode = htmlCode.replace(/{ .dateMM }/g, `${monthName} ${day}, ${year}`);
 
-    //Remove the h2, p, div, ul, li elements with no content (if the inputs have spaces, it'll stay)
+    // Replace Iframe Src instances
+    const embed_video_link = document.getElementById('video-link').value;
+    htmlCode = htmlCode.replace(/{ .current-embed-video-link }/g, embed_video_link);
+
+    //Remove the h2, p, div, ul, li, iframe elements with no content (if the inputs have spaces, it'll stay)
     htmlCode = htmlCode.replace(/<(ul|h2|li)[^>]*>\s*<\/\1>|<li><a[^>]*>\s*<\/a><\/li>|<div class="div-container">\s*<\/div>/gi, '');
+    htmlCode = htmlCode.replace(/<iframe[^>]*src="" class="image"><\/iframe>/gi, '');
     htmlCode = htmlCode.replace(/<p class="text">(\s)*<\/p>/gi, '\n');
     htmlCode = htmlCode.replace(/<p class="text text-alt">(\s)*<\/p>/gi, '\n');
     htmlCode = htmlCode.replace(/<li class="text">(null|undefined|\s)*<\/li>/gi, '\n');
