@@ -329,7 +329,7 @@ createParas = () => {
             <p class="text">${val[9]}</p> 
             <p class="text">${val[10]}</p> 
             <br>
-            <iframe src="{ .current-embed-video-link }" class="image" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="{ .current-embed-video-link }" height="380" class="image" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <br>
             <!-- Generate Portfolio Promo Card/ Box Start -->
             <blockquote>
@@ -371,7 +371,7 @@ createParas = () => {
             <p class="text">${val[15]}</p> 
             <p class="text">${val[16]}</p> 
             <br>
-            <iframe src="{ .current-embed-video-link }" class="image" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="{ .current-embed-video-link }" height="380" class="image" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <br>
             <!-- Generate Portfolio Promo Card/ Box Start -->
             <blockquote>
@@ -412,7 +412,7 @@ createParas = () => {
                 <p class="text">${val[startIndex + 1]}</p> 
                 <p class="text">${val[startIndex + 2]}</p> 
                 <br>
-                <iframe src="{ .current-embed-video-link }" class="image" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="{ .current-embed-video-link }" height="380" class="image" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <br>
             <!-- Generate Portfolio Promo Card/ Box Start -->
             <blockquote>
@@ -532,7 +532,7 @@ createParas = () => {
 
     //Remove the h2, p, div, ul, li, iframe elements with no content (if the inputs have spaces, it'll stay)
     htmlCode = htmlCode.replace(/<(ul|h2|li)[^>]*>\s*<\/\1>|<li><a[^>]*>\s*<\/a><\/li>|<div class="div-container">\s*<\/div>/gi, '');
-    htmlCode = htmlCode.replace(/<iframe[^>]*src="" class="image" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen><\/iframe>/gi, '');
+    htmlCode = htmlCode.replace(/<iframe[^>]*src="" height="380" class="image" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen><\/iframe>/gi, '');
     htmlCode = htmlCode.replace(/<p class="text">(\s)*<\/p>/gi, '\n');
     htmlCode = htmlCode.replace(/<p class="text text-alt">(\s)*<\/p>/gi, '\n');
     htmlCode = htmlCode.replace(/<li class="text">(null|undefined|\s)*<\/li>/gi, '\n');

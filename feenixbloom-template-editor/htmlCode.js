@@ -234,7 +234,7 @@ let htmlCode_first = `<!DOCTYPE html>
                     </div>
                     <br><br>
                     <a href="/investment.html">
-                        <img loading="lazy" title="{ .secondary-title }" src="/images/blog-pages/{ .current-image-link }" alt="{ .secondary-title }" class="image">
+                        <img loading="lazy" title="{ .secondary-title }" srcset="/images/blog-pages/{ .current-image-link }" alt="{ .secondary-title }" class="image" sizes="(min-width: 1280px) 900px" decoding="async">
                     </a>
                     <br><br>
                     <div class="mini-banner">

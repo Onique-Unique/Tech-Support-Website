@@ -61,6 +61,10 @@ button {
     cursor: pointer
 }
 
+iframe {
+    min-height: 380px;
+}
+
 .hide {
     display: none
 }
