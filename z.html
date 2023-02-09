@@ -5,7 +5,7 @@
 </head>
 
 <body>
-  <h1>Image Generator</h1>
+  <h1>Deep Discovery Ai</h1>
   <input type="text" id="topic-input" placeholder="Enter Topic...">
   <input type="text" id="describe-img" placeholder="Image Description:">
   <div id="tweet-text"></div>
@@ -16,8 +16,37 @@
     const generatedImage = document.getElementById("generated-image");
     const userInput = document.getElementById("topic-input");
     const imgDescription = document.getElementById("describe-img");
+    const ImgPrompt = `attractive, precise, camera quality photorealism picture, high resolution, hyper realistic, f/3.5, Canon EOS 1000D, clear focus, Ultra-HD, 8K, denoise, photoshoot`;
+    const messageToAi = `
+    You are a professional conversational query headline writer that is capable of producing the best and unique results for your clients, you are now tasked to predict how users engage with the future of search engines based on natural conversational language, you should aim to make your work super unique and different but match the instructions clearly, your goal is to provide to your client the following instructions:
+
+    Here is the Example reference to follow:
+
+    Related Conversational Query - Headline: 
+
+    I'm thinking about getting a [keywords], but I'm not sure about the pain. 
+
+    Search Engine Answer - Prediction: 
+
+    Getting a [keyword relevance] can be a long and painful process, as the  [keyword relevance] artist will be working on a large area of skin for several hours. However, the level of discomfort varies from person to person and can depend on factors such as the size of the [keyword relevance] and the individual's pain tolerance.
+
+    Related Post Queries:
+
+    . Benefits of networking with other professionals in the industry
+    . Opportunities to learn about the latest trends and technology
+    . Insights into best practices for success
+    . Access to exclusive workshops and training sessions
+    . The potential to gain a competitive advantage in the market.
+
+    Here is the instructions that the client wants you to make unique and deliver on with completeness:
+    
+    Based on example above, Transform the following keywords: ${userInput.value}, into new longtail unique natural conversational personalized search queries separately that does not include terms from example but does include the keywords mentioned, no less than 10 words, you should imitate what a real human user would search if they were to have a conversation with you, ensure optimized natural language also optimize for semantic relevance, including predicted search engine answers, must return 1 Related Conversational Query - Headline results with Search Answer Prediction. At the end of the very last Search Answer Prediction result add only once, max up to 5 h2 bulleted questions under the Related Post Query:  that the client should also take note of to cover in their article/ blog post.
+
+    Start here: 
+    `;
+    
     generateButton.addEventListener("click", async () => {
-      const apiKey = "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";
+      const apiKey = localStorage.getItem("secureAI");
 
       async function generateFunnyTweet() {
         const response = await fetch(`https://api.openai.com/v1/completions`, {
@@ -28,22 +57,21 @@
           },
           body: JSON.stringify({
             model: 'text-curie-001',
-            prompt: `A funny tweet about ${userInput.value} that make people laugh and be amazed enough to want to share, no more than 20 words.`,
-            max_tokens: 50,
+            prompt: messageToAi,
+            max_tokens: 256,
           }),
         });
         const data = await response.json();
         document.getElementById('tweet-text').innerText = data.choices[0].text;
       }
       await generateFunnyTweet();
-      const prompt = document.getElementById("tweet-text").innerText;
 
       try {
         const response = await axios.post("https://api.openai.com/v1/images/generations", {
           // model: "image-alpha-001",
           n: 1,
-          size: "256x256",
-          prompt: `${imgDescription.value}, attractive, precise, camera quality photorealism picture, high resolution, hyper realistic, f/3.5, Canon EOS 1000D, clear focus, Ultra-HD, 8K, denoise, photoshoot`
+          size: "512x512",
+          prompt: `${userInput.value}, ${imgDescription.value}, ${ImgPrompt}`
         }, {
           headers: {
             "Authorization": `Bearer ${apiKey}`
