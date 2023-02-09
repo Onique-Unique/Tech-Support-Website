@@ -187,7 +187,7 @@ let htmlCode_first = `<!DOCTYPE html>
                 <h3 class="title">Table of Contents</h3>
                 <div class="category">
                     <!-- Include Keyword in Table Of Contents -->
-                    <a href="#main-post-1"> { .secondary-title }<span>1</span></a>
+                    <a href="#main-post-1">{ .secondary-title }<span>1</span></a>
                     <a href="#main-post-2"> Choose Your Topic:<span>2</span></a>
                     <a href="#main-post-3"> Free Investors Network<span>3</span> </a>
                 </div>
