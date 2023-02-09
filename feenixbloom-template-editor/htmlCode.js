@@ -83,14 +83,6 @@ let htmlCode_first = `<!DOCTYPE html>
                 "@type": "Answer",
                 "text": "{ .second-h2-paragraph }"
               }
-            },
-            {
-              "@type": "Question",
-              "name": "{ .fourth-h2 }",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "{ .fourth-h2-paragraph }"
-              }
             }
           ]
         }
@@ -215,13 +207,9 @@ let htmlCode_first = `<!DOCTYPE html>
                                     <a href="/investment.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Find Easy Investment Opportunities</span></a>
                                     <meta itemprop="position" content="1" />
                                 </li>
-                                <!-- <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                                    <a href="/search-guide/ceramic-coating/ceramic-coating" class="breadcrumbs__link" aria-current="page" itemprop="item"><span itemprop="name">60+ Ceramic Coating Tips & Tricks For You!</span></a>
-                                    <meta itemprop="position" content="2" />
-                                </li> -->
                                 <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                                     <a href="/search-guide/article/{ .current-page-link }" class="breadcrumbs__link breadcrumbs__link--active" aria-current="page" itemprop="item"><span itemprop="name">{ .secondary-title }</span></a>
-                                    <meta itemprop="position" content="3" />
+                                    <meta itemprop="position" content="2" />
                                 </li>
                             </ul>
                         </div>
