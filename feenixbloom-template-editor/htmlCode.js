@@ -15,16 +15,16 @@ let htmlCode_first = `<!DOCTYPE html>
                         "@type": "SearchAction",
                         "target": {
                             "@type": "EntryPoint",
-                            "urlTemplate": "https://www.feenixbloom.com/investment/investors-network?s={search_term_string}"
+                            "urlTemplate": "https://www.feenixbloom.com/search-guide/article?s={search_term_string}"
                         },
                         "query-input": "required name=search_term_string"
                     }],
                     "inLanguage": "en-US"
                 }],
-                "@type": "BlogPosting",
-                "mainEntityOfPage": "https://www.feenixbloom.com/search-guide/article/{ .current-page-link }",
+                "@type": "NewsArticle",
+                "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.feenixbloom.com/search-guide/article/{ .current-page-link }" },
                 "url": "https://www.feenixbloom.com/search-guide/article/{ .current-page-link }",
-                "headline": "Investors are trading in real time, Stay ahead of the Update with our - Investors Information Network",
+                "headline": "{ .title }",
                 "description":
                 "{ .description }",
                 "speakable": {
@@ -40,7 +40,7 @@ let htmlCode_first = `<!DOCTYPE html>
                 }], 
                 "publisher": {
                     "@type": "Organization",
-                    "name": "Feenix Bloom",
+                    "name": "Feenixbloom",
                     "logo": {
                         "@type": "ImageObject",
                         "url": "https://www.feenixbloom.com/images/invest-file-assets/investment-page-home",
