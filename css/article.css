@@ -493,10 +493,10 @@ button {
 }
 
 .container .posts-container .post .image {
-    height: 40rem;
+    /* height: 40rem; */
     width: 100%;
     border-radius: .8rem;
-    object-fit: contain
+    /* object-fit: contain */
 }
 
 .container .posts-container .post .image-alt {
@@ -1211,9 +1211,9 @@ table tr:nth-child(even) {
         font-size: 1.8rem
     }
 
-    .container .posts-container .post .image {
+    /* .container .posts-container .post .image {
         height: 30rem
-    }
+    } */
 
     .footer {
         flex-flow: column;
