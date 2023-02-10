@@ -867,7 +867,7 @@ hr {
 
 .container .posts-container .post .text, .posts-accordion .panel .text, .posts-accordion .text{
     color: var(--black);
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 2.2;
     padding: 1rem 0;
 }
@@ -1580,7 +1580,7 @@ table tr:nth-child(even) {
     }
 
     .container .posts-container .post .text, .posts-accordion .panel .text, .posts-accordion .text {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .container .posts-container .post .image {
@@ -1756,14 +1756,14 @@ table tr:nth-child(even) {
 }
 
 .modal-title {
-    font-size: 3.6rem;
+    font-size: 3.2rem;
     font-weight: bold;
     margin-bottom: 20px;
     color: #333;
 }
 
 .modal-subtitle {
-    font-size: 24px;
+    font-size: 2rem;
     margin-bottom: 20px;
     color: #555;
 }

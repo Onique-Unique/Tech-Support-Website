@@ -135,7 +135,7 @@ if (shareBtn) {
  // Create modal subtitle element
  var roadmapModalSubtitle = document.createElement("p");
  roadmapModalSubtitle.classList.add("modal-subtitle");
- roadmapModalSubtitle.innerHTML = "I Make $8000+ monthly revenue from your visit to this website. <br><br> Here's how you can too!";
+ roadmapModalSubtitle.innerHTML = "Make $8000+ monthly revenue from a website like this. <br><br> Here's how you can!";
  roadmapModalContent.appendChild(roadmapModalSubtitle);
 
  // Create modal button element
