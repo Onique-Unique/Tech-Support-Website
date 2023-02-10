@@ -65,6 +65,13 @@ iframe {
     min-height: 380px;
 }
 
+figcaption {
+    text-align: center;
+    color: #297373;
+    font-weight: 700;
+    font-size: 14px;
+}
+
 .hide {
     display: none
 }
@@ -553,6 +560,10 @@ iframe {
     background-color: #1d6c77;
     font-size: 3.5rem;
     color: #fff
+}
+
+.container .posts-container .post .title #share-title {
+    font-weight: 600;
 }
 
 .container .posts-container .post .text span {

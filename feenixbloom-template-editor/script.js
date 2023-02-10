@@ -329,7 +329,10 @@ createParas = () => {
             <p class="text">${val[9]}</p> 
             <p class="text">${val[10]}</p> 
             <br>
-            <iframe src="{ .current-embed-video-link }" height="380" class="image" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <figure>
+                <iframe src="{ .current-embed-video-link }" height="380" class="image" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <figcaption>Video Representation: ${document.getElementById("secondary_title").value}</figcaption>
+            </figure>
             <br>
             <!-- Generate Portfolio Promo Card/ Box Start -->
             <blockquote>
@@ -371,7 +374,10 @@ createParas = () => {
             <p class="text">${val[15]}</p> 
             <p class="text">${val[16]}</p> 
             <br>
-            <iframe src="{ .current-embed-video-link }" height="380" class="image" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <figure>
+                <iframe src="{ .current-embed-video-link }" height="380" class="image" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <figcaption>Video Representation: ${document.getElementById("secondary_title").value}</figcaption>
+            </figure>
             <br>
             <!-- Generate Portfolio Promo Card/ Box Start -->
             <blockquote>
@@ -412,7 +418,10 @@ createParas = () => {
                 <p class="text">${val[startIndex + 1]}</p> 
                 <p class="text">${val[startIndex + 2]}</p> 
                 <br>
-                <iframe src="{ .current-embed-video-link }" height="380" class="image" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <figure>
+                    <iframe src="{ .current-embed-video-link }" height="380" class="image" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <figcaption>Video Representation: ${document.getElementById("secondary_title").value}</figcaption>
+                 </figure>
                 <br>
             <!-- Generate Portfolio Promo Card/ Box Start -->
             <blockquote>

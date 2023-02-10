@@ -233,9 +233,12 @@ let htmlCode_first = `<!DOCTYPE html>
                         <p class="text">{ .secondary-title-paragraph-2 }</p>
                     </div>
                     <br><br>
-                    <a href="/investment.html">
-                        <img loading="lazy" title="{ .secondary-title }" srcset="/images/blog-pages/{ .current-image-link } 1200w" alt="{ .secondary-title }" class="image" sizes="(min-width: 1280px) 900px" decoding="async">
-                    </a>
+                    <figure>
+                        <a href="/investment.html">
+                            <img loading="lazy" title="{ .secondary-title }" srcset="/images/blog-pages/{ .current-image-link } 1200w" alt="{ .secondary-title }" class="image" sizes="(min-width: 1280px) 900px" width="1280" decoding="async">
+                            <figcaption>Image Representation: { .secondary-title }</figcaption>
+                        </a>
+                    </figure>
                     <br><br>
                     <div class="mini-banner">
                         <a href="/investment.html">
