@@ -8,13 +8,15 @@
 
     xmlns:georss="http://www.georss.org/georss"
     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:media="http://search.yahoo.com/mrss/"
     >
   <channel>
     <title>Feenixbloom Website</title>
     <atom:link href="https://www.feenixbloom.com/feed" rel="self" type="application/rss+xml" />
+    <ttl>60</ttl>
     <link>https://www.feenixbloom.com</link>
     <description>Feenixbloom - Entertainment, Investment | Finance, Informational Content</description>
-    <lastBuildDate>Sat, 11 Feb 2023 16:17:25 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Feb 2023 16:36:50 GMT</lastBuildDate>
     <sy:updatePeriod>daily</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <image>
@@ -28,61 +30,61 @@
 <title>Valentines Day 2023 Best Ideas</title>
 <link>https://www.feenixbloom.com/search-guide/article/valentines-day-2023-2</link>
 <media:content url="https://www.feenixbloom.com/images/blog-pages/valentines-day.jpg" medium="image"/>
-<pubDate>Sat, 11 Feb 2023 16:17:25 GMT</pubDate>
+<pubDate>Sat, 11 Feb 2023 16:36:50 GMT</pubDate>
 <guid isPermaLink="false">Valentines Day 2023 Best Ideas</guid></item>
 <item>
 <title>Valentines Day 2023</title>
 <link>https://www.feenixbloom.com/search-guide/article/valentines-day-2023</link>
 <media:content url="https://www.feenixbloom.com/images/blog-pages/valentines-day.jpg" medium="image"/>
-<pubDate>Sat, 11 Feb 2023 16:17:25 GMT</pubDate>
+<pubDate>Sat, 11 Feb 2023 16:36:50 GMT</pubDate>
 <guid isPermaLink="false">Valentines Day 2023</guid></item>
 <item>
 <title>Should I Use Turbotax To File</title>
 <link>https://www.feenixbloom.com/search-guide/article/should-i-use-turbotax-to-file</link>
 <media:content url="https://www.feenixbloom.com/images/blog-pages/2-dollar-bills.jpg" medium="image"/>
-<pubDate>Sat, 11 Feb 2023 16:17:25 GMT</pubDate>
+<pubDate>Sat, 11 Feb 2023 16:36:50 GMT</pubDate>
 <guid isPermaLink="false">Should I Use Turbotax To File</guid></item>
 <item>
 <title>Handling Airport Stress Of Flying</title>
 <link>https://www.feenixbloom.com/search-guide/article/handling-airport-stress</link>
 <media:content url="https://www.feenixbloom.com/images/blog-pages/inside-airport.jpg" medium="image"/>
-<pubDate>Sat, 11 Feb 2023 16:17:25 GMT</pubDate>
+<pubDate>Sat, 11 Feb 2023 16:36:50 GMT</pubDate>
 <guid isPermaLink="false">Handling Airport Stress Of Flying</guid></item>
 <item>
 <title>Are Volvos Reliable</title>
 <link>https://www.feenixbloom.com/search-guide/article/are-volvos-reliable</link>
 <media:content url="https://www.feenixbloom.com/images/blog-pages/volvo.jpg" medium="image"/>
-<pubDate>Sat, 11 Feb 2023 16:17:25 GMT</pubDate>
+<pubDate>Sat, 11 Feb 2023 16:36:50 GMT</pubDate>
 <guid isPermaLink="false">Are Volvos Reliable</guid></item>
 <item>
 <title>Are Sharks Scared Of Dolphins</title>
 <link>https://www.feenixbloom.com/search-guide/article/are-sharks-scared-of-dolphins</link>
 <media:content url="https://www.feenixbloom.com/images/blog-pages/dolphin.jpg" medium="image"/>
-<pubDate>Sat, 11 Feb 2023 16:17:25 GMT</pubDate>
+<pubDate>Sat, 11 Feb 2023 16:36:50 GMT</pubDate>
 <guid isPermaLink="false">Are Sharks Scared Of Dolphins</guid></item>
 <item>
 <title>Are Range Rovers Reliable</title>
 <link>https://www.feenixbloom.com/search-guide/article/are-range-rovers-reliable</link>
 <media:content url="https://www.feenixbloom.com/images/blog-pages/range-rover.jpg" medium="image"/>
-<pubDate>Sat, 11 Feb 2023 16:17:25 GMT</pubDate>
+<pubDate>Sat, 11 Feb 2023 16:36:50 GMT</pubDate>
 <guid isPermaLink="false">Are Range Rovers Reliable</guid></item>
 <item>
 <title>Are Purple Eyes Real</title>
 <link>https://www.feenixbloom.com/search-guide/article/are-purple-eyes-real</link>
 <media:content url="https://www.feenixbloom.com/images/blog-pages/purple-eyes.jpg" medium="image"/>
-<pubDate>Sat, 11 Feb 2023 16:17:25 GMT</pubDate>
+<pubDate>Sat, 11 Feb 2023 16:36:50 GMT</pubDate>
 <guid isPermaLink="false">Are Purple Eyes Real</guid></item>
 <item>
 <title>Are Bull Sharks Aggressive</title>
 <link>https://www.feenixbloom.com/search-guide/article/are-bull-sharks-aggressive</link>
 <media:content url="https://www.feenixbloom.com/images/blog-pages/shark.jpg" medium="image"/>
-<pubDate>Sat, 11 Feb 2023 16:17:25 GMT</pubDate>
+<pubDate>Sat, 11 Feb 2023 16:36:50 GMT</pubDate>
 <guid isPermaLink="false">Are Bull Sharks Aggressive</guid></item>
 <item>
 <title>Are There Bugs In Peanut Butter</title>
 <link>https://www.feenixbloom.com/search-guide/article/are-there-bugs-in-peanut-butter</link>
 <media:content url="https://www.feenixbloom.com/images/blog-pages/peanut-butter.jpg" medium="image"/>
-<pubDate>Sat, 11 Feb 2023 16:17:25 GMT</pubDate>
+<pubDate>Sat, 11 Feb 2023 16:36:50 GMT</pubDate>
 <guid isPermaLink="false">Are There Bugs In Peanut Butter</guid></item>
   </channel>
 </rss>
