@@ -90,7 +90,7 @@ let htmlCode_first = `<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noarchive,noodp,max-image-preview:large">
+    <meta name="robots" content="noodp,max-image-preview:large">
     <meta property="article:published_time" content="{ .date-schema }">
     <meta property="article:modified_time" content="{ .date-schema }">
     <meta name="theme-color" content="#151515">
