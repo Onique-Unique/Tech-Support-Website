@@ -45,7 +45,7 @@ for (let i = links.length - 1; i >= 0; i--) {
   }
   let link = links[i];
   // Anchor links in misc-guides div 
-  if (link.hostname == domain && !link.href.includes('#') && link.closest("#misc-guides")) {
+  if (link.hostname == domain && !link.href.includes('#') && link.closest("#discovery-content")) {
     var linkHref = link.href.split('.html')[0];
     // Change hostname to OgDomain
     linkHref = linkHref.replace(domain, OgDomain);
