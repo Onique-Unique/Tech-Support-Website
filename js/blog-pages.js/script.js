@@ -745,8 +745,8 @@ setInterval(function(){
 // A script that shows rain effects on page when it is present in title
 window.addEventListener("load", () => {
   var title = document.title;
-  var rainWords = /rain|rains|raining|wet/gi;
-  var snowWords = /snow|snowing|snowfall|ski|skiing/gi;
+  var rainWords = /^rain$|^rains$|^raining$|^wet$/gi;
+  var snowWords = /^snow$|^snowing$|^snowfall$|^ski$|^skiing$/gi;
   if (title.match(rainWords)) {
       var canvas = document.createElement("canvas");
       canvas.setAttribute("style", "width: 100%; height: 100%; position: fixed; top:0; left:0; z-index: 2;");

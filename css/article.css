@@ -57,6 +57,11 @@ body::-webkit-scrollbar-thumb:hover {
     background: #30303092
 }
 
+li {
+    font-weight: 600;
+    text-shadow: -2px 1px 16px #0ba39e2e;
+}
+
 button {
     cursor: pointer
 }
@@ -564,6 +569,9 @@ figcaption {
 
 .container .posts-container .post .title #share-title {
     font-weight: 600;
+    background-color: #167b210d;
+    text-shadow: -1px -1px 20px aliceblue;
+    padding: 2px 5px;
 }
 
 .container .posts-container .post .text span {
