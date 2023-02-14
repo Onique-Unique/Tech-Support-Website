@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>News CMS - Feenixbloom</title>
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:description" content="Write and Edit HTML Blogs and Articles Faster ">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/HTML-code-editor/favicon_io-CMS/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/HTML-code-editor/favicon_io-CMS/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/HTML-code-editor/favicon_io-CMS/favicon-16x16.png">
+    <link rel="manifest" href="/HTML-code-editor/favicon_io-CMS/site.webmanifest">
+    <!-- Bootstrap - CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/80f2e16145.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>              
+    <div class="app-container">
+        <div id="app">
+            <div id="input">
+                <form id="form">
+                    <!-- Title -->
+                    <div class="form-group">
+                        <label class="pre-start" for="title">Title:</label>
+                        <input type="text" class="form-control" id="title">
+                    </div>
+
+                    <!-- Description -->
+                    <div class="form-group">
+                        <label class="pre-start" for="description">Description:</label>
+                        <textarea class='form-control' rows="2" cols="30" id="description"></textarea>
+                    </div>
+                    
+                    <!-- Current page link -->
+                    <div class="form-group">
+                        <label class="pre-start" for="link">Current Page Link:</label>
+                        <input type="text" class="form-control" id="link">
+                    </div>
+
+                    <!-- Main Post Intro -->
+                    <h4>Main Post Intro</h4>
+                    <div class="form-group">
+                        <label class="pre-start" for="secondary_title">Secondary title</label>
+                        <input type="text" class="form-control" id="secondary_title">
+                        <label class="pre-start" for="secondary_para_1">Para1:</label>
+                        <textarea class='form-control' rows="2" cols="30" id="secondary_para_1"></textarea>
+                        <label for="secondary_para_2">Para2:</label>
+                        <textarea class='form-control' rows="2" cols="30" id="secondary_para_2"></textarea>
+                    </div>
+
+                    <!-- Current page Image Link -->
+                    <div class="form-group">
+                        <label class="pre-start" for="image-link">Current Image Link:</label>
+                        <input type="file" class="form-control" id="image-link">
+                    </div>
+
+                    <!-- Current page Embed Video Link -->
+                    <div class="form-group">
+                        <label for="video-link">Embed Video Link (Optional):</label>
+                        <input type="text" class="form-control" id="video-link">
+                    </div>
+
+                    <!-- Dynamically generates boxes to create para segment or list segment -->
+                    <div id="topics">
+
+                    </div>
+                    <br/>
+
+                    <button id="paraEl" class="btn btn-secondary">Para-based Topic</button>
+                    <button id="listMain" class="small btn btn-secondary">List-based Topic</button>
+                    <button id="listCustom" class="small btn btn-secondary"><i class="fa-solid fa-plus"></i></button><br/><br/>
+                    <button id='submit' type="submit" class="btn btn-primary">Generate HTML</button>
+                    <button id="copy" class="btn btn-primary">Copy Code</button>
+                    <button id="ai-gen" class="btn btn-primary">Ask AI &nbsp; <i class="fa-regular fa-lightbulb"></i></button>
+                    <button id="key-access" class="small btn btn-secondary"><i class="fa-solid fa-key"></i></button>
+                </form>
+            </div>
+        
+            <div id="output"> </div>
+        </div>
+    </div>
+
+    <!-- Topic Insert Box For To Know Which topic Is Being Covered-->
+    <input type="text" id="TopicInsert" placeholder="Topic Insert">
+    <button id="toggleButton">
+        <i id="toggle-icon" class="fa-solid fa-circle-chevron-up"></i>
+    </button>
+    <!-- Loading For AI Generation-->
+    <div class="loading">
+        <div class="loading-messages">
+            <p>Loading assets...</p>
+            <p>This may take a few seconds</p>
+        </div>
+    </div>
+
+    <!-- Bootstrap - JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="htmlCode.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
