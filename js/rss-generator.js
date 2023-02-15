@@ -40,7 +40,7 @@ var uniqueLinks = new Set();
 for (let i = links.length - 1; i >= 0; i--) {
 
   // Find Up to the 10 latest content links and coresponding images belonging to the misc-guides div on the index page
-  if (uniqueLinks.size >= 20) {
+  if (uniqueLinks.size >= 30) {
     break;
   }
   let link = links[i];
