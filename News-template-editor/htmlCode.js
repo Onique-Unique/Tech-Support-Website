@@ -15,15 +15,15 @@ let htmlCode_first = `<!DOCTYPE html>
                         "@type": "SearchAction",
                         "target": {
                             "@type": "EntryPoint",
-                            "urlTemplate": "https://www.feenixbloom.com/search-guide/article?s={search_term_string}"
+                            "urlTemplate": "https://www.feenixbloom.com/news/discovery-tab?s={search_term_string}"
                         },
                         "query-input": "required name=search_term_string"
                     }],
                     "inLanguage": "en-US"
                 }],
                 "@type": "NewsArticle",
-                "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.feenixbloom.com/search-guide/article/{ .current-page-link }" },
-                "url": "https://www.feenixbloom.com/search-guide/article/{ .current-page-link }",
+                "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.feenixbloom.com/news/discovery-tab/{ .current-page-link }" },
+                "url": "https://www.feenixbloom.com/news/discovery-tab/{ .current-page-link }",
                 "headline": "{ .title }",
                 "description":
                 "{ .description }",
@@ -36,7 +36,7 @@ let htmlCode_first = `<!DOCTYPE html>
                 "author": [{
                     "@type": "Person",
                     "name": "Onique Campbell",
-                    "url": "https://www.feenixbloom.com/search-guide/article/{ .current-page-link }"
+                    "url": "https://www.feenixbloom.com/news/discovery-tab/{ .current-page-link }"
                 }], 
                 "publisher": {
                     "@type": "Organization",
@@ -98,14 +98,14 @@ let htmlCode_first = `<!DOCTYPE html>
     <meta name="twitter:site" content="@oniquedaily">
     <meta name="twitter:creator" content="@oniquedaily">
     <meta property="og:site_name" class="metaPageTitle" content="{ .title }">
-    <meta property="og:url" content="https://www.feenixbloom.com/search-guide/article/{ .current-page-link }">
+    <meta property="og:url" content="https://www.feenixbloom.com/news/discovery-tab/{ .current-page-link }">
     <meta name="og:title" class="metaPageTitle" property="og:title" content="{ .title }">
     <meta property="og:description" content="{ .description }">
-    <meta itemprop="url" content="https://www.feenixbloom.com/search-guide/article/{ .current-page-link }">
+    <meta itemprop="url" content="https://www.feenixbloom.com/news/discovery-tab/{ .current-page-link }">
     <meta itemprop="name" class="metaPageTitle" content="{ .title }">
     <meta itemprop="description" content="{ .description }">
     <meta name="description" content="{ .description }">
-    <link rel="canonical" href="https://www.feenixbloom.com/search-guide/article/{ .current-page-link }">
+    <link rel="canonical" href="https://www.feenixbloom.com/news/discovery-tab/{ .current-page-link }">
     <link rel="alternate" title="Feenixbloom » Feed" type="application/rss+xml" href="https://www.feenixbloom.com/feed">
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/images/game-lounge-img/favicon_io/apple-touch-icon.png">
@@ -210,7 +210,7 @@ let htmlCode_first = `<!DOCTYPE html>
                                     <meta itemprop="position" content="1" />
                                 </li>
                                 <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                                    <a href="/search-guide/article/{ .current-page-link }" class="breadcrumbs__link breadcrumbs__link--active" aria-current="page" itemprop="item"><span itemprop="name">{ .secondary-title }</span></a>
+                                    <a href="/news/discovery-tab/{ .current-page-link }" class="breadcrumbs__link breadcrumbs__link--active" aria-current="page" itemprop="item"><span itemprop="name">{ .secondary-title }</span></a>
                                     <meta itemprop="position" content="2" />
                                 </li>
                             </ul>
