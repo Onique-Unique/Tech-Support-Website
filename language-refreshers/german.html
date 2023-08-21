@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>German Language Refresher</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#151515">
+    <meta name="twitter:card" content="Feenixbloom - Entertainment, Investment | Finance & Informational Content">
+    <meta name="twitter:site" content="@oniquedaily">
+    <meta name="twitter:creator" content="@oniquedaily">
+    <meta property="og:site_name" content="Feenixbloom - Entertainment, Investment | Finance & Informational Content">
+    <meta property="og:url" content="https://www.feenixbloom.com/">
+    <meta name="og:title" property="og:title" content="Feenixbloom - Entertainment, Investment | Finance & Informational Content">
+    <meta property="og:description" content="Feenixbloom is an informational inclusive website platform that is able to provide entertainment and helpful content related to Investment | Finance, Ceramic coating, Shower Niche, Crypto, Mobile Gaming, Flodesk, Water Bottles/ Flasks and more..">
+    <meta itemprop="url" content="https://www.feenixbloom.com/">
+    <meta itemprop="name" content="Feenixbloom - Entertainment, Investment | Finance & Informational Content">
+    <meta itemprop="description" content="Feenixbloom is an informational inclusive website platform that is able to provide entertainment and helpful content related to Investment | Finance, Ceramic coating, Shower Niche, Crypto, Mobile Gaming, Flodesk, Water Bottles/ Flasks and more..">
+    <meta name="description" content="Feenixbloom is an informational inclusive website platform that is able to provide entertainment and helpful content related to Investment | Finance, Ceramic coating, Shower Niche, Crypto, Mobile Gaming, Flodesk, Water Bottles/ Flasks and more..">
+
+    <link rel="alternate" title="Feenixbloom » Feed" type="application/rss+xml" href="https://www.feenixbloom.com/feed">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/game-lounge-img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/game-lounge-img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/game-lounge-img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/images/game-lounge-img/favicon_io/site.webmanifest">
+
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" onload="this.onload=null;this.rel='stylesheet'" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #e0e0e0;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 20px;
+            color: #555;
+            text-align: center;
+        }
+
+        #app {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #feedback {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #ff0000;
+        }
+
+        #progress {
+            font-size: 18px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>German Language Refresher</h1>
+    <div id="app">
+        <div id="content">
+            <p id="sentence"></p>
+            <input type="text" id="translationInput" placeholder="Enter your translation">
+            <button id="submitButton">Submit</button>
+            <p id="feedback"></p>
+            <p id="progress">Sentence 1 of 10</p>
+            <button id="refreshButton"><i class="fa-solid fa-rotate-right"></i></button>
+        </div>
+    </div>
+
+    <script>
+        const sentences = [{
+                "english": "Hello",
+                "german": "Hallo"
+            },
+            {
+                "english": "Goodbye",
+                "german": "Auf Wiedersehen"
+            },
+            {
+                "english": "Please",
+                "german": "Bitte"
+            },
+            {
+                "english": "Thank you",
+                "german": "Danke"
+            },
+            {
+                "english": "Yes",
+                "german": "Ja"
+            },
+            {
+                "english": "No",
+                "german": "Nein"
+            },
+            {
+                "english": "Excuse me",
+                "german": "Entschuldigung"
+            },
+            {
+                "english": "I am",
+                "german": "Ich bin"
+            },
+            {
+                "english": "What",
+                "german": "Was"
+            },
+            {
+                "english": "Your",
+                "german": "dein"
+            },
+            {
+                "english": "Favorite",
+                "german": "Lieblings"
+            },
+            {
+                "english": "Name",
+                "german": "Name"
+            },
+            {
+                "english": "Is",
+                "german": "ist"
+            },
+            {
+                "english": "How",
+                "german": "Wie"
+            },
+            {
+                "english": "Are",
+                "german": "geht"
+            },
+            {
+                "english": "You",
+                "german": "du"
+            },
+            {
+                "english": "Love",
+                "german": "liebe"
+            },
+            {
+                "english": "It",
+                "german": "es"
+            },
+            {
+                "english": "The",
+                "german": "die"
+            },
+            {
+                "english": "Time",
+                "german": "Uhrzeit"
+            },
+            {
+                "english": "Of",
+                "german": "von"
+            },
+            {
+                "english": "Can",
+                "german": "Kann"
+            },
+            {
+                "english": "Help",
+                "german": "helfen"
+            },
+            {
+                "english": "Me",
+                "german": "mir"
+            },
+            {
+                "english": "Find",
+                "german": "finden"
+            },
+            {
+                "english": "Where",
+                "german": "Wo"
+            },
+            {
+                "english": "Is",
+                "german": "ist"
+            },
+            {
+                "english": "The",
+                "german": "die"
+            },
+            {
+                "english": "Nearest",
+                "german": "nachste"
+            },
+            {
+                "english": "Subway",
+                "german": "U-Bahn"
+            },
+            {
+                "english": "Here",
+                "german": "hier"
+            },
+            {
+                "english": "On",
+                "german": "auf"
+            },
+            {
+                "english": "one",
+                "german": "eins"
+            },
+            {
+                "english": "two",
+                "german": "zwei"
+            },
+            {
+                "english": "three",
+                "german": "drei"
+            },
+            {
+                "english": "four",
+                "german": "vier"
+            },
+            {
+                "english": "five",
+                "german": "funf"
+            },
+            {
+                "english": "six",
+                "german": "sechs"
+            },
+            {
+                "english": "seven",
+                "german": "sieben"
+            },
+            {
+                "english": "eight",
+                "german": "acht"
+            },
+            {
+                "english": "nine",
+                "german": "neun"
+            },
+            {
+                "english": "ten",
+                "german": "zehn"
+            },
+            {
+                "english": "eleven",
+                "german": "elf"
+            },
+            {
+                "english": "twelve",
+                "german": "zwolf"
+            },
+            {
+                "english": "thirteen",
+                "german": "dreizehn"
+            },
+            {
+                "english": "fourteen",
+                "german": "vierzehn"
+            },
+            {
+                "english": "fifteen",
+                "german": "fünfzehn"
+            },
+            {
+                "english": "sixteen",
+                "german": "sechzehn"
+            },
+            {
+                "english": "seventeen",
+                "german": "siebzehn"
+            },
+            {
+                "english": "eighteen",
+                "german": "achtzehn"
+            },
+            {
+                "english": "nineteen",
+                "german": "neunzehn"
+            },
+            {
+                "english": "twenty",
+                "german": "zwanzig"
+            },
+            {
+                "english": "one hundred",
+                "german": "hundert"
+            },
+            {
+                "english": "one hundred ten",
+                "german": "hundertzehn"
+            },
+            {
+                "english": "one hundred twenty",
+                "german": "hundertzwanzig"
+            },
+            {
+                "english": "one hundred fifty",
+                "german": "hundertfünfzig"
+            },
+            {
+                "english": "one hundred eighty",
+                "german": "hundertachtzig"
+            },
+            {
+                "english": "two hundred",
+                "german": "zweihundert"
+            },
+            {
+                "english": "two hundred thirty",
+                "german": "zweihundertdreißig"
+            },
+            {
+                "english": "two hundred seventy",
+                "german": "zweihundertsiebzig"
+            },
+            {
+                "english": "three hundred",
+                "german": "dreihundert"
+            },
+            {
+                "english": "three hundred twenty-five",
+                "german": "dreihundertfünfundzwanzig"
+            },
+            {
+                "english": "three hundred fifty",
+                "german": "dreihundertfünfzig"
+            },
+            {
+                "english": "four hundred",
+                "german": "vierhundert"
+            },
+            {
+                "english": "four hundred forty",
+                "german": "vierhundertvierzig"
+            },
+            {
+                "english": "four hundred eighty",
+                "german": "vierhundertachtzig"
+            },
+            {
+                "english": "five hundred",
+                "german": "fünfhundert"
+            },
+            {
+                "english": "five hundred sixty",
+                "german": "fünfhundertsechzig"
+            },
+            {
+                "english": "five hundred ninety",
+                "german": "fünfhundertneunzig"
+            },
+            {
+                "english": "six hundred",
+                "german": "sechshundert"
+            },
+            {
+                "english": "six hundred fifteen",
+                "german": "sechshundertfünfzehn"
+            },
+            {
+                "english": "six hundred forty",
+                "german": "sechshundertvierzig"
+            },
+            {
+                "english": "seven hundred",
+                "german": "siebenhundert"
+            },
+            {
+                "english": "seven hundred twenty",
+                "german": "siebenhundertzwanzig"
+            },
+            {
+                "english": "seven hundred sixty",
+                "german": "siebenhundertsechzig"
+            },
+            {
+                "english": "eight hundred",
+                "german": "achthundert"
+            },
+            {
+                "english": "eight hundred fifty",
+                "german": "achthundertfünfzig"
+            },
+            {
+                "english": "eight hundred eighty",
+                "german": "achthundertachtzig"
+            },
+            {
+                "english": "nine hundred",
+                "german": "neunhundert"
+            },
+            {
+                "english": "nine hundred twenty-five",
+                "german": "neunhundertfünfundzwanzig"
+            },
+            {
+                "english": "nine hundred sixty",
+                "german": "neunhundertsechzig"
+            },
+            {
+                "english": "one thousand",
+                "german": "tausend"
+            },
+            {
+                "english": "Vacation",
+                "german": "Urlaub"
+            },
+            {
+                "english": "Business",
+                "german": "Geschäft"
+            },
+            {
+                "english": "Do",
+                "german": "Mach"
+            },
+            {
+                "english": "Have",
+                "german": "hast"
+            },
+            {
+                "english": "A",
+                "german": "eine"
+            },
+            {
+                "english": "Reservation",
+                "german": "Reservierung"
+            },
+            {
+                "english": "Don't",
+                "german": "habe"
+            },
+            {
+                "english": "Feel",
+                "german": "fühle"
+            },
+            {
+                "english": "Internet",
+                "german": "Internet"
+            },
+            {
+                "english": "Password",
+                "german": "Passwort"
+            },
+            {
+                "english": "Cold",
+                "german": "kalt"
+            },
+            {
+                "english": "Hot",
+                "german": "heiß"
+            },
+            {
+                "english": "Tip",
+                "german": "Trinkgeld"
+            },
+            {
+                "english": "Included",
+                "german": "inbegriffen"
+            },
+            {
+                "english": "Place",
+                "german": "Ort"
+            },
+            {
+                "english": "Song",
+                "german": "Lied"
+            },
+            {
+                "english": "Tourist",
+                "german": "Tourist"
+            },
+            {
+                "english": "Post",
+                "german": "Post"
+            },
+            {
+                "english": "Office",
+                "german": "Amt"
+            },
+            {
+                "english": "I do not understand",
+                "german": "Ich verstehe nicht"
+            },
+            {
+                "english": "How much does it cost?",
+                "german": "Wie viel kostet das?"
+            },
+            {
+                "english": "Where is the bathroom?",
+                "german": "Wo ist die Toilette?"
+            },
+            {
+                "english": "My name is",
+                "german": "Ich heiße"
+            },
+            {
+                "english": "What is your name?",
+                "german": "Wie heißt du?"
+            },
+            {
+                "english": "I am from",
+                "german": "Ich komme aus"
+            },
+            {
+                "english": "How are you?",
+                "german": "Wie geht es dir?"
+            },
+            {
+                "english": "I am fine, thank you",
+                "german": "Mir geht es gut, danke"
+            },
+            {
+                "english": "What time is it?",
+                "german": "Wie spät ist es?"
+            },
+            {
+                "english": "Where is the train station?",
+                "german": "Wo ist der Bahnhof?"
+            },
+            {
+                "english": "I would like",
+                "german": "Ich möchte"
+            },
+            {
+                "english": "Sorry",
+                "german": "Es tut mir leid"
+            },
+            {
+                "english": "Good morning",
+                "german": "Guten Morgen"
+            },
+            {
+                "english": "Good afternoon",
+                "german": "Guten Nachmittag"
+            },
+            {
+                "english": "Good evening",
+                "german": "Guten Abend"
+            },
+            {
+                "english": "Good night",
+                "german": "Gute Nacht"
+            },
+            {
+                "english": "What is this?",
+                "german": "Was ist das?"
+            },
+            {
+                "english": "Where are you from?",
+                "german": "Woher kommst du?"
+            },
+            {
+                "english": "How do you say in German?",
+                "german": "Wie sagt man auf Deutsch?"
+            },
+            {
+                "english": "Can you help me?",
+                "german": "Können Sie mir helfen?"
+            },
+            {
+                "english": "I am lost",
+                "german": "Ich habe mich verlaufen"
+            },
+            {
+                "english": "Cheers!",
+                "german": "Prost!"
+            },
+            {
+                "english": "I am sorry, I do not speak much German",
+                "german": "Es tut mir leid, ich spreche nicht gut Deutsch"
+            },
+            {
+                "english": "What is the weather like today?",
+                "german": "Wie ist das Wetter heute?"
+            },
+            {
+                "english": "Where can I find a restaurant?",
+                "german": "Wo finde ich ein Restaurant?"
+            },
+            {
+                "english": "I need a doctor",
+                "german": "Ich brauche einen Arzt"
+            },
+            {
+                "english": "I am hungry",
+                "german": "Ich habe Hunger"
+            },
+            {
+                "english": "I am thirsty",
+                "german": "Ich habe Durst"
+            },
+            {
+                "english": "What is your job?",
+                "german": "Was ist dein Beruf?"
+            },
+            {
+                "english": "I like it",
+                "german": "Ich mag es"
+            },
+            {
+                "english": "I do not like it",
+                "german": "Ich mag es nicht"
+            },
+            {
+                "english": "It is beautiful",
+                "german": "Es ist schön"
+            },
+            {
+                "english": "It is difficult",
+                "german": "Es ist schwer"
+            },
+            {
+                "english": "It is easy",
+                "german": "Es ist leicht"
+            },
+            {
+                "english": "I love you",
+                "german": "Ich liebe dich"
+            },
+            {
+                "english": "Happy birthday!",
+                "german": "Alles Gute zum Geburtstag!"
+            },
+            {
+                "english": "Congratulations!",
+                "german": "Herzlichen Glückwunsch!"
+            },
+            {
+                "english": "Merry Christmas!",
+                "german": "Frohe Weihnachten!"
+            },
+            {
+                "english": "Happy New Year!",
+                "german": "Frohes neues Jahr!"
+            },
+            {
+                "english": "Excuse me, where is the museum?",
+                "german": "Entschuldigung, wo ist das Museum?"
+            },
+            {
+                "english": "Can you repeat that, please?",
+                "german": "Können Sie das bitte wiederholen?"
+            },
+            {
+                "english": "What is your phone number?",
+                "german": "Was ist deine Telefonnummer?"
+            },
+            {
+                "english": "Do you have a map?",
+                "german": "Hast du eine Karte?"
+            },
+            {
+                "english": "I am here on vacation",
+                "german": "Ich bin hier im Urlaub"
+            },
+            {
+                "english": "I am here for business",
+                "german": "Ich bin geschäftlich hier"
+            },
+            {
+                "english": "Where can I buy tickets?",
+                "german": "Wo kann ich Tickets kaufen?"
+            },
+            {
+                "english": "Is there a pharmacy nearby?",
+                "german": "Gibt es eine Apotheke in der Nähe?"
+            },
+            {
+                "english": "Can I pay with credit card?",
+                "german": "Kann ich mit Kreditkarte bezahlen?"
+            },
+            {
+                "english": "Do you have a menu in English?",
+                "german": "Haben Sie eine Speisekarte auf Englisch?"
+            },
+            {
+                "english": "Can you recommend a good restaurant?",
+                "german": "Können Sie ein gutes Restaurant empfehlen?"
+            },
+            {
+                "english": "I do not know",
+                "german": "Ich weiß nicht"
+            },
+            {
+                "english": "What is happening?",
+                "german": "Was passiert?"
+            },
+            {
+                "english": "Can you show me on the map?",
+                "german": "Können Sie es mir auf der Karte zeigen?"
+            },
+            {
+                "english": "I have a reservation",
+                "german": "Ich habe eine Reservierung"
+            },
+            {
+                "english": "Where can I find a taxi?",
+                "german": "Wo finde ich ein Taxi?"
+            },
+            {
+                "english": "What is the Wi-Fi password?",
+                "german": "Wie lautet das WLAN-Passwort?"
+            },
+            {
+                "english": "What is your email address?",
+                "german": "Was ist deine E-Mail-Adresse?"
+            },
+            {
+                "english": "Can you speak slower, please?",
+                "german": "Können Sie bitte langsamer sprechen?"
+            },
+            {
+                "english": "I am learning German",
+                "german": "Ich lerne Deutsch"
+            },
+            {
+                "english": "I do not speak German well",
+                "german": "Ich spreche nicht gut Deutsch"
+            },
+            {
+                "english": "What is your favorite food?",
+                "german": "Was ist dein Lieblingsessen?"
+            },
+            {
+                "english": "What is your favorite color?",
+                "german": "Was ist deine Lieblingsfarbe?"
+            },
+            {
+                "english": "What is your hobby?",
+                "german": "Was ist dein Hobby?"
+            },
+            {
+                "english": "What is the time of the movie?",
+                "german": "Um wie viel Uhr läuft der Film?"
+            },
+            {
+                "english": "Can I try this on?",
+                "german": "Kann ich das anprobieren?"
+            },
+            {
+                "english": "I need a larger/smaller size",
+                "german": "Ich brauche eine größere/kleinere Größe"
+            },
+            {
+                "english": "What is the date today?",
+                "german": "Welches Datum haben wir heute?"
+            },
+            {
+                "english": "What is your address?",
+                "german": "Was ist deine Adresse?"
+            },
+            {
+                "english": "What is the nearest subway station?",
+                "german": "Wo ist die nächste U-Bahn-Station?"
+            },
+            {
+                "english": "Is there a bank around here?",
+                "german": "Gibt es hier eine Bank?"
+            },
+            {
+                "english": "Do you have a moment?",
+                "german": "Hast du einen Moment?"
+            },
+            {
+                "english": "Can you write it down?",
+                "german": "Können Sie es aufschreiben?"
+            },
+            {
+                "english": "I am allergic to",
+                "german": "Ich bin allergisch gegen"
+            },
+            {
+                "english": "What is the weather forecast?",
+                "german": "Wie ist die Wettervorhersage?"
+            },
+            {
+                "english": "Is this seat taken?",
+                "german": "Ist dieser Platz frei?"
+            },
+            {
+                "english": "I do not have a reservation",
+                "german": "Ich habe keine Reservierung"
+            },
+            {
+                "english": "Where can I buy souvenirs?",
+                "german": "Wo kann ich Souvenirs kaufen?"
+            },
+            {
+                "english": "I do not feel well",
+                "german": "Mir geht es nicht gut"
+            },
+            {
+                "english": "Can you recommend a good hotel?",
+                "german": "Kannst du ein gutes Hotel empfehlen?"
+            },
+            {
+                "english": "Is it far from here?",
+                "german": "Ist es weit von hier?"
+            },
+            {
+                "english": "Can you speak louder, please?",
+                "german": "Können Sie lauter sprechen?"
+            },
+            {
+                "english": "How do I get to?",
+                "german": "Wie komme ich zum/zur?"
+            },
+            {
+                "english": "Can you take a photo for me?",
+                "german": "Kannst du ein Foto von mir machen?"
+            },
+            {
+                "english": "I am just looking",
+                "german": "Ich schaue mich nur um"
+            },
+            {
+                "english": "What is your favorite book?",
+                "german": "Was ist dein Lieblingsbuch?"
+            },
+            {
+                "english": "What is your favorite movie?",
+                "german": "Was ist dein Lieblingsfilm?"
+            },
+            {
+                "english": "Can you speak English slowly?",
+                "german": "Kannst du langsam Englisch sprechen?"
+            },
+            {
+                "english": "I am here for vacation",
+                "german": "Ich bin hier im Urlaub"
+            },
+            {
+                "english": "I do not have much money",
+                "german": "Ich habe nicht viel Geld"
+            },
+            {
+                "english": "What is the internet password?",
+                "german": "Wie lautet das Internet-Passwort?"
+            },
+            {
+                "english": "I am cold",
+                "german": "Mir ist kalt"
+            },
+            {
+                "english": "I am hot",
+                "german": "Mir ist heiß"
+            },
+            {
+                "english": "Can I have a receipt, please?",
+                "german": "Kann ich bitte eine Quittung haben?"
+            },
+            {
+                "english": "Where can I find an ATM?",
+                "german": "Wo finde ich einen Geldautomaten?"
+            },
+            {
+                "english": "Can I have the bill, please?",
+                "german": "Kann ich bitte die Rechnung haben?"
+            },
+            {
+                "english": "I am here on business",
+                "german": "Ich bin geschäftlich hier"
+            },
+            {
+                "english": "I am here to visit family",
+                "german": "Ich bin hier, um Familie zu besuchen"
+            },
+            {
+                "english": "What is the next event?",
+                "german": "Was ist das nächste Ereignis?"
+            },
+            {
+                "english": "What is the best way to get there?",
+                "german": "Wie komme ich am besten dorthin?"
+            },
+            {
+                "english": "I have a question",
+                "german": "Ich habe eine Frage"
+            },
+            {
+                "english": "I do not have time",
+                "german": "Ich habe keine Zeit"
+            },
+            {
+                "english": "Is there a supermarket nearby?",
+                "german": "Gibt es einen Supermarkt in der Nähe?"
+            },
+            {
+                "english": "Is the tip included?",
+                "german": "Ist das Trinkgeld inbegriffen?"
+            },
+            {
+                "english": "What is your favorite place here?",
+                "german": "Was ist dein Lieblingsort hier?"
+            },
+            {
+                "english": "I am a tourist",
+                "german": "Ich bin Tourist"
+            },
+            {
+                "english": "What is your favorite song?",
+                "german": "Was ist dein Lieblingslied?"
+            },
+            {
+                "english": "Where can I find a post office?",
+                "german": "Wo finde ich eine Post?"
+            },
+            {
+                "english": "Can you help me with my bags?",
+                "german": "Kannst du mir mit meinen Taschen helfen?"
+            },
+            {
+                "english": "I do not have a lot of luggage",
+                "german": "Ich habe nicht viel Gepäck"
+            }
+        ];
+
+        const levenshteinThreshold = 0.1; // Stricter tolerance for misspellings
+
+        let currentSentenceIndex = 0;
+
+        const sentenceElement = document.getElementById("sentence");
+        const translationInput = document.getElementById("translationInput");
+        const submitButton = document.getElementById("submitButton");
+        const feedbackElement = document.getElementById("feedback");
+        const progressElement = document.getElementById("progress");
+        const refreshButton = document.getElementById("refreshButton");
+
+        const progressKey = "language_learning_progress";
+        let userProgress = localStorage.getItem(progressKey);
+
+        if (userProgress) {
+            currentSentenceIndex = parseInt(userProgress);
+        } else {
+            userProgress = 0;
+        }
+
+        function calculateLevenshteinDistance(a, b) {
+            const m = a.length;
+            const n = b.length;
+            const dp = Array.from({
+                length: m + 1
+            }, () => Array(n + 1).fill(0));
+
+            for (let i = 1; i <= m; i++) {
+                for (let j = 1; j <= n; j++) {
+                    const cost = a[i - 1] !== b[j - 1] ? 1 : 0;
+                    dp[i][j] = Math.min(
+                        dp[i - 1][j] + 1,
+                        dp[i][j - 1] + 1,
+                        dp[i - 1][j - 1] + cost
+                    );
+                }
+            }
+
+            return dp[m][n];
+        }
+
+        function displaySentence(index) {
+            sentenceElement.textContent = sentences[index].english;
+            translationInput.value = "";
+            feedbackElement.textContent = "";
+            progressElement.textContent = `Sentence ${index + 1} of ${sentences.length}`;
+        }
+
+        function checkTranslation(index, userInput) {
+            if (!userInput.trim()) {
+                feedbackElement.textContent = "Please enter a translation.";
+                return;
+            }
+
+            const requiredWordCount = sentences[index].german.split(" ").length;
+            const userWordCount = userInput.trim().split(/\s+/).length;
+
+            if (userWordCount !== requiredWordCount) {
+                feedbackElement.textContent = `Please enter the correct translation: ${requiredWordCount} words.`;
+                return;
+            }
+
+            const correctTranslation = sentences[index].german.toLowerCase();
+            const userTranslation = userInput.toLowerCase();
+            const levenshteinDistance = calculateLevenshteinDistance(userTranslation, correctTranslation);
+            const maxAllowedDistance = Math.max(userTranslation.length, correctTranslation.length) * levenshteinThreshold;
+
+            if (levenshteinDistance <= maxAllowedDistance) {
+                feedbackElement.textContent = "Correct! Move to the next sentence.";
+                setTimeout(() => {
+                    feedbackElement.textContent = "";
+                }, 2000); // Clear feedback after 2 seconds
+                currentSentenceIndex++;
+                if (currentSentenceIndex < sentences.length) {
+                    displaySentence(currentSentenceIndex);
+                } else {
+                    sentenceElement.textContent = "Congratulations! You completed the syllabus.";
+                    translationInput.style.display = "none";
+                    submitButton.style.display = "none";
+                }
+                localStorage.setItem(progressKey, currentSentenceIndex);
+            } else {
+                feedbackElement.textContent = "Incorrect. Try again.";
+                setTimeout(() => {
+                    feedbackElement.textContent = "";
+                }, 2000); // Clear feedback after 2 seconds
+            }
+        }
+
+        submitButton.addEventListener("click", function () {
+            const userInput = translationInput.value;
+            checkTranslation(currentSentenceIndex, userInput);
+        });
+
+        refreshButton.addEventListener("click", function () {
+            localStorage.removeItem(progressKey);
+            currentSentenceIndex = 0;
+            displaySentence(currentSentenceIndex);
+        });
+
+        // Initialize the app
+        displaySentence(currentSentenceIndex);
+    </script>
+</body>
+
+</html>
